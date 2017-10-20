@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table temps ( id serial not null primary key, created_at timestamp not null default now(), name text null unique, identification_number integer not null unique )
+ in following column name of table temps
+Detected: Index Shotgun Variant: 1

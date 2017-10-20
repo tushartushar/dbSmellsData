@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE product_attributes ( attributes_key VARCHAR(255), product_id BIGINT CONSTRAINT product_attributes_product_ref REFERENCES product (id), attributes VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE address (id BIGINT IDENTITY PRIMARY KEY, customer_id BIGINT CONSTRAINT address_customer_ref REFERENCES customer (id), street VARCHAR(255), city VARCHAR(255), country VARCHAR(255))
+ in following column id and in column id of table EntityWithUUID
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE product_attributes (attributes_key VARCHAR(255), product_id BIGINT CONSTRAINT product_attributes_product_ref REFERENCES product (id), attributes VARCHAR(255))
+

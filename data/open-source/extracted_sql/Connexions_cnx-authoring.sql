@@ -1,0 +1,4 @@
+CREATE table resource ( hash text primary key, mediatype text, data bytea)
+SELECT * from {tablename} WHERE {where_clause};
+CREATE TABLE document_acl ( uuid UUID NOT NULL, user_id TEXT NOT NULL, permission TEXT NOT NULL, PRIMARY KEY (uuid, user_id, permission), FOREIGN KEY (uuid) REFERENCES document (id) ON DELETE CASCADE )
+CREATE TABLE document ( id uuid primary key, title text not null, created timestamptz not null, revised timestamptz not null, license json not null, original_license json not null, language text not null, media_type text not null, derived_from text, derived_from_uri text, derived_from_title text, content text, abstract text, submitter json not null, authors json, publishers json, copyright_holders json, editors json, translators json, illustrators json, subjects text[], keywords text[], state text, publication text, cnx_archive_uri text, version text, contained_in text[], print_style text )

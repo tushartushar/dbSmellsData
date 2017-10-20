@@ -1,0 +1,13 @@
+CREATE INDEX django_session_de54fa62 ON "django_session
+CREATE INDEX django_admin_log_417f1b1c ON "django_admin_log
+CREATE INDEX allaccess_accountaccess_e8701ad4 ON "allaccess_accountaccess
+CREATE INDEX auth_user_groups_e8701ad4 ON "auth_user_groups
+CREATE INDEX auth_user_user_permissions_e8701ad4 ON "auth_user_user_permissions
+CREATE INDEX auth_user_groups_0e939a4f ON "auth_user_groups
+CREATE INDEX django_admin_log_e8701ad4 ON "django_admin_log
+CREATE INDEX auth_group_permissions_0e939a4f ON "auth_group_permissions
+CREATE TABLE sqlite_sequence(name,seq)
+CREATE INDEX auth_group_permissions_8373b171 ON "auth_group_permissions
+CREATE INDEX auth_permission_417f1b1c ON "auth_permission
+CREATE INDEX auth_user_user_permissions_8373b171 ON "auth_user_user_permissions
+CREATE INDEX allaccess_accountaccess_32ca2ddc ON "allaccess_accountaccess

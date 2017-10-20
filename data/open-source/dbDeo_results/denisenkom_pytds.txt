@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: create table #testtable (id int, _text text, _xml xml, vcm varchar(max), vc varchar(10))
+ in following column _text of table #testtable
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table test_autocommit(field int)
+ in following column field and in column field of table testtable

@@ -1,0 +1,104 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['league_commissioners', 'user_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE squares_game_payouts ( id INT NOT NULL , game_id INT DEFAULT NULL , description VARCHAR(255) NOT NULL , percentage SMALLINT NOT NULL , homeTeamResult SMALLINT DEFAULT NULL , awayTeamResult SMALLINT DEFAULT NULL , winner_id INT DEFAULT NULL , PRIMARY KEY(id))
+ in following column winner_id and in column winner_id of table predictions
+Detected: Index Shotgun Variant: 3 Following index not used : ['pickset_leagues', 'pickset_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ncaaf_conference_members', 'conference']
+Detected: Index Shotgun Variant: 3 Following index not used : ['picks', 'pickSet_id']
+Detected: God Table Found in following statement: CREATE TABLE users ( id INT NOT NULL , username VARCHAR(255) NOT NULL , username_canonical VARCHAR(255) NOT NULL , email VARCHAR(255) NOT NULL , email_canonical VARCHAR(255) NOT NULL , enabled BOOLEAN NOT NULL , salt VARCHAR(255) NOT NULL , password VARCHAR(255) NOT NULL , last_login TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , locked BOOLEAN NOT NULL , expired BOOLEAN NOT NULL , expires_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , confirmation_token VARCHAR(255) DEFAULT NULL , password_requested_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , roles TEXT NOT NULL , credentials_expired BOOLEAN NOT NULL , credentials_expire_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_game_managers', 'game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_prediction_set_score', 'season']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE pirc_portfolio_teams ( portfolio_id INT NOT NULL , team_id VARCHAR(5) NOT NULL , round1Score SMALLINT DEFAULT NULL , round2Score SMALLINT DEFAULT NULL , round3Score SMALLINT DEFAULT NULL , round4Score SMALLINT DEFAULT NULL , round5Score SMALLINT DEFAULT NULL , round6Score SMALLINT DEFAULT NULL , PRIMARY KEY(portfolio_id, team_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['predictions', 'predictionSet_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_prediction_set_score', 'league_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['picksets', 'champ_team_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_games', 'hometeam_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_module_config', 'module_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_games', 'awayteam_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['picksets', 'league_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_portfolio_teams', 'team_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['games', 'season']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ncaa_teams ( id VARCHAR(5) NOT NULL , name VARCHAR(255) NOT NULL , thumbnail VARCHAR(255) NOT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_regions', 'season']
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_game_payouts', 'winner_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bp_expert_picks', 'team_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE games ( id INT NOT NULL , name VARCHAR(255) NOT NULL , gameDate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL , network VARCHAR(255) NOT NULL , homeTeamScore INT DEFAULT NULL , awayTeamScore INT DEFAULT NULL , description TEXT DEFAULT NULL , homeTeam_id VARCHAR(5) DEFAULT NULL , awayTeam_id VARCHAR(5) DEFAULT NULL , PRIMARY KEY(id))
+ in following column description of table games
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_games', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_portfolios', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_games', 'season']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_teams', 'region']
+Detected: Index Shotgun Variant: 3 Following index not used : ['users', 'referrer_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_prediction_set_score', 'pickSet_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_log', 'game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sbc_config', 'nfcTeam_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_game_managers', 'user_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE squares_games ( id INT NOT NULL , user_id INT DEFAULT NULL , name VARCHAR(255) NOT NULL , homeTeam VARCHAR(255) NOT NULL , awayTeam VARCHAR(255) NOT NULL , costPerSquare INT NOT NULL , locked BOOLEAN NOT NULL , row0 SMALLINT NOT NULL , row1 SMALLINT NOT NULL , row2 SMALLINT NOT NULL , row3 SMALLINT NOT NULL , row4 SMALLINT NOT NULL , row5 SMALLINT NOT NULL , row6 SMALLINT NOT NULL , row7 SMALLINT NOT NULL , row8 SMALLINT NOT NULL , row9 SMALLINT NOT NULL , col0 SMALLINT NOT NULL , col1 SMALLINT NOT NULL , col2 SMALLINT NOT NULL , col3 SMALLINT NOT NULL , col4 SMALLINT NOT NULL , col5 SMALLINT NOT NULL , col6 SMALLINT NOT NULL , col7 SMALLINT NOT NULL , col8 SMALLINT NOT NULL , col9 SMALLINT NOT NULL , PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE squares_games ( id INT NOT NULL , user_id INT DEFAULT NULL , name VARCHAR(255) NOT NULL , homeTeam VARCHAR(255) NOT NULL , awayTeam VARCHAR(255) NOT NULL , costPerSquare INT NOT NULL , locked BOOLEAN NOT NULL , row0 SMALLINT NOT NULL , row1 SMALLINT NOT NULL , row2 SMALLINT NOT NULL , row3 SMALLINT NOT NULL , row4 SMALLINT NOT NULL , row5 SMALLINT NOT NULL , row6 SMALLINT NOT NULL , row7 SMALLINT NOT NULL , row8 SMALLINT NOT NULL , row9 SMALLINT NOT NULL , col0 SMALLINT NOT NULL , col1 SMALLINT NOT NULL , col2 SMALLINT NOT NULL , col3 SMALLINT NOT NULL , col4 SMALLINT NOT NULL , col5 SMALLINT NOT NULL , col6 SMALLINT NOT NULL , col7 SMALLINT NOT NULL , col8 SMALLINT NOT NULL , col9 SMALLINT NOT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_league', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['leagues', 'season']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ncaa_conference_divisions ( abbr VARCHAR(5) NOT NULL , conference VARCHAR(5) DEFAULT NULL , name VARCHAR(255) NOT NULL , PRIMARY KEY(abbr))
+
+Detected: God Table Found in following statement: CREATE TABLE mm_games ( id VARCHAR(16) NOT NULL , season SMALLINT NOT NULL , region VARCHAR(8) DEFAULT NULL , hometeam_id VARCHAR(5) DEFAULT NULL , awayteam_id VARCHAR(5) DEFAULT NULL , name VARCHAR(32) NOT NULL , round SMALLINT NOT NULL , index SMALLINT NOT NULL , homeTeamScore INT DEFAULT NULL , awayTeamScore INT DEFAULT NULL , gameDate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL , location VARCHAR(255) NOT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['league_commissioners', 'league_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE core_people ( id INT NOT NULL , firstName VARCHAR(32) NOT NULL , lastName VARCHAR(32) NOT NULL , birthDate DATE DEFAULT NULL , birthPlace VARCHAR(64) DEFAULT NULL , PRIMARY KEY(id))
+ in following column id and in column id of table core_module
+Detected: Index Shotgun Variant: 3 Following index not used : ['bp_expert_picks', 'game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invites', 'pirc_game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_prediction_set_score', 'predictionSet_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user_prediction_set_score ( user_id INT NOT NULL , predictionSet_id INT NOT NULL , pickSet_id INT NOT NULL , score INT NOT NULL , PRIMARY KEY(user_id, predictionSet_id, pickSet_id))
+ in following column score and in column score of table pirc_portfolios
+Detected: Index Shotgun Variant: 3 Following index not used : ['bp_expert_picks', 'expert_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE pirc_config ( id INT NOT NULL , game_id INT DEFAULT NULL , seed1Cost SMALLINT NOT NULL , seed2Cost SMALLINT NOT NULL , seed3Cost SMALLINT NOT NULL , seed4Cost SMALLINT NOT NULL , seed5Cost SMALLINT NOT NULL , seed6Cost SMALLINT NOT NULL , seed7Cost SMALLINT NOT NULL , seed8Cost SMALLINT NOT NULL , seed9Cost SMALLINT NOT NULL , seed10Cost SMALLINT NOT NULL , seed11Cost SMALLINT NOT NULL , seed12Cost SMALLINT NOT NULL , seed13Cost SMALLINT NOT NULL , seed14Cost SMALLINT NOT NULL , seed15Cost SMALLINT NOT NULL , seed16Cost SMALLINT NOT NULL , round1Win SMALLINT NOT NULL , round2Win SMALLINT NOT NULL , round3Win SMALLINT NOT NULL , round4Win SMALLINT NOT NULL , round5Win SMALLINT NOT NULL , round6Win SMALLINT NOT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['picks', 'team_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bp_expert_picks ( id INT NOT NULL , game_id INT DEFAULT NULL , team_id VARCHAR(5) DEFAULT NULL , expert_id INT DEFAULT NULL , description TEXT NOT NULL , createdAt TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL , PRIMARY KEY(id))
+ in following column description of table bp_expert_picks
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_league', 'league_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mm_regions ( season SMALLINT NOT NULL , abbr VARCHAR(8) NOT NULL , name VARCHAR(32) NOT NULL , index SMALLINT NOT NULL , PRIMARY KEY(season, abbr))
+ in following column season and in column season of table bp_seasons
+Detected: Index Shotgun Variant: 3 Following index not used : ['prediction_sets', 'season']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE squares_game_payouts ( id INT NOT NULL , game_id INT DEFAULT NULL , description VARCHAR(255) NOT NULL , percentage SMALLINT NOT NULL , homeTeamResult SMALLINT DEFAULT NULL , awayTeamResult SMALLINT DEFAULT NULL , winner_id INT DEFAULT NULL , PRIMARY KEY(id))
+ in following column description and in column description of table bp_expert_picks
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_portfolios', 'game_id']
+Detected: God Table Found in following statement: CREATE TABLE sbc_results ( year INT NOT NULL , nfcFinalScore INT NOT NULL , afcFinalScore INT NOT NULL , nfcHalftimeScore INT NOT NULL , afcHalftimeScore INT NOT NULL , firstTeamToScoreFirstQuarter VARCHAR(4) NOT NULL , firstTeamToScoreSecondQuarter VARCHAR(4) NOT NULL , firstTeamToScoreThirdQuarter VARCHAR(4) NOT NULL , firstTeamToScoreFourthQuarter VARCHAR(4) NOT NULL , bonusQuestion1 INT NOT NULL , bonusQuestion2 INT NOT NULL , bonusQuestion3 INT NOT NULL , bonusQuestion4 INT NOT NULL , bonusQuestion5 INT NOT NULL , bonusQuestion6 INT NOT NULL , bonusQuestion7 INT NOT NULL , bonusQuestion8 INT NOT NULL , PRIMARY KEY(year))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_prediction_set_score', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_game_payouts', 'game_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE sbc_picks ( id INT NOT NULL , user_id INT DEFAULT NULL , year INT NOT NULL , nfcFinalScore INT NOT NULL , afcFinalScore INT NOT NULL , nfcHalftimeScore INT NOT NULL , afcHalftimeScore INT NOT NULL , firstTeamToScoreFirstQuarter VARCHAR(4) NOT NULL , firstTeamToScoreSecondQuarter VARCHAR(4) NOT NULL , firstTeamToScoreThirdQuarter VARCHAR(4) NOT NULL , firstTeamToScoreFourthQuarter VARCHAR(4) NOT NULL , bonusQuestion1 INT NOT NULL , bonusQuestion2 INT NOT NULL , bonusQuestion3 INT NOT NULL , bonusQuestion4 INT NOT NULL , bonusQuestion5 INT NOT NULL , bonusQuestion6 INT NOT NULL , bonusQuestion7 INT NOT NULL , bonusQuestion8 INT NOT NULL , totalPoints INT DEFAULT NULL , finalScorePoints INT DEFAULT NULL , firstTeamToScorePoints INT DEFAULT NULL , halftimeScorePoints INT DEFAULT NULL , bonusQuestionPoints INT DEFAULT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['predictions', 'winner_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ncaaf_conference_members', 'team']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invites', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_squares', 'game_id']
+Detected: God Table Found in following statement: CREATE TABLE pirc_config ( id INT NOT NULL , game_id INT DEFAULT NULL , seed1Cost SMALLINT NOT NULL , seed2Cost SMALLINT NOT NULL , seed3Cost SMALLINT NOT NULL , seed4Cost SMALLINT NOT NULL , seed5Cost SMALLINT NOT NULL , seed6Cost SMALLINT NOT NULL , seed7Cost SMALLINT NOT NULL , seed8Cost SMALLINT NOT NULL , seed9Cost SMALLINT NOT NULL , seed10Cost SMALLINT NOT NULL , seed11Cost SMALLINT NOT NULL , seed12Cost SMALLINT NOT NULL , seed13Cost SMALLINT NOT NULL , seed14Cost SMALLINT NOT NULL , seed15Cost SMALLINT NOT NULL , seed16Cost SMALLINT NOT NULL , round1Win SMALLINT NOT NULL , round2Win SMALLINT NOT NULL , round3Win SMALLINT NOT NULL , round4Win SMALLINT NOT NULL , round5Win SMALLINT NOT NULL , round6Win SMALLINT NOT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['mm_teams', 'season']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bp_seasons', 'champ_team_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['prediction_sets', 'championshipWinner_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sbc_config', 'afcTeam_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sbc_picks', 'user_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE sbc_results ( year INT NOT NULL , nfcFinalScore INT NOT NULL , afcFinalScore INT NOT NULL , nfcHalftimeScore INT NOT NULL , afcHalftimeScore INT NOT NULL , firstTeamToScoreFirstQuarter VARCHAR(4) NOT NULL , firstTeamToScoreSecondQuarter VARCHAR(4) NOT NULL , firstTeamToScoreThirdQuarter VARCHAR(4) NOT NULL , firstTeamToScoreFourthQuarter VARCHAR(4) NOT NULL , bonusQuestion1 INT NOT NULL , bonusQuestion2 INT NOT NULL , bonusQuestion3 INT NOT NULL , bonusQuestion4 INT NOT NULL , bonusQuestion5 INT NOT NULL , bonusQuestion6 INT NOT NULL , bonusQuestion7 INT NOT NULL , bonusQuestion8 INT NOT NULL , PRIMARY KEY(year))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mm_regions ( season SMALLINT NOT NULL , abbr VARCHAR(8) NOT NULL , name VARCHAR(32) NOT NULL , index SMALLINT NOT NULL , PRIMARY KEY(season, abbr))
+ in following column index and in column index of table sbc_question_choices
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_players', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['picks', 'game_id']
+Detected: God Table Found in following statement: CREATE TABLE sbc_picks ( id INT NOT NULL , user_id INT DEFAULT NULL , year INT NOT NULL , nfcFinalScore INT NOT NULL , afcFinalScore INT NOT NULL , nfcHalftimeScore INT NOT NULL , afcHalftimeScore INT NOT NULL , firstTeamToScoreFirstQuarter VARCHAR(4) NOT NULL , firstTeamToScoreSecondQuarter VARCHAR(4) NOT NULL , firstTeamToScoreThirdQuarter VARCHAR(4) NOT NULL , firstTeamToScoreFourthQuarter VARCHAR(4) NOT NULL , bonusQuestion1 INT NOT NULL , bonusQuestion2 INT NOT NULL , bonusQuestion3 INT NOT NULL , bonusQuestion4 INT NOT NULL , bonusQuestion5 INT NOT NULL , bonusQuestion6 INT NOT NULL , bonusQuestion7 INT NOT NULL , bonusQuestion8 INT NOT NULL , totalPoints INT DEFAULT NULL , finalScorePoints INT DEFAULT NULL , firstTeamToScorePoints INT DEFAULT NULL , halftimeScorePoints INT DEFAULT NULL , bonusQuestionPoints INT DEFAULT NULL , PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_portfolio_teams', 'portfolio_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ncaaf_conference_members', 'division']
+Detected: Index Shotgun Variant: 3 Following index not used : ['predictions', 'game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pickset_leagues', 'league_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['squares_players', 'game_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pirc_games', 'season']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INT NOT NULL , username VARCHAR(255) NOT NULL , username_canonical VARCHAR(255) NOT NULL , email VARCHAR(255) NOT NULL , email_canonical VARCHAR(255) NOT NULL , enabled BOOLEAN NOT NULL , salt VARCHAR(255) NOT NULL , password VARCHAR(255) NOT NULL , last_login TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , locked BOOLEAN NOT NULL , expired BOOLEAN NOT NULL , expires_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , confirmation_token VARCHAR(255) DEFAULT NULL , password_requested_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , roles TEXT NOT NULL , credentials_expired BOOLEAN NOT NULL , credentials_expire_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL , PRIMARY KEY(id))
+ in following column roles of table users
+Detected: God Table Found in following statement: CREATE TABLE sbc_config ( year INT NOT NULL , startTime TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL , closeTime TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL , scoresCalculated BOOLEAN NOT NULL , nfcTeam_id VARCHAR(3) DEFAULT NULL , afcTeam_id VARCHAR(3) DEFAULT NULL , finalScorePoints INT NOT NULL , halftimeScorePoints INT NOT NULL , firstTeamToScoreInAQuarterPoints INT NOT NULL , neitherTeamToScoreInAQuarterPoints INT NOT NULL , bonusQuestionPoints INT NOT NULL , PRIMARY KEY(year))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['invites', 'squares_game_id']

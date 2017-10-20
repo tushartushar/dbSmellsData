@@ -1,0 +1,19 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'modified_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id SERIAL PRIMARY KEY, domain_id INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(10) NOT NULL, modified_at INT NOT NULL, account VARCHAR(40) DEFAULT NULL, comment VARCHAR(65535) NOT NULL, CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+ in following column CONSTRAINT of table comments
+Detected: Index Shotgun Variant: 3 Following index not used : ['records', 'domain_id']
+Detected: Duplicate Column Names Found in following statement: create table domains ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+ in following column CONSTRAINT and in column CONSTRAINT of table records
+Detected: Values in Column Definition Found in following statement: create table domains ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE records ( id SERIAL PRIMARY KEY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(65535) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BOOL DEFAULT 'f', CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+ in following column CONSTRAINT of table records
+Detected: Values in Column Definition Found in following statement: CREATE TABLE records ( id SERIAL PRIMARY KEY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(65535) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BOOL DEFAULT 'f', CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'domain_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['records', 'name']
+Detected: Obsolete Column TypesFound in following statement: create table domains ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+ in following column CONSTRAINT of table domains
+Detected: Values in Column Definition Found in following statement: CREATE TABLE comments ( id SERIAL PRIMARY KEY, domain_id INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(10) NOT NULL, modified_at INT NOT NULL, account VARCHAR(40) DEFAULT NULL, comment VARCHAR(65535) NOT NULL, CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::text = lower((name)::text))))
+

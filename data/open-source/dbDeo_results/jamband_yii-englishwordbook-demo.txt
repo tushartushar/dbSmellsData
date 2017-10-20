@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE word(id integer primary key autoincrement, user_id integer not null, en text not null, ja text not null)
+ in following column en of table word
+Detected: Index Shotgun Variant: 3 Following index not used : ['word(user_id)', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['word(user_id)', 'sindexuser_usernameuser']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE word(id integer primary key autoincrement, user_id integer not null, en text not null, ja text not null)
+ in following column ja of table word
+Detected: Index Shotgun Variant: 3 Following index not used : ['word(user_id)', 'P']

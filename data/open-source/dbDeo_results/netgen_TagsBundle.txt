@@ -1,0 +1,14 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags', 'keyword']
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags_attribute_link', 'object_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE eztags ( id integer DEFAULT nextval( 'eztags_s'::text ) NOT NULL, parent_id integer DEFAULT 0 NOT NULL, main_tag_id integer DEFAULT 0 NOT NULL, keyword character varying(255) DEFAULT ''::character varying NOT NULL, depth integer DEFAULT 0 NOT NULL, path_string character varying(255) DEFAULT ''::character varying NOT NULL, modified integer DEFAULT 0 NOT NULL, remote_id character varying(100) DEFAULT ''::character varying NOT NULL, main_language_id integer DEFAULT 0 NOT NULL, language_mask integer DEFAULT 0 NOT NULL)
+ in following column keyword and in column keyword of table eztags_keyword
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE eztags ( id integer DEFAULT nextval('eztags_s'::text) NOT NULL, parent_id integer not null default 0, main_tag_id integer not null default 0, keyword varchar(255) NOT NULL default '', depth integer NOT NULL default 1, path_string varchar(255) NOT NULL default '', modified integer NOT NULL default 0, remote_id varchar(100) NOT NULL default '', main_language_id integer not null default 0, language_mask integer not null default 0, PRIMARY KEY (id), CONSTRAINT idx_eztags_remote_id UNIQUE (remote_id))
+ in following column keyword and in column keyword of table eztags_keyword
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'eztags' ( 'id' integer PRIMARY KEY AUTOINCREMENT, 'parent_id' integer NOT NULL DEFAULT 0, 'main_tag_id' integer NOT NULL DEFAULT 0, 'keyword' text(255) NOT NULL DEFAULT '', 'depth' integer NOT NULL DEFAULT '1', 'path_string' text(255) NOT NULL DEFAULT '', 'modified' integer NOT NULL DEFAULT 0, 'remote_id' text(100) NOT NULL DEFAULT '', 'main_language_id' integer NOT NULL DEFAULT 0, 'language_mask' integer NOT NULL DEFAULT 0)
+ in following column 'keyword' of table 'eztags'
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags_attribute_link', 'objectattribute_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags_attribute_link', 'keyword_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['eztags_attribute_link', 'objectattribute_version']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'eztags_keyword' ( 'keyword_id' integer NOT NULL DEFAULT 0, 'language_id' integer NOT NULL DEFAULT 0, 'keyword' text(255) NOT NULL DEFAULT '', 'locale' text(255) NOT NULL DEFAULT '', 'status' integer NOT NULL DEFAULT 0)
+ in following column 'keyword' of table 'eztags_keyword'

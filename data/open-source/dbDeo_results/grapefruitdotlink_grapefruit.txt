@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE layer_info (layer_uuid TEXT, name TEXT, value BLOB, UNIQUE (layer_uuid, name) ON CONFLICT REPLACE)
+ in following column name of table layer_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE layer_info (layer_uuid TEXT, name TEXT, value BLOB, UNIQUE (layer_uuid, name) ON CONFLICT REPLACE)
+ in following column layer_uuid of table layer_info
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE payload (name text, value blob)
+ in following column name of table payload

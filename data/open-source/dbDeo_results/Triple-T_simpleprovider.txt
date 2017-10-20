@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foos (bar TEXT PRIMARY KEY, late FLOAT NOT NULL UNIQUE, time REAL)
+ in following column late of table foos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foos (bar TEXT PRIMARY KEY, late FLOAT NOT NULL UNIQUE, time REAL)
+ in following column time of table foos
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foos (bar TEXT PRIMARY KEY, late FLOAT NOT NULL UNIQUE, time REAL)
+ in following column bar of table foos

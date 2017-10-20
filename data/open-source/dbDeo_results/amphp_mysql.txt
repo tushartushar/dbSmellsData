@@ -1,0 +1,23 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'category']
+Detected: Clone Tables Found in following statement: CREATE TABLE t (qty INT, price INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t (i INT)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'ON']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t2 ( -> a INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -> message CHAR(20))
+ in following column - and in column - of table t1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['customer', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'id']
+Detected: Clone Tables Found in following statement: CREATE TABLE t (c1 VARCHAR(39) CHARACTER SET utf8 DEFAULT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['product', 'RESTRICT']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( -> a INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -> message CHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 ( -> a INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -> message CHAR(20))
+

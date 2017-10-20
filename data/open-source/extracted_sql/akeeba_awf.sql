@@ -1,0 +1,66 @@
+CREATE TABLE `#__dbtest_modifiedby` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `modified_by` INT NULL DEFAULT '0', PRIMARY KEY (`id`))
+CREATE TABLE `#__fakeapp_groups`( `fakeapp_group_id` INT NOT NULL AUTO_INCREMENT , `description` varchar (50) NOT NULL , PRIMARY KEY (`fakeapp_group_id`))
+SELECT name FROM foo', 'distinct');
+SELECT * FROM #__bar;
+SELECT id FROM a');
+SELECT %n FROM %n WHERE %n = %a', 'foo', '#__bar', 'id', 10);
+SELECT %n FROM %n WHERE %n = %t OR %3$n = %Z', 'id', '#__foo', 'date');
+CREATE TABLE `awf_dbtest_composite` ( `id1` INTEGER NOT NULL DEFAULT '0', `id2` INTEGER NOT NULL DEFAULT '0', `title` TEXT NOT NULL DEFAULT '', `asset_id` INTEGER NOT NULL DEFAULT '0', `hits` INTEGER NOT NULL DEFAULT '0', `checked_out` INTEGER NOT NULL DEFAULT '0', `checked_out_time` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `published` INTEGER NOT NULL DEFAULT '0', `publish_up` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `publish_down` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `ordering` INTEGER NOT NULL DEFAULT '0', CONSTRAINT `idx_dbtest_composite` PRIMARY KEY (`id1`,`id2`))
+CREATE TABLE `awf_dbtest_nestedbares` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` varchar(255) NOT NULL DEFAULT '', `lft` int(11) DEFAULT NULL, `rgt` int(11) DEFAULT NULL)
+SELECT name FROM foo', false);
+CREATE TABLE `awf_assets` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `parent_id` INTEGER NOT NULL DEFAULT '0', `lft` INTEGER NOT NULL DEFAULT '0', `rgt` INTEGER NOT NULL DEFAULT '0', `level` INTEGER NOT NULL, `name` TEXT NOT NULL DEFAULT '', `title` TEXT NOT NULL DEFAULT '', `rules` TEXT NOT NULL DEFAULT '', CONSTRAINT `idx_assets_name` UNIQUE (`name`))
+SELECT COUNT(*) FROM `#__foobar_example` WHERE `example_id` = 1;
+CREATE TABLE `awf_dbtest_alias` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL DEFAULT '', `start_date` TEXT NOT NULL DEFAULT '', `description` TEXT NOT NULL DEFAULT '', `xx_ordering` TINYINT NOT NULL DEFAULT '0', `xx_enabled` TINYINT NOT NULL DEFAULT '0')
+CREATE TABLE `#__dbtest_alias` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL, `start_date` datetime NOT NULL, `description` varchar(255) NOT NULL, `xx_ordering` TINYINT NOT NULL DEFAULT '0', `xx_enabled` TINYINT NOT NULL DEFAULT '0', PRIMARY KEY (`id`))
+SELECT * FROM #__foo;
+CREATE TABLE `awf_update_categories` ( `categoryid` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT DEFAULT '', `description` TEXT NOT NULL DEFAULT '', `parent` INTEGER DEFAULT '0', `updatesite` INTEGER DEFAULT '0')
+CREATE TABLE `awf_extensions` ( `extension_id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL DEFAULT '', `type` TEXT NOT NULL DEFAULT '', `element` TEXT NOT NULL DEFAULT '', `folder` TEXT NOT NULL DEFAULT '', `client_id` INTEGER NOT NULL, `enabled` INTEGER NOT NULL DEFAULT '1', `access` INTEGER NOT NULL DEFAULT '1', `protected` INTEGER NOT NULL DEFAULT '0', `manifest_cache` TEXT NOT NULL DEFAULT '', `params` TEXT NOT NULL DEFAULT '', `custom_data` TEXT NOT NULL DEFAULT '', `system_data` TEXT NOT NULL DEFAULT '', `checked_out` INTEGER NOT NULL DEFAULT '0', `checked_out_time` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `ordering` INTEGER DEFAULT '0', `state` INTEGER DEFAULT '0')
+CREATE TABLE `awf_update_sites` ( `update_site_id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT DEFAULT '', `type` TEXT DEFAULT '', `location` TEXT NOT NULL DEFAULT '', `enabled` INTEGER DEFAULT '0')
+CREATE TABLE `#__dbtest_lockedon` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `locked_on` INT NULL DEFAULT '0', PRIMARY KEY (`id`))
+CREATE TABLE `#__dbtest_defaults` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL DEFAULT 'dummy', `start_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', `description` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+SELECT name FROM foo', 'SELECT name FROM bar'));
+CREATE TABLE `#__fakeapp_tests` ( `fakeapp_test_id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL, `start_date` datetime NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`fakeapp_test_id`))
+CREATE TABLE `#__fakeapp_children` (`fakeapp_child_id` INT NOT NULL AUTO_INCREMENT, `description` varchar (50) NOT NULL , `fakeapp_parent_id` INT NOT NULL, `modified_by` INT NOT NULL DEFAULT '0', `modified_on` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00', PRIMARY KEY (`fakeapp_child_id`))
+CREATE TABLE `awf_session` ( `session_id` TEXT NOT NULL DEFAULT '', `client_id` INTEGER NOT NULL DEFAULT '0', `guest` INTEGER DEFAULT '1', `time` TEXT DEFAULT '', `data` TEXT DEFAULT NULL, `userid` INTEGER DEFAULT '0', `username` TEXT DEFAULT '', `usertype` TEXT DEFAULT '', CONSTRAINT `idx_session` PRIMARY KEY (`session_id`))
+SELECT column_name FROM information_schema.COLUMNS WHERE table_schema=:schema AND table_name=:table
+CREATE TABLE `#__fakeapp_parts`(`fakeapp_part_id` INT NOT NULL AUTO_INCREMENT , `description` varchar (50) NOT NULL , PRIMARY KEY (`fakeapp_part_id`))
+SELECT * FROM ' . $tableName;
+CREATE TABLE `awf_log_entries` ( `priority` INTEGER DEFAULT NULL, `message` TEXT DEFAULT NULL, `date` TEXT DEFAULT NULL, `category` TEXT DEFAULT NULL)
+SELECT * FROM #__foo;SELECT * FROM #__bar;
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS" . " WHERE TABLE_NAME = '$table' AND COLUMN_NAME = '$field'
+SELECT name FROM foo', true);
+CREATE TABLE `#__dbtest_modifiedon` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `modified_on` INT NULL DEFAULT '0', PRIMARY KEY (`id`))
+CREATE TABLE `#__dbtest_nestedbares` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL DEFAULT '', `lft` int(11) DEFAULT NULL, `rgt` int(11) DEFAULT NULL, PRIMARY KEY (`id`), KEY `lft` (`lft`), KEY `rgt` (`rgt`), KEY `lft_2` (`lft`,`rgt`))
+CREATE TABLE `awf_schemas` ( `extension_id` INTEGER NOT NULL, `version_id` TEXT NOT NULL DEFAULT '', CONSTRAINT `idx_schemas` PRIMARY KEY (`extension_id`,`version_id`))
+CREATE TABLE `awf_menu_types` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `menutype` TEXT NOT NULL DEFAULT '', `title` TEXT NOT NULL DEFAULT '', `description` TEXT NOT NULL DEFAULT '', CONSTRAINT `idx_menu_types_menutype` UNIQUE (`menutype`))
+CREATE TABLE `awf_usergroups` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `parent_id` INTEGER NOT NULL DEFAULT '0', `lft` INTEGER NOT NULL DEFAULT '0', `rgt` INTEGER NOT NULL DEFAULT '0', `title` TEXT NOT NULL DEFAULT '', CONSTRAINT `idx_usergroups_parent_title_lookup` UNIQUE (`parent_id`,`title`))
+CREATE TABLE `#__dbtest_extended` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL, `start_date` datetime NOT NULL, `description` varchar(255) NOT NULL, `ordering` TINYINT NOT NULL DEFAULT '0', `enabled` TINYINT NOT NULL DEFAULT '0', `locked_on` DATETIME NULL DEFAULT '0000-00-00 00:00:00', `locked_by` INT NULL DEFAULT '0', `created_by` INT NOT NULL DEFAULT '0', `created_on` DATETIME DEFAULT '0000-00-00 00:00:00', `modified_on` DATETIME NULL DEFAULT '0000-00-00 00:00:00', `modified_by` INT NULL DEFAULT '0', PRIMARY KEY (`id`))
+CREATE TABLE `#__dbtest_innodb` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL, `start_date` datetime NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `awf_updates` ( `update_id` INTEGER PRIMARY KEY AUTOINCREMENT, `update_site_id` INTEGER DEFAULT '0', `extension_id` INTEGER DEFAULT '0', `categoryid` INTEGER DEFAULT '0', `name` TEXT DEFAULT '', `description` TEXT NOT NULL DEFAULT '', `element` TEXT DEFAULT '', `type` TEXT DEFAULT '', `folder` TEXT DEFAULT '', `client_id` INTEGER DEFAULT '0', `version` TEXT DEFAULT '', `data` TEXT NOT NULL DEFAULT '', `detailsurl` TEXT NOT NULL DEFAULT '')
+CREATE TABLE `awf_viewlevels` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL DEFAULT '', `ordering` INTEGER NOT NULL DEFAULT '0', `rules` TEXT NOT NULL DEFAULT '', CONSTRAINT `idx_viewlevels_title` UNIQUE (`title`))
+CREATE TABLE `awf_update_sites_extensions` ( `update_site_id` INTEGER NOT NULL DEFAULT '0', `extension_id` INTEGER NOT NULL DEFAULT '0', CONSTRAINT `idx_update_sites_extensions` PRIMARY KEY (`update_site_id`,`extension_id`))
+CREATE TABLE `awf_languages` ( `lang_id` INTEGER PRIMARY KEY AUTOINCREMENT, `lang_code` TEXT NOT NULL DEFAULT '', `title` TEXT NOT NULL DEFAULT '', `title_native` TEXT NOT NULL DEFAULT '', `sef` TEXT NOT NULL DEFAULT '', `image` TEXT NOT NULL DEFAULT '', `description` TEXT NOT NULL DEFAULT '', `metakey` TEXT NOT NULL DEFAULT '', `metadesc` TEXT NOT NULL DEFAULT '', `sitename` varchar(1024) NOT NULL default '', `published` INTEGER NOT NULL DEFAULT '0', `ordering` int(11) NOT NULL default '0', CONSTRAINT `idx_languages_sef` UNIQUE (`sef`) CONSTRAINT `idx_languages_image` UNIQUE (`image`) CONSTRAINT `idx_languages_lang_code` UNIQUE (`lang_code`))
+CREATE TABLE `#__fakeapp_parents` (`fakeapp_parent_id` INT NOT NULL AUTO_INCREMENT,`description` varchar (50) NOT NULL , PRIMARY KEY (`fakeapp_parent_id`))
+SELECT name FROM bar');
+SELECT id FROM a)
+CREATE TABLE `awf_user_profiles` ( `user_id` INTEGER NOT NULL, `profile_key` TEXT NOT NULL DEFAULT '', `profile_value` TEXT NOT NULL DEFAULT '', `ordering` INTEGER NOT NULL DEFAULT '0', CONSTRAINT `idx_user_profiles_lookup` UNIQUE (`user_id`,`profile_key`))
+CREATE TABLE `awf_modules_menu` ( `moduleid` INTEGER NOT NULL DEFAULT '0', `menuid` INTEGER NOT NULL DEFAULT '0', CONSTRAINT `idx_modules_menu` PRIMARY KEY (`moduleid`,`menuid`))
+CREATE TABLE `awf_core_log_searches` ( `search_term` TEXT NOT NULL DEFAULT '', `hits` INTEGER NOT NULL DEFAULT '0')
+CREATE TABLE `awf_dbtest_extended` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL DEFAULT '', `start_date` TEXT NOT NULL DEFAULT '', `description` TEXT NOT NULL DEFAULT '', `ordering` TINYINT NOT NULL DEFAULT '0', `enabled` TINYINT NOT NULL DEFAULT '0')
+CREATE TABLE `#__fakeapp_parts_groups`(`fakeapp_group_id` INT NOT NULL , `fakeapp_part_id` INT NOT NULL)
+CREATE TABLE `awf_user_usergroup_map` ( `user_id` INTEGER NOT NULL DEFAULT '0', `group_id` INTEGER NOT NULL DEFAULT '0', CONSTRAINT `idx_user_usergroup_map` PRIMARY KEY (`user_id`,`group_id`))
+CREATE TABLE `awf_users` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL DEFAULT '', `username` TEXT NOT NULL DEFAULT '', `email` TEXT NOT NULL DEFAULT '', `password` TEXT NOT NULL DEFAULT '', `usertype` TEXT NOT NULL DEFAULT '', `block` INTEGER NOT NULL DEFAULT '0', `sendEmail` INTEGER DEFAULT '0', `registerDate` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `lastvisitDate` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `activation` TEXT NOT NULL DEFAULT '', `params` TEXT NOT NULL DEFAULT '')
+CREATE TABLE IF NOT EXISTS `#__bar` (`id` int(10) unsigned NOT NULL)
+CREATE TABLE `#__dbtest` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(50) NOT NULL, `start_date` datetime NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `awf_dbtest` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL DEFAULT '', `start_date` TEXT NOT NULL DEFAULT '', `description` TEXT NOT NULL DEFAULT '')
+CREATE TABLE `awf_dbtest_nestedsets` ( `dbtest_nestedset_id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` varchar(255) NOT NULL DEFAULT '', `slug` varchar(255) NOT NULL DEFAULT '', `lft` int(11) DEFAULT NULL, `rgt` int(11) DEFAULT NULL, `hash` char(40) DEFAULT NULL)
+select * from #__users');
+SELECT name FROM foo');
+CREATE TABLE `#__dbtest_nestedsets` (`dbtest_nestedset_id` int(11) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL DEFAULT '', `slug` varchar(255) NOT NULL DEFAULT '', `lft` int(11) DEFAULT NULL, `rgt` int(11) DEFAULT NULL, `hash` char(40) DEFAULT NULL, PRIMARY KEY (`dbtest_nestedset_id`), KEY `lft` (`lft`), KEY `rgt` (`rgt`), KEY `lft_2` (`lft`,`rgt`), KEY `char` (`hash`))
+SELECT name FROM ' . $this->getDatabase() . '.sys.Tables WHERE type = \'U\';');
+CREATE TABLE `#__foobar_example` ( `example_id` int(10) unsigned NOT NULL AUTO_INCREMENT, `description` varchar(255) NOT NULL, `text` longtext, PRIMARY KEY (`example_id`) )
+CREATE TABLE `#__users` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `email` varchar(50) NOT NULL, `username` varchar(50) NOT NULL, `password` varchar(255) NOT NULL, `parameters` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `#__dbtest_lockedby` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `locked_by` INT NULL DEFAULT '0', PRIMARY KEY (`id`))
+CREATE TABLE IF NOT EXISTS `awf_bar` (`id` int(10) unsigned NOT NULL)
+SELECT COUNT(*) FROM ".$this->quoteSchemaObject($tableName);
+CREATE TABLE `awf_modules` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT NOT NULL DEFAULT '', `note` TEXT NOT NULL DEFAULT '', `content` TEXT NOT NULL DEFAULT '', `ordering` INTEGER NOT NULL DEFAULT '0', `position` TEXT DEFAULT NULL, `checked_out` INTEGER NOT NULL DEFAULT '0', `checked_out_time` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `publish_up` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `publish_down` TEXT NOT NULL DEFAULT '0000-00-00 00:00:00', `published` INTEGER NOT NULL DEFAULT '0', `module` TEXT DEFAULT NULL, `access` INTEGER NOT NULL DEFAULT '0', `showtitle` INTEGER NOT NULL DEFAULT '1', `params` TEXT NOT NULL DEFAULT '', `client_id` INTEGER NOT NULL DEFAULT '0', `language` TEXT NOT NULL DEFAULT '')

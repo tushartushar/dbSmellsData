@@ -1,0 +1,23 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, country_code TEXT, ' 'source_type TEXT, source_name TEXT)
+ in following column country_code of table assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, as_num INT, ' 'source_type TEXT, source_name TEXT, PRIMARY KEY(start_hex, ' 'next_start_hex))
+ in following column num_type of table asn_assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, as_num INT, ' 'source_type TEXT, source_name TEXT, PRIMARY KEY(start_hex, ' 'next_start_hex))
+ in following column ' ' of table asn_assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, country_code TEXT, ' 'source_type TEXT, source_name TEXT)
+ in following column start_hex of table assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, as_num INT, ' 'source_type TEXT, source_name TEXT, PRIMARY KEY(start_hex, ' 'next_start_hex))
+ in following column source_name of table asn_assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, country_code TEXT, ' 'source_type TEXT, source_name TEXT)
+ in following column ' ' of table assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, as_num INT, ' 'source_type TEXT, source_name TEXT, PRIMARY KEY(start_hex, ' 'next_start_hex))
+ in following column start_hex of table asn_assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, country_code TEXT, ' 'source_type TEXT, source_name TEXT)
+ in following column num_type of table assignments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS assignments(start_hex TEXT, ' 'next_start_hex TEXT, num_type TEXT, country_code TEXT, ' 'source_type TEXT, source_name TEXT)
+ in following column source_name of table assignments
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_descriptions(as_num INT, ' 'source_name TEXT, description TEXT)
+ in following column ' ' of table asn_descriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS asn_descriptions(as_num INT, ' 'source_name TEXT, description TEXT)
+ in following column description of table asn_descriptions

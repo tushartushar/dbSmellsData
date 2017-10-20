@@ -1,0 +1,10 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', 'database_connection_id']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE query_versions SET content = ?, version = ?, is_current_version = ?  WHERE id = ?
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', 'database_connections']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `query_versions` (`id` bigint(20) NOT NULL AUTO_INCREMENT,`content` text NOT NULL,`version` bigint(20) NOT NULL,`is_current_version` tinyint(4) NOT NULL,`query_id` bigint(20) NOT NULL,PRIMARY KEY (`id`),KEY `query_id` (`query_id`))
+ in following column `content` of table `query_versions`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', '.']
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queries( id INT PRIMARY KEY NOT NULL, key VARCHAR NOT NULL, database_connection_id INT NOT NULL)
+ in following column id and in column id of table database_connections

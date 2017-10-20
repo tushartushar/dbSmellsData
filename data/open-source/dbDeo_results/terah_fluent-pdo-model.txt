@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['users', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `users` ( `id` INTEGER PRIMARY KEY, `username` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `email` varchar(255) DEFAULT NULL, `comments` text, `status` int(1) NOT NULL DEFAULT '1')
+ in following column `comments` of table `users`

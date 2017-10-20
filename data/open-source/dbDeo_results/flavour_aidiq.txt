@@ -1,0 +1,4 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into ofGroupUser values (\'%s\',\'%s\' ,0)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE state(id integer,user varchar(40),session varchar(80),name varchar(80),value text)
+ in following column value of table state

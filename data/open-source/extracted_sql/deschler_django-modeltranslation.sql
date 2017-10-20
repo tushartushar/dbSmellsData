@@ -1,0 +1,1 @@
+CREATE TABLE `news_news` ( `id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `title` varchar(255) NOT NULL, `title_de` varchar(255) NULL, `title_en` varchar(255) NULL, `text` longtext NULL, `text_de` longtext NULL, `text_en` longtext NULL, )

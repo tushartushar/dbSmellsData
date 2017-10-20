@@ -1,0 +1,76 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, username text, var_name text, var_value text, UNIQUE(sid,var_name))
+ in following column sid of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket', 'status']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ticket_custom ( ticket integer, name text, value text, UNIQUE(ticket,name))
+ in following column value of table ticket_custom
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, authenticated int, var_name text, var_value text, UNIQUE(sid, var_name))
+ in following column var_name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, username text, var_name text, var_value text, UNIQUE(sid,var_name))
+ in following column username of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node_change ( rev text, path text, kind char(1), change char(1), base_path text, base_rev text, UNIQUE(rev, path, change))
+ in following column rev of table node_change
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE revision ( rev text PRIMARY KEY, time integer, author text, message text)
+ in following column message of table revision
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_old', 'sid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ticket_custom ( ticket integer, name text, value text, UNIQUE(ticket,name))
+ in following column name of table ticket_custom
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE component ( name text PRIMARY KEY, owner text, description text)
+ in following column name of table component
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column ipnr of table attachment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wiki ( name text, version integer, time integer, author text, ipnr text, text text, comment text, readonly integer, UNIQUE(name,version))
+ in following column author of table wiki
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE component ( name text PRIMARY KEY, owner text, description text)
+ in following column description of table component
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, username text, var_name text, var_value text, UNIQUE(sid,var_name))
+ in following column var_value of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column description of table attachment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wiki ( name text, version integer, time integer, author text, ipnr text, text text, comment text, readonly integer, UNIQUE(name,version))
+ in following column ipnr of table wiki
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column type of table attachment
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE component SET name=%s,owner=%s, description=%s  WHERE name=%s
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE version ( name text PRIMARY KEY, time integer, description text)
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE milestone ( id integer PRIMARY KEY, name text, time integer, descr text, UNIQUE(name))
+ in following column name of table milestone
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE revision ( rev text PRIMARY KEY, time integer, author text, message text)
+ in following column rev of table revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wiki ( name text, version integer, time integer, author text, ipnr text, text text, comment text, readonly integer, UNIQUE(name,version))
+ in following column text of table wiki
+Detected: Index Shotgun Variant: 3 Following index not used : ['session', 'var_name']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE milestone ( id integer PRIMARY KEY, name text, time integer, descr text, UNIQUE(name))
+ in following column id and in column id of table attachment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wiki ( name text, version integer, time integer, author text, ipnr text, text text, comment text, readonly integer, UNIQUE(name,version))
+ in following column comment of table wiki
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node_change ( rev text, path text, kind char(1), change char(1), base_path text, base_rev text, UNIQUE(rev, path, change))
+ in following column path of table node_change
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE milestone ( id integer PRIMARY KEY, name text, time integer, descr text, UNIQUE(name))
+ in following column descr of table milestone
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, username text, var_name text, var_value text, UNIQUE(sid,var_name))
+ in following column var_name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE revision ( rev text PRIMARY KEY, time integer, author text, message text)
+ in following column author of table revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE component ( name text PRIMARY KEY, owner text, description text)
+ in following column owner of table component
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column filename of table attachment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column id of table attachment
+Detected: Index Shotgun Variant: 3 Following index not used : ['session', 'sid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wiki ( name text, version integer, time integer, author text, ipnr text, text text, comment text, readonly integer, UNIQUE(name,version))
+ in following column name of table wiki
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attachment ( type text, id text, filename text, size integer, time integer, description text, author text, ipnr text, UNIQUE(type,id,filename))
+ in following column author of table attachment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, authenticated int, var_name text, var_value text, UNIQUE(sid, var_name))
+ in following column sid of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node_change ( rev text, path text, kind char(1), change char(1), base_path text, base_rev text, UNIQUE(rev, path, change))
+ in following column base_path of table node_change
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node_change ( rev text, path text, kind char(1), change char(1), base_path text, base_rev text, UNIQUE(rev, path, change))
+ in following column base_rev of table node_change
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE version ( name text PRIMARY KEY, time integer, description text)
+ in following column description of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session ( sid text, authenticated int, var_name text, var_value text, UNIQUE(sid, var_name))
+ in following column var_value of table (

@@ -1,0 +1,16 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types_test_data ( `TextCol` TEXT, `DateCol` DATETIME, `IntDateCol` INTEGER, `FloatCol` DOUBLE, `IntCol` INTEGER, `BoolCol` BOOLEAN, `IntColWithNull` INTEGER, `BoolColWithNull` BOOLEAN )
+ in following column `TextCol` of table types_test_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a, b) )
+ in following column a of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_trans (A INT, B TEXT)
+ in following column B of table test_trans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a(5), b(5)) )
+ in following column a of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a, b) )
+ in following column b of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a, b) )
+ in following column c of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a(5), b(5)) )
+ in following column b of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( a TEXT, b TEXT, c REAL, PRIMARY KEY (a(5), b(5)) )
+ in following column c of table test

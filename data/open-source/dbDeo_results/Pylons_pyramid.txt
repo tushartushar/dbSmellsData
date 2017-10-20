@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wikipages ( uid INTEGER NOT NULL, title TEXT, body TEXT, PRIMARY KEY (uid), UNIQUE (title) )
+ in following column body of table wikipages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE models ( id INTEGER NOT NULL, name TEXT, value INTEGER, CONSTRAINT pk_models PRIMARY KEY (id) )
+ in following column name of table models
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER NOT NULL, name TEXT NOT NULL, role TEXT NOT NULL, password_hash TEXT, CONSTRAINT pk_users PRIMARY KEY (id), CONSTRAINT uq_users_name UNIQUE (name) )
+ in following column role of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wikipages ( uid INTEGER NOT NULL, title TEXT, body TEXT, PRIMARY KEY (uid), UNIQUE (title) )
+ in following column title of table wikipages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER NOT NULL, name TEXT NOT NULL, role TEXT NOT NULL, password_hash TEXT, CONSTRAINT pk_users PRIMARY KEY (id), CONSTRAINT uq_users_name UNIQUE (name) )
+ in following column password_hash of table users
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER NOT NULL, name TEXT NOT NULL, role TEXT NOT NULL, password_hash TEXT, CONSTRAINT pk_users PRIMARY KEY (id), CONSTRAINT uq_users_name UNIQUE (name) )
+ in following column name of table users

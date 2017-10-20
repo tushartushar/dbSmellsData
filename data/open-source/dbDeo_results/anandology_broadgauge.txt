@@ -1,0 +1,33 @@
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column city of table users
+Detected: Obsolete Column TypesFound in following statement: create table comment ( id serial primary key, parent_id integer references comment, workshop_id integer references workshop, author_id integer references users, comment text, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column comment of table (
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column bio of table users
+Detected: Obsolete Column TypesFound in following statement: create table organization_members ( id serial primary key, org_id integer not null references organization, user_id integer not null references users, role text, since timestamp default (current_timestamp at time zone 'UTC'), unique (org_id, user_id))
+ in following column role of table organization_members
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'tstamp']
+Detected: Obsolete Column TypesFound in following statement: create table activity ( id serial primary key, type text, info JSON, user_id integer references users, user_name text, tstamp timestamp default (current_timestamp at time zone 'UTC'))
+ in following column type of table activity
+Detected: Obsolete Column TypesFound in following statement: create table organization ( id serial primary key, name text, city text)
+ in following column city of table organization
+Detected: Obsolete Column TypesFound in following statement: create table activity ( id serial primary key, type text, info JSON, user_id integer references users, user_name text, tstamp timestamp default (current_timestamp at time zone 'UTC'))
+ in following column user_name of table activity
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column username of table users
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column website of table users
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column github of table users
+Detected: Obsolete Column TypesFound in following statement: create table workshop_trainers ( id serial primary key, workshop_id integer references workshop, trainer_id integer references users, status text, tstamp timestamp default (current_timestamp at time zone 'UTC'), unique (workshop_id, trainer_id))
+ in following column status of table workshop_trainers
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: create table organization ( id serial primary key, name text, city text)
+ in following column name of table organization
+Detected: Obsolete Column TypesFound in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+ in following column phone of table users
+Detected: God Table Found in following statement: create table users ( id serial primary key, name text, email text unique not null, username text unique, phone text, city text, bio text, website text, github text, is_admin boolean, is_trainer boolean, created timestamp default (current_timestamp at time zone 'UTC'))
+

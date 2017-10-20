@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'nodeid_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nodeids ( id INTEGER PRIMARY KEY, nodeid TEXT )
+ in following column nodeid of table nodeids
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'file_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( id INTEGER PRIMARY KEY, filename TEXT )
+ in following column filename of table files

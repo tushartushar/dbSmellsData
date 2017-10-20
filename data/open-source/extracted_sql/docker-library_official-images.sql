@@ -1,0 +1,8 @@
+INSERT INTO test VALUES (2, 3, 'goodbye!')
+INSERT INTO test VALUES (1, 2, 'hello')
+CREATE TABLE users (	user_id int PRIMARY KEY,	fname text,	lname text)
+CREATE TABLE test (a INT, b INT, c VARCHAR(255))
+CREATE TABLE test (a INT, b INT, c VARCHAR(255))
+CREATE TABLE test (a INT, b INT, c VARCHAR(255))
+INSERT INTO test VALUES (2, 3, 'goodbye!')
+INSERT INTO test VALUES (1, 2, 'hello')

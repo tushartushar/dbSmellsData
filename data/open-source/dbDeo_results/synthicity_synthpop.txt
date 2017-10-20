@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['staging', 'puma00']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staging', '.']

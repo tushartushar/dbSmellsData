@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `vegas_sample` ( id INTEGER PRIMARY KEY, type TEXT, value INTEGER, created_at TIMESTAMP, updated_at TIMESTAMP)
+ in following column type of table `vegas_sample`
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,15 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`pacticipants`', 'DELETE']
+Detected: God Table Found in following statement: CREATE TABLE `webhooks` (`id` integer NOT NULL PRIMARY KEY AUTOINCREMENT, `uuid` varchar(255) NOT NULL CONSTRAINT `uq_webhook_uuid` UNIQUE, `method` varchar(255) NOT NULL, `url` varchar(255) NOT NULL, `body` varchar(255), `is_json_request_body` Boolean, `consumer_id` integer NOT NULL CONSTRAINT `fk_webhooks_consumer` REFERENCES `pacticipants`, `provider_id` integer NOT NULL CONSTRAINT `fk_webhooks_provider` REFERENCES `pacticipants`, `created_at` timestamp, `updated_at` timestamp, `username` varchar(255), `password` varchar(255))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`pacticipants`', 'NO']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`versions`', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `pacts`(`id` integer DEFAULT (NULL) NOT NULL PRIMARY KEY, `json_content` mediumtext DEFAULT (NULL) NULL, `version_id` integer DEFAULT (NULL) NOT NULL, `provider_id` integer DEFAULT (NULL) NOT NULL, `created_at` timestamp DEFAULT (NULL) NOT NULL, `updated_at` timestamp DEFAULT (NULL) NOT NULL, FOREIGN KEY (`provider_id`) REFERENCES `pacticipants` ON DELETE NO ACTION ON UPDATE NO ACTION, FOREIGN KEY (`version_id`) REFERENCES `versions` ON DELETE NO ACTION ON UPDATE NO ACTION)
+ in following column `json_content` of table `pacts`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`pacticipants`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`pacticipants`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`versions`', 'NO']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`versions`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`versions`', 'ACTION']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`pacticipants`', 'ACTION']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`versions`', 'ON']

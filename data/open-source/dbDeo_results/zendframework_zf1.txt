@@ -1,0 +1,36 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE guestbook ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, email VARCHAR(32) NOT NULL DEFAULT 'noemail@test.com', comment TEXT NULL, created DATETIME NOT NULL)
+ in following column comment of table guestbook
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `sandboxTransaction` ( `id` INTEGER PRIMARY KEY, `foreign_id` INT( 1 ) NOT NULL , `name` TEXT NOT NULL )
+ in following column `name` of table `sandboxTransaction`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `sandboxForeign` ( `id` INTEGER PRIMARY KEY, `name` TEXT NOT NULL )
+ in following column `id` and in column `id` of table `subscription`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE message( message_id bigserial NOT NULL, queue_id integer, handle character(32), body character varying(8192) NOT NULL, md5 character(32) NOT NULL, timeout double precision, created integer, CONSTRAINT message_pk PRIMARY KEY (message_id), CONSTRAINT message_ibfk_1 FOREIGN KEY (queue_id) REFERENCES queue (queue_id) MATCH SIMPLE ON UPDATE CASCADE ON DELETE CASCADE)
+ in following column created and in column created of table guestbook
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['queue', 'queue_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `session` ( `session_id` char(32) NOT NULL, `save_path` varchar(32) NOT NULL, `name` varchar(32) NOT NULL DEFAULT '', `modified` int, `lifetime` int, `session_data` text, PRIMARY KEY (`Session_ID`, `save_path`, `name`))
+ in following column `session_data` of table `session`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache (id TEXT PRIMARY KEY, content BLOB, lastModified INTEGER, expire INTEGER)
+ in following column id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `session` ( `id` char(32), `modified` int, `lifetime` int, `data` text, PRIMARY KEY (`id`))
+ in following column `data` of table `session`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message( message_id INTEGER PRIMARY KEY AUTOINCREMENT, queue_id INTEGER PRIMARY KEY, handle CHAR(32), body VARCHAR(8192) NOT NULL, md5 CHAR(32) NOT NULL, timeout REAL, created INTEGER, FOREIGN KEY (queue_id) REFERENCES queue(queue_id))
+ in following column timeout of table message
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `session` ( `session_id` char(32) NOT NULL, `save_path` varchar(32) NOT NULL, `name` varchar(32) NOT NULL DEFAULT '', `modified` int, `lifetime` int, `session_data` text, PRIMARY KEY (`Session_ID`, `save_path`, `name`))
+ in following column `name` and in column `name` of table `sandboxForeign`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queue( queue_id serial NOT NULL, queue_name character varying(100) NOT NULL, timeout smallint NOT NULL DEFAULT 30, CONSTRAINT queue_pk PRIMARY KEY (queue_id))
+ in following column timeout and in column timeout of table message
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `message` ( `message_id` bigint(20) unsigned NOT NULL auto_increment, `queue_id` int(10) unsigned NOT NULL, `handle` char(32) default NULL, `body` varchar(8192) NOT NULL, `md5` char(32) NOT NULL, `timeout` decimal(14,4) unsigned default NULL, `created` int(10) unsigned NOT NULL, PRIMARY KEY (`message_id`), UNIQUE KEY `message_handle` (`handle`), KEY `message_queueid` (`queue_id`))
+ in following column `timeout` and in column `timeout` of table `queue`
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag', 'name']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queue( queue_id serial NOT NULL, queue_name character varying(100) NOT NULL, timeout smallint NOT NULL DEFAULT 30, CONSTRAINT queue_pk PRIMARY KEY (queue_id))
+ in following column queue_id and in column queue_id of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `sandboxForeign` ( `id` INTEGER PRIMARY KEY, `name` TEXT NOT NULL )
+ in following column `name` of table `sandboxForeign`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users ( id INTEGER NOT NULL PRIMARY KEY, username VARCHAR(50) UNIQUE NOT NULL, password VARCHAR(32) NULL, password_salt VARCHAR(32) NULL, real_name VARCHAR(150) NULL)
+ in following column id and in column id of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column name of table tag
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'expire']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column id of table tag

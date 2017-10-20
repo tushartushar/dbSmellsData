@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table test_table ( ... name string, ... value float ... )
+ in following column . of table test_table
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,6 @@
+SELECT * FROM `%s`
+CREATE TABLE IF NOT EXISTS `%s` (			 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,			 `method_id` varchar(32) NOT NULL DEFAULT '',			 `description` varchar(32) NOT NULL DEFAULT '',			 PRIMARY KEY (`id`)			)
+CREATE TABLE IF NOT EXISTS `%s` (			 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,			 `method_id` varchar(32) NOT NULL DEFAULT '',			 `description` varchar(32) NOT NULL DEFAULT '',			 PRIMARY KEY (`id`),			 UNIQUE KEY `method_id` (`method_id`)			)
+CREATE TABLE IF NOT EXISTS `%s` (		 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,		 `method_id` varchar(32) NOT NULL DEFAULT '',		 `description` varchar(32) NOT NULL DEFAULT '',		 PRIMARY KEY (`id`)		)
+CREATE TABLE IF NOT EXISTS `%s` (		 `id` int(11) unsigned NOT NULL AUTO_INCREMENT,		 `method_id` varchar(32) NOT NULL DEFAULT '',		 `description` varchar(32) NOT NULL DEFAULT '',		 PRIMARY KEY (`id`),		 UNIQUE KEY `method_id` (`method_id`)		)
+CREATE TABLE IF NOT EXISTS `%s` (			`order_id` int(11) NOT NULL,			`method` varchar(3) NOT NULL,			`transaction_id` varchar(32) NOT NULL,			`bank_account` varchar(15) NOT NULL,			`bank_status` varchar(20) NOT NULL,			`created_at` datetime NOT NULL,			`updated_at` datetime DEFAULT NULL,			 UNIQUE KEY `transaction_id` (`transaction_id`),			 KEY `order_id` (`order_id`)		)

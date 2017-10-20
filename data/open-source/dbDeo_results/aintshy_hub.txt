@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE human SET name=?, year=?, sex=sex WHERE id=?
+

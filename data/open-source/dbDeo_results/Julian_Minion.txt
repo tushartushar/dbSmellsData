@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE entries ( id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, text TEXT NOT NULL )
+ in following column title of table entries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE entries ( id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, text TEXT NOT NULL )
+ in following column text of table entries
+Detected: Index Shotgun Variant: 1

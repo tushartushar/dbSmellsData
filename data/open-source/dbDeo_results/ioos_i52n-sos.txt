@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE integer_settings (value integer, identifier varchar not null, primary key (identifier))
+ in following column value and in column value of table uri_settings
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE administrator_user (id integer, password varchar, username varchar UNIQUE, primary key (id))
+

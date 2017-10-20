@@ -1,0 +1,22 @@
+SELECT * FROM tests WHERE id = $id
+None
+CREATE TABLE <nazwa\-tabeli>(username VARCHAR(255)PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE<tabel>(kasutaja VARCHAR(255) PRIMARY KEY, user_lastvisit INTUNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) NOT NULL DEFAULT0)
+SELECT username FROM " + db_extra_table_ + " WHERE UPPER(username)=UPPER('" + name + "')
+CREATE TABLE <table\-name>(username VARCHAR(255) PRIMARYKEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderatorTINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE <\->(usernameVARCHAR(255) PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+UPDATE tests SET ai_ident1 = ?, ai_ident2 = ?, version = ? , faction1 = ?, faction2 = ?  WHERE id = ?
+CREATE TABLE <table\-name>(usernameVARCHAR(255) PRIMARY KEY user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE <jmno_tabulky>(username VARCHAR(255)PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE <tbla\-neve>(usernameVARCHAR(255) PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE <table\-name>(username VARCHAR(255) PRIMARY KEY,user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4)NOT NULL DEFAULT 0)
+CREATE TABLE <\->(username VARCHAR(255)PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+SELECT username FROM " + db_users_table_ + " WHERE UPPER(username)=UPPER('" + name + "')
+CREATE TABLE <table\-name>(usernameVARCHAR(255) PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE <nome\-da\-tboa>(usernameVARCHAR(255) PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE<table\-name>(username VARCHAR(255) PRIMARY KEY, user_lastvisit INTUNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) NOT NULL DEFAULT0)
+CREATE TABLE <table-name>(username VARCHAR(255) PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)
+CREATE TABLE<taulunnimi>(username VARCHAR(255) PRIMARY KEY, user_lastvisit INTUNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) NOT NULL DEFAULT0)
+CREATE TABLE<ime\-tabele>(username VARCHAR(255) PRIMARY KEY, user_lastvisit INTUNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4) NOT NULL DEFAULT0)
+CREATE TABLE <nazov\-tabulky>(username VARCHAR(255) PRIMARY KEY,user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0, user_is_moderator TINYINT(4)NOT NULL DEFAULT 0)
+CREATE TABLE <table\-name>(username VARCHAR(255)PRIMARY KEY, user_lastvisit INT UNSIGNED NOT NULL DEFAULT 0,user_is_moderator TINYINT(4) NOT NULL DEFAULT 0)

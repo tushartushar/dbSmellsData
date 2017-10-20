@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['project', 'id']
+Detected: Metadata as Data Found in following statement: create table alias ( uuid varchar not null primary key, name varchar not null, command varchar not null, unique(name) )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['keyword', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['task', 'id']

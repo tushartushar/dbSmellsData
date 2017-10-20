@@ -1,0 +1,1 @@
+CREATE TABLE knights ( name VARCHAR(10) NOT NULL, dob DATETIME, kg DECIMAL(6, 4), brave BOOLEAN NOT NULL, CHECK (brave IN (0, 1)) )

@@ -1,0 +1,9 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into test values (default, 'tomorrow', 1, 1.1, 'tomorrow', '{1,2,3}')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into test values (default, 'yesterday', -1, -1.1, 'yesterday', '{-1,0,1}')
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table test (		id serial primary key, 		created timestamp, 		counter int, 		number decimal, 		data text,		list int[],		prop hstore	)
+ in following column data of table test
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into test values (default, 'today', 0, 0, 'today', '{0,1,2}')
+

@@ -1,0 +1,42 @@
+INSERT INTO t VALUES (1,AES_ENCRYPT('text', SHA2('My secret passphrase',512)))
+CREATE TABLE t2 ( -> a INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -> message CHAR(20))
+CREATE TABLE t1 ( -> a INT NOT NULL AUTO_INCREMENT PRIMARY KEY, -> message CHAR(20))
+SELECT * FROM animals;
+CREATE TABLE product_order ( no INT NOT NULL AUTO_INCREMENT, product_category INT NOT NULL, product_id INT NOT NULL, customer_id INT NOT NULL, PRIMARY KEY(no), INDEX (product_category, product_id), INDEX (customer_id), FOREIGN KEY (product_category, product_id) REFERENCES product(category, id) ON UPDATE CASCADE ON DELETE RESTRICT, FOREIGN KEY (customer_id) REFERENCES customer(id))
+CREATE TABLE t1 (id INT)
+SELECT AsBinary(g) FROM geom;
+CREATE TABLE animals ( id MEDIUMINT NOT NULL AUTO_INCREMENT, name CHAR(30) NOT NULL, PRIMARY KEY (id))
+CREATE TABLE new_table (...)
+SELECT COUNT(*) FROM mytable;
+CREATE TABLE t (i INT)
+CREATE TABLE geom (g GEOMETRY NOT NULL, SPATIAL INDEX(g))
+SELECT col1, col2 FROM table1 PROCEDURE ANALYSE(10, 2000);
+CREATE TABLE t (qty INT, price INT)
+SELECT * FROM tmp WHERE a = :a OR b = ? OR a = :a", ["a
+SELECT * FROM t;
+INSERT INTO tmp VALUES (1)
+CREATE TABLE tmp (a int)
+SELECT a FROM tmp; SELECT b FROM tmp WHERE a = 5; SELECT b AS d, SUM(a) AS c FROM tmp WHERE b < 7
+SELECT a FROM tmp
+SELECT * FROM v;
+CREATE TABLE total ( -> a INT NOT NULL AUTO_INCREMENT, -> message CHAR(20), INDEX(a))
+INSERT INTO tVALUES (1,AES_ENCRYPT('text',UNHEX('F3229A0B371ED2D9441B830D21A390C3')))
+INSERT INTO t3 VALUES (fanta)
+SELECT * FROM table WHERE column = ?", ["a value
+CREATE TABLE t (c1 VARCHAR(39) CHARACTER SET utf8 DEFAULT NULL)
+SELECT * FROM t WHERE t.id = f(t.name);
+CREATE TABLE customer ( id INT NOT NULL, PRIMARY KEY (id))
+INSERT INTO tmp VALUES (5, 6)
+INSERT INTO t VALUES(1)
+CREATE TABLE test.t (s1 INT, PRIMARY KEY (s1))
+SELECT * FROM tmp WHERE a = ? OR b = :num
+CREATE TABLE T1 (id INT)
+INSERT INTO tmp VALUES (:foo, :bar)
+SELECT * FROM table WHERE column = :value
+SELECT * FROM mysql.user;
+INSERT INTO tmp VALUES (5, 6)
+SELECT a FROM tmp'));
+SELECT enum_col FROM tbl_name ORDER BY CAST(enum_col AS CHAR);
+INSERT INTO t VALUES(3, 50)
+SELECT * FROM tmp WHERE a = ? OR b = ?
+INSERT INTO t3 VALUES (fanta)

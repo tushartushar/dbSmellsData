@@ -1,0 +1,18 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE producers ( id uuid DEFAULT uuid_generate_v4() NOT NULL, name text NOT NULL, encrypted_api_key text NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, updated_at timestamp with time zone)
+ in following column name of table producers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id uuid DEFAULT uuid_generate_v4() NOT NULL, producer_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, target_type message_target NOT NULL, target_id uuid NOT NULL, title text NOT NULL, body text NOT NULL, action_label text, action_url text)
+ in following column title of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id uuid DEFAULT uuid_generate_v4() NOT NULL, producer_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, target_type message_target NOT NULL, target_id uuid NOT NULL, title text NOT NULL, body text NOT NULL, action_label text, action_url text)
+ in following column action_url of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE producers ( id uuid DEFAULT uuid_generate_v4() NOT NULL, name text NOT NULL, encrypted_api_key text NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, updated_at timestamp with time zone)
+ in following column encrypted_api_key of table producers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id uuid DEFAULT uuid_generate_v4() NOT NULL, heroku_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, updated_at timestamp with time zone, email text NOT NULL)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id uuid DEFAULT uuid_generate_v4() NOT NULL, producer_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, target_type message_target NOT NULL, target_id uuid NOT NULL, title text NOT NULL, body text NOT NULL, action_label text, action_url text)
+ in following column body of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE followups ( id uuid DEFAULT uuid_generate_v4() NOT NULL, message_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, body text NOT NULL)
+ in following column body of table followups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id uuid DEFAULT uuid_generate_v4() NOT NULL, producer_id uuid NOT NULL, created_at timestamp with time zone DEFAULT now() NOT NULL, target_type message_target NOT NULL, target_id uuid NOT NULL, title text NOT NULL, body text NOT NULL, action_label text, action_url text)
+ in following column action_label of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schema_migrations ( filename text NOT NULL)
+ in following column filename of table schema_migrations

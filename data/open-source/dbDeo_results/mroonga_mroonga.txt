@@ -1,0 +1,942 @@
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key auto_increment,body text,fulltext index body_index (body))
+ in following column body of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 decimal(65,30), c3 decimal(65,30), unique key uk1(c2,c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,party_year YEAR,KEY (party_year))
+ in following column title of table aniversary_memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, index using hash (c2))
+
+Detected: Multicolumn Attribute Found in following statement: create table t2 (c1 int primary key, c2 int, c3 int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( c1 INT PRIMARY KEY AUTO_INCREMENT, c2 INT, c3 INT, ... c11 VARCHAR(20), c12 VARCHAR(20), ... c20 DATETIME )
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,FULLTEXT INDEX title_index (title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 tinyint)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 blob)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items ( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, score1 INT, score2 INT, created_at DATETIME, INDEX (score1, created_at, score2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (title VARCHAR(255),content TEXT,FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key auto_increment, title text, body text, fulltext index title_index (title), fulltext index body_index (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,temperature DECIMAL(6, 3),KEY (temperature))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT UNSIGNED, content TEXT, FULLTEXT INDEX(content), KEY(id))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 SMALLINT UNSIGNED, c2 SMALLINT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, content TEXT, FULLTEXT INDEX(content) )
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( -> id INT PRIMARY KEY AUTO_INCREMENT, -> content VARCHAR(255), -> FULLTEXT INDEX (content) -> )
+ in following column - of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 tinyblob)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 int NOT NULL,c2 text NOT NULL,c3 int NOT NULL,c4 int NOT NULL,PRIMARY KEY(c1),KEY idx1(c3,c4),FULLTEXT KEY ft1(c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, temperature DECIMAL(6, 3))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records (time TIME PRIMARY KEY,title TEXT)
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries_innodb (id INT PRIMARY KEY AUTO_INCREMENT,body TEXT,flag TINYINT(2),INDEX (flag))
+ in following column body of table diaries_innodb
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at DATETIME(6))
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE memos (title VARCHAR(255),tag1 VARCHAR(10),tag2 VARCHAR(10),tag3 VARCHAR(10),tag4 VARCHAR(10),tag5 VARCHAR(10),tag6 VARCHAR(10),tag7 VARCHAR(10),tag8 VARCHAR(10),tag9 VARCHAR(10),tag10 VARCHAR(10),FULLTEXT INDEX (tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE releases ( version DECIMAL PRIMARY KEY, message TEXT)
+ in following column message of table releases
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 SMALLINT, c2 SMALLINT, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `snippet_test` ( `id` int(11) NOT NULL, `text` text, PRIMARY KEY (`id`), FULLTEXT KEY `text` (`text`) )
+ in following column `text` of table `snippet_test`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (q INT UNSIGNED,e TEXT,FULLTEXT INDEX(e),KEY(q))
+ in following column e of table memos
+Detected: Clone Tables Found in following statement: create table t2 (c1 int primary key, c2 varchar(255))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS memos (id VARCHAR(45) NOT NULL PRIMARY KEY,text TEXT NOT NULL,FULLTEXT KEY (text))
+ in following column text of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (... FULLTEXT INDEX index_name (column_name))
+ in following column . of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, day DATE, title TEXT, UNIQUE KEY day (day))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at DATETIME)
+ in following column title of table diaries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table_name (... FULLTEXT INDEX index_name (column_name))
+ in following column . and in column . of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( date TIMESTAMP NOT NULL, title VARCHAR(100) NOT NULL, content TEXT NOT NULL, PRIMARY KEY (date, title))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,score1 INT,score2 INT,created_at DATETIME,INDEX (created_at, score1, score2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL,year INT UNSIGNED,month INT UNSIGNED,day INT UNSIGNED,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content),KEY(month),KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (_id INT,id INT UNSIGNED NOT NULL,year INT UNSIGNED,month INT UNSIGNED,day INT UNSIGNED,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content),KEY(month),KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE queries (user_id INT,query TEXT)
+ in following column query of table queries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,average TIME,max TIME,KEY (average))
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT NOT NULL PRIMARY KEY, content TEXT NOT NULL, FULLTEXT INDEX (content) NORMALIZER='NormalizerAuto')
+ in following column content of table memos
+Detected: Metadata as Data Found in following statement: create table scores (given_name varchar(30) not null,family_name varchar(30) not null,score int not null,primary key property (given_name, family_name, score))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),category VARCHAR(10),content TEXT,FULLTEXT INDEX (title, category, content))
+ in following column content and in column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at DATETIME)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 text, fulltext index (c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( time TIMESTAMP(6) PRIMARY KEY, title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, year INT UNSIGNED, month INT UNSIGNED, day INT UNSIGNED, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content), KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contents (_i INT,content TEXT NOT NULL,FULLTEXT INDEX(content))
+ in following column content of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT NOT NULL PRIMARY KEY, content TEXT NOT NULL, FULLTEXT INDEX (content) NORMALIZER='NormalizerAuto' )
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, year INT UNSIGNED, month INT UNSIGNED, day INT UNSIGNED, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content), KEY(month), KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX title_index (title),FULLTEXT INDEX body_index (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, user_id INT UNSIGNED NOT NULL, title TEXT, FULLTEXT INDEX (title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, `_id` int, index(`_id`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 INT UNSIGNED,c2 INT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL,year INT UNSIGNED,month INT UNSIGNED,day INT UNSIGNED,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content),KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_groonga` ( `id` bigint(1) unsigned NOT NULL, `video_id` varchar(64) NOT NULL, `description` text, `tags_unpack` text, PRIMARY KEY (`video_id`), FULLTEXT INDEX (`description`), FULLTEXT INDEX (`tags_unpack`))
+ in following column `tags_unpack` of table `videos_groonga`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (column_name FLOAT)
+ in following column column_name of table (
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 int auto_increment, primary key(c1), key idx1(c2))
+
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key,content text,fulltext index (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( content text)
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key auto_increment, title text, body text, fulltext index title_index (title), fulltext index body_index (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX body_index (body))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, `_id` int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id int PRIMARY KEY,title varchar(255),content text,FULLTEXT INDEX (title))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 int, _id int)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 varbinary(10) primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( `content` text, FULLTEXT INDEX content_index (content) )
+ in following column `content` of table comments
+Detected: Duplicate Column Names Found in following statement: create table listing (id int primary key auto_increment not null,last_name char(30) not null,first_name char(30) not null,index name (last_name, first_name))
+ in following column first_name and in column first_name of table users
+Detected: Clone Tables Found in following statement: create table t1 (c1 mediumint primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_master` ( `id` bigint(1) unsigned NOT NULL, `video_id` varchar(64) NOT NULL, `description` text, `tags_unpack` text, PRIMARY KEY (`video_id`))
+ in following column `tags_unpack` of table `videos_master`
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 float primary key)
+ in following column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs (timestamp DATETIME,message TEXT)
+ in following column message of table logs
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 varchar(100), fulltext index(c2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos ( party_year YEAR PRIMARY KEY, title TEXT)
+ in following column title of table aniversary_memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at TIMESTAMP(6),updated_at TIMESTAMP(6),KEY (updated_at))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ft(a INT DEFAULT 0,b TEXT,c TEXT,PRIMARY KEY(a),FULLTEXT KEY ftx1(b),FULLTEXT KEY ftx2(c))
+ in following column b of table ft
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX title_index (title), FULLTEXT INDEX body_index (body))
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE memos ( title VARCHAR(255), tag1 VARCHAR(10), tag2 VARCHAR(10), tag3 VARCHAR(10), tag4 VARCHAR(10), tag5 VARCHAR(10), tag6 VARCHAR(10), tag7 VARCHAR(10), tag8 VARCHAR(10), tag9 VARCHAR(10), tag10 VARCHAR(10), FULLTEXT INDEX (tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( `id` INTEGER AUTO_INCREMENT, `title` text, `content` text, PRIMARY KEY(`id`), FULLTEXT INDEX text_index (title, content) )
+ in following column FULLTEXT of table memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 varchar(255))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 int NOT NULL,c2 text NOT NULL,c3 int NOT NULL,c4 int NOT NULL,PRIMARY KEY(c1),KEY idx1(c3,c4),FULLTEXT KEY ft1(c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY, title VARCHAR(255), category VARCHAR(10), content TEXT, FULLTEXT INDEX (title, category, content))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids ( id FLOAT, value FLOAT, KEY (id, value))
+ in following column value of table ids
+Detected: Duplicate Column Names Found in following statement: create table t1 (c1 int primary key, c2 varchar(255), c3 text, fulltext index(c2), fulltext index(c3))
+ in following column c3 and in column c3 of table alphabet
+Detected: Clone Tables Found in following statement: create table t1 (c1 double primary key)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 BIGINT UNSIGNED,c2 BIGINT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,temperature DECIMAL)
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 text, fulltext index ft (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids (id FLOAT,value FLOAT,KEY (id, value))
+ in following column value of table ids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at DATETIME(6),KEY (created_at))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),category VARCHAR(10),content TEXT,FULLTEXT INDEX (title, category, content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id int NOT NULL PRIMARY KEY, content text, FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE texts ( id INT PRIMARY KEY, matched TEXT, not_matched TEXT, FULLTEXT KEY (matched), FULLTEXT KEY (not_matched))
+ in following column matched of table texts
+Detected: Obsolete Column TypesFound in following statement: create table comments(comment int unsigned primary key,content text not null)
+ in following column content of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, temperature DECIMAL)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ft( a INT DEFAULT 0, b TEXT, c TEXT, PRIMARY KEY(a), FULLTEXT KEY ftx1(b), FULLTEXT KEY ftx2(c))
+ in following column c of table ft
+Detected: Clone Tables Found in following statement: create table t1 (c1 varchar(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs(message TEXT,FULLTEXT KEY (message))
+ in following column message of table logs
+Detected: Clone Tables Found in following statement: create table t1 (c1 bit primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (time TIMESTAMP PRIMARY KEY,title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY, title VARCHAR(255), content TEXT, FULLTEXT INDEX (title, content))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, party_year YEAR, KEY (party_year))
+ in following column title of table aniversary_memos
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int, c2 int, c3 text)
+ in following column c3 of table t1
+Detected: Clone Tables Found in following statement: create table t1 (c1 date)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(64), content TEXT, FULLTEXT INDEX(content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 float)
+
+Detected: Clone Tables Found in following statement: create table t1 (_id int, a int, key (_id) using hash)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 varchar(5) primary key, c2 varchar(5), c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id int unsigned PRIMARY KEY AUTO_INCREMENT,O text,FULLTEXT INDEX (O))
+ in following column O of table users
+Detected: Metadata as Data Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title VARCHAR(40),body VARCHAR(140))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, index using hash (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE texts (id INT PRIMARY KEY,matched TEXT,not_matched TEXT,FULLTEXT KEY (matched),FULLTEXT KEY (not_matched))
+ in following column matched of table texts
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,temperature DECIMAL(6, 3))
+ in following column temperature and in column temperature of table temperatures
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 int, c3 text, fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs( message TEXT, host TEXT, FULLTEXT KEY (message), FULLTEXT KEY (host))
+ in following column host of table logs
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE ids ( id1 INT, id2 INT)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 datetime primary key)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 BIGINT UNSIGNED, c2 BIGINT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE keywords (keyword text)
+ in following column keyword of table keywords
+Detected: Multicolumn Attribute Found in following statement: create table t1 ( c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE scores ( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, score1 INT NOT NULL, score2 INT NOT NULL, INDEX (score1, score2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 tinytext)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,temperature DECIMAL,KEY (temperature))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 mediumtext)
+ in following column c1 of table t1
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 varchar(100))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 varbinary(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL,date DATETIME,content TEXT,FULLTEXT INDEX(content),KEY(date))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 VARCHAR(10), c2 VARCHAR(10), KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( c1 int NOT NULL, c2 text NOT NULL, c3 int NOT NULL, c4 int NOT NULL, PRIMARY KEY(c1), KEY idx1(c3,c4), FULLTEXT KEY ft1(c2))
+
+Detected: Clone Tables Found in following statement: create table t1 ( c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 double)
+
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key,title varchar(255),content text,fulltext index (title, content),fulltext index (title),fulltext index (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `snippet_test` ( `id` int(11) NOT NULL, `text` text, PRIMARY KEY (`id`), FULLTEXT KEY `text` (`text`) )
+ in following column FULLTEXT of table `snippet_test`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ft(a INT DEFAULT 0,b TEXT,c TEXT,PRIMARY KEY(a),FULLTEXT KEY ftx1(b),FULLTEXT KEY ftx2(c))
+ in following column c of table ft
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int, `_id` text)
+ in following column `_id` of table t1
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key, title varchar(255), content text, fulltext index (title, content), fulltext index (title), fulltext index (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (date TIMESTAMP NOT NULL,title VARCHAR(100) NOT NULL,content TEXT NOT NULL,PRIMARY KEY (date, title))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE releases (version DECIMAL(6, 3) PRIMARY KEY,message TEXT)
+ in following column message of table releases
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, date DATETIME, content TEXT, FULLTEXT INDEX(content), KEY(date))
+ in following column date and in column date of table date_limitation
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key auto_increment,body text)
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (column_name TINYTEXT)
+ in following column column_name of table (
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key auto_increment,title text,body text,fulltext index title_index (title),fulltext index body_index (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( day DATETIME PRIMARY KEY, title TEXT)
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 INT UNSIGNED, c2 INT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Clone Tables Found in following statement: create table t2 (c1 int)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 datetime)
+
+Detected: Obsolete Column TypesFound in following statement: create table t2 (c1 int primary key, c2 text, fulltext index(c2))
+ in following column c2 of table t2
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_master` ( `id` bigint(1) unsigned NOT NULL, `video_id` varchar(64) NOT NULL, `description` text, `tags_unpack` text, PRIMARY KEY (`video_id`))
+ in following column `description` of table `videos_master`
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_groonga` (`id` bigint(1) unsigned NOT NULL,`video_id` varchar(64) NOT NULL,`description` text,`tags_unpack` text,PRIMARY KEY (`video_id`),FULLTEXT INDEX (`description`),FULLTEXT INDEX (`tags_unpack`))
+ in following column `tags_unpack` of table `videos_groonga`
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, _id int, key idx1(c2), fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mroonga_releases ( id INT PRIMARY KEY AUTO_INCREMENT, release_title TEXT, release_year YEAR, KEY (release_year), FULLTEXT KEY (release_title))
+ in following column release_title of table mroonga_releases
+Detected: Clone Tables Found in following statement: create table t1 (_id int, a int, unique key (_id) using hash)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shops (id INT PRIMARY KEY AUTO_INCREMENT,name TEXT,location GEOMETRY NOT NULL,SPATIAL KEY location_index (location))
+ in following column name of table shops
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 SMALLINT,c2 SMALLINT,KEY idx1(c1, c2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (_id int, a int, PRIMARY KEY (_id) USING HASH)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contents ( _id INT, content TEXT NOT NULL, FULLTEXT INDEX(content))
+ in following column content of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_master` (`id` bigint(1) unsigned NOT NULL,`video_id` varchar(64) NOT NULL,`description` text,`tags_unpack` text,PRIMARY KEY (`video_id`))
+ in following column `description` of table `videos_master`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bugs (id INT UNSIGNED PRIMARY KEY,tags TEXT FLAGS='COLUMN_VECTOR')
+ in following column tags of table bugs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at DATETIME,KEY (created_at))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( title VARCHAR(255), content TEXT, FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE books ( `id` INTEGER AUTO_INCREMENT, `title` text, PRIMARY KEY(`id`), FULLTEXT INDEX title_index (title) )
+ in following column `title` of table books
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, primary key (_id) using hash)
+
+Detected: Duplicate Column Names Found in following statement: create table t1 (c1 smallint primary key)
+ in following column c1 and in column c1 of table t3
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE integers ( id INT PRIMARY KEY AUTO_INCREMENT, value INT, KEY (value))
+ in following column value and in column value of table ids
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 SMALLINT UNSIGNED,c2 SMALLINT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 VARCHAR(10),c2 VARCHAR(10),KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 longtext)
+ in following column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at TIMESTAMP(6), updated_at TIMESTAMP(6), KEY (updated_at))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( `id` INTEGER AUTO_INCREMENT, `title` text, `content` text, PRIMARY KEY(`id`), FULLTEXT INDEX text_index (title, content) )
+ in following column `content` of table memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 int auto_increment, primary key(c1), key idx1(c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX (body))
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( c1 int NOT NULL, c2 text NOT NULL, c3 int NOT NULL, c4 int NOT NULL, PRIMARY KEY(c1), KEY idx1(c3,c4), FULLTEXT KEY ft1(c2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key,c2 int,c3 text,key idx1(c2),fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL,year INT UNSIGNED,month INT UNSIGNED,day INT UNSIGNED,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content),KEY(title),KEY(month),KEY(day))
+ in following column content of table diaries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `videos_groonga` ( `id` bigint(1) unsigned NOT NULL, `video_id` varchar(64) NOT NULL, `description` text, `tags_unpack` text, PRIMARY KEY (`video_id`), FULLTEXT INDEX (`description`), FULLTEXT INDEX (`tags_unpack`))
+ in following column `id` and in column `id` of table books
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE items (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,score1 INT,score2 INT,created_at DATETIME,INDEX (created_at, score1, score2))
+ in following column created_at and in column created_at of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table shops (id int primary key auto_increment,name text,location geometry NOT NULL,spatial key location_index (location))
+ in following column name of table shops
+Detected: Clone Tables Found in following statement: create table t1 (c1 smallint)
+
+Detected: Multicolumn Attribute Found in following statement: create table `with-hyphen` (c1 int primary key, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT NOT NULL PRIMARY KEY,content TEXT NOT NULL,FULLTEXT INDEX (content) NORMALIZER='NormalizerAuto')
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, year INT UNSIGNED, month INT UNSIGNED, day INT UNSIGNED, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content), KEY(title), KEY(month), KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (column_name TEXT)
+ in following column column_name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contents (_id INT,content TEXT NOT NULL,FULLTEXT INDEX(content))
+ in following column content of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (title TEXT,FULLTEXT INDEX ft(title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, unique key (_id) using hash)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 int NOT NULL,c2 text NOT NULL,c3 int NOT NULL,c4 int NOT NULL,PRIMARY KEY(c1),KEY idx1(c3,c4),FULLTEXT KEY ft1(c2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 BIGINT UNSIGNED,c2 BIGINT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int auto_increment, primary key(c1))
+
+Detected: Multicolumn Attribute Found in following statement: create table t2 (c1 int primary key, c2 varchar(255))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 SMALLINT,c2 SMALLINT,KEY idx1(c1, c2))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1 ( c1 int NOT NULL, c2 text NOT NULL, c3 int NOT NULL, c4 int NOT NULL, PRIMARY KEY(c1), KEY idx1(c3,c4), FULLTEXT KEY ft1(c2))
+ in following column c2 and in column c2 of table alphabet
+Detected: Clone Tables Found in following statement: create table t1(c1 int primary key, c2 int, c3 int)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 varchar(10), c3 varchar(10), unique key uk1(c2,c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX body_index (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT PRIMARY KEY,content TEXT,FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, _id int, key idx1(c2), fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs( message TEXT, FULLTEXT KEY (message))
+ in following column message of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id int PRIMARY KEY, title varchar(255), content text, FULLTEXT INDEX (title))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 longblob)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries( title TEXT, body TEXT, FULLTEXT KEY (title), FULLTEXT KEY (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT UNSIGNED,content TEXT,FULLTEXT INDEX(content),KEY(id))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (O text,FULLTEXT INDEX (O))
+ in following column O of table users
+Detected: Clone Tables Found in following statement: create table t1 (c1 bigint primary key)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos (party_year YEAR PRIMARY KEY,title TEXT)
+ in following column title of table aniversary_memos
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'comment']
+Detected: Obsolete Column TypesFound in following statement: create table articles(content text not null,comment int unsigned,FOREIGN KEY (comment) REFERENCES comments (comment))
+ in following column content of table articles
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 int, c3 text, _id int, key idx1(c2), fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT UNSIGNED NOT NULL, writing_time TIME, content TEXT, FULLTEXT INDEX(content), KEY(writing_time))
+ in following column content of table memos
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( c1 INT PRIMARY KEY AUTO_INCREMENT, c2 INT, c3 INT, ... c11 VARCHAR(20), c12 VARCHAR(20), ... c20 DATETIME )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_groonga` ( `id` bigint(1) unsigned NOT NULL, `video_id` varchar(64) NOT NULL, `description` text, `tags_unpack` text, PRIMARY KEY (`video_id`), FULLTEXT INDEX (`description`), FULLTEXT INDEX (`tags_unpack`))
+ in following column `description` of table `videos_groonga`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries(title TEXT,FULLTEXT KEY (title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 smallint primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX title_index (title), FULLTEXT INDEX body_index (body))
+ in following column body of table diaries
+Detected: Duplicate Column Names Found in following statement: create table listing (id int primary key auto_increment not null,last_name char(30) not null,first_name char(30) not null,index name (last_name, first_name))
+ in following column last_name and in column last_name of table users
+Detected: Clone Tables Found in following statement: create table t1 (c1 float primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 text, fulltext index (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids (id int PRIMARY KEY,text varchar(32),FULLTEXT INDEX (text))
+ in following column FULLTEXT of table ids
+Detected: God Table Found in following statement: CREATE TABLE memos ( title VARCHAR(255), tag1 VARCHAR(10), tag2 VARCHAR(10), tag3 VARCHAR(10), tag4 VARCHAR(10), tag5 VARCHAR(10), tag6 VARCHAR(10), tag7 VARCHAR(10), tag8 VARCHAR(10), tag9 VARCHAR(10), tag10 VARCHAR(10), FULLTEXT INDEX (tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),content TEXT,FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: God Table Found in following statement: CREATE TABLE memos (title VARCHAR(255),tag1 VARCHAR(10),tag2 VARCHAR(10),tag3 VARCHAR(10),tag4 VARCHAR(10),tag5 VARCHAR(10),tag6 VARCHAR(10),tag7 VARCHAR(10),tag8 VARCHAR(10),tag9 VARCHAR(10),tag10 VARCHAR(10),FULLTEXT INDEX (tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8, tag9, tag10))
+
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key, content text, fulltext index (content))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 varchar(10) primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( q INT UNSIGNED, e TEXT, FULLTEXT INDEX(e), KEY(q))
+ in following column e of table memos
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (name varchar(100) NOT NULL,UNIQUE KEY name (name))
+ in following column name and in column name of table shops
+Detected: Clone Tables Found in following statement: create table t1 (c1 char(10) primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,year INT UNSIGNED,month INT UNSIGNED,day INT UNSIGNED,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content),KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int, `_score` float)
+ in following column `_score` of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, average TIME(6), max TIME(6), KEY (average))
+ in following column title of table running_records
+Detected: Clone Tables Found in following statement: create table t1 (c1 binary(10) primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, party_year YEAR)
+ in following column title of table aniversary_memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT PRIMARY KEY AUTO_INCREMENT, content TEXT)
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key, title varchar(255), content text, fulltext index (title))
+ in following column content of table diaries
+Detected: Duplicate Column Names Found in following statement: create table diaries ( id int primary key auto_increment, title text, body text, fulltext index title_index (title), fulltext index body_index (body))
+ in following column title and in column title of table temperatures
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( title TEXT, content TEXT, FULLTEXT KEY (title), FULLTEXT KEY (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key,title varchar(255),content text,fulltext index (title))
+ in following column content of table diaries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),category VARCHAR(10),content TEXT,FULLTEXT INDEX (title, category, content))
+ in following column category and in column category of table category
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,date TIMESTAMP NOT NULL,title VARCHAR(100) NOT NULL,content TEXT NOT NULL,UNIQUE INDEX (date, title))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, index using btree (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mroonga_releases (id INT PRIMARY KEY AUTO_INCREMENT,release_title TEXT,release_year YEAR,KEY (release_year),FULLTEXT KEY (release_title))
+ in following column release_title of table mroonga_releases
+Detected: Metadata as Data Found in following statement: create table scores ( given_name varchar(30) not null, family_name varchar(30) not null, score int not null, primary key property (given_name, family_name, score))
+
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key,c2 int,c3 text,key idx1(c2),fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Clone Tables Found in following statement: create table t1 (c1 binary(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records (time TIME(6) PRIMARY KEY,title TEXT)
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE releases (version DECIMAL PRIMARY KEY,message TEXT)
+ in following column message of table releases
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, fulltext index ft(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 decimal primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key auto_increment, body text)
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 tinytext)
+ in following column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),content TEXT,FULLTEXT INDEX (title, content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT PRIMARY KEY, title VARCHAR(255), content TEXT, FULLTEXT INDEX (title, content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT AUTO_INCREMENT PRIMARY KEY,title VARCHAR(64),content TEXT,FULLTEXT INDEX(content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 decimal)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tags ( name VARCHAR(64) PRIMARY KEY )
+ in following column name and in column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( content TEXT, FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, date DATETIME, content TEXT, FULLTEXT INDEX(content), KEY(date))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id int PRIMARY KEY,content TEXT,FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1(c1 int, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (title TEXT,FULLTEXT KEY (title))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT UNSIGNED NOT NULL,title VARCHAR(255),content TEXT,FULLTEXT INDEX(title),FULLTEXT INDEX(content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id int PRIMARY KEY AUTO_INCREMENT, body text, FULLTEXT INDEX body_index (body) TOKENIZER='TokenBigramSplitSymbolAlphaDigit' )
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries(title TEXT,body TEXT,FULLTEXT KEY (title),FULLTEXT KEY (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts ( id int NOT NULL, content mediumtext, user_id int NOT NULL, PRIMARY KEY (id), FULLTEXT KEY (content))
+ in following column content of table posts
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, primary key (_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id int PRIMARY KEY AUTO_INCREMENT, body text, FULLTEXT INDEX body_index (body) TOKENIZER='TokenBigramSplitSymbolAlphaDigit')
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contents ( _i INT, content TEXT NOT NULL, FULLTEXT INDEX(content))
+ in following column content of table (
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT PRIMARY KEY,title VARCHAR(255),content TEXT,FULLTEXT INDEX (title, content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, key (_id) using hash)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),category VARCHAR(10),content TEXT,FULLTEXT INDEX (title, category, content))
+ in following column title and in column title of table aniversary_memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 varchar(100))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries_innodb ( id INT PRIMARY KEY AUTO_INCREMENT, body TEXT, flag TINYINT(2), INDEX (flag))
+ in following column body of table diaries_innodb
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, body TEXT, FULLTEXT INDEX body_index (body) )
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 text)
+ in following column c1 of table t1
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 varchar(255))
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 varchar(255), c3 text, fulltext index(c2), fulltext index(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE temperatures ( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(20), temperature FLOAT, KEY temperature_index(temperature), KEY multi_index(temperature, title))
+ in following column temperature of table temperatures
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( title TEXT, FULLTEXT KEY (title))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table diaries ( id int primary key auto_increment, body text, fulltext index body_index (body))
+ in following column body of table diaries
+Detected: Clone Tables Found in following statement: create table t2 (c1 int primary key, c2 text, fulltext index(c2))
+
+Detected: Clone Tables Found in following statement: create table t3 (c1 int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE scores (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,score1 INT NOT NULL,score2 INT NOT NULL,INDEX (score1, score2))
+
+Detected: Obsolete Column TypesFound in following statement: create table t1 ( c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries(title TEXT,body TEXT,FULLTEXT KEY (title),FULLTEXT KEY (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS memos ( id VARCHAR(45) NOT NULL PRIMARY KEY, text TEXT NOT NULL, FULLTEXT KEY (text))
+ in following column FULLTEXT of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at DATETIME, KEY (created_at))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 char(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX title_index (title),FULLTEXT INDEX body_index (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids (id FLOAT,value FLOAT,KEY (id, value))
+ in following column id of table ids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INT PRIMARY KEY AUTO_INCREMENT, name TEXT)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT UNSIGNED NOT NULL,writing_time TIME,content TEXT,FULLTEXT INDEX(content),KEY(writing_time))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,created_at TIMESTAMP DEFAULT '2016-04-21 00:00:00',updated_at TIMESTAMP DEFAULT '2016-04-21 00:00:00',KEY (updated_at))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 year primary key)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 mediumtext)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, temperature DECIMAL(6, 3), KEY (temperature))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, key (_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bugs ( id INT UNSIGNED PRIMARY KEY, tags TEXT FLAGS='COLUMN_VECTOR')
+ in following column tags of table bugs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries( title TEXT, body TEXT, FULLTEXT KEY (title), FULLTEXT KEY (body))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( _id INT, id INT UNSIGNED NOT NULL, year INT UNSIGNED, month INT UNSIGNED, day INT UNSIGNED, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content), KEY(month), KEY(day))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key,c2 int,c3 text,key idx1(c2),fulltext index ft(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (_id int, c1 int, unique key (_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY, title VARCHAR(255), content TEXT, FULLTEXT INDEX (title), FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE temperatures (id INT PRIMARY KEY AUTO_INCREMENT,title VARCHAR(20),temperature FLOAT,KEY temperature_index(temperature),KEY multi_index(temperature, title))
+ in following column temperature of table temperatures
+Detected: Clone Tables Found in following statement: create table t2 (c1 int primary key, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at DATETIME(6))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t2 (c1 int primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table diaries (id int primary key auto_increment,title text,body text,fulltext index title_index (title),fulltext index body_index (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records ( time TIME PRIMARY KEY, title TEXT)
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE queries ( user_id INT, query TEXT)
+ in following column query of table queries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs (id INT PRIMARY KEY AUTO_INCREMENT,message TEXT,FULLTEXT INDEX (message))
+ in following column message of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (day DATETIME PRIMARY KEY,title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (day DATE PRIMARY KEY,title TEXT)
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 time)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 mediumblob)
+
+Detected: Multicolumn Attribute Found in following statement: create table t2 (c1 int primary key, c2 text, fulltext index(c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT UNSIGNED NOT NULL,title VARCHAR(255),content TEXT,FULLTEXT INDEX(content))
+ in following column content of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int, c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 mediumint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS memos ( id VARCHAR(45) NOT NULL PRIMARY KEY, text TEXT NOT NULL, FULLTEXT KEY (text))
+ in following column text of table memos
+Detected: Metadata as Data Found in following statement: create table t1 (c1 int primary key, c2 varchar(10), c3 varchar(10), unique key uk1(c2,c3))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 SMALLINT, c2 SMALLINT, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( -> day DATE PRIMARY KEY, -> content VARCHAR(64) NOT NULL, -> FULLTEXT INDEX (content) -> )
+ in following column - of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,user_id INT UNSIGNED NOT NULL,title TEXT,FULLTEXT INDEX (title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 date primary key)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, `_id` text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title VARCHAR(40),body VARCHAR(140))
+ in following column body and in column body of table diaries_mroonga
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids ( id FLOAT, value FLOAT, KEY (id, value))
+ in following column id of table ids
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 VARCHAR(10), c2 VARCHAR(10), KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs(message TEXT,host TEXT,FULLTEXT KEY (message),FULLTEXT KEY (host))
+ in following column message of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (column_name LONGTEXT)
+ in following column column_name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, average TIME, max TIME, KEY (average))
+ in following column title of table running_records
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ids (id int PRIMARY KEY,text varchar(32),FULLTEXT INDEX (text))
+ in following column text and in column text of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (title TEXT,content TEXT,FULLTEXT KEY (title),FULLTEXT KEY (content))
+ in following column content of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 timestamp primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (day DATETIME(6) PRIMARY KEY,title TEXT)
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 SMALLINT UNSIGNED, c2 SMALLINT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS memos (id VARCHAR(45) NOT NULL PRIMARY KEY,text TEXT NOT NULL,FULLTEXT KEY (text))
+ in following column FULLTEXT of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 text, fulltext index (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX (body))
+ in following column title of table diaries
+Detected: Metadata as Data Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 VARCHAR(10), c2 VARCHAR(10), KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INT PRIMARY KEY AUTO_INCREMENT,name TEXT)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,day DATE,title TEXT,UNIQUE KEY day (day))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX body_index (body))
+ in following column body of table diaries
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 BIGINT UNSIGNED, c2 BIGINT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: create table articles( content text not null, comment int unsigned, FOREIGN KEY (comment) REFERENCES comments (comment))
+ in following column content of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shops ( id INT PRIMARY KEY AUTO_INCREMENT, name TEXT, location GEOMETRY NOT NULL)
+ in following column name of table shops
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT PRIMARY KEY AUTO_INCREMENT,content TEXT)
+ in following column content of table memos
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 varchar(100))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items ( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, score1 INT, score2 INT, score3 INT, INDEX (score1, score2, score3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 bit)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ft( a INT DEFAULT 0, b TEXT, c TEXT, PRIMARY KEY(a), FULLTEXT KEY ftx1(b), FULLTEXT KEY ftx2(c))
+ in following column b of table ft
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT)
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 VARCHAR(10),c2 VARCHAR(10),KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id varchar(32) NOT NULL PRIMARY KEY, content text, FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 varchar(255), c3 text, fulltext index(c2), fulltext index(c3))
+ in following column c3 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( id INT PRIMARY KEY AUTO_INCREMENT, c1 INT UNSIGNED, c2 INT UNSIGNED, KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id varchar(32) NOT NULL PRIMARY KEY,content text,FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int, c2 text)
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT, FULLTEXT INDEX (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, body TEXT)
+ in following column body of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (content text)
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 tinyint primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id int NOT NULL PRIMARY KEY,content text,FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 longtext)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at DATETIME(6), KEY (created_at))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 text, fulltext index ft (c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id int unsigned PRIMARY KEY AUTO_INCREMENT, O text, FULLTEXT INDEX (O))
+ in following column O of table users
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 varchar(5) primary key, c2 varchar(5), c3 text, key idx1(c2), fulltext index ft(c3))
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, temperature DECIMAL, KEY (temperature))
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,score1 INT,score2 INT,created_at DATETIME,INDEX (score1, created_at, score2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY,title VARCHAR(255),content TEXT,FULLTEXT INDEX (title),FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id int PRIMARY KEY, content TEXT, FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 varchar(255), c3 text, fulltext index(c2), fulltext index(c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 decimal(65,30), c3 decimal(65,30), unique key uk1(c2,c3))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id int PRIMARY KEY AUTO_INCREMENT,body text,FULLTEXT INDEX body_index (body) TOKENIZER='TokenBigramSplitSymbolAlphaDigit')
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (content TEXT,FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (id int NOT NULL,content mediumtext,user_id int NOT NULL,PRIMARY KEY (id),FULLTEXT KEY (content))
+ in following column content of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( title TEXT, content TEXT, FULLTEXT KEY (title), FULLTEXT KEY (content))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, created_at TIMESTAMP DEFAULT '2016-04-21 00:00:00', updated_at TIMESTAMP DEFAULT '2016-04-21 00:00:00', KEY (updated_at))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 ( c1 int NOT NULL, c2 text NOT NULL, c3 int NOT NULL, c4 int NOT NULL, PRIMARY KEY(c1), KEY idx1(c3,c4), FULLTEXT KEY ft1(c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shops (id INT PRIMARY KEY AUTO_INCREMENT,name TEXT,location GEOMETRY NOT NULL)
+ in following column name of table shops
+Detected: Multicolumn Attribute Found in following statement: create table t1(c1 int, c2 int, c3 int)
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 varchar(10), c3 varchar(10), unique key uk1(c2,c3))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE bugs (id INT UNSIGNED PRIMARY KEY,tag VARCHAR(64) GROONGA_TYPE='tags')
+ in following column id and in column id of table ids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY, title VARCHAR(255), content TEXT, FULLTEXT INDEX (content))
+ in following column content of table diaries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries ( -> day DATE PRIMARY KEY, -> content VARCHAR(64) NOT NULL, -> FULLTEXT INDEX (content) -> )
+ in following column - and in column - of table timestamps
+Detected: Multicolumn Attribute Found in following statement: create table t1(c1 int primary key, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,average TIME(6),max TIME(6),KEY (average))
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs(message TEXT,host TEXT,FULLTEXT KEY (message),FULLTEXT KEY (host))
+ in following column host of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, date TIMESTAMP NOT NULL, title VARCHAR(100) NOT NULL, content TEXT NOT NULL, UNIQUE INDEX (date, title))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (title TEXT,content TEXT,FULLTEXT KEY (title),FULLTEXT KEY (content))
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 VARCHAR(10),c2 VARCHAR(10),KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs( message TEXT, host TEXT, FULLTEXT KEY (message), FULLTEXT KEY (host))
+ in following column message of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( title TEXT, FULLTEXT INDEX ft(title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, c2 varchar(100))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( day DATETIME(6) PRIMARY KEY, title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table_name (column_name MEDIUMTEXT)
+ in following column column_name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs ( id INT PRIMARY KEY AUTO_INCREMENT, message TEXT, FULLTEXT INDEX (message))
+ in following column message of table logs
+Detected: Metadata as Data Found in following statement: create table t1 (c1 varchar(5) primary key, c2 varchar(5), c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos (id INT PRIMARY KEY AUTO_INCREMENT,content TEXT,FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( time TIMESTAMP PRIMARY KEY, title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE aniversary_memos (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,party_year YEAR)
+ in following column title of table aniversary_memos
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE running_records (time TIME PRIMARY KEY,title TEXT)
+ in following column time and in column time of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 int, c3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE releases ( version DECIMAL(6, 3) PRIMARY KEY, message TEXT)
+ in following column message of table releases
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 SMALLINT UNSIGNED,c2 SMALLINT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Multicolumn Attribute Found in following statement: create table alphabet (c1 int primary key, c2 int, c3 int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items (id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,score1 INT,score2 INT,score3 INT,INDEX (score1, score2, score3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT PRIMARY KEY AUTO_INCREMENT, content TEXT, FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries_mroonga ( id INT PRIMARY KEY AUTO_INCREMENT, body TEXT, flag TINYINT(2), INDEX (flag))
+ in following column body of table diaries_mroonga
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 int primary key, c2 text, fulltext index ft (c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT,FULLTEXT INDEX body_index (body))
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( `id` INTEGER AUTO_INCREMENT, `title` text, `content` text, PRIMARY KEY(`id`), FULLTEXT INDEX text_index (title, content) )
+ in following column `title` of table memos
+Detected: Obsolete Column TypesFound in following statement: create table comments( comment int unsigned primary key, content text not null)
+ in following column content of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT UNSIGNED NOT NULL, title VARCHAR(255), content TEXT, FULLTEXT INDEX(title), FULLTEXT INDEX(content))
+ in following column content of table memos
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table t1 (c1 float)
+ in following column c1 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INT PRIMARY KEY AUTO_INCREMENT,c1 INT UNSIGNED,c2 INT UNSIGNED,KEY idx1(c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( O text, FULLTEXT INDEX (O))
+ in following column O of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (time TIMESTAMP(6) PRIMARY KEY,title TEXT)
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT UNSIGNED NOT NULL, year INT UNSIGNED, month INT UNSIGNED, day INT UNSIGNED, title VARCHAR(255), content TEXT, FULLTEXT INDEX(content), KEY(day))
+ in following column content of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,body TEXT)
+ in following column body of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries (id INT PRIMARY KEY AUTO_INCREMENT,title TEXT,temperature DECIMAL(6, 3))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 int primary key, c2 int, index using btree (c2))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(40), body VARCHAR(140))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int, `_score` float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_master` (`id` bigint(1) unsigned NOT NULL,`video_id` varchar(64) NOT NULL,`description` text,`tags_unpack` text,PRIMARY KEY (`video_id`))
+ in following column `tags_unpack` of table `videos_master`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE diaries ( content varchar(256) COLLATE utf8_general_ci, FULLTEXT INDEX (content))
+ in following column content and in column content of table memos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries_mroonga (id INT PRIMARY KEY AUTO_INCREMENT,body TEXT,flag TINYINT(2),INDEX (flag))
+ in following column body of table diaries_mroonga
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE texts (id INT PRIMARY KEY,matched TEXT,not_matched TEXT,FULLTEXT KEY (matched),FULLTEXT KEY (not_matched))
+ in following column not_matched of table texts
+Detected: Clone Tables Found in following statement: create table t3 (c1 int primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ids ( id int PRIMARY KEY, text varchar(32), FULLTEXT INDEX (text))
+ in following column FULLTEXT of table ids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `videos_groonga` (`id` bigint(1) unsigned NOT NULL,`video_id` varchar(64) NOT NULL,`description` text,`tags_unpack` text,PRIMARY KEY (`video_id`),FULLTEXT INDEX (`description`),FULLTEXT INDEX (`tags_unpack`))
+ in following column `description` of table `videos_groonga`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE memos ( id INT PRIMARY KEY, content TEXT, FULLTEXT INDEX (content))
+ in following column content of table memos
+Detected: Clone Tables Found in following statement: create table t1 (c1 timestamp)
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int primary key, c2 varchar(100), fulltext index(c2))
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE keywords ( keyword text)
+ in following column keyword of table keywords
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE ids (id1 INT,id2 INT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries( title TEXT, FULLTEXT KEY (title))
+ in following column title of table diaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( day DATE PRIMARY KEY, title TEXT)
+ in following column title of table diaries
+Detected: Multicolumn Attribute Found in following statement: create table t1 (c1 varchar(5) primary key, c2 varchar(5), c3 text, key idx1(c2), fulltext index ft(c3))
+
+Detected: Obsolete Column TypesFound in following statement: create table shops ( id int primary key auto_increment, name text, location geometry NOT NULL, spatial key location_index (location))
+ in following column name of table shops
+Detected: Clone Tables Found in following statement: create table t1 (c1 year)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE running_records ( time TIME(6) PRIMARY KEY, title TEXT)
+ in following column title of table running_records
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs ( timestamp DATETIME, message TEXT)
+ in following column message of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE texts ( id INT PRIMARY KEY, matched TEXT, not_matched TEXT, FULLTEXT KEY (matched), FULLTEXT KEY (not_matched))
+ in following column not_matched of table texts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diaries ( id INT PRIMARY KEY AUTO_INCREMENT, title TEXT, FULLTEXT INDEX title_index (title))
+ in following column title of table diaries
+Detected: Clone Tables Found in following statement: create table t1 (c1 time primary key)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items ( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, score1 INT, score2 INT, created_at DATETIME, INDEX (created_at, score1, score2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shops ( id INT PRIMARY KEY AUTO_INCREMENT, name TEXT, location GEOMETRY NOT NULL, SPATIAL KEY location_index (location))
+ in following column name of table shops

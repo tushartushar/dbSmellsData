@@ -1,0 +1,37 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_quoted_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column context of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_literal_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column object of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_type_statements ( member text not NULL, klass text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column member of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_literal_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column context of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_type_statements ( member text not NULL, klass text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column context of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_namespace_binds ( prefix varchar(20) UNIQUE not NULL, uri text, PRIMARY KEY (prefix))
+ in following column uri of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_type_statements ( member text not NULL, klass text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column klass of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_asserted_statements ( subject text not NULL, predicate text not NULL, object text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column context of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_quoted_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column subject of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_asserted_statements ( subject text not NULL, predicate text not NULL, object text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column subject of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_literal_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column subject of table %s
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_asserted_statements ( subject text not NULL, predicate text not NULL, object text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column object of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_literal_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column objDatatype of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_asserted_statements ( subject text not NULL, predicate text not NULL, object text not NULL, context text not NULL, termComb tinyint unsigned not NULL)
+ in following column predicate of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_quoted_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column objDatatype of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_literal_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column predicate of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_quoted_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column predicate of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s_quoted_statements ( subject text not NULL, predicate text not NULL, object text, context text not NULL, termComb tinyint unsigned not NULL, objLanguage varchar(3), objDatatype text)
+ in following column object of table %s

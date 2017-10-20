@@ -1,0 +1,9 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user( user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(255) DEFAULT NULL UNIQUE, email VARCHAR(255) DEFAULT NULL UNIQUE, display_name VARCHAR(50) DEFAULT NULL, password VARCHAR(128) NOT NULL, state SMALLINT)
+ in following column email and in column email of table public
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user( user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(255) DEFAULT NULL UNIQUE, email VARCHAR(255) DEFAULT NULL UNIQUE, display_name VARCHAR(50) DEFAULT NULL, password VARCHAR(128) NOT NULL, state SMALLINT)
+ in following column username and in column username of table public
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user( user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(255) DEFAULT NULL UNIQUE, email VARCHAR(255) DEFAULT NULL UNIQUE, display_name VARCHAR(50) DEFAULT NULL, password VARCHAR(128) NOT NULL, state SMALLINT)
+ in following column password and in column password of table public
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user( user_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, username VARCHAR(255) DEFAULT NULL UNIQUE, email VARCHAR(255) DEFAULT NULL UNIQUE, display_name VARCHAR(50) DEFAULT NULL, password VARCHAR(128) NOT NULL, state SMALLINT)
+ in following column display_name and in column display_name of table public

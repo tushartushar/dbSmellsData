@@ -1,0 +1,7 @@
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 2 = 2)
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 4 = 4)
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 2 != 2)
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 1 != 1)
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 4 != 4)
+SELECT * FROM `spec_models` WHERE ((`spec_models`.`status_bits` & 1 = 1) AND (`spec_models`.`status_bits` & 4 != 4))
+SELECT * FROM `spec_models` WHERE (`spec_models`.`status_bits` & 1 = 1)

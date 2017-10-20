@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Data (DataKey ntext PRIMARY KEY, DataValue ntext NOT NULL)
+ in following column DataKey of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + "Data (DataKey ntext PRIMARY KEY, DataValue ntext NOT NULL)
+ in following column DataValue of table " + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + "Data (DataKey ntext PRIMARY KEY, DataValue ntext NOT NULL)
+ in following column DataKey of table " + "
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Data (DataKey ntext PRIMARY KEY, DataValue ntext NOT NULL)
+ in following column DataValue of table (

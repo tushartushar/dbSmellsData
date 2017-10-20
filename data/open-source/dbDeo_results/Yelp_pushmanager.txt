@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE push_plans (	id INTEGER NOT NULL,	content VARCHAR,	path VARCHAR,	PRIMARY KEY (id))
+
+Detected: God Table Found in following statement: CREATE TABLE push_requests (	id INTEGER NOT NULL,	user VARCHAR,	state VARCHAR,	repo VARCHAR,	branch VARCHAR,	revision VARCHAR(40),	tags VARCHAR,	conflicts VARCHAR,	created INTEGER,	modified INTEGER,	title VARCHAR,	comments VARCHAR,	reviewid INTEGER,	description VARCHAR,	watchers VARCHAR,	PRIMARY KEY (id))
+
+Detected: God Table Found in following statement: CREATE TABLE push_pushes (	id INTEGER NOT NULL,	title VARCHAR,	user VARCHAR,	branch VARCHAR,	revision VARCHAR(40),	state VARCHAR,	created INTEGER,	modified INTEGER,	pushtype VARCHAR,	extra_pings VARCHAR,	stageenv VARCHAR,	PRIMARY KEY (id))
+

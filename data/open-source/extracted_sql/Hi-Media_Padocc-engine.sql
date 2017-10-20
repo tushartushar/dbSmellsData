@@ -1,0 +1,4 @@
+SELECT * FROM </span><span class="php-var">$this</span><span class="php-quote">-&gt;sTable </span><span class="php-var">$sWhere</span><span class="php-quote"> </span><span class="php-var">$sOrderBy</span><span class="php-quote"> LIMIT </span><span class="php-var">$iLimit</span><span class="php-quote"> OFFSET </span><span class="php-var">$iOffset</span><span class="php-quote">&quot;</span>;
+UPDATE deployments SET a=?  WHERE exec_id=?
+SELECT * FROM $this->sTable $sWhere $sOrderBy LIMIT $iLimit OFFSET $iOffset
+CREATE TABLE deployments ( exec_id varchar(255) NOT NULL PRIMARY KEY, xml_path text NOT NULL, project_name varchar(255) NOT NULL, env_name varchar(255) NOT NULL, external_properties text NOT NULL, status varchar(255) NOT NULL CHECK (status IN ('queued', 'in progress', 'failed', 'warning', 'successful')), nb_warnings int NOT NULL, date_queue timestamp NULL, date_start timestamp NULL, date_end timestamp NULL, is_rollbackable tinyint(1) NOT NULL)

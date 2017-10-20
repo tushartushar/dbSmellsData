@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `vacation` ( `id` int(11) NOT NULL auto_increment, `created` timestamp NOT NULL default now(), `start` timestamp NOT NULL, `end` timestamp NOT NULL , `enabled` tinyint(1) NOT NULL default 1, `awayuser` varchar(255) NOT NULL, `subject` varchar(255) NOT NULL, `body` text NOT NULL, `ignoresender` text NOT NULL, PRIMARY KEY (`id`), UNIQUE(`awayuser`) )
+ in following column `body` of table `vacation`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `vacation` ( `id` int(11) NOT NULL auto_increment, `created` timestamp NOT NULL default now(), `start` timestamp NOT NULL, `end` timestamp NOT NULL , `enabled` tinyint(1) NOT NULL default 1, `awayuser` varchar(255) NOT NULL, `subject` varchar(255) NOT NULL, `body` text NOT NULL, `ignoresender` text NOT NULL, PRIMARY KEY (`id`), UNIQUE(`awayuser`) )
+ in following column `ignoresender` of table `vacation`
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE userpref ( username varchar(100) NOT NULL DEFAULT '', preference varchar(30) NOT NULL DEFAULT '', value varchar(100) NOT NULL DEFAULT '')
+

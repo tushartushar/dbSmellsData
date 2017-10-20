@@ -1,0 +1,97 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT)
+ in following column name of table bans
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE players SET dotas=?, wins=?, losses=?, kills=?, deaths=?, creepkills=?, creepdenies=?, assists=?, neutralkills=?, towerkills=?, raxkills=?, courierkills=?  WHERE name=?
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT)
+ in following column date of table bans
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c2 and in column c2 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE players ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, games INTEGER, dotas INTEGER, loadingtime INTEGER, duration INTEGER, left INTEGER, wins INTEGER, losses INTEGER, kills INTEGER, deaths INTEGER, creepkills INTEGER, creepdenies INTEGER, assists INTEGER, neutralkills INTEGER, towerkills INTEGER, raxkills INTEGER, courierkills INTEGER )
+ in following column name of table players
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE config ( name TEXT NOT NULL PRIMARY KEY, value TEXT NOT NULL )
+ in following column value and in column value of table %
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config ( name TEXT NOT NULL PRIMARY KEY, value TEXT NOT NULL )
+ in following column name of table config
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT)
+ in following column server of table bans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT)
+ in following column reason of table bans
+Detected: God Table Found in following statement: CREATE TABLE players ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, games INTEGER, dotas INTEGER, loadingtime INTEGER, duration INTEGER, left INTEGER, wins INTEGER, losses INTEGER, kills INTEGER, deaths INTEGER, creepkills INTEGER, creepdenies INTEGER, assists INTEGER, neutralkills INTEGER, towerkills INTEGER, raxkills INTEGER, courierkills INTEGER )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT)
+ in following column admin of table bans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT )
+ in following column name of table bans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT )
+ in following column date of table bans
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config ( name TEXT NOT NULL PRIMARY KEY, value TEXT NOT NULL )
+ in following column value of table config
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE players SET games=?, loadingtime=?, duration=?, left=?  WHERE name=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT )
+ in following column reason of table bans
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT )
+ in following column admin of table bans
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bans ( id INTEGER PRIMARY KEY, server TEXT NOT NULL, name TEXT NOT NULL, date TEXT NOT NULL, admin TEXT NOT NULL, reason TEXT )
+ in following column server of table bans
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c1 and in column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

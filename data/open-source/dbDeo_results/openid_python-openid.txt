@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %(associations)s ( server_url BLOB NOT NULL, handle VARCHAR(255) NOT NULL, secret BLOB NOT NULL, issued INTEGER NOT NULL, lifetime INTEGER NOT NULL, assoc_type VARCHAR(64) NOT NULL, PRIMARY KEY (server_url(255), handle) )
+ in following column server_url and in column server_url of table %s
+Detected: Index Shotgun Variant: 1

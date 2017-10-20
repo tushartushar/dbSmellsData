@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Photos(Hash TEXT, Raw TEXT, Developed TXT)
+ in following column Hash of table Photos
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Photos(Hash TEXT, Raw TEXT, Developed TXT)
+ in following column Raw of table Photos

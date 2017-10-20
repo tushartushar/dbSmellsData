@@ -1,0 +1,100 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE author( id NUMBER NOT NULL, first_name NVARCHAR2(100), last_name NVARCHAR2(100))
+ in following column id and in column id of table book
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [foo] INTEGER NOT NULL, [bar] INTEGER NOT NULL, [baz] VARCHAR(255) NOT NULL, PRIMARY KEY ([foo],[bar]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [id] INT NOT NULL IDENTITY, [bar] VARCHAR(255) NOT NULL, CONSTRAINT [foo_PK] PRIMARY KEY ([id]))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [versionable_behavior_test_0]( [id] INTEGER NOT NULL PRIMARY KEY, [bar] INTEGER, [foo_ver] INTEGER DEFAULT 0)
+ in following column [id] and in column [id] of table [author]
+Detected: Clone Tables Found in following statement: CREATE TABLE foo ( `longitude` decimal(10,7) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [foo]( [foo] INTEGER NOT NULL, [bar] INTEGER NOT NULL, [baz] VARCHAR(255) NOT NULL, PRIMARY KEY ([foo],[bar]))
+ in following column [baz] and in column [baz] of table [versionable_behavior_test_0_version]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE book( id INTEGER NOT NULL AUTO_INCREMENT COMMENT 'Book Id', title VARCHAR(255) NOT NULL COMMENT 'Book Title with accent i', isbn VARCHAR(24) NOT NULL COMMENT 'ISBN Number', price FLOAT COMMENT 'Price of the book.', PRIMARY KEY (id))
+ in following column price of table book
+Detected: Clone Tables Found in following statement: CREATE TABLE foo( foo NUMBER NOT NULL, bar NUMBER NOT NULL, baz NVARCHAR2(255) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `author`( `id` INTEGER NOT NULL AUTO_INCREMENT, `first_name` VARCHAR(100), `last_name` VARCHAR(100), PRIMARY KEY (`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `x`.`book`( `id` INTEGER NOT NULL AUTO_INCREMENT, `title` VARCHAR(255) NOT NULL, `author_id` INTEGER, PRIMARY KEY (`id`), INDEX `book_I_1` (`title`), INDEX `book_FI_1` (`author_id`), CONSTRAINT `book_FK_1` FOREIGN KEY (`author_id`) REFERENCES `y`.`author` (`id`))
+ in following column . and in column . of table [x]
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'baz']
+Detected: Clone Tables Found in following statement: create table foo ( {$columnDDL} )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `x`.`book_summary`( `id` INTEGER NOT NULL AUTO_INCREMENT, `book_id` INTEGER NOT NULL, `summary` TEXT NOT NULL, PRIMARY KEY (`id`), INDEX `book_summary_FI_1` (`book_id`))
+ in following column `summary` of table `x`
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [id] INT NOT NULL IDENTITY, [bar] INT NULL, CONSTRAINT [foo_PK] PRIMARY KEY ([id]), UNIQUE ([bar]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [foo] INT NOT NULL, [bar] INT NOT NULL, [baz] VARCHAR(255) NOT NULL, CONSTRAINT [foo_PK] PRIMARY KEY ([foo],[bar]))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [versionable_behavior_test_1_version]( [id] INTEGER NOT NULL, [bar] INTEGER, [version] INTEGER DEFAULT 0 NOT NULL, [versionable_behavior_test_0_ids] MEDIUMTEXT, [versionable_behavior_test_0_versions] MEDIUMTEXT, PRIMARY KEY ([id],[version]))
+ in following column [versionable_behavior_test_0_versions] of table [versionable_behavior_test_1_version]
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'bar']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `x`.`book_summary`( `id` INTEGER NOT NULL AUTO_INCREMENT, `book_id` INTEGER NOT NULL, `summary` TEXT NOT NULL, PRIMARY KEY (`id`), INDEX `book_summary_FI_1` (`book_id`), CONSTRAINT `book_summary_FK_1` FOREIGN KEY (`book_id`) REFERENCES `x`.`book` (`id`) ON DELETE CASCADE)
+ in following column `summary` of table `x`
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar_id` INTEGER, PRIMARY KEY (`id`), INDEX `foo_FI_1` (`bar_id`), CONSTRAINT `foo_FK_1` FOREIGN KEY (`bar_id`) REFERENCES `bar` (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `foo5`( `id` INTEGER NOT NULL AUTO_INCREMENT, `lkdjfsh` INTEGER, `dfgdsgf` TEXT, PRIMARY KEY (`id`))
+ in following column `dfgdsgf` of table `foo5`
+Detected: Metadata as Data Found in following statement: CREATE TABLE [i18n_behavior_test_0_i18n]( [id] INTEGER NOT NULL, [locale] VARCHAR(5) DEFAULT 'en_US' NOT NULL, [bar] VARCHAR(100), PRIMARY KEY ([id],[locale]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo ( * // id int(11) NOT NULL AUTO_INCREMENT, * // title varchar(255) NOT NULL, * // PRIMARY KEY (id), * // )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo( id NUMBER NOT NULL, bar NUMBER, CONSTRAINT foo_U_1 UNIQUE (bar))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [id] INTEGER NOT NULL PRIMARY KEY, [bar] INTEGER, UNIQUE ([bar]))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'id']
+Detected: Clone Tables Found in following statement: CREATE TABLE foo( id NUMBER NOT NULL, bar NVARCHAR2(255) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar_id` INTEGER, PRIMARY KEY (`id`), INDEX `foo_FI_1` (`bar_id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [versionable_behavior_test_1_version]( [id] INTEGER NOT NULL, [bar] INTEGER, [version] INTEGER DEFAULT 0 NOT NULL, [versionable_behavior_test_0_ids] MEDIUMTEXT, [versionable_behavior_test_0_versions] MEDIUMTEXT, PRIMARY KEY ([id],[version]))
+ in following column [versionable_behavior_test_0_ids] of table [versionable_behavior_test_1_version]
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [foo] VARCHAR(255) NOT NULL, [bar] VARCHAR(255) NOT NULL, PRIMARY KEY ([foo]))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [versionable_behavior_test_0_version]( [id] INTEGER NOT NULL, [bar] INTEGER, [version] INTEGER DEFAULT 0 NOT NULL, PRIMARY KEY ([id],[version]))
+ in following column [version] and in column [version] of table [versionable_behavior_test_0]
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'bar1']
+Detected: Metadata as Data Found in following statement: CREATE TABLE [author]( [id] INTEGER NOT NULL PRIMARY KEY, [first_name] VARCHAR(100), [last_name] VARCHAR(100))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `foo` INTEGER NOT NULL, `bar` INTEGER NOT NULL, `baz` VARCHAR(255) NOT NULL, PRIMARY KEY (`foo`,`bar`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `Woopah`.`foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar` INTEGER, PRIMARY KEY (`id`))
+ in following column `bar` and in column `bar` of table `foo`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `notification`( `id` INTEGER NOT NULL AUTO_INCREMENT, `target_user_id` INTEGER NOT NULL, `notification_type_unique_name` VARCHAR(255) NOT NULL, `group_id` INTEGER, `date` DATETIME NOT NULL, `objects` TEXT, `is_new` TINYINT(1) DEFAULT 1 NOT NULL, PRIMARY KEY (`id`), INDEX `FK_NOTIFICATION_TARGET_USER` (`target_user_id`), INDEX `FK_NOTIFICATION_TYPENOTIFICATION` (`notification_type_unique_name`), CONSTRAINT `FK_NOTIFICATION_TYPENOTIFICATION0` FOREIGN KEY (`notification_type_unique_name`) REFERENCES `notification_type` (`unique_name`))
+ in following column `objects` of table `notification`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [x].[book]( [id] INT NOT NULL IDENTITY, [title] VARCHAR(255) NOT NULL, [author_id] INT NULL, CONSTRAINT [book_PK] PRIMARY KEY ([id]))
+ in following column [author_id] and in column [author_id] of table [book]
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [versionable_behavior_test_1_version]( [id] INTEGER NOT NULL, [bar] INTEGER, [version] INTEGER DEFAULT 0 NOT NULL, [versionable_behavior_test_0_ids] MEDIUMTEXT, [versionable_behavior_test_0_versions] MEDIUMTEXT, PRIMARY KEY ([id],[version]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [foo]( [id] INTEGER NOT NULL PRIMARY KEY, [bar] VARCHAR(255) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo ( * id int(11) NOT NULL AUTO_INCREMENT, * title varchar(255) NOT NULL, * PRIMARY KEY (id), * )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['book', 'title']
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'baz3']
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar` INTEGER, PRIMARY KEY (`id`), UNIQUE INDEX `foo_U_1` (`bar`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo5', 'lkdjfsh']
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar` INTEGER, PRIMARY KEY (`id`), INDEX `foo_I_1` (`bar`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL AUTO_INCREMENT, `bar` VARCHAR(255) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [i18n_behavior_test_0]( [id] INTEGER NOT NULL PRIMARY KEY, [foo] INTEGER)
+ in following column [foo] and in column [foo] of table [foo]
+Detected: Adjacency List Found in following statement: CREATE TABLE `x`.`book_summary`( `id` INTEGER NOT NULL AUTO_INCREMENT, `book_id` INTEGER NOT NULL, `summary` TEXT NOT NULL, PRIMARY KEY (`id`), INDEX `book_summary_FI_1` (`book_id`), CONSTRAINT `book_summary_FK_1` FOREIGN KEY (`book_id`) REFERENCES `x`.`book` (`id`) ON DELETE CASCADE)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo', 'bar2']
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo5`( `id` INTEGER NOT NULL AUTO_INCREMENT, `lkdjfsh` INTEGER, `dfgdsgf` TEXT, PRIMARY KEY (`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [versionable_behavior_test_0]( [id] INTEGER NOT NULL PRIMARY KEY, [bar] INTEGER, [foo_ver] INTEGER DEFAULT 0)
+ in following column [bar] and in column [bar] of table [Woopah]
+Detected: Clone Tables Found in following statement: CREATE TABLE `foo`( `id` INTEGER NOT NULL, `second_id` INTEGER NOT NULL AUTO_INCREMENT, `third_id` INTEGER NOT NULL, `bar` VARCHAR(255), PRIMARY KEY (`second_id`,`id`,`third_id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE author( id NUMBER NOT NULL, first_name NVARCHAR2(100), last_name NVARCHAR2(100))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `y`.`author`( `id` INTEGER NOT NULL AUTO_INCREMENT, `first_name` VARCHAR(100), `last_name` VARCHAR(100), PRIMARY KEY (`id`))
+

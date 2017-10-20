@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ci_sessions` (	session_id varchar(40) DEFAULT '0' NOT NULL,	ip_address varchar(45) DEFAULT '0' NOT NULL,	user_agent varchar(120) NOT NULL,	last_activity int(10) unsigned DEFAULT 0 NOT NULL,	user_data text NOT NULL,	PRIMARY KEY (session_id),	KEY `last_activity_idx` (`last_activity`))
+ in following column user_data of table `ci_sessions`
+Detected: Index Shotgun Variant: 3 Following index not used : ['ci_sessions', 'last_activity']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE news (	id int(11) NOT NULL AUTO_INCREMENT,	title varchar(128) NOT NULL,	slug varchar(128) NOT NULL,	text text NOT NULL,	PRIMARY KEY (id),	KEY slug (slug))
+ in following column text of table news
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE trackbacks ( tb_id int(10) unsigned NOT NULL auto_increment, entry_id int(10) unsigned NOT NULL default 0, url varchar(200) NOT NULL, title varchar(100) NOT NULL, excerpt text NOT NULL, blog_name varchar(100) NOT NULL, tb_date int(10) NOT NULL, ip_address varchar(16) NOT NULL, PRIMARY KEY `tb_id` (`tb_id`), KEY `entry_id` (`entry_id`))
+ in following column excerpt of table trackbacks

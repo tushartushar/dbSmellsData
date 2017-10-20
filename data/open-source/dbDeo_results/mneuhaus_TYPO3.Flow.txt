@@ -1,0 +1,23 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow_security_account_roles_join', 'flow_security_account']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE typo3_flow3_security_account (flow3_persistence_identifier VARCHAR(40) NOT NULL, party VARCHAR(40) DEFAULT NULL, accountidentifier VARCHAR(255) NOT NULL, authenticationprovidername VARCHAR(255) NOT NULL, credentialssource VARCHAR(255) NOT NULL, creationdate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, expirationdate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, roles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column expirationdate and in column expirationdate of table flow3_security_account
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow3_security_account', 'party_abstractparty']
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow_security_policy_role_parentroles_join', 'parent_role']
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow3_resource_resource', 'resourcepointer']
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow_security_account_roles_join', 'flow_policy_role']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE flow3_resource_resource (flow3_persistence_identifier VARCHAR(40) NOT NULL, flow3_resource_resourcepointer VARCHAR(255) DEFAULT NULL, filename VARCHAR(255) DEFAULT NULL, fileextension VARCHAR(255) DEFAULT NULL, INDEX IDX_11FFD19FD0275681 (flow3_resource_resourcepointer), PRIMARY KEY(flow3_persistence_identifier))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow3_resource_resource', 'publishingconfiguration']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE typo3_flow3_security_account (flow3_persistence_identifier VARCHAR(40) NOT NULL, party VARCHAR(40) DEFAULT NULL, accountidentifier VARCHAR(255) NOT NULL, authenticationprovidername VARCHAR(255) NOT NULL, credentialssource VARCHAR(255) NOT NULL, creationdate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, expirationdate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, roles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column roles of table typo3_flow3_security_account
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE typo3_flow3_security_authorization_resource_securitypubli_6180a (flow3_persistence_identifier VARCHAR(40) NOT NULL, allowedroles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column allowedroles and in column allowedroles of table flow3_resource_securitypublishingconfiguration
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE typo3_flow3_security_account (flow3_persistence_identifier VARCHAR(40) NOT NULL, party VARCHAR(40) DEFAULT NULL, accountidentifier VARCHAR(255) NOT NULL, authenticationprovidername VARCHAR(255) NOT NULL, credentialssource VARCHAR(255) NOT NULL, creationdate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, expirationdate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, roles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column roles and in column roles of table flow3_security_account
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE typo3_flow3_security_account (flow3_persistence_identifier VARCHAR(40) NOT NULL, party VARCHAR(40) DEFAULT NULL, accountidentifier VARCHAR(255) NOT NULL, authenticationprovidername VARCHAR(255) NOT NULL, credentialssource VARCHAR(255) NOT NULL, creationdate TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, expirationdate TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, roles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column creationdate and in column creationdate of table flow3_security_account
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow3_security_account', 'party']
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow3_resource_resource', 'flow3_resource_resourcepointer']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE typo3_flow3_security_authorization_resource_securitypubli_6180a (flow3_persistence_identifier VARCHAR(40) NOT NULL, allowedroles TEXT NOT NULL, PRIMARY KEY(flow3_persistence_identifier))
+ in following column allowedroles of table typo3_flow3_security_authorization_resource_securitypubli_6180a
+Detected: Index Shotgun Variant: 3 Following index not used : ['typo3_flow_security_policy_role_parentroles_join', 'flow_policy_role']

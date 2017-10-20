@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: create table test ( id integer primary key autoincrement not null,n integer, f real , t timestamp ,name text )
+ in following column f of table test
+Detected: Obsolete Column TypesFound in following statement: create table test ( id integer primary key autoincrement not null,n integer, f real , t timestamp ,name text )
+ in following column name of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users ( id integer primary key not null, name varchar(128) not null )
+ in following column name and in column name of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users ( id integer primary key not null, name varchar(128) not null )
+ in following column id and in column id of table Fortune
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS PersonVec (LastName VARCHAR(30), FirstName VARCHAR(30), Address VARCHAR(30))
+

@@ -1,0 +1,13 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE users( id serial PRIMARY KEY, name varchar NOT NULL, email varchar NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE posts( id serial PRIMARY KEY, forum_id integer NOT NULL REFERENCES forums, author_id integer NOT NULL REFERENCES users, subject varchar NOT NULL, body varchar NOT NULL)
+ in following column body and in column body of table bios
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bios( id serial PRIMARY KEY, body text NOT NULL, website_url varchar NOT NULL, author_id integer NOT NULL REFERENCES users)
+ in following column body of table bios
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE text_array_records( id serial PRIMARY KEY, texts text[])
+ in following column texts of table text_array_records
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE float_array_records( id serial PRIMARY KEY, floats float[])
+ in following column floats of table float_array_records
+Detected: God Table Found in following statement: CREATE TABLE wide_records( id serial PRIMARY KEY, a varchar NOT NULL, b varchar NOT NULL, c varchar NOT NULL, d varchar NOT NULL, e varchar NOT NULL, f varchar NOT NULL, g varchar NOT NULL, h varchar NOT NULL, i varchar NOT NULL, j varchar NOT NULL)
+

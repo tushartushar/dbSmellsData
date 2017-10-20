@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {{table_name}}(id SERIAL, eta integer NOT NULL, item text NOT NULL)
+ in following column item of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {{table_name}}(id INTEGER PRIMARY KEY AUTOINCREMENT, eta integer NOT NULL, item text NOT NULL)
+ in following column item of table {
+Detected: Index Shotgun Variant: 1

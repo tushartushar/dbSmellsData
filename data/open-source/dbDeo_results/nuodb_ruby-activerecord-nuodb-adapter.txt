@@ -1,0 +1,9 @@
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dual_encodings ( id integer PRIMARY KEY AUTOINCREMENT, name string, data binary )
+ in following column data and in column data of table ex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE postgresql_numbers ( id SERIAL PRIMARY KEY, single REAL, double DOUBLE PRECISION )
+ in following column single of table postgresql_numbers
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE columns_with_default ( id integer PRIMARY KEY AUTOINCREMENT, number integer default 10 )
+ in following column id and in column id of table postgresql_bit_strings
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE postgresql_arrays ( id SERIAL PRIMARY KEY, commission_by_quarter INTEGER[], nicknames TEXT[] )
+ in following column nicknames of table postgresql_arrays

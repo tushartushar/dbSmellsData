@@ -1,0 +1,5 @@
+select %s, %s from %s, %s where %s AND %s&#39;</span><span class='strut'>&nbsp;
+CREATE TABLE raw_country_info (	ISO varchar,	ISO3 varchar,	ISONumeric varchar,	fips varchar,	country varchar,	capital varchar,	area varchar,	population varchar,	continent varchar,	tld varchar,	currencycode varchar,	currencyname varchar,	phone varchar,	postalcodeformat varchar,	postalcoderegex varchar,	languages varchar,	geonameid varchar,	neighbours varchar,	equivalentfipscode varchar)
+select %s, %s from %s, %s&#39;</span><span class='strut'>&nbsp;
+CREATE TABLE raw_feature_codes (	code varchar,	name varchar,	description varchar)
+CREATE TABLE raw_locations (	geonameid varchar,	name varchar,	asciiname varchar,	alternamtename varchar,	latitude varchar,	longitude varchar,	featureclass varchar,	featurecode varchar,	countrycode varchar,	cc2 varchar,	admin1code varchar,	admin2code varchar,	admin3code varchar,	admin4code varchar,	population varchar,	elevation varchar,	dem varchar,	timezone varchar,	modificationdate varchar)

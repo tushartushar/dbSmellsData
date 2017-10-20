@@ -1,0 +1,23 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE PERMISSIONS ( ROLE_NAME VARCHAR(150) NOT NULL, ACTION_NAME VARCHAR(30) NOT NULL, RESOURCEGROUP_NAME VARCHAR(40), PRIMARY KEY(ROLE_NAME, ACTION_NAME, RESOURCEGROUP_NAME) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `DeviceConfig` ( `nodeUrn` varchar(255) NOT NULL, `description` longtext, `gatewayNode` tinyint(1) NOT NULL, `nodePort` varchar(255) DEFAULT NULL, `nodeType` varchar(255) NOT NULL, `nodeUSBChipID` varchar(255) DEFAULT NULL, `timeoutCheckAliveMillis` bigint(20) DEFAULT NULL, `timeoutFlashMillis` bigint(20) DEFAULT NULL, `timeoutNodeApiMillis` bigint(20) DEFAULT NULL, `timeoutResetMillis` bigint(20) DEFAULT NULL, `position_id` bigint(20) DEFAULT NULL, PRIMARY KEY (`nodeUrn`), KEY `FKB6E44958766B4057` (`position_id`), CONSTRAINT `FKB6E44958766B4057` FOREIGN KEY (`position_id`) REFERENCES `Coordinate` (`id`))
+ in following column `description` and in column `description` of table `ConfidentialReservationDataInternal`
+Detected: Metadata as Data Found in following statement: CREATE TABLE `SecretReservationKeyInternal` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `secretReservationKey` varchar(255) NOT NULL, `urnPrefix` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`), UNIQUE KEY `secretReservationKey` (`secretReservationKey`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE USERS ( NAME VARCHAR(150) NOT NULL, PASSWORD VARCHAR(1500), SALT VARCHAR(1500), PRIMARY KEY (NAME) )
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `ChannelHandlerConfig` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `handlerName` varchar(255) DEFAULT NULL, `instanceName` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE PERMISSIONS ( ROLE_NAME VARCHAR(150) NOT NULL, ACTION_NAME VARCHAR(30) NOT NULL, RESOURCEGROUP_NAME VARCHAR(40) )
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE USERS ( EMAIL VARCHAR(150) NOT NULL, PASSWORD VARCHAR(1500), SALT VARCHAR(1500), PRIMARY KEY (EMAIL) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `DeviceConfig` ( `nodeUrn` varchar(255) NOT NULL, `description` longtext, `gatewayNode` tinyint(1) NOT NULL, `nodePort` varchar(255) DEFAULT NULL, `nodeType` varchar(255) NOT NULL, `nodeUSBChipID` varchar(255) DEFAULT NULL, `timeoutCheckAliveMillis` bigint(20) DEFAULT NULL, `timeoutFlashMillis` bigint(20) DEFAULT NULL, `timeoutNodeApiMillis` bigint(20) DEFAULT NULL, `timeoutResetMillis` bigint(20) DEFAULT NULL, `position_id` bigint(20) DEFAULT NULL, PRIMARY KEY (`nodeUrn`), KEY `FKB6E44958766B4057` (`position_id`), CONSTRAINT `FKB6E44958766B4057` FOREIGN KEY (`position_id`) REFERENCES `Coordinate` (`id`))
+ in following column `description` of table `DeviceConfig`
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE `DeviceConfig` ( `nodeUrn` varchar(255) NOT NULL, `description` longtext, `gatewayNode` tinyint(1) NOT NULL, `nodePort` varchar(255) DEFAULT NULL, `nodeType` varchar(255) NOT NULL, `nodeUSBChipID` varchar(255) DEFAULT NULL, `timeoutCheckAliveMillis` bigint(20) DEFAULT NULL, `timeoutFlashMillis` bigint(20) DEFAULT NULL, `timeoutNodeApiMillis` bigint(20) DEFAULT NULL, `timeoutResetMillis` bigint(20) DEFAULT NULL, `position_id` bigint(20) DEFAULT NULL, PRIMARY KEY (`nodeUrn`), KEY `FKB6E44958766B4057` (`position_id`), CONSTRAINT `FKB6E44958766B4057` FOREIGN KEY (`position_id`) REFERENCES `Coordinate` (`id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `KeyValueEntity` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `key_i` varchar(255) DEFAULT NULL, `value_i` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `ConfidentialReservationDataInternal_options` ( `ConfidentialReservationDataInternal_id` bigint(20) NOT NULL, `options` varchar(255) DEFAULT NULL, `options_KEY` varchar(255) NOT NULL DEFAULT '', PRIMARY KEY (`ConfidentialReservationDataInternal_id`,`options_KEY`), KEY `FKEAC3560AFD4229C4` (`ConfidentialReservationDataInternal_id`), CONSTRAINT `FKEAC3560AFD4229C4` FOREIGN KEY (`ConfidentialReservationDataInternal_id`) REFERENCES `ConfidentialReservationDataInternal` (`id`))
+ in following column CONSTRAINT and in column CONSTRAINT of table `DeviceConfig`

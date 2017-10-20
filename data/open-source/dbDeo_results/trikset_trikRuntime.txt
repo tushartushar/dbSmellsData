@@ -1,0 +1,23 @@
+Detected: Adjacency List Found in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['MODEL_ELEMENT', 'ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['MODEL_ELEMENT (MODEL_TYPE)', 'r']
+Detected: Index Shotgun Variant: 3 Following index not used : ['DIAGRAM', 'A']
+Detected: Index Shotgun Variant: 3 Following index not used : ['DIAGRAM', 'PARENT_MODEL_ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['DIAGRAM', 'indexDIAGRAM_ELEMENT_DIAGRAM_IDDIAGRAM_ELEMENT']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), USER_ID_PARENT char(16), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+ in following column NAME of table MODEL_ELEMENT
+Detected: Index Shotgun Variant: 3 Following index not used : ['MODEL_ELEMENT', 'PARENT_ID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+ in following column MIRROR_SOURCE of table MODEL_ELEMENT
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+ in following column NAME of table MODEL_ELEMENT
+Detected: Index Shotgun Variant: 3 Following index not used : ['USER_ID_FORMAT', 'MODEL_TYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), USER_ID_PARENT char(16), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+ in following column MIRROR_SOURCE of table MODEL_ELEMENT
+Detected: God Table Found in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), USER_ID_PARENT char(16), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['USER_ID_FORMAT', 'tableUSER_ID_FORMATUSER_ID_FORMAT']
+Detected: Index Shotgun Variant: 3 Following index not used : ['MODEL_ELEMENT (MODEL_TYPE)', 'MODEL_TYPE']
+Detected: Adjacency List Found in following statement: CREATE TABLE MODEL_ELEMENT (ID char(16) NOT NULL, USER_ID varchar(64), MODEL_TYPE varchar(64) NOT NULL, PARENT_ID char(16), NAME text, DEFINITION blob NOT NULL, MIRROR_SOURCE text, AUTHOR varchar(256), CREATE_AT integer(10), LAST_MOD_AT integer(10), USER_ID_PARENT char(16), PRIMARY KEY (ID), FOREIGN KEY(PARENT_ID) REFERENCES MODEL_ELEMENT(ID))
+

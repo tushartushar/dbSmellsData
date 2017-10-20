@@ -1,0 +1,5 @@
+SELECT * FROM "+this.tableName);while(rs.isValidRow()){feature=this.unfreezeFeature(rs);if(this.evaluateFilter(feature,options.filter)){if(!options.noFeatureStateReset){feature.state=null;
+CREATE TABLE areaofinterest ( id integer NOT NULL, title character varying(100) NOT NULL, description character varying, geom geometry, CONSTRAINT enforce_dims_geom CHECK ((ndims(geom) = 2)), CONSTRAINT enforce_geotype_geom CHECK (((geometrytype(geom) = 'POLYGON'::text) OR (geom IS NULL))), CONSTRAINT enforce_srid_geom CHECK ((srid(geom) = 900913)))
+CREATE TABLE areaofinterest ( id integer NOT NULL, title character varying(100) NOT NULL, description character varying, type_id integer NOT NULL, geom geometry, CONSTRAINT enforce_dims_geom CHECK ((ndims(geom) = 2)), CONSTRAINT enforce_geotype_geom CHECK (((geometrytype(geom) = 'POLYGON'::text) OR (geom IS NULL))), CONSTRAINT enforce_srid_geom CHECK ((srid(geom) = 900913)))
+CREATE TABLE POINT( ID integer identity primary key, NAME varchar(50))
+CREATE TABLE aoitype ( id integer NOT NULL, description character varying,)

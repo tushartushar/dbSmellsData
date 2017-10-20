@@ -1,0 +1,5 @@
+create table user ( user_name varchar(255) not null, constraint pk_user primary key (user_name))
+create table security_permission ( id bigint not null, value varchar(255) not null, constraint uq_security_permission_value unique (value), constraint pk_security_permission primary key (id))
+create table security_role ( id bigint not null, role_name varchar(255) not null, constraint uq_security_role_role_name unique (role_name), constraint pk_security_role primary key (id))
+create table user_security_role ( user_user_name varchar(255) not null, security_role_id bigint not null, constraint pk_user_security_role primary key (user_user_name, security_role_id))
+create table user_security_permission ( user_user_name varchar(255) not null, security_permission_id bigint not null, constraint pk_user_security_permission primary key (user_user_name, security_permission_id))

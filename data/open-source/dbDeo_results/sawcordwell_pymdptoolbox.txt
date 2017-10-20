@@ -1,0 +1,32 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE transition2 (row INTEGER, col INTEGER, prob REAL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE transition1 (row INTEGER, col INTEGER, prob REAL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Vprev (state INTEGER PRIMARY KEY ASC, value REAL)
+ in following column value of table Vprev
+Detected: Clone Tables Found in following statement: CREATE TABLE reward2 (state INTEGER PRIMARY KEY ASC, val REAL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE transition1 (row INTEGER, col INTEGER, prob REAL)
+ in following column prob of table transition1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE reward2 (state INTEGER PRIMARY KEY ASC, val REAL)
+ in following column val of table reward2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE reward1 (state INTEGER PRIMARY KEY ASC, val REAL)
+ in following column val of table reward1
+Detected: Clone Tables Found in following statement: CREATE TABLE transition%s (row INTEGER, col INTEGER, prob REAL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE reward%s (state INTEGER PRIMARY KEY ASC, val REAL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE reward1 (state INTEGER PRIMARY KEY ASC, val REAL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE info (name TEXT, value INTEGER)
+ in following column value and in column value of table V
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE info (name TEXT, value INTEGER)
+ in following column name of table info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE V (state INTEGER PRIMARY KEY ASC, value REAL)
+ in following column value of table V
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE reward%s (state INTEGER PRIMARY KEY ASC, val REAL)
+ in following column val of table reward
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE transition2 (row INTEGER, col INTEGER, prob REAL)
+ in following column prob of table transition2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE transition%s (row INTEGER, col INTEGER, prob REAL)
+ in following column prob of table transition

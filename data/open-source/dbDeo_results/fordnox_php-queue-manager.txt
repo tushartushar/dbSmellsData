@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `message` ( `message_id` int(11) unsigned NOT NULL AUTO_INCREMENT, `queue_id` int(11) unsigned NOT NULL, `handle` char(32) NOT NULL DEFAULT '', `body` text NOT NULL, `md5` char(32) NOT NULL DEFAULT '', `timeout` double NOT NULL, `created` int(11) unsigned NOT NULL, `log` text NOT NULL, PRIMARY KEY (`message_id`))
+ in following column `body` of table `message`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `message` ( `message_id` int(11) unsigned NOT NULL AUTO_INCREMENT, `queue_id` int(11) unsigned NOT NULL, `handle` char(32) NOT NULL DEFAULT '', `body` text NOT NULL, `md5` char(32) NOT NULL DEFAULT '', `timeout` double NOT NULL, `created` int(11) unsigned NOT NULL, `log` text NOT NULL, PRIMARY KEY (`message_id`))
+ in following column `timeout` and in column `timeout` of table `queue`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `message` ( `message_id` int(11) unsigned NOT NULL AUTO_INCREMENT, `queue_id` int(11) unsigned NOT NULL, `handle` char(32) NOT NULL DEFAULT '', `body` text NOT NULL, `md5` char(32) NOT NULL DEFAULT '', `timeout` double NOT NULL, `created` int(11) unsigned NOT NULL, `log` text NOT NULL, PRIMARY KEY (`message_id`))
+ in following column `log` of table `message`

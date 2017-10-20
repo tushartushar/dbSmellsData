@@ -1,0 +1,7 @@
+Detected: God Table Found in following statement: CREATE TABLE push_message_info ( id VARCHAR(255) NOT NULL, client_identifier VARCHAR(255) DEFAULT NULL, ip_address VARCHAR(255) DEFAULT NULL, push_application_id VARCHAR(255) NOT NULL, raw_json_message VARCHAR(4500) DEFAULT NULL, submit_date DATE DEFAULT NULL, total_receivers BIGINT NOT NULL, app_open_counter BIGINT DEFAULT 0, first_open_date DATE DEFAULT NULL, last_open_date DATE DEFAULT NULL, served_variants BIGINT DEFAULT 0, total_variants BIGINT DEFAULT 0, PRIMARY KEY (id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE android_variant ( google_key VARCHAR(255) NOT NULL, project_number VARCHAR(255) DEFAULT NULL, id VARCHAR(255) NOT NULL, PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE category ( id BIGINT NOT NULL, name VARCHAR(255) DEFAULT NULL, PRIMARY KEY (id))
+ in following column id and in column id of table variant

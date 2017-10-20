@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commands (math_environment NUMERIC, command TEXT, command_group TEXT, description TEXT)
+ in following column command of table commands
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commands (math_environment NUMERIC, command TEXT, command_group TEXT, description TEXT)
+ in following column description of table commands
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commands (math_environment NUMERIC, command TEXT, command_group TEXT, description TEXT)
+ in following column command_group of table commands

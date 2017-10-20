@@ -1,0 +1,41 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE categories ( id SERIAL PRIMARY KEY, id_parent INTEGER REFERENCES categories, name TEXT)
+ in following column name of table categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id INTEGER PRIMARY KEY, id_category INTEGER REFERENCES categories (id), id_manufacturer INTEGER REFERENCES manufacturers(id), name TEXT, description TEXT, sale BOOLEAN)
+ in following column name of table products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id INTEGER PRIMARY KEY, id_category INTEGER REFERENCES categories (id), id_manufacturer INTEGER REFERENCES manufacturers(id), name TEXT, description TEXT, sale BOOLEAN)
+ in following column description of table products
+Detected: Adjacency List Found in following statement: CREATE TABLE categories ( id INTEGER PRIMARY KEY, id_parent INTEGER REFERENCES categories (id), name TEXT)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE categories ( id INTEGER AUTO_INCREMENT PRIMARY KEY, id_parent INTEGER REFERENCES categories (id), name TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE categories ( id INTEGER PRIMARY KEY, id_parent INTEGER REFERENCES categories (id), name TEXT)
+ in following column name of table categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE manufacturers ( id SERIAL PRIMARY KEY, name TEXT)
+ in following column name of table manufacturers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id SERIAL PRIMARY KEY, id_category INTEGER REFERENCES categories, id_manufacturer INTEGER REFERENCES manufacturers, name TEXT, description TEXT, sale BOOLEAN)
+ in following column name of table products
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE orders ( id_order SERIAL PRIMARY KEY, name TEXT)
+ in following column id_order and in column id_order of table order_products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id SERIAL PRIMARY KEY, id_category INTEGER REFERENCES categories, id_manufacturer INTEGER REFERENCES manufacturers, name TEXT, description TEXT, sale BOOLEAN)
+ in following column description of table products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders ( id_order SERIAL PRIMARY KEY, name TEXT)
+ in following column name of table orders
+Detected: Adjacency List Found in following statement: CREATE TABLE categories ( id SERIAL PRIMARY KEY, id_parent INTEGER REFERENCES categories, name TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders ( id_order INTEGER AUTO_INCREMENT PRIMARY KEY, name TEXT)
+ in following column name of table orders
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE products ( id SERIAL PRIMARY KEY, id_category INTEGER REFERENCES categories, id_manufacturer INTEGER REFERENCES manufacturers, name TEXT, description TEXT, sale BOOLEAN)
+ in following column id and in column id of table manufacturers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE categories ( id INTEGER AUTO_INCREMENT PRIMARY KEY, id_parent INTEGER REFERENCES categories (id), name TEXT)
+ in following column name of table categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE manufacturers ( id INTEGER AUTO_INCREMENT PRIMARY KEY, name TEXT)
+ in following column name of table manufacturers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id INTEGER AUTO_INCREMENT PRIMARY KEY, id_category INTEGER REFERENCES categories (id), id_manufacturer INTEGER REFERENCES manufacturers(id), name TEXT, description TEXT, sale BOOLEAN)
+ in following column name of table products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE manufacturers ( id INTEGER PRIMARY KEY, name TEXT)
+ in following column name of table manufacturers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id INTEGER AUTO_INCREMENT PRIMARY KEY, id_category INTEGER REFERENCES categories (id), id_manufacturer INTEGER REFERENCES manufacturers(id), name TEXT, description TEXT, sale BOOLEAN)
+ in following column description of table products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders ( id_order INTEGER PRIMARY KEY, name TEXT)
+ in following column name of table orders

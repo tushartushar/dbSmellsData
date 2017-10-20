@@ -1,0 +1,45 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Name of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Probability of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Peptides (	 ID INT,	 ProteinID INT,	 Probability REAL,	 Sequence TEXT,	 Start INT,	 End INT,	 ModifiedSequence TEXT	 )
+ in following column ModifiedSequence of table Peptides
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ProteinGroups (	 ID INT, 	 Probability REAL	 )
+ in following column Probability of table ProteinGroups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Spectra (			ID INTEGER PRIMARY KEY,			MZData TEXT,			IntensityData TEXT,			PrecursorMass REAL,			PrecursorCharge INT,			SpectrumType INT,			SpectrumTitle TEXT		)
+ in following column MZData of table Spectra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Peptides (	 ID INT,	 ProteinID INT,	 Probability REAL,	 Sequence TEXT,	 Start INT,	 End INT,	 ModifiedSequence TEXT	 )
+ in following column Sequence of table Peptides
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Spectra (			ID INTEGER PRIMARY KEY,			MZData TEXT,			IntensityData TEXT,			PrecursorMass REAL,			PrecursorCharge INT,			SpectrumType INT,			SpectrumTitle TEXT		)
+ in following column IntensityData of table Spectra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column RetentionTime of table PeptideSpectrumMatches
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column ID and in column ID of table Spectra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Description of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Coverage of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column PeptideModifiedSequence of table PeptideSpectrumMatches
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column PeptideSequence of table PeptideSpectrumMatches
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column NextAA of table PeptideSpectrumMatches
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Sequence of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+ in following column Indistinguishables of table Proteins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column MassDeviation of table PeptideSpectrumMatches
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column PrecursorNeutralMass of table PeptideSpectrumMatches
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Spectra (			ID INTEGER PRIMARY KEY,			MZData TEXT,			IntensityData TEXT,			PrecursorMass REAL,			PrecursorCharge INT,			SpectrumType INT,			SpectrumTitle TEXT		)
+ in following column PrecursorMass of table Spectra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Peptides (	 ID INT,	 ProteinID INT,	 Probability REAL,	 Sequence TEXT,	 Start INT,	 End INT,	 ModifiedSequence TEXT	 )
+ in following column Probability of table Peptides
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Spectra (			ID INTEGER PRIMARY KEY,			MZData TEXT,			IntensityData TEXT,			PrecursorMass REAL,			PrecursorCharge INT,			SpectrumType INT,			SpectrumTitle TEXT		)
+ in following column SpectrumTitle of table Spectra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )
+ in following column PrevAA of table PeptideSpectrumMatches

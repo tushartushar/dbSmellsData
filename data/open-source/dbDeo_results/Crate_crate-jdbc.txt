@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: create table my_schema.names (id int primary key, name string)
+ in following column . and in column . of table test
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table if not exists t_multi_pks (id int primary key, id2 int primary key, name string)
+

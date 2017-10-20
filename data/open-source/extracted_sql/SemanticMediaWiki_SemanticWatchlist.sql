@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS /*$wgDBprefix*/swl_sets ( set_id INT(10) unsigned NOT NULL PRIMARY KEY AUTO_INCREMENT)

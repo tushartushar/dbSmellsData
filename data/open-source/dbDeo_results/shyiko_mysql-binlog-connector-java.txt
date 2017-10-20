@@ -1,0 +1,3 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO t1 VALUES (2, '[1,2]')
+
+Detected: Index Shotgun Variant: 1

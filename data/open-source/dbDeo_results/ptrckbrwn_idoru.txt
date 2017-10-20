@@ -1,0 +1,35 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+ in following column title of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, url text NOT NULL, title text, user_id integer, purged_at timestamp without time zone)
+ in following column url of table feeds
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), published_at timestamp, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean NOT NULL DEFAULT true )
+ in following column title of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), published_at timestamp, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean NOT NULL DEFAULT true )
+ in following column body of table articles
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE feeds( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), url text NOT NULL, title text NOT NULL )
+ in following column id and in column id of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), published_at timestamp, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean NOT NULL DEFAULT true )
+ in following column url of table articles
+Detected: God Table Found in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+
+Detected: God Table Found in following statement: CREATE TABLE users ( id integer NOT NULL, email character varying(255) DEFAULT ''::character varying NOT NULL, encrypted_password character varying(255) DEFAULT ''::character varying NOT NULL, reset_password_token character varying(255), reset_password_sent_at timestamp without time zone, remember_created_at timestamp without time zone, sign_in_count integer DEFAULT 0 NOT NULL, current_sign_in_at timestamp without time zone, last_sign_in_at timestamp without time zone, current_sign_in_ip character varying(255), last_sign_in_ip character varying(255), is_admin boolean DEFAULT false NOT NULL, created_at timestamp without time zone, updated_at timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), published_at timestamp, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean NOT NULL DEFAULT true )
+ in following column summary of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+ in following column url of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+ in following column author of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), url text NOT NULL, title text NOT NULL )
+ in following column title of table feeds
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+ in following column body of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, published_at timestamp without time zone, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean DEFAULT true NOT NULL, feed_id integer)
+ in following column summary of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds ( id integer NOT NULL, created_at timestamp without time zone DEFAULT now() NOT NULL, updated_at timestamp without time zone DEFAULT now() NOT NULL, url text NOT NULL, title text, user_id integer, purged_at timestamp without time zone)
+ in following column title of table feeds
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), published_at timestamp, url text NOT NULL, title text NOT NULL, author text, summary text, body text, full_story boolean NOT NULL DEFAULT true )
+ in following column author of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds( id serial PRIMARY KEY, created_at timestamp NOT NULL DEFAULT now(), updated_at timestamp NOT NULL DEFAULT now(), url text NOT NULL, title text NOT NULL )
+ in following column url of table feeds

@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `mgmt_subnet`(key TEXT, node_id TEXT)
+ in following column node_id of table `mgmt_subnet`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `%s`(key TEXT, node_id TEXT)
+ in following column node_id of table `%s`
+Detected: Index Shotgun Variant: 1

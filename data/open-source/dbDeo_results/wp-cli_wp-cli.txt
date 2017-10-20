@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wp_awesome ( id int(11) unsigned NOT NULL AUTO_INCREMENT, awesome_stuff TEXT, PRIMARY KEY (id) )
+ in following column awesome_stuff of table wp_awesome
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE awesome_table ( id int(11) unsigned NOT NULL AUTO_INCREMENT, awesome_stuff TEXT, PRIMARY KEY (id) )
+ in following column awesome_stuff of table awesome_table
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM `$table` WHERE `$col` REGEXP '^[aiO]:[1-9]' LIMIT 1
+

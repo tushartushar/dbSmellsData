@@ -1,0 +1,3 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE clients SET name = :name, description = :description, secret = :secret, disable_user_consent = :disable_user_consent, redirect_uri = :redirect_uri, type = :type, icon = :icon, allowed_scope = :allowed_scope, contact_email = :contact_email  WHERE id = :client_id
+
+Detected: Index Shotgun Variant: 1

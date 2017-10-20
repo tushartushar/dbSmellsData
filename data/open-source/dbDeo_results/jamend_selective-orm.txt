@@ -1,0 +1,6 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Books ( idBook INTEGER PRIMARY KEY NOT NULL, title VARCHAR(200) NOT NULL, idAuthor INTEGER NOT NULL, isbn VARCHAR(50) NOT NULL, description TEXT, dateCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY(idAuthor) REFERENCES Authors(idAuthor))
+ in following column description of table Books
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Books ( idBook INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT, title VARCHAR(200) NOT NULL, idAuthor INTEGER NOT NULL, isbn VARCHAR(50) NOT NULL, description TEXT, dateCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY(idAuthor) REFERENCES Authors(idAuthor))
+ in following column description of table Books
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Authors', 'idAuthor']

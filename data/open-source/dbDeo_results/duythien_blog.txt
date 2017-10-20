@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `posts` (`id` int(10) NOT NULL, `title` varchar(128) NOT NULL, `content` text NOT NULL, `categoriesId` varchar(50) NOT NULL, `slug` varchar(64) NOT NULL, `tags` varchar(50) NOT NULL, `created` int(10) unsigned NOT NULL, `numberViews` int(20) NOT NULL, `userId` int(25) NOT NULL COMMENT 'user post article')
+ in following column `content` of table `posts`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `contact` (`id` int(10) unsigned NOT NULL, `name` varchar(70) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `email` varchar(70) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `comments` text CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `created_at` datetime DEFAULT NULL)
+ in following column `name` and in column `name` of table `profiles`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `contact` (`id` int(10) unsigned NOT NULL, `name` varchar(70) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `email` varchar(70) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `comments` text CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL, `created_at` datetime DEFAULT NULL)
+ in following column `email` and in column `email` of table `users`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `posts` (`id` int(10) NOT NULL, `title` varchar(128) NOT NULL, `content` text NOT NULL, `categoriesId` varchar(50) NOT NULL, `slug` varchar(64) NOT NULL, `tags` varchar(50) NOT NULL, `created` int(10) unsigned NOT NULL, `numberViews` int(20) NOT NULL, `userId` int(25) NOT NULL COMMENT 'user post article')
+ in following column `categoriesId` and in column `categoriesId` of table `file_store`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `file_store` (`id` int(10) NOT NULL, `fileName` varchar(200) NOT NULL, `fileCaption` varchar(200) NOT NULL, `mimeType` varchar(50) NOT NULL, `description` text NOT NULL, `fileData` mediumblob, `categoriesId` int(10) NOT NULL, `userId` int(10) NOT NULL, `created` int(10) NOT NULL)
+ in following column `description` of table `file_store`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `reset_passwords` (`id` int(10) unsigned NOT NULL, `usersId` int(10) unsigned NOT NULL, `code` varchar(48) NOT NULL, `createdAt` int(10) unsigned NOT NULL, `modifiedAt` int(10) unsigned DEFAULT NULL, `reset` char(1) NOT NULL)
+ in following column `code` and in column `code` of table `email_confirmations`

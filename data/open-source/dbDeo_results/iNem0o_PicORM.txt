@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `cars` ( `idCar` int(11) NOT NULL AUTO_INCREMENT, `idBrand` int(11) NOT NULL, `nameCar` varchar(100) NOT NULL, `noteCar` float NOT NULL, PRIMARY KEY (`idCar`))
+ in following column `noteCar` of table `cars`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `brands` ( `idBrand` int(11) NOT NULL AUTO_INCREMENT, `nameBrand` varchar(100) NOT NULL, `noteBrand` float DEFAULT '0', PRIMARY KEY (`idBrand`))
+ in following column `noteBrand` of table `brands`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `brands` ( `idBrand` int(11) NOT NULL AUTO_INCREMENT, `nameBrand` varchar(100) NOT NULL, `noteBrand` float DEFAULT 0, PRIMARY KEY (`idBrand`) )
+ in following column `noteBrand` of table `brands`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `brands` (	`idBrand` int(11) NOT NULL AUTO_INCREMENT,	`nameBrand` varchar(100) NOT NULL,	`noteBrand` float DEFAULT 0,PRIMARY KEY (`idBrand`))
+ in following column `noteBrand` of table `brands`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `brands` ( `idBrand` int(11) NOT NULL AUTO_INCREMENT, `nameBrand` varchar(100) NOT NULL, `noteBrand` float DEFAULT 0, PRIMARY KEY (`idBrand`) )
+ in following column `noteBrand` of table `brands`

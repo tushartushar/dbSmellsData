@@ -1,0 +1,14 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `dummy` (' ' id INTEGER PRIMARY KEY, name TEXT' ')
+ in following column name of table `dummy`
+Detected: Index Shotgun Variant: 3 Following index not used : ["' '", 'second_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ["' '", 'postgres']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'sqlite']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'fourth_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ["' '", 'fourth_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'second_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ["' '", 'dummy_eight']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'postgres']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dummy_seven', 'third_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE {} (\n'.format(( 'IF NOT EXISTS `{}`'.format(self.model.__storm_table__) if ( config.Database().create_table_behaviours.get( 'create_table_if_not_exists')) else '`' + self.model.__storm_table__ + '`' )) primary_keys = self.get_primary_key_columns() if primary_keys is not None: for pk in primary_keys: query += ' {},\n'.format(self.parse_column(pk)) for column, property_ in self.get_storm_columns(): if property_.primary == 1 or self.is_compound_key(property_.name): continue if column.variable_class is not NativeEnumVariable: query += ' {},\n'.format(self.parse_column(column)) else: query += ' {},\n'.format(self.parse_enum(column)) query += ' {}\n'.format(self.detect_primary_key()) query += '{}'.format( ', {}'.format(self.detect_uniques()) if self.detect_uniques() else '' ) query += '{}'.format( ', {}'.format(self.detect_indexes()) if self.detect_indexes() else '' ) query += '{}'.format( ', {}'.format(self.parse_references()) if self.parse_references() else '' ) query += '\n)
+ in following column \ and in column \ of table stubing

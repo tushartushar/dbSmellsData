@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE promocode_uses ( id SERIAL, token VARCHAR, promocode VARCHAR)
+

@@ -1,0 +1,710 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, city TEXT, phone TEXT )
+ in following column grade of table student
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column F of table T1
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITION_METHODS', 'TID']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['PARTITIONS', 'DELETE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['INDEXES', 'DB_ID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col3 and in column col3 of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MISMATCH1 (n_name text, n_comment text, n_nationkey int8, n_regionkey int8)
+ in following column n_name of table MISMATCH1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testGroupByWithNullData6 (age INT4, point FLOAT4)
+ in following column point of table testGroupByWithNullData6
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, city TEXT, phone TEXT )
+ in following column city of table student
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + " (col1 int4, col2 int4)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithLimit (col1 float, col2 float)
+ in following column col1 of table testCtasWithLimit
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (id int, name text, score float, type text)
+ in following column type of table table1
+Detected: Obsolete Column TypesFound in following statement: create table " + canonicalTableName + " (col4 text)
+ in following column col4 of table " + canonicalTableName + "
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + " (col2 int4, col3 float8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text)
+ in following column col2 of table hbase_mapped_table
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clone (title TEXT, name RECORD (first_name TEXT, last_name TEXT))
+ in following column title of table clone
+Detected: Clone Tables Found in following statement: CREATE TABLE d11.complex_type1 ( col1 array<double>, col2 array<record (last_name text, first_name text, age int)>, col3 array<map<text, text>>, col4 array<array<double>>)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_name of table customer_parts
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITIONS', 'PARTITION_ID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column rk2 of table hbase_mapped_table
+Detected: Multicolumn Attribute Found in following statement: create table table1 ( col1 array<int>, col2 array<text>, col3 array<record (name text, age int)>, col3 array<array<float>>)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'TableName1']
+Detected: Clone Tables Found in following statement: CREATE TABLE table3 (c1 int, c2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T3 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITIONS', 'TID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, INT8>, F FLOAT8)
+ in following column F of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_name of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_shipdate of table lineitem_year_month
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITION_KEYS', 'TID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+ in following column col3 of table hbase_mapped_table2
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col3 float8, col4 text)
+ in following column col4 of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MISMATCH2 (n_name text, n_comment text)
+ in following column n_comment of table MISMATCH2
+Detected: Clone Tables Found in following statement: CREATE TABLE D1.table1 (age int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TESTTABLE1 (COL1 INT, COL2 VARCHAR(10))
+
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName +" (col1 int4, col2 float4, col3 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T3 (l_orderkey bigint, col1 text)
+ in following column col1 of table T3
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_commitdate of table lineitem_year_month
+Detected: Clone Tables Found in following statement: CREATE TABLE d2.table4 (age int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table3 (c1 int, c2 text)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 int)
+
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_shipmode of table lineitem_year_month
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee ( id int, name text, age )
+ in following column name of table employee
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8), F FLOAT8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE D9.nested_table2 (f1 int, nf1 record (f1 int4, f3 double), nf2 record (f1 int4, nf1 record (f1 int4, f2 text), nf2 record (f1 int4, f2 text), f2 double), f2 text)
+ in following column f2 of table D9
+Detected: Multicolumn Attribute Found in following statement: create table "MANAGED_TABLE1" (col1 float, col2 float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, phone TEXT )
+ in following column grade of table student
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int4)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, INT8>, F FLOAT8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_comment of table customer_broad_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders_partition (o_orderkey INT8, o_custkey INT8, o_totalprice FLOAT8, o_orderpriority TEXT, o_clerk TEXT, o_shippriority INT4, o_comment TEXT)
+ in following column o_totalprice of table orders_partition
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITIONS', 'tns']
+Detected: Clone Tables Found in following statement: CREATE TABLE db_1." + tableName + " (age int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_address of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithGroupby (col1 float, col2 float)
+ in following column col1 of table testCtasWithGroupby
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_comment of table lineitem_year_month
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "TestTajoDump"."TableName3" (col1 INT4, col2 INT4)
+ in following column . and in column . of table default
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE d11.complex_type1 ( col1 array<double>, col2 array<record (last_name text, first_name text, age int)>, col3 array<map<text, text>>, col4 array<array<double>>)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8, F RECORD (G INT1, H FLOAT4)), Z FLOAT8)
+
+Detected: Obsolete Column TypesFound in following statement: create table "MANAGED_TABLE1" (col1 float, col2 float)
+ in following column col2 of table "MANAGED_TABLE1"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee (name TEXT, age int, dept TEXT)
+ in following column name of table employee
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+ in following column col2_key of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_discount of table lineitem_year_month
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int4)
+ in following column col2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE default.LINEITEM (XXX TEXT)
+ in following column . of table default
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ${0} (id int, str text, num int)
+ in following column str of table $
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_name of table customer_broad_parts
+Detected: Obsolete Column TypesFound in following statement: create table t1 (col1 int8, col2 int4, col3 float8)
+ in following column col3 of table t1
+Detected: Clone Tables Found in following statement: create table table1 ( col1 array<int>, col2 array<text>, col3 array<record (name text, age int)>, col3 array<array<float>>)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_mktsegment of table customer_broad_parts
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (id int, name text, score float, type text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T2 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column C of table T2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T2 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column A of table T2
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1 (c1 int, c2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE \n1table123u8sd ( name RECORD(last TEXT, first TEXT) )
+ in following column name of table \
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T3 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column A of table T3
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['TABLES', 'TID']
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + " (col1 int4, col2 float4)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithOptions (col1 float, col2 float)
+ in following column col2 of table testCtasWithOptions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1 (c1 int, c2 text)
+ in following column c2 and in column c2 of table table3
+Detected: Obsolete Column TypesFound in following statement: create table prod (id int4, prod_name text, point float4)
+ in following column prod_name of table prod
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id int8, name text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (rk text, col1 text, col2 text, col3 int)
+ in following column col1 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_tax of table lineitem_year_month
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TESTTABLE1 (COL1 INT, COL2 VARCHAR(10))
+
+Detected: Obsolete Column TypesFound in following statement: create table region_part (r_regionkey int8, r_name text)
+ in following column r_name of table region_part
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE D1.table2 (age int)
+
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (n_name TEXT, n_regionkey INT4)
+ in following column n_name of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testGroupByWithNullData7 (age INT4, point FLOAT4)
+ in following column point of table testGroupByWithNullData7
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_phone of table customer_parts
+Detected: Index Shotgun Variant: 3 Following index not used : ['INDEXES', 'COLUMN_NAMES']
+Detected: Obsolete Column TypesFound in following statement: create table nation_diff (n_nationkey int8, n_name text, n_regionkey int8, n_comment text)
+ in following column n_comment of table nation_diff
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE default.ha_test2 (age int)
+ in following column . and in column . of table TestTajoJdbcNegative
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS T1 (XXX TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text)
+ in following column rk2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE db1.table2 (name BLOB, addr TEXT)
+ in following column addr of table db1
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS D3.table1 (age int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['lineitem', '100']
+Detected: Clone Tables Found in following statement: CREATE TABLE testGroupByWithNullData9 (age INT4, point FLOAT4)
+
+Detected: Multicolumn Attribute Found in following statement: create table " + canonicalTableName + "(col1 int4, col2 int4)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithDataFormat (col1 float, col2 float)
+ in following column col2 of table testCtasWithDataFormat
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text)
+ in following column col1 of table hbase_mapped_table1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TESTTABLE1 (COL1 INT, COL2 VARCHAR(20))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8), F FLOAT8)
+ in following column F of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+ in following column col1 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T3 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column C of table T3
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col3 float8, col4 text)
+ in following column col3 of table " + tableName + "
+Detected: Duplicate Column Names Found in following statement: create table " + canonicalTableName + " (col4 text)
+ in following column col4 and in column col4 of table d11
+Detected: Clone Tables Found in following statement: CREATE TABLE TESTTABLE1 (COL1 INT, COL2 VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TESTTABLE2 (COL1 INT, COL2 VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int4)
+ in following column col1 of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table1 (rk text, col1 text, col2 text, col3 int)
+
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithColumnedPartition (col1 float, col2 float)
+
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithGroupby (col1 float, col2 float)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (c1 int, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TB1 (col1 int, col2 int, col3 long)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (rk text, col1 text, col2 text, col3 int)
+ in following column rk of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: create table nation_diff (n_nationkey int8, n_name text, n_regionkey int8, n_comment text)
+ in following column n_name of table nation_diff
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (id int, name text, score float, type text)
+ in following column name of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_acctbal of table customer_parts
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TABLESPACES_HIST ( 				SPACE_HIST_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 				SPACE_NAME VARCHAR(128) NOT NULL CONSTRAINT SPACE_HIST_UNIQUE UNIQUE, 				SPACE_HANDLER VARCHAR (1024) DEFAULT 'HDFS', 				SPACE_URI VARCHAR (4096) NOT NULL, 				CONSTRAINT C_SPACE_HIST_PK PRIMARY KEY (SPACE_HIST_ID)				)
+ in following column SPACE_NAME and in column SPACE_NAME of table TABLESPACES
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int8)
+ in following column col2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MISMATCH2 (n_name text, n_comment text)
+ in following column n_name of table MISMATCH2
+Detected: Obsolete Column TypesFound in following statement: create table prod (id int4, prod_name text, point float4)
+ in following column point of table prod
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithOrderby (col1 float, col2 float)
+ in following column col1 of table testCtasWithOrderby
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col3 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+ in following column col3 of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithTextFile (col1 float, col2 float)
+ in following column col1 of table testCtasWithTextFile
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_phone of table customer_broad_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int, name text, score float, type text )
+ in following column score of table table1
+Detected: Clone Tables Found in following statement: CREATE TABLE D3.table1 (age int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE INDEXES ( 				DB_ID INT NOT NULL REFERENCES DATABASES_ (DB_ID) ON DELETE CASCADE, 				TID INT NOT NULL REFERENCES TABLES (TID) ON DELETE CASCADE, 				INDEX_NAME VARCHAR(128) NOT NULL, 				COLUMN_NAME VARCHAR(128) NOT NULL, 				DATA_TYPE VARCHAR(128) NOT NULL, 				INDEX_TYPE CHAR(32) NOT NULL, 				IS_UNIQUE BOOLEAN NOT NULL, 				IS_CLUSTERED BOOLEAN NOT NULL, 				IS_ASCENDING BOOLEAN NOT NULL, 				CONSTRAINT C_INDEXES_PK PRIMARY KEY (DB_ID, INDEX_NAME)				)
+ in following column DATA_TYPE and in column DATA_TYPE of table COLUMNS
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T2 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column F of table T2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+ in following column col2 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: create table GetTableList2 (age int, name text)
+ in following column name of table GetTableList2
+Detected: Index Shotgun Variant: 3 Following index not used : ['lineitem', '-']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+ in following column col4 of table hbase_mapped_table2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE student ( id int, name string, gender char(1), grade string, phone string )
+ in following column name and in column name of table table1
+Detected: Clone Tables Found in following statement: CREATE TABLE T2 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE MISMATCH2 (n_name text, n_comment text)
+
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithTextFile (col1 float, col2 float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+ in following column rk2 of table hbase_mapped_table2
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 ( id int, name string, score float, type string )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int, name text, score float, type text )
+ in following column name of table table1
+Detected: Clone Tables Found in following statement: CREATE TABLE d7.table1 (age int)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE TESTTABLE2 (COL1 INT, COL2 VARCHAR(20), COL3 VARCHAR(25))
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithOrderby (col1 float, col2 float)
+ in following column col2 of table testCtasWithOrderby
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE D9.nested_table (f1 int, nested_field record (f2 int4, f3 int8), f3 text)
+ in following column f3 of table D9
+Detected: Obsolete Column TypesFound in following statement: create table user (id int4, name text)
+ in following column name of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE hbase_mapped_table (rk int4, col1 text)
+ in following column rk and in column rk of table hbase_mapped_table1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE INDEXES ( 				DB_ID INT NOT NULL REFERENCES DATABASES_ (DB_ID) ON DELETE CASCADE, 				TID INT NOT NULL REFERENCES TABLES (TID) ON DELETE CASCADE, 				INDEX_NAME VARCHAR(128) NOT NULL, 				COLUMN_NAME VARCHAR(128) NOT NULL, 				DATA_TYPE VARCHAR(128) NOT NULL, 				INDEX_TYPE CHAR(32) NOT NULL, 				IS_UNIQUE BOOLEAN NOT NULL, 				IS_CLUSTERED BOOLEAN NOT NULL, 				IS_ASCENDING BOOLEAN NOT NULL, 				CONSTRAINT C_INDEXES_PK PRIMARY KEY (DB_ID, INDEX_NAME)				)
+ in following column DB_ID and in column DB_ID of table DATABASES_
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MISMATCH1 (n_name text, n_comment text, n_nationkey int8, n_regionkey int8)
+ in following column n_comment of table MISMATCH1
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_linestatus of table lineitem_year_month
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column F of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+ in following column rk of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+ in following column col3 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_comment of table customer_parts
+Detected: Clone Tables Found in following statement: CREATE TABLE D9.nested_table2 (f1 int, nf1 record (f1 int4, f3 double), nf2 record (f1 int4, nf1 record (f1 int4, f2 text), nf2 record (f1 int4, f2 text), f2 double), f2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_mktsegment of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text)
+ in following column rk of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: CREATE TABLE table3 (c1 int, c2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col1 text)
+ in following column col1 of table " + tableName + "
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithLimit (col1 float, col2 float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testGroupByWithNullData5 (age INT4, point FLOAT4)
+ in following column point of table testGroupByWithNullData5
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, INT8>, F FLOAT8)
+ in following column C of table T1
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithDataFormat (col1 float, col2 float)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['TABLES', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_backup(rowkey text, author text, register_date text, title text)
+ in following column rowkey of table blog_backup
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithTextFile (col1 float, col2 float)
+ in following column col2 of table testCtasWithTextFile
+Detected: Clone Tables Found in following statement: CREATE TABLE clone (title TEXT, name RECORD (first_name TEXT, last_name TEXT))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (id int, name string, score float, type string)
+ in following column score of table table1
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithGroupby (col1 float, col2 float)
+ in following column col2 of table testCtasWithGroupby
+Detected: Multicolumn Attribute Found in following statement: create table t1 (col1 int8, col2 int4, col3 float8)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['TABLESPACES', 'SPACE_ID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clone2 (title TEXT, name RECORD (first_name TEXT, last_name TEXT))
+ in following column name of table clone2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sales ( col1 int, col2 int)
+ in following column col2 and in column col2 of table " + tableName + "
+Detected: Clone Tables Found in following statement: CREATE TABLE D9.nested_table (f1 int, nested_field record (f2 int4, f3 int8), f3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE testGroupByWithNullData8 (age INT4, point FLOAT4)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testGroupByWithNullData8 (age INT4, point FLOAT4)
+ in following column point of table testGroupByWithNullData8
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE INDEXES ( 				DB_ID INT NOT NULL REFERENCES DATABASES_ (DB_ID) ON DELETE CASCADE, 				TID INT NOT NULL REFERENCES TABLES (TID) ON DELETE CASCADE, 				INDEX_NAME VARCHAR(128) NOT NULL, 				COLUMN_NAME VARCHAR(128) NOT NULL, 				DATA_TYPE VARCHAR(128) NOT NULL, 				INDEX_TYPE CHAR(32) NOT NULL, 				IS_UNIQUE BOOLEAN NOT NULL, 				IS_CLUSTERED BOOLEAN NOT NULL, 				IS_ASCENDING BOOLEAN NOT NULL, 				CONSTRAINT C_INDEXES_PK PRIMARY KEY (DB_ID, INDEX_NAME)				)
+ in following column COLUMN_NAME and in column COLUMN_NAME of table COLUMNS
+Detected: Clone Tables Found in following statement: CREATE TABLE d5.old_table (age integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS default.LINEITEM (XXX TEXT)
+ in following column . of table default
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_quantity of table lineitem_year_month
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE PARTITIONS ( 				PARTITION_ID SERIAL NOT NULL PRIMARY KEY, 				TID INT NOT NULL, 				PARTITION_NAME VARCHAR(128), 				PARTITION_VALUE VARCHAR(1024), 				PATH VARCHAR(4096), 				NUM_BYTES BIGINT, 				FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE, 				UNIQUE (TID, PARTITION_NAME)				)
+ in following column PARTITION_ID and in column PARTITION_ID of table PARTITION_KEYS
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int4)
+ in following column rk of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: create table t1 (col1 int8, col2 int4, col3 float8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk int4, col1 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (col1 int, col2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+ in following column rk1 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_extendedprice of table lineitem_year_month
+Detected: Clone Tables Found in following statement: CREATE TABLE TESTTABLE2 (COL1 INT, COL2 VARCHAR(20), COL3 VARCHAR(25))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TABLESPACES_HIST ( 				SPACE_HIST_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1), 				SPACE_NAME VARCHAR(128) NOT NULL CONSTRAINT SPACE_HIST_UNIQUE UNIQUE, 				SPACE_HANDLER VARCHAR (1024) DEFAULT 'HDFS', 				SPACE_URI VARCHAR (4096) NOT NULL, 				CONSTRAINT C_SPACE_HIST_PK PRIMARY KEY (SPACE_HIST_ID)				)
+ in following column SPACE_URI and in column SPACE_URI of table TABLESPACES
+Detected: Obsolete Column TypesFound in following statement: create table testInsertOverwriteWithCompression (col1 int4, col2 int4, col3 float8)
+ in following column col3 of table testInsertOverwriteWithCompression
+Detected: Obsolete Column TypesFound in following statement: create table "MANAGED_TABLE1" (col1 float, col2 float)
+ in following column col1 of table "MANAGED_TABLE1"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text)
+ in following column rk1 of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: create table " + table + " (col4 text, col1 int4, col2 int4, col3 float8)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (id int, name string, score float, type string)
+
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithOrderby (col1 float, col2 float)
+
+Detected: God Table Found in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TABLESPACES (					SPACE_ID NUMBER(10) NOT NULL PRIMARY KEY,					SPACE_NAME VARCHAR2(128) NOT NULL UNIQUE,					SPACE_HANDLER VARCHAR2(1024) DEFAULT 'HDFS',					SPACE_URI VARCHAR2(4000) NOT NULL				)
+ in following column SPACE_ID and in column SPACE_ID of table DATABASES_
+Detected: Clone Tables Found in following statement: CREATE TABLE testGroupByWithNullData6 (age INT4, point FLOAT4)
+
+Detected: Obsolete Column TypesFound in following statement: create table " + table + " (col4 text, col1 int4, col2 int4, col3 float8)
+ in following column col3 of table " + table + "
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE T1 (col1 int, col2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_acctbal of table customer_broad_parts
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1 (c1 int, c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+ in following column rk of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col3 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithDataFormat (col1 float, col2 float)
+ in following column col1 of table testCtasWithDataFormat
+Detected: Obsolete Column TypesFound in following statement: create table orders_multifile ( o_orderkey int, o_custkey int, o_orderstatus text)
+ in following column o_orderstatus of table orders_multifile
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, phone TEXT )
+ in following column phone of table student
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8), F FLOAT8)
+ in following column C and in column C of table T2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8), F FLOAT8)
+ in following column A of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_mktsegment of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_comment of table customer_parts
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1 ( id int, name text, score float, type text )
+ in following column score and in column score of table " + tableName + "
+Detected: Clone Tables Found in following statement: CREATE TABLE testGroupByWithNullData7 (age INT4, point FLOAT4)
+
+Detected: Obsolete Column TypesFound in following statement: create table " + partitionedTable + " (col4 text)
+ in following column col4 of table " + partitionedTable + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8, F RECORD (G INT1, H FLOAT4)), Z FLOAT8)
+ in following column Z of table T1
+Detected: Obsolete Column TypesFound in following statement: create table " + table + " (col4 text, col1 int4, col2 int4, col3 float8)
+ in following column col4 of table " + table + "
+Detected: Clone Tables Found in following statement: create table table1 (name text, age int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column C of table T1
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithUnion (col1 float, col2 float)
+ in following column col1 of table testCtasWithUnion
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (c1 int, c2 text)
+ in following column c2 of table table1
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName +" (col1 int4, col2 float4, col3 text)
+ in following column col2 of table " + tableName +"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk1 text, rk2 text, col1 text, col2 text, col3 text)
+ in following column rk2 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (id int8, name text)
+ in following column name of table t1
+Detected: Clone Tables Found in following statement: create table GetTableList2 (age int, name text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['lineitem', '*']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clone (title TEXT, name RECORD (first_name TEXT, last_name TEXT))
+ in following column name of table clone
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int, name string, score float, type string )
+ in following column score of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pTable948 (id int, name text)
+ in following column name of table pTable948
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['PARTITIONS', 'CASCADE']
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + " (col1 int4, col2 int4, null_col int4)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table3 (c1 int, c2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_broad_parts ( c_nationkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_address of table customer_broad_parts
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['INDEXES', 'tns']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['TABLES', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pTable947 (id int, name text)
+ in following column name of table pTable947
+Detected: Clone Tables Found in following statement: CREATE TABLE db_2." + tableName + " (age int)
+
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_returnflag of table lineitem_year_month
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, INT8>, F FLOAT8)
+ in following column A of table T1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE PARTITION_METHODS ( TID INT NOT NULL PRIMARY KEY, PARTITION_TYPE VARCHAR(10) NOT NULL, EXPRESSION VARCHAR(1024) NOT NULL, EXPRESSION_SCHEMA VARCHAR(1024) NOT NULL, FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE )
+ in following column TID and in column TID of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int8)
+ in following column rk of table hbase_mapped_table
+Detected: Clone Tables Found in following statement: CREATE TABLE d1.table1 (c1 int, c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders_partition (o_orderkey INT8, o_custkey INT8, o_totalprice FLOAT8, o_orderpriority TEXT, o_clerk TEXT, o_shippriority INT4, o_comment TEXT)
+ in following column o_orderpriority of table orders_partition
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders_partition (o_orderkey INT8, o_custkey INT8, o_totalprice FLOAT8, o_orderpriority TEXT, o_clerk TEXT, o_shippriority INT4, o_comment TEXT)
+ in following column o_comment of table orders_partition
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+ in following column col2_value of table hbase_mapped_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1 (c1 int, c2 varchar)
+ in following column c2 and in column c2 of table d1
+Detected: Clone Tables Found in following statement: create table t2 (c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col1 int4, col2 float4)
+ in following column col2 of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column A of table T1
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_shipinstruct of table lineitem_year_month
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['TABLES', 'ON']
+Detected: Metadata as Data Found in following statement: CREATE TABLE PARTITION_METHODS (					TID INT NOT NULL PRIMARY KEY,					PARTITION_TYPE VARCHAR2(10) NOT NULL,					EXPRESSION VARCHAR2(1024) NOT NULL,					EXPRESSION_SCHEMA RAW(1024) NOT NULL,					FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE				)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITION_METHODS', 'tns']
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + "(col1 int4, col2 int4)
+
+Detected: God Table Found in following statement: CREATE TABLE LINEITEM ( L_ORDERKEY INTEGER NOT NULL, L_PARTKEY INTEGER NOT NULL, L_SUPPKEY INTEGER NOT NULL, L_LINENUMBER INTEGER NOT NULL, L_QUANTITY DECIMAL(15,2) NOT NULL, L_EXTENDEDPRICE DECIMAL(15,2) NOT NULL, L_DISCOUNT DECIMAL(15,2) NOT NULL, L_TAX DECIMAL(15,2) NOT NULL, L_RETURNFLAG CHAR(1) NOT NULL, L_LINESTATUS CHAR(1) NOT NULL, L_SHIPDATE DATE NOT NULL, L_COMMITDATE DATE NOT NULL, L_RECEIPTDATE DATE NOT NULL, L_SHIPINSTRUCT CHAR(25) NOT NULL, L_SHIPMODE CHAR(10) NOT NULL, L_COMMENT VARCHAR(44) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TESTTABLE2 (COL1 INT, COL2 VARCHAR(20), COL3 VARCHAR(25))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['INDEXES', 'TID']
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS pTable948 (id int, name text)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithColumnedPartition (col1 float, col2 float)
+ in following column col2 of table testCtasWithColumnedPartition
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_backup(rowkey text, author text, register_date text, title text)
+ in following column register_date of table blog_backup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int, name text, score float, type text )
+ in following column type of table table1
+Detected: Metadata as Data Found in following statement: CREATE TABLE PARTITION_METHODS ( 				TID INT NOT NULL PRIMARY KEY, 				PARTITION_TYPE VARCHAR(10) NOT NULL, 				EXPRESSION VARCHAR(1024) NOT NULL, 				EXPRESSION_SCHEMA BYTEA NOT NULL, 				FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE				)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk int4, col1 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+ in following column col3 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_phone of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['TESTTABLE1', 'tns']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TESTTABLE2 (COL1 INT, COL2 VARCHAR(10))
+
+Detected: Obsolete Column TypesFound in following statement: create table table1 (name text, age int)
+ in following column name of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS T1 (XXX TEXT)
+ in following column XXX of table T1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE D9.nested_table2 (f1 int, nf1 record (f1 int4, f3 double), nf2 record (f1 int4, nf1 record (f1 int4, f2 text), nf2 record (f1 int4, f2 text), f2 double), f2 text)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['PARTITIONS', 'ON']
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table1 (rk text, col1 text, col2 text, col3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column col1 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table nation_multifile ( n_nationkey int, n_name text, n_regionkey int, n_comment text)
+ in following column n_comment of table nation_multifile
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithOptions (col1 float, col2 float)
+ in following column col1 of table testCtasWithOptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE d1.table1 (c1 int, c2 text)
+ in following column c2 of table d1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testGroupByWithNullData9 (age INT4, point FLOAT4)
+ in following column point of table testGroupByWithNullData9
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text)
+
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithColumnedPartition (col1 float, col2 float)
+ in following column col1 of table testCtasWithColumnedPartition
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_acctbal of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithUnion (col1 float, col2 float)
+ in following column col2 of table testCtasWithUnion
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sales ( col1 int, col2 int)
+ in following column col1 and in column col1 of table testCtasWithOptions
+Detected: Clone Tables Found in following statement: create table GetTableList1 (age int, name text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders_partition (o_orderkey INT8, o_custkey INT8, o_totalprice FLOAT8, o_orderpriority TEXT, o_clerk TEXT, o_shippriority INT4, o_comment TEXT)
+ in following column o_clerk of table orders_partition
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists customer_parts ( c_custkey INT4, c_name TEXT, c_address TEXT, c_phone TEXT, c_acctbal FLOAT8, c_mktsegment TEXT, c_comment TEXT)
+ in following column c_address of table customer_parts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8, F RECORD (G INT1, H FLOAT4)), Z FLOAT8)
+ in following column A of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table3 (c1 int, c2 text)
+ in following column c2 of table table3
+Detected: Index Shotgun Variant: 3 Following index not used : ['TESTTABLE1', 'COL1']
+Detected: Clone Tables Found in following statement: CREATE TABLE d1.table1 (c1 int, c2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+ in following column col2 of table hbase_mapped_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['INDEXES', 'column_names']
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col4 text)
+ in following column col4 of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text, col3 text, col4 text)
+ in following column col4 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, city TEXT, phone TEXT )
+ in following column name of table student
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 ( id int, name text, score float, type text )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE STATS ( TID INT NOT NULL PRIMARY KEY, NUM_ROWS BIGINT, NUM_BYTES BIGINT, FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE )
+ in following column NUM_BYTES and in column NUM_BYTES of table PARTITIONS
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE sales ( col1 int, col2 int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE PARTITIONS ( 				PARTITION_ID SERIAL NOT NULL PRIMARY KEY, 				TID INT NOT NULL, 				PARTITION_NAME VARCHAR(128), 				PARTITION_VALUE VARCHAR(1024), 				PATH VARCHAR(4096), 				NUM_BYTES BIGINT, 				FOREIGN KEY (TID) REFERENCES TABLES (TID) ON DELETE CASCADE, 				UNIQUE (TID, PARTITION_NAME)				)
+ in following column NUM_BYTES and in column NUM_BYTES of table STATS
+Detected: Obsolete Column TypesFound in following statement: create table testCtasWithLimit (col1 float, col2 float)
+ in following column col2 of table testCtasWithLimit
+Detected: Multicolumn Attribute Found in following statement: create table testInsertOverwriteWithCompression (col1 int4, col2 int4, col3 float8)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE MISMATCH1 (n_name text, n_comment text, n_nationkey int8, n_regionkey int8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column C of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee (name TEXT, age int, dept TEXT)
+ in following column dept of table employee
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (col2 int4, col3 float8)
+ in following column col3 of table " + tableName + "
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithOptions (col1 float, col2 float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (id int, name text, score float, type text)
+ in following column score of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, city TEXT, phone TEXT )
+ in following column phone of table student
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+ in following column A of table T1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_backup(rowkey text, author text, register_date text, title text)
+ in following column title of table blog_backup
+Detected: Multicolumn Attribute Found in following statement: create table " + tableName + " (col3 float8, col4 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int8)
+ in following column col1 of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName +" (col1 int4, col2 float4, col3 text)
+ in following column col3 of table " + tableName +"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id INT, name TEXT, gender char(1), grade TEXT, phone TEXT )
+ in following column name of table student
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clone2 (title TEXT, name RECORD (first_name TEXT, last_name TEXT))
+ in following column title of table clone2
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text, col3 int4)
+
+Detected: Multicolumn Attribute Found in following statement: create table " + table + " (col4 text, col1 int4, col2 int4, col3 float8)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE hbase_mapped_table (rk text, col2_key text, col2_value text, col3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T1 (A TEXT, B INT4, C MAP<TEXT, RECORD (name TEXT, age INT4)>, F FLOAT8)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (c1 int, c2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: create table if not exists nation_partitioned (n_name text)
+ in following column n_name of table nation_partitioned
+Detected: Obsolete Column TypesFound in following statement: create table GetTableList1 (age int, name text)
+ in following column name of table GetTableList1
+Detected: Clone Tables Found in following statement: CREATE TABLE testGroupByWithNullData5 (age INT4, point FLOAT4)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_backup(rowkey text, author text, register_date text, title text)
+ in following column author of table blog_backup
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (column1 text)
+ in following column column1 of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, col1 text, col2 text)
+ in following column rk of table hbase_mapped_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE hbase_mapped_table2 (rk1 int4, rk2 text, col3 text, col4 text)
+ in following column rk1 and in column rk1 of table hbase_mapped_table
+Detected: Multicolumn Attribute Found in following statement: create table testCtasWithUnion (col1 float, col2 float)
+
+Detected: Obsolete Column TypesFound in following statement: create table lineitem_year_month ( l_orderkey bigint, l_partkey bigint, l_suppkey bigint, l_linenumber int, l_quantity float8, l_extendedprice float8, l_discount float8, l_tax float8, l_returnflag text, l_linestatus text, l_shipdate text, l_commitdate text, l_receiptdate text, l_shipinstruct text, l_shipmode text, l_comment text)
+ in following column l_receiptdate of table lineitem_year_month
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (rk text, col1 text, col2 text, col3 int)
+ in following column col2 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: create table nation_multifile ( n_nationkey int, n_name text, n_regionkey int, n_comment text)
+ in following column n_name of table nation_multifile
+Detected: Clone Tables Found in following statement: CREATE TABLE d2.table3 (age int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T3 (l_orderkey bigint, col1 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['PARTITIONS', 'PARTITION_NAME']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T1 (A TEXT, B INT4, C RECORD (D TEXT, E INT8, F RECORD (G INT1, H FLOAT4)), Z FLOAT8)
+ in following column C of table T1
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS pTable947 (id int, name text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T3 (A TEXT, B INT4, C MAP<TEXT, RECORD (name RECORD (first_name TEXT, last_name TEXT), age INT4)>, F FLOAT8)
+ in following column F of table T3
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table (rk text, rk2 text, col1 text, col2 text, col3 text)
+ in following column rk of table hbase_mapped_table
+Detected: Obsolete Column TypesFound in following statement: create table " + tableName + " (deptname text, score int4)
+ in following column deptname of table " + tableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hbase_mapped_table1 (col1 text, col2 text)
+ in following column col2 of table hbase_mapped_table1
+Detected: Obsolete Column TypesFound in following statement: create table test_partition (col2 text)
+ in following column col2 of table test_partition

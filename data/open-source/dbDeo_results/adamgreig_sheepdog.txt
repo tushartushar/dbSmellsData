@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS requests ( id INTEGER PRIMARY KEY AUTOINCREMENT, function BLOB, namespace BLOB, date_submitted TEXT)
+ in following column date_submitted of table requests
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tasks', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['requests', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS errors ( id INTEGER PRIMARY KEY, task_id INTEGER, error TEXT, FOREIGN KEY (task_id) REFERENCES tasks(id))
+ in following column error of table errors

@@ -1,0 +1,6 @@
+Detected: God Table Found in following statement: CREATE TABLE inventory_entries ( id integer NOT NULL, date date, stock_number character varying(255), name character varying(255), document_number character varying(255), amount integer, is_expense boolean, total_value numeric(9,2), unit_id integer, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, inventory_source_id integer, remark character varying(255))
+
+Detected: God Table Found in following statement: CREATE TABLE user_group_associations ( id integer NOT NULL, group_id integer, user_id integer, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, can_view_entries boolean DEFAULT false, can_manage_entries boolean DEFAULT false, can_close_journals boolean DEFAULT false, can_manage_users boolean DEFAULT false, can_manage_units boolean DEFAULT false, can_manage_groups boolean DEFAULT false)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE items ( id integer NOT NULL, amount numeric(9,2), amount_one_percent numeric(9,2), entry_id integer, category_id integer, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL)
+ in following column amount and in column amount of table inventory_entries

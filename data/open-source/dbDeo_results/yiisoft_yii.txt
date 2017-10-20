@@ -1,0 +1,154 @@
+Detected: Obsolete Column TypesFound in following statement: create table [AuthAssignment]( [itemname] varchar(64) not null, [userid] varchar(64) not null, [bizrule] text, [data] text, primary key ([itemname],[userid]), foreign key ([itemname]) references [AuthItem] ([name]) on delete cascade on update cascade)
+ in following column [data] of table [AuthAssignment]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column create_time and in column create_time of table posts_nofk
+Detected: Adjacency List Found in following statement: CREATE TABLE categories(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	name VARCHAR(128) NOT NULL,	parent_id INTEGER,	CONSTRAINT FK_category_category FOREIGN KEY (parent_id)		REFERENCES categories (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts_nofk(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	create_time TIMESTAMP NOT NULL,	author_id INTEGER NOT NULL,	content TEXT)
+ in following column content of table posts_nofk
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test.comments(	id SERIAL NOT NULL PRIMARY KEY,	content TEXT NOT NULL,	post_id INTEGER NOT NULL,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_comment FOREIGN KEY (post_id)		REFERENCES test.posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_user_comment FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column . and in column . of table public
+Detected: Adjacency List Found in following statement: CREATE TABLE test.nullable_posts(	id SERIAL NOT NULL PRIMARY KEY,	title VARCHAR(128) NULL,	create_time TIMESTAMP NULL,	author_id INTEGER NULL,	content TEXT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE test.posts(	id SERIAL NOT NULL PRIMARY KEY,	title VARCHAR(128) NOT NULL,	create_time TIMESTAMP NOT NULL,	author_id INTEGER NOT NULL,	content TEXT,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content STRING NOT NULL,	tags STRING,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content and in column content of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	char_col4 VARCHAR(100) DEFAULT NULL,	char_col5 VARCHAR(100) DEFAULT 'NULL',	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT 123,	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	null_col INTEGER DEFAULT NULL,	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+ in following column created_at and in column created_at of table post
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	name VARCHAR(128),	col1 INTEGER NOT NULL,	col2 INTEGER NOT NULL,	CONSTRAINT FK_order_item FOREIGN KEY (col1,col2)		REFERENCES orders (key1,key2) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', 'cascade']
+Detected: Duplicate Column Names Found in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `data` and in column `data` of table `AuthAssignment`
+Detected: Obsolete Column TypesFound in following statement: create table `AuthAssignment`( `itemname` varchar(64) not null, `userid` varchar(64) not null, `bizrule` text, `data` text, primary key (`itemname`,`userid`), foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade)
+ in following column `bizrule` of table `AuthAssignment`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test.comments(	id SERIAL NOT NULL PRIMARY KEY,	content TEXT NOT NULL,	post_id INTEGER NOT NULL,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_comment FOREIGN KEY (post_id)		REFERENCES test.posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_user_comment FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT '2002-01-01',	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	bit_col1 BIT,	bit_col2 BIT(32) DEFAULT b'101010')
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content and in column content of table tbl_comment
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', 'update']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	content TEXT NOT NULL,	post_id INTEGER NOT NULL,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_comment FOREIGN KEY (post_id)		REFERENCES posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_user_comment FOREIGN KEY (author_id)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table comments
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', 'delete']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['[AuthItem]', 'update']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	char_col4 VARCHAR(100) DEFAULT NULL,	char_col5 VARCHAR(100) DEFAULT 'NULL',	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT 123,	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	null_col INTEGER DEFAULT NULL,	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE orders(	key1 INTEGER NOT NULL,	key2 INTEGER NOT NULL,	name VARCHAR(128),	PRIMARY KEY (key1, key2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 VARCHAR(65535),	float_col DECIMAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	`time` TIMESTAMP DEFAULT '2002-01-01',	bool_col SHORT NOT NULL,	bool_col2 SHORT DEFAULT 1)
+
+Detected: Obsolete Column TypesFound in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `data` of table `AuthItem`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	content TEXT NOT NULL,	post_id INTEGER NOT NULL,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_comment FOREIGN KEY (post_id)		REFERENCES posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_user_comment FOREIGN KEY (author_id)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT '2002-01-01',	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	bit_col1 BIT,	bit_col2 BIT(32) DEFAULT b'101010')
+ in following column float_col of table types
+Detected: Obsolete Column TypesFound in following statement: create table [AuthItem]( [name] varchar(64) not null, [type] integer not null, [description] text, [bizrule] text, [data] text, primary key ([name]))
+ in following column [data] of table [AuthItem]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment ( id INTEGER PRIMARY KEY, post_id INTEGER, text text, created_at INTEGER)
+ in following column text of table (
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE public.yii_types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	numeric_col NUMERIC(4,3) NOT NULL,	real_col REAL DEFAULT 1.23,	blob_col BYTEA,	time TIMESTAMP,	time2 TIMESTAMP(4),	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT TRUE)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column tags of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Article(	id INTEGER NOT NULL PRIMARY KEY,	authorID INTEGER NOT NULL,	body TEXT,	CONSTRAINT FK_article_content FOREIGN KEY (id)		REFERENCES Content (id) ON DELETE CASCADE ON UPDATE RESTRICT	CONSTRAINT FK_article_author FOREIGN KEY (authorID)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column body of table Article
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_user(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	username VARCHAR(128) NOT NULL,	password VARCHAR(128) NOT NULL,	email VARCHAR(128) NOT NULL,	profile TEXT)
+ in following column profile of table tbl_user
+Detected: Obsolete Column TypesFound in following statement: create table [AuthItem]( [name] varchar(64) not null, [type] integer not null, [description] text, [bizrule] text, [data] text, primary key ([name]))
+ in following column [description] of table [AuthItem]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 VARCHAR(65535),	float_col DECIMAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	`time` TIMESTAMP DEFAULT '2002-01-01',	bool_col SHORT NOT NULL,	bool_col2 SHORT DEFAULT 1)
+ in following column char_col3 and in column char_col3 of table public
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, title VARCHAR(128) NOT NULL, content TEXT NOT NULL, create_time INTEGER NOT NULL)
+ in following column content of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `bizrule` of table `AuthItem`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	create_time TIMESTAMP NOT NULL,	author_id INTEGER NOT NULL,	content TEXT,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table posts
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['[AuthItem]', '[name]']
+Detected: Adjacency List Found in following statement: CREATE TABLE test.post_category(	category_id INTEGER NOT NULL,	post_id INTEGER NOT NULL,	PRIMARY KEY (category_id, post_id),	CONSTRAINT FK_post_category_post FOREIGN KEY (post_id)		REFERENCES test.posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_post_category_category FOREIGN KEY (category_id)		REFERENCES test.categories (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE test.profiles(	id SERIAL NOT NULL PRIMARY KEY,	first_name VARCHAR(128) NOT NULL,	last_name VARCHAR(128) NOT NULL,	user_id INTEGER NOT NULL,	CONSTRAINT FK_profile_user FOREIGN KEY (user_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: God Table Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT '2002-01-01',	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	bit_col1 BIT,	bit_col2 BIT(32) DEFAULT b'101010')
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column id and in column id of table $tableName
+Detected: Duplicate Column Names Found in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `bizrule` and in column `bizrule` of table `AuthAssignment`
+Detected: Duplicate Column Names Found in following statement: create table `AuthAssignment`( `itemname` varchar(64) not null, `userid` varchar(64) not null, `bizrule` text, `data` text, primary key (`itemname`,`userid`), foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade)
+ in following column `data` and in column `data` of table `AuthItem`
+Detected: God Table Found in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	char_col4 VARCHAR(100) DEFAULT NULL,	char_col5 VARCHAR(100) DEFAULT 'NULL',	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT 123,	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	null_col INTEGER DEFAULT NULL,	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', 'on']
+Detected: Duplicate Column Names Found in following statement: create table `AuthAssignment`( `itemname` varchar(64) not null, `userid` varchar(64) not null, `bizrule` text, `data` text, primary key (`itemname`,`userid`), foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade)
+ in following column `bizrule` and in column `bizrule` of table `AuthItem`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['[AuthItem]', 'delete']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post (	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	create_time INTEGER NOT NULL)
+ in following column content of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: create table [AuthAssignment]( [itemname] varchar(64) not null, [userid] varchar(64) not null, [bizrule] text, [data] text, primary key ([itemname],[userid]), foreign key ([itemname]) references [AuthItem] ([name]) on delete cascade on update cascade)
+ in following column [bizrule] of table [AuthAssignment]
+Detected: Adjacency List Found in following statement: CREATE TABLE test.categories(	id SERIAL NOT NULL PRIMARY KEY,	name VARCHAR(128) NOT NULL,	parent_id INTEGER,	CONSTRAINT FK_category_category FOREIGN KEY (parent_id)		REFERENCES test.categories (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT '2002-01-01',	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	bit_col1 BIT,	bit_col2 BIT(32) DEFAULT b'101010')
+ in following column char_col3 of table types
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', 'restrict']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE public.yii_types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	numeric_col NUMERIC(4,3) NOT NULL,	real_col REAL DEFAULT 1.23,	blob_col BYTEA,	time TIMESTAMP,	time2 TIMESTAMP(4),	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT TRUE)
+ in following column char_col3 of table public
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['[AuthItem]', 'cascade']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Comment(	id INTEGER NOT NULL PRIMARY KEY,	authorID INTEGER NOT NULL,	body TEXT,	CONSTRAINT FK_comment_content FOREIGN KEY (id)		REFERENCES Content (id) ON DELETE CASCADE ON UPDATE RESTRICT	CONSTRAINT FK_article_author FOREIGN KEY (authorID)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column body of table Comment
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`AuthItem`', '`name`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Post (	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	createTime INTEGER NOT NULL)
+ in following column content of table Post
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE items(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	name VARCHAR(128),	col1 INTEGER NOT NULL,	col2 INTEGER NOT NULL,	CONSTRAINT FK_order_item FOREIGN KEY (col1,col2)		REFERENCES orders (key1,key2) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test.posts(	id SERIAL NOT NULL PRIMARY KEY,	title VARCHAR(128) NOT NULL,	create_time TIMESTAMP NOT NULL,	author_id INTEGER NOT NULL,	content TEXT,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table test
+Detected: Metadata as Data Found in following statement: CREATE TABLE Contact(	id INTEGER NOT NULL PRIMARY KEY,	name VARCHAR(128) NOT NULL,	phone VARCHAR(64) NOT NULL)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE test.user_friends(	id INTEGER NOT NULL,	friend INTEGER NOT NULL,	PRIMARY KEY (id, friend),	CONSTRAINT FK_user_id FOREIGN KEY (id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_friend_id FOREIGN KEY (friend)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Obsolete Column TypesFound in following statement: create table `AuthAssignment`( `itemname` varchar(64) not null, `userid` varchar(64) not null, `bizrule` text, `data` text, primary key (`itemname`,`userid`), foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade)
+ in following column `data` of table `AuthAssignment`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['[AuthItem]', 'on']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_comment(	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,	content TEXT NOT NULL,	status INTEGER NOT NULL,	create_time INTEGER,	author VARCHAR(128) NOT NULL,	email VARCHAR(128) NOT NULL,	url VARCHAR(128),	post_id INTEGER NOT NULL,	CONSTRAINT FK_comment_post FOREIGN KEY (post_id)		REFERENCES tbl_post (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table tbl_comment
+Detected: Obsolete Column TypesFound in following statement: create table [AuthItem]( [name] varchar(64) not null, [type] integer not null, [description] text, [bizrule] text, [data] text, primary key ([name]))
+ in following column [bizrule] of table [AuthItem]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_post(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	content TEXT NOT NULL,	tags TEXT,	status INTEGER NOT NULL,	create_time INTEGER,	update_time INTEGER,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column tags of table tbl_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_user(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	username VARCHAR(128) NOT NULL,	password VARCHAR(128) NOT NULL,	email VARCHAR(128) NOT NULL,	profile TEXT)
+ in following column profile of table tbl_user
+Detected: Adjacency List Found in following statement: CREATE TABLE categories(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	name VARCHAR(128) NOT NULL,	parent_id INTEGER,	CONSTRAINT FK_category_category FOREIGN KEY (parent_id)		REFERENCES categories (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Duplicate Column Names Found in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `type` and in column `type` of table tbl_lookup
+Detected: Adjacency List Found in following statement: CREATE TABLE test.comments(	id SERIAL NOT NULL PRIMARY KEY,	content TEXT NOT NULL,	post_id INTEGER NOT NULL,	author_id INTEGER NOT NULL,	CONSTRAINT FK_post_comment FOREIGN KEY (post_id)		REFERENCES test.posts (id) ON DELETE CASCADE ON UPDATE RESTRICT,	CONSTRAINT FK_user_comment FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test.items(	id SERIAL NOT NULL PRIMARY KEY,	name VARCHAR(128),	col1 INTEGER NOT NULL,	col2 INTEGER NOT NULL,	CONSTRAINT FK_order_item FOREIGN KEY (col1,col2)		REFERENCES test.orders (key1,key2) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE test.items(	id SERIAL NOT NULL PRIMARY KEY,	name VARCHAR(128),	col1 INTEGER NOT NULL,	col2 INTEGER NOT NULL,	CONSTRAINT FK_order_item FOREIGN KEY (col1,col2)		REFERENCES test.orders (key1,key2) ON DELETE CASCADE ON UPDATE RESTRICT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	title VARCHAR(128) NOT NULL,	create_time TIMESTAMP NOT NULL,	author_id INTEGER NOT NULL,	content TEXT,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table posts
+Detected: Obsolete Column TypesFound in following statement: create table `AuthItem`( `name` varchar(64) not null, `type` integer not null, `description` text, `bizrule` text, `data` text, primary key (`name`))
+ in following column `description` of table `AuthItem`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE public.yii_types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	numeric_col NUMERIC(4,3) NOT NULL,	real_col REAL DEFAULT 1.23,	blob_col BYTEA,	time TIMESTAMP,	time2 TIMESTAMP(4),	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT TRUE)
+ in following column real_col of table public
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	char_col4 VARCHAR(100) DEFAULT NULL,	char_col5 VARCHAR(100) DEFAULT 'NULL',	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT 123,	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	null_col INTEGER DEFAULT NULL,	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+ in following column char_col3 of table types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test.nullable_posts(	id SERIAL NOT NULL PRIMARY KEY,	title VARCHAR(128) NULL,	create_time TIMESTAMP NULL,	author_id INTEGER NULL,	content TEXT NULL,	CONSTRAINT FK_post_author FOREIGN KEY (author_id)		REFERENCES test.users (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types(	int_col INT NOT NULL,	int_col2 INTEGER DEFAULT 1,	char_col CHAR(100) NOT NULL,	char_col2 VARCHAR(100) DEFAULT 'something',	char_col3 TEXT,	char_col4 VARCHAR(100) DEFAULT NULL,	char_col5 VARCHAR(100) DEFAULT 'NULL',	float_col REAL(4,3) NOT NULL,	float_col2 DOUBLE DEFAULT 1.23,	blob_col BLOB,	numeric_col NUMERIC(5,2) DEFAULT 33.22,	time TIMESTAMP DEFAULT 123,	bool_col BOOL NOT NULL,	bool_col2 BOOLEAN DEFAULT 1,	null_col INTEGER DEFAULT NULL,	created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+ in following column float_col of table types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_comment(	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	content TEXT NOT NULL,	status INTEGER NOT NULL,	create_time INTEGER,	author VARCHAR(128) NOT NULL,	email VARCHAR(128) NOT NULL,	url VARCHAR(128),	post_id INTEGER NOT NULL,	CONSTRAINT FK_comment_post FOREIGN KEY (post_id)		REFERENCES tbl_post (id) ON DELETE CASCADE ON UPDATE RESTRICT)
+ in following column content of table tbl_comment

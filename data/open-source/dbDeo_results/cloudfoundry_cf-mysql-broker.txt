@@ -1,0 +1,7 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE stuff (id INT PRIMARY KEY, data LONGTEXT)
+ in following column id and in column id of table data_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{db_name}.mytable (id MEDIUMINT, data LONGTEXT)
+ in following column data of table #
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stuff (id INT PRIMARY KEY, data LONGTEXT)
+ in following column data of table stuff

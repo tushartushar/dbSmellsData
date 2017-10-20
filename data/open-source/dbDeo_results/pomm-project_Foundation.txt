@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['inspector_test', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inspector_test', 'created_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inspector_test', 'with_complex_pk']

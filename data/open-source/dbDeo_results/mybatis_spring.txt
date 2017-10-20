@@ -1,0 +1,9 @@
+Detected: Metadata as Data Found in following statement: create table users ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+
+Detected: Metadata as Data Found in following statement: create table bar ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+
+Detected: Duplicate Column Names Found in following statement: create table users ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+ in following column id and in column id of table USERS
+Detected: Metadata as Data Found in following statement: create table foo ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into players values (', idx, ', 100)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO PLAYERS values (', idx, ', 100)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO MATCHES values (', playerA, ', ', playerB, ', ', winner, ')
+

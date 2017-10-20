@@ -1,0 +1,29 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'host']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'nick_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS entry ( id INTEGER PRIMARY KEY, entry_key TEXT, feed_id INTEGER, FOREIGN KEY(feed_id) REFERENCES entry(id) )
+ in following column entry_key of table entry
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS connection ( id INTEGER PRIMARY KEY, connection_name TEXT )
+ in following column connection_name of table (
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'host_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['entry', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'nick']
+Detected: Adjacency List Found in following statement: CREATE TABLE IF NOT EXISTS entry ( id INTEGER PRIMARY KEY, entry_key TEXT, feed_id INTEGER, FOREIGN KEY(feed_id) REFERENCES entry(id) )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'user']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS feed ( id INTEGER PRIMARY KEY, feed_url TEXT, channel_id INTEGER, FOREIGN KEY(channel_id) REFERENCES channel(id) )
+ in following column feed_url of table feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS channel ( id INTEGER PRIMARY KEY, channel TEXT, connection_id INTEGER, FOREIGN KEY(connection_id) REFERENCES connection(id) )
+ in following column channel of table channel
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['connection', 'user_id']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS points ( id INTEGER PRIMARY KEY, person TEXT, points INTEGER )
+ in following column person of table points
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS message ( id INTEGER PRIMARY KEY, channel_id INTEGER, host_id INTEGER, user_id INTEGER, nick_id INTEGER, command VARCHAR, message TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY(channel_id) REFERENCES connection(id) FOREIGN KEY(host_id) REFERENCES host(id) FOREIGN KEY(user_id) REFERENCES user(id) FOREIGN KEY(nick_id) REFERENCES nick(id) )
+ in following column message of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS afkers ( id INTEGER PRIMARY KEY, nick TEXT, away BOOLEAN )
+ in following column nick of table afkers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS url ( id INTEGER PRIMARY KEY, url TEXT, channel_id INTEGER, FOREIGN KEY(channel_id) REFERENCES channel(id) )
+ in following column url of table url
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['channel', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['url', 'id']

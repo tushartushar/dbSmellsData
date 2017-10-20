@@ -1,0 +1,12 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test ( id bigint NOT NULL, data character varying, uuid character varying)
+ in following column uuid and in column uuid of table #
+Detected: Index Shotgun Variant: 3 Following index not used : ['miq_queue', 'task_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test ( id bigint NOT NULL, data character varying, uuid character varying)
+ in following column data and in column data of table #
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test ( id bigint NOT NULL, data character varying, uuid character varying)
+ in following column id and in column id of table #
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE #{table_name} (id1 INTEGER, id2 INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #{table} (id BIGINT PRIMARY KEY)
+ in following column id and in column id of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['miq_queue', 'queue_name']

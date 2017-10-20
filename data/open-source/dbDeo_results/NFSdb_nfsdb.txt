@@ -1,0 +1,13 @@
+Detected: Duplicate Column Names Found in following statement: create table x (a INT, b BINARY)
+ in following column b and in column b of table abc
+Detected: Obsolete Column TypesFound in following statement: create table x (a INT, b BYTE, c SHORT, d LONG, e FLOAT, f DOUBLE, g DATE, h BINARY, t DATE, x SYMBOL, z STRING, y BOOLEAN)
+ in following column e of table x
+Detected: Duplicate Column Names Found in following statement: create table xyz (x int, y string, ts date)
+ in following column y and in column y of table x
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table y (a INT, b BYTE, c SHORT, d LONG, e FLOAT, f DOUBLE, g DATE, h BINARY, t DATE, x SYMBOL, z STRING)
+ in following column e of table y
+Detected: Obsolete Column TypesFound in following statement: create table y (a INT, b byte, c Short, d long, e FLOAT, f DOUBLE, g DATE, h BINARY, t DATE, x SYMBOL, z STRING)
+ in following column e of table y
+Detected: Duplicate Column Names Found in following statement: create table 'a b' (a INT index, b BYTE, t DATE, z STRING index buckets 40, l LONG index buckets 500)
+ in following column t and in column t of table x

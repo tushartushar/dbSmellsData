@@ -1,0 +1,7 @@
+Detected: Duplicate Column Names Found in following statement: create table data (id int primary key, a int, c int, b int)
+ in following column c and in column c of table maxdata
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table data (id int primary key, a int, c int, b int)
+ in following column a and in column a of table maxdata
+Detected: Duplicate Column Names Found in following statement: create table data (id int primary key, a int, c int, b int)
+ in following column b and in column b of table maxdata

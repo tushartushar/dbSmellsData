@@ -1,0 +1,29 @@
+Detected: Obsolete Column TypesFound in following statement: Create table c.execute('''create table localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)''')
+ in following column . of table c
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column placename of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column placetype of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column placeID of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column lon of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column parentdivision of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placename text, placetype text, lat real, lon real, parentcountry text, parentdivision)
+ in following column lat of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placename text, placetype text, lat real, lon real, parentcountry text, parentdivision)
+ in following column parentcountry of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placename text, placetype text, lat real, lon real, parentcountry text, parentdivision)
+ in following column placetype of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column lat of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column population of table localities
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placeID text, placename text, placetype text, population real, lat real, lon real, parentcountry text, parentdivision text)
+ in following column parentcountry of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placename text, placetype text, lat real, lon real, parentcountry text, parentdivision)
+ in following column placename of table localities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE localities (placename text, placetype text, lat real, lon real, parentcountry text, parentdivision)
+ in following column lon of table localities

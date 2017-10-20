@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE _senders (name TEXT PRIMARY KEY, id INTEGER UNIQUE)
+ in following column name of table _senders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE _experiment_metadata (key TEXT PRIMARY KEY, value TEXT)
+ in following column value of table _experiment_metadata
+Detected: Index Shotgun Variant: 1

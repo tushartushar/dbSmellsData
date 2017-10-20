@@ -1,0 +1,53 @@
+Detected: Obsolete Column TypesFound in following statement: create table transactiontest(id integer primary key, name text)
+ in following column name of table transactiontest
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text, bin binary, ratio number, ts timestamp)
+ in following column name of table test
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text, income number)
+
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text, bin binary, ratio number, ts timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+ in following column f of table test
+Detected: Clone Tables Found in following statement: create table test(sadfsadfdsa)
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: create table test(i integer, s varchar, f number, b blob)
+
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text, income number)
+ in following column name of table test
+Detected: Clone Tables Found in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+
+Detected: Clone Tables Found in following statement: create table test(d date, ts timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table test( t text, i integer, f float, n, b blob )
+ in following column f of table test
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text)
+ in following column name of table test
+Detected: Clone Tables Found in following statement: create table test(foo)
+
+Detected: Obsolete Column TypesFound in following statement: create table test (value text)
+ in following column value of table test
+Detected: Clone Tables Found in following statement: create table test(x)
+
+Detected: Clone Tables Found in following statement: create table test(id integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+
+Detected: Clone Tables Found in following statement: create table t2 (c1, c2)
+
+Detected: Clone Tables Found in following statement: create table test(x foo)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1, c2)
+
+Detected: Clone Tables Found in following statement: create table test (value text)
+
+Detected: Clone Tables Found in following statement: create table test( t text, i integer, f float, n, b blob )
+
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text)
+
+Detected: Clone Tables Found in following statement: create table test(i)
+
+Detected: Obsolete Column TypesFound in following statement: create table test( t text, i integer, f float, n, b blob )
+ in following column t of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE t (x TIMESTAMP)
+

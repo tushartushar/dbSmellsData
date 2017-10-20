@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column open of table bar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column close of table bar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column low of table bar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column adj_close of table bar
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column high of table bar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bar (instrument_id integer references instrument (instrument_id),frequency integer not null,timestamp integer not null,open real not null,high real not null,low real not null,close real not null,volume real not null,adj_close real,primary key (instrument_id, frequency, timestamp))
+ in following column volume of table bar
+Detected: Compound Attribute Variant: 3 Found in following statement: update bar set open = ?, high = ?, low = ?, close = ?, volume = ?, adj_close = ?  where instrument_id = ? and frequency = ? and timestamp = ?
+

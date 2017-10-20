@@ -1,0 +1,8 @@
+SELECT id FROM moz_bookmarks WHERE keyword_id = OLD.keyword_id AND id <> OLD.id LIMIT 1 );ENDsA!indexmoz_places_url_uniqueindexmoz_placesCREATE UNIQUE INDEX moz_places_url_uniqueindex ON moz_places (url)$Q+Yindexmoz_items_annos_itemattributeindexmoz_items_annosCREATE UNIQUE INDEX moz_items_annos_itemattributeindex ON moz_items_annos (item_id, anno_attribute_id)GEindexmoz_annos_placeattributeindexmoz_annosCREATE UNIQUE INDEX moz_annos_placeattributeindex ON moz_annos (place_id, anno_attribute_id)C/!indexmoz_historyvisits_dateindexmoz_historyvisitsCREATE INDEX moz_historyvisits_dateindex ON moz_historyvisits (visit_date)C/!indexmoz_historyvisits_fromindexmoz_historyvisitsCREATE INDEX moz_historyvisits_fromindex ON moz_historyvisits (from_visit)M/?indexmoz_historyvisits_placedateindexmoz_historyvisitsCREATE INDEX moz_historyvisits_placedateindex ON moz_historyvisits (place_id, visit_date)~G!!indexmoz_places_lastvisitdateindexmoz_placesCREATE INDEX 
+CREATE TABLE moz_inputhistory ( place_id INTEGER NOT NULL, input LONGVARCHAR NOT NULL, use_count INTEGER, PRIMARY KEY (place_id, input))
+SELECT when_timestamp FROM changes WHERE changeid=:changeid
+CREATE INDEX moz_historyvisits_dateindex ON moz_historyvisits (visit_date)C/!indexmoz_historyvisits_fromindexmoz_historyvisits
+CREATE INDEX moz_bookmarks_itemindex ON moz_bookmarks (fk, 
+CREATE INDEX moz_places_faviconindex ON moz_places (favicon_id)S'5indexmoz_bookmarks_itemlastmodifiedindexmoz_bookmarksCREATE INDEX moz_bookmarks_itemlastmodifiedindex ON moz_bookmarks (fk, lastModified)}?'!indexmoz_bookmarks_parentindexmoz_bookmarks
+SELECT * FROM schedulers
+CREATE TABLE moz_keywords ( id INTEGER PRIMARY KEY AUTOINCREMENT, keyword TEXT UNIQUE)

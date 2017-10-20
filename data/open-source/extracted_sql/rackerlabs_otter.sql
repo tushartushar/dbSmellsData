@@ -1,0 +1,12 @@
+SELECT COUNT(*) FROM group_state WHERE deleted=false;
+SELECT COUNT(*) FROM scaling_group;
+SELECT * from scaling_schedule_v2 WHERE bucket=:bucket LIMIT 1;
+SELECT COUNT(*) FROM scaling_policies;
+SELECT COUNT(*) FROM launch_config WHERE deleted=false;
+SELECT COUNT(*) FROM {cf};
+SELECT * from {cf} WHERE bucket=:bucket LIMIT 1;
+CREATE INDEX group_by_deleting ON scaling_group(deleting);
+SELECT COUNT(*) FROM scaling_config WHERE deleted=false;
+SELECT COUNT(*) FROM scaling_policies WHERE deleted=false;
+SELECT COUNT(*) FROM policy_webhooks WHERE deleted=false;
+SELECT COUNT(*) FROM policy_webhooks;

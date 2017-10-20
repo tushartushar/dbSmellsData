@@ -1,0 +1,3 @@
+CREATE TABLE `schema_migrations` (`filename` varchar(255) NOT NULL PRIMARY KEY)
+CREATE TABLE `dependencies`(`id` integer DEFAULT (NULL) NOT NULL PRIMARY KEY, `name` varchar(255) DEFAULT (NULL) NOT NULL, `version` varchar(255) DEFAULT (NULL) NULL, `summary` varchar(255) DEFAULT (NULL) NULL, `description` varchar(255) DEFAULT (NULL) NULL, `homepage` varchar(255) DEFAULT (NULL) NULL, `added_manually` boolean DEFAULT (NULL) NULL, `license_assigned_manually` boolean DEFAULT (NULL) NULL, `license_names` varchar(255) DEFAULT (NULL) NULL)
+CREATE TABLE `schema_migrations` (`filename` varchar(255) NOT NULL PRIMARY KEY)

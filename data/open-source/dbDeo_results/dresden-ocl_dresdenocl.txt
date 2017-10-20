@@ -1,0 +1,19 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE test.T_Person (\nPK_Person VARCHAR(255)\n)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE T_Grade (PK_Grade VARCHAR(255),name VARCHAR(255),value INT)
+
+Detected: God Table Found in following statement: CREATE TABLE TB_Person (P_Person VARCHAR(255),type VARCHAR(255),age INT,birthDate DATE,F_currentPaper VARCHAR(255),dissSubject VARCHAR(255),firstName VARCHAR(255),F_grade VARCHAR(255),isMarried NUMBER(1),lastName VARCHAR(255),matDate DATE,matNr INT,salaries VARCHAR(255),soSecNr VARCHAR(255),taxClass VARCHAR(255),wage INT,F_theFacility VARCHAR(255),F_supervisor VARCHAR(255))
+
+Detected: God Table Found in following statement: CREATE TABLE T_Person (PK_Person VARCHAR(255),type VARCHAR(255),age INT,birthDate DATE,FK_currentPaper VARCHAR(255),dissSubject VARCHAR(255),firstName VARCHAR(255),FK_grade VARCHAR(255),isMarried NUMBER(1),lastName VARCHAR(255),matDate DATE,matNr INT,salaries VARCHAR(255),soSecNr VARCHAR(255),taxClass VARCHAR(255),wage INT,FK_theFacility VARCHAR(255),FK_supervisor VARCHAR(255))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `T_Car` (`PK_Car` VARCHAR(255) PRIMARY KEY,`color` VARCHAR(255),`model` VARCHAR(255))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `Car` ( `pk` mediumint(9) NOT NULL auto_increment, `model` varchar(200) default NULL, `color` varchar(200) default NULL, PRIMARY KEY (`pk`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `TO_Car` (`PK_Car` VARCHAR(255) PRIMARY KEY,`color` VARCHAR(255),`model` VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE T_Grade (PK_Grade VARCHAR(255),name VARCHAR(255),value INT)
+ in following column value and in column value of table collect00
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE TB_Grade (P_Grade VARCHAR(255),name VARCHAR(255),value INT)
+

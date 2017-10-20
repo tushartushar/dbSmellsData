@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sessions (id TEXT PRIMARY KEY, data TEXT)
+ in following column data of table sessions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sessions (id TEXT PRIMARY KEY, data TEXT)
+ in following column id of table sessions
+Detected: Index Shotgun Variant: 1

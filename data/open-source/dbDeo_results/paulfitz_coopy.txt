@@ -1,0 +1,93 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column cookie of table user
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['backlink', 'srctype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mlink', 'pid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_config(@ name TEXT PRIMARY KEY,@ value TEXT@ )
+ in following column @ of table global_config
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['delta(srcid)', 'tabledeltadelta']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'src']
+Detected: Index Shotgun Variant: 3 Following index not used : ['srch', 'x']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS widesheet_props (\n\	key TEXT PRIMARY KEY,\n\	val TEXT)
+ in following column \ of table widesheet_props
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column pw of table user
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE reportfmt SET title=%Q, sqlcode=%Q WHERE rn=%d
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE org2loc (org_id INTEGER,loc_id INTEGER,* FOREIGN KEY(org_id) REFERENCES org2loc(org_id),* FOREIGN KEY(loc_id) REFERENCES locations(id))
+ in following column * and in column * of table ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE org2loc (org_id INTEGER,loc_id INTEGER,* FOREIGN KEY(org_id) REFERENCES org2loc(org_id),* FOREIGN KEY(loc_id) REFERENCES locations(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE org2loc (org_id INTEGER,loc_id INTEGER, * FOREIGN KEY(org_id) REFERENCES org2loc(org_id), * FOREIGN KEY(loc_id) REFERENCES locations(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'target']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE blob SET rcvid=%d, size=%d, content=:data  WHERE rid=%d
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['tagxref', 'mtime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['delta', 'tablercvfromrcvfrom']
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column info of table user
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS widesheet_links (\n\	filename TEXT,\n\	key TEXT)
+ in following column \ of table widesheet_links
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'mtime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE concealed(@ hash TEXT PRIMARY KEY,@ content TEXT@ )
+ in following column @ of table concealed
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE blob SET content=:c, size=%d  WHERE rid=%d
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column ipaddr of table user
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['backlink', 'srcid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mlink', 'Uindexmlink_i2mlink']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE numbers (name TEXT, rep INTEGER PRIMARY KEY)
+ in following column name of table numbers
+Detected: Index Shotgun Variant: 3 Following index not used : ['event', 'mtime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'filename']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['delta(srcid)', 'srcid']
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column login of table user
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS concealed(@ hash TEXT PRIMARY KEY,@ content TEXT@ )
+ in following column @ of table concealed
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user( uid INTEGER PRIMARY KEY, login TEXT, pw TEXT, cap TEXT, cookie TEXT, ipaddr TEXT, cexpire DATETIME, info TEXT, photo BLOB)
+ in following column cap of table user
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['delta(srcid)', 'p']
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

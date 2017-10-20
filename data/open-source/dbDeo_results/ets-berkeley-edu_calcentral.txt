@@ -1,0 +1,94 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1727, 'Facilities Services', 'http://www.cp.berkeley.edu/', 'Cleaning, landscaping and other services to maintain exceptional physical appearance', true, '2015-08-21 00:19:38.655', '2015-08-21 00:19:38.655')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1732, 'Gender Equity Resource Center', 'http://geneq.berkeley.edu/', 'Community center for students, faculty, staff, & alumni', true, '2015-08-21 00:19:38.822', '2015-08-21 00:19:38.822')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1737, 'GSI, Reader, Tutor, and GSR Positions', 'http://grad.berkeley.edu/professional-development/appointments/', 'Graduate Student Instructor (GSI), Researcher (GSR), Reader, and Tutor appointments at Berkeley', true, '2015-08-21 00:19:39.031', '2015-08-21 00:19:39.031')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1670, 'Cal 1 Card', 'http://services.housing.berkeley.edu/c1c/static/index.htm', 'The campus identification, and optional, debit and meal points card.', true, '2015-08-21 00:19:36.339', '2015-08-21 00:19:36.339')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1698, 'CARE Services', 'http://uhs.berkeley.edu/facstaff/care/', 'free, confidential problem assessment and referral for UC Berkeley faculty and staff', true, '2015-08-21 00:19:37.535', '2015-08-21 00:19:37.535')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1722, 'Environmental Health & Safety', 'http://www.ehs.berkeley.edu/', 'Services to the campus community that promote health, safety, and environmental stewardship', true, '2015-08-21 00:19:38.46', '2015-08-21 00:19:38.46')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1699, 'Career Center', 'http://career.berkeley.edu/', 'Cal jobs, internships & career counseling', true, '2015-08-21 00:19:37.567', '2015-08-21 00:19:37.567')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1643, 'At Your Service', 'https://atyourserviceonline.ucop.edu', 'Benefits, Earnings, Taxes & Retirement', true, '2015-08-21 00:19:35.091', '2015-08-21 00:19:35.091')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO oec_course_codes VALUES (1, 'A,RESEC', '', 'MBARC', true, '2015-08-13 23:26:35.356', '2015-08-13 23:26:35.356')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1768, 'Personal Info - HR record', 'https://auth.berkeley.edu/cas/login?service=https://hrw-vip-prod.is.berkeley.edu/cgi-bin/cas-hrsprod.pl', 'HR personal data, requires log-in.', true, '2015-08-21 00:19:40.135', '2015-08-21 00:19:40.135')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1673, 'Cal Marketplace', 'http://calmarketplace.berkeley.edu/', 'Everything at Cal you may want to buy, discover or visit', true, '2015-08-21 00:19:36.504', '2015-08-21 00:19:36.504')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1693, 'Campus Directory - People Finder', 'http://directory.berkeley.edu', 'Campus directory of faculty, staff and students', true, '2015-08-21 00:19:37.32', '2015-08-21 00:19:37.32')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1807, 'Transfer, Re-entry and Student Parent Center', 'http://trsp.berkeley.edu/', 'Resources specific to transfer, re-entering, and parent students', true, '2015-08-21 00:19:41.529', '2015-08-21 00:19:41.529')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1795, 'Student Learning Center', 'http://slc.berkeley.edu', 'Tutoring, workshops, support services, and 24-hour study access', true, '2015-08-21 00:19:41.135', '2015-08-21 00:19:41.135')
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE service_alerts ( id integer NOT NULL, title character varying(255) NOT NULL, snippet text, body text NOT NULL, publication_date timestamp without time zone NOT NULL, display boolean DEFAULT false NOT NULL, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column snippet of table service_alerts
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1755, 'MyFinAid', 'https://myfinaid.berkeley.edu/', 'Manage your Financial Aid Awards-grants, scholarships, work-study, loans, etc.', true, '2015-08-21 00:19:39.691', '2015-08-21 00:19:39.691')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1723, 'Equity, Inclusion & Diversity', 'http://diversity.berkeley.edu/', 'Creating a fair and inclusive society for all individuals', true, '2015-08-21 00:19:38.489', '2015-08-21 00:19:38.489')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1663, 'Blu Card', 'http://supplychain.berkeley.edu/programs/card-program-services/blucard', 'A procurement card, issued to select employees, and used for purchasing work-related items and services', true, '2015-08-21 00:19:36.01', '2015-08-21 00:19:36.01')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1674, 'Cal Performances', 'http://www.calperformances.org/', 'Information and tickets for Cal music, dance, and theater performances', true, '2015-08-21 00:19:36.539', '2015-08-21 00:19:36.539')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1782, 'Retirement Benefits - At Your Service', 'https://atyourserviceonline.ucop.edu', 'Benefits, Earnings, Taxes & Retirement', true, '2015-08-21 00:19:40.648', '2015-08-21 00:19:40.648')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1764, 'Parking & Transportation', 'http://pt.berkeley.edu/', 'Parking lots, transportation, car sharing, etc.', true, '2015-08-21 00:19:39.997', '2015-08-21 00:19:39.997')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1756, 'New Faculty resources', 'http://teaching.berkeley.edu/new-faculty-resources', 'Hints, resources, and guidelines on productive teaching', true, '2015-08-21 00:19:39.718', '2015-08-21 00:19:39.718')
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE service_alerts ( id integer NOT NULL, title character varying(255) NOT NULL, snippet text, body text NOT NULL, publication_date timestamp without time zone NOT NULL, display boolean DEFAULT false NOT NULL, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column body of table service_alerts
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1821, 'Withdrawing or Canceling?', 'http://registrar.berkeley.edu/canwd.html ', 'Learn more about what you need to do if you are planning to cancel, withdraw and readmit to UC Berkeley', true, '2015-08-21 00:19:42.065', '2015-08-21 00:19:42.065')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1726, 'Executive Vice Chancellor & Provost', 'http://evcp.chance.berkeley.edu/', 'Meet Executive Vice Chancellor and Provost, Claude M. Steele', true, '2015-08-21 00:19:38.621', '2015-08-21 00:19:38.621')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1658, 'Berkeley Student Cooperative', 'http://www.bsc.coop/', 'Berkeley''s co-operative student housing option, and an alternative to living in student dorms', true, '2015-08-21 00:19:35.818', '2015-08-21 00:19:35.818')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1709, 'Computer Use Policy', 'https://security.berkeley.edu/policy/usepolicy.html', 'Rules, rights, and policies regarding computer facilities', true, '2015-08-21 00:19:37.94', '2015-08-21 00:19:37.94')
+
+Detected: God Table Found in following statement: CREATE TABLE canvas_site_mailing_lists ( id integer NOT NULL, canvas_site_id character varying(255), canvas_site_name character varying(255), list_name character varying(255), state character varying(255), populated_at timestamp without time zone, created_at timestamp without time zone, updated_at timestamp without time zone, members_count integer, populate_add_errors integer, populate_remove_errors integer, type character varying(255))
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1647, 'bConnected Support', 'http://ist.berkeley.edu/bconnected', 'Information and resources site for Berkeley''s email, calendar and shared drive solutions, powered by Google Apps for Education', true, '2015-08-21 00:19:35.272', '2015-08-21 00:19:35.272')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO oec_course_codes VALUES (63, 'ENE,RES', '', 'MGERG', true, '2015-08-13 23:26:35.934', '2015-08-13 23:26:35.934')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1719, 'Edx Classes at Berkeley', 'https://www.edx.org/university_profile/BerkeleyX', 'Resources that advise, coordinate, and facilitate the Universitys online education initiatives', true, '2015-08-21 00:19:38.321', '2015-08-21 00:19:38.321')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1653, 'Berkeley Academic Guide', 'http://guide.berkeley.edu/', 'Degree programs, academic policies, and course catalog', true, '2015-08-21 00:19:35.56', '2015-08-21 00:19:35.56')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1793, 'Student Affairs', 'http://sa.berkeley.edu/', 'Berkeley''s division responsible for many student life services including the Registrar, Admissions, Financial Aid, Housing & Dining, Conduct, Public Service Center, LEAD center, and ASUC auxiliary', true, '2015-08-21 00:19:41.077', '2015-08-21 00:19:41.077')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1767, 'Personal Info - Campus Directory', 'https://calnet.berkeley.edu/directory/update/', 'Public contact information of Berkeley affiliates such as email addresses, UIDs, etc.', true, '2015-08-21 00:19:40.105', '2015-08-21 00:19:40.105')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1667, 'bSpace', 'http://bspace.berkeley.edu', 'Homework assignments, lecture slides, syllabi and class resources', true, '2015-08-21 00:19:36.203', '2015-08-21 00:19:36.203')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1705, 'Class Enrollment Rules and Guides', 'http://registrar.berkeley.edu/StudentSystems/tbinfo.html', 'Registrar guide to Tele-BEARS, enrollment periods, add-drop deadlines, and other tips', true, '2015-08-21 00:19:37.805', '2015-08-21 00:19:37.805')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1710, 'Counseling & Psychological Services', 'http://uhs.berkeley.edu/students/counseling/cps.shtml', 'Individual, group, & self-help from Tang Center', true, '2015-08-21 00:19:37.985', '2015-08-21 00:19:37.985')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1650, 'Bear Facts', 'https://bearfacts.berkeley.edu', 'Academic record, grades & transcript, bill, degree audit, loans, SLR & personal info', true, '2015-08-21 00:19:35.405', '2015-08-21 00:19:35.405')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1796, 'Student Ombuds', 'http://sa.berkeley.edu/ombuds', 'Confidential help with campus issues, conflict situations, and more', true, '2015-08-21 00:19:41.162', '2015-08-21 00:19:41.162')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1685, 'CalMessages', 'https://calmessages.berkeley.edu/', 'Berkeley''s official messaging system used to send broadcast email notifications to all staff, all students, etc.', true, '2015-08-21 00:19:36.993', '2015-08-21 00:19:36.993')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1724, 'Ethics & Compliance, Administrative guide', 'http://ethicscompliance.berkeley.edu/index.shtml', 'Contact information to report anything suspicious', true, '2015-08-21 00:19:38.538', '2015-08-21 00:19:38.538')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO oec_course_codes VALUES (162, 'S,SEASN', '', 'HVSSA', false, '2015-08-13 23:26:36.396', '2015-08-13 23:26:36.396')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1654, 'Berkeley Jobs', 'http://jobs.berkeley.edu/', 'Start here to learn about job openings on campus, student, staff and academic positions', true, '2015-08-21 00:19:35.61', '2015-08-21 00:19:35.61')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1656, 'Berkeley Self-Guided Tours', 'http://visitors.berkeley.edu/tour/self.shtml', 'Mobile, podcast, cell phone, and other tours of the Berkeley campus', true, '2015-08-21 00:19:35.734', '2015-08-21 00:19:35.734')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1681, 'CalGreeks', 'http://www.calgreeks.com/', 'Fraternities, Sororities, and professional fraternities among the Greek Family', true, '2015-08-21 00:19:36.861', '2015-08-21 00:19:36.861')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1678, 'Cal Student Store', 'https://calstudentstore.berkeley.edu/', 'Apparel, school supplies, and more ', true, '2015-08-21 00:19:36.718', '2015-08-21 00:19:36.718')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO links VALUES (1668, 'bSpace Grade book', 'http://gsi.berkeley.edu/teachingguide/tech/bspace-gradebook.html', 'A tool to enter, upload, and calculate student grades on bSpace', true, '2015-08-21 00:19:36.258', '2015-08-21 00:19:36.258')
+

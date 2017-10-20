@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `test_hash` ( id INTEGER PRIMARY KEY ASC, field1 TEXT, field2 TEXT, field3 TEXT )
+ in following column field2 of table `test_hash`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `test_hash` ( id INTEGER PRIMARY KEY ASC, field1 TEXT, field2 TEXT, field3 TEXT )
+ in following column field3 of table `test_hash`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `test_hash` ( id INTEGER PRIMARY KEY ASC, field1 TEXT, field2 TEXT, field3 TEXT )
+ in following column field1 of table `test_hash`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER PRIMARY KEY ASC, content TEXT, data BLOB )
+ in following column content of table test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `test_hash` ( id INTEGER PRIMARY KEY ASC, field1 TEXT, field2 TEXT, field3 TEXT )
+

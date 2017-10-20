@@ -1,0 +1,193 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE normal_load (key int PRIMARY KEY, a int, b float, c text)
+ in following column c of table normal_load
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE frozen_types.regular_tuple (key text PRIMARY KEY, value tuple<text, int>)
+ in following column value and in column value of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.paging (key timeuuid, \ value text, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_tuple (key text PRIMARY KEY, value tuple<text, int>)
+ in following column value of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_list (key text PRIMARY KEY, value frozen<list<text>>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ordered_unordered_read_write(key int PRIMARY KEY, value_text text, value_uuid uuid, value_blob blob, value_list_floats list<float>)
+ in following column value_list_floats of table ordered_unordered_read_write
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0} (k text PRIMARY KEY, t text, i int, f float)
+ in following column f of table {
+Detected: Clone Tables Found in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 text, v2 int, v3 bigint, v4 float)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (key int, value int, PRIMARY KEY (key))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['test15', 'table1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['test14', 'value1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE materialized_view_clustering_order.table2 (key1 text, key2 text, value1 text, PRIMARY KEY(key1, key2))
+ in following column key2 and in column key2 of table materialized_views
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 text, v2 int, v3 bigint, v4 float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.log (key text, time timeuuid, entry text, \ PRIMARY KEY (key, time))
+ in following column . of table examples
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %s (part timeuuid, key int, value int, PRIMARY KEY(part, key))
+ in following column part and in column part of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE keys.single_parition_key (key text, value text, PRIMARY KEY(key))
+ in following column value of table keys
+Detected: Index Shotgun Variant: 3 Following index not used : ['indexes', 'value2']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE high_load (key int PRIMARY KEY, a text, b text, c text)
+ in following column a of table high_load
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE materialized_view_clustering_order.table2 (key1 text, key2 text, value1 text, PRIMARY KEY(key1, key2))
+ in following column key2 of table materialized_view_clustering_order
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_set (key text PRIMARY KEY, value set<text>)
+ in following column value of table frozen_types
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE {0} (k text PRIMARY KEY, t text, i int, f float)
+ in following column k and in column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (tweet_id int PRIMARY KEY, test_val text)
+ in following column test_val of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0} (k text PRIMARY KEY, t text, i int, f float)
+ in following column k of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE named_parameter_invalid(key int PRIMARY KEY, value text)
+ in following column value of table named_parameter_invalid
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test(tweet_id int PRIMARY KEY, test_val int)
+ in following column test_val and in column test_val of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_map (key text PRIMARY KEY, value frozen<map<text, text>>)
+ in following column value of table frozen_types
+Detected: Clone Tables Found in following statement: CREATE TABLE test(tweet_id int PRIMARY KEY, incdec counter)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cpp_driver.contributers ( lastname text, firstname test, company text, website text, since timestamp, last_activity timestamp PRIMARY KEY(lastname))
+ in following column company of table cpp_driver
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_list (key text PRIMARY KEY, value frozen<list<text>>)
+ in following column value of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (id timeuuid PRIMARY KEY, num int, str text)
+ in following column str of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['test14', '.']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE {0} (k text PRIMARY KEY, t text, i int, f float)
+ in following column t and in column t of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (tweet_id int PRIMARY KEY, numb double, label text)
+ in following column label of table %s
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE indexes.table1 (key1 text, value1 int, value2 map<text, text>, PRIMARY KEY(key1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.schema_meta (key text, \ value bigint, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %s (id timeuuid PRIMARY KEY, num int, str text)
+ in following column id and in column id of table invalid_udt_user
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE materialized_view_clustering_order.table2 (key1 text, key2 text, value1 text, PRIMARY KEY(key1, key2))
+ in following column value1 of table materialized_view_clustering_order
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_set (key text PRIMARY KEY, value set<text>)
+ in following column . of table frozen_types
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE %s (tweet_id bigint PRIMARY KEY, t1 bigint, t2 bigint, t3 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_list (key text PRIMARY KEY, value list<text>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cpp_driver.contributers ( lastname text, firstname test, company text, website text, since timestamp, last_activity timestamp PRIMARY KEY(lastname))
+ in following column website of table cpp_driver
+Detected: Clone Tables Found in following statement: CREATE TABLE test15.table1 (key1 TEXT PRIMARY KEY, value1 INT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_map (key text PRIMARY KEY, value map<text, text>)
+ in following column . of table frozen_types
+Detected: Index Shotgun Variant: 3 Following index not used : ['test15', 'value1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.basic (key text, \ bln boolean, \ flt float, dbl double,\ i32 int, i64 bigint, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 text, v2 int, v3 bigint, v4 float)
+ in following column v4 of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE high_load (key int PRIMARY KEY, a text, b text, c text)
+ in following column c of table high_load
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 text, v2 int, v3 bigint, v4 float)
+ in following column v1 of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clustering_order.single_parition_key (key text, value text, PRIMARY KEY(key))
+ in following column value of table clustering_order
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE high_load (key int PRIMARY KEY, a text, b text, c text)
+ in following column a and in column a of table normal_load
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE materialized_view_clustering_order.table2 (key1 text, key2 text, value1 text, PRIMARY KEY(key1, key2))
+ in following column value1 and in column value1 of table materialized_views
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE frozen_types.regular_tuple (key text PRIMARY KEY, value tuple<text, int>)
+ in following column . and in column . of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.async (key text, \ bln boolean, \ flt float, dbl double,\ i32 int, i64 bigint, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0} (k text PRIMARY KEY, t text, i int, f float)
+ in following column t of table {
+Detected: Clone Tables Found in following statement: CREATE TABLE test14.table1 (key1 TEXT PRIMARY KEY, value1 INT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE high_load (key int PRIMARY KEY, a text, b text, c text)
+ in following column b and in column b of table normal_load
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_tuple (key text PRIMARY KEY, value tuple<text, int>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 int, v2 text, v3 list<int>, v4 set<text>)
+ in following column v2 of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.maps (key text, \ items map<text, int>, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.basic (key text, \ bln boolean, \ flt float, dbl double,\ i32 int, i64 bigint, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Clone Tables Found in following statement: CREATE TABLE test (key text PRIMARY KEY, value int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE indexes.table1 (key1 text, value1 int, value2 map<text, text>, PRIMARY KEY(key1))
+ in following column value2 of table indexes
+Detected: Clone Tables Found in following statement: CREATE TABLE test(tweet_id int PRIMARY KEY, test_val int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_tuple (key text PRIMARY KEY, value frozen<tuple<text, int>>)
+ in following column value of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE keys.single_parition_key (key text, value text, PRIMARY KEY(key))
+ in following column . of table keys
+Detected: Index Shotgun Variant: 3 Following index not used : ['indexes', 'value1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.collections (key text, \ items set<text>, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_list (key text PRIMARY KEY, value list<text>)
+ in following column value of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clustering_order.single_parition_key (key text, value text, PRIMARY KEY(key))
+ in following column . of table clustering_order
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ordered_unordered_read_write(key int PRIMARY KEY, value_text text, value_uuid uuid, value_blob blob, value_list_floats list<float>)
+ in following column value_text of table ordered_unordered_read_write
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + table_name + "(key text PRIMARY KEY, value text)
+ in following column value of table " + table_name + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.log (key text, time timeuuid, entry text, \ PRIMARY KEY (key, time))
+ in following column entry of table examples
+Detected: Index Shotgun Variant: 3 Following index not used : ['test15', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['indexes', 'KEYS']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.pairs (key text, \ value text, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.pairs (key text, \ value text, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (key int PRIMARY KEY, value map<text, int>)
+ in following column value of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['indexes', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.regular_map (key text PRIMARY KEY, value map<text, text>)
+ in following column value of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_set (key text PRIMARY KEY, value frozen<set<text>>)
+ in following column value of table frozen_types
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 int, v2 text, v3 list<int>, v4 set<text>)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (part int, key timeuuid, value int, PRIMARY KEY(part, key))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE materialized_view_clustering_order.table1 (key1 text, value1 text, PRIMARY KEY(key1))
+ in following column value1 of table materialized_view_clustering_order
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_map (key text PRIMARY KEY, value frozen<map<text, text>>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.tuples (id timeuuid, item frozen<tuple<text, bigint>>, PRIMARY KEY(id))
+ in following column item of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_udt (key text PRIMARY KEY, value frozen<type1>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE high_load (key int PRIMARY KEY, a text, b text, c text)
+ in following column b of table high_load
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.async (key text, \ bln boolean, \ flt float, dbl double,\ i32 int, i64 bigint, \ PRIMARY KEY (key))
+ in following column \ of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.collections (key text, \ items set<text>, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE %s (tweet_id uuid PRIMARY KEY, numb1 double, numb2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 int, v2 text, v3 list<int>, v4 set<text>)
+ in following column v4 of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE normal_load (key int PRIMARY KEY, a int, b float, c text)
+ in following column b of table normal_load
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_tuple (key text PRIMARY KEY, value frozen<tuple<text, int>>)
+ in following column . of table frozen_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frozen_types.frozen_set (key text PRIMARY KEY, value frozen<set<text>>)
+ in following column . of table frozen_types
+Detected: Index Shotgun Variant: 3 Following index not used : ['indexes', 'table1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test(tweet_id int PRIMARY KEY, test_val int)
+ in following column tweet_id and in column tweet_id of table %s
+Detected: Clone Tables Found in following statement: CREATE TABLE test (key int PRIMARY KEY, value int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE examples.maps (key text, \ items map<text, int>, \ PRIMARY KEY (key))
+ in following column . of table examples
+Detected: Index Shotgun Variant: 3 Following index not used : ['test14', 'table1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (key text PRIMARY KEY, value text)
+ in following column value of table %s
+Detected: Clone Tables Found in following statement: CREATE TABLE test (key int PRIMARY KEY, v1 int, v2 text, v3 list<int>, v4 set<text>)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cpp_driver.contributers ( lastname text, firstname test, company text, website text, since timestamp, last_activity timestamp PRIMARY KEY(lastname))
+ in following column . of table cpp_driver

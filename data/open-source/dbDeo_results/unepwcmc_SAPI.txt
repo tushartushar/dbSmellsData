@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['synonym_import', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['taxon_concepts', 'legacy_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE elibrary_citations_resolved_tmp (document_id INT, CitationId INT, CtyISO2 TEXT, splus_taxon_concept_id INT)
+ in following column CtyISO2 of table elibrary_citations_resolved_tmp
+Detected: Index Shotgun Variant: 3 Following index not used : ['taxon_concepts', 'legacy_type']

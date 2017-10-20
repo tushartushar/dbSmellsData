@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE DbKeeperNet_SimpleDemo ( id integer not null, name text, constraint PK_DbKeeperNet_SimpleDemo primary key (id) )
+ in following column name of table DbKeeperNet_SimpleDemo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: create table {0}(id integer not null, rec_id int, CONSTRAINT PK_{0} PRIMARY KEY (id), CONSTRAINT {1} FOREIGN KEY (rec_id) REFERENCES testing_fk(id))
+ in following column id and in column id of table DbKeeperNet_SimpleDemo
+Detected: Duplicate Column Names Found in following statement: create table \"{0}\"(c varchar(2))
+ in following column c and in column c of table {
+Detected: Obsolete Column TypesFound in following statement: create table {0}(c text)
+ in following column c of table {
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE DbKeeperNet_SimpleDemo ( id serial not null, name varchar(32), constraint PK_DbKeeperNet_SimpleDemo primary key (id) )
+ in following column name and in column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master

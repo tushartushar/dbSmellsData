@@ -1,0 +1,2 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE words(word TEXT)
+ in following column word of table words

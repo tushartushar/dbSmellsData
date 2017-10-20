@@ -1,0 +1,42 @@
+Detected: God Table Found in following statement: CREATE TABLE `message`(	`id` INTEGER NOT NULL PRIMARY KEY,	`id_topic` INTEGER NOT NULL,	`id_parent` INTEGER NOT NULL,	`id_user` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`subject` VARCHAR(128) NOT NULL,	`message_name` VARCHAR(160) NOT NULL,	`user_nick` VARCHAR(100) NOT NULL,	`message` BLOB NOT NULL,	`id_article` INTEGER NOT NULL,	`message_date` INTEGER NOT NULL,	`update_date` INTEGER NOT NULL,	`user_role` VARCHAR(50) NOT NULL,	`user_title` VARCHAR(100) NOT NULL,	`user_title_color` INTEGER NOT NULL,	`last_moderated` INTEGER NOT NULL,	`closed` INTEGER NOT NULL,	`has_child` INTEGER NOT NULL,	`compressed` INTEGER NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`message`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`message`', 'CASCADE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating`(	`id_message` INTEGER NOT NULL,	`id_topic` INTEGER NOT NULL,	`id_user` INTEGER NOT NULL,	`user_rating` INTEGER NOT NULL,	`rate` INTEGER NOT NULL,	`rate_date` INTEGER NOT NULL,	`rate_type` INTEGER NOT NULL,	PRIMARY KEY (`id_message`, `id_user`, `rate_type`))
+ in following column `id_user` and in column `id_user` of table `moderate`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating`(	`id_message` INT NOT NULL COMMENT 'id ',	`id_topic` INT NOT NULL COMMENT 'id ',	`id_user` INT NOT NULL COMMENT 'id ',	`user_rating` INT NOT NULL COMMENT ' ',	`rate` INT NOT NULL COMMENT '',	`rate_date` DATETIME NOT NULL COMMENT '',	`rate_type` TINYINT(1) NOT NULL COMMENT ' (0 - , 1 - +/-, 2 - )',	PRIMARY KEY (`id_message`, `id_user`, `rate_type`))
+ in following column `rate` and in column `rate` of table `rating2send`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating`(	`id_message` INT NOT NULL COMMENT 'id ',	`id_topic` INT NOT NULL COMMENT 'id ',	`id_user` INT NOT NULL COMMENT 'id ',	`user_rating` INT NOT NULL COMMENT ' ',	`rate` INT NOT NULL COMMENT '',	`rate_date` DATETIME NOT NULL COMMENT '',	`rate_type` TINYINT(1) NOT NULL COMMENT ' (0 - , 1 - +/-, 2 - )',	PRIMARY KEY (`id_message`, `id_user`, `rate_type`))
+ in following column `id_message` and in column `id_message` of table `moderate`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`message`', 'UPDATE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `message2send`(	`id` INTEGER NOT NULL PRIMARY KEY,	`id_parent` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`subject` VARCHAR(128) NOT NULL,	`message` TEXT NOT NULL,	`date` INTEGER NOT NULL,	`draft` INTEGER NOT NULL)
+ in following column `message` and in column `message` of table `message`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating2send`(	`id` INT NOT NULL COMMENT 'id ()',	`id_message` INT NOT NULL COMMENT 'id ',	`rate` INT NOT NULL COMMENT '',	`date` DATETIME NOT NULL COMMENT ' ',	PRIMARY KEY (`id`))
+ in following column `rate` and in column `rate` of table `rating`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`message`', '`id`']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `user`(	`id` INT NOT NULL COMMENT 'id ',	`name` VARCHAR(60) NOT NULL COMMENT ' ',	`nick` VARCHAR(100) NOT NULL COMMENT ' ',	`real_name` VARCHAR(80) NOT NULL COMMENT ' ',	`email` VARCHAR(60) NOT NULL COMMENT ' email ',	`homepage` VARCHAR(120) NOT NULL COMMENT ' ',	`specialization` VARCHAR(100) NOT NULL COMMENT '',	`where_from` VARCHAR(100) NOT NULL COMMENT '',	`origin` VARCHAR(258) NOT NULL COMMENT '',	PRIMARY KEY (`id`),	KEY `ix_name` (`name`))
+ in following column `id` and in column `id` of table `message2send`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `message2send`(	`id` INTEGER NOT NULL PRIMARY KEY,	`id_parent` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`subject` VARCHAR(128) NOT NULL,	`message` TEXT NOT NULL,	`date` INTEGER NOT NULL,	`draft` INTEGER NOT NULL)
+ in following column `message` of table `message2send`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `message_topic`(	`id_message` INTEGER NOT NULL PRIMARY KEY,	`id_forum` INTEGER NOT NULL,	`message_date` INTEGER NOT NULL,	FOREIGN KEY (`id_message`) REFERENCES `message` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column `message_date` and in column `message_date` of table `unread`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `message2send`(	`id` INT NOT NULL COMMENT 'id ()',	`id_parent` INT NOT NULL COMMENT 'id ',	`id_forum` INT NOT NULL COMMENT 'id ',	`subject` VARCHAR(128) NOT NULL COMMENT '',	`message` LONGTEXT NOT NULL COMMENT ' ',	`date` DATETIME NOT NULL COMMENT ' ',	`draft` TINYINT(1) NOT NULL COMMENT ' ',	PRIMARY KEY (`id`))
+ in following column `message` of table `message2send`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating`(	`id_message` INT NOT NULL COMMENT 'id ',	`id_topic` INT NOT NULL COMMENT 'id ',	`id_user` INT NOT NULL COMMENT 'id ',	`user_rating` INT NOT NULL COMMENT ' ',	`rate` INT NOT NULL COMMENT '',	`rate_date` DATETIME NOT NULL COMMENT '',	`rate_type` TINYINT(1) NOT NULL COMMENT ' (0 - , 1 - +/-, 2 - )',	PRIMARY KEY (`id_message`, `id_user`, `rate_type`))
+ in following column `id_topic` and in column `id_topic` of table `moderate`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`message`', 'ON']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `unread`(	`id_message` INTEGER NOT NULL PRIMARY KEY,	`id_parent` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`id_topic` INTEGER NOT NULL,	`id_parent_user` INTEGER NOT NULL,	`message_date` INTEGER NOT NULL)
+ in following column `id_parent` and in column `id_parent` of table `message2send`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `message_topic`(	`id_message` INT NOT NULL COMMENT 'id ',	`id_forum` INT NOT NULL COMMENT 'id ',	`message_date` DATETIME NOT NULL COMMENT ' ',	PRIMARY KEY (`id_message`),	KEY `ix_id_forum` (`id_forum`),	CONSTRAINT `fk_message_topic_message` FOREIGN KEY (`id_message`) REFERENCES `message` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column `message_date` and in column `message_date` of table `unread`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `moderate`(	`id_message` INTEGER NOT NULL,	`id_topic` INTEGER NOT NULL,	`id_user` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`created` INTEGER NOT NULL,	PRIMARY KEY (`id_message`, `id_user`))
+ in following column `id_forum` and in column `id_forum` of table `message_topic`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating`(	`id_message` INT NOT NULL COMMENT 'id ',	`id_topic` INT NOT NULL COMMENT 'id ',	`id_user` INT NOT NULL COMMENT 'id ',	`user_rating` INT NOT NULL COMMENT ' ',	`rate` INT NOT NULL COMMENT '',	`rate_date` DATETIME NOT NULL COMMENT '',	`rate_type` TINYINT(1) NOT NULL COMMENT ' (0 - , 1 - +/-, 2 - )',	PRIMARY KEY (`id_message`, `id_user`, `rate_type`))
+ in following column `id_user` and in column `id_user` of table `moderate`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `rating2send`(	`id` INT NOT NULL COMMENT 'id ()',	`id_message` INT NOT NULL COMMENT 'id ',	`rate` INT NOT NULL COMMENT '',	`date` DATETIME NOT NULL COMMENT ' ',	PRIMARY KEY (`id`))
+ in following column `date` and in column `date` of table `message2send`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `moderate2send`(	`id` INTEGER NOT NULL PRIMARY KEY,	`id_message` INTEGER NOT NULL,	`action` VARCHAR(32) NOT NULL,	`id_forum` INTEGER NOT NULL,	`description` TEXT NOT NULL,	`as_moderator` INTEGER NOT NULL,	`date` INTEGER NOT NULL)
+ in following column `description` of table `moderate2send`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `message2send`(	`id` INTEGER NOT NULL PRIMARY KEY,	`id_parent` INTEGER NOT NULL,	`id_forum` INTEGER NOT NULL,	`subject` VARCHAR(128) NOT NULL,	`message` TEXT NOT NULL,	`date` INTEGER NOT NULL,	`draft` INTEGER NOT NULL)
+ in following column `id_parent` and in column `id_parent` of table `unread`

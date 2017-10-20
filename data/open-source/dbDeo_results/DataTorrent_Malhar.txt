@@ -1,0 +1,37 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (col1 INTEGER, col2 VARCHAR(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS temp4 (col1 map<string,int>,col2 map<string,int>,col3 map<string,int>,col4 map<String,timestamp>, col5 map<string,double>,col6 map<string,double>,col7 map<string,int>,col8 map<string,int>)
+ in following column col2 and in column col2 of table " + TABLE_NAME + "
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS " + tablename + " (col1 string)
+ in following column col1 and in column col1 of table " + tablepojo + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE unittests.userstatus ( * userid text, * day int, * month int, * year int, * employeeid text, * currentstatus text, * PRIMARY KEY ((userid,day,month,year), employeeid))
+ in following column . of table unittests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + KEYSPACE + "." + TABLE_NAME + " (id uuid PRIMARY KEY,age int,lastname text,test boolean,floatvalue float,doubleValue double,set1 set<int>,list1 list<int>,map1 map<text,int>,last_visited timestamp)
+ in following column floatvalue of table " + KEYSPACE + "
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " (col1 INTEGER, col2 INTEGER, col3 BIGINT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dt_window_id_tracker ( * dt_application_id VARCHAR(100) NOT NULL, * dt_operator_id int(11) NOT NULL, * dt_window_id bigint NOT NULL, * UNIQUE (dt_application_id, dt_operator_id, dt_window_id) * )
+ in following column * and in column * of table unittests
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS temp4 (col1 map<string,int>,col2 map<string,int>,col3 map<string,int>,col4 map<String,timestamp>, col5 map<string,double>,col6 map<string,double>,col7 map<string,int>,col8 map<string,int>)
+ in following column col3 and in column col3 of table " + TABLE_NAME + "
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE unittests.userupdates ( * userid text PRIMARY KEY, * updatecount counter * )
+ in following column . and in column . of table " + KEYSPACE + "
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS temp4 (col1 map<string,int>,col2 map<string,int>,col3 map<string,int>,col4 map<String,timestamp>, col5 map<string,double>,col6 map<string,double>,col7 map<string,int>,col8 map<string,int>)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS " + StatefulUniqueCountTest.TABLE_NAME + " (col1 INTEGER, col2 INTEGER, col3 BIGINT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + KEYSPACE + "." + TABLE_NAME + " (id uuid PRIMARY KEY,age int,lastname text,test boolean,floatvalue float,doubleValue double,set1 set<int>,list1 list<int>,map1 map<text,int>,last_visited timestamp)
+ in following column lastname of table " + KEYSPACE + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + KEYSPACE + "." + TABLE_NAME + " (id uuid PRIMARY KEY,age int,lastname text,test boolean,floatvalue float,doubleValue double,set1 set<int>,list1 list<int>,map1 map<text,int>,last_visited timestamp)
+ in following column map1 of table " + KEYSPACE + "
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE unittests.users ( * userid text PRIMARY KEY, * username FROZEN<fullname>, * emails set<text>, * top_scores list<int>, * todo map<timestamp, text>, * siblings tuple<int, text,text>, * currentaddress FROZEN<address>, * previousnames FROZEN<list<fullname>> * )
+ in following column * of table unittests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE unittests.userstatus ( * userid text, * day int, * month int, * year int, * employeeid text, * currentstatus text, * PRIMARY KEY ((userid,day,month,year), employeeid))
+ in following column * of table unittests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS " + KEYSPACE + "." + TABLE_NAME_INPUT + " (id int PRIMARY KEY,lastname text,age int)
+ in following column lastname of table " + KEYSPACE + "
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE " + TABLE_NAME + " (col1 int primary key, col2 varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE unittests.users ( * userid text PRIMARY KEY, * username FROZEN<fullname>, * emails set<text>, * top_scores list<int>, * todo map<timestamp, text>, * siblings tuple<int, text,text>, * currentaddress FROZEN<address>, * previousnames FROZEN<list<fullname>> * )
+ in following column . of table unittests

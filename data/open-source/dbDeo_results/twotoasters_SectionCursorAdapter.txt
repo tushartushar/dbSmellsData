@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE toasters (_id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, ImageUrl TEXT, JobDescription TEXT, ShortJob TEXT)
+ in following column Name of table toasters
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE toasters (_id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, ImageUrl TEXT, JobDescription TEXT, ShortJob TEXT)
+ in following column ImageUrl of table toasters
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE toasters (_id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, ImageUrl TEXT, JobDescription TEXT, ShortJob TEXT)
+ in following column JobDescription of table toasters
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE toasters (_id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, ImageUrl TEXT, JobDescription TEXT, ShortJob TEXT)
+ in following column ShortJob of table toasters

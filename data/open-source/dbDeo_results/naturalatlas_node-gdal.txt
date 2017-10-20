@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT)
+ in following column value of table metadata
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (key text, value text)
+ in following column value of table %s

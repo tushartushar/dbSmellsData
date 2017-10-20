@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `foo` ( `id` NUMBER HASH, `val` STRING RANGE, GLOBAL INDEX `idx_bar` (`val2` STRING) ALL read=1 write=1 )
+ in following column GLOBAL and in column GLOBAL of table `employees`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `foo2` ( `id` NUMBER HASH, `val` STRING RANGE, GLOBAL INDEX `idx_bar` (`val2` STRING) ALL read=1 write=1 )
+ in following column `id` and in column `id` of table `foo`

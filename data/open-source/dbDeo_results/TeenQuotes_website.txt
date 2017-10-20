@@ -1,0 +1,18 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE `countries` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `country_code` varchar(100) COLLATE utf8_unicode_ci NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `countries_name_unique` (`name`), UNIQUE KEY `countries_country_code_unique` (`country_code`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `stories` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `represent_txt` text COLLATE utf8_unicode_ci NOT NULL, `frequence_txt` text COLLATE utf8_unicode_ci NOT NULL, `user_id` int(10) unsigned NOT NULL, `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00', `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00', PRIMARY KEY (`id`), KEY `stories_user_id_index` (`user_id`), CONSTRAINT `stories_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+ in following column `represent_txt` of table `stories`
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'favorite_quotes']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'stories']
+Detected: Metadata as Data Found in following statement: CREATE TABLE `password_reminders` ( `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `token` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00', KEY `password_reminders_email_index` (`email`), KEY `password_reminders_token_index` (`token`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'comments']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'newsletters']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'quotes']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'quote_tag']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `stories` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `represent_txt` text COLLATE utf8_unicode_ci NOT NULL, `frequence_txt` text COLLATE utf8_unicode_ci NOT NULL, `user_id` int(10) unsigned NOT NULL, `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00', `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00', PRIMARY KEY (`id`), KEY `stories_user_id_index` (`user_id`), CONSTRAINT `stories_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+ in following column `frequence_txt` of table `stories`
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'profile_visitors']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'user_tag']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'password_reminders']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'settings']

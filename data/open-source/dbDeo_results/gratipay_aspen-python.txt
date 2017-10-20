@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE layer_attributes ( id text, name text, value blob)
+ in following column name of table layer_attributes
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE layer_attributes ( id text, name text, value blob)
+ in following column id of table layer_attributes

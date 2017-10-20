@@ -1,0 +1,1 @@
+CREATE TABLE SettingsTable (Key TEXT PRIMARY KEY, Value BLOB )

@@ -1,0 +1,359 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS hook_event( id int UNSIGNED NOT NULL AUTO_INCREMENT, class_name varchar(255) UNIQUE, description varchar(255), PRIMARY KEY PK_hook_management_hook_event(id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_priority (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, code VARCHAR(255) NOT NULL, description LONGTEXT DEFAULT NULL, color VARCHAR(255) NOT NULL, urgency VARCHAR(255) NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, PRIMARY KEY(id))
+ in following column description of table ticket_priority
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_item_property', 'to_user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session_audit (id INT NOT NULL, rev INT NOT NULL, id_coach INT DEFAULT NULL, session_category_id INT DEFAULT NULL, name VARCHAR(150) DEFAULT NULL, description LONGTEXT DEFAULT NULL, show_description TINYINT(1) DEFAULT NULL, duration INT DEFAULT NULL, nbr_courses SMALLINT DEFAULT NULL, nbr_users INT DEFAULT NULL, nbr_classes INT DEFAULT NULL, session_admin_id INT DEFAULT NULL, visibility INT DEFAULT NULL, promotion_id INT DEFAULT NULL, display_start_date DATETIME DEFAULT NULL, display_end_date DATETIME DEFAULT NULL, access_start_date DATETIME DEFAULT NULL, access_end_date DATETIME DEFAULT NULL, coach_access_start_date DATETIME DEFAULT NULL, coach_access_end_date DATETIME DEFAULT NULL, send_subscription_notification TINYINT(1) DEFAULT \'0\', revtype VARCHAR(4) NOT NULL, PRIMARY KEY(id, rev)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column description of table session_audit
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_rating', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_tool_intro', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE extra_field_saved_search (id INT AUTO_INCREMENT NOT NULL, field_id INT DEFAULT NULL, user_id INT DEFAULT NULL, value LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_16ABE32A443707B0 (field_id), INDEX IDX_16ABE32AA76ED395 (user_id), PRIMARY KEY(id))
+ in following column value of table extra_field_saved_search
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_calendar_event_repeat', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE classification__category (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, position INT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_43629B36727ACA70 (parent_id), INDEX IDX_43629B36E25D857E (context), INDEX IDX_43629B36EA9FDD75 (media_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_calendar_event_repeat_not', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['usergroup_rel_user', 'usergroup_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_attachment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_course_rel_user', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS session_field_options (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, field_id INT NOT NULL, option_value TEXT, option_display_text VARCHAR(64), option_order INT, tms DATETIME)
+ in following column option_value of table session_field_options
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_user', 'work_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS c_student_publication_comment (iid INT NOT NULL PRIMARY KEY AUTO_INCREMENT, id INT NULL, work_id INT NOT NULL, c_id INT NOT NULL, comment text, file VARCHAR(255), user_id int NOT NULL, sent_at datetime NOT NULL)
+ in following column comment of table c_student_publication_comment
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_thread_qualify_log', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_group_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role_group', 'c_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column UNIQUE and in column UNIQUE of table faq_category_translation
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['plugin_bbb_meeting', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_notification', 'post_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE page__bloc (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, page_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(64) NOT NULL, settings LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\', enabled TINYINT(1) DEFAULT NULL, position INT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_FCDC1A97727ACA70 (parent_id), INDEX IDX_FCDC1A97C4663E4 (page_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column parent_id and in column parent_id of table c_timeline
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_task', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE classification__category (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, position INT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_43629B36727ACA70 (parent_id), INDEX IDX_43629B36E25D857E (context), INDEX IDX_43629B36EA9FDD75 (media_id), PRIMARY KEY(id))
+ in following column INDEX of table classification__category
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_lastaccess', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_rule_method', 'sequence_rule_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_course', 'session_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE page__bloc (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, page_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(64) NOT NULL, settings LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\', enabled TINYINT(1) DEFAULT NULL, position INT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_FCDC1A97727ACA70 (parent_id), INDEX IDX_FCDC1A97C4663E4 (page_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column type and in column type of table sequence_resource
+Detected: Index Shotgun Variant: 3 Following index not used : ['extra_field_rel_tag', 'tag_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_iv_interaction', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_category', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE resource_link (id INT AUTO_INCREMENT NOT NULL, resource_node_id INT DEFAULT NULL, session_id INT DEFAULT NULL, user_id INT DEFAULT NULL, c_id INT DEFAULT NULL, group_id INT DEFAULT NULL, usergroup_id INT DEFAULT NULL, private TINYINT(1) DEFAULT NULL, public TINYINT(1) DEFAULT NULL, start_visibility_at DATETIME DEFAULT NULL, end_visibility_at DATETIME DEFAULT NULL, INDEX IDX_398C394B1BAD783F (resource_node_id), INDEX IDX_398C394B613FECDF (session_id), INDEX IDX_398C394BA76ED395 (user_id), INDEX IDX_398C394B91D79BD3 (c_id), INDEX IDX_398C394BFE54D947 (group_id), INDEX IDX_398C394BD2112630 (usergroup_id), PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ticket_message (id INT AUTO_INCREMENT NOT NULL, ticket_id INT DEFAULT NULL, subject VARCHAR(255) DEFAULT NULL, message LONGTEXT DEFAULT NULL, status VARCHAR(255) NOT NULL, ip_address VARCHAR(255) NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_BA71692D700047D2 (ticket_id), PRIMARY KEY(id))
+ in following column status and in column status of table c_timeline
+Detected: God Table Found in following statement: CREATE TABLE page__snapshot (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, page_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, url LONGTEXT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, content LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', publication_date_start DATETIME DEFAULT NULL, publication_date_end DATETIME DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_3963EF9AF6BD1646 (site_id), INDEX IDX_3963EF9AC4663E4 (page_id), INDEX idx_snapshot_dates_enabled (publication_date_start, publication_date_end, enabled), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_assignment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_links', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_userinfo_def', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_downloads', 'down_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['skill_rel_user', 'skill_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_group_rel_tutor', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['extra_field_rel_tag', 'field_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey_question', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE media__media (id INT AUTO_INCREMENT NOT NULL, category_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description TEXT DEFAULT NULL, enabled TINYINT(1) NOT NULL, provider_name VARCHAR(255) NOT NULL, provider_status INT NOT NULL, provider_reference VARCHAR(255) NOT NULL, provider_metadata LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', width INT DEFAULT NULL, height INT DEFAULT NULL, length NUMERIC(10, 0) DEFAULT NULL, content_type VARCHAR(255) DEFAULT NULL, content_size INT DEFAULT NULL, copyright VARCHAR(255) DEFAULT NULL, author_name VARCHAR(255) DEFAULT NULL, context VARCHAR(64) DEFAULT NULL, cdn_is_flushable TINYINT(1) DEFAULT NULL, cdn_flush_identifier VARCHAR(64) DEFAULT NULL, cdn_flush_at DATETIME DEFAULT NULL, cdn_status INT DEFAULT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_5C6DD74E12469DE2 (category_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB' )
+ in following column description of table media__media
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_online', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tool (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, image VARCHAR(255) DEFAULT NULL, description LONGTEXT DEFAULT NULL, PRIMARY KEY(id))
+ in following column description of table tool
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_item_view', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ticket_ticket (id INT AUTO_INCREMENT NOT NULL, project_id INT DEFAULT NULL, category_id INT DEFAULT NULL, priority_id INT DEFAULT NULL, course_id INT DEFAULT NULL, session_id INT DEFAULT NULL, status_id INT DEFAULT NULL, code VARCHAR(255) NOT NULL, subject VARCHAR(255) NOT NULL, message LONGTEXT DEFAULT NULL, personal_email VARCHAR(255) NOT NULL, assigned_last_user INT DEFAULT NULL, total_messages INT NOT NULL, keyword VARCHAR(255) DEFAULT NULL, source VARCHAR(255) DEFAULT NULL, start_date DATETIME DEFAULT NULL, end_date DATETIME DEFAULT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_EDE2C768166D1F9C (project_id), INDEX IDX_EDE2C76812469DE2 (category_id), INDEX IDX_EDE2C768497B19F9 (priority_id), INDEX IDX_EDE2C768591CC992 (course_id), INDEX IDX_EDE2C768613FECDF (session_id), INDEX IDX_EDE2C7686BF700BD (status_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_thematic_advance', 'room_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_document', 'document_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_message_attachments (id INT AUTO_INCREMENT NOT NULL, ticket_id INT DEFAULT NULL, message_id INT DEFAULT NULL, path VARCHAR(255) NOT NULL, filename LONGTEXT NOT NULL, size INT NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_70BF9E26700047D2 (ticket_id), INDEX IDX_70BF9E26537A1329 (message_id), PRIMARY KEY(id))
+ in following column filename of table ticket_message_attachments
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role_permissions', 'role_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_comment', 'work_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_result', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE media__media (id INT AUTO_INCREMENT NOT NULL, category_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description TEXT DEFAULT NULL, enabled TINYINT(1) NOT NULL, provider_name VARCHAR(255) NOT NULL, provider_status INT NOT NULL, provider_reference VARCHAR(255) NOT NULL, provider_metadata LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', width INT DEFAULT NULL, height INT DEFAULT NULL, length NUMERIC(10, 0) DEFAULT NULL, content_type VARCHAR(255) DEFAULT NULL, content_size INT DEFAULT NULL, copyright VARCHAR(255) DEFAULT NULL, author_name VARCHAR(255) DEFAULT NULL, context VARCHAR(64) DEFAULT NULL, cdn_is_flushable TINYINT(1) DEFAULT NULL, cdn_flush_identifier VARCHAR(64) DEFAULT NULL, cdn_flush_at DATETIME DEFAULT NULL, cdn_status INT DEFAULT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_5C6DD74E12469DE2 (category_id), PRIMARY KEY(id))
+ in following column provider_metadata of table media__media
+Detected: Metadata as Data Found in following statement: CREATE TABLE contact_category (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_ticket', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_category_user', 'user_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fos_group(id INT AUTO_INCREMENT NOT NULL, code VARCHAR(40) NOT NULL, UNIQUE INDEX UNIQ_4B019DDB77153098 (code), PRIMARY KEY(id))
+ in following column id and in column id of table classification__context
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_permission_user', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_task_rel_user', 'task_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values_stack', 'stack_order']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_userinfo_content', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_document', 'work_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_sheet', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_category', 'access_url_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_rel_question', 'exercice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_access', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_ticket (id INT AUTO_INCREMENT NOT NULL, project_id INT DEFAULT NULL, category_id INT DEFAULT NULL, priority_id INT DEFAULT NULL, course_id INT DEFAULT NULL, session_id INT DEFAULT NULL, status_id INT DEFAULT NULL, code VARCHAR(255) NOT NULL, subject VARCHAR(255) NOT NULL, message LONGTEXT DEFAULT NULL, personal_email VARCHAR(255) NOT NULL, assigned_last_user INT DEFAULT NULL, total_messages INT NOT NULL, keyword VARCHAR(255) DEFAULT NULL, source VARCHAR(255) DEFAULT NULL, start_date DATETIME DEFAULT NULL, end_date DATETIME DEFAULT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_EDE2C768166D1F9C (project_id), INDEX IDX_EDE2C76812469DE2 (category_id), INDEX IDX_EDE2C768497B19F9 (priority_id), INDEX IDX_EDE2C768591CC992 (course_id), INDEX IDX_EDE2C768613FECDF (session_id), INDEX IDX_EDE2C7686BF700BD (status_id), PRIMARY KEY(id))
+ in following column message of table ticket_ticket
+Detected: Index Shotgun Variant: 3 Following index not used : ['course', 'room_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['user', 'id']
+Detected: God Table Found in following statement: CREATE TABLE c_group_info_audit (iid INT NOT NULL, rev INT NOT NULL, c_id INT DEFAULT NULL, id INT DEFAULT NULL, name VARCHAR(100) DEFAULT NULL, status TINYINT(1) DEFAULT NULL, category_id INT DEFAULT NULL, description LONGTEXT DEFAULT NULL, max_student INT DEFAULT NULL, doc_state TINYINT(1) DEFAULT NULL, calendar_state TINYINT(1) DEFAULT NULL, work_state TINYINT(1) DEFAULT NULL, announcements_state TINYINT(1) DEFAULT NULL, forum_state TINYINT(1) DEFAULT NULL, wiki_state TINYINT(1) DEFAULT NULL, chat_state TINYINT(1) DEFAULT NULL, secret_directory VARCHAR(255) DEFAULT NULL, self_registration_allowed TINYINT(1) DEFAULT NULL, self_unregistration_allowed TINYINT(1) DEFAULT NULL, session_id INT DEFAULT NULL, revtype VARCHAR(4) NOT NULL, PRIMARY KEY(iid, rev))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lang_freq (' . ' id integer PRIMARY KEY AUTOINCREMENT, ' //autoincrement in SQLITE . ' term_name text, term_file text, term_count integer default 0)
+ in following column term_file of table lang_freq
+Detected: Index Shotgun Variant: 3 Following index not used : ['extra_field_rel_tag', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE faq_category_translation (id INT AUTO_INCREMENT NOT NULL, translatable_id INT DEFAULT NULL, headline VARCHAR(255) NOT NULL, body LONGTEXT DEFAULT NULL, slug VARCHAR(50) NOT NULL, locale VARCHAR(255) NOT NULL, INDEX IDX_5493B0FC2C2AC5D3 (translatable_id), UNIQUE INDEX faq_category_translation_unique_translation (translatable_id, locale), PRIMARY KEY(id))
+ in following column body of table faq_category_translation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE skill_rel_user_comment (id INT AUTO_INCREMENT NOT NULL, skill_rel_user_id INT NOT NULL, feedback_giver_id INT NOT NULL, feedback_text TEXT, feedback_value INT, feedback_datetime DATETIME, PRIMARY KEY(id))
+ in following column feedback_text of table skill_rel_user_comment
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS c_lp_category (iid INT AUTO_INCREMENT NOT NULL, c_id INT NOT NULL, name VARCHAR(255) NOT NULL, position INT NOT NULL, PRIMARY KEY(iid))
+ in following column c_id and in column c_id of table c_timeline
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column description and in column description of table branch_sync
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_chat_connected', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_url_rel_session', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values_stack', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values_stack', 'sco_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE media__media (id INT AUTO_INCREMENT NOT NULL, category_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description TEXT DEFAULT NULL, enabled TINYINT(1) NOT NULL, provider_name VARCHAR(255) NOT NULL, provider_status INT NOT NULL, provider_reference VARCHAR(255) NOT NULL, provider_metadata LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', width INT DEFAULT NULL, height INT DEFAULT NULL, length NUMERIC(10, 0) DEFAULT NULL, content_type VARCHAR(255) DEFAULT NULL, content_size INT DEFAULT NULL, copyright VARCHAR(255) DEFAULT NULL, author_name VARCHAR(255) DEFAULT NULL, context VARCHAR(64) DEFAULT NULL, cdn_is_flushable TINYINT(1) DEFAULT NULL, cdn_flush_identifier VARCHAR(64) DEFAULT NULL, cdn_flush_at DATETIME DEFAULT NULL, cdn_status INT DEFAULT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_5C6DD74E12469DE2 (category_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column description of table media__media
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column javascript of table page__page
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE classification__tag (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_CA57A1C7E25D857E (context), UNIQUE INDEX tag_context (slug, context), PRIMARY KEY(id))
+ in following column UNIQUE of table classification__tag
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ticket_message_attachments (id INT AUTO_INCREMENT NOT NULL, ticket_id INT DEFAULT NULL, message_id INT DEFAULT NULL, path VARCHAR(255) NOT NULL, filename LONGTEXT NOT NULL, size INT NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_70BF9E26700047D2 (ticket_id), INDEX IDX_70BF9E26537A1329 (message_id), PRIMARY KEY(id))
+ in following column filename and in column filename of table $table
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_thread_qualify', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_hotpotatoes', 'exe_user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS extra_field (id INT AUTO_INCREMENT NOT NULL, extra_field_type INT NOT NULL, field_type INT NOT NULL, variable VARCHAR(64) NOT NULL, display_text VARCHAR(255) DEFAULT NULL, default_value LONGTEXT, field_order INT DEFAULT NULL, visible TINYINT(1) DEFAULT NULL, changeable TINYINT(1) DEFAULT NULL, filter TINYINT(1) DEFAULT NULL, created_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column default_value of table extra_field
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE skill_rel_user_comment (id INT AUTO_INCREMENT NOT NULL, skill_rel_user_id INT DEFAULT NULL, feedback_giver_id INT DEFAULT NULL, feedback_text LONGTEXT NOT NULL, feedback_value INT DEFAULT 1, feedback_datetime DATETIME NOT NULL, INDEX IDX_7AE9F6B6484A9317 (skill_rel_user_id), INDEX IDX_7AE9F6B63AF3B65B (feedback_giver_id), INDEX idx_select_su_giver (skill_rel_user_id, feedback_giver_id), PRIMARY KEY(id))
+ in following column feedback_text of table skill_rel_user_comment
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_question_option', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_status (id INT AUTO_INCREMENT NOT NULL, code VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, description LONGTEXT DEFAULT NULL, PRIMARY KEY(id))
+ in following column description of table ticket_status
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lang_freq (' . ' id integer PRIMARY KEY AUTOINCREMENT, ' //autoincrement in SQLITE . ' term_name text, term_file text, term_count integer default 0)
+ in following column ' //autoincrement in SQLITE . ' of table lang_freq
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_comment', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_post', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_announcement', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE session_audit (id INT NOT NULL, rev INT NOT NULL, id_coach INT DEFAULT NULL, session_category_id INT DEFAULT NULL, name VARCHAR(150) DEFAULT NULL, description LONGTEXT DEFAULT NULL, show_description TINYINT(1) DEFAULT NULL, duration INT DEFAULT NULL, nbr_courses SMALLINT DEFAULT NULL, nbr_users INT DEFAULT NULL, nbr_classes INT DEFAULT NULL, session_admin_id INT DEFAULT NULL, visibility INT DEFAULT NULL, promotion_id INT DEFAULT NULL, display_start_date DATETIME DEFAULT NULL, display_end_date DATETIME DEFAULT NULL, access_start_date DATETIME DEFAULT NULL, access_end_date DATETIME DEFAULT NULL, coach_access_start_date DATETIME DEFAULT NULL, coach_access_end_date DATETIME DEFAULT NULL, send_subscription_notification TINYINT(1) DEFAULT \'0\', revtype VARCHAR(4) NOT NULL, PRIMARY KEY(id, rev)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_default', 'c_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE c_timeline ( id INTEGER NOT NULL AUTO_INCREMENT, c_id INTEGER NOT NULL, headline VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, start_date VARCHAR(255) NOT NULL, end_date VARCHAR(255) NOT NULL, text VARCHAR(255) NOT NULL, media VARCHAR(255) NOT NULL, media_credit VARCHAR(255) NOT NULL, media_caption VARCHAR(255) NOT NULL, title_slide VARCHAR(255) NOT NULL, parent_id INTEGER DEFAULT 0 NOT NULL, status INTEGER NOT NULL, PRIMARY KEY (id, c_id))
+ in following column end_date and in column end_date of table ticket_ticket
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_view', 'c_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE timeline__component (id INT AUTO_INCREMENT NOT NULL, model VARCHAR(255) NOT NULL, identifier LONGTEXT NOT NULL COMMENT \'(DC2Type:array)\', hash VARCHAR(255) NOT NULL, UNIQUE INDEX UNIQ_1B2F01CDD1B862B8 (hash), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column UNIQUE of table classification__collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_project (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, description LONGTEXT DEFAULT NULL, email VARCHAR(255) DEFAULT NULL, other_area INT DEFAULT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, PRIMARY KEY(id))
+ in following column description of table ticket_project
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS branch_transaction (id BIGINT AUTO_INCREMENT NOT NULL, status_id INT DEFAULT NULL, branch_id INT DEFAULT NULL, transaction_id BIGINT NOT NULL, action VARCHAR(20) DEFAULT NULL, item_id VARCHAR(255) DEFAULT NULL, origin VARCHAR(255) DEFAULT NULL, dest_id VARCHAR(255) DEFAULT NULL, external_info VARCHAR(255) DEFAULT NULL, time_insert DATETIME NOT NULL, time_update DATETIME NOT NULL, failed_attempts INT NOT NULL, INDEX IDX_FEFBA12B6BF700BD (status_id), INDEX IDX_FEFBA12BDCD6CC49 (branch_id), PRIMARY KEY(id))
+ in following column item_id and in column item_id of table extra_field_values
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['message', 'user_receiver_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_item_property', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values_stack', 'course_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['skill_rel_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_feedback', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_file', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_wiki_mailcue', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_thematic_advance', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_course_rel_user', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_calendar_rel_group', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['extra_field_values', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gradebook_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values', 'sv_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_formula', 'sequence_method_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_mailcue', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values', 'course_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['usergroup_rel_user', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column slug of table page__page
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_tool', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_user', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_value', 'sequence_row_entity_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE c_timeline ( id INTEGER NOT NULL AUTO_INCREMENT, c_id INTEGER NOT NULL, headline VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, start_date VARCHAR(255) NOT NULL, end_date VARCHAR(255) NOT NULL, text VARCHAR(255) NOT NULL, media VARCHAR(255) NOT NULL, media_credit VARCHAR(255) NOT NULL, media_caption VARCHAR(255) NOT NULL, title_slide VARCHAR(255) NOT NULL, parent_id INTEGER DEFAULT 0 NOT NULL, status INTEGER NOT NULL, PRIMARY KEY (id, c_id))
+ in following column start_date and in column start_date of table ticket_ticket
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_category_rel_user', 'category_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_item_property', 'to_group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_post', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_glossary', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gradebook_link', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS $table ( id int PRIMARY KEY AUTO_INCREMENT, c_id int, session_id int, content text, filename varchar(255) )
+ in following column content of table $table
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_message_attachments', 'ticket_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_ticket', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['course', 'directory']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS extra_field_values (id INT AUTO_INCREMENT NOT NULL, value VARCHAR(255) DEFAULT NULL, field_id INT NOT NULL, item_id INT NOT NULL, comment LONGTEXT, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column comment of table extra_field_values
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column INDEX and in column INDEX of table faq_category_translation
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE extra_field_saved_search (id INT AUTO_INCREMENT NOT NULL, field_id INT DEFAULT NULL, user_id INT DEFAULT NULL, value LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_16ABE32A443707B0 (field_id), INDEX IDX_16ABE32AA76ED395 (user_id), PRIMARY KEY(id))
+ in following column value and in column value of table extra_field_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column custom_url of table page__page
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_answer', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_rule_method', 'sequence_method_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_wiki', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_item_property', 'insert_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_url_rel_course', 'access_url_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_post', 'dest_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_notification', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column INDEX of table classification__collection
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_valid', 'sequence_condition_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey_question_option', 'c_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE faq_category_translation (id INT AUTO_INCREMENT NOT NULL, translatable_id INT DEFAULT NULL, headline VARCHAR(255) NOT NULL, body LONGTEXT DEFAULT NULL, slug VARCHAR(50) NOT NULL, locale VARCHAR(255) NOT NULL, INDEX IDX_5493B0FC2C2AC5D3 (translatable_id), UNIQUE INDEX faq_category_translation_unique_translation (translatable_id, locale), PRIMARY KEY(id))
+ in following column body and in column body of table notification__message
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_ticket', 'status_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role_user', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_resource', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_thematic_plan', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_course', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column stylesheet of table page__page
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column raw_headers of table page__page
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__snapshot (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, page_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, url LONGTEXT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, content LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', publication_date_start DATETIME DEFAULT NULL, publication_date_end DATETIME DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_3963EF9AF6BD1646 (site_id), INDEX IDX_3963EF9AC4663E4 (page_id), INDEX idx_snapshot_dates_enabled (publication_date_start, publication_date_end, enabled), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB' )
+ in following column url of table page__snapshot
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_uploads', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_valid', 'sequence_variable_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['message', 'msg_status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_post', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['extra_field_values', 'field_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_item', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE media__media (id INT AUTO_INCREMENT NOT NULL, category_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description TEXT DEFAULT NULL, enabled TINYINT(1) NOT NULL, provider_name VARCHAR(255) NOT NULL, provider_status INT NOT NULL, provider_reference VARCHAR(255) NOT NULL, provider_metadata LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', width INT DEFAULT NULL, height INT DEFAULT NULL, length NUMERIC(10, 0) DEFAULT NULL, content_type VARCHAR(255) DEFAULT NULL, content_size INT DEFAULT NULL, copyright VARCHAR(255) DEFAULT NULL, author_name VARCHAR(255) DEFAULT NULL, context VARCHAR(64) DEFAULT NULL, cdn_is_flushable TINYINT(1) DEFAULT NULL, cdn_flush_identifier VARCHAR(64) DEFAULT NULL, cdn_flush_at DATETIME DEFAULT NULL, cdn_status INT DEFAULT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_5C6DD74E12469DE2 (category_id), PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE c_timeline ( id INTEGER NOT NULL AUTO_INCREMENT, c_id INTEGER NOT NULL, headline VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, start_date VARCHAR(255) NOT NULL, end_date VARCHAR(255) NOT NULL, text VARCHAR(255) NOT NULL, media VARCHAR(255) NOT NULL, media_credit VARCHAR(255) NOT NULL, media_caption VARCHAR(255) NOT NULL, title_slide VARCHAR(255) NOT NULL, parent_id INTEGER DEFAULT 0 NOT NULL, status INTEGER NOT NULL, PRIMARY KEY (id, c_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_hotpotatoes', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values_stack', 'sv_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_permission_group', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_notification', 'thread_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_rel_question', 'question_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_permission_task', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_wiki_mailcue', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_mailcue', 'thread_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_course_access', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_wiki_discuss', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_person', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_ticket', 'course_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE page__bloc (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, page_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(64) NOT NULL, settings LONGTEXT NOT NULL COMMENT \'(DC2Type:json)\', enabled TINYINT(1) DEFAULT NULL, position INT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_FCDC1A97727ACA70 (parent_id), INDEX IDX_FCDC1A97C4663E4 (page_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column name and in column name of table class_item
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_question', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_task_rel_user', 'user_id']
+Detected: God Table Found in following statement: CREATE TABLE page__site (id INT AUTO_INCREMENT NOT NULL, enabled TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, relative_path VARCHAR(255) DEFAULT NULL, host VARCHAR(255) NOT NULL, enabled_from DATETIME DEFAULT NULL, enabled_to DATETIME DEFAULT NULL, is_default TINYINT(1) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, locale VARCHAR(6) DEFAULT NULL, title VARCHAR(64) DEFAULT NULL, meta_keywords VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE page__snapshot (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, page_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, url LONGTEXT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, content LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', publication_date_start DATETIME DEFAULT NULL, publication_date_end DATETIME DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_3963EF9AF6BD1646 (site_id), INDEX IDX_3963EF9AC4663E4 (page_id), INDEX idx_snapshot_dates_enabled (publication_date_start, publication_date_end, enabled), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column content and in column content of table $table
+Detected: Index Shotgun Variant: 3 Following index not used : ['gradebook_evaluation', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_sheet_log', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_user', 'moved_to']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__snapshot (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, page_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, url LONGTEXT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, content LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', publication_date_start DATETIME DEFAULT NULL, publication_date_end DATETIME DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_3963EF9AF6BD1646 (site_id), INDEX IDX_3963EF9AC4663E4 (page_id), INDEX idx_snapshot_dates_enabled (publication_date_start, publication_date_end, enabled), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column url of table page__snapshot
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_rel_user', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS extra_field_options (id INT AUTO_INCREMENT NOT NULL, field_id INT DEFAULT NULL, option_value LONGTEXT, display_text VARCHAR(64) DEFAULT NULL, option_order INT DEFAULT NULL, priority VARCHAR(255) DEFAULT NULL, priority_message VARCHAR(255) DEFAULT NULL, INDEX IDX_A572E3AE443707B0 (field_id), PRIMARY KEY(id))
+ in following column option_value of table extra_field_options
+Detected: Index Shotgun Variant: 3 Following index not used : ['notification__message', 'created_at']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS course_field_options (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, field_id INT NOT NULL, option_value TEXT, option_display_text VARCHAR(64), option_order INT, tms DATETIME)
+ in following column option_value of table course_field_options
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_mailcue', 'post_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE c_group_info_audit (iid INT NOT NULL, rev INT NOT NULL, c_id INT DEFAULT NULL, id INT DEFAULT NULL, name VARCHAR(100) DEFAULT NULL, status TINYINT(1) DEFAULT NULL, category_id INT DEFAULT NULL, description LONGTEXT DEFAULT NULL, max_student INT DEFAULT NULL, doc_state TINYINT(1) DEFAULT NULL, calendar_state TINYINT(1) DEFAULT NULL, work_state TINYINT(1) DEFAULT NULL, announcements_state TINYINT(1) DEFAULT NULL, forum_state TINYINT(1) DEFAULT NULL, wiki_state TINYINT(1) DEFAULT NULL, chat_state TINYINT(1) DEFAULT NULL, secret_directory VARCHAR(255) DEFAULT NULL, self_registration_allowed TINYINT(1) DEFAULT NULL, self_unregistration_allowed TINYINT(1) DEFAULT NULL, session_id INT DEFAULT NULL, revtype VARCHAR(4) NOT NULL, PRIMARY KEY(iid, rev))
+ in following column description of table c_group_info_audit
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_category_rel_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_attachment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_question_rel_category', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_question_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_default', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['search_engine_ref', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey_group', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS room (id INT AUTO_INCREMENT NOT NULL, branch_id INT DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, description LONGTEXT, geolocation VARCHAR(255) DEFAULT NULL, ip VARCHAR(39) DEFAULT NULL, ip_mask VARCHAR(6) DEFAULT NULL, INDEX IDX_729F519BDCD6CC49 (branch_id), PRIMARY KEY(id))
+ in following column description of table room
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_message (id INT AUTO_INCREMENT NOT NULL, ticket_id INT DEFAULT NULL, subject VARCHAR(255) DEFAULT NULL, message LONGTEXT DEFAULT NULL, status VARCHAR(255) NOT NULL, ip_address VARCHAR(255) NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_BA71692D700047D2 (ticket_id), PRIMARY KEY(id))
+ in following column message of table ticket_message
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_rule_condition', 'sequence_rule_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_ticket', 'category_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_thematic', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_links', 'links_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_calendar_event', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_attempt', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ticket_category (id INT AUTO_INCREMENT NOT NULL, project_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description LONGTEXT DEFAULT NULL, total_tickets INT NOT NULL, course_required TINYINT(1) NOT NULL, sys_insert_user_id INT NOT NULL, sys_insert_datetime DATETIME NOT NULL, sys_lastedit_user_id INT DEFAULT NULL, sys_lastedit_datetime DATETIME DEFAULT NULL, INDEX IDX_8325E540166D1F9C (project_id), PRIMARY KEY(id))
+ in following column description of table ticket_category
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE media__media (id INT AUTO_INCREMENT NOT NULL, category_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, description TEXT DEFAULT NULL, enabled TINYINT(1) NOT NULL, provider_name VARCHAR(255) NOT NULL, provider_status INT NOT NULL, provider_reference VARCHAR(255) NOT NULL, provider_metadata LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', width INT DEFAULT NULL, height INT DEFAULT NULL, length NUMERIC(10, 0) DEFAULT NULL, content_type VARCHAR(255) DEFAULT NULL, content_size INT DEFAULT NULL, copyright VARCHAR(255) DEFAULT NULL, author_name VARCHAR(255) DEFAULT NULL, context VARCHAR(64) DEFAULT NULL, cdn_is_flushable TINYINT(1) DEFAULT NULL, cdn_flush_identifier VARCHAR(64) DEFAULT NULL, cdn_flush_at DATETIME DEFAULT NULL, cdn_status INT DEFAULT NULL, updated_at DATETIME NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_5C6DD74E12469DE2 (category_id), PRIMARY KEY(id))
+ in following column description of table media__media
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_course_rel_user', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['course_request', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_quiz_rel_question', 'c_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE classification__collection (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, media_id INT DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, description VARCHAR(255) DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_A406B56AE25D857E (context), INDEX IDX_A406B56AEA9FDD75 (media_id), UNIQUE INDEX tag_collection (slug, context), PRIMARY KEY(id))
+ in following column slug and in column slug of table page__page
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_link_category', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_category', 'project_id']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS branch_transaction (id BIGINT AUTO_INCREMENT NOT NULL, status_id INT DEFAULT NULL, branch_id INT DEFAULT NULL, transaction_id BIGINT NOT NULL, action VARCHAR(20) DEFAULT NULL, item_id VARCHAR(255) DEFAULT NULL, origin VARCHAR(255) DEFAULT NULL, dest_id VARCHAR(255) DEFAULT NULL, external_info VARCHAR(255) DEFAULT NULL, time_insert DATETIME NOT NULL, time_update DATETIME NOT NULL, failed_attempts INT NOT NULL, INDEX IDX_FEFBA12B6BF700BD (status_id), INDEX IDX_FEFBA12BDCD6CC49 (branch_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_sheet', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_task_rel_user', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_row_entity', 'sequence_type_entity_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_comment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_downloads', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_group_rel_user', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS branch_sync (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, access_url_id INT NOT NULL, unique_id VARCHAR(50) NOT NULL, branch_name VARCHAR(250) NOT NULL, description LONGTEXT, branch_ip VARCHAR(40) DEFAULT NULL, latitude NUMERIC(10, 0) DEFAULT NULL, longitude NUMERIC(10, 0) DEFAULT NULL, dwn_speed INT DEFAULT NULL, up_speed INT DEFAULT NULL, delay INT DEFAULT NULL, admin_mail VARCHAR(250) DEFAULT NULL, admin_name VARCHAR(250) DEFAULT NULL, admin_phone VARCHAR(250) DEFAULT NULL, last_sync_trans_id BIGINT DEFAULT NULL, last_sync_trans_date DATETIME DEFAULT NULL, last_sync_type VARCHAR(20) DEFAULT NULL, ssl_pub_key VARCHAR(250) DEFAULT NULL, branch_type VARCHAR(250) DEFAULT NULL, lft INT DEFAULT NULL, rgt INT DEFAULT NULL, lvl INT DEFAULT NULL, root INT DEFAULT NULL, UNIQUE INDEX UNIQ_F62F45EDE3C68343 (unique_id), INDEX IDX_F62F45ED727ACA70 (parent_id), PRIMARY KEY(id))
+ in following column description of table branch_sync
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page__page (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, edited TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, slug LONGTEXT DEFAULT NULL, url LONGTEXT DEFAULT NULL, custom_url LONGTEXT DEFAULT NULL, request_method VARCHAR(255) DEFAULT NULL, title VARCHAR(255) DEFAULT NULL, meta_keyword VARCHAR(255) DEFAULT NULL, meta_description VARCHAR(255) DEFAULT NULL, javascript LONGTEXT DEFAULT NULL, stylesheet LONGTEXT DEFAULT NULL, raw_headers LONGTEXT DEFAULT NULL, template VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_2FAE39EDF6BD1646 (site_id), INDEX IDX_2FAE39ED727ACA70 (parent_id), INDEX IDX_2FAE39ED158E0B66 (target_id), PRIMARY KEY(id))
+ in following column url of table page__page
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_exercises', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog_comment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['session_rel_user', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_rule_condition', 'sequence_condition_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey_invitation', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['skill_rel_user', 'session_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_blog', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_online_link', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequence_formula', 'sequence_variable_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_survey_answer', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ticket_assigned_log', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_url_rel_session', 'access_url_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_student_publication_rel_document', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_url_rel_course', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_e_exercises', 'exe_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['course', 'category_code']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_forum_mailcue', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_dropbox_person', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_chat_connected', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['track_stored_values', 'sco_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_online_connected', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_lp_iv_objective', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_calendar_event', 'room_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_attendance_calendar', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_notebook', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['skill_rel_user', 'course_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lang_freq (' . ' id int PRIMARY KEY AUTO_INCREMENT, ' . ' term_name text, term_file text default \'\', term_count int default 0)' )
+ in following column ' . ' of table lang_freq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE class_item (id INT AUTO_INCREMENT NOT NULL, code VARCHAR(40) DEFAULT NULL, name LONGTEXT NOT NULL, PRIMARY KEY(id))
+ in following column name of table class_item
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_course_setting', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_wiki_conf', 'c_id']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS branch_sync (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, access_url_id INT NOT NULL, unique_id VARCHAR(50) NOT NULL, branch_name VARCHAR(250) NOT NULL, description LONGTEXT, branch_ip VARCHAR(40) DEFAULT NULL, latitude NUMERIC(10, 0) DEFAULT NULL, longitude NUMERIC(10, 0) DEFAULT NULL, dwn_speed INT DEFAULT NULL, up_speed INT DEFAULT NULL, delay INT DEFAULT NULL, admin_mail VARCHAR(250) DEFAULT NULL, admin_name VARCHAR(250) DEFAULT NULL, admin_phone VARCHAR(250) DEFAULT NULL, last_sync_trans_id BIGINT DEFAULT NULL, last_sync_trans_date DATETIME DEFAULT NULL, last_sync_type VARCHAR(20) DEFAULT NULL, ssl_pub_key VARCHAR(250) DEFAULT NULL, branch_type VARCHAR(250) DEFAULT NULL, lft INT DEFAULT NULL, rgt INT DEFAULT NULL, lvl INT DEFAULT NULL, root INT DEFAULT NULL, UNIQUE INDEX UNIQ_F62F45EDE3C68343 (unique_id), INDEX IDX_F62F45ED727ACA70 (parent_id), PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS extra_field (id INT AUTO_INCREMENT NOT NULL, extra_field_type INT NOT NULL, field_type INT NOT NULL, variable VARCHAR(64) NOT NULL, display_text VARCHAR(255) DEFAULT NULL, default_value LONGTEXT, field_order INT DEFAULT NULL, visible TINYINT(1) DEFAULT NULL, changeable TINYINT(1) DEFAULT NULL, filter TINYINT(1) DEFAULT NULL, created_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column visible and in column visible of table course_rel_user_catalogue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE faq_question_translation (id INT AUTO_INCREMENT NOT NULL, translatable_id INT DEFAULT NULL, headline VARCHAR(255) NOT NULL, body LONGTEXT DEFAULT NULL, slug VARCHAR(50) NOT NULL, locale VARCHAR(255) NOT NULL, INDEX IDX_C2D1A2C2AC5D3 (translatable_id), UNIQUE INDEX faq_question_translation_unique_translation (translatable_id, locale), PRIMARY KEY(id))
+ in following column body of table faq_question_translation
+Detected: God Table Found in following statement: CREATE TABLE page__snapshot (id INT AUTO_INCREMENT NOT NULL, site_id INT DEFAULT NULL, page_id INT DEFAULT NULL, route_name VARCHAR(255) NOT NULL, page_alias VARCHAR(255) DEFAULT NULL, type VARCHAR(255) DEFAULT NULL, position INT NOT NULL, enabled TINYINT(1) NOT NULL, decorate TINYINT(1) NOT NULL, name VARCHAR(255) NOT NULL, url LONGTEXT DEFAULT NULL, parent_id INT DEFAULT NULL, target_id INT DEFAULT NULL, content LONGTEXT DEFAULT NULL COMMENT \'(DC2Type:json)\', publication_date_start DATETIME DEFAULT NULL, publication_date_end DATETIME DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_3963EF9AF6BD1646 (site_id), INDEX IDX_3963EF9AC4663E4 (page_id), INDEX idx_snapshot_dates_enabled (publication_date_start, publication_date_end, enabled), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB' )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS c_lp_category (iid INT AUTO_INCREMENT NOT NULL, c_id INT NOT NULL, name VARCHAR(255) NOT NULL, position INT NOT NULL, PRIMARY KEY(iid))
+ in following column iid and in column iid of table c_quiz_rel_category
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS extra_field (id INT AUTO_INCREMENT NOT NULL, extra_field_type INT NOT NULL, field_type INT NOT NULL, variable VARCHAR(64) NOT NULL, display_text VARCHAR(255) DEFAULT NULL, default_value LONGTEXT, field_order INT DEFAULT NULL, visible TINYINT(1) DEFAULT NULL, changeable TINYINT(1) DEFAULT NULL, filter TINYINT(1) DEFAULT NULL, created_at DATETIME NOT NULL, PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_calendar_event_attachment', 'c_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_role_permissions', 'c_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE classification__tag (id INT AUTO_INCREMENT NOT NULL, context VARCHAR(255) DEFAULT NULL, name VARCHAR(255) NOT NULL, enabled TINYINT(1) NOT NULL, slug VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX IDX_CA57A1C7E25D857E (context), UNIQUE INDEX tag_context (slug, context), PRIMARY KEY(id))
+ in following column INDEX of table classification__tag
+Detected: Index Shotgun Variant: 3 Following index not used : ['c_announcement_attachment', 'c_id']

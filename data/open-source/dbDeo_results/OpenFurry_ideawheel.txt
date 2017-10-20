@@ -1,0 +1,34 @@
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column display_name of table auth_users
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column artist_type of table auth_users
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['auth_users', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['idea_stubs', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column email of table auth_users
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column hashword of table auth_users
+Detected: Obsolete Column TypesFound in following statement: create table idea_stubs (	id integer primary key autoincrement,	stub text,	link text)
+ in following column stub of table idea_stubs
+Detected: Obsolete Column TypesFound in following statement: create table posts (	id integer primary key autoincrement,	idea_id integer not null,	user_id integer not null,	title text,	format text,	post_date text,	content text,	external_link text,	foreign key(idea_id) references ideas(id),	foreign key(user_id) references auth_users(id))
+ in following column format of table posts
+Detected: Obsolete Column TypesFound in following statement: create table idea_stubs (	id integer primary key autoincrement,	stub text,	link text)
+ in following column link of table idea_stubs
+Detected: Obsolete Column TypesFound in following statement: create table ideas (	id integer primary key autoincrement,	created_by integer not null,	display_text text not null,	plain_text text not null,	foreign key(created_by) references auth_users(id))
+ in following column display_text of table ideas
+Detected: Obsolete Column TypesFound in following statement: create table posts (	id integer primary key autoincrement,	idea_id integer not null,	user_id integer not null,	title text,	format text,	post_date text,	content text,	external_link text,	foreign key(idea_id) references ideas(id),	foreign key(user_id) references auth_users(id))
+ in following column content of table posts
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['ideas', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table posts (	id integer primary key autoincrement,	idea_id integer not null,	user_id integer not null,	title text,	format text,	post_date text,	content text,	external_link text,	foreign key(idea_id) references ideas(id),	foreign key(user_id) references auth_users(id))
+ in following column title of table posts
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table posts (	id integer primary key autoincrement,	idea_id integer not null,	user_id integer not null,	title text,	format text,	post_date text,	content text,	external_link text,	foreign key(idea_id) references ideas(id),	foreign key(user_id) references auth_users(id))
+ in following column post_date of table posts
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column username of table auth_users
+Detected: Obsolete Column TypesFound in following statement: create table posts (	id integer primary key autoincrement,	idea_id integer not null,	user_id integer not null,	title text,	format text,	post_date text,	content text,	external_link text,	foreign key(idea_id) references ideas(id),	foreign key(user_id) references auth_users(id))
+ in following column external_link of table posts
+Detected: Obsolete Column TypesFound in following statement: create table auth_users (	id integer primary key autoincrement,	username text unique not null,	hashword text not null,	salt integer not null,	email text not null,	display_name text default '',	blurb text default '',	artist_type text default 'thinker of grand ideas',	user_type integer default 0)
+ in following column blurb of table auth_users
+Detected: Obsolete Column TypesFound in following statement: create table ideas (	id integer primary key autoincrement,	created_by integer not null,	display_text text not null,	plain_text text not null,	foreign key(created_by) references auth_users(id))
+ in following column plain_text of table ideas

@@ -1,0 +1,255 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, uri VARBINARY(200) NOT NULL, principaluri VARBINARY(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARBINARY(10), striptodos TINYINT(1) NULL, stripalarms TINYINT(1) NULL, stripattachments TINYINT(1) NULL, lastmodified INT(11) UNSIGNED, UNIQUE(principaluri, uri))
+ in following column source of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column uri of table calendarinstances
+Detected: Index Shotgun Variant: 3 Following index not used : ["'locks'", 'uri']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schedulingobjects ( id integer primary key asc NOT NULL, principaluri text NOT NULL, calendardata blob, uri text NOT NULL, lastmodified integer, etag text NOT NULL, size integer NOT NULL, UNIQUE(principaluri, uri))
+ in following column principaluri of table schedulingobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column timezone of table calendarinstances
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+ in following column calendardata and in column calendardata of table simple_calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column principaluri of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, calendarid INTEGER UNSIGNED NOT NULL, principaluri VARBINARY(100), access TINYINT(1) NOT NULL DEFAULT '1' COMMENT '1 = owner, 2 = read, 3 = readwrite', displayname VARCHAR(100), uri VARBINARY(200), description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARBINARY(10), timezone TEXT, transparent TINYINT(1) NOT NULL DEFAULT '0', share_href VARBINARY(100), share_displayname VARCHAR(100), share_invitestatus TINYINT(1) NOT NULL DEFAULT '2' COMMENT '1 = noresponse, 2 = accepted, 3 = declined, 4 = invalid', UNIQUE(principaluri, uri), UNIQUE(calendarid, principaluri), UNIQUE(calendarid, share_href))
+ in following column description of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column calendarcolor of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id SERIAL NOT NULL, principaluri VARCHAR(255), displayname VARCHAR(255), uri VARCHAR(200), description TEXT, synctoken INTEGER NOT NULL DEFAULT 1)
+ in following column description of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column source of table calendarsubscriptions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column id and in column id of table cards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, uri VARCHAR(200) NOT NULL, principaluri VARCHAR(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), striptodos TINYINT(1) NULL, stripalarms TINYINT(1) NULL, stripattachments TINYINT(1) NULL, lastmodified INT(11) UNSIGNED, UNIQUE(principaluri, uri))
+ in following column source of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schedulingobjects ( id integer primary key asc NOT NULL, principaluri text NOT NULL, calendardata blob, uri text NOT NULL, lastmodified integer, etag text NOT NULL, size integer NOT NULL, UNIQUE(principaluri, uri))
+ in following column uri of table schedulingobjects
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cards ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, addressbookid INT(11) UNSIGNED NOT NULL, carddata MEDIUMBLOB, uri VARCHAR(200), lastmodified INT(11) UNSIGNED, etag VARBINARY(32), size INT(11) UNSIGNED NOT NULL)
+ in following column addressbookid and in column addressbookid of table addressbookchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id SERIAL NOT NULL, uri VARCHAR(200) NOT NULL, principaluri VARCHAR(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INTEGER NOT NULL DEFAULT 0, calendarcolor VARCHAR(10), striptodos SMALLINT NULL, stripalarms SMALLINT NULL, stripattachments SMALLINT NULL, lastmodified INTEGER)
+ in following column source of table calendarsubscriptions
+Detected: God Table Found in following statement: CREATE TABLE calendarsubscriptions ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, uri VARBINARY(200) NOT NULL, principaluri VARBINARY(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARBINARY(10), striptodos TINYINT(1) NULL, stripalarms TINYINT(1) NULL, stripattachments TINYINT(1) NULL, lastmodified INT(11) UNSIGNED, UNIQUE(principaluri, uri))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarchanges ( id integer primary key asc NOT NULL, uri text, synctoken integer NOT NULL, calendarid integer NOT NULL, operation integer NOT NULL)
+ in following column uri of table calendarchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cards ( id integer primary key asc NOT NULL, addressbookid integer NOT NULL, carddata blob, uri text NOT NULL, lastmodified integer, etag text, size integer, UNIQUE(addressbookid, uri))
+ in following column etag of table cards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column displayname of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc, path text, name text, valuetype integer, value blob)
+ in following column path of table propertystorage
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+ in following column etag of table calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column calendarcolor of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column description of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column principaluri of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column principaluri of table calendarinstances
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column lastmodified and in column lastmodified of table cards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer )
+ in following column displayname of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column description of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column timezone of table calendars
+Detected: God Table Found in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simple_calendars ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, principaluri TEXT NOT NULL)
+ in following column uri of table simple_calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc NOT NULL, path text NOT NULL, name text NOT NULL, valuetype integer NOT NULL, value string)
+ in following column name of table propertystorage
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc NOT NULL, principaluri text NOT NULL, displayname text, uri text NOT NULL, description text, synctoken integer DEFAULT 1 NOT NULL, UNIQUE(principaluri, uri))
+ in following column principaluri of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simple_calendars ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, principaluri TEXT NOT NULL)
+ in following column principaluri of table simple_calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, principaluri VARCHAR(100), displayname VARCHAR(100), uri VARCHAR(200), synctoken INT(11) UNSIGNED NOT NULL DEFAULT '1', description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), timezone TEXT, components VARCHAR(20), transparent TINYINT(1) NOT NULL DEFAULT '0', UNIQUE(principaluri, uri) )
+ in following column timezone of table calendars
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE cards SET etag = ?, size = ?  WHERE id = ?)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column uri of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column uri of table 'locks'
+Detected: Index Shotgun Variant: 3 Following index not used : ['calendarchanges', 'synctoken']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column token of table 'locks'
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbookchanges ( id integer primary key asc NOT NULL, uri text, synctoken integer NOT NULL, addressbookid integer NOT NULL, operation integer NOT NULL)
+ in following column uri of table addressbookchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cards ( id integer primary key asc NOT NULL, addressbookid integer NOT NULL, carddata blob, uri text NOT NULL, lastmodified integer, etag text, size integer, UNIQUE(addressbookid, uri))
+ in following column uri of table cards
+Detected: God Table Found in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column calendarcolor and in column calendarcolor of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schedulingobjects ( id integer primary key asc NOT NULL, principaluri text NOT NULL, calendardata blob, uri text NOT NULL, lastmodified integer, etag text NOT NULL, size integer NOT NULL, UNIQUE(principaluri, uri))
+ in following column etag of table schedulingobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column refreshrate of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc, path TEXT, name TEXT, value TEXT)
+ in following column value of table propertystorage
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column components of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column principaluri of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS schedulingobjects ( id integer primary key asc, principaluri text, calendardata blob, uri text, lastmodified integer, etag text, size integer)
+ in following column principaluri of table schedulingobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, principaluri VARCHAR(100), displayname VARCHAR(100), uri VARCHAR(200), synctoken INT(11) UNSIGNED NOT NULL DEFAULT '1', description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), timezone TEXT, components VARCHAR(20), transparent TINYINT(1) NOT NULL DEFAULT '0', UNIQUE(principaluri, uri) )
+ in following column description of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE principals ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, email TEXT, displayname TEXT, UNIQUE(uri))
+ in following column uri of table principals
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'addressbookid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column uri of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE principals ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, email TEXT, displayname TEXT, UNIQUE(uri))
+ in following column email of table principals
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE principals ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, email TEXT, displayname TEXT, UNIQUE(uri))
+ in following column displayname and in column displayname of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column calendarcolor of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column description of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+ in following column uri of table calendarobjects
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addressbooks ( id SERIAL NOT NULL, principaluri VARCHAR(255), displayname VARCHAR(255), uri VARCHAR(200), description TEXT, synctoken INTEGER NOT NULL DEFAULT 1)
+ in following column principaluri and in column principaluri of table calendarsubscriptions
+Detected: Metadata as Data Found in following statement: CREATE TABLE users ( id SERIAL NOT NULL, username VARCHAR(50), digesta1 VARCHAR(32))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc NOT NULL, principaluri text NOT NULL, displayname text, uri text NOT NULL, description text, synctoken integer DEFAULT 1 NOT NULL, UNIQUE(principaluri, uri))
+ in following column description of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc, path text, name text, valuetype integer, value blob)
+ in following column name of table propertystorage
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column uri of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	id integer primary key asc NOT NULL,	username TEXT NOT NULL,	digesta1 TEXT NOT NULL,	UNIQUE(username))
+ in following column digesta1 of table users
+Detected: God Table Found in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addressbookchanges ( id SERIAL NOT NULL, uri VARCHAR(200) NOT NULL, synctoken INTEGER NOT NULL, addressbookid INTEGER NOT NULL, operation SMALLINT NOT NULL)
+ in following column synctoken and in column synctoken of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE principals ( id INTEGER PRIMARY KEY ASC NOT NULL, uri TEXT NOT NULL, email TEXT, displayname TEXT, UNIQUE(uri))
+ in following column displayname of table principals
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column depth and in column depth of table locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column displayname of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column uri of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column displayname of table calendars
+Detected: God Table Found in following statement: CREATE TABLE calendarsubscriptions ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, uri VARCHAR(200) NOT NULL, principaluri VARCHAR(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), striptodos TINYINT(1) NULL, stripalarms TINYINT(1) NULL, stripattachments TINYINT(1) NULL, lastmodified INT(11) UNSIGNED, UNIQUE(principaluri, uri))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, principaluri VARBINARY(255), displayname VARCHAR(255), uri VARBINARY(200), description TEXT, synctoken INT(11) UNSIGNED NOT NULL DEFAULT '1', UNIQUE(principaluri(100), uri(100)))
+ in following column description of table addressbooks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column etag and in column etag of table cards
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column scope and in column scope of table locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc NOT NULL, path text NOT NULL, name text NOT NULL, valuetype integer NOT NULL, value string)
+ in following column path of table propertystorage
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column token and in column token of table locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column share_href of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column owner of table 'locks'
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS schedulingobjects ( id integer primary key asc, principaluri text, calendardata blob, uri text, lastmodified integer, etag text, size integer)
+ in following column etag of table schedulingobjects
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column calendarorder and in column calendarorder of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS schedulingobjects ( id integer primary key asc, principaluri text, calendardata blob, uri text, lastmodified integer, etag text, size integer)
+ in following column uri of table schedulingobjects
+Detected: God Table Found in following statement: CREATE TABLE calendars ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, principaluri VARCHAR(100), displayname VARCHAR(100), uri VARCHAR(200), synctoken INT(11) UNSIGNED NOT NULL DEFAULT '1', description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), timezone TEXT, components VARCHAR(20), transparent TINYINT(1) NOT NULL DEFAULT '0', UNIQUE(principaluri, uri) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column timezone of table calendarinstances
+Detected: Index Shotgun Variant: 3 Following index not used : ['calendarchanges', 'calendarid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column calendarcolor of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cards ( id integer primary key asc, addressbookid integer, carddata blob, uri text, lastmodified integer, etag text, size integer)
+ in following column etag of table cards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $changesTable ( id integer primary key asc, uri text, synctoken integer, {$itemType}id integer, operation bool )
+ in following column uri of table $changesTable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simple_calendarobjects ( id INTEGER PRIMARY KEY ASC NOT NULL, calendarid INT UNSIGNED NOT NULL, uri TEXT NOT NULL, calendardata TEXT)
+ in following column uri of table simple_calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE locks ( id SERIAL NOT NULL, owner VARCHAR(100), timeout INTEGER, created INTEGER, token VARCHAR(100), scope SMALLINT, depth SMALLINT, uri TEXT)
+ in following column uri of table locks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column uri and in column uri of table cards
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'synctoken']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer )
+ in following column uri of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+ in following column uid of table calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, calendarid INTEGER UNSIGNED NOT NULL, principaluri VARBINARY(100), access TINYINT(1) NOT NULL DEFAULT '1' COMMENT '1 = owner, 2 = read, 3 = readwrite', displayname VARCHAR(100), uri VARBINARY(200), description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARBINARY(10), timezone TEXT, transparent TINYINT(1) NOT NULL DEFAULT '0', share_href VARBINARY(100), share_displayname VARCHAR(100), share_invitestatus TINYINT(1) NOT NULL DEFAULT '2' COMMENT '1 = noresponse, 2 = accepted, 3 = declined, 4 = invalid', UNIQUE(principaluri, uri), UNIQUE(calendarid, principaluri), UNIQUE(calendarid, share_href))
+ in following column timezone of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column share_href of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer )
+ in following column principaluri of table addressbooks
+Detected: God Table Found in following statement: CREATE TABLE calendarinstances ( id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, calendarid INTEGER UNSIGNED NOT NULL, principaluri VARBINARY(100), access TINYINT(1) NOT NULL DEFAULT '1' COMMENT '1 = owner, 2 = read, 3 = readwrite', displayname VARCHAR(100), uri VARBINARY(200), description TEXT, calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARBINARY(10), timezone TEXT, transparent TINYINT(1) NOT NULL DEFAULT '0', share_href VARBINARY(100), share_displayname VARCHAR(100), share_invitestatus TINYINT(1) NOT NULL DEFAULT '2' COMMENT '1 = noresponse, 2 = accepted, 3 = declined, 4 = invalid', UNIQUE(principaluri, uri), UNIQUE(calendarid, principaluri), UNIQUE(calendarid, share_href))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc NOT NULL, principaluri text NOT NULL, displayname text, uri text NOT NULL, description text, synctoken integer DEFAULT 1 NOT NULL, UNIQUE(principaluri, uri))
+ in following column displayname of table addressbooks
+Detected: God Table Found in following statement: CREATE TABLE calendarobjects ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, calendardata MEDIUMBLOB, uri VARBINARY(200), calendarid INTEGER UNSIGNED NOT NULL, lastmodified INT(11) UNSIGNED, etag VARBINARY(32), size INT(11) UNSIGNED NOT NULL, componenttype VARBINARY(8), firstoccurence INT(11) UNSIGNED, lastoccurence INT(11) UNSIGNED, uid VARBINARY(200), UNIQUE(calendarid, uri), INDEX calendarid_time (calendarid, firstoccurence))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, principaluri VARCHAR(255), displayname VARCHAR(255), uri VARCHAR(200), description TEXT, synctoken INT(11) UNSIGNED NOT NULL DEFAULT '1', UNIQUE(principaluri, uri) )
+ in following column description of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column share_displayname of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer NOT NULL, principaluri text NULL, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column share_displayname of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc NOT NULL, synctoken integer DEFAULT 1 NOT NULL, components text NOT NULL)
+ in following column components of table calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simple_calendarobjects ( id INTEGER PRIMARY KEY ASC NOT NULL, calendarid INT UNSIGNED NOT NULL, uri TEXT NOT NULL, calendardata TEXT)
+ in following column calendardata of table simple_calendarobjects
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cards ( id integer primary key asc NOT NULL, addressbookid integer NOT NULL, carddata blob, uri text NOT NULL, lastmodified integer, etag text, size integer, UNIQUE(addressbookid, uri))
+ in following column addressbookid and in column addressbookid of table addressbookchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column displayname of table calendarsubscriptions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE simple_calendarobjects ( * id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, * calendarid INT UNSIGNED NOT NULL, * uri VARBINARY(200) NOT NULL, * calendardata MEDIUMBLOB * )
+ in following column * and in column * of table simple_calendars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc NOT NULL, principaluri text NOT NULL, displayname text, uri text NOT NULL, description text, synctoken integer DEFAULT 1 NOT NULL, UNIQUE(principaluri, uri))
+ in following column uri of table addressbooks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc, path TEXT, name TEXT, value TEXT)
+ in following column path of table propertystorage
+Detected: God Table Found in following statement: CREATE TABLE calendarsubscriptions ( id SERIAL NOT NULL, uri VARCHAR(200) NOT NULL, principaluri VARCHAR(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INTEGER NOT NULL DEFAULT 0, calendarcolor VARCHAR(10), striptodos SMALLINT NULL, stripalarms SMALLINT NULL, stripattachments SMALLINT NULL, lastmodified INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendars ( id integer primary key asc, principaluri text, displayname text, uri text, synctoken integer, description text, calendarorder integer, calendarcolor text, timezone text, components text, transparent bool )
+ in following column principaluri of table calendars
+Detected: Index Shotgun Variant: 3 Following index not used : ['calendarsubscriptions', 'uri']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column calendarid and in column calendarid of table calendarchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column source of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	id integer primary key asc NOT NULL,	username TEXT NOT NULL,	digesta1 TEXT NOT NULL,	UNIQUE(username))
+ in following column username of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarobjects ( id SERIAL NOT NULL, calendardata BYTEA, uri VARCHAR(200), calendarid INTEGER NOT NULL, lastmodified INTEGER, etag VARCHAR(32), size INTEGER NOT NULL, componenttype VARCHAR(8), firstoccurence INTEGER, lastoccurence INTEGER, uid VARCHAR(200))
+ in following column size and in column size of table cards
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE 'locks' ( id integer primary key asc NOT NULL, owner text, timeout integer, created integer, token text, scope integer, depth integer, uri text)
+ in following column owner and in column owner of table locks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addressbookchanges ( id SERIAL NOT NULL, uri VARCHAR(200) NOT NULL, synctoken INTEGER NOT NULL, addressbookid INTEGER NOT NULL, operation SMALLINT NOT NULL)
+ in following column operation and in column operation of table calendarchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE propertystorage ( id integer primary key asc, path TEXT, name TEXT, value TEXT)
+ in following column name of table propertystorage
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc NOT NULL, calendardata blob NOT NULL, uri text NOT NULL, calendarid integer NOT NULL, lastmodified integer NOT NULL, etag text NOT NULL, size integer NOT NULL, componenttype text, firstoccurence integer, lastoccurence integer, uid text, UNIQUE(calendarid,uri))
+ in following column componenttype of table calendarobjects
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE calendarsubscriptions ( id INT(11) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT, uri VARCHAR(200) NOT NULL, principaluri VARCHAR(100) NOT NULL, source TEXT, displayname VARCHAR(100), refreshrate VARCHAR(10), calendarorder INT(11) UNSIGNED NOT NULL DEFAULT '0', calendarcolor VARCHAR(10), striptodos TINYINT(1) NULL, stripalarms TINYINT(1) NULL, stripattachments TINYINT(1) NULL, lastmodified INT(11) UNSIGNED, UNIQUE(principaluri, uri))
+ in following column calendarorder and in column calendarorder of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cards ( id integer primary key asc, addressbookid integer, carddata blob, uri text, lastmodified integer, etag text, size integer)
+ in following column uri of table cards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarinstances ( id integer primary key asc NOT NULL, calendarid integer, principaluri text, access integer COMMENT '1 = owner, 2 = read, 3 = readwrite' NOT NULL DEFAULT '1', displayname text, uri text NOT NULL, description text, calendarorder integer, calendarcolor text, timezone text, transparent bool, share_href text, share_displayname text, share_invitestatus integer DEFAULT '2', UNIQUE (principaluri, uri), UNIQUE (calendarid, principaluri), UNIQUE (calendarid, share_href))
+ in following column displayname of table calendarinstances
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc, uri text, principaluri text, source text, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int)
+ in following column calendarcolor of table calendarsubscriptions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarsubscriptions ( id integer primary key asc NOT NULL, uri text NOT NULL, principaluri text NOT NULL, source text NOT NULL, displayname text, refreshrate text, calendarorder integer, calendarcolor text, striptodos bool, stripalarms bool, stripattachments bool, lastmodified int, UNIQUE(principaluri, uri))
+ in following column refreshrate of table calendarsubscriptions
+Detected: Index Shotgun Variant: 3 Following index not used : ['calendarsubscriptions', 'principaluri']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addressbooks ( id SERIAL NOT NULL, principaluri VARCHAR(255), displayname VARCHAR(255), uri VARCHAR(200), description TEXT, synctoken INTEGER NOT NULL DEFAULT 1)
+ in following column synctoken and in column synctoken of table addressbookchanges
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE addressbooks ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer )
+ in following column description of table addressbooks

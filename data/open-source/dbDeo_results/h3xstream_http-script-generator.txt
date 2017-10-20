@@ -1,0 +1,8 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', 'SOURCEHISTORYID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', '/']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', 'lang']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ALERT SET ALERT = ?, RISK = ?,RELIABILITY = ?,DESCRIPTION = ?,URI = ?,PARAM = ?,ATTACK = ?,OTHERINFO = ?,SOLUTION = ?,REFERENCE = ?, EVIDENCE = ?, CWEID = ?, WASCID = ?, SOURCEHISTORYID = ?  WHERE ALERTID = ?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', 'java']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', 'w']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ALERT', 'Throwable']

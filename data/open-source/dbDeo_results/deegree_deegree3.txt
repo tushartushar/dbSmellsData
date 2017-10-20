@@ -1,0 +1,268 @@
+Detected: Obsolete Column TypesFound in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+ in following column displacementy of table texts
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'fk_registryPackage']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE idxtb_association(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	sourceObject varchar(150) NOT NULL,	targetObject varchar(150) NOT NULL,	associationType varchar(150) NOT NULL,	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+ in following column name and in column name of table gml_names
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'associationType']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE idxtb_association(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	sourceObject varchar(150) NOT NULL,	targetObject varchar(150) NOT NULL,	associationType varchar(150) NOT NULL,	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+ in following column description of table idxtb_association
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_beginposition']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'OrganisationName']
+Detected: Obsolete Column TypesFound in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+ in following column positionpercentage of table strokes
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN(BBOX)', 'BBOX']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_shortname']
+Detected: Obsolete Column TypesFound in following statement: create table lineplacements (id integer not null default nextval('lineplacements_seq'),perpendicularoffset float,repeat boolean,initialgap float,gap float,isaligned boolean,generalizeline boolean)
+ in following column perpendicularoffset of table lineplacements
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'bi_subtype']
+Detected: Obsolete Column TypesFound in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+ in following column anchory of table texts
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'TempExtent_end']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'ServiceType']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'sourceObject']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gml_objects ( id SERIAL PRIMARY KEY, gml_id text UNIQUE NOT NULL, gml_description text, ft_type smallint REFERENCES feature_types, binary_object bytea)
+ in following column gml_description of table gml_objects
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_acquisitiontype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_KEYWORD (keywords)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'code']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column size of table graphics
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (abstract)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint', 'ConditionAppToAcc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_cloudCoverPerc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN(BBOX)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'externalId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint', 'fk_main']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + ftTable + " (id smallint PRIMARY KEY, qname text NOT NULL)
+ in following column qname of table " + ftTable + "
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'ResourceLanguage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_RegistryPackage', 'description']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_ascndlong']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_endposition']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column anchorx of table graphics
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'lid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'mi_format']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_yaw']
+Detected: Obsolete Column TypesFound in following statement: create table polygons (id integer not null default nextval('polygons_seq'),uom varchar,fill_id integer,stroke_id integer,displacementx float,displacementy float,perpendicularoffset float)
+ in following column displacementy of table polygons
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (lineage)', 'lineage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_snowCoverPerc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_acquisitionstation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'lid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'classificationScheme']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'topicCategories']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_acrosstrackincangle']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column rotation of table graphics
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'publicationdate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (anytext)', 'anytext']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'targetObject']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'objectType']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_starttimeascnd']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_vendorspecattr']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_imgqualitydeg']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_incidenceangle']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_OperatesOnData', 'fk_main']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'ParentId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'versionInfo']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE PHILOSOPHER ( ID INT8 PRIMARY KEY, NAME VARCHAR (100), SEX CHAR(1), DATE_OF_BIRTH DATE, PLACE_OF_BIRTH INT8 REFERENCES PLACE, DATE_OF_DEATH DATE, PLACE_OF_DEATH INT8 REFERENCES PLACE)
+ in following column ID and in column ID of table DCQP_RIGHTS
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_KEYWORD', 'fk_main']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint', 'Classification']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'lid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'CouplingType']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'SpecTitle']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_acquisitiondate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_OperatesOnData', 'OperatesOnId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint', 'OtherConstraints']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'lineage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint (OtherConstraints)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_RegistryPackage', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'fk_registryPackage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_swathid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'classifiedObject']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_platformorbittype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_CRS', 'fk_main']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'modified']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IDXTB_RegistryPackage( 	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	externalId varchar(150),	name varchar(250),	description text,	data bytea NOT NULL)
+ in following column description of table IDXTB_RegistryPackage
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'home']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'ResourceId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'fileidentifier']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'lid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_ascendingnodedate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_sensortype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_OperatesOnData', 'OperatesOn']
+Detected: Obsolete Column TypesFound in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+ in following column strokegap of table strokes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IDXTB_Constraint ( 	id integer NOT NULL,	fk_main integer NOT NULL,	ConditionAppToAcc text,	AccessConstraints varchar(500),	OtherConstraints text,	Classification varchar(20))
+ in following column OtherConstraints of table IDXTB_Constraint
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_orbitnumber']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'fk_registryPackage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'isopaque']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'externalId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_KEYWORD (keywords)', 'keywords']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'revisiondate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'home']
+Detected: Obsolete Column TypesFound in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+ in following column dashoffset of table strokes
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'RespPartyRole']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_doi']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE " + ftTable + " (id integer PRIMARY KEY, qname varchar2(4000) NOT NULL, bbox sdo_geometry)
+ in following column qname and in column qname of table feature_types
+Detected: Obsolete Column TypesFound in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+ in following column strokeinitialgap of table strokes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + ftTable + " (id integer PRIMARY KEY, qname text NOT NULL, bbox GEOMETRY)
+ in following column qname of table " + ftTable + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IDXTB_KEYWORD ( 	id integer NOT NULL,	fk_main integer NOT NULL,	keywords text NOT NULL,	keywordtype varchar(250))
+ in following column keywords of table IDXTB_KEYWORD
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IDXTB_OperatesOnData ( 	id number(38) NOT NULL,	fk_main number(38) NOT NULL,	OperatesOn varchar(150),	OperatesOnId varchar(150) NOT NULL,	OperatesOnName varchar(150) NOT NULL)
+ in following column id and in column id of table idxtb_association
+Detected: Obsolete Column TypesFound in following statement: create table polygons (id integer not null default nextval('polygons_seq'),uom varchar,fill_id integer,stroke_id integer,displacementx float,displacementy float,perpendicularoffset float)
+ in following column displacementx of table polygons
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE idxtb_classification(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	classificationScheme varchar(150) NOT NULL,	classificationNode varchar(150) NOT NULL,	classifiedObject varchar(150) NOT NULL,	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+ in following column description of table idxtb_classification
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'Denominator']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'bi_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_orbitdirection']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'dl_specy']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_RegistryPackage', 'externalId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'pi_size']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'status']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column anchory of table graphics
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'abstract']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'dl_lowestlocation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'creationdate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'home']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gml_names ( gml_object_id integer REFERENCES GML_OBJECTS, name text NOT NULL, codespace text, prop_idx smallint NOT NULL)
+ in following column codespace of table gml_names
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_KEYWORD', 'keywords']
+Detected: Obsolete Column TypesFound in following statement: create table lineplacements (id integer not null default nextval('lineplacements_seq'),perpendicularoffset float,repeat boolean,initialgap float,gap float,isaligned boolean,generalizeline boolean)
+ in following column initialgap of table lineplacements
+Detected: Obsolete Column TypesFound in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+ in following column width of table strokes
+Detected: Obsolete Column TypesFound in following statement: create table polygons (id integer not null default nextval('polygons_seq'),uom varchar,fill_id integer,stroke_id integer,displacementx float,displacementy float,perpendicularoffset float)
+ in following column perpendicularoffset of table polygons
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IS_FRIEND_OF ( PHILOSOPHER1_ID INT8, PHILOSOPHER2_ID INT8, PRIMARY KEY (PHILOSOPHER1_ID, PHILOSOPHER2_ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_instshortname']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_CRS', 'authority']
+Detected: Obsolete Column TypesFound in following statement: create table halos (id integer not null default nextval('halos_seq'),fill_id integer,radius float)
+ in following column radius of table halos
+Detected: Obsolete Column TypesFound in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+ in following column anchorx of table texts
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'fk_registryPackage']
+Detected: God Table Found in following statement: CREATE TABLE idxtb_classification(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	classificationScheme varchar(150) NOT NULL,	classificationNode varchar(150) NOT NULL,	classifiedObject varchar(150) NOT NULL,	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IDXTB_Constraint ( 	id integer NOT NULL,	fk_main integer NOT NULL,	ConditionAppToAcc text,	AccessConstraints varchar(500),	OtherConstraints text,	Classification varchar(20))
+ in following column ConditionAppToAcc of table IDXTB_Constraint
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'objectType']
+Detected: God Table Found in following statement: create table strokes (id integer not null default nextval('strokes_seq'),color varchar,width float,widthexpr varchar,linejoin varchar,linecap varchar,dasharray varchar,dashoffset float,stroke_graphic_id integer,fill_graphic_id integer,strokegap float,strokeinitialgap float,positionpercentage float)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'title']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'externalId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_producttype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'SpecDate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_lastorbitnumber']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint (ConditionAppToAcc)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_imgqualitydegquotmd']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_orbitduration']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'anytext']
+Detected: God Table Found in following statement: create table layers (id integer not null default nextval('layers_seq'),name varchar,title varchar not null,connectionid varchar,sourcetable varchar,sourcequery varchar,crs varchar,bboxquery varchar,namespace varchar,symbolcodes varchar,symbolfield varchar)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['observations', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'SpecDateType']
+Detected: God Table Found in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'home']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_parentidentifier']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_wrslongitudeGrid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'path']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'description']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'objectType']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'description']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'name']
+Detected: Obsolete Column TypesFound in following statement: create table lines (id integer not null default nextval('lines_seq'),uom varchar,stroke_id integer,perpendicularoffset float)
+ in following column perpendicularoffset of table lines
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gml_objects ( id SERIAL PRIMARY KEY, gml_id text UNIQUE NOT NULL, gml_description text, ft_type smallint REFERENCES feature_types, binary_object bytea)
+ in following column gml_id of table gml_objects
+Detected: Obsolete Column TypesFound in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+ in following column rotation of table texts
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (lineage)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (abstract)', 'abstract']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'versionInfo']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column displacementx of table graphics
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_platformserialid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'mi_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_acquisitionsubtype']
+Detected: Obsolete Column TypesFound in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+ in following column displacementy of table graphics
+Detected: God Table Found in following statement: create table graphics (id integer not null default nextval('graphics_seq'),size float,sizeexpr varchar,rotation float,rotationexpr varchar,anchorx float,anchory float,displacementx float,displacementy float,wellknownname varchar,svg varchar,base64raster varchar,fill_id integer,stroke_id integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_KEYWORD', 'keywordtype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint (ConditionAppToAcc)', 'ConditionAppToAcc']
+Detected: Obsolete Column TypesFound in following statement: create table lineplacements (id integer not null default nextval('lineplacements_seq'),perpendicularoffset float,repeat boolean,initialgap float,gap float,isaligned boolean,generalizeline boolean)
+ in following column gap of table lineplacements
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_wrslatitudeGrid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_CRS', 'crsid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'description']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_vendorspecval']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ai_archivingcenter']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feature_types ( id smallint PRIMARY KEY, qname text NOT NULL)
+ in following column qname of table feature_types
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'classificationNode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'formats']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'description']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classification', 'objectType']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_classificationNode', 'parent']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'ServiceTypeVersion']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ai_archivingdate']
+Detected: Obsolete Column TypesFound in following statement: create table texts (id integer not null default nextval('texts_seq'),labelexpr varchar,uom varchar,font_id integer,fill_id integer,rotation float,rotationexpr varchar,displacementx float,displacementy float,anchorx float,anchory float,lineplacement_id integer,halo_id integer)
+ in following column displacementx of table texts
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_pitch']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'Operations']
+Detected: God Table Found in following statement: CREATE TABLE idxtb_association(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	sourceObject varchar(150) NOT NULL,	targetObject varchar(150) NOT NULL,	associationType varchar(150) NOT NULL,	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint (OtherConstraints)', 'OtherConstraints']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_Constraint', 'AccessConstraints']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ai_archivingidentifier']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'DistanceValue']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_comptimeascnd']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_sensoropmode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'blobTable']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ap_sensorresolution']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_OperatesOnData', 'OperatesOnName']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN (anytext)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'dl_highestlocation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_alongtrackincangle']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'versionInfo']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_ExtrinsicObject', 'ep_roll']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'externalId']
+Detected: Obsolete Column TypesFound in following statement: create table fonts (id integer not null default nextval('fonts_seq'),family varchar,style varchar,bold boolean,size float)
+ in following column size of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE idxtb_classificationNode(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	parent varchar(150),	code varchar(256),	path varchar(500),	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+ in following column description of table idxtb_classificationNode
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'DistanceUOM']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_MAIN', 'TempExtent_begin']
+Detected: Index Shotgun Variant: 3 Following index not used : ['idxtb_association', 'versionInfo']
+Detected: God Table Found in following statement: CREATE TABLE idxtb_classificationNode(	internalId integer DEFAULT nextval('globalSeq'::text) PRIMARY KEY,	id varchar(150) UNIQUE NOT NULL,	objectType varchar(150),	home varchar(250),	lid varchar(150),	status varchar(150),	externalId varchar(150),	name varchar(250),	description text,	versionInfo varchar(250),	parent varchar(150),	code varchar(256),	path varchar(500),	data bytea NOT NULL,	fk_registrypackage integer NOT NULL REFERENCES IDXTB_RegistryPackage(internalId) ON DELETE CASCADE )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['IDXTB_RegistryPackage', 'name']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IDXTB_OperatesOnData ( 	id number(38) NOT NULL,	fk_main number(38) NOT NULL,	OperatesOn varchar(150),	OperatesOnId varchar(150) NOT NULL,	OperatesOnName varchar(150) NOT NULL)
+ in following column fk_main and in column fk_main of table IDXTB_KEYWORD
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gml_names ( gml_object_id integer REFERENCES GML_OBJECTS, name text NOT NULL, codespace text, prop_idx smallint NOT NULL)
+ in following column name of table gml_names

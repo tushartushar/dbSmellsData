@@ -1,0 +1,45 @@
+CREATE INDEX tx_post_date_index ON transactions (post_date)gtablesplitssplits
+CREATE TABLE invoices (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, date_opened text(14), date_posted text(14), notes text(2048) NOT NULL, active integer NOT NULL, currency text(32) NOT NULL, owner_type integer, owner_guid text(32), terms text(32), billing_id text(2048), post_txn text(32), post_lot text(32), post_acc text(32), billto_type integer, billto_guid text(32), charge_amt_num bigint, charge_amt_denom bigint)
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+CREATE INDEX ix_splits_tx_guid ON splits (tx_guid)e.9indexix_splits_account_guidsplits=
+CREATE TABLE taxtables (	guid VARCHAR(32) NOT NULL, 	invisible INTEGER NOT NULL, 	name VARCHAR(50) NOT NULL, 	parent VARCHAR(32), 	refcount BIGINT NOT NULL, 	PRIMARY KEY (guid))
+CREATE TABLE splits (	guid VARCHAR(32) NOT NULL, 	account_guid VARCHAR(32) NOT NULL, 	action VARCHAR(2048) NOT NULL, 	lot_guid VARCHAR(32), 	memo VARCHAR(2048) NOT NULL, 	quantity_denom BIGINT NOT NULL, 	quantity_num BIGINT NOT NULL, 	reconcile_date TEXT(14), 	reconcile_state VARCHAR(1) NOT NULL, 	tx_guid VARCHAR(32) NOT NULL, 	value_denom BIGINT NOT NULL, 	value_num BIGINT NOT NULL, 	PRIMARY KEY (guid), 	FOREIGN KEY(account_guid) REFERENCES accounts (guid), 	FOREIGN KEY(lot_guid) REFERENCES lots (guid), 	FOREIGN KEY(tx_guid) REFERENCES transactions (guid))
+CREATE INDEX slots_guid_index ON slots (obj_guid)V/tableslotsslots;
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+CREATE TABLE versions (	table_name VARCHAR(50) NOT NULL, 	table_version INTEGER NOT NULL, 	PRIMARY KEY (table_name))
+CREATE INDEX splits_tx_guid_index ON splits (tx_guid)k?indexsplits_account_guid_indexsplits
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)
+select * from splits
+CREATE INDEX tx_post_date_index ON transactions (post_date)gtablesplitssplits
+CREATE TABLE slots (id integer PRIMARY KEY AUTOINCREMENT NOT NULL, obj_guid text(32) NOT NULL, name text(4096) NOT NULL, slot_type integer NOT NULL, int64_val bigint, string_val text(4096), double_val float8, timespec_val text(14), guid_val text(32), numeric_val_num bigint, numeric_val_denom bigint, gdate_val text(8))
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)
+select day from c_table"))[0][0]) == "20100412
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)
+CREATE INDEX tx_post_date_index ON transactions (post_date)DgtablesplitssplitsQCREATE 
+CREATE INDEX ix_transactions_post_date ON transactions (post_date)x#Ctableaccountsaccounts/
+CREATE TABLE prices (guid text(32) PRIMARY KEY NOT NULL, commodity_guid text(32) NOT NULL, currency_guid text(32) NOT NULL, date text(14) NOT NULL, source text(2048), type text(2048), value_num bigint NOT NULL, value_denom bigint NOT NULL)
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+CREATE INDEX ix_slots_obj_guid ON slots (obj_guid)Y	tablegnclockgnclockCREATE 
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+select time from d_table"))[0][0]) == "20100412030405
+CREATE INDEX slots_guid_index ON slots (obj_guid)V\tableslotsslotspCREATE 
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)
+CREATE TABLE billterms (guid text(32) PRIMARY KEY NOT NULL, name text(2048) NOT NULL, description text(2048) NOT NULL, refcount integer NOT NULL, invisible integer NOT NULL, parent text(32), type text(2048) NOT NULL, duedays integer, discountdays integer, discount_num bigint, discount_denom bigint, cutoff integer)
+CREATE TABLE prices (guid text(32) PRIMARY KEY NOT NULL, commodity_guid text(32) NOT NULL, currency_guid text(32) NOT NULL, date text(14) NOT NULL, source text(2048), type text(2048), value_num bigint NOT NULL, value_denom bigint NOT NULL)
+CREATE TABLE prices (guid text(32) PRIMARY KEY NOT NULL, commodity_guid text(32) NOT NULL, currency_guid text(32) NOT NULL, date text(14) NOT NULL, source text(2048), type text(2048), value_num bigint NOT NULL, value_denom bigint NOT NULL)
+CREATE TABLE customers (guid text(32) PRIMARY KEY NOT NULL, name text(2048) NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, active integer NOT NULL, discount_num bigint NOT NULL, discount_denom bigint NOT NULL, credit_num bigint NOT NULL, credit_denom bigint NOT NULL, currency text(32) NOT NULL, tax_override integer NOT NULL, addr_name text(1024), addr_addr1 text(1024), addr_addr2 text(1024), addr_addr3 text(1024), addr_addr4 text(1024), addr_phone text(128), addr_fax text(128), addr_email text(256), shipaddr_name text(1024), shipaddr_addr1 text(1024), shipaddr_addr2 text(1024), shipaddr_addr3 text(1024), shipaddr_addr4 text(1024), shipaddr_phone text(128), shipaddr_fax text(128), shipaddr_email text(256), terms text(32), tax_included integer, taxtable text(32))
+CREATE TABLE slots (id integer PRIMARY KEY AUTOINCREMENT NOT NULL, obj_guid text(32) NOT NULL, name text(4096) NOT NULL, slot_type integer NOT NULL, int64_val bigint, string_val text(4096), double_val float8, timespec_val text(14), guid_val text(32), numeric_val_num bigint, numeric_val_denom bigint, gdate_val text(8))
+CREATE TABLE transactions (guid text(32) PRIMARY KEY NOT NULL, currency_guid text(32) NOT NULL, num text(2048) NOT NULL, post_date text(14), enter_date text(14), description text(2048))
+CREATE TABLE recurrences (	id INTEGER NOT NULL, 	obj_guid VARCHAR(32) NOT NULL, 	recurrence_mult INTEGER NOT NULL, 	recurrence_period_start TEXT(8) NOT NULL, 	recurrence_period_type VARCHAR(2048) NOT NULL, 	recurrence_weekend_adjust VARCHAR(2048) NOT NULL, 	PRIMARY KEY (id))
+CREATE TABLE sqlite_sequence(name,seq)
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+CREATE TABLE accounts (	guid VARCHAR(32) NOT NULL, 	account_type VARCHAR(2048) NOT NULL, 	code VARCHAR(2048), 	commodity_guid VARCHAR(32), 	commodity_scu INTEGER NOT NULL, 	non_std_scu INTEGER NOT NULL, 	description VARCHAR(2048), 	hidden INTEGER, 	name VARCHAR(2048) NOT NULL, 	parent_guid VARCHAR(32), 	placeholder INTEGER, 	PRIMARY KEY (guid), 	FOREIGN KEY(commodity_guid) REFERENCES commodities (guid), 	FOREIGN KEY(parent_guid) REFERENCES accounts (guid))
+CREATE TABLE lots (guid text(32) PRIMARY KEY NOT NULL, account_guid text(32), is_closed integer NOT NULL)
+CREATE INDEX tx_post_date_index ON transactions (post_date)gtablesplitssplits
+CREATE TABLE orders (	guid VARCHAR(32) NOT NULL, 	active INTEGER NOT NULL, 	date_closed TEXT(14) NOT NULL, 	date_opened TEXT(14) NOT NULL, 	id VARCHAR(2048) NOT NULL, 	notes VARCHAR(2048) NOT NULL, 	owner_guid VARCHAR(32) NOT NULL, 	owner_type INTEGER NOT NULL, 	reference VARCHAR(2048) NOT NULL, 	PRIMARY KEY (guid))
+CREATE TABLE slots (id integer PRIMARY KEY AUTOINCREMENT NOT NULL, obj_guid text(32) NOT NULL, name text(4096) NOT NULL, slot_type integer NOT NULL, int64_val bigint, string_val text(4096), double_val float8, timespec_val text(14), guid_val text(32), numeric_val_num bigint, numeric_val_denom bigint, gdate_val text(8))
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)
+CREATE TABLE books (	guid VARCHAR(32) NOT NULL, 	root_account_guid VARCHAR(32) NOT NULL, 	root_template_guid VARCHAR(32) NOT NULL, 	PRIMARY KEY (guid), 	FOREIGN KEY(root_account_guid) REFERENCES accounts (guid), 	FOREIGN KEY(root_template_guid) REFERENCES accounts (guid))
+CREATE TABLE gnclock ( Hostname varchar(255), PID int )
+CREATE TABLE prices (guid text(32) PRIMARY KEY NOT NULL, commodity_guid text(32) NOT NULL, currency_guid text(32) NOT NULL, date text(14) NOT NULL, source text(2048), type text(2048), value_num bigint NOT NULL, value_denom bigint NOT NULL)
+CREATE TABLE orders (guid text(32) PRIMARY KEY NOT NULL, id text(2048) NOT NULL, notes text(2048) NOT NULL, reference text(2048) NOT NULL, active integer NOT NULL, date_opened text(14) NOT NULL, date_closed text(14) NOT NULL, owner_type integer NOT NULL, owner_guid text(32) NOT NULL)

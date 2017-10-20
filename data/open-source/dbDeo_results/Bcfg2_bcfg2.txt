@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_client (current_interaction_id)', 'iK']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_client (current_interaction_id)', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_client (current_interaction_id)', 'I']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_interaction', 'client_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_client (current_interaction_id)', 'current_interaction_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reports_client (current_interaction_id)', 'kindexreports_performance_interaction_performance_idreports_performance_interaction']

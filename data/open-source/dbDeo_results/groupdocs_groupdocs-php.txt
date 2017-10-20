@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE '.							(preg_match('/sqlite2?/',$self->backend)?								'':($self->dbname.'.')).$table.' ('.							'id VARCHAR(40),'.							'data LONGTEXT,'.							'stamp INTEGER'.						')
+ in following column '.							' of table '.							(preg_match('
+Detected: Index Shotgun Variant: 1

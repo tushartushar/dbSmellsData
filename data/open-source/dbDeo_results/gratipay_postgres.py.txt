@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foux (baar text)
+ in following column baar of table foux
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE flum (bar text)
+ in following column bar of table flum
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blum (bar text)
+ in following column bar of table blum
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE flum (bar text)
+ in following column bar and in column bar of table grok
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar text, baz int)
+ in following column bar of table foo
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE flah (bar text)
+ in following column bar of table flah
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar text)
+ in following column bar of table foo

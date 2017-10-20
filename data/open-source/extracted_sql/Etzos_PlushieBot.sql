@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS timeout ( id INTEGER PRIMARY KEY, player TEXT UNIQUE ON CONFLICT IGNORE, dateadded TEXT )
+SELECT SUM(count) FROM SmileyCount WHERE smiley = ?
+SELECT count FROM SmileyCount WHERE speaker = ? AND smiley = ?
+CREATE TABLE IF NOT EXISTS karma ( id INTEGER PRIMARY KEY, item TEXT, itemNormalized TEXT UNIQUE ON CONFLICT IGNORE, added INTEGER, subtracted INTEGER )
+CREATE TABLE IF NOT EXISTS flood ( id INTEGER PRIMARY KEY AUTOINCREMENT, player TEXT NOT NULL, threatIndex INTEGER NOT NULL, time TEXT NOT NULL )
+SELECT id FROM Smilies WHERE smiley = ?
+CREATE TABLE IF NOT EXISTS SmileyCount ( id INTEGER PRIMARY KEY AUTOINCREMENT, speaker TEXT NOT NULL, smiley INTEGER NOT NULL, count INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(smiley) REFERENCES Smilies(id), UNIQUE (speaker, smiley) ON CONFLICT IGNORE )
+UPDATE SmileyCount SET count=count WHERE speaker = ? AND smiley = ?
+CREATE TABLE IF NOT EXISTS history ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, player TEXT, target TEXT, change INTEGER, changetime TEXT )
+SELECT SUM(count) FROM SmileyCount WHERE speaker = ?
+SELECT SUM(count) FROM SmileyCount
+SELECT SUM(lines) FROM speakers
+INSERT INTO karma VALUES (NULL, ?, ?, 0, 0)

@@ -1,0 +1,31 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dbo.sysdiagram_properties			(				diagram_id int,				name sysname,				value varbinary(max) NOT NULL			)
+ in following column . and in column . of table %
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [CustomerDemographics](	[CustomerTypeID] nchar(10) NOT NULL,	[CustomerDesc] ntext NULL, CONSTRAINT [PK_CustomerDemographics] PRIMARY KEY(	[CustomerTypeID] ASC))
+ in following column CONSTRAINT and in column CONSTRAINT of table [Debits]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t_reservation(	id integer NOT NULL PRIMARY KEY,	passenger_id integer NOT NULL UNIQUE,	price number(8, 2) DEFAULT(0) NOT NULL)
+ in following column price and in column price of table reservation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Debits](	[DebitID] [int] IDENTITY NOT NULL,	[DebitAmount] [float] NOT NULL, CONSTRAINT [PK_DebitID] PRIMARY KEY CLUSTERED (	[DebitID] ASC) ON [PRIMARY])
+ in following column [DebitAmount] of table [Debits]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Credits](	[CreditID] [int] IDENTITY NOT NULL,	[CreditAmount] [float] NOT NULL, CONSTRAINT [PK_CreditID] PRIMARY KEY CLUSTERED (	[CreditID] ASC) ON [PRIMARY])
+ in following column [CreditAmount] of table [Credits]
+Detected: God Table Found in following statement: CREATE TABLE [Customers](	[CustomerID] nchar(5) NOT NULL,	[CompanyName] nvarchar(40) NOT NULL,	[ContactName] nvarchar(30) NULL,	[ContactTitle] nvarchar(30) NULL,	[Address] nvarchar(60) NULL,	[City] nvarchar(15) NULL,	[Region] nvarchar(15) NULL,	[PostalCode] nvarchar(10) NULL,	[Country] nvarchar(15) NULL,	[Phone] nvarchar(24) NULL,	[Fax] nvarchar(24) NULL, CONSTRAINT [PK_Customers] PRIMARY KEY(	[CustomerID] ASC))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dbo.sysdiagram_properties			(				diagram_id int,				name sysname,				value varbinary(max) NOT NULL			)
+ in following column value and in column value of table %
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Suppliers](	[SupplierID] integer primary key autoincrement,	[CompanyName] nvarchar(40) NOT NULL,	[ContactName] nvarchar(30) NULL,	[ContactTitle] nvarchar(30) NULL,	[Address] nvarchar(60) NULL,	[City] nvarchar(15) NULL,	[Region] nvarchar(15) NULL,	[PostalCode] nvarchar(10) NULL,	[Country] nvarchar(15) NULL,	[Phone] nvarchar(24) NULL,	[Fax] nvarchar(24) NULL,	[HomePage] ntext NULL)
+ in following column [HomePage] of table [Suppliers]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: God Table Found in following statement: CREATE TABLE [Suppliers](	[SupplierID] integer primary key autoincrement,	[CompanyName] nvarchar(40) NOT NULL,	[ContactName] nvarchar(30) NULL,	[ContactTitle] nvarchar(30) NULL,	[Address] nvarchar(60) NULL,	[City] nvarchar(15) NULL,	[Region] nvarchar(15) NULL,	[PostalCode] nvarchar(10) NULL,	[Country] nvarchar(15) NULL,	[Phone] nvarchar(24) NULL,	[Fax] nvarchar(24) NULL,	[HomePage] ntext NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE flight(	id integer NOT NULL PRIMARY KEY AUTO_INCREMENT,	flight_number VARCHAR(256) NOT NULL,	aircraft_id integer NOT NULL,	departure_airport_id integer NOT NULL,	destination_airport_id integer NOT NULL,	departure_date date NOT NULL)
+ in following column id and in column id of table cabin_class
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [CustomerDemographics](	[CustomerTypeID] nchar(10) NOT NULL,	[CustomerDesc] ntext NULL, CONSTRAINT [PK_CustomerDemographics] PRIMARY KEY(	[CustomerTypeID] ASC))
+ in following column [CustomerDesc] of table [CustomerDemographics]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master

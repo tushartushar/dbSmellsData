@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE migrations( id BIGINT AUTO_INCREMENT, migration VARCHAR(255) NOT NULL, state BOOLEAN DEFAULT FALSE, PRIMARY KEY(id) )
+ in following column id and in column id of table app_user
+Detected: Index Shotgun Variant: 1

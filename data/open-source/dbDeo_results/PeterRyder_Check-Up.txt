@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: create table if not exists {0} (name text, cpu float, mem float)
+ in following column name of table {
+Detected: Obsolete Column TypesFound in following statement: create table if not exists {0} (name text, cpu float, mem float)
+ in following column cpu of table {
+Detected: Obsolete Column TypesFound in following statement: create table if not exists {0} (name text, cpu float, mem float)
+ in following column mem of table {
+Detected: Index Shotgun Variant: 1

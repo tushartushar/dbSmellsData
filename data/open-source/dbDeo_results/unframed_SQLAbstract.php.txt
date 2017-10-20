@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `prefix_task` ( `task_id` INTEGER AUTOINCREMENT, `task_name` VARCHAR(255) NOT NULL, `task_scheduled_for` INTEGER UNSIGNED NOT NULL, `task_completed_at` INTEGER UNSIGNED, `task_created_at` INTEGER UNSIGNED NOT NULL, `task_modified_at` INTEGER UNSIGNED NOT NULL, `task_deleted_at` INTEGER UNSIGNED, `task_description` MEDIUMTEXT, PRIMARY KEY (`task_id`) )
+ in following column `task_description` of table `prefix_task`
+Detected: Index Shotgun Variant: 1

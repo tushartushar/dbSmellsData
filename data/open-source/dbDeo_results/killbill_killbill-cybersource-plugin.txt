@@ -1,0 +1,8 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_payment_methods', 'kb_account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_responses', 'kb_payment_id']
+Detected: God Table Found in following statement: CREATE TABLE cybersource_transactions ( id serial unique, cybersource_response_id bigint /*! unsigned */ NOT NULL, api_call varchar(255) NOT NULL, kb_payment_id varchar(255) NOT NULL, kb_payment_transaction_id varchar(255) NOT NULL, transaction_type varchar(255) NOT NULL, payment_processor_account_id varchar(255) DEFAULT NULL, txn_id varchar(255) DEFAULT NULL, amount_in_cents int DEFAULT NULL, currency varchar(255) DEFAULT NULL, created_at datetime NOT NULL, updated_at datetime NOT NULL, kb_account_id varchar(255) NOT NULL, kb_tenant_id varchar(255) NOT NULL, PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_payment_methods', 'kb_payment_method_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_responses', 'kb_tenant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_transactions', 'cybersource_response_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cybersource_transactions', 'kb_payment_id']

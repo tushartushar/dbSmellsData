@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mysql.general_log ( event_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, user_host MEDIUMTEXT NOT NULL, thread_id BIGINT(21) UNSIGNED NOT NULL, server_id INT(10) UNSIGNED NOT NULL, command_type VARCHAR(64) NOT NULL, argument MEDIUMTEXT NOT NULL)
+ in following column argument of table mysql
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mysql.general_log ( event_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, user_host MEDIUMTEXT NOT NULL, thread_id BIGINT(21) UNSIGNED NOT NULL, server_id INT(10) UNSIGNED NOT NULL, command_type VARCHAR(64) NOT NULL, argument MEDIUMTEXT NOT NULL)
+ in following column user_host of table mysql
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `wp_t_questions` (`question_id` bigint UNSIGNED auto_increment NOT NULL,`test_id` bigint UNSIGNED NOT NULL,`question_title` text NOT NULL, PRIMARY KEY (`question_id`))
+ in following column `question_title` of table `wp_t_questions`
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['set_member_subjects', 'subject_set_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subject_sets', 'workflow_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_seen_subjects', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_seen_subjects', 'workflow_id']

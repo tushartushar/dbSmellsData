@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['fileversion', 'filecontent_checksum']
+Detected: Index Shotgun Variant: 3 Following index not used : ['fileversion', 'status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['databaseversion', 'vectorclock_serialized']

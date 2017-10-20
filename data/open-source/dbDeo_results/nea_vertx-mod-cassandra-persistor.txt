@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vertxpersistor.newtable (id uuid PRIMARY KEY, field text)
+ in following column field of table vertxpersistor
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fulltable( id uuid PRIMARY KEY, key varchar, value varchar, valueset set<text>, valuelist list<varchar>, valuemap map<varchar, varchar>, date timestamp, isValid boolean, number int, data blob )
+ in following column valueset of table fulltable
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,65 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `artist` ( `artistId` INTEGER PRIMARY KEY AUTOINCREMENT, `artistTypeId` INTEGER NOT NULL, `name` STRING NOT NULL, `slug` STRING NOT NULL, `bio` STRING NULL, UNIQUE (`slug`))
+ in following column `artistId` and in column `artistId` of table `event_artist`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_embed_many_parent(id INT PRIMARY KEY AUTO_INCREMENT, children TEXT)
+ in following column children of table test_embed_many_parent
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `bar` ( `barId` INTEGER NOT NULL AUTO_INCREMENT, `myFooId` VARCHAR(255) NULL, `myOtherFooId` VARCHAR(255) NULL, `bar` VARCHAR(255) NULL, PRIMARY KEY (`barId`), KEY `myFoo` (`myFooId`, `myOtherFooId`) )
+ in following column `bar` and in column `bar` of table `test_create_default_field`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE venue ( venueId serial, name varchar(50) NOT NULL, slug varchar(50) NOT NULL, address varchar(400) NOT NULL, shortAddress varchar(80) NOT NULL, latitude DECIMAL NULL, longitude DECIMAL NULL, PRIMARY KEY (venueId), UNIQUE (slug))
+ in following column venueId and in column venueId of table event
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `planned_event` ( `eventId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `slug` varchar(80) NOT NULL, `sub_name` varchar(200) NULL, `dateStart` DATE NULL, `dateEnd` DATE NULL, `venueId` int(10) unsigned NOT NULL, `completeness` tinyint unsigned NOT NULL, PRIMARY KEY (`eventId`), UNIQUE KEY `FK_event_slug` (`slug`), KEY `FK_event_venue` (`venueId`))
+ in following column `dateEnd` and in column `dateEnd` of table `event`
+Detected: Metadata as Data Found in following statement: CREATE TABLE `bar` ( `barId` INTEGER NOT NULL AUTO_INCREMENT, `fooId` VARCHAR(255) NULL, `quack` VARCHAR(255) NULL, PRIMARY KEY (`barId`), KEY `fooId` (`fooId`) )
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `test_create` ( `testCreateId` int, `foo1` varchar(128), `foo2` varchar(128), `pants` int unsigned not null, PRIMARY KEY (`testCreateId`) )
+ in following column `foo1` and in column `foo1` of table `bar`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `artist` ( `artistId` int(10) unsigned NOT NULL AUTO_INCREMENT, `artistTypeId` int(10) unsigned NOT NULL, `name` varchar(200) NOT NULL, `slug` varchar(80) NOT NULL, `bio` TEXT NULL, PRIMARY KEY (`artistId`), KEY `FK_artist_type` (`artistTypeId`), UNIQUE KEY `FK_artist_slug` (`slug`))
+ in following column `artistTypeId` and in column `artistTypeId` of table `artist_type`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `ticket` ( `ticketId` INTEGER PRIMARY KEY AUTOINCREMENT, `eventId` INTEGER NOT NULL, `name` STRING, `cost` STRING, `numAvailable` INTEGER, `numSold` INTEGER)
+ in following column `eventId` and in column `eventId` of table `planned_event`
+Detected: Metadata as Data Found in following statement: CREATE TABLE `artist_type` ( `artistTypeId` int(10) unsigned NOT NULL AUTO_INCREMENT, `type` varchar(80) not null, `slug` varchar(80) not null, PRIMARY KEY (`artistTypeId`), UNIQUE KEY `FK_artist_type_slug` (`slug`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE artist ( artistId serial not null, artistTypeId integer, name varchar(200) NOT NULL, slug varchar(80) NOT NULL, bio TEXT NULL, PRIMARY KEY (artistId), UNIQUE (slug))
+ in following column artistTypeId and in column artistTypeId of table artist_type
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event ( eventId serial, name varchar(100) NOT NULL, slug varchar(80) NOT NULL, sub_name varchar(200) NULL, dateStart timestamp NOT NULL, dateEnd timestamp NULL, venueId integer NULL, PRIMARY KEY (eventId), UNIQUE (slug))
+ in following column dateStart and in column dateStart of table planned_event
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_embed_one_parent(id INTEGER PRIMARY KEY AUTOINCREMENT, child TEXT)
+ in following column child of table test_embed_one_parent
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_embed_many_parent(id INT PRIMARY KEY AUTO_INCREMENT, children TEXT)
+ in following column id and in column id of table test_embed_one_parent
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `event_artist` ( `eventId` INTEGER NOT NULL, `artistId` INTEGER NOT NULL, `eventArtistName` STRING NULL, `priority` INTEGER NOT NULL, `sequence` INTEGER NOT NULL, PRIMARY KEY (`eventId`, `artistId`))
+ in following column `artistId` and in column `artistId` of table `artist`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `venue` ( `venueId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `slug` varchar(50) NOT NULL, `address` varchar(400) NOT NULL, `shortAddress` varchar(80) NOT NULL, `latitude` DECIMAL NULL, `longitude` DECIMAL NULL, PRIMARY KEY (`venueId`), UNIQUE KEY `FK_venue_slug` (`slug`))
+ in following column `venueId` and in column `venueId` of table `event`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `venue` ( `venueId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `slug` varchar(50) NOT NULL, `address` varchar(400) NOT NULL, `shortAddress` varchar(80) NOT NULL, `latitude` DECIMAL NULL, `longitude` DECIMAL NULL, PRIMARY KEY (`venueId`), UNIQUE KEY `FK_venue_slug` (`slug`))
+ in following column `name` and in column `name` of table `artist`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `planned_event` ( `eventId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `slug` varchar(80) NOT NULL, `sub_name` varchar(200) NULL, `dateStart` DATE NULL, `dateEnd` DATE NULL, `venueId` int(10) unsigned NOT NULL, `completeness` tinyint unsigned NOT NULL, PRIMARY KEY (`eventId`), UNIQUE KEY `FK_event_slug` (`slug`), KEY `FK_event_venue` (`venueId`))
+ in following column `sub_name` and in column `sub_name` of table `event`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_embed_one_parent(id INT PRIMARY KEY AUTO_INCREMENT, child TEXT)
+ in following column child of table test_embed_one_parent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_embed_many_parent(id INTEGER PRIMARY KEY AUTOINCREMENT, children TEXT)
+ in following column children of table test_embed_many_parent
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `test_create` ( `testCreateId` int, `foo1` varchar(128), `foo2` varchar(128), `pants` int unsigned not null, PRIMARY KEY (`testCreateId`) )
+ in following column `testCreateId` and in column `testCreateId` of table `bar`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event ( eventId serial, name varchar(100) NOT NULL, slug varchar(80) NOT NULL, sub_name varchar(200) NULL, dateStart timestamp NOT NULL, dateEnd timestamp NULL, venueId integer NULL, PRIMARY KEY (eventId), UNIQUE (slug))
+ in following column dateEnd and in column dateEnd of table planned_event
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_artist ( eventId integer NOT NULL, artistId integer NOT NULL, eventArtistName varchar(200) DEFAULT NULL, priority integer NOT NULL, sequence integer NOT NULL, PRIMARY KEY (eventId,artistId))
+ in following column eventId and in column eventId of table event
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE artist ( artistId serial not null, artistTypeId integer, name varchar(200) NOT NULL, slug varchar(80) NOT NULL, bio TEXT NULL, PRIMARY KEY (artistId), UNIQUE (slug))
+ in following column bio of table artist
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `planned_event` ( `eventId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `slug` varchar(80) NOT NULL, `sub_name` varchar(200) NULL, `dateStart` DATE NULL, `dateEnd` DATE NULL, `venueId` int(10) unsigned NOT NULL, `completeness` tinyint unsigned NOT NULL, PRIMARY KEY (`eventId`), UNIQUE KEY `FK_event_slug` (`slug`), KEY `FK_event_venue` (`venueId`))
+ in following column `dateStart` and in column `dateStart` of table `event`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE artist ( artistId serial not null, artistTypeId integer, name varchar(200) NOT NULL, slug varchar(80) NOT NULL, bio TEXT NULL, PRIMARY KEY (artistId), UNIQUE (slug))
+ in following column artistId and in column artistId of table event_artist
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `test_create` ( `testCreateId` int, `foo1` varchar(128), `foo2` varchar(128), `pants` int unsigned not null, PRIMARY KEY (`testCreateId`) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `artist` ( `artistId` INTEGER PRIMARY KEY AUTOINCREMENT, `artistTypeId` INTEGER NOT NULL, `name` STRING NOT NULL, `slug` STRING NOT NULL, `bio` STRING NULL, UNIQUE (`slug`))
+ in following column `artistTypeId` and in column `artistTypeId` of table `artist_type`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `venue` ( `venueId` int(10) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `slug` varchar(50) NOT NULL, `address` varchar(400) NOT NULL, `shortAddress` varchar(80) NOT NULL, `latitude` DECIMAL NULL, `longitude` DECIMAL NULL, PRIMARY KEY (`venueId`), UNIQUE KEY `FK_venue_slug` (`slug`))
+ in following column `slug` and in column `slug` of table `artist`
+Detected: Metadata as Data Found in following statement: CREATE TABLE artist_type ( artistTypeId serial, type varchar(80) not null, slug varchar(80) not null, PRIMARY KEY (artistTypeId), UNIQUE (slug))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `artist` ( `artistId` int(10) unsigned NOT NULL AUTO_INCREMENT, `artistTypeId` int(10) unsigned NOT NULL, `name` varchar(200) NOT NULL, `slug` varchar(80) NOT NULL, `bio` TEXT NULL, PRIMARY KEY (`artistId`), KEY `FK_artist_type` (`artistTypeId`), UNIQUE KEY `FK_artist_slug` (`slug`))
+ in following column `bio` of table `artist`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `planned_event` ( `eventId` INTEGER PRIMARY KEY AUTOINCREMENT, `name` STRING NOT NULL, `slug` STRING NOT NULL, `sub_name` STRING NULL, `dateStart` int(12) NULL, `dateEnd` int(12) NULL, `venueId` INTEGER NOT NULL, `completeness` INTEGER, UNIQUE (`slug`))
+ in following column `sub_name` and in column `sub_name` of table `event`

@@ -1,0 +1,98 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column test_postqueries of table verifier_queries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( ... user_id int PRIMARY KEY, ... fname text, ... lname text ... )
+ in following column . of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS test_create_table_if_not_exists (d bigint, e varchar)
+ in following column e and in column e of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE test_table_properties_1 (foo BIGINT, bar BIGINT, ds DATE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test1 (c10 timestamp, c11 varchar, c12 double, c13 bigint, c14 bigint)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test_table_properties_2 (foo BIGINT, bar BIGINT, ds DATE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (x bigint)
+ in following column x and in column x of table test_avro_types
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test0 (c00 timestamp, c01 varchar, c02 double, c03 bigint, c04 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column test_query of table verifier_queries
+Detected: God Table Found in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test4 (c40 timestamp, c41 varchar, c42 double, c43 bigint, c44 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column test_prequeries of table verifier_queries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE exa_ple.table_with_float_col(col1 bigint, col2 double, col3 float, col4 real)
+ in following column col2 and in column col2 of table test_shard_temporal_timestamp
+Detected: God Table Found in following statement: CREATE TABLE presto_test_types_textfile ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN, t_timestamp TIMESTAMP, t_binary BINARY, t_date DATE, t_varchar VARCHAR(50), t_char CHAR(25), t_map MAP<STRING, STRING>, t_array_string ARRAY<STRING>, t_array_struct ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>, t_complex MAP<INT, ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>>)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE \"my_test_table\" (column1 BIGINT, column2 DOUBLE)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test1 (c10 timestamp, c11 varchar, c12 double, c13 bigint, c14 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column control_query of table verifier_queries
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT count(*) FROM orders WHERE regexp_like(comment, '\\b[a-z]{5}ly\\b')
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE exa_ple.table_with_float_col(col1 bigint, col2 double, col3 float, col4 real)
+ in following column col3 of table exa_ple
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test2 (c20 timestamp, c21 varchar, c22 double, c23 bigint, c24 bigint)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test5 (c50 timestamp, c51 varchar, c52 double, c53 bigint, c54 bigint)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE exa_ple.table_with_float_col(col1 bigint, col2 double, col3 float, col4 real)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test2 (c20 timestamp, c21 varchar, c22 double, c23 bigint, c24 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_bucketed_by_double_float ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN)
+ in following column t_float of table presto_test_bucketed_by_double_float
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_partition_format ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN)
+ in following column t_float of table presto_test_partition_format
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test3 (c30 timestamp, c31 varchar, c32 double, c33 bigint, c34 bigint)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS test_create_table_if_not_exists (d bigint, e varchar)
+ in following column d and in column d of table external_table
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test0 (c00 timestamp, c01 varchar, c02 double, c03 bigint, c04 bigint)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE example.numbers(text varchar primary key, text_short varchar(32), value bigint)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test3 (c30 timestamp, c31 varchar, c32 double, c33 bigint, c34 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tmp_presto_test ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN)
+ in following column t_float of table tmp_presto_test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_shard_temporal_timestamp(col1 BIGINT, col2 TIMESTAMP)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_bucketed_by_bigint_boolean ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN)
+ in following column t_float of table presto_test_bucketed_by_bigint_boolean
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE system_tables_test5 (c50 timestamp, c51 varchar, c52 double, c53 bigint, c54 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_bucketed_by_string_int ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN)
+ in following column t_float of table presto_test_bucketed_by_string_int
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_shard_temporal_timestamp_bucketed(col1 BIGINT, col2 TIMESTAMP)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE \"my_test_table2\" (column1 BIGINT, column2 DOUBLE)
+
+Detected: Duplicate Column Names Found in following statement: create table if not exists baz (a timestamp, b varchar)
+ in following column a and in column a of table test_create_table_if_not_exists
+Detected: Clone Tables Found in following statement: CREATE TABLE system_tables_test4 (c40 timestamp, c41 varchar, c42 double, c43 bigint, c44 bigint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column control_prequeries of table verifier_queries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE exa_ple.table_with_float_col(col1 bigint, col2 double, col3 float, col4 real)
+ in following column col4 of table exa_ple
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verifier_queries( id INT NOT NULL AUTO_INCREMENT, suite VARCHAR(256) NOT NULL, name VARCHAR(256), test_catalog VARCHAR(256) NOT NULL, test_schema VARCHAR(256) NOT NULL, test_prequeries TEXT, test_query TEXT NOT NULL, test_postqueries TEXT, test_username VARCHAR(256) NOT NULL default 'verifier-test', test_password VARCHAR(256), control_catalog VARCHAR(256) NOT NULL, control_schema VARCHAR(256) NOT NULL, control_prequeries TEXT, control_query TEXT NOT NULL, control_postqueries TEXT, control_username VARCHAR(256) NOT NULL default 'verifier-test', control_password VARCHAR(256), PRIMARY KEY (id) )
+ in following column control_postqueries of table verifier_queries
+Detected: God Table Found in following statement: CREATE TABLE presto_test_types_textfile ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN, t_timestamp TIMESTAMP, t_binary BINARY, t_map MAP<STRING, STRING>, t_array_string ARRAY<STRING>, t_array_struct ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>, t_complex MAP<INT, ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>>)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_create_table_if_not_exists (a bigint, b varchar, c double)
+ in following column c and in column c of table bar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_types_textfile ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN, t_timestamp TIMESTAMP, t_binary BINARY, t_date DATE, t_varchar VARCHAR(50), t_char CHAR(25), t_map MAP<STRING, STRING>, t_array_string ARRAY<STRING>, t_array_struct ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>, t_complex MAP<INT, ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>>)
+ in following column t_float of table presto_test_types_textfile
+Detected: Duplicate Column Names Found in following statement: create table if not exists baz (a timestamp, b varchar)
+ in following column b and in column b of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE presto_test_sequence ( n INT)
+ in following column n and in column n of table test_create_table_invalid_column_ordering
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE blackhole.test.nation ( nationkey bigint, name varchar )
+ in following column . and in column . of table myschema
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE presto_test_types_textfile ( t_string STRING, t_tinyint TINYINT, t_smallint SMALLINT, t_int INT, t_bigint BIGINT, t_float FLOAT, t_double DOUBLE, t_boolean BOOLEAN, t_timestamp TIMESTAMP, t_binary BINARY, t_map MAP<STRING, STRING>, t_array_string ARRAY<STRING>, t_array_struct ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>, t_complex MAP<INT, ARRAY<STRUCT<s_string: STRING, s_double:DOUBLE>>>)
+ in following column t_float of table presto_test_types_textfile

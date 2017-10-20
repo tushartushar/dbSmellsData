@@ -1,0 +1,83 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['recently_visited_projects', 'user_id']
+Detected: Duplicate Column Names Found in following statement: create table issue_event ( id bigint not null, created timestamp, sender_login_id varchar(255), issue_id bigint, event_type varchar(26), old_value varchar(255), new_value varchar(255), constraint ck_issue_event_event_type check (event_type in ('NEW_ISSUE','NEW_POSTING','ISSUE_ASSIGNEE_CHANGED','ISSUE_STATE_CHANGED','NEW_COMMENT','NEW_PULL_REQUEST','NEW_SIMPLE_COMMENT','PULL_REQUEST_STATE_CHANGED')), constraint pk_issue_event primary key (id))
+ in following column new_value and in column new_value of table notification_event
+Detected: Index Shotgun Variant: 3 Following index not used : ['site_admin', 'admin_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_comment_voter', 'issue_comment_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS pull_request_comment ( id bigint not null, contents varchar(4000), created_date timestamp, author_id bigint, author_login_id varchar(255), author_name varchar(255), resource_key varchar(255), project_id bigint, commit_a varchar(40), commit_b varchar(40), commit_id varchar(40), path varchar(255), line integer, side varchar(16), pull_request_id bigint, constraint pk_simple_comment primary key (id))
+ in following column line and in column line of table code_comment
+Detected: Index Shotgun Variant: 3 Following index not used : ['original_email', 'message_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'container_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['item', 'checklist_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['card_assignee', 'card_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['card_label', 'label_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['label', 'task_board_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['commit_explicit_watching', 'project_id']
+Detected: Duplicate Column Names Found in following statement: create table original_email ( id bigint not null, message_id varchar(255), resource_type varchar(255), resource_id varchar(255), handled_date timestamp, constraint uq_original_email_1 unique (resource_type,resource_id), constraint pk_original_email primary key (id))
+ in following column resource_id and in column resource_id of table notification_event
+Detected: Duplicate Column Names Found in following statement: create table milestone ( id bigint not null, title varchar(255), due_date timestamp, contents clob, state integer, project_id bigint, constraint ck_milestone_state check (state in (0,1,2)), constraint pk_milestone primary key (id))
+ in following column state and in column state of table item
+Detected: Index Shotgun Variant: 3 Following index not used : ['milestone', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_project_notification', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['review_comment', 'thread_id']
+Detected: God Table Found in following statement: create table issue ( id bigint not null, title varchar(255), body clob, date timestamp, num_of_comments integer, milestone_id bigint, author_id bigint, author_login_id varchar(255), author_name varchar(255), state integer, project_id bigint, assignee_id bigint, constraint ck_issue_state check (state in (0,1,2)), constraint pk_issue primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_transfer', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['original_email', 'resource_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['code_comment', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comment_thread', 'project_id']
+Detected: God Table Found in following statement: create table notification_event ( id bigint not null, title varchar(255), message clob, sender_id bigint, created timestamp, url_to_view varchar(255), resource_type varchar(16), resource_id bigint, type varchar(255), old_value clob, new_value clob, constraint ck_notification_event_resource_type check (resource_type in ('ISSUE_POST','ISSUE_ASSIGNEE','ISSUE_STATE','ISSUE_CATEGORY','ISSUE_MILESTONE','ISSUE_LABEL','BOARD_POST','BOARD_CATEGORY','BOARD_NOTICE','CODE','MILESTONE','WIKI_PAGE','PROJECT_SETTING','SITE_SETTING','USER','USER_AVATAR','PROJECT','ATTACHMENT','ISSUE_COMMENT','NONISSUE_COMMENT','LABEL','PROJECT_LABELS','FORK')), constraint pk_notification_event primary key (id))
+
+Detected: God Table Found in following statement: create table code_comment ( id bigint not null, project_id bigint, commit_id varchar(255), path varchar(255), line bigint, side varchar(255), contents varchar(4000), created_date timestamp, author_id bigint, author_login_id varchar(255), author_name varchar(255), constraint pk_code_comment primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['unwatch', 'user_id']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS pull_request_comment ( id bigint not null, contents varchar(4000), created_date timestamp, author_id bigint, author_login_id varchar(255), author_name varchar(255), resource_key varchar(255), project_id bigint, commit_a varchar(40), commit_b varchar(40), commit_id varchar(40), path varchar(255), line integer, side varchar(16), pull_request_id bigint, constraint pk_simple_comment primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['notification_mail', 'notification_event_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['line', 'task_board_id']
+Detected: God Table Found in following statement: create table project ( id bigint not null, name varchar(255), overview varchar(255), vcs varchar(255), siteurl varchar(255), logo_path varchar(255), owner varchar(255), share_option boolean, is_author_editable boolean, date timestamp, constraint pk_project primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['post', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mention', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attachment', 'container_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_voter', 'issue_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_user', 'role_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_label', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_user', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['organization_user', 'role_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['organization_user', 'organization_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_project_notification', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_event', 'issue_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['organization_user', 'user_id']
+Detected: Duplicate Column Names Found in following statement: create table card ( id bigint not null, title varchar(255), checklist_id bigint, line_id bigint, story_point integer, body varchar(255), due_date timestamp, constraint pk_card primary key (id))
+ in following column body and in column body of table issue
+Detected: Duplicate Column Names Found in following statement: create table issue_event ( id bigint not null, created timestamp, sender_login_id varchar(255), issue_id bigint, event_type varchar(26), old_value varchar(255), new_value varchar(255), constraint ck_issue_event_event_type check (event_type in ('NEW_ISSUE','NEW_POSTING','ISSUE_ASSIGNEE_CHANGED','ISSUE_STATE_CHANGED','NEW_COMMENT','NEW_PULL_REQUEST','NEW_SIMPLE_COMMENT','PULL_REQUEST_STATE_CHANGED')), constraint pk_issue_event primary key (id))
+ in following column old_value and in column old_value of table notification_event
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_menu_setting', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['card', 'checklist_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['card_label', 'card_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_comment', 'issue_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['task_board', 'project_id']
+Detected: God Table Found in following statement: create table comment_thread ( dtype varchar(10) not null, id bigint not null, project_id bigint not null, author_id bigint, author_login_id varchar(255), author_name varchar(255), state varchar(6), commit_id varchar(255), path varchar(255), start_side varchar(1), start_line integer, start_column integer, end_side varchar(1), end_line integer, end_column integer, pull_request_id bigint, constraint ck_comment_thread_state check (state in ('OPEN','CLOSED')), constraint ck_comment_thread_start_side check (start_side in ('A','B')), constraint ck_comment_thread_end_side check (end_side in ('A','B')), constraint pk_comment_thread primary key (id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE simple_comment ( id bigint not null, contents varchar(4000), created_date timestamp, author_id bigint, author_login_id varchar(255), author_name varchar(255), resource_key varchar(255), constraint pk_simple_comment primary key (id))
+ in following column contents and in column contents of table post
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_voter', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['assignee', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['assignee', 'project_id']
+Detected: Duplicate Column Names Found in following statement: create table pull_request_reviewers ( pull_request_id BIGINT NOT NULL, user_id INT NOT NULL)
+ in following column user_id and in column user_id of table assignee
+Detected: God Table Found in following statement: create table post ( id bigint not null, title varchar(255), contents clob, date timestamp, comment_count integer, file_path varchar(255), author_id bigint, author_login_id varchar(255), author_name varchar(255), project_id bigint, constraint pk_post primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['issue_comment_voter', 'user_id']
+Detected: Duplicate Column Names Found in following statement: create table project_transfer ( id bigint not null, sender_id varchar(255), destination varchar(255), project_id bigint not null, requested timestamp, confirm_key varchar(50), accepted boolean, new_project_name varchar(255), constraint pk_project_transfer primary key (id))
+ in following column sender_id and in column sender_id of table notification_event
+Detected: Index Shotgun Variant: 3 Following index not used : ['card_assignee', 'project_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['watch', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['task_comment', 'card_id']
+Detected: God Table Found in following statement: create table pull_request ( id bigint not null, title varchar(255), body clob, to_project_id bigint, from_project_id bigint, to_branch varchar(255), from_branch varchar(255), contributor_id bigint, receiver_id bigint, created timestamp, updated timestamp, received timestamp, state integer, constraint pk_pull_request primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['original_email', 'resource_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['card', 'line_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mention', 'resource_type']

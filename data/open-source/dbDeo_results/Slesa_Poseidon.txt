@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %Q.'%q_segdir'(level INTEGER,idx INTEGER,start_block INTEGER,leaves_end_block INTEGER,end_block INTEGER,root BLOB,PRIMARY KEY(level, idx))
+ in following column . and in column . of table [dbo]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master

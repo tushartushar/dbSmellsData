@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_keywords ( id INTEGER PRIMARY KEY AUTOINCREMENT, keyword TEXT UNIQUE)
+ in following column keyword of table moz_keywords
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'fk']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'C']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places', 'indexmoz_bookmarks_parentindexmoz_bookmarks']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'indexmoz_historyvisits_fromindexmoz_historyvisits']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'visit_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places', 'favicon_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places', 'S']

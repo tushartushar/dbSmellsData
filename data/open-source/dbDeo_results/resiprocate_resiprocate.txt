@@ -1,0 +1,24 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS siloavp ( attr VARCHAR(255) NOT NULL, attr2 VARCHAR(255) NOT NULL, value VARCHAR(20315), PRIMARY KEY (attr, attr2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['coin', 'unit']
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS siloavp ( attr VARCHAR(255) NOT NULL, attr2 VARCHAR(255) NOT NULL, value VARCHAR(20315), PRIMARY KEY (attr, attr2))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Resources set aor=$resource,forwardType=$forwardType,forwardDestination=$forward,voicemail=$voicemail  where userid = $userid
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE mint (mid INT(8) PRIMARY KEY, country VARCHAR2(20), city VARCHAR2(20))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `siloavp` ( `attr` VARCHAR(255) NOT NULL, `attr2` VARCHAR(255) NOT NULL, `value` VARCHAR(20315), PRIMARY KEY (`attr`), KEY `SECONDARY` (`attr2`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `siloavp` ( `attr` VARCHAR(255) NOT NULL, `attr2` VARCHAR(255) NOT NULL, `value` VARCHAR(20315), PRIMARY KEY (`attr`), KEY `SECONDARY` (`attr2`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS users ( id SERIAL PRIMARY KEY, username VARCHAR(64) NOT NULL, domain VARCHAR(253), realm VARCHAR(253), passwordHash VARCHAR(32), passwordHashAlt VARCHAR(32), name VARCHAR(256), email VARCHAR(256), forwardAddress VARCHAR(256))
+ in following column id and in column id of table Users

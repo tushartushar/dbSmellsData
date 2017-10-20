@@ -1,0 +1,128 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'fullTime']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table2(col1 int, col2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + trackTableName + "(templatename text, username text, sessionidentifier text, timestamp timestamp)
+ in following column username of table " + trackTableName + "
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['department', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + trackTableName + "(username text, timestamp timestamp)
+ in following column username of table " + trackTableName + "
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+ in following column col3 and in column col3 of table table4
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE bagvalues (savedbagid integer, value text, extra text)
+ in following column value and in column value of table " + tempTableName + "
+Detected: Index Shotgun Variant: 3 Following index not used : ['hassecretaryssecretarys', 'Secretarys']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table1', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'lower']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table2', 'col2']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table1', 'col1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['secretary', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table item ( identifer text primary key)
+ in following column identifer of table item
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajax` ( `id` int(10) NOT NULL auto_increment, `engine` varchar(255) NOT NULL default '', `browser` varchar(255) NOT NULL default '', `platform` varchar(255) NOT NULL default '', `version` float NOT NULL default '0', `grade` varchar(20) NOT NULL default '', PRIMARY KEY (`id`))
+ in following column `version` of table `ajax`
+Detected: Clone Tables Found in following statement: CREATE TABLE table4(col1 int, col2 int, col3 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'title']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table2', 'col1']
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(col1 int, col2 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'salary']
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(a int, b int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE SequenceFeature (id int NOT NULL)
+ in following column id and in column id of table comments
+Detected: Index Shotgun Variant: 3 Following index not used : ['table3', 'col2']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE " + tempTableName + " (a integer, b integer)
+ in following column a and in column a of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + TABLE_INDEX + "(name text, statement text, category text)
+ in following column statement of table " + TABLE_INDEX + "
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(key text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table3(col1 int, col2 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['importantperson', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table1', 'col2']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + trackTableName + "(templatename text, username text, sessionidentifier text, timestamp timestamp)
+ in following column sessionidentifier of table " + trackTableName + "
+Detected: Index Shotgun Variant: 3 Following index not used : ['hassecretaryssecretarys', 'HasSecretarys']
+Detected: Index Shotgun Variant: 3 Following index not used : ['department', 'companyId']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table2(col1 int, col2 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['contractor', 'seniority']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1(col1 int, col2 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['contractor', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + TABLE_INDEX + "(name text, statement text, category text)
+ in following column name of table " + TABLE_INDEX + "
+Detected: Clone Tables Found in following statement: CREATE TABLE table3(col1 int, col2 int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1(col1 int, col2 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table2(col1 int, col2 text)
+ in following column col2 of table table2
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'seniority']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'age']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (col1 int, col2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1(col1 int, col2 text)
+ in following column col2 of table table1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1(key int, int2 smallint, int4 int, int8 bigint, float real, double float, bool boolean, bigdecimal numeric, string text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['table3', 'col1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'intermine_end']
+Detected: Obsolete Column TypesFound in following statement: create table comments ( id integer not null primary key, item text references item(identifer), value text not null)
+ in following column item of table comments
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table4(col1 int, col2 int, col3 int)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + trackTableName + "(templatename text, username text, sessionidentifier text, timestamp timestamp)
+ in following column templatename of table " + trackTableName + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1(key int, int2 smallint, int4 int, int8 bigint, float real, double float, bool boolean, bigdecimal numeric, string text)
+ in following column string of table table1
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1(key int, int2 smallint, int4 int, int8 bigint, float real, double float, bool boolean, bigdecimal numeric, string text)
+ in following column float of table table1
+Detected: Index Shotgun Variant: 3 Following index not used : ['ceo', 'text_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['manager', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table1', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+ in following column col2 and in column col2 of table table3
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bagvalues (savedbagid integer, value text, extra text)
+ in following column value of table bagvalues
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE " + tempTableName + " (a integer, b integer)
+ in following column b and in column b of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + TABLE_INDEX + "(name text, statement text, category text)
+ in following column category of table " + TABLE_INDEX + "
+Detected: Clone Tables Found in following statement: CREATE TABLE table2(col1 int, col2 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['department', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bagvalues (savedbagid integer, value text, extra text)
+ in following column extra of table bagvalues
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(key int, int4 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['department', 'managerId']
+Detected: Obsolete Column TypesFound in following statement: create table comments ( id integer not null primary key, item text references item(identifer), value text not null)
+ in following column value of table comments
+Detected: Clone Tables Found in following statement: CREATE TABLE table2(col1 int, col2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(col1 int, col2 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['secretary', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1(key int, int2 smallint, int4 int, int8 bigint, float real, double float, bool boolean, bigdecimal numeric, string text)
+ in following column double of table table1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE tabletest(col1 int, col2 int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(key int, int2 smallint, int4 int, int8 bigint, float real, double float, bool boolean, bigdecimal numeric, string text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+ in following column col1 and in column col1 of table table3
+Detected: Index Shotgun Variant: 3 Following index not used : ['importantperson', 'seniority']
+Detected: Clone Tables Found in following statement: CREATE TABLE table1(col1 int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE table1(col1 varchar(10), col2 varchar(10), col3 varchar(10))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['manager', 'seniority']

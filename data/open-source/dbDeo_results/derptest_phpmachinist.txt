@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: create table `box` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` varchar(100) )
+ in following column `id` and in column `id` of table `fkey`
+Detected: Index Shotgun Variant: 1

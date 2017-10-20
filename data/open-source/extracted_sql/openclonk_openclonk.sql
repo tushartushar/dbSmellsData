@@ -1,0 +1,5 @@
+SELECT * FROM `' . ParseINI::parseValue('mysql_prefix', $this->config) . 'games` WHERE `ip` = \'' . $_SERVER['REMOTE_ADDR'] . '\' AND `valid` = \'1\'', $this->link);
+SELECT * FROM `' . ParseINI::parseValue('mysql_prefix', $this->config) . 'games`' . $append);
+CREATE TABLE `c4ms_update` ( `old_version` varchar(16) CHARACTER SET latin1 NOT NULL, `new_version` varchar(16) CHARACTER SET latin1 NOT NULL, `platform` varchar(64) CHARACTER SET latin1 NOT NULL, `file` varchar(255) CHARACTER SET latin1 NOT NULL, PRIMARY KEY (`old_version`,`platform`))
+CREATE TABLE `c4ms_games` ( `id` int(11) NOT NULL AUTO_INCREMENT, `ip` varchar(255) CHARACTER SET latin1 NOT NULL, `csid` varchar(255) CHARACTER SET latin1 NOT NULL, `data` text CHARACTER SET latin1 NOT NULL, `start` varchar(255) CHARACTER SET latin1 NOT NULL, `time` varchar(255) CHARACTER SET latin1 NOT NULL, `valid` tinyint(4) NOT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `c4ms_flood` ( `ip` char(32) CHARACTER SET latin1 NOT NULL, `count` int(11) NOT NULL, `time` char(20) CHARACTER SET latin1 NOT NULL, PRIMARY KEY (`ip`))

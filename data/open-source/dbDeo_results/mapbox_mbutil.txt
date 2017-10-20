@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text)
+ in following column key_json of table grid_data
+Detected: Obsolete Column TypesFound in following statement: create table metadata (name text, value text)
+ in following column value of table metadata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column tile_id and in column tile_id of table images
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column tile_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata ( name text, value text)
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column grid_id of table (
+Detected: Obsolete Column TypesFound in following statement: create table metadata (name text, value text)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata ( name text, value text)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text)
+ in following column key_name of table grid_data

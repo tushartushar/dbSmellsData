@@ -1,0 +1,4 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE <schema_name>.tsearch ( \ id SERIAL PRIMARY KEY, \ layer_name TEXT, \ label TEXT, \ public BOOLEAN DEFAULT 't', \ params TEXT, \ role_id INTEGER REFERENCES <schema_name>.role, \ ts TSVECTOR)
+ in following column \ of table <
+Detected: Adjacency List Found in following statement: CREATE TABLE <schema_name>.tsearch ( \ id SERIAL PRIMARY KEY, \ layer_name TEXT, \ label TEXT, \ public BOOLEAN DEFAULT 't', \ params TEXT, \ role_id INTEGER REFERENCES <schema_name>.role, \ ts TSVECTOR)
+

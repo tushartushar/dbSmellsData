@@ -1,0 +1,1 @@
+Select anomalies from hosts

@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `mail_queue` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `mailer` varchar(255) NOT NULL, `params` text, `options` text, `sent` tinyint(1) NOT NULL DEFAULT '0', `sent_on` datetime DEFAULT NULL, PRIMARY KEY (`id`), KEY `sent` (`sent`))
+ in following column `params` of table `mail_queue`
+Detected: God Table Found in following statement: CREATE TABLE `users` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `email` varchar(255) NOT NULL, `username` varchar(30) DEFAULT NULL, `password_hash` varchar(255) NOT NULL, `reset_hash` varchar(40) DEFAULT NULL, `activate_hash` varchar(40) DEFAULT NULL, `created_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00', `status` varchar(255) DEFAULT NULL, `status_message` varchar(255) DEFAULT NULL, `active` tinyint(1) NOT NULL DEFAULT '0', `deleted` tinyint(1) NOT NULL DEFAULT '0', `force_pass_reset` tinyint(1) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `email` (`email`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `auth_groups` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `settings` ( `name` varchar(255) NOT NULL, `value` varchar(255) DEFAULT NULL, `group` varchar(255) NOT NULL, KEY `name_group` (`name`,`group`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `auth_login_attempts` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `type` varchar(64) NOT NULL DEFAULT 'app', `ip_address` varchar(255) DEFAULT NULL, `user_id` int(11) unsigned DEFAULT NULL, `datetime` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `ci_sessions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `mail_queue` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `mailer` varchar(255) NOT NULL, `params` text, `options` text, `sent` tinyint(1) NOT NULL DEFAULT '0', `sent_on` datetime DEFAULT NULL, PRIMARY KEY (`id`), KEY `sent` (`sent`))
+ in following column `options` of table `mail_queue`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `user_meta` ( `user_id` int(11) unsigned NOT NULL, `meta_key` varchar(255) NOT NULL, `meta_value` text, KEY `user_id_meta_key` (`user_id`,`meta_key`))
+ in following column `meta_value` of table `user_meta`
+Detected: Metadata as Data Found in following statement: CREATE TABLE `auth_permissions` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+

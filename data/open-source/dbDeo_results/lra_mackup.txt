@@ -1,0 +1,9 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE config2(option varchar UNIQUE, value varchar, encoding uint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (entry_key TEXT, data_key TEXT, data_value TEXT, UNIQUE (entry_key, data_key, data_value))
+ in following column data_key of table (
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (entry_key TEXT, data_key TEXT, data_value TEXT, UNIQUE (entry_key, data_key, data_value))
+ in following column data_value of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (entry_key TEXT, data_key TEXT, data_value TEXT, UNIQUE (entry_key, data_key, data_value))
+ in following column entry_key of table (

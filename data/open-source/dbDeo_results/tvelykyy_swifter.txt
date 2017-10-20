@@ -1,0 +1,11 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE `role` ( `id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(20) NOT NULL, `description` varchar(100) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `uniq_title` (`title`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `template` ( `id` int(11) unsigned NOT NULL, `title` varchar(100) NOT NULL, `path` varchar(200) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `id` (`id`) USING BTREE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `block` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Represents page''s field unique identifier.', `title` varchar(50) NOT NULL COMMENT 'Represents page''s block title.', PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `role`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `page_block` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `page_id` bigint(20) unsigned NOT NULL COMMENT 'Represent page identifier.', `block_id` bigint(20) unsigned NOT NULL COMMENT 'Represents block identifier', `content` text NOT NULL COMMENT 'Reprents page block content for specific page.', PRIMARY KEY (`id`), UNIQUE KEY `page_block` (`page_id`,`block_id`), KEY `block` (`block_id`), CONSTRAINT `block` FOREIGN KEY (`block_id`) REFERENCES `block` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT `page` FOREIGN KEY (`page_id`) REFERENCES `page` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column `content` of table `page_block`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `page` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Represent unique page identifier', `name` varchar(50) NOT NULL, `uri` varchar(200) NOT NULL COMMENT 'Represents page''s full URL.', `parent_id` bigint(20) DEFAULT NULL, `template_id` bigint(20) unsigned NOT NULL, PRIMARY KEY (`id`))
+ in following column `template_id` and in column `template_id` of table `snippet`

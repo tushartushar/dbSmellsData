@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "${tablePrefix}group" ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT NOT NULL UNIQUE)
+ in following column name of table "${tablePrefix}group"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "${tablePrefix}world" ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT NOT NULL UNIQUE)
+ in following column name of table "${tablePrefix}world"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "${tablePrefix}user" ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT UNIQUE DEFAULT ( NULL ), uuid TEXT UNIQUE DEFAULT ( NULL ))
+ in following column uuid of table "${tablePrefix}user"
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "${tablePrefix}user" ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name TEXT UNIQUE DEFAULT ( NULL ), uuid TEXT UNIQUE DEFAULT ( NULL ))
+ in following column name of table "${tablePrefix}user"

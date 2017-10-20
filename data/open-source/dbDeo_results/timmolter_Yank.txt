@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE Buecher (TITEL VARCHAR(42) NULL, AUTOR VARCHAR(42) NULL, PREIS DECIMAL(10,2) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE Books (TITLE VARCHAR(42) NULL, AUT_HOR VARCHAR(42) NULL, PRICE DECIMAL(10,2) NOT NULL)
+
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE BOOKS (TITLE VARCHAR(42) NULL, AUTHOR VARCHAR(42) NULL, PRICE DECIMAL(10,2) NOT NULL)
+

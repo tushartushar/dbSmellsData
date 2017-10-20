@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table %s (%s INTEGER primary key AUTOINCREMENT, %s TEXT, %s TEXT)
+ in following column %s of table %s
+Detected: Index Shotgun Variant: 1

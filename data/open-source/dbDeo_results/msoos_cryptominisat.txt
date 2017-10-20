@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE `tags` ( `runID` bigint(20) NOT NULL, `tagname` varchar(500) NOT NULL, `tag` varchar(500) NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `timepassed` ( `runID` bigint(20) NOT NULL, `simplifications` bigint(20) NOT NULL, `conflicts` bigint(20) NOT NULL, `runtime` double NOT NULL, `name` varchar(200) NOT NULL, `elapsed` double NOT NULL, `timeout` int(20) DEFAULT NULL, `percenttimeremain` float DEFAULT NULL)
+ in following column `percenttimeremain` of table `timepassed`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `solverRun` ( `runID` bigint(20) NOT NULL, `runtime` bigint(20) NOT NULL)
+ in following column `runtime` and in column `runtime` of table `timepassed`
+Detected: Index Shotgun Variant: 1

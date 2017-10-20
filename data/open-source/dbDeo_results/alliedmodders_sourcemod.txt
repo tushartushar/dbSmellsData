@@ -1,0 +1,70 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_overrides (type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, flags varchar(30) NOT NULL, PRIMARY KEY (type,name))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Metadata as Data Found in following statement: CREATE TABLE sm_overrides (type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, flags varchar(30) NOT NULL, PRIMARY KEY (type,name))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_admins ( id INTEGER PRIMARY KEY AUTOINCREMENT, authtype varchar(16) NOT NULL CHECK(authtype IN ('steam', 'ip', 'name')), identity varchar(65) NOT NULL, password varchar(65), flags varchar(30) NOT NULL, name varchar(65) NOT NULL, immunity INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_admins (id INTEGER PRIMARY KEY AUTOINCREMENT, authtype varchar(16) NOT NULL CHECK(authtype IN ('steam', 'ip', 'name')), identity varchar(65) NOT NULL, password varchar(65), flags varchar(30) NOT NULL, name varchar(65) NOT NULL, immunity INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sm_admins_groups (admin_id INTEGER NOT NULL, group_id INTEGER NOT NULL, inherit_order int(10) NOT NULL, PRIMARY KEY (admin_id, group_id))
+ in following column group_id and in column group_id of table sm_group_overrides
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sm_cookies(	id INTEGER PRIMARY KEY AUTOINCREMENT,	name varchar(30) NOT NULL UNIQUE,	description varchar(255),	access INTEGER)
+ in following column access and in column access of table sm_group_overrides
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sm_cookie_cache(	player varchar(65) NOT NULL,	cookie_id int(10) NOT NULL,	value varchar(100),	timestamp int,	PRIMARY KEY (player, cookie_id))
+ in following column value and in column value of table %
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE _sm_groups_temp ( id INTEGER PRIMARY KEY AUTOINCREMENT, flags varchar(30) NOT NULL, name varchar(120) NOT NULL, immunity_level INTEGER DEFAULT 0 NOT NULL)
+ in following column id and in column id of table sm_groups
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_group_overrides (group_id INTEGER NOT NULL, type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, access varchar(16) NOT NULL CHECK (access IN ('allow', 'deny')), PRIMARY KEY (group_id, type, name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sm_group_immunity ( group_id INTEGER NOT NULL, other_id INTEGER NOT NULL, PRIMARY KEY (group_id, other_id))
+ in following column group_id and in column group_id of table sm_admins_groups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_overrides ( type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, flags varchar(30) NOT NULL, PRIMARY KEY (type,name))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE sm_overrides ( type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, flags varchar(30) NOT NULL, PRIMARY KEY (type,name))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE sm_group_overrides ( group_id INTEGER NOT NULL, type varchar(16) NOT NULL CHECK (type IN ('command', 'group')), name varchar(32) NOT NULL, access varchar(16) NOT NULL CHECK (access IN ('allow', 'deny')), PRIMARY KEY (group_id, type, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE _sm_groups_temp ( id INTEGER PRIMARY KEY AUTOINCREMENT, flags varchar(30) NOT NULL, name varchar(120) NOT NULL, immunity_level INTEGER DEFAULT 0 NOT NULL)
+ in following column immunity_level and in column immunity_level of table sm_groups
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

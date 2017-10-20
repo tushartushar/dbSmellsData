@@ -1,0 +1,116 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text, bin binary, ratio number, ts timestamp)
+ in following column name of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: create table test(c unique)
+
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text, income number)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ControllerLayout(id INTEGER primary key autoincrement, parentid INTEGER, type INTEGER, x INTEGER, y INTEGER, w INTEGER, h INTEGER,tabType INTEGER,sortid INTEGER,tabItemTitle VARCHAR(64),isChild INTEGER,linkid INTEGER,tabItems VARCHAR(64),bgImage VARCHAR(64),tabBarSelectBgImage VARCHAR(64),tabBarIndicatorImage VARCHAR(64),bgColor VARCHAR(64),selectBgColor VARCHAR(64),tabBarIndicatorColor VARCHAR(64),titleColor VARCHAR(64),titleSelectColor VARCHAR(64),btnColor VARCHAR(64))
+
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text, bin binary, ratio number, ts timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+ in following column f of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Clone Tables Found in following statement: create table test(sadfsadfdsa)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Clone Tables Found in following statement: create table test(i integer, s varchar, f number, b blob)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text, income number)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Clone Tables Found in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+
+Detected: Clone Tables Found in following statement: create table test(d date, ts timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS data(key TEXT PRIMARY KEY,value TEXT)
+ in following column value of table data
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ControllerLayout(id INTEGER primary key autoincrement, parentid INTEGER, type INTEGER, x INTEGER, y INTEGER, w INTEGER, h INTEGER,tabType INTEGER,sortid INTEGER,tabItemTitle VARCHAR(64),isChild INTEGER,linkid INTEGER,tabItems VARCHAR(64),bgImage VARCHAR(64),tabBarSelectBgImage VARCHAR(64),tabBarIndicatorImage VARCHAR(64),bgColor VARCHAR(64),selectBgColor VARCHAR(64),tabBarIndicatorColor VARCHAR(64),titleColor VARCHAR(64),titleSelectColor VARCHAR(64),btnColor VARCHAR(64))
+ in following column type and in column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: create table test(id integer primary key, name text)
+ in following column name of table test
+Detected: Clone Tables Found in following statement: create table test(foo)
+
+Detected: Obsolete Column TypesFound in following statement: create table test( t text, i integer, f float, n, b blob )
+ in following column f of table test
+Detected: Duplicate Column Names Found in following statement: create table test(i integer, s varchar, f number, b blob)
+ in following column b and in column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ControllerLayout(id INTEGER primary key autoincrement, parentid INTEGER, type INTEGER, x INTEGER, y INTEGER, w INTEGER, h INTEGER,tabType INTEGER,sortid INTEGER,tabItemTitle VARCHAR(64),isChild INTEGER,linkid INTEGER,tabItems VARCHAR(64),bgImage VARCHAR(64),tabBarSelectBgImage VARCHAR(64),tabBarIndicatorImage VARCHAR(64),bgColor VARCHAR(64),selectBgColor VARCHAR(64),tabBarIndicatorColor VARCHAR(64),titleColor VARCHAR(64),titleSelectColor VARCHAR(64),btnColor VARCHAR(64))
+ in following column x and in column x of table t
+Detected: Clone Tables Found in following statement: create table test(x)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Multicolumn Attribute Found in following statement: create table test(i int, s str, f float, b bool, u unicode, foo foo, bin blob, n1 number, n2 number(5))
+
+Detected: Clone Tables Found in following statement: create table t2 (c1, c2)
+
+Detected: Clone Tables Found in following statement: create table test(x foo)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+TABLE_NAME+"(key TEXT PRIMARY KEY,value TEXT)
+ in following column value of table "+TABLE_NAME+"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [T_DownloadMgr] ([id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,[url] NVARCHAR(1024) NOT NULL,[header] NVARCHAR(4096) NOT NULL,[filePath] NVARCHAR(512) NOT NULL,[fileSize] REAL NOT NULL,[startTime] NVARCHAR(64) NOT NULL,[isFinished] INT DEFAULT (0) NOT NULL,[textTag] NVARCHAR(1024) DEFAULT NULL NOT NULL)
+ in following column [fileSize] of table [T_DownloadMgr]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Clone Tables Found in following statement: create table t1 (c1, c2)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS %Q.'%q_stat'" "(id INTEGER PRIMARY KEY, value BLOB)
+ in following column value and in column value of table "+TABLE_NAME+"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Duplicate Column Names Found in following statement: create table test(id integer primary key, name text)
+ in following column name and in column name of table ViewController
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Clone Tables Found in following statement: create table test( t text, i integer, f float, n, b blob )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Clone Tables Found in following statement: create table test(id integer primary key, name text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Clone Tables Found in following statement: create table test(i)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: create table test( t text, i integer, f float, n, b blob )
+ in following column t of table test
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ViewController( id INTEGER primary key autoincrement, name VARCHAR(64),typeID INTEGER,VCIndex INTEGER, tab_title VARCHAR(64), tab_badgeValue VARCHAR(64), tab_image VARCHAR(64), tab_selectImage VARCHAR(64), nav_titleImage VARCHAR(64), nav_leftButtons VARCHAR(64), nav_rightButtons VARCHAR(64),nav_lbtn_num INTEGER,nav_rbtn_num INTEGER,nav_title VARCHAR(64))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

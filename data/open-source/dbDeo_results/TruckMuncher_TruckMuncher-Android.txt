@@ -1,0 +1,45 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `tags` of table `menu_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `category` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `notes` TEXT, `order_in_menu` INTEGER, `truck_id` TEXT, FOREIGN KEY(`truck_id`) REFERENCES `truck_properties`(`id`))
+ in following column `id` of table `category`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `name` of table `truck_properties`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`category`', '`id`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `keywords` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `phone_number` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_state` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id` 	 TEXT UNIQUE, `is_serving` INTEGER DEFAULT 0, `matched_search` INTEGER DEFAULT 1, `latitude` REAL, `longitude` REAL, `is_dirty` INTEGER DEFAULT 0, `owned_by_current_user` INTEGER DEFAULT 0)
+ in following column `latitude` of table `truck_state`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `category` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `notes` TEXT, `order_in_menu` INTEGER, `truck_id` TEXT, FOREIGN KEY(`truck_id`) REFERENCES `truck_properties`(`id`))
+ in following column `truck_id` of table `category`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `category` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `notes` TEXT, `order_in_menu` INTEGER, `truck_id` TEXT, FOREIGN KEY(`truck_id`) REFERENCES `truck_properties`(`id`))
+ in following column `name` of table `category`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `color_secondary` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `id` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `category_id` of table `menu_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `price` of table `menu_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_state` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id` 	 TEXT UNIQUE, `is_serving` INTEGER DEFAULT 0, `matched_search` INTEGER DEFAULT 1, `latitude` REAL, `longitude` REAL, `is_dirty` INTEGER DEFAULT 0, `owned_by_current_user` INTEGER DEFAULT 0)
+ in following column `longitude` of table `truck_state`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `color_primary` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `category` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `notes` TEXT, `order_in_menu` INTEGER, `truck_id` TEXT, FOREIGN KEY(`truck_id`) REFERENCES `truck_properties`(`id`))
+ in following column `notes` of table `category`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `notes` of table `menu_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `description` of table `truck_properties`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`truck_properties`', '`id`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_state` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id` 	 TEXT UNIQUE, `is_serving` INTEGER DEFAULT 0, `matched_search` INTEGER DEFAULT 1, `latitude` REAL, `longitude` REAL, `is_dirty` INTEGER DEFAULT 0, `owned_by_current_user` INTEGER DEFAULT 0)
+ in following column `id` of table `truck_state`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `name` of table `menu_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `truck_properties` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT,	`id`	 TEXT UNIQUE,	`name`	 TEXT,	`image_url`	 TEXT,	`keywords`	 TEXT,	`color_primary`	 TEXT,	`color_secondary`	 TEXT,	`phone_number` TEXT,	`description` TEXT)
+ in following column `image_url` of table `truck_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `menu_item` ( `_id`	 INTEGER PRIMARY KEY AUTOINCREMENT, `id`	 TEXT UNIQUE, `name` TEXT, `price` REAL, `is_available` INTEGER, `notes` TEXT, `tags` TEXT, `order_in_category` INTEGER, `category_id` TEXT, `is_dirty` INTEGER DEFAULT 0, FOREIGN KEY(`category_id`) REFERENCES `category`(`id`))
+ in following column `id` of table `menu_item`

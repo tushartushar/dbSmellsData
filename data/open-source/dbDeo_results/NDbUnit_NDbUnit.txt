@@ -1,0 +1,37 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[User](	[ID] [int] IDENTITY(1,1) NOT NULL,	[FirstName] [varchar](50) NOT NULL,	[LastName] [varchar](50) NOT NULL,	[Age] [int] NULL,	[SupervisorID] [int] NULL, CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [Age] and in column [Age] of table [User]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[User](	[ID] [int] IDENTITY(1,1) NOT NULL,	[FirstName] [varchar](50) NOT NULL,	[LastName] [varchar](50) NOT NULL,	[Age] [int] NULL,	[SupervisorID] [int] NULL, CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [LastName] and in column [LastName] of table [User]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Role] (	[ID] [INTEGER] PRIMARY KEY AUTOINCREMENT,	[Name] [TEXT] NOT NULL,	[Description] [TEXT])
+ in following column [Name] of table [Role]
+Detected: Adjacency List Found in following statement: CREATE TABLE [User] (	[ID] [INTEGER] PRIMARY KEY AUTOINCREMENT,	[FirstName] TEXT NOT NULL,	[LastName] TEXT NOT NULL,	[Age] [INTEGER],	[SupervisorID] [INTEGER] REFERENCES [User]([ID]))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[User](	[ID] [int] IDENTITY(1,1) NOT NULL,	[FirstName] [varchar](50) NOT NULL,	[LastName] [varchar](50) NOT NULL,	[Age] [int] NULL,	[SupervisorID] [int] NULL, CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [FirstName] and in column [FirstName] of table [User]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[Role](	[ID] [int] IDENTITY(1,1) NOT NULL,	[Name] [varchar](50) NOT NULL,	[Description] [varchar](50) NULL, CONSTRAINT [PK_Role] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [Name] and in column [Name] of table [Role]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [User] (	[ID] [INTEGER] PRIMARY KEY AUTOINCREMENT,	[FirstName] TEXT NOT NULL,	[LastName] TEXT NOT NULL,	[Age] [INTEGER],	[SupervisorID] [INTEGER] REFERENCES [User]([ID]))
+ in following column [LastName] of table [User]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[User](	[ID] [int] IDENTITY(1,1) NOT NULL,	[FirstName] [varchar](50) NOT NULL,	[LastName] [varchar](50) NOT NULL,	[Age] [int] NULL,	[SupervisorID] [int] NULL, CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [SupervisorID] and in column [SupervisorID] of table [User]
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Role] (	[ID] [INTEGER] PRIMARY KEY AUTOINCREMENT,	[Name] [TEXT] NOT NULL,	[Description] [TEXT])
+ in following column [Description] of table [Role]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[UserRole](	[UserID] [int] NOT NULL,	[RoleID] [int] NOT NULL, CONSTRAINT [PK_UserRole] PRIMARY KEY CLUSTERED (	[UserID] ASC,	[RoleID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [RoleID] and in column [RoleID] of table [UserRole]
+Detected: Metadata as Data Found in following statement: CREATE TABLE `testdb`.`Role` ( `ID` bigint(20) NOT NULL auto_increment, `Name` varchar(45) default NULL, `Description` varchar(45) default NULL, PRIMARY KEY (`ID`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [OtherSchema].[Order](	[id] [int] IDENTITY(1,1) NOT NULL,	[OrderNumber] [int] NOT NULL,	[Description] [varchar](50) NOT NULL,	[ItemId] [int] NOT NULL, CONSTRAINT [PK_Order] PRIMARY KEY CLUSTERED (	[id] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column [Description] and in column [Description] of table [Role]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [User] (	[ID] [INTEGER] PRIMARY KEY AUTOINCREMENT,	[FirstName] TEXT NOT NULL,	[LastName] TEXT NOT NULL,	[Age] [INTEGER],	[SupervisorID] [INTEGER] REFERENCES [User]([ID]))
+ in following column [FirstName] of table [User]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[User](	[ID] [int] IDENTITY(1,1) NOT NULL,	[FirstName] [varchar](50) NOT NULL,	[LastName] [varchar](50) NOT NULL,	[Age] [int] NULL,	[SupervisorID] [int] NULL, CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED (	[ID] ASC)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY])
+ in following column . and in column . of table %

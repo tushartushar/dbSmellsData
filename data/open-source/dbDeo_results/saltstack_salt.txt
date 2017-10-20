@@ -1,0 +1,200 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column cmd of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}(id INTEGER PRIMARY KEY, '\ 'name TEXT UNIQUE)
+ in following column '\ ' of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.minions ( minion_id text PRIMARY KEY, last_fun text)
+ in following column . of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column fun of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, load text NOT NULL )
+ in following column load of table jids
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column arg of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column minion_id of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column username of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column ret of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.minions ( minion_id text PRIMARY KEY, last_fun text )
+ in following column . of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid TEXT PRIMARY KEY, load TEXT NOT NULL )
+ in following column jid of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column jid of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id BIGINT NOT NULL UNIQUE DEFAULT nextval('seq_salt_events_id'), tag varchar(255) NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT NOW(), master_id varchar(255) NOT NULL )
+ in following column data of table salt_events
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text )
+ in following column load and in column load of table dbo
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', 'fun']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column fun_args of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, load text NOT NULL)
+ in following column load of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `users` (`username` TEXT COLLATE NOCASE UNIQUE NOT NULL, `password` BLOB NOT NULL, `salt` BLOB NOT NULL, `last_login` INT)
+ in following column `username` of table `users`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag) )
+ in following column master_id of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun) )
+ in following column minion_id of table salt
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE salt_events ( id BIGINT NOT NULL UNIQUE DEFAULT nextval('seq_salt_events_id'), tag varchar(255) NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT NOW(), master_id varchar(255) NOT NULL )
+ in following column master_id and in column master_id of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.minions ( minion_id text PRIMARY KEY, last_fun text)
+ in following column last_fun of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_events` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `tag` varchar(255) NOT NULL, `data` mediumtext NOT NULL, `alter_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `master_id` varchar(255) NOT NULL, PRIMARY KEY (`id`), KEY `tag` (`tag`))
+ in following column `data` of table `salt_events`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text)
+ in following column . of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL)
+ in following column tag of table salt_events
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean)
+ in following column id and in column id of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column date of table salt_returns
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `salt_returns` ( `fun` varchar(50) NOT NULL, `jid` varchar(255) NOT NULL, `return` mediumtext NOT NULL, `id` varchar(255) NOT NULL, `success` varchar(10) NOT NULL, `full_ret` mediumtext NOT NULL, `alter_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, KEY `id` (`id`), KEY `jid` (`jid`), KEY `fun` (`fun`) )
+ in following column `id` and in column `id` of table `users`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_returns` ( `fun` varchar(50) NOT NULL, `jid` varchar(255) NOT NULL, `return` mediumtext NOT NULL, `id` varchar(255) NOT NULL, `success` varchar(10) NOT NULL, `full_ret` mediumtext NOT NULL, `alter_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, KEY `id` (`id`), KEY `jid` (`jid`), KEY `fun` (`fun`) )
+ in following column `full_ret` of table `salt_returns`
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt_events', 'tag']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `jids` ( `jid` varchar(255) NOT NULL, `load` mediumtext NOT NULL, UNIQUE KEY `jid` (`jid`))
+ in following column `load` of table `jids`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun) )
+ in following column . of table salt
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column jid and in column jid of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column username of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column return of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.minions ( minion_id text PRIMARY KEY, last_fun text )
+ in following column last_fun of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column id of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag))
+ in following column tag of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_returns` ( `fun` varchar(50) NOT NULL, `jid` varchar(255) NOT NULL, `return` mediumtext NOT NULL, `id` varchar(255) NOT NULL, `success` varchar(10) NOT NULL, `full_ret` mediumtext NOT NULL, `alter_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, KEY `id` (`id`), KEY `jid` (`jid`), KEY `fun` (`fun`))
+ in following column `full_ret` of table `salt_returns`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column tgt_type of table jids
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag) )
+ in following column data of table salt
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column fun and in column fun of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE advanced (a text, b text, c blob, d blob)
+ in following column b of table advanced
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_returns` ( `fun` varchar(50) NOT NULL, `jid` varchar(255) NOT NULL, `return` mediumtext NOT NULL, `id` varchar(255) NOT NULL, `success` varchar(10) NOT NULL, `full_ret` mediumtext NOT NULL, `alter_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, KEY `id` (`id`), KEY `jid` (`jid`), KEY `fun` (`fun`))
+ in following column `return` of table `salt_returns`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column tgt of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL )
+ in following column master_id of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL)
+ in following column master_id of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column fun of table salt
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column success and in column success of table salt_returns
+Detected: Metadata as Data Found in following statement: CREATE TABLE `users` ( `id` int(11) NOT NULL AUTO_INCREMENT, `username` varchar(25) DEFAULT NULL, `password` varchar(70) DEFAULT NULL, PRIMARY KEY (`id`) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag) )
+ in following column tag of table salt
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column full_ret and in column full_ret of table dbo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_returns` ( `fun` varchar(50) NOT NULL, `jid` varchar(255) NOT NULL, `return` mediumtext NOT NULL, `id` varchar(255) NOT NULL, `success` varchar(10) NOT NULL, `full_ret` mediumtext NOT NULL, `alter_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, KEY `id` (`id`), KEY `jid` (`jid`), KEY `fun` (`fun`) )
+ in following column `return` of table `salt_returns`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE advanced (a text, b text, c blob, d blob)
+ in following column a of table advanced
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE salt_events ( id BIGINT NOT NULL UNIQUE DEFAULT nextval('seq_salt_events_id'), tag varchar(255) NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT NOW(), master_id varchar(255) NOT NULL )
+ in following column tag and in column tag of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean )
+ in following column id of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(id INT, testdata TEXT)
+ in following column testdata of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column fun of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column tgt_type of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column ret of table jids
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', 'jid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun) )
+ in following column full_ret of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun varchar(50) NOT NULL, jid varchar(255) NOT NULL, return text NOT NULL, full_ret text, id varchar(255) NOT NULL, success varchar(10) NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now() )
+ in following column full_ret of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column kwargs of table jids
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt_returns', 'fun']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `salt_events` ( `id` BIGINT NOT NULL AUTO_INCREMENT, `tag` varchar(255) NOT NULL, `data` mediumtext NOT NULL, `alter_time` TIMESTAMP DEFAULT CURRENT_TIMESTAMP, `master_id` varchar(255) NOT NULL, PRIMARY KEY (`id`), KEY `tag` (`tag`) )
+ in following column `data` of table `salt_events`
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt_returns', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column full_ret of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column full_ret of table salt
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', 'added']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag))
+ in following column data of table salt
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt', 'salt_events']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun) )
+ in following column return of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean)
+ in following column fun of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL )
+ in following column cmd of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean)
+ in following column id of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text)
+ in following column load of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text )
+ in following column . of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_events ( id timeuuid, tag text, alter_time timestamp, data text, master_id text, PRIMARY KEY (id, tag))
+ in following column master_id of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun varchar(50) NOT NULL, jid varchar(255) NOT NULL, return text NOT NULL, full_ret text, id varchar(255) NOT NULL, success varchar(10) NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now())
+ in following column full_ret of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun varchar(50) NOT NULL, jid varchar(255) NOT NULL, return text NOT NULL, full_ret text, id varchar(255) NOT NULL, success varchar(10) NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now() )
+ in following column return of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL )
+ in following column data of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL)
+ in following column data of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column tgt of table jids
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text )
+ in following column . and in column . of table dbo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean )
+ in following column return of table salt_returns
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt_returns', 'jid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean )
+ in following column fun of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column success of table salt_returns
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbo', 'salt_returns']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun) )
+ in following column fun of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column arg of table jids
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean)
+ in following column jid and in column jid of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun varchar(50) NOT NULL, jid varchar(255) NOT NULL, return text NOT NULL, full_ret text, id varchar(255) NOT NULL, success varchar(10) NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now())
+ in following column return of table salt_returns
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt', 'tag']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.salt_returns ( jid text, minion_id text, fun text, alter_time timestamp, full_ret text, return text, success boolean, PRIMARY KEY (jid, minion_id, fun))
+ in following column . of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid TEXT PRIMARY KEY, load TEXT NOT NULL )
+ in following column load of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jids ( jid varchar(20) PRIMARY KEY, started TIMESTAMP WITH TIME ZONE DEFAULT now(), tgt_type text NOT NULL, cmd text NOT NULL, tgt text NOT NULL, kwargs text NOT NULL, ret text NOT NULL, username text NOT NULL, arg text NOT NULL, fun text NOT NULL)
+ in following column kwargs of table jids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS salt.jids ( jid text PRIMARY KEY, load text )
+ in following column load of table salt
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `jids` ( `jid` varchar(255) NOT NULL, `load` mediumtext NOT NULL, UNIQUE KEY `jid` (`jid`) )
+ in following column `load` of table `jids`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_events ( id SERIAL, tag text NOT NULL, data text NOT NULL, alter_time TIMESTAMP WITH TIME ZONE DEFAULT now(), master_id text NOT NULL )
+ in following column tag of table salt_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( added TIMESTAMP WITH TIME ZONE DEFAULT now(), fun text NOT NULL, jid varchar(20) NOT NULL, return text NOT NULL, id text NOT NULL, success boolean)
+ in following column return of table salt_returns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE salt_returns ( fun TEXT KEY, jid TEXT KEY, id TEXT KEY, fun_args TEXT, date TEXT NOT NULL, full_ret TEXT NOT NULL, success TEXT NOT NULL )
+ in following column fun of table salt_returns
+Detected: Index Shotgun Variant: 3 Following index not used : ['salt_returns', 'alter_time']

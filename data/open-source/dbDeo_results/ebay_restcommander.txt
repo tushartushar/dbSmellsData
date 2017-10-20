@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: create table play_evolutions (id int not null primary key, hash varchar(255) not null, applied_at timestamp not null, apply_script text, revert_script text, state varchar(255), last_problem text)
+ in following column last_problem of table play_evolutions
+Detected: Obsolete Column TypesFound in following statement: create table play_evolutions (id int not null primary key, hash varchar(255) not null, applied_at timestamp not null, apply_script text, revert_script text, state varchar(255), last_problem text)
+ in following column revert_script of table play_evolutions
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table play_evolutions (id int not null primary key, hash varchar(255) not null, applied_at timestamp not null, apply_script text, revert_script text, state varchar(255), last_problem text)
+ in following column apply_script of table play_evolutions

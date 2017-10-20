@@ -1,0 +1,76 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column origin of table Databases
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconInfo', 'iconID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS test(id integer primary key, name text, data blob, flag boolean)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column path of table Databases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Origins (origin TEXT UNIQUE ON CONFLICT REPLACE, quota INTEGER NOT NULL ON CONFLICT FAIL)
+ in following column origin of table Origins
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE array_test (id integer primary key, data2 blob, data3 integer, data4 integer, data5 integer, data6 integer, data7 integer, data8 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PageURL (url TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,iconID INTEGER NOT NULL ON CONFLICT FAIL)
+ in following column url of table PageURL
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE querylist_test (id INTEGER, name TEXT, data VARBINARY(MAX))
+ in following column name of table querylist_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE querylist_test (id INTEGER, name TEXT, data BLOB)
+ in following column name and in column name of table odbc_speed_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE array_test (id integer primary key, data2 blob, data3 integer, data4 integer, data5 integer, data6 integer, data7 integer, data8 integer)
+ in following column data3 and in column data3 of table binary_array_test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE binary_array_test (id integer primary key, data1 blob, data2 blob, data3 blob)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column name of table Databases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column displayName of table Databases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dictionary_data(library_id integer, entry_name text, entry_type text, entry_data blob)
+ in following column entry_name of table dictionary_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconInfo', 'url']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE libraries(library_id integer primary key, library_name text, author text, type text)
+ in following column author of table libraries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ItemTable (key TEXT UNIQUE ON CONFLICT REPLACE, value TEXT NOT NULL ON CONFLICT FAIL)
+ in following column value of table ItemTable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS test (id integer primary key, name text, data blob, flag boolean)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IconDatabaseInfo (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL)
+ in following column value of table IconDatabaseInfo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (data text)
+ in following column data of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS CacheGroups (id INTEGER PRIMARY KEY AUTOINCREMENT, manifestHostHash INTEGER NOT NULL ON CONFLICT FAIL, manifestURL TEXT UNIQUE ON CONFLICT FAIL, newestCache INTEGER)
+ in following column manifestURL of table CacheGroups
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE querylist_test (id INTEGER, name TEXT, data BLOB)
+ in following column data and in column data of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS test (id integer primary key, name text, data blob, flag integer)
+ in following column name of table test
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE libraries SET author = :1, type = :2  WHERE library_name = :3
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (id integer primary key, name text, data bytea, flag boolean)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE libraries(library_id integer primary key, library_name text, author text, type text)
+ in following column type of table libraries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE libraries(library_id integer primary key, library_name text, author text, type text)
+ in following column library_name of table libraries
+Detected: Index Shotgun Variant: 3 Following index not used : ['PageURL', 'url']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(id integer primary key, name text, data bytea, flag boolean)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IconInfo (iconID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE ON CONFLICT REPLACE, url TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT FAIL, stamp INTEGER)
+ in following column url of table IconInfo
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconData', 'iconID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE querylist_test (id INTEGER, name TEXT, data BLOB)
+ in following column name of table querylist_test
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE test SET id = :2, name = :3, data = :1, flag = :2  WHERE id = 1
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(id INTEGER NOT NULL, name TEXT(50), data OLEOBJECT, flag TINYINT)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dictionary_data(library_id integer, entry_name text, entry_type text, entry_data blob)
+ in following column entry_type of table dictionary_data
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE test SET name=:1, data=:2, flag=:3  WHERE id=1
+

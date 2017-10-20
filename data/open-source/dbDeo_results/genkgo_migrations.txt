@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {$this->table} (id INTEGER PRIMARY KEY ASC, name TEXT, migration TEXT, direction INTEGER, migrated_on TEXT)
+ in following column migrated_on of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {$this->table} (id INTEGER PRIMARY KEY ASC, name TEXT, migration TEXT, direction INTEGER, migrated_on TEXT)
+ in following column migration of table {
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {$this->table} (id INTEGER PRIMARY KEY ASC, name TEXT, migration TEXT, direction INTEGER, migrated_on TEXT)
+ in following column name of table {

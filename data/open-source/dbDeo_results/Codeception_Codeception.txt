@@ -1,0 +1,5 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE `table_with_reserved_primary_key` ( `unique` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `status` varchar(255) NOT NULL, PRIMARY KEY (`unique`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `order` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `status` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Index Shotgun Variant: 1

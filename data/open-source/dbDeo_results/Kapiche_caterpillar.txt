@@ -1,0 +1,13 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['plugin_registry', 'cascade']
+Detected: Obsolete Column TypesFound in following statement: create table plugin_data ( plugin_id integer, key text, value text, primary key(plugin_id, key) on conflict replace, foreign key(plugin_id) references plugin_registry(plugin_id) on delete cascade)
+ in following column value of table plugin_data
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['plugin_registry', 'plugin_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['plugin_registry', 'on']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE \"{}\" (key VARCHAR PRIMARY KEY, value TEXT NOT NULL)
+ in following column value of table \
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table plugin_registry ( plugin_type text, settings text, plugin_id integer primary key, constraint unique_plugin unique (plugin_type, settings) on conflict replace)
+ in following column plugin_type of table plugin_registry
+Detected: Obsolete Column TypesFound in following statement: create table plugin_registry ( plugin_type text, settings text, plugin_id integer primary key, constraint unique_plugin unique (plugin_type, settings) on conflict replace)
+ in following column settings of table plugin_registry
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['plugin_registry', 'delete']

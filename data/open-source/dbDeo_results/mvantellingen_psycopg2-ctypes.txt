@@ -1,0 +1,21 @@
+Detected: Clone Tables Found in following statement: create table table1 (id int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_tpc (data text)
+ in following column data of table test_tpc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int PRIMARY KEY, name text)
+ in following column name of table table1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1 ( id int PRIMARY KEY, name text)
+ in following column name and in column name of table %s
+Detected: Duplicate Column Names Found in following statement: create table withhold (data int)
+ in following column data and in column data of table test_tpc
+Detected: Clone Tables Found in following statement: create table ctest1 ( id integer primary key, temp int, label varchar )
+
+Detected: Duplicate Column Names Found in following statement: create table ctest1 ( id integer primary key, temp int, label varchar )
+ in following column id and in column id of table table1
+Detected: Clone Tables Found in following statement: create table ctest2 ( id serial primary key, label varchar, test_id integer references ctest1(id) )
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 ( id int PRIMARY KEY, name text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table2 (id int PRIMARY KEY)
+

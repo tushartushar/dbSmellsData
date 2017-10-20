@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS [__QUEUE__{0}] (Data TEXT)
+ in following column Data of table [__QUEUE__{0}]
+Detected: Index Shotgun Variant: 1

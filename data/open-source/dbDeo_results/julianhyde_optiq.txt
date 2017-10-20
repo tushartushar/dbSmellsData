@@ -1,0 +1,7 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ARR_TABLE2 VALUES (1, ARRAY[1,2,3], ARRAY['x','y'])
+
+Detected: Metadata as Data Found in following statement: create table emp(ename varchar(10), deptno int, gender varchar(1))
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ARR_TABLE VALUES (1, ARRAY[1,2,3])
+
+Detected: Index Shotgun Variant: 1

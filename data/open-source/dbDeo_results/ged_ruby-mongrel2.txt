@@ -1,0 +1,71 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mimetype (id INTEGER PRIMARY KEY, mimetype TEXT, extension TEXT)
+ in following column mimetype of table mimetype
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE route (id INTEGER PRIMARY KEY, path TEXT, reversed BOOLEAN DEFAULT 0, host_id INTEGER, target_id INTEGER, target_type TEXT)
+ in following column path of table route
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE handler (id INTEGER PRIMARY KEY, send_spec TEXT, send_ident TEXT, recv_spec TEXT, recv_ident TEXT, raw_payload INTEGER DEFAULT 0, protocol TEXT DEFAULT 'json')
+ in following column send_spec of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE handler (id INTEGER PRIMARY KEY, send_spec TEXT, send_ident TEXT, recv_spec TEXT, recv_ident TEXT, raw_payload INTEGER DEFAULT 0, protocol TEXT DEFAULT 'json')
+ in following column recv_ident of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE host (id INTEGER PRIMARY KEY, server_id INTEGER, maintenance BOOLEAN DEFAULT 0, name TEXT, matching TEXT)
+ in following column matching of table (
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column sd of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS log(id INTEGER PRIMARY KEY, who TEXT, what TEXT, location TEXT, happened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, how TEXT, why TEXT)
+ in following column what of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE directory (id INTEGER PRIMARY KEY, base TEXT, index_file TEXT, default_ctype TEXT, cache_ttl INTEGER DEFAULT 0)
+ in following column index_file of table directory
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS log(id INTEGER PRIMARY KEY, who TEXT, what TEXT, location TEXT, happened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, how TEXT, why TEXT)
+ in following column how of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE filter (id INTEGER PRIMARY KEY, server_id INTEGER, name TEXT, settings TEXT)
+ in following column name of table filter
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS log(id INTEGER PRIMARY KEY, who TEXT, what TEXT, location TEXT, happened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, how TEXT, why TEXT)
+ in following column location of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column mean of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE setting (id INTEGER PRIMARY KEY, key TEXT, value TEXT)
+ in following column value of table setting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mimetype (id INTEGER PRIMARY KEY, mimetype TEXT, extension TEXT)
+ in following column extension of table mimetype
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column sumsq of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE xrequest (id INTEGER PRIMARY KEY, server_id INTEGER, name TEXT, settings TEXT)
+ in following column settings of table xrequest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE proxy (id INTEGER PRIMARY KEY, addr TEXT, port INTEGER)
+ in following column addr of table proxy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE route (id INTEGER PRIMARY KEY, path TEXT, reversed BOOLEAN DEFAULT 0, host_id INTEGER, target_id INTEGER, target_type TEXT)
+ in following column target_type of table route
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column max of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE directory (id INTEGER PRIMARY KEY, base TEXT, index_file TEXT, default_ctype TEXT, cache_ttl INTEGER DEFAULT 0)
+ in following column default_ctype of table directory
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS log(id INTEGER PRIMARY KEY, who TEXT, what TEXT, location TEXT, happened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, how TEXT, why TEXT)
+ in following column who of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column sum of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE handler (id INTEGER PRIMARY KEY, send_spec TEXT, send_ident TEXT, recv_spec TEXT, recv_ident TEXT, raw_payload INTEGER DEFAULT 0, protocol TEXT DEFAULT 'json')
+ in following column send_ident of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column name of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE filter (id INTEGER PRIMARY KEY, server_id INTEGER, name TEXT, settings TEXT)
+ in following column settings of table filter
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS log(id INTEGER PRIMARY KEY, who TEXT, what TEXT, location TEXT, happened_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, how TEXT, why TEXT)
+ in following column why of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE handler (id INTEGER PRIMARY KEY, send_spec TEXT, send_ident TEXT, recv_spec TEXT, recv_ident TEXT, raw_payload INTEGER DEFAULT 0, protocol TEXT DEFAULT 'json')
+ in following column recv_spec of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE xrequest (id INTEGER PRIMARY KEY, server_id INTEGER, name TEXT, settings TEXT)
+ in following column name of table xrequest
+Detected: God Table Found in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE directory (id INTEGER PRIMARY KEY, base TEXT, index_file TEXT, default_ctype TEXT, cache_ttl INTEGER DEFAULT 0)
+ in following column base of table directory
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column other_type of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistic (id SERIAL, other_type TEXT, other_id INTEGER, name TEXT, sum REAL, sumsq REAL, n INTEGER, min REAL, max REAL, mean REAL, sd REAL, primary key (other_type, other_id, name))
+ in following column min of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE handler (id INTEGER PRIMARY KEY, send_spec TEXT, send_ident TEXT, recv_spec TEXT, recv_ident TEXT, raw_payload INTEGER DEFAULT 0, protocol TEXT DEFAULT 'json')
+ in following column protocol of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE route (id INTEGER PRIMARY KEY, path TEXT, reversed BOOLEAN DEFAULT 0, host_id INTEGER, target_id INTEGER, target_type TEXT)
+ in following column id and in column id of table statistic
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE host (id INTEGER PRIMARY KEY, server_id INTEGER, maintenance BOOLEAN DEFAULT 0, name TEXT, matching TEXT)
+ in following column name of table (

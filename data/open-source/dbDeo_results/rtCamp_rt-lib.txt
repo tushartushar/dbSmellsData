@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {$wpdb->prefix}taxonomymeta (			meta_id bigint(20) unsigned NOT NULL auto_increment,			taxonomy_id bigint(20) unsigned NOT NULL default '0',			meta_key varchar(255) default NULL,			meta_value longtext,			PRIMARY KEY	(meta_id),			KEY taxonomy_id (taxonomy_id),			KEY meta_key (meta_key)		)
+ in following column meta_value of table {
+Detected: Index Shotgun Variant: 1

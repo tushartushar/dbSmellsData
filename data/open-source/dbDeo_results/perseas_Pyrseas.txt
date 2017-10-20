@@ -1,0 +1,334 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER PRIMARY KEY, c2 TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL PRIMARY KEY, c2 TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT)
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE product ( product_id SERIAL PRIMARY KEY , product_code text NOT NULL UNIQUE CHECK(product_code = upper(product_code)) , product_description text )
+ in following column product_code of table product
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 CHAR(5), c3 TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER PRIMARY KEY, c2 TEXT)
+ in following column c2 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c11 INTEGER, c12 INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, PRIMARY KEY (c1))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL PRIMARY KEY, c2 TEXT)
+ in following column c2 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (pc1 INTEGER PRIMARY KEY, pc2 TEXT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date, c4 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c21 integer PRIMARY KEY, c22 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER UNIQUE, c2 TEXT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, PRIMARY KEY (c1))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c21 integer, c22 text, c23 integer)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment ( payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL, customer_id smallint NOT NULL, staff_id smallint NOT NULL, rental_id integer NOT NULL, amount numeric(5,2) NOT NULL, payment_date timestamp without time zone NOT NULL)
+ in following column staff_id and in column staff_id of table staff
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE customer ( customer_id integer DEFAULT nextval('customer_customer_id_seq'::regclass) NOT NULL, store_id smallint NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, email character varying(50), address_id smallint NOT NULL, activebool boolean DEFAULT true NOT NULL, create_date date DEFAULT ('now'::text)::date NOT NULL, last_update timestamp without time zone DEFAULT now(), active integer)
+ in following column active and in column active of table staff
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t3 (c1 integer, c2 text)
+ in following column c2 of table t3
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE store ( store_id integer DEFAULT nextval('store_store_id_seq'::regclass) NOT NULL, manager_staff_id smallint NOT NULL, address_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column address_id and in column address_id of table address
+Detected: Index Shotgun Variant: 3 Following index not used : ['mv1', 'mc3']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text COLLATE c1)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer PRIMARY KEY, c2 text)
+ in following column c2 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c3 integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['warehouse', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t3 (qc1 CHAR(5) PRIMARY KEY, qc2 text)
+ in following column qc2 of table t3
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL UNIQUE, c2 TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 CHAR(5), c3 TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t3 (c1 integer, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c1 integer, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t3 (c1 integer, c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 ( c1 integer NOT NULL, c2 smallint, c3 boolean DEFAULT false, c4 text)
+ in following column c4 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column title and in column title of table arv
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text UNIQUE)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 INTEGER PRIMARY KEY)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE s1.t1 (c1 integer, c2 text, c3 date)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date)
+ in following column c2 of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', "'x'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 text)
+ in following column c2 of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE genre ( genre_id INTEGER PRIMARY KEY, name VARCHAR(25) NOT NULL)
+ in following column name and in column name of table category
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text COLLATE c1)
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date, c4 text)
+ in following column c4 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL, address character varying(50) NOT NULL, address2 character varying(50), district character varying(20) NOT NULL, city_id smallint NOT NULL, postal_code character varying(10), phone character varying(20) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date, c4 text)
+ in following column c2 of table t1
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_05 (CONSTRAINT payment_p2007_05_payment_date_check CHECK (((payment_date >= '2007-05-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-06-01 00:00:00'::timestamp without time zone))))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, UNIQUE (c1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 CHAR(5), c3 tsvector)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER UNIQUE, c2 TEXT)
+ in following column c2 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (pc1 integer PRIMARY KEY, pc2 text)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE warehouse ( warehouse_id SERIAL PRIMARY KEY , warehouse_code text NOT NULL UNIQUE CHECK(warehouse_code = upper(warehouse_code)) , warehouse_manager text NOT NULL , warehouse_supervisor text UNIQUE , warehouse_description text , CHECK (upper(warehouse_manager) != upper(warehouse_supervisor)) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE store ( store_id SERIAL PRIMARY KEY , store_code text NOT NULL UNIQUE CHECK(store_code = upper(store_code)) , store_description text )
+ in following column store_code of table store
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c2 INTEGER, c1 INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t3 (qc1 CHAR(5) PRIMARY KEY, qc2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text UNIQUE)
+ in following column c2 of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column film_id and in column film_id of table film_category
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE s1.t1 (c1 integer, c2 text, c3 date)
+ in following column c2 of table s1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 boolean default true)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'NULLS']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer UNIQUE, c2 text)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_04 (CONSTRAINT payment_p2007_04_payment_date_check CHECK (((payment_date >= '2007-04-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-05-01 00:00:00'::timestamp without time zone))))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE city ( city_id integer DEFAULT nextval('city_city_id_seq'::regclass) NOT NULL, city character varying(50) NOT NULL, country_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column country_id and in column country_id of table country
+Detected: Values in Column Definition Found in following statement: CREATE TABLE product ( product_id SERIAL PRIMARY KEY , product_code text NOT NULL UNIQUE CHECK(product_code = upper(product_code)) , product_description text )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, PRIMARY KEY (c1))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'lower']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'substring']
+Detected: Clone Tables Found in following statement: CREATE TABLE t3 (c4 date)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (pc1 integer PRIMARY KEY, pc2 text)
+ in following column pc2 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, UNIQUE (c1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE arv (id integer PRIMARY KEY, name text NOT NULL)
+ in following column name of table arv
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 integer)
+ in following column c1 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c1 INTEGER, c3 TEXT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer UNIQUE, c2 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'btrim']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL UNIQUE, c2 TEXT)
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER, c2 CHAR(5), c3 TEXT)
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t3 (c4 text)
+ in following column c4 of table t3
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date, c4 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE store ( store_id SERIAL PRIMARY KEY , store_code text NOT NULL UNIQUE CHECK(store_code = upper(store_code)) , store_description text )
+ in following column store_description of table store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (c21 integer, c22 text, c23 integer)
+ in following column c22 of table t2
+Detected: Values in Column Definition Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 SMALLINT CHECK (c2 < 1000))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL PRIMARY KEY, c2 TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (c2 text)
+ in following column c2 of table t2
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c21 integer, c22 text, c23 integer)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c3 date)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER UNIQUE, c2 TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 cidr, c2 text)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_02 (CONSTRAINT payment_p2007_02_payment_date_check CHECK (((payment_date >= '2007-02-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-03-01 00:00:00'::timestamp without time zone))))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 text, c2 integer)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_03 (CONSTRAINT payment_p2007_03_payment_date_check CHECK (((payment_date >= '2007-03-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-04-01 00:00:00'::timestamp without time zone))))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c1 INTEGER, c3 TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'cidr_ops']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t2 (c3 numeric)
+ in following column c3 and in column c3 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 SMALLINT CHECK (c2 < 1000))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, c3 INTEGER)
+ in following column c2 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 text, c2 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 cidr, c2 text)
+ in following column c2 of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t3 (c1 integer, c2 text)
+ in following column c1 and in column c1 of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE s1.t1 (c1 INTEGER, c2 TEXT)
+ in following column c2 of table s1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE s1.t1 (c1 integer, c2 text)
+ in following column c2 of table s1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE warehouse ( warehouse_id SERIAL PRIMARY KEY , warehouse_code text NOT NULL UNIQUE CHECK(warehouse_code = upper(warehouse_code)) , warehouse_manager text NOT NULL , warehouse_supervisor text UNIQUE , warehouse_description text , CHECK (upper(warehouse_manager) != upper(warehouse_supervisor)) )
+ in following column warehouse_manager of table warehouse
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE actor ( actor_id integer DEFAULT nextval('actor_actor_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column actor_id and in column actor_id of table film_actor
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 text UNIQUE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c11 INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE warehouse ( warehouse_id SERIAL PRIMARY KEY , warehouse_code text NOT NULL UNIQUE CHECK(warehouse_code = upper(warehouse_code)) , warehouse_manager text NOT NULL , warehouse_supervisor text UNIQUE , warehouse_description text , CHECK (upper(warehouse_manager) != upper(warehouse_supervisor)) )
+ in following column warehouse_code of table warehouse
+Detected: God Table Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_category ( film_id smallint NOT NULL, category_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column category_id and in column category_id of table category
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c1 integer, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c11 integer, c12 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (pc1 INTEGER PRIMARY KEY, pc2 TEXT)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE film ( id INTEGER NOT NULL PRIMARY KEY, title VARCHAR(32) NOT NULL, release_year INTEGER NOT NULL CHECK (release_year >= 1888))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE s1.t2 ( c21 integer NOT NULL, c22 character varying(16))
+ in following column c22 and in column c22 of table t2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column description of table film
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE warehouse ( warehouse_id SERIAL PRIMARY KEY , warehouse_code text NOT NULL UNIQUE CHECK(warehouse_code = upper(warehouse_code)) , warehouse_manager text NOT NULL , warehouse_supervisor text UNIQUE , warehouse_description text , CHECK (upper(warehouse_manager) != upper(warehouse_supervisor)) )
+ in following column warehouse_supervisor of table warehouse
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c2 INTEGER, c1 INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer PRIMARY KEY, c2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c11 integer, c12 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', '||']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c2']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (c1 INTEGER, c3 TEXT)
+ in following column c3 of table t2
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_01 (CONSTRAINT payment_p2007_01_payment_date_check CHECK (((payment_date >= '2007-01-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-02-01 00:00:00'::timestamp without time zone))))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 ( c1 integer NOT NULL, c2 smallint, c3 boolean DEFAULT false, c4 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 ( c1 integer NOT NULL, c2 smallint, c3 boolean DEFAULT false, c4 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (pc1 INTEGER PRIMARY KEY, pc2 TEXT)
+ in following column pc2 of table t2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE s1.t1 (c1 INTEGER, c2 TEXT)
+ in following column c2 and in column c2 of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['warehouse', 'inventory']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, UNIQUE (c1))
+ in following column c2 of table t1
+Detected: Values in Column Definition Found in following statement: CREATE TABLE store ( store_id SERIAL PRIMARY KEY , store_code text NOT NULL UNIQUE CHECK(store_code = upper(store_code)) , store_description text )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (pc1 integer PRIMARY KEY, pc2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c3 numeric)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, c3 INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c21 integer PRIMARY KEY, c22 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE warehouse ( warehouse_id SERIAL PRIMARY KEY , warehouse_code text NOT NULL UNIQUE CHECK(warehouse_code = upper(warehouse_code)) , warehouse_manager text NOT NULL , warehouse_supervisor text UNIQUE , warehouse_description text , CHECK (upper(warehouse_manager) != upper(warehouse_supervisor)) )
+ in following column warehouse_description of table warehouse
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (c1 integer, c2 text)
+ in following column c2 of table t2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment ( payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL, customer_id smallint NOT NULL, staff_id smallint NOT NULL, rental_id integer NOT NULL, amount numeric(5,2) NOT NULL, payment_date timestamp without time zone NOT NULL)
+ in following column customer_id and in column customer_id of table customer
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 integer, c2 boolean default true)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c21 INTEGER PRIMARY KEY, c22 INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE product ( product_id SERIAL PRIMARY KEY , product_code text NOT NULL UNIQUE CHECK(product_code = upper(product_code)) , product_description text )
+ in following column product_description of table product
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t3 (qc1 CHAR(5) PRIMARY KEY, qc2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c11 integer, c12 text)
+ in following column c12 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (c21 integer PRIMARY KEY, c22 text)
+ in following column c22 of table t2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column language_id and in column language_id of table (
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (%s)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 text)
+ in following column c3 of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c21 INTEGER PRIMARY KEY, c22 INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 INTEGER PRIMARY KEY)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 CHAR(5), c3 tsvector)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['warehouse', 'quantity']
+Detected: Clone Tables Found in following statement: CREATE TABLE t3 (c4 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 SMALLINT CHECK (c2 < 1000))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE arv (a_id integer PRIMARY KEY, title text NOT NULL)
+ in following column title of table arv
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', "', '"]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE store ( store_id integer DEFAULT nextval('store_store_id_seq'::regclass) NOT NULL, manager_staff_id smallint NOT NULL, address_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column store_id and in column store_id of table customer
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer UNIQUE, c2 text)
+ in following column c2 of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1 (c1 integer, c2 text, c3 date, c4 text)
+ in following column c4 and in column c4 of table t3
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c3']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER PRIMARY KEY, c2 TEXT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE address ( address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL, address character varying(50) NOT NULL, address2 character varying(50), district character varying(20) NOT NULL, city_id smallint NOT NULL, postal_code character varying(10), phone character varying(20) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column city_id and in column city_id of table city
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 integer, c2 text)
+ in following column c2 of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'extract']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_06 (CONSTRAINT payment_p2007_06_payment_date_check CHECK (((payment_date >= '2007-06-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-07-01 00:00:00'::timestamp without time zone))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column special_features of table film
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 INTEGER, c2 TEXT, c3 INTEGER)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer, c2 text COLLATE c1)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 integer PRIMARY KEY, c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c11 INTEGER, c12 INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 INTEGER NOT NULL UNIQUE, c2 TEXT)
+

@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tags (tag varchar(3) UNIQUE PRIMARY KEY, has_param int, description text)
+ in following column description of table tags
+Detected: Index Shotgun Variant: 1

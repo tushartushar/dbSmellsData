@@ -1,0 +1,23 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE xi_filelib_folder (id INT NOT NULL, parent_id INT DEFAULT NULL, uuid VARCHAR(36) NOT NULL, data JSON NOT NULL, foldername VARCHAR(255) NOT NULL, folderurl VARCHAR(5000) NOT NULL, PRIMARY KEY(id))
+ in following column id and in column id of table xi_filelib_file
+Detected: Adjacency List Found in following statement: CREATE TABLE xi_filelib_folder (id INTEGER NOT NULL, parent_id INTEGER DEFAULT NULL, uuid VARCHAR(36) NOT NULL, data CLOB NOT NULL, foldername VARCHAR(255) NOT NULL, folderurl CLOB NOT NULL, PRIMARY KEY(id), CONSTRAINT FK_A5EA9E8B727ACA70 FOREIGN KEY (parent_id) REFERENCES xi_filelib_folder (id) NOT DEFERRABLE INITIALLY IMMEDIATE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['xi_filelib_folder', 'ON']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE xi_filelib_resource (id INT AUTO_INCREMENT NOT NULL, uuid VARCHAR(36) NOT NULL, data LONGTEXT NOT NULL COMMENT '(DC2Type:json_array)', hash VARCHAR(255) NOT NULL, mimetype VARCHAR(255) NOT NULL, filesize INT NOT NULL, exclusive TINYINT(1) NOT NULL, date_created DATETIME NOT NULL, UNIQUE INDEX UNIQ_74D9533AD17F50A6 (uuid), PRIMARY KEY(id))
+ in following column date_created and in column date_created of table xi_filelib_file
+Detected: Index Shotgun Variant: 3 Following index not used : ['xi_filelib_folder', 'parent_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['xi_filelib_folder', 'UPDATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['xi_filelib_file', 'folder_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['xi_filelib_folder', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE xi_filelib_resource (id INT NOT NULL, hash VARCHAR(255) NOT NULL, mimetype VARCHAR(255) NOT NULL, filesize INT NOT NULL, exclusive BOOLEAN NOT NULL, date_created TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, versions TEXT NOT NULL, PRIMARY KEY(id))
+ in following column versions of table xi_filelib_resource
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['xi_filelib_folder', 'CASCADE']
+Detected: God Table Found in following statement: CREATE TABLE xi_filelib_file (id INTEGER NOT NULL, folder_id INTEGER NOT NULL, resource_id INTEGER NOT NULL, uuid VARCHAR(36) NOT NULL, data CLOB NOT NULL, fileprofile VARCHAR(255) NOT NULL, filename VARCHAR(255) NOT NULL, date_created DATETIME NOT NULL, status INTEGER NOT NULL, PRIMARY KEY(id), CONSTRAINT FK_E8606524162CB942 FOREIGN KEY (folder_id) REFERENCES xi_filelib_folder (id) NOT DEFERRABLE INITIALLY IMMEDIATE, CONSTRAINT FK_E860652489329D25 FOREIGN KEY (resource_id) REFERENCES xi_filelib_resource (id) NOT DEFERRABLE INITIALLY IMMEDIATE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['xi_filelib_folder', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE xi_filelib_folder (id INT AUTO_INCREMENT NOT NULL, parent_id INT DEFAULT NULL, uuid VARCHAR(36) NOT NULL, data LONGTEXT NOT NULL COMMENT '(DC2Type:json_array)', foldername VARCHAR(255) NOT NULL, folderurl VARCHAR(5000) NOT NULL, UNIQUE INDEX UNIQ_A5EA9E8BD17F50A6 (uuid), INDEX IDX_A5EA9E8B727ACA70 (parent_id), PRIMARY KEY(id))
+ in following column data and in column data of table xi_filelib_file
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE xi_filelib_file (id INTEGER NOT NULL, folder_id INTEGER NOT NULL, resource_id INTEGER NOT NULL, uuid VARCHAR(36) NOT NULL, data CLOB NOT NULL, fileprofile VARCHAR(255) NOT NULL, filename VARCHAR(255) NOT NULL, date_created DATETIME NOT NULL, status INTEGER NOT NULL, PRIMARY KEY(id), CONSTRAINT FK_E8606524162CB942 FOREIGN KEY (folder_id) REFERENCES xi_filelib_folder (id) NOT DEFERRABLE INITIALLY IMMEDIATE, CONSTRAINT FK_E860652489329D25 FOREIGN KEY (resource_id) REFERENCES xi_filelib_resource (id) NOT DEFERRABLE INITIALLY IMMEDIATE)
+ in following column date_created and in column date_created of table xi_filelib_resource
+Detected: Adjacency List Found in following statement: CREATE TABLE xi_filelib_folder(id integer PRIMARY KEY AUTOINCREMENT,parent_id integer NULL,foldername varchar(255) NOT NULL,folderurl varchar(5000) NOT NULL,UNIQUE (parent_id, foldername),UNIQUE(folderurl),FOREIGN KEY(parent_id) REFERENCES xi_filelib_folder (id) ON DELETE CASCADE ON UPDATE CASCADE)
+

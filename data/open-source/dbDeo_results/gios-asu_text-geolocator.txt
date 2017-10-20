@@ -1,0 +1,11 @@
+Detected: God Table Found in following statement: CREATE TABLE raw_country_info (	ISO varchar,	ISO3 varchar,	ISONumeric varchar,	fips varchar,	country varchar,	capital varchar,	area varchar,	population varchar,	continent varchar,	tld varchar,	currencycode varchar,	currencyname varchar,	phone varchar,	postalcodeformat varchar,	postalcoderegex varchar,	languages varchar,	geonameid varchar,	neighbours varchar,	equivalentfipscode varchar)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE raw_feature_codes (	code varchar,	name varchar,	description varchar)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE raw_locations (	geonameid varchar,	name varchar,	asciiname varchar,	alternamtename varchar,	latitude varchar,	longitude varchar,	featureclass varchar,	featurecode varchar,	countrycode varchar,	cc2 varchar,	admin1code varchar,	admin2code varchar,	admin3code varchar,	admin4code varchar,	population varchar,	elevation varchar,	dem varchar,	timezone varchar,	modificationdate varchar)
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE raw_country_info (	ISO varchar,	ISO3 varchar,	ISONumeric varchar,	fips varchar,	country varchar,	capital varchar,	area varchar,	population varchar,	continent varchar,	tld varchar,	currencycode varchar,	currencyname varchar,	phone varchar,	postalcodeformat varchar,	postalcoderegex varchar,	languages varchar,	geonameid varchar,	neighbours varchar,	equivalentfipscode varchar)
+
+Detected: God Table Found in following statement: CREATE TABLE raw_locations (	geonameid varchar,	name varchar,	asciiname varchar,	alternamtename varchar,	latitude varchar,	longitude varchar,	featureclass varchar,	featurecode varchar,	countrycode varchar,	cc2 varchar,	admin1code varchar,	admin2code varchar,	admin3code varchar,	admin4code varchar,	population varchar,	elevation varchar,	dem varchar,	timezone varchar,	modificationdate varchar)
+

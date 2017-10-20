@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [surnouns] ( [noun_id] [INTEGER(8)] NOT NULL, [noun] TEXT, CONSTRAINT [sqlite_autoindex_surnouns_1] PRIMARY KEY ([noun_id]))
+ in following column [noun] of table [surnouns]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [surverbs] ( [verb_id] [INTEGER(8)] NOT NULL, [verb] TEXT, CONSTRAINT [sqlite_autoindex_surverbs_1] PRIMARY KEY ([verb_id]))
+ in following column [verb] of table [surverbs]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [suradjs] ( [adj_id] [INTEGER(8)] NOT NULL, [adjective] TEXT, CONSTRAINT [sqlite_autoindex_suradjs_1] PRIMARY KEY ([adj_id]))
+ in following column [adjective] of table [suradjs]
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,9 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id STRING HASH KEY)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE posts (username STRING HASH KEY, > postid NUMBER RANGE KEY, > ts NUMBER INDEX('ts-index'), > THROUGHPUT (5, 5))
+ in following column > and in column > of table forum_threads
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foobars (id STRING HASH KEY, foo BINARY RANGE KEY, THROUGHPUT (1, 1))
+ in following column id and in column id of table foobar
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foobars (id STRING HASH KEY, foo BINARY RANGE KEY, THROUGHPUT (1, 1))
+ in following column foo and in column foo of table foobar

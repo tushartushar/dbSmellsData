@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ztest_schema1."order" ( id serial primary key, order_number text, amount ztest_schema1.monetary_amount, address ztest_schema1.address_type default null, address_type ztest_schema1.address_type)
+ in following column order_number of table ztest_schema1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE address ( a_id serial PRIMARY KEY, a_customer_id integer NOT NULL, a_street text, a_number text)
+ in following column a_number of table address
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ztest_schema1.basic_table ( bt_id serial primary key, bt_key text, bt_value text )
+ in following column bt_value of table ztest_schema1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE address ( a_id serial PRIMARY KEY, a_customer_id integer NOT NULL, a_street text, a_number text)
+ in following column a_street of table address
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tmp.test_time(lt timestamp without time zone, gt timestamp with time zone, zone text)
+ in following column zone of table tmp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ztest_schema1."order" ( id serial primary key, order_number text, amount ztest_schema1.monetary_amount, address ztest_schema1.address_type default null, address_type ztest_schema1.address_type)
+ in following column . and in column . of table tmp
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ztest_schema1.basic_table ( bt_id serial primary key, bt_key text, bt_value text )
+ in following column bt_key of table ztest_schema1

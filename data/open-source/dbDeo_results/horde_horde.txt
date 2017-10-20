@@ -1,0 +1,94 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_indexes', 'fileid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['syncml_map', 'syncml_cuid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE syncml_data( * syncml_id VARCHAR(255), * syncml_db VARCHAR(255), * syncml_uid VARCHAR(255), * syncml_data TEXT, * syncml_contenttype VARCHAR(255), * syncml_created_ts INTEGER, * syncml_modified_ts INTEGER * )
+ in following column * of table syncml_data
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ulaform_fields SET form_id = ?, field_name = ?, field_label = ?, field_type = ?, field_params = ?, field_required = ?, field_readonly = ?, field_desc = ?, field_order = ?  WHERE field_id = ?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS folks_testimonials ( profile_uid VARCHAR(32) NOT NULL, user_uid VARCHAR(32) NOT NULL, testimonial text NOT NULL, PRIMARY KEY (profile_uid,user_uid))
+ in following column testimonial of table folks_testimonials
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE alias ( * alias VARCHAR(255) NOT NULL DEFAULT '', * dest LONGTEXT, * username VARCHAR(50) NOT NULL DEFAULT '', * status INT(11) NOT NULL DEFAULT '1', * PRIMARY KEY (alias) * )
+ in following column * and in column * of table horde_locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `clotho_calendars` ( `calendar_id` int(11) NOT NULL AUTO_INCREMENT, `calendar_name` varchar(128) NOT NULL, `calendar_hoursinday` int(11) NOT NULL, `calendar_hoursinweek` int(11) NOT NULL, `calendar_type` varchar(32) NOT NULL, `calendar_data` text NOT NULL, PRIMARY KEY (`calendar_id`))
+ in following column `calendar_data` of table `clotho_calendars`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `blogs` ( `ID` int(11) NOT NULL auto_increment, `link` varchar(255) NOT NULL default '', `title` varchar(255) NOT NULL default '', `description` tinytext, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `author` varchar(100) NOT NULL default '', `dontshowblogtitle` tinyint(4) NOT NULL default '1', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`))
+ in following column `description` and in column `description` of table `menus`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual ( * alias VARCHAR(255) NOT NULL DEFAULT '', * dest LONGTEXT, * username VARCHAR(50) NOT NULL DEFAULT '', * status INT(11) NOT NULL DEFAULT '1', * KEY alias (alias) * )
+ in following column * of table virtual
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_files', 'filename']
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_usage', 'fileid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['syncml_map', 'syncml_syncpartner']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `blogs` ( `ID` int(11) NOT NULL auto_increment, `link` varchar(255) NOT NULL default '', `title` varchar(255) NOT NULL default '', `description` tinytext, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `author` varchar(100) NOT NULL default '', `dontshowblogtitle` tinyint(4) NOT NULL default '1', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`))
+ in following column `title` and in column `title` of table `entries`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE hylax_fax_attributes ( fax_id VARCHAR(255) NOT NULL default '', attribute_name VARCHAR(255) NOT NULL default '', attribute_key VARCHAR(255) NOT NULL default '', attribute_value TEXT)
+ in following column fax_id and in column fax_id of table hylax_faxes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE horde_cache ( * cache_id VARCHAR(32) NOT NULL, * cache_timestamp BIGINT NOT NULL, * cache_data LONGBLOB, * (Or on PostgreSQL:) * cache_data TEXT, * (Or on some other DBMS systems:) * cache_data IMAGE, * * PRIMARY KEY (cache_id) * )
+ in following column * of table horde_cache
+Detected: Index Shotgun Variant: 3 Following index not used : ['syncml_map', 'syncml_uid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['hylax_fax_attributes', 'attribute_key']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `entries` ( `ID` int(11) NOT NULL default '0', `feedsID` int(11) NOT NULL default '0', `title` tinytext, `link` tinytext NOT NULL, `guid` varchar(255) NOT NULL, `description` text, `dc_date` datetime default '0000-00-00 00:00:00', `dc_creator` varchar(100) default NULL, `content_encoded` text, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `md5` varchar(32) NOT NULL default '', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`(250)), KEY `rss_feed_ID` (`feedsID`), FULLTEXT KEY `search` (`description`,`content_encoded`,`title`))
+ in following column `title` of table `entries`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `entries` ( `ID` int(11) NOT NULL default '0', `feedsID` int(11) NOT NULL default '0', `title` tinytext, `link` tinytext NOT NULL, `guid` varchar(255) NOT NULL, `description` text, `dc_date` datetime default '0000-00-00 00:00:00', `dc_creator` varchar(100) default NULL, `content_encoded` text, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `md5` varchar(32) NOT NULL default '', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`(250)), KEY `rss_feed_ID` (`feedsID`), FULLTEXT KEY `search` (`description`,`content_encoded`,`title`))
+ in following column `content_encoded` of table `entries`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255), favorite_id INTEGER, phone VARCHAR(20), created VARCHAR(10), updated VARCHAR(10))
+ in following column id and in column id of table people
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `blogs` ( `ID` int(11) NOT NULL auto_increment, `link` varchar(255) NOT NULL default '', `title` varchar(255) NOT NULL default '', `description` tinytext, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `author` varchar(100) NOT NULL default '', `dontshowblogtitle` tinyint(4) NOT NULL default '1', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`))
+ in following column `description` of table `blogs`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE folks_shares_users ( share_id INT(10) UNSIGNED NOT NULL, user_uid VARCHAR(32) NOT NULL, perm SMALLINT(5) UNSIGNED NOT NULL, KEY share_id (share_id), KEY user_uid (user_uid), KEY perm (perm))
+ in following column perm and in column perm of table folks_shares_groups
+Detected: Index Shotgun Variant: 3 Following index not used : ['hylax_fax_attributes', 'attribute_name']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255), favorite_id INTEGER, phone VARCHAR(20), created VARCHAR(10), updated VARCHAR(10))
+ in following column name and in column name of table people
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE log ( * id INT(11) NOT NULL AUTO_INCREMENT, * msg TEXT NOT NULL, * user VARCHAR(255) NOT NULL DEFAULT '', * host VARCHAR(255) NOT NULL DEFAULT '', * time DATETIME NOT NULL DEFAULT '2000-00-00 00:00:00', * pid VARCHAR(255) NOT NULL DEFAULT '', * PRIMARY KEY (id) * )
+ in following column * of table log
+Detected: Index Shotgun Variant: 3 Following index not used : ['horde_sessionhandler', 'session_lastmodified']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE people ( id int(11) unsigned NOT NULL AUTO_INCREMENT, name text, company_id text, PRIMARY KEY (id) )
+ in following column company_id of table people
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'code']
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `folks_friends` ( `user_uid` VARCHAR(32) NOT NULL, `friend_uid` VARCHAR(32) NOT NULL, `friend_ask` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`user_uid`, `friend_uid`), KEY `friend_ask` (`friend_ask`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `entries` ( `ID` int(11) NOT NULL default '0', `feedsID` int(11) NOT NULL default '0', `title` tinytext, `link` tinytext NOT NULL, `guid` varchar(255) NOT NULL, `description` text, `dc_date` datetime default '0000-00-00 00:00:00', `dc_creator` varchar(100) default NULL, `content_encoded` text, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `md5` varchar(32) NOT NULL default '', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`(250)), KEY `rss_feed_ID` (`feedsID`), FULLTEXT KEY `search` (`description`,`content_encoded`,`title`))
+ in following column `description` of table `entries`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE swoosh_gateways SET gateway_id = ?, gateway_driver = ?, gateway_name = ?, gateway_params = ?, gateway_sendparams = ?  WHERE gateway_id = ?
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS folks_views ( user_uid VARCHAR(32) NOT NULL, view_uid VARCHAR(32) NOT NULL, view_time INT(10) UNSIGNED NOT NULL, PRIMARY KEY (view_uid, user_uid))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `blogs` ( `ID` int(11) NOT NULL auto_increment, `link` varchar(255) NOT NULL default '', `title` varchar(255) NOT NULL default '', `description` tinytext, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `author` varchar(100) NOT NULL default '', `dontshowblogtitle` tinyint(4) NOT NULL default '1', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`))
+ in following column `link` and in column `link` of table `entries`
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'a']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE jonah_stories SET story_id = ?, channel_id = ?, story_author = ?, story_title = ?, story_desc = ?, story_body_type = ?, story_body = ?, story_url = ?, story_published = ?, story_updated = ?, story_read = ?  WHERE story_id = ?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_indexes', 'symid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jonah_stories', 'story_published']
+Detected: Metadata as Data Found in following statement: CREATE TABLE `exp_actions` ( `action_id` int(4) unsigned NOT NULL auto_increment, `class` varchar(50) NOT NULL, `method` varchar(50) NOT NULL, PRIMARY KEY (`action_id`))
+
+Detected: God Table Found in following statement: CREATE TABLE `entries` ( `ID` int(11) NOT NULL default '0', `feedsID` int(11) NOT NULL default '0', `title` tinytext, `link` tinytext NOT NULL, `guid` varchar(255) NOT NULL, `description` text, `dc_date` datetime default '0000-00-00 00:00:00', `dc_creator` varchar(100) default NULL, `content_encoded` text, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `md5` varchar(32) NOT NULL default '', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`(250)), KEY `rss_feed_ID` (`feedsID`), FULLTEXT KEY `search` (`description`,`content_encoded`,`title`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'Creating']
+Detected: Index Shotgun Variant: 3 Following index not used : ['syncml_map', 'syncml_suid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jonah_stories', 'story_url']
+Detected: Index Shotgun Variant: 3 Following index not used : ['syncml_map', 'syncml_db']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `entries` ( `ID` int(11) NOT NULL default '0', `feedsID` int(11) NOT NULL default '0', `title` tinytext, `link` tinytext NOT NULL, `guid` varchar(255) NOT NULL, `description` text, `dc_date` datetime default '0000-00-00 00:00:00', `dc_creator` varchar(100) default NULL, `content_encoded` text, `changed` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP, `md5` varchar(32) NOT NULL default '', PRIMARY KEY (`ID`), UNIQUE KEY `link` (`link`(250)), KEY `rss_feed_ID` (`feedsID`), FULLTEXT KEY `search` (`description`,`content_encoded`,`title`))
+ in following column `link` of table `entries`
+Detected: Metadata as Data Found in following statement: CREATE TABLE luxor_symbols ( symid INT NOT NULL, symname VARCHAR(255) DEFAULT '' NOT NULL, source VARCHAR(255) DEFAULT '' NOT NULL, PRIMARY KEY (symid))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_files', 'tag']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE folks_search ( user_uid VARCHAR(32) NOT NULL, search_name VARCHAR(32) NOT NULL, search_criteria text NOT NULL, KEY user_uid (user_uid))
+ in following column search_criteria of table folks_search
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE kronolith_events SET event_start = ?, event_end = ?, event_recurenddate = ?, event_exceptionoriginaldate = ?  WHERE event_id = ?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['hylax_fax_attributes', 'fax_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE `exp_actions` ( `action_id` int(4) unsigned NOT NULL auto_increment, `class` varchar(50) NOT NULL, `method` varchar(50) NOT NULL, PRIMARY KEY (`action_id`) )
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ulaform_forms SET user_uid = ?, form_name = ?, form_action = ?, form_params = ?, form_onsubmit = ?  WHERE form_id = ?
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS folks_testimonials ( profile_uid VARCHAR(32) NOT NULL, user_uid VARCHAR(32) NOT NULL, testimonial text NOT NULL, PRIMARY KEY (profile_uid,user_uid))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE folks_search ( user_uid VARCHAR(32) NOT NULL, search_name VARCHAR(32) NOT NULL, search_criteria text NOT NULL, KEY user_uid (user_uid))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_indexes', 'declid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE hylax_fax_attributes ( fax_id VARCHAR(255) NOT NULL default '', attribute_name VARCHAR(255) NOT NULL default '', attribute_key VARCHAR(255) NOT NULL default '', attribute_value TEXT)
+ in following column attribute_value of table hylax_fax_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE people ( id int(11) unsigned NOT NULL AUTO_INCREMENT, name text, company_id text, PRIMARY KEY (id) )
+ in following column name of table people
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['luxor_usage', 'symid']

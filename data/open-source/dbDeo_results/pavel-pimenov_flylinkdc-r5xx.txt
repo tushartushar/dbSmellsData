@@ -1,0 +1,103 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS userinfo (nick VARCHAR(64) NOT NULL,last_updated DATETIME NOT NULL,ip_address VARCHAR(39) NOT NULL,share VARCHAR(24) NOT NULL,description VARCHAR(192),tag VARCHAR(192),connection VARCHAR(32),email VARCHAR(96),UNIQUE (nick COLLATE NOCASE))
+ in following column nick and in column nick of table fly_ignore
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_location_ip_lost(ip text PRIMARY KEY not null,is_send_fly_server integer)
+ in following column . of table location_db
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stat_db.fly_statistic(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,stat_value_json text not null,stat_time int64, flush_time int64, type text)
+ in following column stat_value_json of table stat_db
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (key blob, value blob, PRIMARY KEY(key))
+ in following column value and in column value of table write_test
+Detected: Obsolete Column TypesFound in following statement: create table IF NOT EXISTS media_db.fly_server_cache(tth char(24) PRIMARY KEY NOT NULL, fly_audio text,fly_audio_br text,fly_video text,fly_xy text)
+ in following column fly_xy of table media_db
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_country_ip(start_ip integer not null,stop_ip integer not null,country text,flag_index integer)
+ in following column country of table location_db
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_p2pguard_ip(start_ip integer not null,stop_ip integer not null,note text,type integer)
+ in following column note of table location_db
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_location_ip(start_ip integer not null,stop_ip integer not null,location text,flag_index integer)
+ in following column location of table location_db
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: create table IF NOT EXISTS media_db.fly_server_cache(tth char(24) PRIMARY KEY NOT NULL, fly_audio text,fly_audio_br text,fly_video text,fly_xy text)
+ in following column fly_audio_br of table media_db
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fly_registry(segment integer not null, key text not null,val_str text, val_number int64,tick_count int not null)
+ in following column val_str of table fly_registry
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fly_recent(Name text PRIMARY KEY NOT NULL,Description text, Users int,Shared int64,Server text)
+ in following column Server of table fly_recent
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fly_ignore(nick text PRIMARY KEY NOT NULL)
+ in following column nick of table fly_ignore
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fly_recent(Name text PRIMARY KEY NOT NULL,Description text, Users int,Shared int64,Server text)
+ in following column Description of table fly_recent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update fly_queue set  Target=?, Size=?, Priority=?, Sections=?, Added=?, TTH=?, TempTarget=?, AutoPriority=?, MaxSegments=?  where id=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: create table IF NOT EXISTS media_db.fly_server_cache(tth char(24) PRIMARY KEY NOT NULL, fly_audio text,fly_audio_br text,fly_video text,fly_xy text)
+ in following column fly_video of table media_db
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_p2pguard_ip(start_ip integer not null,stop_ip integer not null,note text,type integer)
+ in following column type and in column type of table stat_db
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS location_db.fly_country_ip(start_ip integer not null,stop_ip integer not null,country text,flag_index integer)
+ in following column . and in column . of table media_db
+Detected: Obsolete Column TypesFound in following statement: create table IF NOT EXISTS media_db.fly_server_cache(tth char(24) PRIMARY KEY NOT NULL, fly_audio text,fly_audio_br text,fly_video text,fly_xy text)
+ in following column fly_audio of table media_db
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stat_db.fly_statistic(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,stat_value_json text not null,stat_time int64, flush_time int64, type text)
+ in following column type of table stat_db
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fly_recent(Name text PRIMARY KEY NOT NULL,Description text, Users int,Shared int64,Server text)
+ in following column Name of table fly_recent
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

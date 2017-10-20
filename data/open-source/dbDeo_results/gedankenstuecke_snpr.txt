@@ -1,0 +1,94 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pgp_annotations ( id integer NOT NULL, gene text, qualified_impact text, inheritance text, summary text, trait text, created_at timestamp without time zone, updated_at timestamp without time zone, snp_id integer)
+ in following column summary of table pgp_annotations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mendeley_papers ( id integer NOT NULL, first_author text, title text, mendeley_url text, doi text, pub_year integer, uuid character varying(255), open_access boolean, reader integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column doi of table mendeley_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column pubmed_link of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column trait of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE active_admin_comments ( id integer NOT NULL, resource_id character varying(255) NOT NULL, resource_type character varying(255) NOT NULL, author_id integer, author_type character varying(255), body text, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, namespace character varying(255))
+ in following column body of table active_admin_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE file_links ( id integer NOT NULL, description text, url text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column url of table file_links
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column title and in column title of table phenotype_sets
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE active_admin_comments ( id integer NOT NULL, resource_id character varying(255) NOT NULL, resource_type character varying(255) NOT NULL, author_id integer, author_type character varying(255), body text, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, namespace character varying(255))
+ in following column body and in column body of table fitbit_profiles
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE snpedia_papers ( id integer NOT NULL, url character varying(255), summary text, created_at timestamp without time zone, updated_at timestamp without time zone, revision integer DEFAULT 0)
+ in following column url and in column url of table file_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column pvalue_description of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pgp_annotations ( id integer NOT NULL, gene text, qualified_impact text, inheritance text, summary text, trait text, created_at timestamp without time zone, updated_at timestamp without time zone, snp_id integer)
+ in following column trait of table pgp_annotations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE phenotype_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, phenotype_id integer, reply_to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column subject of table phenotype_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE picture_phenotypes ( id integer NOT NULL, characteristic character varying(255), description text, number_of_users integer DEFAULT 0, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column description of table picture_phenotypes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE plos_papers ( id integer NOT NULL, first_author text, title text, doi text, pub_date timestamp without time zone, created_at timestamp without time zone, updated_at timestamp without time zone, reader integer)
+ in following column title of table plos_papers
+Detected: God Table Found in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mendeley_papers ( id integer NOT NULL, first_author text, title text, mendeley_url text, doi text, pub_year integer, uuid character varying(255), open_access boolean, reader integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column first_author of table mendeley_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mendeley_papers ( id integer NOT NULL, first_author text, title text, mendeley_url text, doi text, pub_year integer, uuid character varying(255), open_access boolean, reader integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column title of table mendeley_papers
+Detected: God Table Found in following statement: CREATE TABLE fitbit_profiles ( id integer NOT NULL, fitbit_user_id character varying(255), user_id integer, request_token character varying(255), request_secret character varying(255), access_token character varying(255), access_secret character varying(255), verifier character varying(255), body boolean DEFAULT true, activities boolean DEFAULT true, sleep boolean DEFAULT true, created_at timestamp without time zone, updated_at timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE plos_papers ( id integer NOT NULL, first_author text, title text, doi text, pub_date timestamp without time zone, created_at timestamp without time zone, updated_at timestamp without time zone, reader integer)
+ in following column doi of table plos_papers
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column pub_date and in column pub_date of table plos_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE snpedia_papers ( id integer NOT NULL, url character varying(255), summary text, created_at timestamp without time zone, updated_at timestamp without time zone, revision integer DEFAULT 0)
+ in following column summary of table snpedia_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id integer NOT NULL, subject text, user_id integer, body text, sent boolean, user_has_seen boolean, from_id integer, to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column body of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE homepages ( id integer NOT NULL, url text, description text, created_at timestamp without time zone, updated_at timestamp without time zone, user_id integer)
+ in following column description of table homepages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE phenotype_sets ( id integer NOT NULL, user_id integer, title character varying(255), description text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column description of table phenotype_sets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE phenotypes ( id integer NOT NULL, characteristic character varying(255), known_phenotypes text, number_of_users integer DEFAULT 0, created_at timestamp without time zone, updated_at timestamp without time zone, description text)
+ in following column known_phenotypes of table phenotypes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column first_author of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pgp_annotations ( id integer NOT NULL, gene text, qualified_impact text, inheritance text, summary text, trait text, created_at timestamp without time zone, updated_at timestamp without time zone, snp_id integer)
+ in following column inheritance of table pgp_annotations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pgp_annotations ( id integer NOT NULL, gene text, qualified_impact text, inheritance text, summary text, trait text, created_at timestamp without time zone, updated_at timestamp without time zone, snp_id integer)
+ in following column gene of table pgp_annotations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE achievements ( id integer NOT NULL, award text, short_name character varying(255), created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column award of table achievements
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE picture_phenotype_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, picture_phenotype_id integer, reply_to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column comment_text of table picture_phenotype_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column title of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mendeley_papers ( id integer NOT NULL, first_author text, title text, mendeley_url text, doi text, pub_year integer, uuid character varying(255), open_access boolean, reader integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column mendeley_url of table mendeley_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( id integer NOT NULL, subject text, user_id integer, body text, sent boolean, user_has_seen boolean, from_id integer, to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column subject of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE plos_papers ( id integer NOT NULL, first_author text, title text, doi text, pub_date timestamp without time zone, created_at timestamp without time zone, updated_at timestamp without time zone, reader integer)
+ in following column first_author of table plos_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column journal of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE phenotype_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, phenotype_id integer, reply_to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column comment_text of table phenotype_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pgp_annotations ( id integer NOT NULL, gene text, qualified_impact text, inheritance text, summary text, trait text, created_at timestamp without time zone, updated_at timestamp without time zone, snp_id integer)
+ in following column qualified_impact of table pgp_annotations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE phenotypes ( id integer NOT NULL, characteristic character varying(255), known_phenotypes text, number_of_users integer DEFAULT 0, created_at timestamp without time zone, updated_at timestamp without time zone, description text)
+ in following column description of table phenotypes
+Detected: God Table Found in following statement: CREATE TABLE admin_users ( id integer NOT NULL, email character varying(255) DEFAULT ''::character varying NOT NULL, encrypted_password character varying(255) DEFAULT ''::character varying NOT NULL, reset_password_token character varying(255), reset_password_sent_at timestamp without time zone, remember_created_at timestamp without time zone, sign_in_count integer DEFAULT 0, current_sign_in_at timestamp without time zone, last_sign_in_at timestamp without time zone, current_sign_in_ip character varying(255), last_sign_in_ip character varying(255), created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE file_links ( id integer NOT NULL, description text, url text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column description of table file_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column confidence_interval of table genome_gov_papers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE snp_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, snp_id integer, created_at timestamp without time zone, updated_at timestamp without time zone, reply_to_id integer)
+ in following column comment_text of table snp_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE snp_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, snp_id integer, created_at timestamp without time zone, updated_at timestamp without time zone, reply_to_id integer)
+ in following column subject of table snp_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE picture_phenotype_comments ( id integer NOT NULL, comment_text text, subject text, user_id integer, picture_phenotype_id integer, reply_to_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column subject of table picture_phenotype_comments
+Detected: God Table Found in following statement: CREATE TABLE mendeley_papers ( id integer NOT NULL, first_author text, title text, mendeley_url text, doi text, pub_year integer, uuid character varying(255), open_access boolean, reader integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE homepages ( id integer NOT NULL, url text, description text, created_at timestamp without time zone, updated_at timestamp without time zone, user_id integer)
+ in following column url of table homepages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genome_gov_papers ( id integer NOT NULL, first_author text, title text, pubmed_link text, pub_date text, journal text, trait text, pvalue double precision, pvalue_description text, confidence_interval text, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column pub_date of table genome_gov_papers

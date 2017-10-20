@@ -1,0 +1,51 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['PLAYER', 'guid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['player', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column updated of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column address of table ban
+Detected: Index Shotgun Variant: 3 Following index not used : ['ban', 'guid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column map of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column address of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column length of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column mail of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column expires of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column duration of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['ban', 'address']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column name of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column reason of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE etl_version (Id INT PRIMARY KEY NOT NULL, name TEXT, sql TEXT, created TEXT)
+ in following column sql of table etl_version
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column guid of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column updated of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column guid of table player
+Detected: Index Shotgun Variant: 3 Following index not used : ['player', 'guid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column password of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column created of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column user of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE etl_version (Id INT PRIMARY KEY NOT NULL, name TEXT, sql TEXT, created TEXT)
+ in following column name of table etl_version
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban (Id INT PRIMARY KEY NOT NULL, address TEXT, guid TEXT, type INT NOT NULL, reason TEXT, af INT, length TEXT, expires TEXT, created TEXT, updated TEXT)
+ in following column length of table ban
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column created of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE player (Id INT PRIMARY KEY NOT NULL, name TEXT, guid TEXT, user TEXT, password TEXT, mail TEXT, bans INT, mutes INT, created TEXT, updated TEXT)
+ in following column created of table player
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE etl_version (Id INT PRIMARY KEY NOT NULL, name TEXT, sql TEXT, created TEXT)
+ in following column created of table etl_version
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE session (Id INT PRIMARY KEY NOT NULL, pId INT , address TEXT, port INT, type INT, duration TEXT, map TEXT, length TEXT, created TEXT, updated TEXT, FOREIGN KEY(pId) REFERENCES player(Id))
+ in following column updated of table (

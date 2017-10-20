@@ -1,0 +1,11 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE student2 ( id SERIAL PRIMARY KEY, name VARCHAR(20) NOT NULL UNIQUE, age SMALLINT DEFAULT NULL, email VARCHAR(64) DEFAULT NULL, aboutme TEXT, birthday TIMESTAMP NOT NULL, isnew BOOLEAN DEFAULT '0', brief VARCHAR(50))
+ in following column id and in column id of table abc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student ( id SERIAL PRIMARY KEY, name VARCHAR(20) NOT NULL UNIQUE, age SMALLINT DEFAULT NULL, email VARCHAR(64) DEFAULT NULL, aboutme TEXT, birthday TIMESTAMP NOT NULL, isnew BOOLEAN DEFAULT '0')
+ in following column aboutme of table student
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE student2 ( id SERIAL PRIMARY KEY, name VARCHAR(20) NOT NULL UNIQUE, age SMALLINT DEFAULT NULL, email VARCHAR(64) DEFAULT NULL, aboutme TEXT, birthday TIMESTAMP NOT NULL, isnew BOOLEAN DEFAULT '0', brief VARCHAR(50))
+ in following column aboutme of table student2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE student2 ( id SERIAL PRIMARY KEY, name VARCHAR(20) NOT NULL UNIQUE, age SMALLINT DEFAULT NULL, email VARCHAR(64) DEFAULT NULL, aboutme TEXT, birthday TIMESTAMP NOT NULL, isnew BOOLEAN DEFAULT '0', brief VARCHAR(50))
+ in following column age and in column age of table t_person
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE student ( id SERIAL PRIMARY KEY, name VARCHAR(20) NOT NULL UNIQUE, age SMALLINT DEFAULT NULL, email VARCHAR(64) DEFAULT NULL, aboutme TEXT, birthday TIMESTAMP NOT NULL, isnew BOOLEAN DEFAULT '0')
+

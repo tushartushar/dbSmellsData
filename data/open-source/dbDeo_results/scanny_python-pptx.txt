@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types ( id integer, prst text, const_name text, base_name text, ms_name text, desc text)
+ in following column base_name of table auto_shape_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types ( id integer, prst text, const_name text, base_name text, ms_name text, desc text)
+ in following column desc of table auto_shape_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types (\n' ' id integer,\n' ' prst text,\n' ' const_name text,\n' ' base_name text,\n' ' ms_name text,\n' ' desc text\n' ')
+ in following column \ of table auto_shape_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types ( id integer, prst text, const_name text, base_name text, ms_name text, desc text)
+ in following column const_name of table auto_shape_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types ( id integer, prst text, const_name text, base_name text, ms_name text, desc text)
+ in following column ms_name of table auto_shape_types
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adjustment_values ( prst text, seq_nmbr integer, name text, val integer)
+ in following column prst of table adjustment_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adjustment_values ( prst text, seq_nmbr integer, name text, val integer)
+ in following column name of table adjustment_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_shape_types ( id integer, prst text, const_name text, base_name text, ms_name text, desc text)
+ in following column prst of table auto_shape_types

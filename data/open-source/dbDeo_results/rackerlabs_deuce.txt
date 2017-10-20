@@ -1,0 +1,93 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid TEXT, size INT, finalized BOOLEAN, PRIMARY KEY(projectid, vaultid, fileid))
+ in following column vaultid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, blocksize INT, offset INT, PRIMARY KEY(projectid, vaultid, fileid, offset))
+ in following column vaultid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, blocksize INT, offset BIGINT, PRIMARY KEY((projectid, vaultid, fileid), offset))
+ in following column projectid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, blocksize INT, offset BIGINT, PRIMARY KEY((projectid, vaultid, fileid), offset))
+ in following column blockid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults( projectid TEXT, vaultid TEXT, PRIMARY KEY(projectid, vaultid))
+ in following column projectid of table vaults
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, blockid TEXT NOT NULL, offset INTEGER NOT NULL, UNIQUE (projectid, vaultid, fileid, blockid, offset) )
+ in following column fileid of table fileblocks
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, blocksize INT, offset INT, PRIMARY KEY(projectid, vaultid, fileid, offset))
+ in following column projectid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column blockid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, PRIMARY KEY(projectid, vaultid) )
+ in following column vaultid of table vaults
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, finalized INTEGER NOT NULL DEFAULT 0, size INTEGER DEFAULT 0, PRIMARY KEY(projectid, vaultid, fileid) )
+ in following column projectid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, blockid TEXT NOT NULL, offset INTEGER NOT NULL, UNIQUE (projectid, vaultid, fileid, blockid, offset) )
+ in following column vaultid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, blockid TEXT NOT NULL, storageid TEXT NOT NULL, size INTEGER NOT NULL, reftime DATETIME NOT NULL, isinvalid BOOLEAN NOT NULL DEFAULT 0, PRIMARY KEY(projectid, vaultid, blockid) )
+ in following column projectid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, blockid TEXT NOT NULL, offset INTEGER NOT NULL, UNIQUE (projectid, vaultid, fileid, blockid, offset) )
+ in following column projectid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid UUID, size BIGINT, finalized BOOLEAN, PRIMARY KEY((projectid, vaultid), fileid))
+ in following column projectid of table files
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid UUID, size BIGINT, finalized BOOLEAN, PRIMARY KEY((projectid, vaultid), fileid))
+ in following column size and in column size of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT, vaultid TEXT, blockid TEXT, storageid TEXT, blocksize INT, reftime DATETIME, isinvalid BOOLEAN, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column storageid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults ( projectid TEXT, vaultid TEXT, PRIMARY KEY(projectid, vaultid))
+ in following column vaultid of table vaults
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, blockid TEXT NOT NULL, storageid TEXT NOT NULL, size INTEGER NOT NULL, reftime DATETIME NOT NULL, isinvalid BOOLEAN NOT NULL DEFAULT 0, PRIMARY KEY(projectid, vaultid, blockid) )
+ in following column storageid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column projectid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockreferences ( projectid TEXT, vaultid TEXT, blockid TEXT, refcount INTEGER, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column projectid of table blockreferences
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid UUID, size BIGINT, finalized BOOLEAN, PRIMARY KEY((projectid, vaultid), fileid))
+ in following column fileid and in column fileid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT, vaultid TEXT, blockid TEXT, storageid TEXT, blocksize INT, reftime DATETIME, isinvalid BOOLEAN, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column vaultid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockreferences ( projectid TEXT, vaultid TEXT, blockid TEXT, refcount INTEGER, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column blockid of table blockreferences
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, blockid TEXT NOT NULL, storageid TEXT NOT NULL, size INTEGER NOT NULL, reftime DATETIME NOT NULL, isinvalid BOOLEAN NOT NULL DEFAULT 0, PRIMARY KEY(projectid, vaultid, blockid) )
+ in following column blockid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, blocksize INT, offset BIGINT, PRIMARY KEY((projectid, vaultid, fileid), offset))
+ in following column vaultid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid UUID, size BIGINT, finalized BOOLEAN, PRIMARY KEY((projectid, vaultid), fileid))
+ in following column vaultid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column vaultid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, finalized INTEGER NOT NULL DEFAULT 0, size INTEGER DEFAULT 0, PRIMARY KEY(projectid, vaultid, fileid) )
+ in following column fileid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, PRIMARY KEY(projectid, vaultid, fileid, blockid))
+ in following column vaultid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid TEXT, size INT, finalized BOOLEAN, PRIMARY KEY(projectid, vaultid, fileid))
+ in following column fileid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, PRIMARY KEY(projectid, vaultid) )
+ in following column projectid of table vaults
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, PRIMARY KEY(projectid, vaultid, fileid, blockid))
+ in following column projectid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, PRIMARY KEY(projectid, vaultid, fileid, blockid))
+ in following column blockid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT, vaultid TEXT, blockid TEXT, storageid TEXT, blocksize INT, reftime DATETIME, isinvalid BOOLEAN, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column blockid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, blocksize INT, offset INT, PRIMARY KEY(projectid, vaultid, fileid, offset))
+ in following column fileid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults ( projectid TEXT, vaultid TEXT, PRIMARY KEY(projectid, vaultid))
+ in following column projectid of table vaults
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, PRIMARY KEY(projectid, vaultid, fileid, blockid))
+ in following column fileid of table blockfiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, blockid TEXT NOT NULL, offset INTEGER NOT NULL, UNIQUE (projectid, vaultid, fileid, blockid, offset) )
+ in following column blockid of table fileblocks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE blockfiles ( projectid TEXT, vaultid TEXT, fileid UUID, blockid TEXT, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column fileid and in column fileid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fileblocks ( projectid TEXT, vaultid TEXT, fileid TEXT, blockid TEXT, blocksize INT, offset INT, PRIMARY KEY(projectid, vaultid, fileid, offset))
+ in following column blockid of table fileblocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT, vaultid TEXT, fileid TEXT, size INT, finalized BOOLEAN, PRIMARY KEY(projectid, vaultid, fileid))
+ in following column projectid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, blockid TEXT NOT NULL, storageid TEXT NOT NULL, size INTEGER NOT NULL, reftime DATETIME NOT NULL, isinvalid BOOLEAN NOT NULL DEFAULT 0, PRIMARY KEY(projectid, vaultid, blockid) )
+ in following column vaultid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blocks ( projectid TEXT, vaultid TEXT, blockid TEXT, storageid TEXT, blocksize INT, reftime DATETIME, isinvalid BOOLEAN, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column projectid of table blocks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( projectid TEXT NOT NULL, vaultid TEXT NOT NULL, fileid TEXT NOT NULL, finalized INTEGER NOT NULL DEFAULT 0, size INTEGER DEFAULT 0, PRIMARY KEY(projectid, vaultid, fileid) )
+ in following column vaultid of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blockreferences ( projectid TEXT, vaultid TEXT, blockid TEXT, refcount INTEGER, PRIMARY KEY(projectid, vaultid, blockid))
+ in following column vaultid of table blockreferences
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vaults( projectid TEXT, vaultid TEXT, PRIMARY KEY(projectid, vaultid))
+ in following column vaultid of table vaults

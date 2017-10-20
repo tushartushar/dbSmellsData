@@ -1,0 +1,16 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE vg_node_props ( nid BIGINT NOT NULL, pname VARCHAR(255) NOT NULL, intval BIGINT, strval VARCHAR(1024), created TIMESTAMP DEFAULT NOW(), PRIMARY KEY (nid,pname) )
+ in following column nid and in column nid of table vg_nodes
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_node_props', 'strval']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_node_props', 'nid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edge_props', 'strval']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_node_props', 'intval']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edge_props', 'intval']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_node_props', 'pname']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE vg_edges ( eid BIGSERIAL, n1 BIGINT, n2 BIGINT, created TIMESTAMP DEFAULT NOW(), PRIMARY KEY (eid) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edges', 'n2']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edge_props', 'eid']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE vg_edges ( eid BIGSERIAL, n1 BIGINT, n2 BIGINT, created TIMESTAMP DEFAULT NOW(), PRIMARY KEY (eid) )
+ in following column eid and in column eid of table vg_edge_props
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edge_props', 'pname']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vg_edges', 'n1']

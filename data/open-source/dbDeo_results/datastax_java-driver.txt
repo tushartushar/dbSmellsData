@@ -1,0 +1,239 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['test_cd', 'd']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user (user_id uuid PRIMARY KEY, name text)
+ in following column name and in column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS \"users\" (id uuid PRIMARY KEY, name text, location frozen<tuple<float,float>>)
+ in following column location of table \
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text, t text, i int, f float, PRIMARY KEY (k, t))
+ in following column f of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (c1 text, c2 text, c3 list<text>, c4 bigint, c5 decimal, PRIMARY KEY (c1, c2))
+ in following column c1 of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE data2(i int primary key, data frozen<holder>)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_coll (k int PRIMARY KEY, a list<int>, b map<int,text>, c set<text>)
+ in following column c and in column c of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, i int)
+ in following column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, mainaddress frozen<address>, other_addresses map<text,frozen<address>>)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: create table test (k text primary key, v int)
+ in following column k of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE squares (square_id uuid PRIMARY KEY, bottom_left frozen<point2d>, top_right frozen<point2d>, tags set<text>)
+ in following column tags of table squares
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user ( key int primary key, gender int, home_phone text, work_phone text)
+ in following column work_phone of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'full']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text, t text, i int, f float, PRIMARY KEY (k, t))
+ in following column k of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['products', 'features_keys']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spheres (sphere_id uuid PRIMARY KEY, center3d frozen<point3d>, radius double, tags set<text>)
+ in following column tags of table spheres
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, email text, year int, gender text)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (login text primary key, name text, phone text)
+ in following column phone of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS examples.blobs(k int PRIMARY KEY, b blob, m map<text, blob>)
+ in following column m and in column m of table udtTest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_str ( key int primary key, gender text)
+ in following column gender of table user_str
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE testKs.sensor_data(id int, year int, ts timestamp, data double, PRIMARY KEY ((id, year), ts))
+ in following column data and in column data of table data3
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl3 (k text primary key, v text)
+ in following column . of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.users (user_id uuid PRIMARY KEY, name text, email text)
+ in following column email of table %s
+Detected: Duplicate Column Names Found in following statement: create table ordinal_example(id int PRIMARY KEY, state int)
+ in following column id and in column id of table spheres
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (key int primary key, v text)
+ in following column v of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'map_entries']
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'list_full']
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'map_values']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (login text primary key, name text, phone text)
+ in following column login of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products (id int PRIMARY KEY, description text, price int, categories set<text>, buyers list<int>, features_keys map<text, text>, features_values map<text, text>)
+ in following column features_keys of table products
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mytable (k int PRIMARY KEY, v frozen<tuple<%s>>)
+ in following column k and in column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (user_id uuid, post_id timeuuid, title text, content text, device inet, tags set<text>, PRIMARY KEY(user_id, post_id))
+ in following column content of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, c counter)
+ in following column k of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'text_column']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (k int PRIMARY KEY, v int)
+ in following column v and in column v of table ks1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 text, c2 text, c3 list<text>, PRIMARY KEY (c1, c2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_table (pk1 int, pk2 int, cc1 int, cc2 int, PRIMARY KEY ((pk1, pk2), cc1, cc2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['products', 'buyers']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo ( k ascii PRIMARY KEY , i int, s ascii )
+ in following column i and in column i of table %s
+Detected: Clone Tables Found in following statement: CREATE TABLE data1 (i int PRIMARY KEY, l bigint)
+
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl2 (k text primary key, v text)
+ in following column . of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (login text primary key, name text)
+ in following column login of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, t text, i int, f float)
+ in following column k of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'map_keys']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE scores (user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY(user, game, year, month, day))
+ in following column game of table scores
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 text, PRIMARY KEY (c1, c2))
+ in following column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS examples.blobs(k int PRIMARY KEY, b blob, m map<text, blob>)
+ in following column m of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (user_id uuid, post_id timeuuid, title text, content text, device inet, tags set<text>, PRIMARY KEY(user_id, post_id))
+ in following column tags of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, a int, b int)
+ in following column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (login text primary key, name text, phone text)
+ in following column name of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'set_full']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_aggregates ( // keyspace_name text, // aggregate_name text, // signature frozen<list<text>>, // argument_types list<text>, // final_func text, // initcond blob, // return_type text, // state_func text, // state_type text, // PRIMARY KEY (keyspace_name, aggregate_name, signature) // )
+ in following column // of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_coll (k int PRIMARY KEY, a list<int>, b map<int,text>, c set<text>)
+ in following column c of table test_coll
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, v text)
+ in following column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS \"users\" (id uuid PRIMARY KEY, name text, location frozen<tuple<float,float>>)
+ in following column name of table \
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo(k int primary key, v text)
+ in following column v of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (k int primary key, v text)
+ in following column v of table foo
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE %s (k1 int, k2 int, i int, PRIMARY KEY ((k1, k2)))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t (k int PRIMARY KEY, v frozen<tuple<int, text, float>>)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE data3(i int primary key, data map<int, frozen<holder>>)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_ab (a int PRIMARY KEY, b int)
+ in following column b and in column b of table examples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text, t text, i int, f float, PRIMARY KEY (k, t))
+ in following column t of table %s
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1 (c1 int, c2 text, PRIMARY KEY (c1, c2))
+ in following column c1 and in column c1 of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id int PRIMARY KEY, name text)
+ in following column name of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'entries']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo(k1 int, k2 int, k3 int, v int, PRIMARY KEY ((k1, k2, k3)))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k int PRIMARY KEY, txt text)
+ in following column txt of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rectangles (rect_id uuid PRIMARY KEY, bottom_left frozen<point2d>, top_right frozen<point2d>, tags set<text>)
+ in following column tags of table rectangles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 text, c3 list<text>, PRIMARY KEY (c1, c2))
+ in following column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sales(countryCode text, areaCode text, sales int, PRIMARY KEY((countryCode, areaCode)))
+ in following column areaCode of table sales
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE company (company_id uuid PRIMARY KEY, name text, address address)
+ in following column name of table company
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE circles (circle_id uuid PRIMARY KEY, center2d frozen<point2d>, radius double, tags set<text>)
+ in following column tags of table circles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s.groups (group_id uuid PRIMARY KEY, name text)
+ in following column name of table %s
+Detected: Duplicate Column Names Found in following statement: create table ordinal_example(id int PRIMARY KEY, state int)
+ in following column state and in column state of table name_example
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products (id int PRIMARY KEY, description text, price int, categories set<text>, buyers list<int>, features_keys map<text, text>, features_values map<text, text>)
+ in following column categories of table products
+Detected: Obsolete Column TypesFound in following statement: create table name_example(id int PRIMARY KEY, state text)
+ in following column state of table name_example
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(id int, id2 int, name text, primary key (id, id2))
+ in following column name of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'map_full']
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl3 (k text primary key, v text)
+ in following column v of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(id uuid PRIMARY KEY, user_name text)
+ in following column user_name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, t text, i int, f float)
+ in following column t of table %s
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 int, c2 text, PRIMARY KEY (c1, c2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(k1 int, k2 int, v int, PRIMARY KEY (k1, k2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products (id int PRIMARY KEY, description text, price int, categories set<text>, buyers list<int>, features_keys map<text, text>, features_values map<text, text>)
+ in following column features_values of table products
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'keys']
+Detected: Index Shotgun Variant: 3 Following index not used : ['test_ab', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, v frozen<address>)
+ in following column k of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (c1 text, c2 text, c3 list<text>, c4 bigint, c5 decimal, PRIMARY KEY (c1, c2))
+ in following column c3 of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sales(countryCode text, areaCode text, sales int, PRIMARY KEY((countryCode, areaCode)))
+ in following column countryCode of table sales
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (login text primary key, name text)
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 text, c3 list<text>, PRIMARY KEY (c1, c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (user_id uuid, post_id timeuuid, title text, content text, device inet, tags set<text>, PRIMARY KEY(user_id, post_id))
+ in following column title of table posts
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 text, c2 text, PRIMARY KEY (c1, c2))
+
+Detected: Duplicate Column Names Found in following statement: create table example (i int primary key, l list<int>)
+ in following column l and in column l of table data1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE users(id int, id2 int, name text, primary key (id, id2))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %s (k text, t text, i int, f float, PRIMARY KEY (k, t))
+ in following column t and in column t of table dateTest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user (user_id uuid PRIMARY KEY, name text)
+ in following column name of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'map_all']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo (c1 text, c2 text, c3 list<text>, c4 bigint, c5 decimal, PRIMARY KEY (c1, c2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products (id int PRIMARY KEY, description text, price int, categories set<text>, buyers list<int>, features_keys map<text, text>, features_values map<text, text>)
+ in following column description of table products
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'indexing']
+Detected: Clone Tables Found in following statement: CREATE TABLE t (id int PRIMARY KEY, json VARCHAR)
+
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl2 (k text primary key, v text)
+ in following column v of table ks1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo (k int primary key, v1 text, v2 list<int>)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, email text, year int, gender text)
+ in following column gender and in column gender of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, t text, i int, f float)
+ in following column f of table %s
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl1 (k text primary key, v text)
+ in following column v of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k text PRIMARY KEY, v text)
+ in following column v of table %s
+Detected: Obsolete Column TypesFound in following statement: create table ks1.tbl1 (k text primary key, v text)
+ in following column . of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS \"users\" (id uuid PRIMARY KEY, name text, address frozen<address>)
+ in following column name of table \
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE scores (user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY(user, game, year, month, day))
+ in following column user of table scores
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 text, c3 list<text>, PRIMARY KEY (c1, c2))
+ in following column c3 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, email text, year int, gender text)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (k text, v int, PRIMARY KEY (k, v))
+ in following column k of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['products', 'features_values']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.users (user_id uuid PRIMARY KEY, name text, email text)
+ in following column name of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['products', 'KEYS']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, mainaddress frozen<address>, other_addresses map<text,frozen<address>>)
+ in following column other_addresses of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE testKs.sensor_data(id int, year int, ts timestamp, data double, PRIMARY KEY ((id, year), ts))
+ in following column . and in column . of table ks1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_aggregates ( // keyspace_name text, // aggregate_name text, // signature frozen<list<text>>, // argument_types list<text>, // final_func text, // initcond blob, // return_type text, // state_func text, // state_type text, // PRIMARY KEY (keyspace_name, aggregate_name, signature) // )
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (c1 text, c2 text, c3 list<text>, c4 bigint, c5 decimal, PRIMARY KEY (c1, c2))
+ in following column c2 of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 int, c2 text, PRIMARY KEY (c1, c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_functions ( // keyspace_name text, // function_name text, // signature frozen<list<text>>, // argument_names list<text>, // argument_types list<text>, // body text, // called_on_null_input boolean, // language text, // return_type text, // PRIMARY KEY (keyspace_name, function_name, signature) // )
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (k int primary key, v1 text, v2 list<int>)
+ in following column v1 of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['products', 'categories']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_functions ( // keyspace_name text, // function_name text, // signature frozen<list<text>>, // argument_names list<text>, // argument_types list<text>, // body text, // called_on_null_input boolean, // language text, // return_type text, // PRIMARY KEY (keyspace_name, function_name, signature) // )
+ in following column // of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user ( key int primary key, gender int, home_phone text, work_phone text)
+ in following column home_phone of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (c1 text, c2 text, PRIMARY KEY (c1, c2))
+ in following column c2 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (user_id uuid PRIMARY KEY, name text, email text, year int, gender text)
+ in following column gender of table users

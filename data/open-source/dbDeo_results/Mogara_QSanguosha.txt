@@ -1,0 +1,5 @@
+Detected: God Table Found in following statement: CREATE TABLE `room` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `hostaddress` varchar(21), `playernum` int, `name` varchar(50), `gamemode` varchar(20), `banpackages` text, `operationtimeout` int, `nullificationcountdown` int, `randomseat` boolean, `enablecheat` boolean, `freechoose` boolean, `forbidaddingrobot` boolean, `disablechat` boolean, `firstshowingreward` boolean, `requirepassword` boolean)
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `room` ( `id` INTEGER PRIMARY KEY AUTOINCREMENT, `hostaddress` varchar(21), `playernum` int, `name` varchar(50), `gamemode` varchar(20), `banpackages` text, `operationtimeout` int, `nullificationcountdown` int, `randomseat` boolean, `enablecheat` boolean, `freechoose` boolean, `forbidaddingrobot` boolean, `disablechat` boolean, `firstshowingreward` boolean, `requirepassword` boolean)
+ in following column `banpackages` of table `room`

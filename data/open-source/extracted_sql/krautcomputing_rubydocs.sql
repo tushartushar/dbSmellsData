@@ -1,0 +1,5 @@
+CREATE TABLE docs ( id integer NOT NULL, tag character varying(255), slug character varying(255) NOT NULL, project_id integer, created_at timestamp without time zone, updated_at timestamp without time zone)
+CREATE TABLE doc_collections ( id integer NOT NULL, slug character varying(255) NOT NULL, generated_at timestamp without time zone, uploaded_at timestamp without time zone, created_at timestamp without time zone, updated_at timestamp without time zone)
+CREATE TABLE doc_collection_memberships ( id integer NOT NULL, doc_id integer, doc_collection_id integer)
+CREATE TABLE projects ( id integer NOT NULL, name character varying(255), git character varying(255), slug character varying(255) NOT NULL, created_at timestamp without time zone, updated_at timestamp without time zone, tags json)
+CREATE TABLE schema_migrations ( version character varying(255) NOT NULL)

@@ -1,0 +1,768 @@
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_2_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 tinyint,		c2 tinyint unsigned,		c3 tinyint not NULL,		c4 tinyint,		c5 tinyint,		c6 tinyint unsigned,		c7 tinyint)
+
+Detected: Multicolumn Attribute Found in following statement: create table fetch_all4_tab (mycol1 number, mycol2 varchar2(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT AUTO_INCREMENT PRIMARY KEY, label CHAR(10))
+
+Detected: Duplicate Column Names Found in following statement: create table imp_res_cursor_tab_2 (c3 varchar2(1))
+ in following column c3 and in column c3 of table test_bind_result
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(10))
+
+Detected: Multicolumn Attribute Found in following statement: create table bind_sqltint_tab ( id number, varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INTEGER)
+
+Detected: Clone Tables Found in following statement: create table imp_res_get_dbmsoutput_tab_2 (c3 varchar2(1))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col5 and in column col5 of table bug71600_tab
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c6 and in column c6 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL PRIMARY KEY, col1 CHAR(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (login varchar(32) NOT NULL, password varchar(64) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a integer not null primary key, b text, c integer)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id CHAR(1))
+
+Detected: Clone Tables Found in following statement: create table bug43497_tab (id number primary key, xml xmltype)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_cursor_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test (a varchar(100), b varchar(100), c varchar(100))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), grp VARCHAR(10))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), grp VARCHAR(10))
+
+Detected: Multicolumn Attribute Found in following statement: create table bind_misccoltypes_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+
+Detected: Clone Tables Found in following statement: create table test5 (i integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a integer not null primary key, b text, c integer)
+ in following column b of table test
+Detected: Clone Tables Found in following statement: create table imp_res_get_cursor_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, classtype int, val VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: create table imp_res_field_tab_1 (c1_number number, c2_varchar210 varchar2(10))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 decimal(4,2), c6 double,														c7 varbinary(10),														c8 varchar(10))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 int unsigned,													c2 int unsigned,													c3 int,													c4 int,													c5 int,													c6 int unsigned,													c7 int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a integer not null primary key, b text)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test(id INT NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(16))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 int unsigned,		c2 int unsigned,		c3 int,		c4 int,		c5 int,		c6 int unsigned,		c7 int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_result (a int, b varchar(10))
+ in following column a and in column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c4 of table test_bind_fetch
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c4 and in column c4 of table bug_6364_t
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'files_id']
+Detected: Obsolete Column TypesFound in following statement: create table test7 (			iter		integer,			v_multi		integer[10,10,10],			v_char		char(100)[10],			v_date timestamp[10],			v_decimal decimal(18,3)[10],			v_double 	double precision[10],			v_float float[10],			v_integer integer[10],			v_numeric numeric(9,2)[10],			v_smallint smallint[10],			v_varchar varchar(1000)[10]			)
+ in following column v_float of table test7
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS t1(a INT UNIQUE, b INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t (s varchar(4))
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_6_tab (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: create table bug26133_tab (id number, value number)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ${table_name_92} (textary text[], jsn json)
+ in following column textary of table $
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c1 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col8 and in column col8 of table bug71600_tab
+Detected: God Table Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32), field4 INT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a INTEGER, b TEXT, c REAL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: God Table Found in following statement: create table test3 ( iter		integer not null, v_char		char(1000), v_date timestamp, 	 		v_decimal4_2 		decimal(4,2), 	 		v_decimal4_0 		decimal(4,0), 	 		v_decimal7_2 		decimal(7,2), 	 		v_decimal7_0 		decimal(7,0), 	 		v_numeric15_15 	numeric(15,15), 	 		v_numeric15_0 	numeric(15,0), v_double 	double precision, v_float float, v_integer integer, v_smallint smallint, v_varchar varchar(10000) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c3 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL AUTO_INCREMENT, label BLOB, PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: create table imp_res_cursor_tab_2 (c3 varchar2(1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+
+Detected: Clone Tables Found in following statement: create table imp_res_field_tab_3 (c4_number52 number(5,2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id INT PRIMARY KEY, fp4 FLOAT, fp8 DOUBLE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(col_blob LONGBLOB)
+
+Detected: Clone Tables Found in following statement: create table dupcolnames_tab1 (c1 number, dupnamecol varchar2(20))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id INT, label1 INT, label2 INT, INDEX idx1(label1, label2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int NOT NULL PRIMARY KEY, val VARCHAR(10))
+
+Detected: God Table Found in following statement: create table bug41069_tab	(		c1 number(20),		c2 varchar2(60 byte),		c3 varchar2(1000 byte),		c4 varchar2(255 byte),		c5 varchar2(2 byte),		c6 varchar2(1 byte),		c7 varchar2(255 byte),		c8 varchar2(50 byte),		c9 date,		c10 date,		c12 number(20),		c13 varchar2(20 byte),		c15 varchar2(50 byte)	 )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE b66584 (a int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Clone Tables Found in following statement: create table test ( bar char(3) NULL )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(20))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Dogs (Id INTEGER PRIMARY KEY, Breed TEXT, Name TEXT, Age INTEGER)
+ in following column Name of table Dogs
+Detected: Clone Tables Found in following statement: create table imp_res_dbmsoutput_tab_2 (c3 varchar2(1))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(		c1 date,		c2 time,		c3 timestamp(14),		c4 year,		c5 datetime,		c6 timestamp(4),		c7 timestamp(6))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col2 and in column col2 of table bug71600_tab
+Detected: Multicolumn Attribute Found in following statement: create table bind_sqltafc_tab (id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(16))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, c))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo ( id bigserial not null primary key, field1 text not null, field2 text not null, field3 text not null, field4 int4 not null )
+ in following column field1 of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE bug72489 (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, code VARCHAR(30) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label BIT(%d))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (foo varchar(5) NOT NULL, bar bool NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a INT, b INT, c INT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col5 of table insert_read
+Detected: Obsolete Column TypesFound in following statement: CREATE table bind_test(name FLOAT)
+ in following column name of table bind_test
+Detected: Clone Tables Found in following statement: CREATE TABLE test (login varchar(32) NOT NULL, data varchar(64) NOT NULL)
+
+Detected: Clone Tables Found in following statement: create table `test`( `id` int )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val1 VARCHAR(10), val2 VARCHAR(10), val3 VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: create table imp_res_get_cursor_tab_2 (c3 varchar2(1))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col6 and in column col6 of table bug71600_tab
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (a smallint)
+
+Detected: Clone Tables Found in following statement: create table test(name string, value string)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32), field4 INT)
+
+Detected: God Table Found in following statement: CREATE TABLE test_fetch_null(col1 tinyint, col2 smallint,		col3 int, col4 bigint,		col5 float, col6 double,		col7 date, col8 time,		col9 varbinary(10),		col10 varchar(50),		col11 char(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c and in column c of table test1
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_field_tab_1 (c1_number number, c2_varchar210 varchar2(10))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ${table_name} (num int, str text, bin bytea)
+ in following column num and in column num of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $table (value TEXT, details TEXT)
+ in following column value of table $table
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL, label %s, PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label CHAR(3), PRIMARYKEY(id))
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_dbmsoutput_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Multicolumn Attribute Found in following statement: create table ts_test (c1 TIMESTAMP,c2 TIMESTAMP (5),c3 TIMESTAMP WITH TIME ZONE,c4 TIMESTAMP (2) WITH TIME ZONE,c5 TIMESTAMP WITH LOCAL TIME ZONE,c6 INTERVAL YEAR TO MONTH,c7 INTERVAL YEAR(2) TO MONTH,c8 INTERVAL DAY TO SECOND,c9 INTERVAL DAY(2) TO SECOND(3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, filepath TEXT(500) NOT NULL, filepathmd5 TEXT(32) NOT NULL, issource BOOL NOT NULL, UNIQUE (filepath) )
+ in following column filepathmd5 of table files
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INTEGER, l1 LONG)
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_prefetch_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c6 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, classtype int NULL, val VARCHAR(255) NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a varchar(100), b varchar(100), c varchar(100))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(10))
+
+Detected: Duplicate Column Names Found in following statement: create table ts_test (c1 TIMESTAMP,c2 TIMESTAMP (5),c3 TIMESTAMP WITH TIME ZONE,c4 TIMESTAMP (2) WITH TIME ZONE,c5 TIMESTAMP WITH LOCAL TIME ZONE,c6 INTERVAL YEAR TO MONTH,c7 INTERVAL YEAR(2) TO MONTH,c8 INTERVAL DAY TO SECOND,c9 INTERVAL DAY(2) TO SECOND(3))
+ in following column c9 and in column c9 of table bug41069_tab
+Detected: God Table Found in following statement: create table bind_misccoltypes_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(		c1 date,		c2 time,		c3 timestamp,		c4 year,		c5 datetime,		c6 timestamp,		c7 timestamp)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INT auto_increment, label varchar(10) not null, PRIMARY KEY (id))
+
+Detected: Values in Column Definition Found in following statement: create table commit_002_tab ( x int constraint commit_002_tab_check_x check ( x > 0 ) deferrable initially immediate, y int constraint commit_002_tab_check_y check ( y > 0 ) deferrable initially deferred)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, myobj BLOB)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int auto_increment primary key, num int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int NOT NULL PRIMARY KEY, val VARCHAR(256))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE table bug42496_1_tab(c1 CLOB, c2 CLOB)
+
+Detected: Multicolumn Attribute Found in following statement: create table bug71600_tab (col1 number, col2 number, col3 number, col4 number, col5 number, col6 number, col7 number, col8 number, col9 number)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE xdebugs ( xdebugpath TEXT(500) NOT NULL, xdebugpathmd5 TEXT(32) NOT NULL, PRIMARY KEY (xdebugpath) )
+ in following column xdebugpath of table xdebugs
+Detected: Index Shotgun Variant: 3 Following index not used : ['non_result_set_queries_test', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c8 and in column c8 of table ts_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c7 and in column c7 of table test_bind_fetch
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, testpath TEXT(500) NOT NULL, testpathmd5 TEXT(32) NOT NULL, UNIQUE (testpath) )
+ in following column testpath of table tests
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 bigint default 5,													c2 bigint,													c3 bigint not NULL,													c4 bigint unsigned,													c5 bigint unsigned,													c6 bigint unsigned,													c7 bigint unsigned,													c8 bigint unsigned)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE xdebugs ( xdebugpath TEXT(500) NOT NULL, xdebugpathmd5 TEXT(32) NOT NULL, PRIMARY KEY (xdebugpath) )
+ in following column xdebugpathmd5 of table xdebugs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col1 and in column col1 of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE test(a INT, b INT, UNIQUE KEY idx_ab (a, b))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(20))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 char(10), c2 text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(			c1 date,			c2 time,			c3 timestamp,			c4 year,			c5 datetime,			c6 timestamp,			c7 timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $table (id INT, value FLOAT)
+ in following column value of table $table
+Detected: Duplicate Column Names Found in following statement: create table `test`( `id` int )
+ in following column `id` and in column `id` of table `bug66124`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages(		msg_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,		msg_time TIMESTAMP,		pid INT NOT NULL,		sender ENUM('child', 'parent') NOT NULL,		msg TEXT)
+ in following column msg of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col4 and in column col4 of table bug71600_tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, testpath TEXT(500) NOT NULL, testpathmd5 TEXT(32) NOT NULL, UNIQUE (testpath) )
+ in following column testpathmd5 of table tests
+Detected: Multicolumn Attribute Found in following statement: create table bind_sqltnum_tab ( id number, varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NULL)
+
+Detected: God Table Found in following statement: create table bind_misccoltypes_errs_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c5 of table test_bind_result
+Detected: Duplicate Column Names Found in following statement: create table lob_018_tab (mykey number, lob_1 clob)
+ in following column lob_1 and in column lob_1 of table lob_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col9 and in column col9 of table bug71600_tab
+Detected: Clone Tables Found in following statement: CREATE TABLE test (time INTEGER, id STRING)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(col1 %s, col2 %s)
+
+Detected: Multicolumn Attribute Found in following statement: create table bug_6364_t (c1 varchar2(10), c2 varchar2(10), c3 varchar2(10), c4 varchar2(10), c5 varchar2(10))
+
+Detected: Clone Tables Found in following statement: create table imp_res_prefetch_tab_2 (c3 varchar2(1))
+
+Detected: Duplicate Column Names Found in following statement: create table commit_002_tab ( x int constraint commit_002_tab_check_x check ( x > 0 ) deferrable initially immediate, y int constraint commit_002_tab_check_y check ( y > 0 ) deferrable initially deferred)
+ in following column x and in column x of table t
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id CHAR(1) NOT NULL PRIMARY KEY, val VARCHAR(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results ( id int(11) NOT NULL auto_increment, endpoint int(11) NOT NULL default '0', stamp int(11) NOT NULL default '0', class varchar(10) NOT NULL default '', type varchar(10) default NULL, wsdl int(11) NOT NULL default '0', function varchar(255) NOT NULL default '', result varchar(25) NOT NULL default '', error text, wire text NOT NULL, PRIMARY KEY (id))
+ in following column error of table results
+Detected: Duplicate Column Names Found in following statement: create table test (id integer primary key, n varchar(255))
+ in following column id and in column id of table test2
+Detected: Clone Tables Found in following statement: CREATE TABLE test(field BLOB)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, classtype int, val VARCHAR(10), grp VARCHAR(10))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a INTEGER, b INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c5 of table test_bind_fetch
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: create table test3 ( iter		integer not null, v_char		char(1000), v_date timestamp, 	 		v_decimal4_2 		decimal(4,2), 	 		v_decimal4_0 		decimal(4,0), 	 		v_decimal7_2 		decimal(7,2), 	 		v_decimal7_0 		decimal(7,0), 	 		v_numeric15_15 	numeric(15,15), 	 		v_numeric15_0 	numeric(15,0), v_double 	double precision, v_float float, v_integer integer, v_smallint smallint, v_varchar varchar(10000) )
+ in following column v_float of table test3
+Detected: Clone Tables Found in following statement: CREATE TABLE t036 (a bigint not null auto_increment primary key, b varchar(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results ( id int(11) NOT NULL auto_increment, endpoint int(11) NOT NULL default '0', stamp int(11) NOT NULL default '0', class varchar(10) NOT NULL default '', type varchar(10) default NULL, wsdl int(11) NOT NULL default '0', function varchar(255) NOT NULL default '', result varchar(25) NOT NULL default '', error text, wire text NOT NULL, PRIMARY KEY (id))
+ in following column wire of table results
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+
+Detected: Obsolete Column TypesFound in following statement: create table bind_misccoltypes_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+ in following column float_t of table bind_misccoltypes_tab
+Detected: Multicolumn Attribute Found in following statement: create table foo ( id bigserial not null primary key, field1 text not null, field2 text not null, field3 text not null, field4 int4 not null )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE phptests.foo (id INT, id2 INT)
+ in following column id2 and in column id2 of table t2
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a integer primary key, b text)
+ in following column b of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS foobar (id INT AUTO INCREMENT, name TEXT)
+ in following column name of table foobar
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a VARCHAR(10))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS messages (	id INTEGER PRIMARY KEY,	title TEXT,	message TEXT,	time INTEGER)
+ in following column time and in column time of table php_test
+Detected: Multicolumn Attribute Found in following statement: create table fetch_all5_tab (mycol1 number, mycol2 varchar2(20))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (test INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch_uint(c1 integer unsigned, c2 integer unsigned)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32), field4 INT)
+ in following column field1 and in column field1 of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE test (age INTEGER, id STRING)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, label VARCHAR(255))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(jsfield JSON)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE analyzerversion ( version TEXT(5) NOT NULL )
+ in following column version of table analyzerversion
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a integer not null primary key, b text)
+ in following column b of table test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 smallint unsigned,		c2 smallint unsigned,		c3 smallint,		c4 smallint,		c5 smallint,		c6 smallint unsigned,		c7 smallint)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE table lob_test(lob_1 BLOB, lob_2 BLOB)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Clone Tables Found in following statement: create table bug71600_tab (col1 number, col2 number, col3 number, col4 number, col5 number, col6 number, col7 number, col8 number, col9 number)
+
+Detected: Clone Tables Found in following statement: create table imp_res_prefetch_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE b67462 (a int NOT NULL PRIMARY KEY DEFERRABLE INITIALLY DEFERRED)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo ( id bigserial not null primary key, field1 text not null, field2 text not null, field3 text not null, field4 int4 not null )
+ in following column field2 of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_4_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, col1 %s)
+
+Detected: Clone Tables Found in following statement: create table imp_res_cursor_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label1 INT, label2 INT, INDEX idx1(label1, label2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE BUG71422_TEST (TEST_ID NUMBER(*,0) NOT NULL, LABEL VARCHAR2(50 CHAR), CONSTRAINT BUG71422_TEST_PK PRIMARY KEY (TEST_ID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32), field4 INT)
+ in following column field3 and in column field3 of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE FOO (ID INT, VARCHAR_COL NVARCHAR(MAX))
+ in following column ID and in column ID of table test_insert
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (t char($len))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int NOT NULL PRIMARY KEY, val BLOB)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_fetch(c1 smallint unsigned,		c2 smallint unsigned,		c3 smallint,		c4 smallint,		c5 smallint,		c6 smallint unsigned,		c7 smallint)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, mybool TINYINT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id BIGINT, bit_value BIT(%d) NOT NULL, bit_null BIT(%d) DEFAULT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: create table test3 ( iter		integer not null, v_char		char(1000), v_date timestamp, 	 		v_decimal4_2 		decimal(4,2), 	 		v_decimal4_0 		decimal(4,0), 	 		v_decimal7_2 		decimal(7,2), 	 		v_decimal7_0 		decimal(7,0), 	 		v_numeric15_15 	numeric(15,15), 	 		v_numeric15_0 	numeric(15,0), v_double 	double precision, v_float float, v_integer integer, v_smallint smallint, v_varchar varchar(10000) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (dat varchar(100))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val1 VARCHAR(10), val2 VARCHAR(10), val3 VARCHAR(10))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+ in following column c5 and in column c5 of table bug_6364_t
+Detected: Clone Tables Found in following statement: CREATE TABLE test (text)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE table bug42496_2_tab(c1 CLOB, c2 CLOB)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'linenumber']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo (id INT, id3 INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test2(id INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label %s, PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: create table bug37220_tab( mycolumn xmltype not null)
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_lob_tab (c1 number, c2 clob, c3 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (x int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (dump1 INT UNSIGNED NOT NULL PRIMARY KEY)
+
+Detected: Multicolumn Attribute Found in following statement: create table fetch_object_2_tab (col1 number, col2 CLOB, col3 varchar2(15))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE bug43492_tab(col1 VARCHAR2(1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a INTEGER, b TEXT, c REAL)
+ in following column c of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int NOT NULL, PRIMARY KEY (id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL AUTO_INCREMENT, label LONGBLOB, PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: CREATE table bug42496_1_tab(c1 CLOB, c2 CLOB)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(50))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (whatever INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, val LONGBLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a INTEGER, b TEXT, c REAL)
+ in following column b of table test
+Detected: Obsolete Column TypesFound in following statement: create table test6 (			iter		integer,			v_char		char(1000),			v_date timestamp,			v_decimal decimal(12,3),			v_double 	double precision,			v_float float,			v_integer integer,			v_numeric numeric(4,2),			v_smallint smallint,			v_varchar varchar(10000)			)
+ in following column v_float of table test6
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label CHAR(1), PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (id INTEGER, l2 LONG)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `test` ( `targetport` int(11) NOT NULL default '0', `sources` double(17,4) default NULL, `current_sources` double(17,0) default NULL, `reports` double(17,4) default NULL, `current_reports` double(17,0) default NULL, `targets` double(17,4) default NULL, `current_targets` double(17,0) default NULL, `maxsources` int(11) default NULL, `maxtargets` int(11) default NULL, `maxreports` int(11) default NULL, `trend` float default NULL, PRIMARY KEY (`targetport`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE paths ( codepath TEXT NOT NULL, testpath TEXT NOT NULL, )
+ in following column codepath of table paths
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label %s)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (bar INT NOT NULL, phase enum('please_select', 'I', 'II', 'IIa', 'IIb', 'III', 'IV'))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: create table bind_misccoltypes_errs_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+ in following column float_t of table bind_misccoltypes_errs_tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE paths ( codepath TEXT NOT NULL, testpath TEXT NOT NULL, )
+ in following column testpath of table paths
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: create table test (id int, name varchar(10) null)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id1 INTEGER)
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_dbmsoutput_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id INT NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(16))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_affected (foo int, bar varchar(10) character set latin1)
+ in following column foo and in column foo of table test
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE refcurtest (c1 NUMBER, c2 VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(a int, b varchar(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Multicolumn Attribute Found in following statement: create table bind_sqltchr_tab ( id number, varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: create table bug36403_tab (c1 number, col2 number, column3 number, col4 number)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_fetch_null(col1 tinyint, col2 smallint,		col3 int, col4 bigint,		col5 float, col6 double,		col7 date, col8 time,		col9 varbinary(10),		col10 varchar(50),		col11 char(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE bug70949(name varchar(255))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo (id INT, id2 INT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 char(10), c2 text)
+ in following column c2 of table test_bind_fetch
+Detected: God Table Found in following statement: CREATE TABLE `test` ( `targetport` int(11) NOT NULL default '0', `sources` double(17,4) default NULL, `current_sources` double(17,0) default NULL, `reports` double(17,4) default NULL, `current_reports` double(17,0) default NULL, `targets` double(17,4) default NULL, `current_targets` double(17,0) default NULL, `maxsources` int(11) default NULL, `maxtargets` int(11) default NULL, `maxreports` int(11) default NULL, `trend` float default NULL, PRIMARY KEY (`targetport`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(floatval DECIMAL(8,6))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE phptests.foo (id INT, id2 INT)
+ in following column . and in column . of table %
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_1_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (field1 VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: create table bug57702 (id number, data1 blob, data2 blob)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test4 ( 		v_integer integer, v_blob		blob)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, col1 CHAR(10))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id %s)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c2 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id %s)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE bug65119 (i INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(myobj BLOB)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label CHAR(255))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT AUTO_INCREMENT PRIMARY KEY, col1 %s)
+
+Detected: Multicolumn Attribute Found in following statement: create table bug41069_tab	(		c1 number(20),		c2 varchar2(60 byte),		c3 varchar2(1000 byte),		c4 varchar2(255 byte),		c5 varchar2(2 byte),		c6 varchar2(1 byte),		c7 varchar2(255 byte),		c8 varchar2(50 byte),		c9 date,		c10 date,		c12 number(20),		c13 varchar2(20 byte),		c15 varchar2(50 byte)	 )
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE testz(A VARCHAR(30), B VARCHAR(30), C VARCHAR(30))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Multicolumn Attribute Found in following statement: create table pdo_oci_stream_2 (id number, data1 blob, data2 blob)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label varchar(255))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10), val2 VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT DEFAULT 0, label CHAR(1), PRIMARY KEY(id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (id INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_result (a int, b varchar(10))
+ in following column b and in column b of table t1
+Detected: Clone Tables Found in following statement: CREATE table bug42496_2_tab(c1 CLOB, c2 CLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS foo (id INT AUTO INCREMENT, name TEXT)
+ in following column name of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_result(c1 tinyint, c2 smallint,														c3 int, c4 bigint,														c5 float, c6 double,														c7 varbinary(10),														c8 varchar(10))
+ in following column c5 of table test_bind_result
+Detected: Clone Tables Found in following statement: CREATE TABLE test (bar INT NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (id STRING, data BLOB)
+ in following column data and in column data of table pdo_oci_stream_1_tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS messages (	id INTEGER PRIMARY KEY,	title TEXT,	message TEXT,	time INTEGER)
+ in following column title of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test(id CHAR(1) NOT NULL PRIMARY KEY, val VARCHAR(10))
+ in following column val and in column val of table php_test
+Detected: Clone Tables Found in following statement: create table imp_res_dbmsoutput_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (id2 INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo ( id bigserial not null primary key, field1 text not null, field2 text not null, field3 text not null, field4 int4 not null )
+ in following column field3 of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage_per_file', 'linenumber']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $table (value TEXT, details TEXT)
+ in following column details of table $table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col7 and in column col7 of table bug71600_tab
+Detected: Clone Tables Found in following statement: CREATE TABLE `bug66124` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label1 CHAR(255), label2 CHAR(255))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE FOO (ID INT, CHAR_COL CHAR(200), VARCHAR_COL VARCHAR(200), TEXT_COL TEXT)
+ in following column TEXT_COL of table FOO
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (field1 VARCHAR(32), field2 VARCHAR(32), field3 VARCHAR(32), field4 INT)
+ in following column field2 and in column field2 of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a int PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label CHAR(1), PRIMARYKEY(id))
+
+Detected: Multicolumn Attribute Found in following statement: create table field_funcs3_tab(c1_c char(2), c2_v varchar2(2), c3_n number, c4_d date)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE id (id SERIAL, t INT)
+ in following column t and in column t of table poq_tab
+Detected: Multicolumn Attribute Found in following statement: create table bug36403_tab (c1 number, col2 number, column3 number, col4 number)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE DRCPTEST (id NUMBER, name VARCHAR2(10), dept VARCHAR2(10))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(id INT PRIMARY KEY, fp4 FLOAT, fp8 DOUBLE)
+ in following column fp4 of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test(id INT NOT NULL AUTO_INCREMENT, label BLOB, PRIMARY KEY(id))
+ in following column label and in column label of table %s
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (age INTEGER, id STRING)
+ in following column age and in column age of table edit_tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `test` ( `targetport` int(11) NOT NULL default '0', `sources` double(17,4) default NULL, `current_sources` double(17,0) default NULL, `reports` double(17,4) default NULL, `current_reports` double(17,0) default NULL, `targets` double(17,4) default NULL, `current_targets` double(17,0) default NULL, `maxsources` int(11) default NULL, `maxtargets` int(11) default NULL, `maxreports` int(11) default NULL, `trend` float default NULL, PRIMARY KEY (`targetport`))
+ in following column `trend` of table `test`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_fetch_null(col1 tinyint, col2 smallint,		col3 int, col4 bigint,		col5 float, col6 double,		col7 date, col8 time,		col9 varbinary(10),		col10 varchar(50),		col11 char(20))
+ in following column col5 of table test_fetch_null
+Detected: Duplicate Column Names Found in following statement: create table fetch_assoc_tab (id number, value number, dummy varchar2(20))
+ in following column value and in column value of table testz
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t_061 (c1 varchar(10), c2 varchar(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id SMALLINT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT PRIMARY KEY, fp4 FLOAT, fp8 DOUBLE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL PRIMARY KEY, val VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: create table test3 ( iter		integer not null, v_char		char(1000), v_date timestamp, 	 		v_decimal4_2 		decimal(4,2), 	 		v_decimal4_0 		decimal(4,0), 	 		v_decimal7_2 		decimal(7,2), 	 		v_decimal7_0 		decimal(7,0), 	 		v_numeric15_15 	numeric(15,15), 	 		v_numeric15_0 	numeric(15,0), v_double 	double precision, v_float float, v_integer integer, v_smallint smallint, v_varchar varchar(10000) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a integer primary key, b text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label BLOB)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 varchar(10), c2 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label INT UNIQUE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE insert_read(col1 tinyint, col2 smallint,													col3 int, col4 bigint,													col5 float, col6 double,													col7 date, col8 time,													col9 varbinary(10),													col10 varchar(50),													col11 char(20))
+ in following column col3 and in column col3 of table bug71600_tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Dogs (Id INTEGER PRIMARY KEY, Breed TEXT, Name TEXT, Age INTEGER)
+ in following column Breed of table Dogs
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: create table bind_misccoltypes_errs_tab ( id number, char_t char(1), char_t10 char(10), varchar2_t10 varchar2(10), number_t number, number_t92 number(9,2), number_t6 number(6), date_t date, timestamp_t timestamp, float_t float, binary_float_t binary_float, binary_double_t binary_double, decimal_t decimal, integer_t integer, nchar_t nchar(10), nvarchar2_t10 nvarchar2(10), varchar_t10 varchar(10) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(id INT, label1 CHAR(255), label2 CHAR(255))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 tinyint,													c2 tinyint unsigned,													c3 tinyint not NULL,													c4 tinyint,													c5 tinyint,													c6 tinyint unsigned,													c7 tinyint)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS messages (	id INTEGER PRIMARY KEY,	title TEXT,	message TEXT,	time INTEGER)
+ in following column message of table messages
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_bind_fetch(c1 smallint unsigned,													 c2 smallint unsigned,													 c3 smallint,													 c4 smallint,													 c5 smallint,													 c6 smallint unsigned,													 c7 smallint)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INTEGER NOT NULL PRIMARY KEY, usr VARCHAR( 256 ) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id BIGINT UNSIGNED, bit_value BIT(%d) NOT NULL, bit_null BIT(%d) DEFAULT NULL)
+
+Detected: Clone Tables Found in following statement: create table dupcolnames_tab2 (c2 number, dupnamecol varchar2(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (col1 string)
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_3_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, n varchar(255))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INT)
+
+Detected: God Table Found in following statement: create table test7 (			iter		integer,			v_multi		integer[10,10,10],			v_char		char(100)[10],			v_date timestamp[10],			v_decimal decimal(18,3)[10],			v_double 	double precision[10],			v_float float[10],			v_integer integer[10],			v_numeric numeric(9,2)[10],			v_smallint smallint[10],			v_varchar varchar(1000)[10]			)
+
+Detected: Obsolete Column TypesFound in following statement: create table bind_number_tab (					id				 number,					number_t6		 number(6),					float_t			 float,					binary_float_t	 binary_float,					binary_double_t	 binary_double,					decimal_t		 decimal,					integer_t		 integer)
+ in following column float_t of table bind_number_tab
+Detected: Multicolumn Attribute Found in following statement: create table bug57702 (id number, data1 blob, data2 blob)
+
+Detected: Duplicate Column Names Found in following statement: create table imp_res_get_4_tab_1 (c1 number, c2 varchar2(10))
+ in following column c2 and in column c2 of table test_bind_result
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_cursor_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: create table imp_res_get_dbmsoutput_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id SMALLINT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Clone Tables Found in following statement: create table test (id int, name varchar(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Clone Tables Found in following statement: create table pdo_oci_stream_1_tab (id number, data clob)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, a DESC))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `bug53551` ( `count` bigint(20) unsigned NOT NULL DEFAULT '0')
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(idx int NOT NULL PRIMARY KEY, txt VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT NOT NULL DEFAULT 1)
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_1_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Clone Tables Found in following statement: create table test7 (			iter		integer,			v_multi		integer[10,10,10],			v_char		char(100)[10],			v_date timestamp[10],			v_decimal decimal(18,3)[10],			v_double 	double precision[10],			v_float float[10],			v_integer integer[10],			v_numeric numeric(9,2)[10],			v_smallint smallint[10],			v_varchar varchar(1000)[10]			)
+
+Detected: Clone Tables Found in following statement: create table test1 (i integer, c varchar(100))
+
+Detected: Multicolumn Attribute Found in following statement: create table bind_char_tab (id number, c1 char(10), c2 varchar2(10))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'issource']
+Detected: Clone Tables Found in following statement: create table bug41069_tab	(		c1 number(20),		c2 varchar2(60 byte),		c3 varchar2(1000 byte),		c4 varchar2(255 byte),		c5 varchar2(2 byte),		c6 varchar2(1 byte),		c7 varchar2(255 byte),		c8 varchar2(50 byte),		c9 date,		c10 date,		c12 number(20),		c13 varchar2(20 byte),		c15 varchar2(50 byte)	 )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id int NOT NULL PRIMARY KEY, val VARCHAR(10))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id INT, label CHAR(1))
+
+Detected: Multicolumn Attribute Found in following statement: create table imp_res_get_3_tab_1 (c1 number, c2 varchar2(10))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 float(3),													 c2 float,													 c3 float unsigned,													 c4 float,													 c5 float,													 c6 float,													 c7 float(10) unsigned)
+ in following column c7 of table test_bind_fetch
+Detected: Duplicate Column Names Found in following statement: create table imp_res_get_4_tab_1 (c1 number, c2 varchar2(10))
+ in following column c1 and in column c1 of table test_bind_result
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_bind_fetch(c1 varchar(10), c2 text)
+ in following column c2 of table test_bind_fetch
+Detected: Clone Tables Found in following statement: create table test6 (			iter		integer,			v_char		char(1000),			v_date timestamp,			v_decimal decimal(12,3),			v_double 	double precision,			v_float float,			v_integer integer,			v_numeric numeric(4,2),			v_smallint smallint,			v_varchar varchar(10000)			)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(id SMALLINT, label CHAR(1))
+
+Detected: Clone Tables Found in following statement: create table imp_res_field_tab_2 (c3_varchar21 varchar2(4))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS foo (id INT AUTO INCREMENT, name TEXT)
+ in following column name and in column name of table error_bind_2_tab
+Detected: Index Shotgun Variant: 3 Following index not used : ['pdo_exec_ddl', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ${table_name} (num int, str text, bin bytea)
+ in following column str of table $
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id STRING, data BLOB)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['coverage', 'tests_id']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (blobid integer not null primary key, bloboid OID)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, filepath TEXT(500) NOT NULL, filepathmd5 TEXT(32) NOT NULL, issource BOOL NOT NULL, UNIQUE (filepath) )
+ in following column filepath of table files
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_affected (foo int, bar varchar(10) character set latin1)
+ in following column bar and in column bar of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS test(id INT)
+

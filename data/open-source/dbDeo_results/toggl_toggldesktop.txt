@@ -1,0 +1,202 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (a integer, b text, c blob, d text)
+ in following column c and in column c of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar TEXT COLLATE NOCASE_NONLITERAL)
+ in following column bar of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Strings (str REAL)
+ in following column str of table Strings
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS Strings (str INTEGER(10))
+ in following column str and in column str of table UnicodeTable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullableTest (EmptyString VARCHAR(30) NULL, EmptyInteger INTEGER NULL, EmptyFloat FLOAT NULL , EmptyDateTime TIMESTAMP NULL)
+ in following column EmptyFloat of table NullableTest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Anys (int0 INTEGER, flt0 FLOAT, str0 VARCHAR(30))
+ in following column flt0 of table Anys
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ints (int0 INTEGER, int1 INTEGER, int2 INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE NullableTest (i INTEGER, r REAL, s VARCHAR, d DATETIME)
+ in following column d and in column d of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Anys (int0 INTEGER, flt0 NUMBER, str0 VARCHAR(30))
+ in following column flt0 and in column flt0 of table Vectors
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE integerTable (ic1 integer, ic2 integer)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Person (LastName TEXT(30), FirstName TEXT(30), Address TEXT(30), Age INTEGER)
+ in following column FirstName of table Person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullTest (i INTEGER, r REAL, v VARCHAR)
+ in following column r of table NullTest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1 (x TEXT)
+ in following column x of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Vectors (i0 INTEGER, flt0 FLOAT, str0 VARCHAR(30))
+ in following column flt0 of table Vectors
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar TEXT)
+ in following column bar of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullTest (i INTEGER %s, r FLOAT %s, v VARCHAR(30) %s)
+ in following column r of table NullTest
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE NullableStringTest (Id INTEGER(10), Address VARCHAR(30), Age INTEGER(10))
+ in following column Address and in column Address of table Person
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullableTest (EmptyString VARCHAR(30) NULL, EmptyInteger INTEGER NULL, EmptyFloat REAL NULL , EmptyDateTime TIMESTAMP NULL)
+ in following column EmptyFloat of table NullableTest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar NODIACRITIC_WIDTHINSENSITIVE TEXT)
+ in following column bar of table foo
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Tuples (int0 INTEGER, int1 INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Person (LastName TEXT(30), FirstName TEXT(30), Address TEXT(30), Age INTEGER)
+ in following column FirstName and in column FirstName of table Simpsons
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Person (LastName TEXT(30), FirstName TEXT(30), Address TEXT(30), Age INTEGER)
+ in following column Address of table Person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a integer, b text, c blob, d text)
+ in following column b of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(x COLLATE NOCASE)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE Person (LastName VARCHAR(30), FirstName VARCHAR(30), Address VARCHAR(30), Image BYTEA)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS Simpsons (LastName VARCHAR(30), Age INTEGER(3))
+ in following column LastName and in column LastName of table Person
+Detected: Compound Attribute Variant: 3 Found in following statement: update clients set  id = :id, uid = :uid, name = :name, wid = :wid  where local_id = :local_id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update projects set  id = :id, uid = :uid, name = :name where local_id = :local_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar TEXT COLLATE NOCASE_NONLITERAL_LOCALIZED)
+ in following column bar of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE NullableTest (i INTEGER, r REAL, s VARCHAR, d DATETIME)
+ in following column r and in column r of table NullTest
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update tags set  id = :id, uid = :uid, name = :name, wid = :wid where local_id = :local_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE realTable (rc1 REAL, rc2 REAL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE UnicodeTable (str TEXT)
+ in following column str of table UnicodeTable
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE BoolTest (b BOOLEAN)
+ in following column b and in column b of table test
+Detected: Compound Attribute Variant: 3 Found in following statement: update workspaces set  id = :id, uid = :uid, name = :name, premium = :premium where local_id = :local_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Compound Attribute Variant: 3 Found in following statement: update tasks set  id = :id, uid = :uid, name = :name, wid = :wid where local_id = :local_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Strings (str FLOAT)
+ in following column str of table Strings
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (tc TEXT)
+ in following column tc of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullTest (i INTEGER %s, r REAL %s, v VARCHAR(30) %s)
+ in following column r of table NullTest
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE realTable (rc1 REAL, rc2 REAL)
+ in following column rc1 of table realTable
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update projects set  uid = :uid, name = :name, guid = :guid, wid = :wid, color = :color, cid = :cid where local_id = :local_id
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Person (LastName TEXT(30), FirstName TEXT(30), Address TEXT(30), Age INTEGER)
+ in following column LastName of table Person
+Detected: Obsolete Column TypesFound in following statement: CREATE table foo_reverse (bar TEXT COLLATE REVERSE)
+ in following column bar of table foo_reverse
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (a integer, b text, c blob, d text)
+ in following column a and in column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Anys (int0 INTEGER, flt0 REAL, str0 VARCHAR, empty INTEGER)
+ in following column flt0 of table Anys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1 (x TEXT)
+ in following column x and in column x of table t
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, a DESC))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullableTest (i INTEGER, r REAL, s VARCHAR, d DATETIME)
+ in following column r of table NullableTest
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Anys (int0 INTEGER, flt0 REAL, str0 VARCHAR)
+ in following column flt0 of table Anys
+Detected: Compound Attribute Variant: 3 Found in following statement: update time_entries set  id = :id, uid = :uid, description = :description where local_id = :local_id
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE realTable (rc1 REAL, rc2 REAL)
+ in following column rc2 of table realTable
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE longlongTable (llc1 integer, llc2 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Vectors (int0 INTEGER, flt0 REAL, str0 VARCHAR)
+ in following column flt0 of table Vectors
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stringTable (sc1 text)
+ in following column sc1 of table stringTable
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (a integer, b text, c blob, d text)
+ in following column d of table test
+Detected: Metadata as Data Found in following statement: CREATE TABLE Person (Name VARCHAR(30), Address VARCHAR, Age INTEGER(3))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Dummy (data INTEGER(10))
+ in following column data and in column data of table %
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS BlobTest (idx INTEGER(2), Image BLOB)
+ in following column Image and in column Image of table Person
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (x TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Metadata as Data Found in following statement: CREATE TABLE Person (LastName VARCHAR(30), FirstName VARCHAR, Age INTEGER(3))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Vectors (int0 INTEGER, flt0 FLOAT, str0 VARCHAR(30))
+ in following column flt0 of table Vectors
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Compound Attribute Variant: 3 Found in following statement: update tags set  id = :id, uid = :uid, name = :name, wid = :wid  where local_id = :local_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NullableTest (EmptyString VARCHAR(30) NULL, EmptyInteger INTEGER NULL, EmptyFloat FLOAT NULL , EmptyDateTime DATETIME NULL)
+ in following column EmptyFloat of table NullableTest
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Anys (i0 INTEGER, flt0 FLOAT, str0 VARCHAR(30))
+ in following column flt0 of table Anys
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update clients set  id = :id, uid = :uid, name = :name, guid = :guid where local_id = :local_id
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+

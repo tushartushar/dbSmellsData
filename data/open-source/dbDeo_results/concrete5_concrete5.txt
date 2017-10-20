@@ -1,0 +1,25 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: update Groups set gIsAutomated = 1, gCheckAutomationOnRegister = ?, gCheckAutomationOnLogin = ?, gCheckAutomationOnJobRun = ?  where gID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Groups set gIsAutomated = 0, gCheckAutomationOnRegister = 0, gCheckAutomationOnLogin = 0, gCheckAutomationOnJobRun = 0  where gID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update PageTypes set ptName = ?, ptHandle = ?, ptDefaultPageTemplateID = ?, ptAllowedPageTemplates = ?, ptIsInternal = ?, ptLaunchInComposer = ?, ptIsFrequentlyAdded = ?, ptDisplayOrder = ?  where ptID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Pages set ptID = ?, uID = ?, pkgID = ?, cFilename = ?, cCacheFullPageContent = ?, cCacheFullPageContentLifetimeCustom = ?, cCacheFullPageContentOverrideLifetime = ?  where cID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Groups set gIsBadge = 1, gBadgeFID = ?, gBadgeDescription = ?, gBadgeCommunityPointValue = ?  where gID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE btFormQuestions SET questionSetId=?, question=?, inputType=?, options=?, position=?, width=?, height=?, required=?, defaultDate=?  WHERE msqID=? AND bID=0
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Groups set gUserExpirationIsEnabled = 1, gUserExpirationMethod = INTERVAL, gUserExpirationSetDateTime = null, gUserExpirationInterval = ?, gUserExpirationAction = ?  where gID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Groups set gUserExpirationIsEnabled = 1, gUserExpirationMethod = SET_TIME, gUserExpirationInterval = 0, gUserExpirationSetDateTime = ?, gUserExpirationAction = ?  where gID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Pages set cIsCheckedOut = ?, cCheckedOutUID = ?, cCheckedOutDatetime = ?, cCheckedOutDatetimeLastEdit = ?  where cID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update CollectionVersions set cvName = ?, cvHandle = ?, pTemplateID = ?, cvDescription = ?, cvDatePublic = ?  where cvID = ? and cID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update Users set uName = ?, uEmail = ?, uPassword = ?, uHasAvatar = ?, uTimezone = ?, uDefaultLanguage = ?, uLastPasswordChange = ?  where uID = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update MailImporters set miServer = ?, miUsername = ?, miPassword = ?, miEncryption = ?, miIsEnabled = ?, miEmail = ?, miPort = ?, miConnectionMethod = ?  where miID = ?
+
+Detected: Index Shotgun Variant: 1

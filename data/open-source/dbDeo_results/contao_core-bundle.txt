@@ -1,0 +1,11 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM tl_files WHERE name REGEXP ?
+
+Detected: God Table Found in following statement: CREATE TABLE `tl_files` (			 `id` int(10) unsigned NOT NULL auto_increment,			 `pid` binary(16) NULL,			 `tstamp` int(10) unsigned NOT NULL default '0',			 `uuid` binary(16) NULL,			 `type` varchar(16) NOT NULL default '',			 `path` varchar(1022) NOT NULL default '',			 `extension` varchar(16) NOT NULL default '',			 `hash` varchar(32) NOT NULL default '',			 `found` char(1) NOT NULL default '1',			 `name` varchar(255) NOT NULL default '',			 `meta` blob NULL,			 PRIMARY KEY (`id`),			 KEY `pid` (`pid`),			 UNIQUE KEY `uuid` (`uuid`),			 KEY `extension` (`extension`)			)
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT id FROM tl_search WHERE text REGEXP ?)')) . ")";
+
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM " . $this->strTable . " WHERE " . $strField . " REGEXP ?
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM tl_page WHERE title REGEXP ?
+

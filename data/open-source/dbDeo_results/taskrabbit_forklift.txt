@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `products` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL DEFAULT '', `description` text NOT NULL, `inventory` int(11) DEFAULT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `description` of table `products`
+Detected: Index Shotgun Variant: 3 Following index not used : ['users', 'combined_name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `admin_notes` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `note` text NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `note` of table `admin_notes`

@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE KEY" + "(THEKEY TEXT NOT NULL DEFAULT '')
+ in following column THEKEY of table " + "
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE DBVERSION" "(VERSION TEXT NOT NULL DEFAULT '%s')
+ in following column " " of table DBVERSION
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE KEY(THEKEY TEXT NOT NULL DEFAULT '')
+ in following column THEKEY of table KEY

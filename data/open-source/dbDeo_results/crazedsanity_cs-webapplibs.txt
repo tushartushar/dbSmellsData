@@ -1,0 +1,67 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_token_type_table (	token_type_id serial NOT NULL PRIMARY KEY,	token_type varchar(30) NOT NULL UNIQUE,	token_desc text)
+ in following column token_desc of table cswal_token_type_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_class_table (	class_id serial NOT NULL PRIMARY KEY,	class_name text NOT NULL UNIQUE)
+ in following column class_name of table cswal_class_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_permission_table (	permission_id serial NOT NULL PRIMARY KEY,	location text NOT NULL UNIQUE,	default_permissions smallint NOT NULL DEFAULT 2)
+ in following column location of table cswal_permission_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cs_authentication_table ( uid serial NOT NULL PRIMARY KEY, username text NOT NULL UNIQUE, passwd text, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer NOT NULL DEFAULT 0 		REFERENCES cs_user_status_table(user_status_id))
+ in following column date_created and in column date_created of table cswal_session_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (id serial not null PRIMARY KEY, data text not null)
+ in following column data of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_group_table (	group_id serial NOT NULL PRIMARY KEY,	group_name varchar(32) NOT NULL UNIQUE,	group_description text)
+ in following column group_description of table cswal_group_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_attribute_table (	attribute_id serial NOT NULL PRIMARY KEY,	attribute_name text NOT NULL UNIQUE)
+ in following column attribute_id and in column attribute_id of table cswal_log_attribute_table
+Detected: Metadata as Data Found in following statement: CREATE TABLE cswal_version_table (	version_id serial NOT NULL PRIMARY KEY,	project_name varchar(30) NOT NULL UNIQUE,	version_string varchar(50) NOT NULL)
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_authentication_table ( uid serial NOT NULL PRIMARY KEY, username text NOT NULL UNIQUE, passwd text, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer NOT NULL DEFAULT 0 		REFERENCES cs_user_status_table(user_status_id))
+ in following column username of table cs_authentication_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_auth_token_table (	auth_token_id text NOT NULL UNIQUE PRIMARY KEY,	token_type_id integer NOT NULL REFERENCES cswal_token_type_table(token_type_id) DEFAULT 0,	uid integer NOT NULL REFERENCES cs_authentication_table(uid) DEFAULT 0,	passwd text NOT NULL,	max_uses integer NOT NULL DEFAULT 1,	total_uses integer NOT NULL DEFAULT 0,	creation timestamp NOT NULL DEFAULT NOW(),	expiration timestamp DEFAULT NULL,	stored_value text DEFAULT NULL)
+ in following column passwd of table cswal_auth_token_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_event_table (	event_id serial NOT NULL PRIMARY KEY,	class_id integer NOT NULL REFERENCES cswal_class_table(class_id),	category_id integer NOT NULL REFERENCES cswal_category_table(category_id),	description text NOT NULL)
+ in following column description of table cswal_event_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_event_table (	event_id serial NOT NULL PRIMARY KEY,	class_id integer NOT NULL REFERENCES cswal_class_table(class_id),	category_id integer NOT NULL REFERENCES cswal_category_table(category_id),	description text NOT NULL)
+ in following column class_id and in column class_id of table cswal_class_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_auth_token_table (	auth_token_id text NOT NULL UNIQUE PRIMARY KEY,	token_type_id integer NOT NULL REFERENCES cswal_token_type_table(token_type_id) DEFAULT 0,	uid integer NOT NULL REFERENCES cs_authentication_table(uid) DEFAULT 0,	passwd text NOT NULL,	max_uses integer NOT NULL DEFAULT 1,	total_uses integer NOT NULL DEFAULT 0,	creation timestamp NOT NULL DEFAULT NOW(),	expiration timestamp DEFAULT NULL,	stored_value text DEFAULT NULL)
+ in following column auth_token_id of table cswal_auth_token_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_event_table (	event_id serial NOT NULL PRIMARY KEY,	class_id integer NOT NULL REFERENCES cswal_class_table(class_id),	category_id integer NOT NULL REFERENCES cswal_category_table(category_id),	description text NOT NULL)
+ in following column event_id and in column event_id of table cswal_log_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_session_table (	session_id varchar(40) NOT NULL UNIQUE PRIMARY KEY,	uid integer REFERENCES cs_authentication_table(uid),	date_created timestamp NOT NULL DEFAULT NOW(),	last_updated timestamp NOT NULL DEFAULT NOW(),	num_checkins integer NOT NULL DEFAULT 0,	session_data text)
+ in following column session_data of table cswal_session_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_log_attribute_table (	log_attribute_id serial NOT NULL PRIMARY KEY,	log_id int NOT NULL REFERENCES cswal_log_table(log_id),	attribute_id int NOT NULL UNIQUE REFERENCES cswal_attribute_table(attribute_id),	value_text text)
+ in following column value_text of table cswal_log_attribute_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cs_authentication_table ( uid serial NOT NULL PRIMARY KEY, username text NOT NULL UNIQUE, passwd text, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer NOT NULL DEFAULT 0 		REFERENCES cs_user_status_table(user_status_id))
+ in following column uid and in column uid of table cswal_log_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_authentication_table ( uid integer NOT NULL, username text NOT NULL, passwd character varying(32), is_active boolean DEFAULT true NOT NULL, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer)
+ in following column email of table cs_authentication_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_authentication_table ( uid serial NOT NULL PRIMARY KEY, username text NOT NULL UNIQUE, passwd text, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer NOT NULL DEFAULT 0 		REFERENCES cs_user_status_table(user_status_id))
+ in following column email of table cs_authentication_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_attribute_table (	attribute_id serial NOT NULL PRIMARY KEY,	attribute_name text NOT NULL UNIQUE)
+ in following column attribute_name of table cswal_attribute_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_authentication_table ( uid integer NOT NULL, username text NOT NULL, passwd character varying(32), is_active boolean DEFAULT true NOT NULL, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer)
+ in following column username of table cs_authentication_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_category_table (	category_id serial NOT NULL PRIMARY KEY,	category_name text NOT NULL UNIQUE)
+ in following column category_name of table cswal_category_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_auth_token_table (	auth_token_id text NOT NULL UNIQUE PRIMARY KEY,	token_type_id integer NOT NULL REFERENCES cswal_token_type_table(token_type_id) DEFAULT 0,	uid integer NOT NULL REFERENCES cs_authentication_table(uid) DEFAULT 0,	passwd text NOT NULL,	max_uses integer NOT NULL DEFAULT 1,	total_uses integer NOT NULL DEFAULT 0,	creation timestamp NOT NULL DEFAULT NOW(),	expiration timestamp DEFAULT NULL,	stored_value text DEFAULT NULL)
+ in following column passwd and in column passwd of table cs_authentication_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_user_group_table (	user_group_id serial NOT NULL PRIMARY KEY,	user_id integer NOT NULL REFERENCES cs_authentication_table(uid),	group_id integer NOT NULL REFERENCES cswal_group_table(group_id))
+ in following column group_id and in column group_id of table cswal_group_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_user_status_table ( user_status_id integer NOT NULL PRIMARY KEY, description text NOT NULL, is_active boolean DEFAULT true NOT NULL)
+ in following column description of table cs_user_status_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_user_permission_table (	user_permission_id serial NOT NULL PRIMARY KEY,	user_id integer NOT NULL REFERENCES cs_authentication_table(uid),	permission_id integer NOT NULL REFERENCES cswal_permission_table(permission_id),	permissions smallint NOT NULL DEFAULT 2)
+ in following column permission_id and in column permission_id of table cswal_permission_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_log_attribute_table (	log_attribute_id serial NOT NULL PRIMARY KEY,	log_id int NOT NULL REFERENCES cswal_log_table(log_id),	attribute_id int NOT NULL UNIQUE REFERENCES cswal_attribute_table(attribute_id),	value_text text)
+ in following column log_id and in column log_id of table cswal_log_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_session_table ( session_id varchar(40) NOT NULL UNIQUE PRIMARY KEY, uid integer REFERENCES cs_authentication_table(uid), date_created timestamp NOT NULL DEFAULT NOW(), last_updated timestamp NOT NULL DEFAULT NOW(), num_checkins integer NOT NULL DEFAULT 0, session_data text)
+ in following column session_data of table cswal_session_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cs_authentication_table ( uid serial NOT NULL PRIMARY KEY, username text NOT NULL UNIQUE, passwd text, date_created date DEFAULT now() NOT NULL, last_login timestamp with time zone, email text, user_status_id integer NOT NULL DEFAULT 0 		REFERENCES cs_user_status_table(user_status_id))
+ in following column passwd of table cs_authentication_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_log_table (	log_id serial NOT NULL PRIMARY KEY,	creation timestamp NOT NULL DEFAULT NOW(),	event_id integer NOT NULL REFERENCES cswal_event_table(event_id),	uid integer NOT NULL REFERENCES cs_authentication_table(uid),	affected_uid integer NOT NULL,	details text NOT NULL)
+ in following column details of table cswal_log_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_auth_token_table (	auth_token_id text NOT NULL UNIQUE PRIMARY KEY,	token_type_id integer NOT NULL REFERENCES cswal_token_type_table(token_type_id) DEFAULT 0,	uid integer NOT NULL REFERENCES cs_authentication_table(uid) DEFAULT 0,	passwd text NOT NULL,	max_uses integer NOT NULL DEFAULT 1,	total_uses integer NOT NULL DEFAULT 0,	creation timestamp NOT NULL DEFAULT NOW(),	expiration timestamp DEFAULT NULL,	stored_value text DEFAULT NULL)
+ in following column token_type_id and in column token_type_id of table cswal_token_type_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cswal_event_table (	event_id serial NOT NULL PRIMARY KEY,	class_id integer NOT NULL REFERENCES cswal_class_table(class_id),	category_id integer NOT NULL REFERENCES cswal_category_table(category_id),	description text NOT NULL)
+ in following column category_id and in column category_id of table cswal_category_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cswal_auth_token_table (	auth_token_id text NOT NULL UNIQUE PRIMARY KEY,	token_type_id integer NOT NULL REFERENCES cswal_token_type_table(token_type_id) DEFAULT 0,	uid integer NOT NULL REFERENCES cs_authentication_table(uid) DEFAULT 0,	passwd text NOT NULL,	max_uses integer NOT NULL DEFAULT 1,	total_uses integer NOT NULL DEFAULT 0,	creation timestamp NOT NULL DEFAULT NOW(),	expiration timestamp DEFAULT NULL,	stored_value text DEFAULT NULL)
+ in following column stored_value of table cswal_auth_token_table

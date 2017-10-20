@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `$commentsTable` (			 `id` int(11) NOT NULL AUTO_INCREMENT,			 `context` varchar(256) NOT NULL,			 `wordID` text NOT NULL,			 `user` varchar(60) NOT NULL,			 `text` text NOT NULL,			 PRIMARY KEY (`id`)			)
+ in following column `wordID` of table `$commentsTable`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `".TABLE_TINFOBAR."` (	 `id` int(11) NOT NULL AUTO_INCREMENT,	 `type` varchar(256) NOT NULL,	 `context` varchar(256) NOT NULL,	 `wordID` text NOT NULL,	 `user` varchar(60) NOT NULL,	 `text` text NOT NULL,	 PRIMARY KEY (`id`)	)
+ in following column `wordID` of table `".TABLE_TINFOBAR."`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `$commentsTable` (			 `id` int(11) NOT NULL AUTO_INCREMENT,			 `context` varchar(256) NOT NULL,			 `wordID` text NOT NULL,			 `user` varchar(60) NOT NULL,			 `text` text NOT NULL,			 PRIMARY KEY (`id`)			)
+ in following column `text` of table `$commentsTable`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `".TABLE_TINFOBAR."` (	 `id` int(11) NOT NULL AUTO_INCREMENT,	 `type` varchar(256) NOT NULL,	 `context` varchar(256) NOT NULL,	 `wordID` text NOT NULL,	 `user` varchar(60) NOT NULL,	 `text` text NOT NULL,	 PRIMARY KEY (`id`)	)
+ in following column `text` of table `".TABLE_TINFOBAR."`

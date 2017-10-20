@@ -1,0 +1,8 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE autofill_encrypted (data_encrypted TEXT, id INTEGER PRIMARY KEY,password_encrypted TEXT, server TEXT, username_encrypted TEXT, last_used NUMERIC)
+ in following column password_encrypted of table autofill_encrypted
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE autofill_encrypted (data_encrypted TEXT, id INTEGER PRIMARY KEY,password_encrypted TEXT, server TEXT, username_encrypted TEXT, last_used NUMERIC)
+ in following column username_encrypted of table autofill_encrypted
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE autofill_encrypted (data_encrypted TEXT, id INTEGER PRIMARY KEY,password_encrypted TEXT, server TEXT, username_encrypted TEXT, last_used NUMERIC)
+ in following column server of table autofill_encrypted
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE autofill_encrypted (data_encrypted TEXT, id INTEGER PRIMARY KEY,password_encrypted TEXT, server TEXT, username_encrypted TEXT, last_used NUMERIC)
+ in following column data_encrypted of table autofill_encrypted

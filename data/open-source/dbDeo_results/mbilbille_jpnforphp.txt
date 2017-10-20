@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column kanji of table verbs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column kanji of table verbs
+Detected: Index Shotgun Variant: 3 Following index not used : ['verbs (kana)', 'kana']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column type of table verbs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column kana of table verbs
+Detected: Index Shotgun Variant: 3 Following index not used : ['verbs (kana)', 'gindexverbs_kanji_idxverbs']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column kana of table verbs
+Detected: Index Shotgun Variant: 3 Following index not used : ['verbs (kana)', 'M']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE verbs ( id INTEGER PRIMARY KEY NOT NULL, kanji TEXT, kana TEXT NOT NULL, type TEXT NOT NULL)
+ in following column type of table verbs

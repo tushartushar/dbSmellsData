@@ -1,0 +1,11 @@
+Detected: God Table Found in following statement: CREATE TABLE task ( id INT8 NOT NULL, description VARCHAR(1024), endtime TIMESTAMP WITHOUT TIME ZONE, majorerrorcode VARCHAR(1024), message VARCHAR(1024), minorerrorcode VARCHAR(255), venodrspecificerrorcode VARCHAR(255), expiretime INT8, owner_href VARCHAR(255), owner_name VARCHAR(255), owner_type VARCHAR(255), result_href VARCHAR(255), result_name VARCHAR(255), result_type VARCHAR(255), starttime TIMESTAMP WITHOUT TIME ZONE, status INT4, vdc VARCHAR(1024))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE product ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(256) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE installableinstance ( id INT8 NOT NULL, date TIMESTAMP WITHOUT TIME ZONE, name VARCHAR(255), status VARCHAR(255), vdc VARCHAR(255), domain VARCHAR(255), fqn VARCHAR(255), hostname VARCHAR(255), ip VARCHAR(255), ostype VARCHAR(255))
+ in following column status and in column status of table task
+Detected: Metadata as Data Found in following statement: CREATE TABLE environment ( id INT8 NOT NULL, description VARCHAR(64), name VARCHAR(64) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE installablerelease ( id INT8 NOT NULL, releasenotes VARCHAR(2048), version VARCHAR(128))
+
+Detected: Index Shotgun Variant: 1

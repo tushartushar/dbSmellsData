@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, ' 'type TEXT, path TEXT)
+ in following column ' ' of table searchIndex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, ' 'type TEXT, path TEXT)
+ in following column name of table searchIndex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, ' 'type TEXT, path TEXT)
+ in following column path of table searchIndex
+Detected: Index Shotgun Variant: 1

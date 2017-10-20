@@ -1,0 +1,87 @@
+Detected: Clone Tables Found in following statement: create table pk1 (col1 primary key, col2, col3)
+
+Detected: Multicolumn Attribute Found in following statement: create table child2 (id1 integer, id2 integer, foreign key(id2, id1) references parent(id2, id1))
+
+Detected: Clone Tables Found in following statement: create table child1 (id1 integer, id2 integer,\r\n foreign\tkey(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Clone Tables Found in following statement: create table tbl (col int)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS ResourcesTags (bd_fid VARCHAR(255), name VARCHAR(64), version INTEGER)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', '/']
+Detected: Clone Tables Found in following statement: create table t1 (c1 integer primary key, v)
+
+Detected: Multicolumn Attribute Found in following statement: create table child1 (id1 integer, id2 integer,\r\n foreign\tkey(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Clone Tables Found in following statement: create table pk3 (col1, col2, col3, col4, primary key (col3, col2 ))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 integer)
+
+Detected: Metadata as Data Found in following statement: create table test (id int primary key, DESCRIPTION varchar(40), fOo varchar(3))
+
+Detected: Duplicate Column Names Found in following statement: create table person (id integer, name string)
+ in following column name and in column name of table ResourcesTags
+Detected: Obsolete Column TypesFound in following statement: create table t (c text)
+ in following column c of table t
+Detected: Clone Tables Found in following statement: create table t (c)
+
+Detected: Duplicate Column Names Found in following statement: create table t1 (c1 int)
+ in following column c1 and in column c1 of table t2
+Detected: Clone Tables Found in following statement: create table child1 (id1 integer, id2 integer, foreign key(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Obsolete Column TypesFound in following statement: create table testindex (id integer primary key, fn float default 0.0, sn not null)
+ in following column fn of table testindex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column tbl_name of table x
+Detected: Duplicate Column Names Found in following statement: create table t1 (c1 integer)
+ in following column c1 and in column c1 of table t2
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['artist', 'id']
+Detected: Clone Tables Found in following statement: create table t2 (c2)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['person', 'id']
+Detected: Clone Tables Found in following statement: create table t2 (c1 int, c2 int)
+
+Detected: Multicolumn Attribute Found in following statement: create table child1 (id1 integer, id2 integer, foreign key(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Clone Tables Found in following statement: create table t1 (c1)
+
+Detected: Duplicate Column Names Found in following statement: create table t (c text)
+ in following column c and in column c of table x
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column type and in column type of table mxp
+Detected: Duplicate Column Names Found in following statement: create table tbl (col int)
+ in following column col and in column col of table foo
+Detected: Multicolumn Attribute Found in following statement: create table parent (id1 integer, id2 integer, primary key(id1, id2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column name of table x
+Detected: Clone Tables Found in following statement: create table t2 (c1 integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table t2 (c1 int, c2 int)
+
+Detected: Clone Tables Found in following statement: create table t (c1)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column sql of table x
+Detected: Clone Tables Found in following statement: create table t (c text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', '2']
+Detected: Clone Tables Found in following statement: create table t1 (c1 int)
+
+Detected: Clone Tables Found in following statement: create table pk2 (col1, col2 primary key, col3)
+
+Detected: Clone Tables Found in following statement: create table child2 (id1 integer, id2 integer, foreign key(id2, id1) references parent(id2, id1))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', 'fn']
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', 'sn']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column type of table x
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['parent', 'id2']
+Detected: Obsolete Column TypesFound in following statement: create table test (id integer primary key, fn float default 0.0, sn not null)
+ in following column fn of table test
+Detected: Duplicate Column Names Found in following statement: create table person (id integer, name string)
+ in following column id and in column id of table test
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['parent', 'id1']
+Detected: Clone Tables Found in following statement: create table tbl (colid integer primary key AUTOINCREMENT, col varchar)
+

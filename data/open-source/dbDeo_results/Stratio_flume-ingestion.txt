@@ -1,0 +1,125 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column country of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_http_method of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column imdbid of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column imdbvotes of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column year of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column . of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column rated of table films
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS demoCassandra.demoCassandra (name text, age text, PRIMARY KEY ((name, age)))
+ in following column . and in column . of table public
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column type of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column response of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column plot of table films
+Detected: Metadata as Data Found in following statement: CREATE TABLE cities (id INT, name VARCHAR(100), city VARCHAR(100))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column language of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column genre of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_date of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS demoCassandra.demoCassandra (name text, age text, PRIMARY KEY ((name, age)))
+ in following column . of table demoCassandra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column . of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column runtime of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column payment_method of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column data of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column metascore of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column imdbvotes of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column poster of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column awards of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column metascore of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_http_version of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column runtime of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column language of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column actors of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column shopping_center of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_host of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column released of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column rated of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column writer of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column country of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column director of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column imdbid of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column awards of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column timestamp of table orders
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS demoCassandra.demoCassandra (name text, age text, PRIMARY KEY ((name, age)))
+ in following column age of table demoCassandra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column type of table films
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_url_path of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column channel of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column city of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column poster of table films
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column writer of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column director of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column actors of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS orders.orders ( order_id UUID, timestamp text, client_id int, payment_method text, latitude double, longitude double, credit_card text, shopping_center text, channel text, city text, employee int, total_amount double, PRIMARY KEY (order_id))
+ in following column credit_card of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_user of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column released of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column ano of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_logs ( log_id uuid, data text, log_bytes_returned text, log_date text, log_host text, log_http_code int, log_http_method text, log_http_version text, log_url_path text, log_user text, PRIMARY KEY ((log_id)))
+ in following column log_bytes_returned of table access_logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column genre of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column response of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.test2 ( 	title text,	year text,	rated text,	released text,	runtime text,	genre text,	director text,	writer text,	actors text,	plot text,	language text,	country text,	awards text,	poster text,	metascore text,	imdbrating text,	imdbvotes text,	type text,	response text, imdbid text PRIMARY KEY)
+ in following column imdbrating of table films
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cities (id INT, name VARCHAR(100), city VARCHAR(100))
+ in following column city and in column city of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column imdbrating of table films
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS films.frozen ( titulo text, ano text, rated text, released text, runtime text, genre text, director text, writer text, actors text, plot text, language text, country text, awards text, poster text, metascore text, imdbrating text, imdbvotes text, type text, response text, imdbid text PRIMARY KEY)
+ in following column plot of table films

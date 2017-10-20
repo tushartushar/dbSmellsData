@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'parent_node_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'parent_item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'comment_feed_id']

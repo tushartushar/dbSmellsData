@@ -1,0 +1,75 @@
+Detected: God Table Found in following statement: CREATE TABLE lake_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT l_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE lake_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT l_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE road_segment_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT rs_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Values in Column Definition Found in following statement: create table T_SRID (the_geom GEOMETRY CHECK ST_SRID(the_geom) = 27572)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE map_neatline_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT mn_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Duplicate Column Names Found in following statement: create table KML_POINTS(id int primary key, the_geom POINT, response boolean)
+ in following column id and in column id of table ptClouds
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE named_place_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT np_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE map_neatline_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT mn_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE building_area_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT ba_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE dest15(destination INT)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE pond_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT p_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Values in Column Definition Found in following statement: create table area(the_geom GEOMETRY CHECK ST_SRID(THE_GEOM) = 9999, idarea int primary key)
+
+Detected: God Table Found in following statement: CREATE TABLE forest_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT f_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ponds (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),type CHARACTER VARYING(64),shores_gid INTEGER)
+ in following column type and in column type of table area
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE stream_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT s_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: God Table Found in following statement: CREATE TABLE building_area_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT ba_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Values in Column Definition Found in following statement: create table LIDAR_PTS (the_geom POINT CHECK ST_COORDDIM(the_geom) = 3)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test(road POINT, description VARCHAR, id INT AUTO_INCREMENT PRIMARY KEY)
+ in following column road and in column road of table cormen
+Detected: God Table Found in following statement: CREATE TABLE named_place_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT np_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Values in Column Definition Found in following statement: create table T_GEOMETRY3D (the_geom GEOMETRY CHECK ST_COORDDIM(the_geom) = 3)
+
+Detected: Duplicate Column Names Found in following statement: create table area(idarea int primary key, value DOUBLE, descr CHAR(50))
+ in following column value and in column value of table test
+Detected: God Table Found in following statement: CREATE TABLE geometry_columns (f_table_schema CHARACTER VARYING,f_table_name CHARACTER VARYING,f_geometry_column CHARACTER VARYING,g_table_schema CHARACTER VARYING,g_table_name CHARACTER VARYING,storage_type INTEGER,geometry_type INTEGER,coord_dimension INTEGER,max_ppr INTEGER,srid INTEGER DEFAULT (SELECT srid from spatial_ref_sys LIMIT 1) REFERENCES spatial_ref_sys ,CONSTRAINT gc_pk PRIMARY KEY (f_table_name,f_geometry_column))
+
+Detected: God Table Found in following statement: CREATE TABLE pond_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT p_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Values in Column Definition Found in following statement: create table TABLE_POINTS_CRS(the_geom POINT CHECK ST_SRID(THE_GEOM)=4326, id INT, climat VARCHAR)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE divided_route_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT dr_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE stream_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+ in following column gid and in column gid of table POINT3D
+Detected: Values in Column Definition Found in following statement: create table TABLE_POINTS(the_geom POINT CHECK ST_SRID(THE_GEOM)=9999, id INT, climat VARCHAR)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE dest234(destination INT)
+
+Detected: Values in Column Definition Found in following statement: create table area(the_geom GEOMETRY CHECK ST_SRID(THE_GEOM) = 4326, idarea int primary key)
+
+Detected: Duplicate Column Names Found in following statement: create table KML_POINTS(id int primary key, the_geom POINT, response boolean)
+ in following column the_geom and in column the_geom of table POINT3D
+Detected: God Table Found in following statement: CREATE TABLE divided_route_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT dr_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: God Table Found in following statement: CREATE TABLE stream_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT s_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: God Table Found in following statement: CREATE TABLE road_segment_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT rs_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE forest_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT f_gid_pk PRIMARY KEY (gid, eseq, seq))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE building_pt_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,CONSTRAINT bp_gid_pk PRIMARY KEY (gid, eseq, seq))
+ in following column CONSTRAINT and in column CONSTRAINT of table geometry_columns
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE forests (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),boundary_gid INTEGER)
+ in following column name and in column name of table temptable
+Detected: Obsolete Column TypesFound in following statement: create table area(id integer, value REAL, descr CHAR(50))
+ in following column value of table area

@@ -1,0 +1,4 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE testdb (id integer, username text)
+ in following column id and in column id of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testdb (id integer, username text)
+ in following column username of table testdb

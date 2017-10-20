@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( Item TEXT PRIMARY KEY, UsedAt INTEGER NOT NULL )
+ in following column Item of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS Log ( Ix INTEGER PRIMARY KEY, Header TEXT NOT NULL, Body TEXT {0} )
+ in following column Header of table Log
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS Log ( Ix INTEGER PRIMARY KEY, Header TEXT NOT NULL, Body TEXT {0} )
+ in following column Body of table Log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( Option TEXT PRIMARY KEY, Value {1} )
+ in following column Option of table {

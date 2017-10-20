@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+g+" (key TEXT, location TEXT, value TEXT)
+ in following column value of table "+g+"
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+g+" (key TEXT, location TEXT, value TEXT)
+ in following column location of table "+g+"

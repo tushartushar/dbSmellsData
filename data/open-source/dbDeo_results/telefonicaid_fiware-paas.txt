@@ -1,0 +1,25 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE environmenttype ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(256) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE applicationrelease_applicationrelease ( applicationrelease_id VARCHAR(255) NOT NULL, transitablereleases_id VARCHAR(255) NOT NULL)
+ in following column transitablereleases_id and in column transitablereleases_id of table productrelease_productrelease
+Detected: God Table Found in following statement: CREATE TABLE tierinstance ( numberreplica INT4 NOT NULL, ovf VARCHAR(100000), vapp VARCHAR(10000), domain VARCHAR(128), fqn VARCHAR(512), hostname VARCHAR(128), networks VARCHAR(512), ostype VARCHAR(8), vmid VARCHAR(512), id INT8 NOT NULL, tier_id INT8, taskid VARCHAR(255), ip VARCHAR(128))
+
+Detected: God Table Found in following statement: CREATE TABLE task ( id INT8 NOT NULL, description VARCHAR(1024), endtime TIMESTAMP WITHOUT TIME ZONE, environment VARCHAR(1024), majorerrorcode VARCHAR(1024), message VARCHAR(1024), minorerrorcode VARCHAR(255), venodrspecificerrorcode VARCHAR(255), expiretime INT8, owner_href VARCHAR(255), owner_name VARCHAR(255), owner_type VARCHAR(255), result_href VARCHAR(255), result_name VARCHAR(255), result_type VARCHAR(255), starttime TIMESTAMP WITHOUT TIME ZONE, status INT4, tier VARCHAR(1024), vdc VARCHAR(1024))
+
+Detected: God Table Found in following statement: CREATE TABLE tier ( id INT8 NOT NULL, environmentname VARCHAR(255), flavour VARCHAR(255), floatingip VARCHAR(255), icono VARCHAR(255), image VARCHAR(255), initialnumberinstances INT4, keypair VARCHAR(255), maximumnumberinstances INT4, minimumnumberinstances INT4, name VARCHAR(256) NOT NULL, payload VARCHAR(90000), vdc VARCHAR(255), securitygroup_id INT8)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE subnetwork ( id INT8 NOT NULL, cidr VARCHAR(255), name VARCHAR(255))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE service ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(256) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE producttype ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(256) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE network ( id INT8 NOT NULL, name VARCHAR(255), vdc VARCHAR(255))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE applicationtype ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(256) NOT NULL)
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE installableinstance ( id INT8 NOT NULL, date TIMESTAMP WITHOUT TIME ZONE, name VARCHAR(256) NOT NULL, status VARCHAR(255), vdc VARCHAR(255))
+ in following column status and in column status of table task
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE os ( id INT8 NOT NULL, description VARCHAR(2048), name VARCHAR(128), ostype VARCHAR(3) NOT NULL, v INT8, version VARCHAR(128))
+ in following column id and in column id of table applicationrelease

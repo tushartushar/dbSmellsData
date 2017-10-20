@@ -1,0 +1,37 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_list of table insert_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS update_stmt_test ( test_id int, test_text text, test_set set<text>, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_list of table update_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS update_stmt_test ( test_id int, test_text text, test_set set<text>, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_map of table update_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_map of table insert_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS select_stmt_test ( test_id int, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<int>, PRIMARY KEY (test_id) )
+ in following column test_text of table select_stmt_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_id and in column test_id of table select_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS delete_stmt_test ( test_id int, test_text text, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_list of table delete_stmt_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_set and in column test_set of table select_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS delete_stmt_test ( test_id int, test_text text, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_text of table delete_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_set of table insert_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS delete_stmt_test ( test_id int, test_text text, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_map of table delete_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_text of table insert_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS insert_stmt_test ( test_id uuid, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<float>, PRIMARY KEY (test_id) )
+ in following column test_float of table insert_stmt_test
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS select_stmt_test ( test_id int, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<int>, PRIMARY KEY (test_id) )
+ in following column test_map of table select_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS select_stmt_test ( test_id int, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<int>, PRIMARY KEY (test_id) )
+ in following column test_list of table select_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS update_stmt_test ( test_id int, test_text text, test_set set<text>, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_set of table update_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS select_stmt_test ( test_id int, test_text text, test_int int, test_float float, test_map map<text,int>, test_list list<text>, test_set set<int>, PRIMARY KEY (test_id) )
+ in following column test_float of table select_stmt_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS update_stmt_test ( test_id int, test_text text, test_set set<text>, test_map map<text,int>, test_list list<text>, PRIMARY KEY (test_id) )
+ in following column test_text of table update_stmt_test

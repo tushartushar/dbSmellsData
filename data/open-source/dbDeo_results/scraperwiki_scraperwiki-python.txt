@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE zhuozi (a TEXT, b TEXT)
+ in following column a of table zhuozi
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frigled\xaa (a TEXT)
+ in following column xaa of table frigled
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE zhuozi\xaa (\xaa TEXT)
+ in following column xaa of table zhuozi
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE zhuozi (a TEXT, b TEXT)
+ in following column b of table zhuozi

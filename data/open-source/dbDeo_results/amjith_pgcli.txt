@@ -1,0 +1,27 @@
+Detected: Obsolete Column TypesFound in following statement: create table a(x text)
+ in following column x of table a
+Detected: Obsolete Column TypesFound in following statement: create table b(z text)
+ in following column z of table b
+Detected: Obsolete Column TypesFound in following statement: create table schema1.c (w text)
+ in following column . of table schema1
+Detected: Obsolete Column TypesFound in following statement: create table a(x text, y text)
+ in following column y of table a
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person (name TEXT, current_mood mood)
+ in following column name of table person
+Detected: Clone Tables Found in following statement: create table schema2.child(childid int PRIMARY KEY, motherid int REFERENCES schema1.parent)
+
+Detected: Clone Tables Found in following statement: create table schema1.parent(parentid int PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: create table test(a text)
+ in following column a of table test
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table schema1.c (w text)
+ in following column . and in column . of table schema2
+Detected: Obsolete Column TypesFound in following statement: create table unicodechars(t text)
+ in following column t of table unicodechars
+Detected: Obsolete Column TypesFound in following statement: create table a(x text, y text)
+ in following column x of table a
+Detected: Clone Tables Found in following statement: create table schema1.c (w text)
+
+Detected: Duplicate Column Names Found in following statement: create table test(a boolean)
+ in following column a and in column a of table numbertest

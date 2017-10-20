@@ -1,0 +1,67 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension_ledger', 'source_kind']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'user_dimension_user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'tenant_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_consolidated_forward_dimension_stage', 'user_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS visits_fact ( cluster_type_id INTEGER NOT NULL DEFAULT default_cluster_type_id(), date_dimension_id INTEGER NOT NULL, tenant_dimension_id INTEGER NOT NULL, user_dimension_id INTEGER NOT NULL, group_dimension_id INTEGER[] NOT NULL, user_agent_type_id INTEGER NOT NULL, feature_type_id INTEGER NOT NULL, total INTEGER NOT NULL, time_key INTEGER NOT NULL, last_modified_at TIMESTAMP NOT NULL DEFAULT NOW() )
+ in following column last_modified_at and in column last_modified_at of table tenant_ledger
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS user_account_state_table ( id SERIAL, name VARCHAR NOT NULL, description VARCHAR NOT NULL )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'user_agent_type_version']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'time_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'from_group_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'session_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_table', 'cluster_table_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension', 'tenant_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS tenant_ledger ( id STRING, tenant_id INT, source_kind STRING, source_uuid STRING, start_at STRING, last_modified_at STRING, delta INT )
+ in following column delta and in column delta of table user_dimension_ledger
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'cluster_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'user_agent_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension', 'end_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'cluster_type_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS user_table ( id SERIAL, name VARCHAR NOT NULL, description VARCHAR NOT NULL )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'user_agent_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'user_dimension_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS user_dimension ( id SERIAL, tenant_id INTEGER NOT NULL, user_id INTEGER NOT NULL, start_at TIMESTAMP NOT NULL DEFAULT TO_TIMESTAMP(0), end_at TIMESTAMP, version INTEGER DEFAULT 1, last_modified_at TIMESTAMP NOT NULL DEFAULT NOW() )
+ in following column start_at and in column start_at of table tenant_ledger
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'tenant_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension_ledger', 'tenant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'time_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'date_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_consolidated_forward_dimension_stage', 'end_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension_ledger', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'date_dimension_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS visits_fact ( cluster_type_id INTEGER NOT NULL DEFAULT default_cluster_type_id(), date_dimension_id INTEGER NOT NULL, tenant_dimension_id INTEGER NOT NULL, user_dimension_id INTEGER NOT NULL, group_dimension_id INTEGER[] NOT NULL, user_agent_type_id INTEGER NOT NULL, feature_type_id INTEGER NOT NULL, total INTEGER NOT NULL, time_key INTEGER NOT NULL, last_modified_at TIMESTAMP NOT NULL DEFAULT NOW() )
+ in following column total and in column total of table visits_hourly_fact
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension_ledger', 'start_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'user_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'cluster_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'user_dimension_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS visits_fact ( cluster_type_id INTEGER NOT NULL DEFAULT default_cluster_type_id(), date_dimension_id INTEGER NOT NULL, tenant_dimension_id INTEGER NOT NULL, user_dimension_id INTEGER NOT NULL, group_dimension_id INTEGER[] NOT NULL, user_agent_type_id INTEGER NOT NULL, feature_type_id INTEGER NOT NULL, total INTEGER NOT NULL, time_key INTEGER NOT NULL, last_modified_at TIMESTAMP NOT NULL DEFAULT NOW() )
+ in following column time_key and in column time_key of table visits_hourly_fact
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'tenant_dimension_tenant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'user_agent_type_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'feature_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_consolidated_forward_dimension_stage', 'start_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'feature_type_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension_ledger', 'source_uuid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'time_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_dimension', 'start_at']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS tenant_ledger ( id STRING, tenant_id INT, source_kind STRING, source_uuid STRING, start_at STRING, last_modified_at STRING, delta INT )
+ in following column source_uuid and in column source_uuid of table user_dimension_ledger
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'feature_type_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS tenant_ledger ( id STRING, tenant_id INT, source_kind STRING, source_uuid STRING, start_at STRING, last_modified_at STRING, delta INT )
+ in following column source_kind and in column source_kind of table user_dimension_ledger
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'group_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'time_key']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS user_table ( id SERIAL, name VARCHAR NOT NULL, description VARCHAR NOT NULL )
+ in following column id and in column id of table tenant_ledger
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_daily_fact_y2014m08', 'feature_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_consolidated_forward_dimension_stage', 'tenant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_file_fact_stage', 'date_dimension_date_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'tenant_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_hourly_fact_y2014m08', 'date_dimension_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits_monthly_fact_y2014m08', 'user_agent_type_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS user_table ( id SERIAL, cluster_table_id INTEGER NOT NULL, tenant_id INTEGER NOT NULL, user_id INTEGER NOT NULL )
+ in following column tenant_id and in column tenant_id of table tenant_ledger

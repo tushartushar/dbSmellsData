@@ -1,0 +1,8 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stream', 'subscription_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['subscription', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['subscription', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE republish ( inserted_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, key VARCHAR(36), obj TEXT, sent BOOLEAN DEFAULT FALSE)
+ in following column obj of table republish
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['subscription', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['subscription', 'id']

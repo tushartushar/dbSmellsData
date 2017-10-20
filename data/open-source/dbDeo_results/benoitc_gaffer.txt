@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists keys (key text primary key, data text, parent text)
+ in following column parent of table keys
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE auth SET pwd=?, user_type=?, key=?, extra=?  WHERE user=?
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists auth (user text primary key, pwd text, user_type int, key text, extra text)
+ in following column pwd of table auth
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists auth (user text primary key, pwd text, user_type int, key text, extra text)
+ in following column extra of table auth
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists keys (key text primary key, data text, parent text)
+ in following column data of table keys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists auth (user text primary key, pwd text, user_type int, key text, extra text)
+ in following column user of table auth

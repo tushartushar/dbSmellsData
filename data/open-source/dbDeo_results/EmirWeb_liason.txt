@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS EMIR ( COLUMN_NAME TEXT, COLUMN_NAME1 INTEGER )
+ in following column COLUMN_NAME of table EMIR
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( %s INTEGER, %s TEXT)
+ in following column %s of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS EMIR ( COLUMN_NAME TEXT, UNIQUE ( COLUMN_NAME ) ON CONFLICT REPLACE )
+ in following column COLUMN_NAME of table EMIR
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS EMIR ( COLUMN_NAME TEXT, COLUMN_NAME1 INTEGER )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS EMIR ( COLUMN_NAME TEXT )
+ in following column COLUMN_NAME of table EMIR
+Detected: Index Shotgun Variant: 1

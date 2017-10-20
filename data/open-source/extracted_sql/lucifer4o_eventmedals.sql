@@ -1,0 +1,10 @@
+SELECT link, type, image FROM phpbb_event_medals WHERE owner_id = '.$this->db->sql_escape($userid);
+SELECT username FROM ' . USERS_TABLE . ' WHERE user_id = ' . $userid;
+SELECT owner_id, type, image, date FROM ' . $table_prefix . 'event_medals WHERE link = '.$db->sql_escape($event_id);
+SELECT * FROM ' . ZEBRA_TABLE . ' WHERE user_id = '.$this->db->sql_escape($event['data']['user_id']).' AND zebra_id = '.$this->user->data['user_id'];
+SELECT * FROM ' . $this->table_prefix . 'event_medals WHERE owner_id = '.$this->db->sql_escape($event['data']['user_id']).' ORDER BY date ASC';
+SELECT link, type, image FROM ' . $table_prefix . 'event_medals WHERE owner_id = '.$db->sql_escape($user_id);
+SELECT profile_event_show FROM '. USERS_TABLE .' WHERE user_id = '.$user->data['user_id'];
+SELECT image FROM phpbb_event_medals WHERE owner_id = ' . (int) $user_id . ' AND link = ' . (int) $event_id;
+SELECT type FROM phpbb_event_medals WHERE owner_id = ' . (int) $user_id . ' AND link = ' . (int) $event_id;
+SELECT type FROM ' . $this->table_prefix . 'event_medals WHERE owner_id = '.$this->db->sql_escape($event['post_row']['POSTER_ID']));

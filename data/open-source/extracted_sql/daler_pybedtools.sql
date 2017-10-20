@@ -1,0 +1,1 @@
+CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))

@@ -1,0 +1,45 @@
+Detected: Multicolumn Attribute Found in following statement: create table fixedpointnumerictest (fp1 NUMERIC, fp2 NUMERIC(4), fp3 NUMERIC(4,1),fp4 DECIMAL, fp5 DECIMAL(4), fp6 DECIMAL(4,1))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE [dbo].[Users](	[name] [varchar](50) NULL,	[username] [varchar](50) NULL,	[userid] [int] IDENTITY(1,1) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: create table fixedpointnumerictest (fp1 NUMERIC, fp2 NUMERIC(4), fp3 NUMERIC(4,1),fp4 DECIMAL, fp5 DECIMAL(4), fp6 DECIMAL(4,1))
+ in following column fp2 and in column fp2 of table approximatenumerictest
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table approximatenumerictest (fp1 FLOAT(6), fp2 FLOAT(15), fp3 REAL,fp4 DOUBLE PRECISION)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE [dbo].[users](	[Name] [varchar](50) NULL,	[UserName] [varchar](50) NULL,	[UserId] [int] IDENTITY(1,1) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE [dbo].[Users2] ( Name VARCHAR(50) NULL, UserName VARCHAR(50) NULL, UserId INT IDENTITY(1,1) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: create table fixedpointnumerictest (fp1 NUMERIC, fp2 NUMERIC(4), fp3 NUMERIC(4,1),fp4 DECIMAL, fp5 DECIMAL(4), fp6 DECIMAL(4,1))
+ in following column fp4 and in column fp4 of table approximatenumerictest
+Detected: Metadata as Data Found in following statement: create table users(name varchar2(50), username varchar2(50), userid number primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table approximatenumerictest (fp1 FLOAT(6), fp2 FLOAT(15), fp3 REAL,fp4 DOUBLE PRECISION)
+ in following column fp2 of table approximatenumerictest
+Detected: Duplicate Column Names Found in following statement: create table fixedpointnumerictest (fp1 NUMERIC, fp2 NUMERIC(4), fp3 NUMERIC(4,1),fp4 DECIMAL, fp5 DECIMAL(4), fp6 DECIMAL(4,1))
+ in following column fp3 and in column fp3 of table approximatenumerictest
+Detected: Obsolete Column TypesFound in following statement: create table approximatenumerictest (fp1 FLOAT(6), fp2 FLOAT(15), fp3 REAL,fp4 DOUBLE PRECISION)
+ in following column fp1 of table approximatenumerictest
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Users (UserId SERIAL NOT NULL, Name VARCHAR(20), UserName VARCHAR(20) NOT NULL)
+ in following column UserId and in column UserId of table [dbo]
+Detected: Metadata as Data Found in following statement: CREATE TABLE users ( userid SERIAL PRIMARY KEY, name VARCHAR(50) UNIQUE, username VARCHAR(50))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE DFTEST.USERS ( USERID BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1, NO CACHE ) , NAME VARCHAR (20) , USERNAME VARCHAR (20) NOT NULL )
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE USERS(NAME VARCHAR(50) UNIQUE, USERNAME VARCHAR(50), USERID INT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1))
+
+Detected: Obsolete Column TypesFound in following statement: create table approximatenumerictest (fp1 FLOAT(6), fp2 FLOAT(15), fp3 REAL,fp4 DOUBLE PRECISION)
+ in following column fp3 of table approximatenumerictest
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[users](	[Name] [varchar](50) NULL,	[UserName] [varchar](50) NULL,	[UserId] [int] IDENTITY(1,1) NOT NULL)
+ in following column . and in column . of table dfsyntest
+Detected: Duplicate Column Names Found in following statement: create table fixedpointnumerictest (fp1 NUMERIC, fp2 NUMERIC(4), fp3 NUMERIC(4,1),fp4 DECIMAL, fp5 DECIMAL(4), fp6 DECIMAL(4,1))
+ in following column fp1 and in column fp1 of table approximatenumerictest
+Detected: Metadata as Data Found in following statement: CREATE TABLE Users (UserId SERIAL NOT NULL, Name VARCHAR(20), UserName VARCHAR(20) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: create table exactnumerictest (n1 INT1, n2 BYTEINT, n3 INT2, n4 SMALLINT, n5 INTEGER,n6 INT,n7 INT4, n8 INT8,n9 BIGINT)
+
+Detected: Metadata as Data Found in following statement: create table users(name varchar(50), username varchar(50), userid numeric)
+
+Detected: Metadata as Data Found in following statement: create table users(name varchar(50) unique, username varchar(50), userid int auto_increment primary key)
+

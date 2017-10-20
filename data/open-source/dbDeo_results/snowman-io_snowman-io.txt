@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(			id serial PRIMARY KEY,			name text NOT NULL,			email text NOT NULL UNIQUE,			digest text NOT NULL,			auth_token text NOT NULL UNIQUE		)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(			id serial PRIMARY KEY,			name text NOT NULL,			email text NOT NULL UNIQUE,			digest text NOT NULL,			auth_token text NOT NULL UNIQUE		)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(			id serial PRIMARY KEY,			name text NOT NULL,			email text NOT NULL UNIQUE,			digest text NOT NULL,			auth_token text NOT NULL UNIQUE		)
+ in following column auth_token of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dashboards(			id serial PRIMARY KEY,			name text NOT NULL UNIQUE,			data json default '{}'		)
+ in following column name of table dashboards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics(			id serial PRIMARY KEY,			app_id integer REFERENCES apps ON DELETE CASCADE,			name text NOT NULL,			kind metric_kind_type NOT NULL,			UNIQUE(app_id, name)		)
+ in following column name of table metrics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE settings(			base_url text		)
+ in following column base_url of table settings
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apps(			id serial PRIMARY KEY,			name text NOT NULL,			token text NOT NULL UNIQUE,			system boolean DEFAULT false		)
+ in following column token of table apps
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users(			id serial PRIMARY KEY,			name text NOT NULL,			email text NOT NULL UNIQUE,			digest text NOT NULL,			auth_token text NOT NULL UNIQUE		)
+ in following column digest of table users
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apps(			id serial PRIMARY KEY,			name text NOT NULL,			token text NOT NULL UNIQUE,			system boolean DEFAULT false		)
+ in following column name of table apps

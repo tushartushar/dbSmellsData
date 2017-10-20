@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tests.point (gid serial Primary KEY, name varchar(10))
+ in following column . and in column . of table "%s"
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM `$table` WHERE `$col` REGEXP '^[aiO]:[1-9]' LIMIT 1
+

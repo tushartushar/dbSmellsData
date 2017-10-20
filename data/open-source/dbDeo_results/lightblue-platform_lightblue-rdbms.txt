@@ -1,0 +1,6 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Country ( name varchar(255), iso2code varchar(255), iso3code varchar(255) )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'PersonID']
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE Country ( name varchar(255), iso2code varchar(255), iso3code varchar(255) )
+

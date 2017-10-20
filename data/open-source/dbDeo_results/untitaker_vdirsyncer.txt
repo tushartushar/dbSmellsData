@@ -1,0 +1,21 @@
+Detected: Adjacency List Found in following statement: create table collection ( path varchar(200) not null, parent_path varchar(200) references collection (path), primary key (path))
+
+Detected: Metadata as Data Found in following statement: create table property ( name varchar(200) not null, value text not null, collection_path varchar(200) references collection (path), primary key (name, collection_path))
+
+Detected: Metadata as Data Found in following statement: create table item ( name varchar(200) not null, tag text not null, collection_path varchar(200) references collection (path), primary key (name))
+
+Detected: Obsolete Column TypesFound in following statement: create table line ( name text not null, value text not null, item_name varchar(200) references item (name), timestamp bigint not null, primary key (timestamp))
+ in following column value of table line
+Detected: Obsolete Column TypesFound in following statement: create table property ( name varchar(200) not null, value text not null, collection_path varchar(200) references collection (path), primary key (name, collection_path))
+ in following column value of table property
+Detected: Obsolete Column TypesFound in following statement: create table header ( name varchar(200) not null, value text not null, collection_path varchar(200) references collection (path), primary key (name, collection_path))
+ in following column value of table header
+Detected: Duplicate Column Names Found in following statement: create table line ( name text not null, value text not null, item_name varchar(200) references item (name), timestamp bigint not null, primary key (timestamp))
+ in following column name and in column name of table property
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table item ( name varchar(200) not null, tag text not null, collection_path varchar(200) references collection (path), primary key (name))
+ in following column tag of table item
+Detected: Metadata as Data Found in following statement: create table header ( name varchar(200) not null, value text not null, collection_path varchar(200) references collection (path), primary key (name, collection_path))
+
+Detected: Obsolete Column TypesFound in following statement: create table line ( name text not null, value text not null, item_name varchar(200) references item (name), timestamp bigint not null, primary key (timestamp))
+ in following column name of table line

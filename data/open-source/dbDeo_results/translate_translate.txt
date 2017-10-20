@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sources', 'sid']

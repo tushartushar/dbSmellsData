@@ -1,0 +1,3 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE product ( product_number VARCHAR(64), description VARCHAR(255), weight_grams DECIMAL(7,2))
+
+Detected: Index Shotgun Variant: 1

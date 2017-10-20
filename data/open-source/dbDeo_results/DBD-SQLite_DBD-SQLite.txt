@@ -1,0 +1,190 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT txt from regexp_test WHERE txt REGEXP NULL 
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE editor ( editorid INTEGER PRIMARY KEY AUTOINCREMENT, editorname TEXT)
+ in following column editorname of table editor
+Detected: Clone Tables Found in following statement: CREATE TABLE meta2 (f1 VARCHAR(2), f2 CHAR(1), PRIMARY KEY (f1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE a ( id INTEGER, fname TEXT, lname TEXT, UNIQUE(id))
+ in following column lname of table a
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE foo (id INTEGER PRIMARY KEY NOT NULL, col1 varchar(2) NOT NULL, col2 varchar(2), col3 char(2) NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE base (id INTEGER PRIMARY KEY, foo TEXT, path TEXT, bar TEXT)
+ in following column foo of table base
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remote.album ( albumartist INTEGER NOT NULL REFERENCES artist(artistid) ON DELETE RESTRICT ON UPDATE CASCADE, albumname TEXT, albumcover BINARY, albumeditor INTEGER NOT NULL REFERENCES editor(editorid), PRIMARY KEY(albumartist, albumname))
+ in following column albumname of table remote
+Detected: Clone Tables Found in following statement: CREATE TABLE table2 (id INTEGER NOT NULL, name CHAR (64) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE meta3 (f2 CHAR(1), f1 VARCHAR(2) PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE artist ( artistid INTEGER PRIMARY KEY, artistname TEXT)
+ in following column artistname of table artist
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE track ( trackid INTEGER PRIMARY KEY, trackname TEXT, trackartist INTEGER, FOREIGN KEY(trackartist) REFERENCES artist(artistid))
+ in following column trackname of table track
+Detected: Clone Tables Found in following statement: CREATE TABLE meta3 (f2 CHAR(1), f1 VARCHAR(2) PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE online_backup_test( id INTEGER PRIMARY KEY, foo INTEGER )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE nums (num INTEGER UNIQUE)
+ in following column num and in column num of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table rtb
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer, text text, primary key (id))
+ in following column text of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE song( songid INTEGER PRIMARY KEY AUTOINCREMENT, songartist INTEGER, songalbum TEXT, songname TEXT, FOREIGN KEY(songartist, songalbum) REFERENCES album(albumartist, albumname))
+ in following column songname of table song
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: create table artist ( id int not null primary key, name text not null)
+ in following column name of table artist
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['artist', 'artistid']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %Q.'%q_docsize'(docid INTEGER PRIMARY KEY, size BLOB)
+ in following column . and in column . of table remote
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Obsolete Column TypesFound in following statement: create table foo (id id, type text, primary key(type, id))
+ in following column type of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE one ( id INTEGER NOT NULL, name CHAR (64) NOT NULL)
+ in following column id and in column id of table artist
+Detected: Clone Tables Found in following statement: create table test ( foo varchar(10), bar varchar( 15 ), baz decimal(3,3), bat decimal(4, 4))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rtb(a INT, b INT, c TEXT)
+ in following column c of table rtb
+Detected: Duplicate Column Names Found in following statement: create table foo (id integer, value integer)
+ in following column value and in column value of table %
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t ( pk INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, int INTEGER, bigint BIGINT )
+ in following column pk and in column pk of table p
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT txt from regexp_test WHERE txt REGEXP '$re' 
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE f(f1 integer NOT NULL PRIMARY KEY,f2 integer,f3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remote.b ( id INTEGER, fname TEXT, lname TEXT, PRIMARY KEY(id), UNIQUE(fname, lname))
+ in following column lname of table remote
+Detected: Clone Tables Found in following statement: CREATE TABLE t ( pk INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, int INTEGER, bigint BIGINT )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE f(f1 integer NOT NULL PRIMARY KEY,f2 integer,f3 text)
+ in following column f2 and in column f2 of table meta1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 (a TEXT, b BLOB)
+ in following column a of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE artist ( artistid INTEGER, artistname TEXT, UNIQUE(artistid))
+ in following column artistname of table artist
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM charinfo WHERE script='Greek' AND name REGEXP '\\bSIGMA\\b'
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE one ( id INTEGER NOT NULL, name CHAR (64) NOT NULL)
+ in following column name and in column name of table artist
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table rtb
+Detected: Obsolete Column TypesFound in following statement: create table remote.bar (name text, primary key(name))
+ in following column . of table remote
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (a TEXT, b BLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remote.b ( id INTEGER, fname TEXT, lname TEXT, PRIMARY KEY(id), UNIQUE(fname, lname))
+ in following column fname of table remote
+Detected: Clone Tables Found in following statement: create table test (a integer, b varchar(20))
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT txt from regexp_test WHERE txt REGEXP '$regex' 
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Clone Tables Found in following statement: CREATE TABLE test ( id INTEGER PRIMARY KEY NOT NULL, name VARCHAR(255) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer primary key, type text)
+ in following column type of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE meta1 (f1 INTEGER PRIMARY KEY, f2 CHAR(1))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE base (id INTEGER PRIMARY KEY, foo TEXT, path TEXT, bar TEXT)
+ in following column foo and in column foo of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE f(f1 integer NOT NULL PRIMARY KEY,f2 integer,f3 text)
+ in following column f1 and in column f1 of table meta2
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files (id INTEGER PRIMARY KEY, path TEXT)
+ in following column path of table files
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c and in column c of table rtb
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: Obsolete Column TypesFound in following statement: create table foo (id text primary key, type text)
+ in following column id of table foo
+Detected: Obsolete Column TypesFound in following statement: create table foo (bar text)
+ in following column bar of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE base (id INTEGER PRIMARY KEY, foo TEXT, path TEXT, bar TEXT)
+ in following column bar of table base
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Clone Tables Found in following statement: CREATE TABLE meta4 (f1 VARCHAR(2), f2 CHAR(1), PRIMARY KEY (f1,f2))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['album', 'albumartist']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE base (id INTEGER PRIMARY KEY, foo TEXT, path TEXT, bar TEXT)
+ in following column path of table base
+Detected: Obsolete Column TypesFound in following statement: create table foo (id text primary key, type text)
+ in following column type of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (id INTEGER NOT NULL, name CHAR (64) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE meta4 (f1 VARCHAR(2), f2 CHAR(1), PRIMARY KEY (f1,f2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (bar text collate german)
+ in following column bar of table foo
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['album', 'albumname']
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer, text text, constraint bar primary key (id))
+ in following column text of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE meta2 (f1 VARCHAR(2), f2 CHAR(1), PRIMARY KEY (f1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar TEXT, num INT)
+ in following column bar of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE f(f1 integer NOT NULL PRIMARY KEY,f2 integer,f3 text)
+ in following column f3 of table f
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE base (id INTEGER PRIMARY KEY, foo TEXT, path TEXT, bar TEXT)
+ in following column bar and in column bar of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE a ( id INTEGER, fname TEXT, lname TEXT, UNIQUE(id))
+ in following column fname of table a
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE meta1 (f1 INTEGER PRIMARY KEY, f2 CHAR(1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE song( songid INTEGER PRIMARY KEY AUTOINCREMENT, songartist INTEGER, songalbum TEXT, songname TEXT, FOREIGN KEY(songartist, songalbum) REFERENCES album(albumartist, albumname))
+ in following column songalbum of table song
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+

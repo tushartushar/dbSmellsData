@@ -1,0 +1,1 @@
+SELECT x, r4, r5 FROM Mmoreram\\\\ControllerExtraBundle\\\\Tests\\\\FakeBundle\\\\Entity\\\\Fake x INNER JOIN x.relation3 r3 INNER JOIN x.relation4 r4 LEFT JOIN x.relation r LEFT JOIN x.relation2 r2 LEFT JOIN x.relation5 r5 WHERE x.enabled = ?00 AND x.address1 IS NOT NULL AND x.address2 IS NOT NULL ORDER BY x.createdAt ASC, x.id ASC

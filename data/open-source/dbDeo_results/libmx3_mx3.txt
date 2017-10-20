@@ -1,0 +1,81 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_table (id INTEGER PRIMARY KEY, data TEXT, sort INTEGER)
+ in following column data and in column data of table \
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_table (id INTEGER PRIMARY KEY, data TEXT, sort INTEGER)
+ in following column data of table test_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `kv` (`key` TEXT, `value` TEXT)
+ in following column `key` of table `kv`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE abc (name TEXT, PRIMARY KEY(name) )
+ in following column name of table abc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + name + " (table_id INTEGER, name TEXT NOT NULL, data BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column price of table " + name + "
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS abc (name TEXT)
+ in following column name of table abc
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c2 and in column c2 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fake_table (table_id TEXT, name TEXT NOT NULL, `data` BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column table_id of table fake_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE abc (`s` TEXT, `b` BLOB, `d` DOUBLE, `i` INTEGER)
+ in following column `s` of table abc
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE " + name + " (table_id INTEGER, name TEXT NOT NULL, data BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column name of table " + name + "
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fake_table (table_id TEXT, name TEXT NOT NULL, `data` BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column table_id and in column table_id of table " + name + "
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fake_table (table_id TEXT, name TEXT NOT NULL, `data` BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column name of table fake_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `kv` (`key` TEXT, `value` TEXT)
+ in following column `value` of table `kv`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fake_table (table_id TEXT, name TEXT NOT NULL, `data` BLOB, price FLOAT DEFAULT 1.4, PRIMARY KEY (table_id))
+ in following column price of table fake_table
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c1 and in column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

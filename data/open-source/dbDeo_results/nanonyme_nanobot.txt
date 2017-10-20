@@ -1,0 +1,8 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Users', 'uid']
+Detected: Obsolete Column TypesFound in following statement: create table Roles (oid integer primary key, name text, unique(name))
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: create table Usermask (mask text primary key, uid integer, foreign key(uid) references Users(uid), unique(mask))
+ in following column mask of table Usermask
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table Users (uid integer primary key, name text)
+ in following column name of table Users

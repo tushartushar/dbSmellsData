@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: create table aa ( a varchar(5) primary key )
+ in following column a and in column a of table test
+Detected: Duplicate Column Names Found in following statement: create table foo ( id integer primary key, name varchar(100) )
+ in following column id and in column id of table users
+Detected: Index Shotgun Variant: 1

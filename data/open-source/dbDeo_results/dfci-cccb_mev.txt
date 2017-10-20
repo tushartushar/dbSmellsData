@@ -1,0 +1,3 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TEST_PRESET_VALUES_FLAT_TABLE(COLUMN0 VARCHAR(255), SAMPLE1 VARCHAR(255), Sample2 VARCHAR(255), SAMPLE3 VARCHAR(255))
+
+Detected: Index Shotgun Variant: 1

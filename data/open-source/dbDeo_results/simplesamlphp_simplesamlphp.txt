@@ -1,0 +1,29 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE data (			key1 text, 			key2 text,			type text,			value text,			created timestamp,			updated timestamp,			expire timestamp,			PRIMARY KEY (key1,key2,type)		)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( uid VARCHAR(30) NOT NULL PRIMARY KEY, password TEXT NOT NULL, salt TEXT NOT NULL, givenName TEXT NOT NULL, email TEXT NOT NULL, eduPersonPrincipalName TEXT NOT NULL )
+ in following column givenName of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( uid VARCHAR(30) NOT NULL PRIMARY KEY, password TEXT NOT NULL, salt TEXT NOT NULL, givenName TEXT NOT NULL, email TEXT NOT NULL, eduPersonPrincipalName TEXT NOT NULL )
+ in following column eduPersonPrincipalName of table users
+Detected: Metadata as Data Found in following statement: CREATE TABLE userdb ( username VARCHAR(32) PRIMARY KEY NOT NULL, password_hash VARCHAR(64) NOT NULL, full_name TEXT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (			key1 text, 			key2 text,			type text,			value text,			created timestamp,			updated timestamp,			expire timestamp,			PRIMARY KEY (key1,key2,type)		)
+ in following column type of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( uid VARCHAR(30) NOT NULL PRIMARY KEY, password TEXT NOT NULL, salt TEXT NOT NULL, givenName TEXT NOT NULL, email TEXT NOT NULL, eduPersonPrincipalName TEXT NOT NULL )
+ in following column salt of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (			key1 text, 			key2 text,			type text,			value text,			created timestamp,			updated timestamp,			expire timestamp,			PRIMARY KEY (key1,key2,type)		)
+ in following column key2 of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE '.$this->prefix. '_kvstore (_type VARCHAR(30) NOT NULL, _key VARCHAR(50) NOT NULL, _value '.$text_t. ' NOT NULL, _expire TIMESTAMP, PRIMARY KEY (_key, _type))
+ in following column _value of table '.$this->prefix. '
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE userdb ( username VARCHAR(32) PRIMARY KEY NOT NULL, password_hash VARCHAR(64) NOT NULL, full_name TEXT NOT NULL)
+ in following column full_name of table userdb
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( uid VARCHAR(30) NOT NULL PRIMARY KEY, password TEXT NOT NULL, salt TEXT NOT NULL, givenName TEXT NOT NULL, email TEXT NOT NULL, eduPersonPrincipalName TEXT NOT NULL )
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (			key1 text, 			key2 text,			type text,			value text,			created timestamp,			updated timestamp,			expire timestamp,			PRIMARY KEY (key1,key2,type)		)
+ in following column value of table (
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE '.$this->prefix. '_kvstore (_type VARCHAR(30) NOT NULL, _key VARCHAR(50) NOT NULL, _value '.$text_t. ' NOT NULL, _expire TIMESTAMP, PRIMARY KEY (_key, _type))
+ in following column _value and in column _value of table ' . $store->prefix . '
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( uid VARCHAR(30) NOT NULL PRIMARY KEY, password TEXT NOT NULL, salt TEXT NOT NULL, givenName TEXT NOT NULL, email TEXT NOT NULL, eduPersonPrincipalName TEXT NOT NULL )
+ in following column password of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data (			key1 text, 			key2 text,			type text,			value text,			created timestamp,			updated timestamp,			expire timestamp,			PRIMARY KEY (key1,key2,type)		)
+ in following column key1 of table (

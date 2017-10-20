@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS task( taskid CHAR(32) PRIMARY KEY, nodeid CHAR(32), parentid CHAR(32), status CHAR(1), type VARCHAR, subtype VARCHAR, name VARCHAR, host VARCHAR, pid VARCHAR, cores INTEGER, tm_start FLOAT, tm_end FLOAT )
+ in following column tm_end of table task
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE species (taxid INT PRIMARY KEY, parent INT, spname VARCHAR(50) COLLATE NOCASE, common VARCHAR(50) COLLATE NOCASE, rank VARCHAR(50), track TEXT)
+ in following column track of table species
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS aa_seq( seqid CHAR(10) PRIMARY KEY, seq TEXT )
+ in following column seq of table aa_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS nt_seq( seqid CHAR(10) PRIMARY KEY, seq TEXT )
+ in following column seq of table nt_seq
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS task( taskid CHAR(32) PRIMARY KEY, nodeid CHAR(32), parentid CHAR(32), status CHAR(1), type VARCHAR, subtype VARCHAR, name VARCHAR, host VARCHAR, pid VARCHAR, cores INTEGER, tm_start FLOAT, tm_end FLOAT )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS task( taskid CHAR(32) PRIMARY KEY, nodeid CHAR(32), parentid CHAR(32), status CHAR(1), type VARCHAR, subtype VARCHAR, name VARCHAR, host VARCHAR, pid VARCHAR, cores INTEGER, tm_start FLOAT, tm_end FLOAT )
+ in following column tm_start of table task
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS node( nodeid CHAR(32), runid CHAR(32), cladeid CHAR(32), target_seqs TEXT, out_seqs TEXT, target_size INTEGER, out_size INTEGER, newick BLOB, PRIMARY KEY (runid, nodeid) )
+ in following column out_seqs of table node
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE synonym (taxid INT,spname VARCHAR(50) COLLATE NOCASE, PRIMARY KEY (spname, taxid))
+ in following column taxid and in column taxid of table species
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS node( nodeid CHAR(32), runid CHAR(32), cladeid CHAR(32), target_seqs TEXT, out_seqs TEXT, target_size INTEGER, out_size INTEGER, newick BLOB, PRIMARY KEY (runid, nodeid) )
+ in following column target_seqs of table node
+Detected: Index Shotgun Variant: 3 Following index not used : ['species', 'spname']

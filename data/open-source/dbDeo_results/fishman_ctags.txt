@@ -1,0 +1,7 @@
+Detected: Clone Tables Found in following statement: create table "t1" (...)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c1']
+Detected: Metadata as Data Found in following statement: CREATE TABLE employees ( id integer NOT NULL, name varchar(20), address varchar(50), primary key (id))
+
+Detected: Clone Tables Found in following statement: create table "t3" (c1 int)
+

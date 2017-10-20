@@ -1,0 +1,25 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', 'RESTRICT']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `posts` (`id` INTEGER NOT NULL AUTO_INCREMENT,`title` VARCHAR(255) NOT NULL COMMENT 'The title',`body` TEXT,`data` LONGTEXT,`hash` CHAR(40) COLLATE latin1_bin NOT NULL,`created` DATETIME,PRIMARY KEY (`id`))
+ in following column `body` of table `posts`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE schema_articles (id BIGINT PRIMARY KEY,title NVARCHAR(20) COLLATE Japanese_Unicode_CI_AI DEFAULT N'' COLLATE Japanese_Unicode_CI_AI,body NVARCHAR(1000) DEFAULT N'',author_id INTEGER NOT NULL,published BIT DEFAULT 0,views SMALLINT DEFAULT 0,created DATETIME,field1 VARCHAR(10) DEFAULT NULL,field2 VARCHAR(10) DEFAULT 'NULL',field3 VARCHAR(10) DEFAULT 'O''hare',CONSTRAINT [content_idx] UNIQUE ([title], [body]),CONSTRAINT [author_idx] FOREIGN KEY ([author_id]) REFERENCES [schema_authors] ([id]) ON DELETE CASCADE ON UPDATE CASCADE)
+
+Detected: God Table Found in following statement: CREATE TABLE schema_articles (id BIGINT PRIMARY KEY,title NVARCHAR(20) COLLATE Japanese_Unicode_CI_AI DEFAULT N'' COLLATE Japanese_Unicode_CI_AI,body NVARCHAR(1000) DEFAULT N'',author_id INTEGER NOT NULL,published BIT DEFAULT 0,views SMALLINT DEFAULT 0,created DATETIME,field1 VARCHAR(10) DEFAULT NULL,field2 VARCHAR(10) DEFAULT 'NULL',field3 VARCHAR(10) DEFAULT 'O''hare',CONSTRAINT [content_idx] UNIQUE ([title], [body]),CONSTRAINT [author_idx] FOREIGN KEY ([author_id]) REFERENCES [schema_authors] ([id]) ON DELETE CASCADE ON UPDATE CASCADE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', 'CASCADE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE schema_authors (id INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR(50),bio TEXT,created DATETIME)
+ in following column id and in column id of table schema_articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schema_authors ( id INT(11) PRIMARY KEY AUTO_INCREMENT, name VARCHAR(50), bio TEXT, created DATETIME )
+ in following column bio of table schema_authors
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `posts` (`id` INTEGER NOT NULL AUTO_INCREMENT,`data` JSON,PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `odd_primary_key`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schema_articles ( id BIGINT PRIMARY KEY AUTO_INCREMENT, title VARCHAR(20) COMMENT 'A title', body TEXT, author_id INT(11) NOT NULL, published BOOLEAN DEFAULT 0, allow_comments TINYINT(1) DEFAULT 0, created DATETIME, KEY `author_idx` (`author_id`), UNIQUE KEY `length_idx` (`title`(4)), FOREIGN KEY `author_idx` (`author_id`) REFERENCES `schema_authors`(`id`) ON UPDATE CASCADE ON DELETE RESTRICT )
+ in following column body of table schema_articles
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`schema_authors`', '`id`']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schema_authors (id INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR(50),bio TEXT,created DATETIME)
+ in following column bio of table schema_authors
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `posts` (`id` INTEGER NOT NULL AUTO_INCREMENT,`title` VARCHAR(255) NOT NULL COMMENT 'The title',`body` TEXT,`data` LONGTEXT,`hash` CHAR(40) COLLATE latin1_bin NOT NULL,`created` DATETIME,PRIMARY KEY (`id`))
+ in following column `data` of table `posts`

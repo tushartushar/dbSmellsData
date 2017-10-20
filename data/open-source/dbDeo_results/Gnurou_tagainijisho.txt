@@ -1,0 +1,80 @@
+Detected: Obsolete Column TypesFound in following statement: create table info(version INT, JMdictVersion TEXT)
+ in following column JMdictVersion of table info
+Detected: Obsolete Column TypesFound in following statement: create table miscEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column description of table miscEntities
+Detected: Compound Attribute Variant: 3 Found in following statement: update training set score = ?, dateAdded = ?, dateLastTrain = ?, nbTrained = ?, nbSuccess = ?, dateLastMistake = ?  where type = ? and id = ?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['strokeGroups', 'element']
+Detected: Index Shotgun Variant: 3 Following index not used : ['entries', 'jlpt']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets(rowid INTEGER PRIMARY KEY, parent INT, position INT NOT NULL, label TEXT, state BLOB)
+ in following column label of table sets
+Detected: Index Shotgun Variant: 3 Following index not used : ['kanji', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table senses(id INTEGER SECONDARY KEY REFERENCES entries, priority TINYINT, pos INT, misc INT, dial INT, field INT, restrictedToKanji TEXT, restrictedToKana TEXT)
+ in following column restrictedToKanji of table senses
+Detected: Duplicate Column Names Found in following statement: create table kanji(id INTEGER SECONDARY KEY REFERENCES entries, priority TINYINT, docid INTEGER PRIMARY KEY, frequency TINYINT)
+ in following column frequency and in column frequency of table entries
+Detected: Index Shotgun Variant: 3 Following index not used : ['entries', 'frequency']
+Detected: Obsolete Column TypesFound in following statement: create table fieldEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column description of table fieldEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['sets', 'parent']
+Detected: Obsolete Column TypesFound in following statement: create table info(version INT, kanjidic2Version TEXT, kanjiVGVersion TEXT)
+ in following column kanjiVGVersion of table info
+Detected: Obsolete Column TypesFound in following statement: create table posEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column description of table posEntities
+Detected: Duplicate Column Names Found in following statement: create table radicals(number INTEGER REFERENCES radicalsList, kanji INTEGER REFERENCES entries, type TINYINT)
+ in following column number and in column number of table radicalsList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sets(rowid INTEGER PRIMARY KEY, parent INT, position INT NOT NULL, label TEXT, state BLOB)
+ in following column position and in column position of table words
+Detected: Obsolete Column TypesFound in following statement: create table info(version INT, kanjidic2Version TEXT, kanjiVGVersion TEXT)
+ in following column kanjidic2Version of table info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE versions(id TEXT PRIMARY KEY, version INTEGER)
+ in following column id of table versions
+Detected: Obsolete Column TypesFound in following statement: create table miscEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column name of table miscEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['nanori', 'entry']
+Detected: Index Shotgun Variant: 3 Following index not used : ['reading', 'entry']
+Detected: Index Shotgun Variant: 3 Following index not used : ['radicalsList', 'number']
+Detected: Index Shotgun Variant: 3 Following index not used : ['radicals', 'kanji']
+Detected: Obsolete Column TypesFound in following statement: create table dialectEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column name of table dialectEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['kanjiChar', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %1Roots(listId INTEGER PRIMARY KEY, rootId INTEGER, label TEXT)
+ in following column label of table %
+Detected: Adjacency List Found in following statement: CREATE TABLE lists(parent INTEGER REFERENCES lists, position INTEGER NOT NULL, type INTEGER, id INTEGER)
+
+Detected: Compound Attribute Variant: 1 Found in following statement: select id from jmdict_%2.glosses where FTSUNCOMPRESS(glosses) REGEXP '%1')");
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['lists', 'parent']
+Detected: Obsolete Column TypesFound in following statement: create table senses(id INTEGER SECONDARY KEY REFERENCES entries, priority TINYINT, pos INT, misc INT, dial INT, field INT, restrictedToKanji TEXT, restrictedToKana TEXT)
+ in following column restrictedToKana of table senses
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sets(rowid INTEGER PRIMARY KEY, parent INT, position INT NOT NULL, label TEXT, state BLOB)
+ in following column parent and in column parent of table %
+Detected: Obsolete Column TypesFound in following statement: create table posEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column name of table posEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['strokeGroups', 'original']
+Detected: Duplicate Column Names Found in following statement: create table senses(id INTEGER SECONDARY KEY REFERENCES entries, priority TINYINT, pos INT, misc INT, dial INT, field INT, restrictedToKanji TEXT, restrictedToKana TEXT)
+ in following column priority and in column priority of table kanjiChar
+Detected: Index Shotgun Variant: 3 Following index not used : ['senses', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table reading(docid INTEGER PRIMARY KEY, entry INTEGER SECONDARY KEY REFERENCES entries, type TEXT)
+ in following column type of table reading
+Detected: Index Shotgun Variant: 3 Following index not used : ['kanjiChar', 'kanji']
+Detected: Obsolete Column TypesFound in following statement: create table fieldEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column name of table fieldEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['kana', 'id']
+Detected: Duplicate Column Names Found in following statement: create table glosses(id INTEGER PRIMARY KEY, glosses BLOB)
+ in following column id and in column id of table versions
+Detected: Compound Attribute Variant: 1 Found in following statement: select entry from kanjidic2_%2.meaning where FTSUNCOMPRESS(meanings) REGEXP '%1')");
+
+Detected: Multicolumn Attribute Found in following statement: create table skip(entry INTEGER, type TINYINT, c1 TINYINT, c2 TINYINT)
+
+Detected: Obsolete Column TypesFound in following statement: create table kana(id INTEGER SECONDARY KEY REFERENCES entries, priority TINYINT, docid INTEGER PRIMARY KEY, nokanji BOOLEAN, frequency TINYINT, restrictedTo TEXT)
+ in following column restrictedTo of table kana
+Detected: Duplicate Column Names Found in following statement: create table info(version INT, JMdictVersion TEXT)
+ in following column version and in column version of table versions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE lists(parent INTEGER REFERENCES lists, position INTEGER NOT NULL, type INTEGER, id INTEGER)
+ in following column type and in column type of table taggedEntries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets(parent INT, position INT NOT NULL, label TEXT, state BLOB)
+ in following column label of table sets
+Detected: Obsolete Column TypesFound in following statement: create table dialectEntities(bitShift INTEGER PRIMARY KEY, name TEXT, description TEXT)
+ in following column description of table dialectEntities
+Detected: Index Shotgun Variant: 3 Following index not used : ['training', 'score']

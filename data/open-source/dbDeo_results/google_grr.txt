@@ -1,0 +1,54 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 's']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'fk']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_places ( id INTEGER PRIMARY KEY, url LONGVARCHAR, title LONGVARCHAR, rev_host LONGVARCHAR, visit_count INTEGER DEFAULT 0, hidden INTEGER DEFAULT 0 NOT NULL, typed INTEGER DEFAULT 0 NOT NULL, favicon_id INTEGER, frecency INTEGER DEFAULT -1 NOT NULL, last_visit_date INTEGER , guid TEXT)
+ in following column guid of table moz_places
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms', 'C5']
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms', 'indexkeyword_search_terms_index2keyword_search_terms']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits (url)', 'windexvisits_from_indexvisits']
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage(time_slot, segment_id)', 'n']
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms', 'term']
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage', 'time_slot']
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage', 'tablesegment_usagesegment_usage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms (url_id)', 'X']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits (url)', 'url']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'e']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_keywords ( id INTEGER PRIMARY KEY AUTOINCREMENT, keyword TEXT UNIQUE)
+ in following column keyword of table moz_keywords
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'C']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'indexmoz_places_url_uniqueindexmoz_places']
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage(time_slot, segment_id)', 'segment_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS statistics ( name TEXT PRIMARY KEY NOT NULL, value BLOB)
+ in following column name of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'indexmoz_places_hostindexmoz_places']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_bookmarks ( id INTEGER PRIMARY KEY, type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER)
+ in following column folder_type of table moz_bookmarks
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'lastModified']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_bookmarks ( id INTEGER PRIMARY KEY, type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER, guid TEXT)
+ in following column guid of table moz_bookmarks
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage', 'segment_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `aff4` ( id BIGINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, subject_hash BINARY(16) NOT NULL, attribute_hash BINARY(16) NOT NULL, timestamp BIGINT UNSIGNED DEFAULT NULL, value MEDIUMBLOB NULL, KEY `master` (`subject_hash`,`attribute_hash`,`timestamp`), KEY `attribute` (`attribute_hash`) )
+ in following column id and in column id of table moz_items_annos
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms (url_id)', 'url_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `aff4` ( id BIGINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, subject_hash BINARY(16) NOT NULL, attribute_hash BINARY(16) NOT NULL, timestamp BIGINT UNSIGNED DEFAULT NULL, value MEDIUMBLOB NULL, KEY `master` (`subject_hash`,`attribute_hash`,`timestamp`), KEY `attribute` (`attribute_hash`) )
+ in following column timestamp and in column timestamp of table tbl
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage(time_slot, segment_id)', 'time_slot']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS lock ( subject %(subject)s PRIMARY KEY NOT NULL, expires BIG INTEGER NOT NULL, token BIG INTEGER NOT NULL)
+ in following column subject and in column subject of table `subjects`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `aff4` ( id BIGINT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT, subject_hash BINARY(16) NOT NULL, attribute_hash BINARY(16) NOT NULL, timestamp BIGINT UNSIGNED DEFAULT NULL, value MEDIUMBLOB NULL, KEY `master` (`subject_hash`,`attribute_hash`,`timestamp`), KEY `attribute` (`attribute_hash`) )
+ in following column value and in column value of table meta
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'indexmoz_bookmarks_parentindexmoz_bookmarks']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_bookmarks ( id INTEGER PRIMARY KEY, type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER, guid TEXT)
+ in following column folder_type of table moz_bookmarks
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyword_search_terms (url_id)', 'windexvisits_time_indexvisits']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS tbl ( subject %(subject)s NOT NULL, predicate TEXT NOT NULL, timestamp BIG INTEGER NOT NULL, value BLOB)
+ in following column predicate of table tbl
+Detected: God Table Found in following statement: CREATE TABLE moz_bookmarks ( id INTEGER PRIMARY KEY, type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER, guid TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['segment_usage(time_slot, segment_id)', 'indexsegments_usage_seg_idsegment_usage1CREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'indexmoz_historyvisits_fromindexmoz_historyvisits']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'visit_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'A']
+Detected: Index Shotgun Variant: 3 Following index not used : ['visits (url)', 'X']
+Detected: God Table Found in following statement: CREATE TABLE moz_places ( id INTEGER PRIMARY KEY, url LONGVARCHAR, title LONGVARCHAR, rev_host LONGVARCHAR, visit_count INTEGER DEFAULT 0, hidden INTEGER DEFAULT 0 NOT NULL, typed INTEGER DEFAULT 0 NOT NULL, favicon_id INTEGER, frecency INTEGER DEFAULT -1 NOT NULL, last_visit_date INTEGER , guid TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'favicon_id']

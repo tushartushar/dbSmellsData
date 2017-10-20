@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE table {} (			id INTEGER PRIMARY KEY AUTOINCREMENT,			name TEXT(40) NOT NULL,			password TEXT(256) NOT NULL,			UNIQUE (name)		)
+ in following column name of table {
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS location (			id INTEGER PRIMARY KEY AUTOINCREMENT,			name INTEGER NOT NULL references game (id),			lat DECIMAL(9,6),			lng DECIMAL(9,6)		)
+ in following column name and in column name of table achievement

@@ -1,0 +1,35 @@
+Detected: Duplicate Column Names Found in following statement: create table xyz (col int)
+ in following column col and in column col of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column Username of table Users
+Detected: Multicolumn Attribute Found in following statement: create table tmp (numvalue1 decimal(15,6), numvalue2 number)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column Comment of table Users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column Password of table Users
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into t1 values ('rset 1, row1', 0)
+
+Detected: Duplicate Column Names Found in following statement: create table temp2 (col1 integer, col2 integer)
+ in following column col2 and in column col2 of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column PasswordAnswer of table Users
+Detected: Multicolumn Attribute Found in following statement: create table temp2 (col1 integer, col2 integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table temp (col1 bigint, col2 int)
+
+Detected: Multicolumn Attribute Found in following statement: create table temp (col1 integer, col2 integer)
+
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into t2 values ('rset 2, row1', 'first', 100)
+
+Detected: God Table Found in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+
+Detected: Duplicate Column Names Found in following statement: create table temp2 (col1 integer, col2 integer)
+ in following column col1 and in column col1 of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column ApplicationName of table Users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column Email of table Users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users( PKID String NOT NULL PRIMARY KEY, Username Text (255) NOT NULL, ApplicationName Text (255) NOT NULL, Email Text (128) NOT NULL, Comment Text (255), Password Text (128) NOT NULL, PasswordQuestion Text (255), PasswordAnswer Text (255), IsApproved Boolean, LastActivityDate DateTime, LastLoginDate DateTime, LastPasswordChangedDate DateTime, CreationDate DateTime, IsOnLine Boolean, IsLockedOut Boolean, LastLockedOutDate DateTime, FailedPasswordAttemptCount Integer, FailedPasswordAttemptWindowStart DateTime, FailedPasswordAnswerAttemptCount Integer, FailedPasswordAnswerAttemptWindowStart DateTime)
+ in following column PasswordQuestion of table Users

@@ -1,0 +1,1075 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13294, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13298
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13790
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13345, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13346
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13379, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13373
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13335, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13338
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_data` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature GUID', `point` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `delay` int(10) unsigned NOT NULL DEFAULT '0', `move_flag` tinyint(1) NOT NULL DEFAULT '0', `action` int(11) NOT NULL DEFAULT '0', `action_chance` smallint(3) NOT NULL DEFAULT '100', `wpguid` int(11) NOT NULL DEFAULT '0')
+ in following column `position_y` of table `waypoint_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13332, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13314
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13318, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13323
+
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13315, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13318
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12943, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13071  WHERE entry = 12992
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13214, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13215
+
+Detected: God Table Found in following statement: CREATE TABLE `arena_team` ( `arenaTeamId` int(10) unsigned NOT NULL DEFAULT '0', `name` char(255) NOT NULL, `captainGuid` int(10) unsigned NOT NULL DEFAULT '0', `type` tinyint(3) unsigned NOT NULL DEFAULT '0', `rating` smallint(5) unsigned NOT NULL, `seasonGames` smallint(5) unsigned NOT NULL DEFAULT '0', `seasonWins` smallint(5) unsigned NOT NULL DEFAULT '0', `weekGames` smallint(5) unsigned NOT NULL DEFAULT '0', `weekWins` smallint(5) unsigned NOT NULL DEFAULT '0', `rank` int(10) unsigned NOT NULL DEFAULT '0', `backgroundColor` int(10) unsigned NOT NULL DEFAULT '0', `emblemStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `emblemColor` int(10) unsigned NOT NULL DEFAULT '0', `borderStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `borderColor` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`arenaTeamId`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13340
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13220, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13235
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13305, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13348  WHERE entry = 13236
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13277, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13279
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13771
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `character_currency` ( `guid` INT(11) UNSIGNED NOT NULL, `currency` SMALLINT(5) UNSIGNED NOT NULL, `count` SMALLINT(5) UNSIGNED NOT NULL, `thisweek` SMALLINT(5) UNSIGNED NOT NULL, PRIMARY KEY (`guid`,`currency`))
+ in following column `count` and in column `count` of table `item_instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13669, NextQuestInChain = 0  WHERE entry = 13669
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13746
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `waypoint_data` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature GUID', `point` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `delay` int(10) unsigned NOT NULL DEFAULT '0', `move_flag` tinyint(1) NOT NULL DEFAULT '0', `action` int(11) NOT NULL DEFAULT '0', `action_chance` smallint(3) NOT NULL DEFAULT '100', `wpguid` int(11) NOT NULL DEFAULT '0')
+ in following column `id` and in column `id` of table `creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12982, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12807  WHERE entry = 12806
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `bugreport` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier', `type` longtext NOT NULL, `content` longtext NOT NULL, PRIMARY KEY (`id`))
+ in following column `type` of table `bugreport`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_talent` ( `guid` int(10) unsigned NOT NULL, `spell` mediumint(8) unsigned NOT NULL, `spec` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`spell`,`spec`))
+ in following column `spec` and in column `spec` of table `character_branchspec`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13306, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13313
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `spell_override` (	`overrideSpell` INT(10) UNSIGNED NOT NULL DEFAULT '0',	`affSpell` INT(10) NOT NULL DEFAULT '0', 	`aura` INT(10) NOT NULL DEFAULT '0', 	`comment` LONGTEXT NOT NULL,	PRIMARY KEY	(`overrideSpell`))
+ in following column `comment` and in column `comment` of table `creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13756
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `guild_eventlog` ( `guildid` INT(10) UNSIGNED NOT NULL COMMENT 'Guild Identificator', `LogGuid` INT(10) UNSIGNED NOT NULL COMMENT 'Log record identificator - auxiliary column', `EventType` TINYINT(3) UNSIGNED NOT NULL COMMENT 'Event type', `PlayerGuid1` INT(10) UNSIGNED NOT NULL COMMENT 'Player 1', `PlayerGuid2` INT(10) UNSIGNED NOT NULL COMMENT 'Player 2', `NewRank` TINYINT(3) UNSIGNED NOT NULL COMMENT 'New rank(in case promotion/demotion)', `TimeStamp` INT(10) UNSIGNED NOT NULL COMMENT 'Event UNIX time', PRIMARY KEY (`guildid`,`LogGuid`), KEY `Idx_PlayerGuid1` (`PlayerGuid1`), KEY `Idx_PlayerGuid2` (`PlayerGuid2`), KEY `Idx_LogGuid` (`LogGuid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13775
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13363, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13364
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13231, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13233
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13286, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13287
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13290, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13291
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13713, RequiredRaces = 1101  WHERE entry = 13714
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `player_factionchange_items` ( `race_A` int(8) NOT NULL, `alliance_id` int(8) NOT NULL, `commentA` text, `race_H` int(8) NOT NULL, `horde_id` int(8) NOT NULL, `commentH` text, PRIMARY KEY (`alliance_id`,`horde_id`))
+ in following column `commentA` of table `player_factionchange_items`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13259  WHERE entry = 13258
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13852
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13351, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13352
+
+Detected: God Table Found in following statement: CREATE TABLE `conditions` ( `SourceTypeOrReferenceId` mediumint(8) NOT NULL DEFAULT '0', `SourceGroup` mediumint(8) unsigned NOT NULL DEFAULT '0', `SourceEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `SourceId` int(10) NOT NULL DEFAULT '0', `ElseGroup` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionTypeOrReference` mediumint(8) NOT NULL DEFAULT '0', `ConditionTarget` tinyint(3) unsigned NOT NULL DEFAULT '0', `ConditionValue1` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionValue2` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionValue3` mediumint(8) unsigned NOT NULL DEFAULT '0', `NegativeCondition` tinyint(3) unsigned NOT NULL DEFAULT '0', `ErrorTextId` mediumint(8) unsigned NOT NULL DEFAULT '0', `ScriptName` char(64) NOT NULL DEFAULT '', `Comment` varchar(255) DEFAULT NULL, PRIMARY KEY (`SourceTypeOrReferenceId`,`SourceGroup`,`SourceEntry`,`SourceId`,`ElseGroup`,`ConditionTypeOrReference`,`ConditionTarget`,`ConditionValue1`,`ConditionValue2`,`ConditionValue3`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13258, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13262  WHERE entry = 13259
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12839, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12847  WHERE entry = 12840
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12807, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12813
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13396, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13397
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13260, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13237
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13769
+
+Detected: God Table Found in following statement: CREATE TABLE `creature_text` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0', `id` tinyint(3) unsigned NOT NULL DEFAULT '0', `text` longtext, `type` tinyint(3) unsigned NOT NULL DEFAULT '0', `language` tinyint(3) unsigned NOT NULL DEFAULT '0', `probability` float NOT NULL DEFAULT '0', `emote` mediumint(8) unsigned NOT NULL DEFAULT '0', `duration` mediumint(8) unsigned NOT NULL DEFAULT '0', `sound` mediumint(8) unsigned NOT NULL DEFAULT '0', `comment` varchar(255) DEFAULT '', PRIMARY KEY (`entry`,`groupid`,`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `account_banned` ( `id` int(11) NOT NULL DEFAULT '0' COMMENT 'Account id', `bandate` bigint(40) NOT NULL DEFAULT '0', `unbandate` bigint(40) NOT NULL DEFAULT '0', `bannedby` varchar(50) NOT NULL, `banreason` varchar(255) NOT NULL, `active` tinyint(4) NOT NULL DEFAULT '1', PRIMARY KEY (`id`,`bandate`))
+ in following column `bandate` and in column `bandate` of table `character_banned`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13044, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13070  WHERE entry = 13045
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13380, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13404
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+ in following column `posX` of table `gm_tickets`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_pet` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `entry` int(10) unsigned NOT NULL DEFAULT '0', `owner` int(10) unsigned NOT NULL DEFAULT '0', `modelid` int(10) unsigned DEFAULT '0', `CreatedBySpell` mediumint(8) unsigned NOT NULL DEFAULT '0', `PetType` tinyint(3) unsigned NOT NULL DEFAULT '0', `level` smallint(5) unsigned NOT NULL DEFAULT '1', `exp` int(10) unsigned NOT NULL DEFAULT '0', `Reactstate` tinyint(3) unsigned NOT NULL DEFAULT '0', `name` varchar(21) NOT NULL DEFAULT 'Pet', `renamed` tinyint(3) unsigned NOT NULL DEFAULT '0', `slot` tinyint(3) unsigned NOT NULL DEFAULT '0', `curhealth` int(10) unsigned NOT NULL DEFAULT '1', `curmana` int(10) unsigned NOT NULL DEFAULT '0', `curhappiness` int(10) unsigned NOT NULL DEFAULT '0', `savetime` int(10) unsigned NOT NULL DEFAULT '0', `resettalents_cost` int(10) unsigned NOT NULL DEFAULT '0', `resettalents_time` int(10) unsigned NOT NULL DEFAULT '0', `abdata` text, PRIMARY KEY (`id`), KEY `owner` (`owner`))
+ in following column `abdata` of table `character_pet`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13228, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13237  WHERE entry = 13260
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13321, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13322
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13828, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13679  WHERE entry = 13672
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13086, NextQuestId = 0, ExclusiveGroup = 13104, NextQuestInChain = 0  WHERE entry = 13105
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13743
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13346, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13350
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_subsurveys` ( `surveyId` int(10) unsigned NOT NULL AUTO_INCREMENT, `subsurveyId` int(10) unsigned NOT NULL DEFAULT '0', `rank` int(10) unsigned NOT NULL DEFAULT '0', `comment` text NOT NULL, PRIMARY KEY (`surveyId`,`subsurveyId`))
+ in following column `comment` of table `gm_subsurveys`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13392, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13393
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13318, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13342
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13395, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13397  WHERE entry = 13396
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13144, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13481
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_homebind` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `zoneId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Zone Identifier', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `posY` of table `character_homebind`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_skills` ( `guid` int(10) unsigned NOT NULL COMMENT 'Global Unique Identifier', `skill` smallint(5) unsigned NOT NULL, `value` smallint(5) unsigned NOT NULL, `max` smallint(5) unsigned NOT NULL, PRIMARY KEY (`guid`,`skill`))
+ in following column `value` and in column `value` of table `worldstates`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13811
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `disenchant_loot_template` ( `entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Recommended id selection: item_level*100 + item_quality', `item` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `ChanceOrQuestChance` FLOAT NOT NULL DEFAULT '100', `lootmode` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '1', `groupid` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `mincountOrRef` MEDIUMINT(9) NOT NULL DEFAULT '1', `maxcount` TINYINT(3) UNSIGNED NOT NULL DEFAULT '1', PRIMARY KEY (`entry`,`item`))
+ in following column `ChanceOrQuestChance` of table `disenchant_loot_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13091, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13133  WHERE entry = 13121
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_template_addon` (`Id` int(10) unsigned not null,`BuyCount` tinyint(3) unsigned not null default 1,`FoodType` tinyint(3) unsigned not null default 0,`MinMoneyLoot` int(10) unsigned not null default 0,`MaxMoneyLoot` int(10) unsigned not null default 0,`SpellPPMChance` float unsigned not null default 0,PRIMARY KEY(`Id`))
+ in following column `SpellPPMChance` of table `item_template_addon`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13230
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13133, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13142  WHERE entry =13137
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_data` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature GUID', `point` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `delay` int(10) unsigned NOT NULL DEFAULT '0', `move_flag` tinyint(1) NOT NULL DEFAULT '0', `action` int(11) NOT NULL DEFAULT '0', `action_chance` smallint(3) NOT NULL DEFAULT '100', `wpguid` int(11) NOT NULL DEFAULT '0')
+ in following column `position_z` of table `waypoint_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13680, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13695
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE account_tutorial SET tut0 = ?, tut1 = ?, tut2 = ?, tut3 = ?, tut4 = ?, tut5 = ?, tut6 = ?, tut7 = ?  WHERE accountId = ?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_reward_rate` ( `faction` mediumint(8) unsigned NOT NULL default '0', `quest_rate` float NOT NULL default '1', `creature_rate` float NOT NULL default '1', `spell_rate` float NOT NULL default '1', PRIMARY KEY (`faction`))
+ in following column `creature_rate` of table `reputation_reward_rate`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `point_comment` text, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_x` of table `waypoints`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `spell_proc` ( `spellId` mediumint(8) NOT NULL DEFAULT '0', `schoolMask` tinyint(4) NOT NULL DEFAULT '0', `spellFamilyName` smallint(5) unsigned NOT NULL DEFAULT '0', `spellFamilyMask0` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask1` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask2` int(10) unsigned NOT NULL DEFAULT '0', `typeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellTypeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellPhaseMask` int(10) NOT NULL DEFAULT '0', `hitMask` int(10) NOT NULL DEFAULT '0', `attributesMask` int(10) unsigned NOT NULL DEFAULT '0', `ratePerMinute` float NOT NULL DEFAULT '0', `chance` float NOT NULL DEFAULT '0', `cooldown` float unsigned NOT NULL DEFAULT '0', `charges` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`spellId`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13141  WHERE entry = 13139
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13810
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `fishing_loot_template` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `item` mediumint(8) unsigned NOT NULL DEFAULT '0', `ChanceOrQuestChance` float NOT NULL DEFAULT '100', `lootmode` smallint(5) unsigned NOT NULL DEFAULT '1', `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0', `mincountOrRef` mediumint(9) NOT NULL DEFAULT '1', `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '1', PRIMARY KEY (`entry`,`item`))
+ in following column `ChanceOrQuestChance` of table `fishing_loot_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13721, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13729
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13851
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `player_factionchange_items` ( `race_A` int(8) NOT NULL, `alliance_id` int(8) NOT NULL, `commentA` text, `race_H` int(8) NOT NULL, `horde_id` int(8) NOT NULL, `commentH` text, PRIMARY KEY (`alliance_id`,`horde_id`))
+ in following column `commentH` of table `player_factionchange_items`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE characters SET position_x = ?, position_y = ?, position_z = ?, orientation = ?, map = ?, zone = ?, trans_x = 0, trans_y = 0, trans_z = 0, transguid = 0 WHERE guid = ?
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_homebind` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `zoneId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Zone Identifier', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `zoneId` and in column `zoneId` of table `phase_definitions`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13679, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13690
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `vehicle_scaling_info` ( `entry` mediumint(8) unsigned NOT NULL default '0', `baseItemLevel` float NOT NULL default '0', `scalingFactor` float NOT NULL default '0', PRIMARY KEY (`entry`))
+ in following column `baseItemLevel` of table `vehicle_scaling_info`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `playercreateinfo` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `zone` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `orientation` float NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`))
+ in following column `position_y` of table `playercreateinfo`
+Detected: God Table Found in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `guild_bank_item` ( `guildid` int(10) unsigned NOT NULL DEFAULT '0', `TabId` tinyint(3) unsigned NOT NULL DEFAULT '0', `SlotId` tinyint(3) unsigned NOT NULL DEFAULT '0', `item_guid` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guildid`,`TabId`,`SlotId`), KEY `guildid_key` (`guildid`), KEY `Idx_item_guid` (`item_guid`))
+ in following column `item_guid` and in column `item_guid` of table `character_aura`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12938, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12951  WHERE entry = 12949
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `creature_text` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0', `id` tinyint(3) unsigned NOT NULL DEFAULT '0', `text` longtext, `type` tinyint(3) unsigned NOT NULL DEFAULT '0', `language` tinyint(3) unsigned NOT NULL DEFAULT '0', `probability` float NOT NULL DEFAULT '0', `emote` mediumint(8) unsigned NOT NULL DEFAULT '0', `duration` mediumint(8) unsigned NOT NULL DEFAULT '0', `sound` mediumint(8) unsigned NOT NULL DEFAULT '0', `comment` varchar(255) DEFAULT '', PRIMARY KEY (`entry`,`groupid`,`id`))
+ in following column `probability` of table `creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13396, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13399  WHERE entry = 13398
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13665
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13784
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `spellclassoptions_dbc` ( `Id` int(10) unsigned NOT NULL DEFAULT '0', `modalNextSpell` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_1` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_2` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_3` int(10) unsigned NOT NULL DEFAULT '0', `spellClassSet` int(10) unsigned NOT NULL DEFAULT '0', `description` text NOT NULL, PRIMARY KEY (`Id`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13786
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `account_banned` ( `id` int(11) NOT NULL DEFAULT '0' COMMENT 'Account id', `bandate` bigint(40) NOT NULL DEFAULT '0', `unbandate` bigint(40) NOT NULL DEFAULT '0', `bannedby` varchar(50) NOT NULL, `banreason` varchar(255) NOT NULL, `active` tinyint(4) NOT NULL DEFAULT '1', PRIMARY KEY (`id`,`bandate`))
+ in following column `unbandate` and in column `unbandate` of table `character_banned`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13742
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `pointid` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `position_x` FLOAT NOT NULL DEFAULT '0', `position_y` FLOAT NOT NULL DEFAULT '0', `position_z` FLOAT NOT NULL DEFAULT '0', `point_comment` TEXT, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_y` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13283  WHERE entry = 13293
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13680, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13693
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13136, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13138
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `lfg_data` ( `guid` INT(10) UNSIGNED NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `dungeon` INT(10) UNSIGNED NOT NULL DEFAULT '0', `state` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `dungeon` and in column `dungeon` of table `calendar_events`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `logs` ( `time` int(14) NOT NULL, `realm` int(4) NOT NULL, `type` int(4) NOT NULL, `string` text)
+ in following column `string` of table `logs`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13668, NextQuestId = 13641, ExclusiveGroup = 0, NextQuestInChain = 13641  WHERE entry = 13634
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13092, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13093
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13351, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13356  WHERE entry = 13355
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13304, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13236  WHERE entry = 13305
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13393, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13395  WHERE entry = 13394
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `report_id` int(10) NOT NULL auto_increment, `player` int(11) UNSIGNED NOT NULL DEFAULT '0', `lag_type` int(10) NOT NULL DEFAULT '0', `map` int(11) NOT NULL DEFAULT '0', `posX` float NOT NULL default '0', `posY` float NOT NULL default '0', `posZ` float NOT NULL default '0', PRIMARY KEY (`report_id`))
+ in following column `posY` of table `lag_reports`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13291, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13380  WHERE entry = 13383
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `spellclassoptions_dbc` (	`Id` INT UNSIGNED NOT NULL DEFAULT '0',	`modalNextSpell` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_1` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_2` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_3` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassSet` INT UNSIGNED NOT NULL DEFAULT '0',	`description` TEXT NOT NULL,	PRIMARY KEY (`Id`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE mail SET sender = ?, receiver = ?, expire_time = ?, deliver_time = ?, cod = 0, checked = ?  WHERE id = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE arena_team_member SET personalRating = ?, weekGames = ?, weekWins = ?, seasonGames = ?, seasonWins = ?  WHERE arenaTeamId = ? AND guid = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13366, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13367
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13398, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13400  WHERE entry = 13399
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13356, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13357
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `o` of table `waypoint_scripts`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc3` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13345, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13332
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12992, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13071
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13144, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13220  WHERE entry = 13212
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_surveys` ( `surveyId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0', `mainSurvey` int(10) unsigned NOT NULL DEFAULT '0', `overallComment` longtext NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`surveyId`))
+ in following column `overallComment` of table `gm_surveys`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13136, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13140
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13383, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13380
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13259, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13263  WHERE entry = 13262
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13288, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13289
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `mail` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier', `messageType` tinyint(3) unsigned NOT NULL DEFAULT '0', `stationery` tinyint(3) NOT NULL DEFAULT '41', `mailTemplateId` smallint(5) unsigned NOT NULL DEFAULT '0', `sender` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `receiver` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `subject` longtext, `body` longtext, `has_items` tinyint(3) unsigned NOT NULL DEFAULT '0', `expire_time` int(10) unsigned NOT NULL DEFAULT '0', `deliver_time` int(10) unsigned NOT NULL DEFAULT '0', `money` int(10) unsigned NOT NULL DEFAULT '0', `cod` int(10) unsigned NOT NULL DEFAULT '0', `checked` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `idx_receiver` (`receiver`) USING BTREE)
+ in following column `body` of table `mail`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13402, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13403
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13302
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `pointid` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `position_x` FLOAT NOT NULL DEFAULT '0', `position_y` FLOAT NOT NULL DEFAULT '0', `position_z` FLOAT NOT NULL DEFAULT '0', `point_comment` TEXT, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_z` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13785
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13394, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13396  WHERE entry = 13395
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13722, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13731
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13085, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12982
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13812
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE characters SET deleteInfos_Name = name, deleteInfos_Account = account, deleteDate = UNIX_TIMESTAMP WHERE guid = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13674, NextQuestInChain = 0  WHERE entry = 13675
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `character_aura` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier', `item_guid` bigint(20) unsigned NOT NULL DEFAULT '0', `spell` mediumint(8) unsigned NOT NULL DEFAULT '0', `effect_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `recalculate_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `stackcount` tinyint(3) unsigned NOT NULL DEFAULT '1', `amount0` int(11) NOT NULL DEFAULT '0', `amount1` int(11) NOT NULL DEFAULT '0', `amount2` int(11) NOT NULL DEFAULT '0', `base_amount0` int(11) NOT NULL DEFAULT '0', `base_amount1` int(11) NOT NULL DEFAULT '0', `base_amount2` int(11) NOT NULL DEFAULT '0', `maxduration` int(11) NOT NULL DEFAULT '0', `remaintime` int(11) NOT NULL DEFAULT '0', `remaincharges` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`caster_guid`,`item_guid`,`spell`,`effect_mask`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `waypoints` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `point_comment` text, PRIMARY KEY (`entry`,`pointid`))
+ in following column `entry` and in column `entry` of table `phase_definitions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_homebind` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `zoneId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Zone Identifier', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `posX` of table `character_homebind`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13294, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13295
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13231
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13773
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `mail` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier', `messageType` tinyint(3) unsigned NOT NULL DEFAULT '0', `stationery` tinyint(3) NOT NULL DEFAULT '41', `mailTemplateId` smallint(5) unsigned NOT NULL DEFAULT '0', `sender` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `receiver` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `subject` longtext, `body` longtext, `has_items` tinyint(3) unsigned NOT NULL DEFAULT '0', `expire_time` int(10) unsigned NOT NULL DEFAULT '0', `deliver_time` int(10) unsigned NOT NULL DEFAULT '0', `money` int(10) unsigned NOT NULL DEFAULT '0', `cod` int(10) unsigned NOT NULL DEFAULT '0', `checked` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `idx_receiver` (`receiver`) USING BTREE)
+ in following column `subject` of table `mail`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12807, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12814  WHERE entry = 12810
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13764
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13774
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13716, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13724
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13750
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `playercreateinfo` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `zone` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `orientation` float NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`))
+ in following column `position_z` of table `playercreateinfo`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13287, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13295  WHERE entry = 13294
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13236, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13349  WHERE entry = 13348
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13864
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_instance` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `itemEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `owner_guid` int(10) unsigned NOT NULL DEFAULT '0', `creatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `giftCreatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `count` int(10) unsigned NOT NULL DEFAULT '1', `duration` int(10) NOT NULL DEFAULT '0', `charges` tinytext, `flags` mediumint(8) unsigned NOT NULL DEFAULT '0', `enchantments` text NOT NULL, `randomPropertyId` smallint(5) NOT NULL DEFAULT '0', `durability` smallint(5) unsigned NOT NULL DEFAULT '0', `playedTime` int(10) unsigned NOT NULL DEFAULT '0', `text` text, PRIMARY KEY (`guid`), KEY `idx_owner_guid` (`owner_guid`) USING BTREE)
+ in following column `charges` of table `item_instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13760
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13399, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13401  WHERE entry = 13400
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `playercreateinfo` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `zone` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `orientation` float NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`))
+ in following column `position_x` of table `playercreateinfo`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13388, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13390  WHERE entry = 13389
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13779
+
+Detected: God Table Found in following statement: CREATE TABLE `groups` ( `guid` int(10) unsigned NOT NULL, `leaderGuid` int(10) unsigned NOT NULL, `lootMethod` tinyint(3) unsigned NOT NULL, `looterGuid` int(10) unsigned NOT NULL, `lootThreshold` tinyint(3) unsigned NOT NULL, `icon1` int(10) unsigned NOT NULL, `icon2` int(10) unsigned NOT NULL, `icon3` int(10) unsigned NOT NULL, `icon4` int(10) unsigned NOT NULL, `icon5` int(10) unsigned NOT NULL, `icon6` int(10) unsigned NOT NULL, `icon7` int(10) unsigned NOT NULL, `icon8` int(10) unsigned NOT NULL, `groupType` tinyint(3) unsigned NOT NULL, `difficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', `raiddifficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`), KEY `leaderGuid` (`leaderGuid`) USING BTREE)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE guild SET xp = ?, m_today_xp= ?, level = ?  WHERE guildid = ?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `report_id` int(10) NOT NULL auto_increment, `player` int(11) UNSIGNED NOT NULL DEFAULT '0', `lag_type` int(10) NOT NULL DEFAULT '0', `map` int(11) NOT NULL DEFAULT '0', `posX` float NOT NULL default '0', `posY` float NOT NULL default '0', `posZ` float NOT NULL default '0', PRIMARY KEY (`report_id`))
+ in following column `posX` of table `lag_reports`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13228
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13141, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13157
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13117, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13120
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `worldstates` ( `entry` int(10) unsigned NOT NULL DEFAULT '0', `value` int(10) unsigned NOT NULL DEFAULT '0', `comment` tinytext, PRIMARY KEY (`entry`))
+ in following column `comment` of table `worldstates`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `guild_eventlog` ( `guildid` int(10) unsigned NOT NULL COMMENT 'Guild Identificator', `LogGuid` int(10) unsigned NOT NULL COMMENT 'Log record identificator - auxiliary column', `EventType` tinyint(3) unsigned NOT NULL COMMENT 'Event type', `PlayerGuid1` int(10) unsigned NOT NULL COMMENT 'Player 1', `PlayerGuid2` int(10) unsigned NOT NULL COMMENT 'Player 2', `NewRank` tinyint(3) unsigned NOT NULL COMMENT 'New rank(in case promotion/demotion)', `TimeStamp` int(10) unsigned NOT NULL COMMENT 'Event UNIX time', PRIMARY KEY (`guildid`,`LogGuid`), KEY `Idx_PlayerGuid1` (`PlayerGuid1`), KEY `Idx_PlayerGuid2` (`PlayerGuid2`), KEY `Idx_LogGuid` (`LogGuid`))
+
+Detected: God Table Found in following statement: CREATE TABLE `spell_proc` ( `spellId` mediumint(8) NOT NULL DEFAULT '0', `schoolMask` tinyint(4) NOT NULL DEFAULT '0', `spellFamilyName` smallint(5) unsigned NOT NULL DEFAULT '0', `spellFamilyMask0` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask1` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask2` int(10) unsigned NOT NULL DEFAULT '0', `typeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellTypeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellPhaseMask` int(10) NOT NULL DEFAULT '0', `hitMask` int(10) NOT NULL DEFAULT '0', `attributesMask` int(10) unsigned NOT NULL DEFAULT '0', `ratePerMinute` float NOT NULL DEFAULT '0', `chance` float NOT NULL DEFAULT '0', `cooldown` float unsigned NOT NULL DEFAULT '0', `charges` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`spellId`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13329, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13328
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13678, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13680
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `playercreateinfo` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `zone` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `orientation` float NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`))
+ in following column `map` and in column `map` of table `lag_reports`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE mail SET has_items = %u, expire_time = %u, deliver_time = %u, money = %u, cod = %u, checked = %u  WHERE id = %u
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `phase_definitions` ( `zoneId` MEDIUMINT(7) UNSIGNED NOT NULL DEFAULT '0', `entry` SMALLINT(5) UNSIGNED NOT NULL AUTO_INCREMENT, `phasemask` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0', `phaseId` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `terrainswapmap` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0', `flags` TINYINT(3) UNSIGNED DEFAULT '0', `comment` TEXT, PRIMARY KEY (`zoneId`, `entry`))
+ in following column `comment` of table `phase_definitions`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `account_tutorial` ( `accountId` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Account Identifier', `tut0` int(10) unsigned NOT NULL DEFAULT '0', `tut1` int(10) unsigned NOT NULL DEFAULT '0', `tut2` int(10) unsigned NOT NULL DEFAULT '0', `tut3` int(10) unsigned NOT NULL DEFAULT '0', `tut4` int(10) unsigned NOT NULL DEFAULT '0', `tut5` int(10) unsigned NOT NULL DEFAULT '0', `tut6` int(10) unsigned NOT NULL DEFAULT '0', `tut7` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`accountId`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13231, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13287  WHERE entry = 13286
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `petition_sign` ( `ownerguid` int(10) unsigned NOT NULL, `petitionguid` int(10) unsigned NOT NULL DEFAULT '0', `playerguid` int(10) unsigned NOT NULL DEFAULT '0', `player_account` int(10) unsigned NOT NULL DEFAULT '0', `type` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`petitionguid`,`playerguid`), KEY `Idx_playerguid` (`playerguid`) USING BTREE, KEY `Idx_ownerguid` (`ownerguid`) USING BTREE)
+ in following column `ownerguid` and in column `ownerguid` of table `item_insert`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13215, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13216
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12938, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12943  WHERE entry = 12939
+
+Detected: God Table Found in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `guild` ( `guildid` INT(10) UNSIGNED NOT NULL DEFAULT '0', `name` VARCHAR(24) NOT NULL DEFAULT '', `leaderguid` INT(10) UNSIGNED NOT NULL DEFAULT '0', `EmblemStyle` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `EmblemColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BorderStyle` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BorderColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BackgroundColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `info` TEXT NOT NULL, `motd` VARCHAR(128) NOT NULL DEFAULT '', `createdate` INT(10) UNSIGNED NOT NULL DEFAULT '0', `BankMoney` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`guildid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13603
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12943, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12995
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12840, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12852  WHERE entry = 12847
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `z` of table `waypoint_scripts`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13400, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13402  WHERE entry = 13401
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13697, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13726
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_social` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `friend` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Friend Global Unique Identifier', `flags` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'Friend Flags', `note` varchar(48) NOT NULL DEFAULT '' COMMENT 'Friend Note', PRIMARY KEY (`guid`,`friend`,`flags`), KEY `friend` (`friend`) USING BTREE)
+ in following column `flags` and in column `flags` of table `item_instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13674, NextQuestInChain = 0  WHERE entry = 13673
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13793
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13320, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13321
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13386, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13388  WHERE entry = 13387
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc8` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13336
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13829  WHERE entry = 13668
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_instance` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `itemEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `owner_guid` int(10) unsigned NOT NULL DEFAULT '0', `creatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `giftCreatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `count` int(10) unsigned NOT NULL DEFAULT '1', `duration` int(10) NOT NULL DEFAULT '0', `charges` tinytext, `flags` mediumint(8) unsigned NOT NULL DEFAULT '0', `enchantments` text NOT NULL, `randomPropertyId` smallint(5) NOT NULL DEFAULT '0', `durability` smallint(5) unsigned NOT NULL DEFAULT '0', `playedTime` int(10) unsigned NOT NULL DEFAULT '0', `text` text, PRIMARY KEY (`guid`), KEY `idx_owner_guid` (`owner_guid`) USING BTREE)
+ in following column `enchantments` of table `item_instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13858
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13772
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `creature_transport` ( `guid` int(16) NOT NULL AUTO_INCREMENT COMMENT 'GUID of NPC on transport - not the same as creature.guid', `transport_entry` int(8) NOT NULL COMMENT 'Transport entry', `npc_entry` int(8) NOT NULL COMMENT 'NPC entry', `TransOffsetX` float NOT NULL DEFAULT '0', `TransOffsetY` float NOT NULL DEFAULT '0', `TransOffsetZ` float NOT NULL DEFAULT '0', `TransOffsetO` float NOT NULL DEFAULT '0', `emote` int(16) NOT NULL, PRIMARY KEY (`transport_entry`,`guid`), UNIQUE KEY `entry` (`transport_entry`,`guid`))
+ in following column `TransOffsetY` of table `creature_transport`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13859
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13217, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13219
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13729, RequiredRaces = 690  WHERE entry = 13721
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE character_equipmentsets SET name=?, iconname=?, item0=?, item1=?, item2=?, item3=?, item4=?, item5=?, item6=?, item7=?, item8=?, item9=?, item10=?, item11=?, item12=?, item13=?, item14=?, item15=?, item16=?, item17=?, item18=?  WHERE guid=? AND setguid=? AND setindex=?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13224, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13330
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13814
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13332, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13334
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc7` of table `locales_creature_text`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `pointid` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `position_x` FLOAT NOT NULL DEFAULT '0', `position_y` FLOAT NOT NULL DEFAULT '0', `position_z` FLOAT NOT NULL DEFAULT '0', `point_comment` TEXT, PRIMARY KEY (`entry`,`pointid`))
+ in following column `point_comment` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13280  WHERE entry = 13296
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13641, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13654  WHERE entry = 13643
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13144, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13482
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE creature_template SET faction_A=35,faction_H=35,unit_flags=32768, type_flags=2048,VehicleId=468,ScriptName=npc_bilgewater  WHERE entry=48526
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13752
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_soulbound_trade_data` ( `itemGuid` int(11) unsigned NOT NULL COMMENT 'Item GUID', `allowedPlayers` text NOT NULL COMMENT 'Space separated GUID list of players who can receive this item in trade', PRIMARY KEY (`itemGuid`))
+ in following column `allowedPlayers` of table `item_soulbound_trade_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13313, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13331
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13780
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `creature_text` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0', `id` tinyint(3) unsigned NOT NULL DEFAULT '0', `text` longtext, `type` tinyint(3) unsigned NOT NULL DEFAULT '0', `language` tinyint(3) unsigned NOT NULL DEFAULT '0', `probability` float NOT NULL DEFAULT '0', `emote` mediumint(8) unsigned NOT NULL DEFAULT '0', `duration` mediumint(8) unsigned NOT NULL DEFAULT '0', `sound` mediumint(8) unsigned NOT NULL DEFAULT '0', `comment` varchar(255) DEFAULT '', PRIMARY KEY (`entry`,`groupid`,`id`))
+ in following column `text` of table `creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13643, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13663  WHERE entry = 13654
+
+Detected: God Table Found in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spell_proc` ( `spellId` mediumint(8) NOT NULL DEFAULT '0', `schoolMask` tinyint(4) NOT NULL DEFAULT '0', `spellFamilyName` smallint(5) unsigned NOT NULL DEFAULT '0', `spellFamilyMask0` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask1` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask2` int(10) unsigned NOT NULL DEFAULT '0', `typeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellTypeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellPhaseMask` int(10) NOT NULL DEFAULT '0', `hitMask` int(10) NOT NULL DEFAULT '0', `attributesMask` int(10) unsigned NOT NULL DEFAULT '0', `ratePerMinute` float NOT NULL DEFAULT '0', `chance` float NOT NULL DEFAULT '0', `cooldown` float unsigned NOT NULL DEFAULT '0', `charges` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`spellId`))
+ in following column `ratePerMinute` of table `spell_proc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13168, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13171
+
+Detected: God Table Found in following statement: CREATE TABLE `mail` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier', `messageType` tinyint(3) unsigned NOT NULL DEFAULT '0', `stationery` tinyint(3) NOT NULL DEFAULT '41', `mailTemplateId` smallint(5) unsigned NOT NULL DEFAULT '0', `sender` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `receiver` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `subject` longtext, `body` longtext, `has_items` tinyint(3) unsigned NOT NULL DEFAULT '0', `expire_time` int(10) unsigned NOT NULL DEFAULT '0', `deliver_time` int(10) unsigned NOT NULL DEFAULT '0', `money` int(10) unsigned NOT NULL DEFAULT '0', `cod` int(10) unsigned NOT NULL DEFAULT '0', `checked` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `idx_receiver` (`receiver`) USING BTREE)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `player_factionchange_items` ( `race_A` int(8) NOT NULL, `alliance_id` int(8) NOT NULL, `commentA` text, `race_H` int(8) NOT NULL, `horde_id` int(8) NOT NULL, `commentH` text,PRIMARY KEY (`alliance_id`,`horde_id`))
+ in following column `commentH` of table `player_factionchange_items`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `point_comment` text, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_z` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE creature_template SET health_mod=3, minlevel=85, maxlevel=85, faction_A=16, faction_H=16, mindmg=470, maxdmg=650, attackpower=750, baseattacktime=2000  WHERE entry IN (40084)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `guild_newslog` ( `guildid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Guild Identificator', `LogGuid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Log record identificator - auxiliary column', `EventType` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT 'Event type', `PlayerGuid` int(10) unsigned NOT NULL DEFAULT '0', `Flags` int(10) unsigned NOT NULL DEFAULT '0', `Value` int(10) unsigned NOT NULL DEFAULT '0', `TimeStamp` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Event UNIX time', PRIMARY KEY (`guildid`,`LogGuid`), KEY `guildid_key` (`guildid`), KEY `Idx_PlayerGuid` (`PlayerGuid`), KEY `Idx_LogGuid` (`LogGuid`))
+ in following column `Flags` and in column `Flags` of table `achievement_dbc`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `outdoorpvp_template` ( `TypeId` tinyint(2) unsigned NOT NULL, `ScriptName` char(64) NOT NULL DEFAULT '', `comment` text, PRIMARY KEY (`TypeId`))
+ in following column `comment` of table `outdoorpvp_template`
+Detected: God Table Found in following statement: CREATE TABLE `item_instance` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `itemEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `owner_guid` int(10) unsigned NOT NULL DEFAULT '0', `creatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `giftCreatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `count` int(10) unsigned NOT NULL DEFAULT '1', `duration` int(10) NOT NULL DEFAULT '0', `charges` tinytext, `flags` mediumint(8) unsigned NOT NULL DEFAULT '0', `enchantments` text NOT NULL, `randomPropertyId` smallint(5) NOT NULL DEFAULT '0', `durability` smallint(5) unsigned NOT NULL DEFAULT '0', `playedTime` int(10) unsigned NOT NULL DEFAULT '0', `text` text, PRIMARY KEY (`guid`), KEY `idx_owner_guid` (`owner_guid`) USING BTREE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `mail` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Identifier', `messageType` tinyint(3) unsigned NOT NULL DEFAULT '0', `stationery` tinyint(3) NOT NULL DEFAULT '41', `mailTemplateId` smallint(5) unsigned NOT NULL DEFAULT '0', `sender` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `receiver` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Character Global Unique Identifier', `subject` longtext, `body` longtext, `has_items` tinyint(3) unsigned NOT NULL DEFAULT '0', `expire_time` int(10) unsigned NOT NULL DEFAULT '0', `deliver_time` int(10) unsigned NOT NULL DEFAULT '0', `money` int(10) unsigned NOT NULL DEFAULT '0', `cod` int(10) unsigned NOT NULL DEFAULT '0', `checked` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `idx_receiver` (`receiver`) USING BTREE)
+ in following column `sender` and in column `sender` of table `calendar_invites`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13314, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13333
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE character_action SET action = %u, type = %u  WHERE guid = %u
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `item_instance` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `itemEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `owner_guid` int(10) unsigned NOT NULL DEFAULT '0', `creatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `giftCreatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `count` int(10) unsigned NOT NULL DEFAULT '1', `duration` int(10) NOT NULL DEFAULT '0', `charges` tinytext, `flags` mediumint(8) unsigned NOT NULL DEFAULT '0', `enchantments` text NOT NULL, `randomPropertyId` smallint(5) NOT NULL DEFAULT '0', `durability` smallint(5) unsigned NOT NULL DEFAULT '0', `playedTime` int(10) unsigned NOT NULL DEFAULT '0', `text` text, PRIMARY KEY (`guid`), KEY `idx_owner_guid` (`owner_guid`) USING BTREE)
+ in following column `charges` and in column `charges` of table `spell_proc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13121, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13137  WHERE entry = 13133
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13228, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13234
+
+Detected: God Table Found in following statement: CREATE TABLE `achievement_dbc` (	`ID` BIGINT(20) NOT NULL DEFAULT '0',	`Faction` BIGINT(20) NOT NULL DEFAULT '0',	`Map` BIGINT(20) NOT NULL DEFAULT '0',	`Previous` BIGINT(20) NOT NULL DEFAULT '0',	`Name` TEXT NOT NULL,	`Description` TEXT NOT NULL,	`Category` BIGINT(20) NOT NULL DEFAULT '0',	`Points` BIGINT(20) NOT NULL DEFAULT '0',	`OrderInGroup` BIGINT(20) NOT NULL DEFAULT '0',	`Flags` BIGINT(20) NOT NULL DEFAULT '0',	`SpellIcon` BIGINT(20) NOT NULL DEFAULT '0',	`Reward` TEXT NOT NULL,	`Demands` TEXT NOT NULL,	`ReferencedAchievement` BIGINT(20) NOT NULL DEFAULT '0',	PRIMARY KEY (`ID`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE guild SET EmblemStyle = ?, EmblemColor = ?, BorderStyle = ?, BorderColor = ?, BackgroundColor = ?  WHERE guildid = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13139, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13157  WHERE entry = 13141
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13719, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13727
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `character_tutorial` ( `account` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Account Identifier', `tut0` int(10) unsigned NOT NULL DEFAULT '0', `tut1` int(10) unsigned NOT NULL DEFAULT '0', `tut2` int(10) unsigned NOT NULL DEFAULT '0', `tut3` int(10) unsigned NOT NULL DEFAULT '0', `tut4` int(10) unsigned NOT NULL DEFAULT '0', `tut5` int(10) unsigned NOT NULL DEFAULT '0', `tut6` int(10) unsigned NOT NULL DEFAULT '0', `tut7` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`account`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `player_factionchange_items` ( `race_A` int(8) NOT NULL, `alliance_id` int(8) NOT NULL, `commentA` text, `race_H` int(8) NOT NULL, `horde_id` int(8) NOT NULL, `commentH` text,PRIMARY KEY (`alliance_id`,`horde_id`))
+ in following column `commentA` of table `player_factionchange_items`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_pet` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `entry` int(10) unsigned NOT NULL DEFAULT '0', `owner` int(10) unsigned NOT NULL DEFAULT '0', `modelid` int(10) unsigned DEFAULT '0', `CreatedBySpell` mediumint(8) unsigned NOT NULL DEFAULT '0', `PetType` tinyint(3) unsigned NOT NULL DEFAULT '0', `level` smallint(5) unsigned NOT NULL DEFAULT '1', `exp` int(10) unsigned NOT NULL DEFAULT '0', `Reactstate` tinyint(3) unsigned NOT NULL DEFAULT '0', `name` varchar(21) NOT NULL DEFAULT 'Pet', `renamed` tinyint(3) unsigned NOT NULL DEFAULT '0', `slot` tinyint(3) unsigned NOT NULL DEFAULT '0', `curhealth` int(10) unsigned NOT NULL DEFAULT '1', `curmana` int(10) unsigned NOT NULL DEFAULT '0', `curhappiness` int(10) unsigned NOT NULL DEFAULT '0', `savetime` int(10) unsigned NOT NULL DEFAULT '0', `abdata` text, PRIMARY KEY (`id`), KEY `owner` (`owner`) USING BTREE, KEY `idx_slot` (`slot`) USING BTREE)
+ in following column `abdata` of table `character_pet`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+ in following column `rate_4` of table `reputation_spillover_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12847, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12852
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13228, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13239  WHERE entry = 13238
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `creature_transport` ( `guid` int(16) NOT NULL AUTO_INCREMENT COMMENT 'GUID of NPC on transport - not the same as creature.guid', `transport_entry` int(8) NOT NULL COMMENT 'Transport entry', `npc_entry` int(8) NOT NULL COMMENT 'NPC entry', `TransOffsetX` float NOT NULL DEFAULT '0', `TransOffsetY` float NOT NULL DEFAULT '0', `TransOffsetZ` float NOT NULL DEFAULT '0', `TransOffsetO` float NOT NULL DEFAULT '0', `emote` int(16) NOT NULL, PRIMARY KEY (`transport_entry`,`guid`), UNIQUE KEY `entry` (`transport_entry`,`guid`))
+ in following column `TransOffsetO` of table `creature_transport`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13600
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13813
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13717, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13725
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13860
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `y` of table `waypoint_scripts`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `conditions` ( `SourceTypeOrReferenceId` mediumint(8) NOT NULL DEFAULT '0', `SourceGroup` mediumint(8) unsigned NOT NULL DEFAULT '0', `SourceEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `SourceId` int(10) NOT NULL DEFAULT '0', `ElseGroup` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionTypeOrReference` mediumint(8) NOT NULL DEFAULT '0', `ConditionTarget` tinyint(3) unsigned NOT NULL DEFAULT '0', `ConditionValue1` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionValue2` mediumint(8) unsigned NOT NULL DEFAULT '0', `ConditionValue3` mediumint(8) unsigned NOT NULL DEFAULT '0', `NegativeCondition` tinyint(3) unsigned NOT NULL DEFAULT '0', `ErrorTextId` mediumint(8) unsigned NOT NULL DEFAULT '0', `ScriptName` char(64) NOT NULL DEFAULT '', `Comment` varchar(255) DEFAULT NULL, PRIMARY KEY (`SourceTypeOrReferenceId`,`SourceGroup`,`SourceEntry`,`SourceId`,`ElseGroup`,`ConditionTypeOrReference`,`ConditionTarget`,`ConditionValue1`,`ConditionValue2`,`ConditionValue3`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13761
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13727, RequiredRaces = 690  WHERE entry = 13719
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13643  WHERE entry = 13641
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13757
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13329, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13316
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13264, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13351
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13157, NextQuestId = 0, ExclusiveGroup = 13225, NextQuestInChain = 0  WHERE entry = 13225
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13669, NextQuestInChain = 0  WHERE entry = 13670
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13663, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 14016  WHERE entry = 13664
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13759
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `character_tutorial` ( `account` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT 'Account Identifier', `tut0` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut1` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut2` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut3` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut4` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut5` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut6` INT(10) UNSIGNED NOT NULL DEFAULT '0', `tut7` INT(10) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`account`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13043, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13121  WHERE entry = 13091
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13212, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13235  WHERE entry = 13220
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12943, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13084
+
+Detected: God Table Found in following statement: CREATE TABLE `guild` ( `guildid` int(10) unsigned NOT NULL DEFAULT '0', `name` varchar(24) NOT NULL DEFAULT '', `leaderguid` int(10) unsigned NOT NULL DEFAULT '0', `EmblemStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `EmblemColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BackgroundColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `info` text NOT NULL, `motd` varchar(128) NOT NULL DEFAULT '', `createdate` int(10) unsigned NOT NULL DEFAULT '0', `BankMoney` bigint(20) unsigned NOT NULL DEFAULT '0', `xp` bigint(20) unsigned NOT NULL, `level` int(10) unsigned NOT NULL, `m_today_xp` bigint(20) NOT NULL, PRIMARY KEY (`guildid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13765
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13351, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13354
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_inventory` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `bag` int(10) unsigned NOT NULL DEFAULT '0', `slot` tinyint(3) unsigned NOT NULL DEFAULT '0', `item` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Item Global Unique Identifier', PRIMARY KEY (`item`), KEY `idx_guid` (`guid`) USING BTREE)
+ in following column `slot` and in column `slot` of table `character_arena_stats`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13352, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13367  WHERE entry = 13366
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13155, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13145  WHERE entry = 13143
+
+Detected: God Table Found in following statement: CREATE TABLE `pet_aura` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier', `spell` mediumint(8) unsigned NOT NULL DEFAULT '0', `effect_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `recalculate_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `stackcount` tinyint(3) unsigned NOT NULL DEFAULT '1', `amount0` mediumint(8) NOT NULL, `amount1` mediumint(8) NOT NULL, `amount2` mediumint(8) NOT NULL, `base_amount0` mediumint(8) NOT NULL, `base_amount1` mediumint(8) NOT NULL, `base_amount2` mediumint(8) NOT NULL, `maxduration` int(11) NOT NULL DEFAULT '0', `remaintime` int(11) NOT NULL DEFAULT '0', `remaincharges` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`spell`,`effect_mask`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13387  WHERE entry = 13386
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `spell_override` (	`overrideSpell` INT(10) UNSIGNED NOT NULL DEFAULT '0',	`affSpell` INT(10) NOT NULL DEFAULT '0', 	`aura` INT(10) NOT NULL DEFAULT '0', 	`comment` LONGTEXT NOT NULL,	PRIMARY KEY	(`overrideSpell`))
+ in following column `comment` of table `spell_override`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13861
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `disenchant_loot_template` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0' COMMENT 'Recommended id selection: item_level*100 + item_quality', `item` mediumint(8) unsigned NOT NULL DEFAULT '0', `ChanceOrQuestChance` float NOT NULL DEFAULT '100', `lootmode` smallint(5) unsigned NOT NULL DEFAULT '1', `groupid` tinyint(3) unsigned NOT NULL DEFAULT '0', `mincountOrRef` mediumint(9) NOT NULL DEFAULT '1', `maxcount` tinyint(3) unsigned NOT NULL DEFAULT '1', PRIMARY KEY (`entry`,`item`))
+ in following column `ChanceOrQuestChance` of table `disenchant_loot_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13315, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13319
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13168, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13170
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `reportId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0', `lagType` tinyint(3) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `latency` int(10) unsigned NOT NULL DEFAULT '0', `createTime` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`reportId`))
+ in following column `posX` of table `lag_reports`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13380, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13382
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE channels SET announce = ?, ownership = ?, password = ?, bannedList = ?, lastUsed = UNIX_TIMESTAMP WHERE name = ? AND team = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13137, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13213  WHERE entry = 13142
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `instance` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `resettime` int(10) unsigned NOT NULL DEFAULT '0', `difficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', `completedEncounters` int(10) unsigned NOT NULL DEFAULT '0', `data` tinytext NOT NULL, PRIMARY KEY (`id`), KEY `map` (`map`) USING BTREE, KEY `resettime` (`resettime`) USING BTREE, KEY `difficulty` (`difficulty`) USING BTREE)
+ in following column `data` of table `instance`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `calendar_invites` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `event` int(11) unsigned NOT NULL DEFAULT '0', `invitee` int(11) unsigned NOT NULL DEFAULT '0', `sender` int(11) unsigned NOT NULL DEFAULT '0', `status` tinyint(1) unsigned NOT NULL DEFAULT '0', `statustime` int(10) unsigned NOT NULL DEFAULT '0', `rank` tinyint(1) unsigned NOT NULL DEFAULT '0', `text` varchar(255) NOT NULL DEFAULT '', PRIMARY KEY (`id`))
+ in following column `text` and in column `text` of table `item_instance`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `realmlist` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(32) NOT NULL DEFAULT 'SkyFire', `address` varchar(32) NOT NULL DEFAULT '127.0.0.1', `localAddress` varchar(255) NOT NULL DEFAULT '127.0.0.1', `localSubnetMask` varchar(255) NOT NULL DEFAULT '255.255.255.0', `port` int(11) NOT NULL DEFAULT '8085', `icon` tinyint(3) unsigned NOT NULL DEFAULT '0', `flag` tinyint(3) unsigned NOT NULL DEFAULT '2', `timezone` tinyint(3) unsigned NOT NULL DEFAULT '0', `allowedSecurityLevel` tinyint(3) unsigned NOT NULL DEFAULT '0', `population` float unsigned NOT NULL DEFAULT '0', `gamebuild` int(11) unsigned NOT NULL DEFAULT '13623', PRIMARY KEY (`id`), UNIQUE KEY `idx_name` (`name`))
+ in following column `population` of table `realmlist`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13669, NextQuestInChain = 0  WHERE entry = 13666
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13145, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13146
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE creature_template SET ScriptName=npc_bank_vault,VehicleId=457, Spell1=67526, Spell2=67508, Spell3=67524, Spell4=67525, Spell5=67522, unit_flags=4  WHERE entry=35486
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13754
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `guild` ( `guildid` INT(10) UNSIGNED NOT NULL DEFAULT '0', `name` VARCHAR(24) NOT NULL DEFAULT '', `leaderguid` INT(10) UNSIGNED NOT NULL DEFAULT '0', `EmblemStyle` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `EmblemColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BorderStyle` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BorderColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `BackgroundColor` TINYINT(3) UNSIGNED NOT NULL DEFAULT '0', `info` TEXT NOT NULL, `motd` VARCHAR(128) NOT NULL DEFAULT '', `createdate` INT(10) UNSIGNED NOT NULL DEFAULT '0', `BankMoney` BIGINT(20) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`guildid`))
+ in following column `info` of table `guild`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13855
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 13036, ExclusiveGroup = 13226, NextQuestInChain = 0  WHERE entry = 13227
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `arena_team_stats` ( `arenateamid` int(10) unsigned NOT NULL DEFAULT '0', `rating` int(10) unsigned NOT NULL DEFAULT '0', `games` int(10) unsigned NOT NULL DEFAULT '0', `wins` int(10) unsigned NOT NULL DEFAULT '0', `played` int(10) unsigned NOT NULL DEFAULT '0', `wins2` int(10) unsigned NOT NULL DEFAULT '0', `rank` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`arenateamid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13231, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13291  WHERE entry = 13290
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 13036, ExclusiveGroup = 13226, NextQuestInChain = 0  WHERE entry = 13226
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13679, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13685
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12955, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12999
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12806, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12810  WHERE entry = 12807
+
+Detected: God Table Found in following statement: CREATE TABLE `realmlist` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `name` varchar(32) NOT NULL DEFAULT 'SkyFire', `address` varchar(32) NOT NULL DEFAULT '127.0.0.1', `localAddress` varchar(255) NOT NULL DEFAULT '127.0.0.1', `localSubnetMask` varchar(255) NOT NULL DEFAULT '255.255.255.0', `port` int(11) NOT NULL DEFAULT '8085', `icon` tinyint(3) unsigned NOT NULL DEFAULT '0', `flag` tinyint(3) unsigned NOT NULL DEFAULT '2', `timezone` tinyint(3) unsigned NOT NULL DEFAULT '0', `allowedSecurityLevel` tinyint(3) unsigned NOT NULL DEFAULT '0', `population` float unsigned NOT NULL DEFAULT '0', `gamebuild` int(11) unsigned NOT NULL DEFAULT '13623', PRIMARY KEY (`id`), UNIQUE KEY `idx_name` (`name`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `pet_aura` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier', `spell` mediumint(8) unsigned NOT NULL DEFAULT '0', `effect_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `recalculate_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `stackcount` tinyint(3) unsigned NOT NULL DEFAULT '1', `amount0` mediumint(8) NOT NULL, `amount1` mediumint(8) NOT NULL, `amount2` mediumint(8) NOT NULL, `base_amount0` mediumint(8) NOT NULL, `base_amount1` mediumint(8) NOT NULL, `base_amount2` mediumint(8) NOT NULL, `maxduration` int(11) NOT NULL DEFAULT '0', `remaintime` int(11) NOT NULL DEFAULT '0', `remaincharges` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`spell`,`effect_mask`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13725, RequiredRaces = 1101  WHERE entry = 13717
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13387, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13389  WHERE entry = 13388
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13715, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13723
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `guild_xp_for_level` ( `lvl` int(11) NOT NULL, `xp_for_next_level` bigint(20) NOT NULL)
+ in following column `xp_for_next_level` and in column `xp_for_next_level` of table `player_xp_for_level`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `point_comment` text, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_y` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13275, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13304  WHERE entry = 13282
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spell_proc` ( `spellId` mediumint(8) NOT NULL DEFAULT '0', `schoolMask` tinyint(4) NOT NULL DEFAULT '0', `spellFamilyName` smallint(5) unsigned NOT NULL DEFAULT '0', `spellFamilyMask0` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask1` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask2` int(10) unsigned NOT NULL DEFAULT '0', `typeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellTypeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellPhaseMask` int(10) NOT NULL DEFAULT '0', `hitMask` int(10) NOT NULL DEFAULT '0', `attributesMask` int(10) unsigned NOT NULL DEFAULT '0', `ratePerMinute` float NOT NULL DEFAULT '0', `chance` float NOT NULL DEFAULT '0', `cooldown` float unsigned NOT NULL DEFAULT '0', `charges` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`spellId`))
+ in following column `cooldown` of table `spell_proc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13401, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13403  WHERE entry = 13402
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12943, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12982  WHERE entry = 13085
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_instance` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `itemEntry` mediumint(8) unsigned NOT NULL DEFAULT '0', `owner_guid` int(10) unsigned NOT NULL DEFAULT '0', `creatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `giftCreatorGuid` int(10) unsigned NOT NULL DEFAULT '0', `count` int(10) unsigned NOT NULL DEFAULT '1', `duration` int(10) NOT NULL DEFAULT '0', `charges` tinytext, `flags` mediumint(8) unsigned NOT NULL DEFAULT '0', `enchantments` text NOT NULL, `randomPropertyId` smallint(5) NOT NULL DEFAULT '0', `durability` smallint(5) unsigned NOT NULL DEFAULT '0', `playedTime` int(10) unsigned NOT NULL DEFAULT '0', `text` text, PRIMARY KEY (`guid`), KEY `idx_owner_guid` (`owner_guid`) USING BTREE)
+ in following column `text` of table `item_instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13352, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13353
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `arena_team_stats` ( `arenateamid` int(10) unsigned NOT NULL DEFAULT '0', `rating` int(10) unsigned NOT NULL DEFAULT '0', `games` int(10) unsigned NOT NULL DEFAULT '0', `wins` int(10) unsigned NOT NULL DEFAULT '0', `played` int(10) unsigned NOT NULL DEFAULT '0', `wins2` int(10) unsigned NOT NULL DEFAULT '0', `rank` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`arenateamid`))
+ in following column `rating` and in column `rating` of table `arena_team`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `pointid` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0', `position_x` FLOAT NOT NULL DEFAULT '0', `position_y` FLOAT NOT NULL DEFAULT '0', `position_z` FLOAT NOT NULL DEFAULT '0', `point_comment` TEXT, PRIMARY KEY (`entry`,`pointid`))
+ in following column `position_x` of table `waypoints`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13749
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+ in following column `rate_2` of table `reputation_spillover_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13781
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `achievement_dbc` (	`ID` BIGINT(20) NOT NULL DEFAULT '0',	`Faction` BIGINT(20) NOT NULL DEFAULT '0',	`Map` BIGINT(20) NOT NULL DEFAULT '0',	`Previous` BIGINT(20) NOT NULL DEFAULT '0',	`Name` TEXT NOT NULL,	`Description` TEXT NOT NULL,	`Category` BIGINT(20) NOT NULL DEFAULT '0',	`Points` BIGINT(20) NOT NULL DEFAULT '0',	`OrderInGroup` BIGINT(20) NOT NULL DEFAULT '0',	`Flags` BIGINT(20) NOT NULL DEFAULT '0',	`SpellIcon` BIGINT(20) NOT NULL DEFAULT '0',	`Reward` TEXT NOT NULL,	`Demands` TEXT NOT NULL,	`ReferencedAchievement` BIGINT(20) NOT NULL DEFAULT '0',	PRIMARY KEY (`ID`))
+ in following column `Reward` of table `achievement_dbc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13318, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13346  WHERE entry = 13345
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13787
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13358, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13365
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13348, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13349
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13239, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13261
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13106, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13117
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13366, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13306
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13086, NextQuestId = 0, ExclusiveGroup = 13104, NextQuestInChain = 0  WHERE entry = 13104
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13216, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13217
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `reputation_reward_rate` ( `faction` mediumint(8) unsigned NOT NULL default '0', `quest_rate` float NOT NULL default '1', `creature_rate` float NOT NULL default '1', `spell_rate` float NOT NULL default '1', PRIMARY KEY (`faction`))
+ in following column `faction` and in column `faction` of table `character_reputation`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_subsurveys` ( `surveyid` int(10) NOT NULL auto_increment, `subsurveyid` int(11) UNSIGNED NOT NULL DEFAULT '0', `rank` int(11) UNSIGNED NOT NULL DEFAULT '0', `comment` longtext NOT NULL, PRIMARY KEY (`surveyid`,`subsurveyid`))
+ in following column `comment` of table `gm_subsurveys`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `guild` ( `guildid` int(10) unsigned NOT NULL DEFAULT '0', `name` varchar(24) NOT NULL DEFAULT '', `leaderguid` int(10) unsigned NOT NULL DEFAULT '0', `EmblemStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `EmblemColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BackgroundColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `info` text NOT NULL, `motd` varchar(128) NOT NULL DEFAULT '', `createdate` int(10) unsigned NOT NULL DEFAULT '0', `BankMoney` bigint(20) unsigned NOT NULL DEFAULT '0', `xp` bigint(20) unsigned NOT NULL, `level` int(10) unsigned NOT NULL, `m_today_xp` bigint(20) NOT NULL, PRIMARY KEY (`guildid`))
+ in following column `level` and in column `level` of table `player_classlevelstats`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13349, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13359
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13748
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13391, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13393  WHERE entry = 13392
+
+Detected: God Table Found in following statement: CREATE TABLE `character_pet` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `entry` int(10) unsigned NOT NULL DEFAULT '0', `owner` int(10) unsigned NOT NULL DEFAULT '0', `modelid` int(10) unsigned DEFAULT '0', `CreatedBySpell` mediumint(8) unsigned NOT NULL DEFAULT '0', `PetType` tinyint(3) unsigned NOT NULL DEFAULT '0', `level` smallint(5) unsigned NOT NULL DEFAULT '1', `exp` int(10) unsigned NOT NULL DEFAULT '0', `Reactstate` tinyint(3) unsigned NOT NULL DEFAULT '0', `name` varchar(21) NOT NULL DEFAULT 'Pet', `renamed` tinyint(3) unsigned NOT NULL DEFAULT '0', `slot` tinyint(3) unsigned NOT NULL DEFAULT '0', `curhealth` int(10) unsigned NOT NULL DEFAULT '1', `curmana` int(10) unsigned NOT NULL DEFAULT '0', `curhappiness` int(10) unsigned NOT NULL DEFAULT '0', `savetime` int(10) unsigned NOT NULL DEFAULT '0', `resettalents_cost` int(10) unsigned NOT NULL DEFAULT '0', `resettalents_time` int(10) unsigned NOT NULL DEFAULT '0', `abdata` text, PRIMARY KEY (`id`), KEY `owner` (`owner`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13714, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13713
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13287, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13288
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13008  WHERE entry = 13036
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoints` ( `entry` mediumint(8) unsigned NOT NULL DEFAULT '0', `pointid` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `point_comment` text, PRIMARY KEY (`entry`,`pointid`))
+ in following column `point_comment` of table `waypoints`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `outdoorpvp_template` ( `TypeId` tinyint(2) unsigned NOT NULL, `ScriptName` char(64) NOT NULL DEFAULT '', `comment` text, PRIMARY KEY (`TypeId`))
+ in following column `ScriptName` and in column `ScriptName` of table `item_script_names`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13783
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc4` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13342, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13344
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13295, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13297
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13592
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13341, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13284
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+ in following column `rate_1` of table `reputation_spillover_template`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13854
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13616
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13271, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13282  WHERE entry = 13275
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE arena_team SET rating = ?, weekGames = ?, weekWins = ?, seasonGames = ?, seasonWins = ?, rank = ?  WHERE arenaTeamId = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13300
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spellclassoptions_dbc` (	`Id` INT UNSIGNED NOT NULL DEFAULT '0',	`modalNextSpell` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_1` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_2` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassMask_3` INT UNSIGNED NOT NULL DEFAULT '0',	`spellClassSet` INT UNSIGNED NOT NULL DEFAULT '0',	`description` TEXT NOT NULL,	PRIMARY KEY (`Id`))
+ in following column `description` of table `spellclassoptions_dbc`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `account_data` ( `accountId` int(10) unsigned NOT NULL DEFAULT '0', `type` tinyint(3) unsigned NOT NULL DEFAULT '0', `time` int(10) unsigned NOT NULL DEFAULT '0', `data` blob NOT NULL, PRIMARY KEY (`accountId`,`type`))
+ in following column `data` and in column `data` of table `instance`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12982, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13069
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13762
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `report_id` int(10) NOT NULL auto_increment, `player` int(11) UNSIGNED NOT NULL DEFAULT '0', `lag_type` int(10) NOT NULL DEFAULT '0', `map` int(11) NOT NULL DEFAULT '0', `posX` float NOT NULL default '0', `posY` float NOT NULL default '0', `posZ` float NOT NULL default '0', PRIMARY KEY (`report_id`))
+ in following column `posZ` of table `lag_reports`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `instance` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `resettime` int(10) unsigned NOT NULL DEFAULT '0', `difficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', `completedEncounters` int(10) unsigned NOT NULL DEFAULT '0', `data` tinytext NOT NULL, PRIMARY KEY (`id`), KEY `map` (`map`) USING BTREE, KEY `resettime` (`resettime`) USING BTREE, KEY `difficulty` (`difficulty`) USING BTREE)
+ in following column `resettime` and in column `resettime` of table `instance_reset`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13828  WHERE entry = 13667
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12814, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12815
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13315, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13321  WHERE entry = 13320
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `player_levelstats` ( `race` tinyint(3) unsigned NOT NULL, `class` tinyint(3) unsigned NOT NULL, `level` tinyint(3) unsigned NOT NULL, `str` tinyint(3) unsigned NOT NULL, `agi` tinyint(3) unsigned NOT NULL, `sta` tinyint(3) unsigned NOT NULL, `inte` tinyint(3) unsigned NOT NULL, `spi` tinyint(3) unsigned NOT NULL, PRIMARY KEY (`race`,`class`,`level`))
+ in following column `str` and in column `str` of table `warden_checks`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13157, NextQuestId = 0, ExclusiveGroup = 13225, NextQuestInChain = 0  WHERE entry = 13224
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12999, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13059
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13667, NextQuestId = 13641, ExclusiveGroup = 0, NextQuestInChain = 13641  WHERE entry = 13633
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13117, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13119
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13789
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13863
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `achievement_dbc` (	`ID` BIGINT(20) NOT NULL DEFAULT '0',	`Faction` BIGINT(20) NOT NULL DEFAULT '0',	`Map` BIGINT(20) NOT NULL DEFAULT '0',	`Previous` BIGINT(20) NOT NULL DEFAULT '0',	`Name` TEXT NOT NULL,	`Description` TEXT NOT NULL,	`Category` BIGINT(20) NOT NULL DEFAULT '0',	`Points` BIGINT(20) NOT NULL DEFAULT '0',	`OrderInGroup` BIGINT(20) NOT NULL DEFAULT '0',	`Flags` BIGINT(20) NOT NULL DEFAULT '0',	`SpellIcon` BIGINT(20) NOT NULL DEFAULT '0',	`Reward` TEXT NOT NULL,	`Demands` TEXT NOT NULL,	`ReferencedAchievement` BIGINT(20) NOT NULL DEFAULT '0',	PRIMARY KEY (`ID`))
+ in following column `Name` of table `achievement_dbc`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_reward_rate` ( `faction` mediumint(8) unsigned NOT NULL default '0', `quest_rate` float NOT NULL default '1', `creature_rate` float NOT NULL default '1', `spell_rate` float NOT NULL default '1', PRIMARY KEY (`faction`))
+ in following column `spell_rate` of table `reputation_reward_rate`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13674, NextQuestInChain = 0  WHERE entry = 13674
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13279, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13281
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13720, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13728
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13360, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13362  WHERE entry = 13361
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `spellclassoptions_dbc` ( `Id` INT(10) UNSIGNED NOT NULL DEFAULT '0', `modalNextSpell` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_1` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_2` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_3` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassSet` INT(10) UNSIGNED NOT NULL DEFAULT '0', `description` TEXT NOT NULL, PRIMARY KEY (`Id`))
+ in following column `description` and in column `description` of table `pool_quest`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `spellclassoptions_dbc` ( `Id` INT(10) UNSIGNED NOT NULL DEFAULT '0', `modalNextSpell` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_1` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_2` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_3` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassSet` INT(10) UNSIGNED NOT NULL DEFAULT '0', `description` TEXT NOT NULL, PRIMARY KEY (`Id`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13782
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13862
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13679, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13684
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13213, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13214
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE characters SET name=?,race=?,class=?,gender=?,level=?,xp=?,money=?,playerBytes=?,playerBytes2=?,playerFlags=?, map=?,instance_id=?,instance_mode_mask=?,position_x=?,position_y=?,position_z=?,orientation=?,taximask=?,cinematic=?,totaltime=?,leveltime=?,rest_bonus=?, logout_time=?,is_logout_resting=?,resettalents_cost=?,resettalents_time=?,extra_flags=?,at_login=?,zone=?,death_expire_time=?,taxi_path=?, conquestPoints=?,totalHonorPoints=?,totalKills=?,todayKills=?,yesterdayKills=?,chosenTitle=?, watchedFaction=?,drunk=?,health=?,power1=?,power2=?,power3=?,power4=?,power5=?,power6=?,power7=?,power8=?,power9=?,power10=?,latency=?,speccount=?,activespec=?,exploredZones=?, equipmentCache=?,knownTitles=?,actionBars=?,currentPetSlot=?,petSlotUsed=?,grantableLevels=?,talentTree=?,online=?  WHERE guid=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_spillover_template` ( `faction` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction entry', `faction1` smallint(6) unsigned NOT NULL default '0' COMMENT 'faction to give spillover for', `rate_1` float NOT NULL default '0' COMMENT 'the given rep points * rate', `rank_1` tinyint(3) unsigned NOT NULL default '0' COMMENT 'max rank, above this will not give any spillover', `faction2` smallint(6) unsigned NOT NULL default '0', `rate_2` float NOT NULL default '0', `rank_2` tinyint(3) unsigned NOT NULL default '0', `faction3` smallint(6) unsigned NOT NULL default '0', `rate_3` float NOT NULL default '0', `rank_3` tinyint(3) unsigned NOT NULL default '0', `faction4` smallint(6) unsigned NOT NULL default '0', `rate_4` float NOT NULL default '0', `rank_4` tinyint(3) unsigned NOT NULL default '0', PRIMARY KEY (`faction`))
+ in following column `rate_3` of table `reputation_spillover_template`
+Detected: God Table Found in following statement: CREATE TABLE `character_aura` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `caster_guid` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Full Global Unique Identifier', `item_guid` bigint(20) unsigned NOT NULL DEFAULT '0', `spell` mediumint(8) unsigned NOT NULL DEFAULT '0', `effect_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `recalculate_mask` tinyint(3) unsigned NOT NULL DEFAULT '0', `stackcount` tinyint(3) unsigned NOT NULL DEFAULT '1', `amount0` int(11) NOT NULL DEFAULT '0', `amount1` int(11) NOT NULL DEFAULT '0', `amount2` int(11) NOT NULL DEFAULT '0', `base_amount0` int(11) NOT NULL DEFAULT '0', `base_amount1` int(11) NOT NULL DEFAULT '0', `base_amount2` int(11) NOT NULL DEFAULT '0', `maxduration` int(11) NOT NULL DEFAULT '0', `remaintime` int(11) NOT NULL DEFAULT '0', `remaincharges` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`caster_guid`,`item_guid`,`spell`,`effect_mask`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12939  WHERE entry = 12938
+
+Detected: God Table Found in following statement: CREATE TABLE `character_queststatus` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `quest` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier', `status` tinyint(3) unsigned NOT NULL DEFAULT '0', `explored` tinyint(3) unsigned NOT NULL DEFAULT '0', `timer` int(10) unsigned NOT NULL DEFAULT '0', `mobcount1` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount2` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount3` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount4` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount1` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount2` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount3` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount4` smallint(5) unsigned NOT NULL DEFAULT '0', `playercount` smallint(5) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`quest`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13791
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13747
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13262, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13271  WHERE entry = 13263
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `vehicle_accessory` ( `guid` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 0, `accessory_entry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 0, `seat_id` TINYINT(1) NOT NULL DEFAULT 0, `minion` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0, `description` TEXT NOT NULL, `summontype` TINYINT(3) UNSIGNED NOT NULL DEFAULT 6 COMMENT 'see enum TempSummonType', `summontimer` INT(10) UNSIGNED NOT NULL DEFAULT 30000 COMMENT 'timer, only relevant for certain summontypes', PRIMARY KEY (`guid`,`seat_id`))
+ in following column `description` of table `vehicle_accessory`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13829, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13680  WHERE entry = 13678
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12899  WHERE entry = 12897
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12807, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12838
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12999, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13091  WHERE entry = 13043
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12939, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12943
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13847
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_cp_weekcap` ( `guid` int(10) unsigned NOT NULL DEFAULT '0', `source` tinyint(3) unsigned NOT NULL DEFAULT '0', `maxWeekRating` smallint(5) unsigned NOT NULL DEFAULT '0', `weekCap` smallint(5) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`source`))
+ in following column `guid` and in column `guid` of table `character_social`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `channels` ( `name` varchar(128) NOT NULL, `team` int(10) unsigned NOT NULL, `announce` tinyint(3) unsigned NOT NULL DEFAULT '1', `ownership` tinyint(3) unsigned NOT NULL DEFAULT '1', `password` varchar(32) DEFAULT NULL, `bannedList` text, `lastUsed` int(10) unsigned NOT NULL, PRIMARY KEY (`name`,`team`))
+ in following column `bannedList` of table `channels`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE character_skills SET value = %u, max = %uWHERE guid = %u WHERE guid = %u
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13758
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13753
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13070, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13086
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `playercreateinfo_action` ( `race` tinyint(3) unsigned DEFAULT NULL, `class` tinyint(3) unsigned DEFAULT NULL, `button` tinyint(3) unsigned DEFAULT NULL, `action` mediumint(10) unsigned DEFAULT NULL, `type` tinyint(3) unsigned DEFAULT NULL, UNIQUE KEY `race` (`race`,`class`,`button`))
+ in following column `type` and in column `type` of table `currency_loot`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12898  WHERE entry = 12896
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13340, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13310
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13238, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13239
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13217, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13218
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12999, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13092
+
+Detected: God Table Found in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13306, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13307
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13362, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13364  WHERE entry = 13363
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 14016, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 14017
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13744
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13770
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13239, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13373  WHERE entry = 13379
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13745
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `bugreport` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'Identifier', `type` longtext NOT NULL, `content` longtext NOT NULL, PRIMARY KEY (`id`))
+ in following column `content` of table `bugreport`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13763
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12999, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13042
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spell_proc` ( `spellId` mediumint(8) NOT NULL DEFAULT '0', `schoolMask` tinyint(4) NOT NULL DEFAULT '0', `spellFamilyName` smallint(5) unsigned NOT NULL DEFAULT '0', `spellFamilyMask0` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask1` int(10) unsigned NOT NULL DEFAULT '0', `spellFamilyMask2` int(10) unsigned NOT NULL DEFAULT '0', `typeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellTypeMask` int(10) unsigned NOT NULL DEFAULT '0', `spellPhaseMask` int(10) NOT NULL DEFAULT '0', `hitMask` int(10) NOT NULL DEFAULT '0', `attributesMask` int(10) unsigned NOT NULL DEFAULT '0', `ratePerMinute` float NOT NULL DEFAULT '0', `chance` float NOT NULL DEFAULT '0', `cooldown` float unsigned NOT NULL DEFAULT '0', `charges` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`spellId`))
+ in following column `chance` of table `spell_proc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13768
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13361, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13362
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13390, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13392  WHERE entry = 13391
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `gm_subsurveys` ( `surveyId` int(10) unsigned NOT NULL AUTO_INCREMENT, `subsurveyId` int(10) unsigned NOT NULL DEFAULT '0', `rank` int(10) unsigned NOT NULL DEFAULT '0', `comment` text NOT NULL, PRIMARY KEY (`surveyId`,`subsurveyId`))
+ in following column `rank` and in column `rank` of table `spell_ranks`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13679, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13688
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12949, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12951
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `team` and in column `team` of table `channels`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+ in following column `message` of table `gm_tickets`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `joinX` of table `character_battleground_data`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `groups` ( `guid` int(10) unsigned NOT NULL, `leaderGuid` int(10) unsigned NOT NULL, `lootMethod` tinyint(3) unsigned NOT NULL, `looterGuid` int(10) unsigned NOT NULL, `lootThreshold` tinyint(3) unsigned NOT NULL, `icon1` int(10) unsigned NOT NULL, `icon2` int(10) unsigned NOT NULL, `icon3` int(10) unsigned NOT NULL, `icon4` int(10) unsigned NOT NULL, `icon5` int(10) unsigned NOT NULL, `icon6` int(10) unsigned NOT NULL, `icon7` int(10) unsigned NOT NULL, `icon8` int(10) unsigned NOT NULL, `groupType` tinyint(3) unsigned NOT NULL, `difficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', `raiddifficulty` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`), KEY `leaderGuid` (`leaderGuid`) USING BTREE)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `spelldifficulty_dbc` ( `id` INT(11) UNSIGNED NOT NULL DEFAULT '0', `spellid0` INT(11) UNSIGNED NOT NULL DEFAULT '0', `spellid1` INT(11) UNSIGNED NOT NULL DEFAULT '0', `spellid2` INT(11) UNSIGNED NOT NULL DEFAULT '0', `spellid3` INT(11) UNSIGNED NOT NULL DEFAULT '0', PRIMARY KEY (`id`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13767
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13143  WHERE entry = 13155
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13277, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13278
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13232
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `playercreateinfo` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `map` smallint(5) unsigned NOT NULL DEFAULT '0', `zone` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `orientation` float NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`))
+ in following column `orientation` of table `playercreateinfo`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `waypoint_data` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature GUID', `point` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `delay` int(10) unsigned NOT NULL DEFAULT '0', `move_flag` tinyint(1) NOT NULL DEFAULT '0', `action` int(11) NOT NULL DEFAULT '0', `action_chance` smallint(3) NOT NULL DEFAULT '100', `wpguid` int(11) NOT NULL DEFAULT '0')
+ in following column `action` and in column `action` of table `warden_action`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_data` ( `id` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Creature GUID', `point` mediumint(8) unsigned NOT NULL DEFAULT '0', `position_x` float NOT NULL DEFAULT '0', `position_y` float NOT NULL DEFAULT '0', `position_z` float NOT NULL DEFAULT '0', `delay` int(10) unsigned NOT NULL DEFAULT '0', `move_flag` tinyint(1) NOT NULL DEFAULT '0', `action` int(11) NOT NULL DEFAULT '0', `action_chance` smallint(3) NOT NULL DEFAULT '100', `wpguid` int(11) NOT NULL DEFAULT '0')
+ in following column `position_x` of table `waypoint_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13008, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13045  WHERE entry = 13044
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13036, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13039
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13145, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13160
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13699, RequiredRaces = 1101  WHERE entry = 13718
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_homebind` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `zoneId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Zone Identifier', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `posZ` of table `character_homebind`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `achievement_dbc` (	`ID` BIGINT(20) NOT NULL DEFAULT '0',	`Faction` BIGINT(20) NOT NULL DEFAULT '0',	`Map` BIGINT(20) NOT NULL DEFAULT '0',	`Previous` BIGINT(20) NOT NULL DEFAULT '0',	`Name` TEXT NOT NULL,	`Description` TEXT NOT NULL,	`Category` BIGINT(20) NOT NULL DEFAULT '0',	`Points` BIGINT(20) NOT NULL DEFAULT '0',	`OrderInGroup` BIGINT(20) NOT NULL DEFAULT '0',	`Flags` BIGINT(20) NOT NULL DEFAULT '0',	`SpellIcon` BIGINT(20) NOT NULL DEFAULT '0',	`Reward` TEXT NOT NULL,	`Demands` TEXT NOT NULL,	`ReferencedAchievement` BIGINT(20) NOT NULL DEFAULT '0',	PRIMARY KEY (`ID`))
+ in following column `Description` of table `achievement_dbc`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13373, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13376
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13741
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12896, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12938  WHERE entry = 12898
+
+Detected: God Table Found in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13367, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13368
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13225, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13341
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `item_soulbound_trade_data` ( `itemGuid` int(10) unsigned NOT NULL COMMENT 'Item GUID', `allowedPlayers` text NOT NULL COMMENT 'Space separated GUID list of players who can receive this item in trade', PRIMARY KEY (`itemGuid`))
+ in following column `allowedPlayers` of table `item_soulbound_trade_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13341, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13309
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13293, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13283
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE item_instance SET itemEntry = ?, owner_guid = ?, creatorGuid = ?, giftCreatorGuid = ?, count = ?, duration = ?, charges = ?, flags = ?, enchantments = ?, randomPropertyId = ?, durability = ?, playedTime = ?, text = ?  WHERE guid = ?
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12897, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12938  WHERE entry = 12899
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `game_event_condition_save` ( `eventEntry` tinyint(3) unsigned NOT NULL, `condition_id` int(10) unsigned NOT NULL DEFAULT '0', `done` float DEFAULT '0', PRIMARY KEY (`eventEntry`,`condition_id`))
+ in following column `done` of table `game_event_condition_save`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `addons` ( `name` varchar(120) NOT NULL DEFAULT '', `crc` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`name`))
+ in following column `name` and in column `name` of table `arena_team`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13359, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13361  WHERE entry = 13360
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13263, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13275  WHERE entry = 13271
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc6` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13335, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13339
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13731, RequiredRaces = 690  WHERE entry = 13722
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13264, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13276
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `reputation_reward_rate` ( `faction` mediumint(8) unsigned NOT NULL default '0', `quest_rate` float NOT NULL default '1', `creature_rate` float NOT NULL default '1', `spell_rate` float NOT NULL default '1', PRIMARY KEY (`faction`))
+ in following column `quest_rate` of table `reputation_reward_rate`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc1` of table `locales_creature_text`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `guild` ( `guildid` int(10) unsigned NOT NULL DEFAULT '0', `name` varchar(24) NOT NULL DEFAULT '', `leaderguid` int(10) unsigned NOT NULL DEFAULT '0', `EmblemStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `EmblemColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderStyle` tinyint(3) unsigned NOT NULL DEFAULT '0', `BorderColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `BackgroundColor` tinyint(3) unsigned NOT NULL DEFAULT '0', `info` text NOT NULL, `motd` varchar(128) NOT NULL DEFAULT '', `createdate` int(10) unsigned NOT NULL DEFAULT '0', `BankMoney` bigint(20) unsigned NOT NULL DEFAULT '0', `xp` bigint(20) unsigned NOT NULL, `level` int(10) unsigned NOT NULL, `m_today_xp` bigint(20) NOT NULL, PRIMARY KEY (`guildid`))
+ in following column `info` of table `guild`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13776
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13654, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13663
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `waypoint_scripts` ( `id` int(11) unsigned NOT NULL DEFAULT '0', `delay` int(11) unsigned NOT NULL DEFAULT '0', `command` int(11) unsigned NOT NULL DEFAULT '0', `datalong` int(11) unsigned NOT NULL DEFAULT '0', `datalong2` int(11) unsigned NOT NULL DEFAULT '0', `dataint` int(11) unsigned NOT NULL DEFAULT '0', `x` float NOT NULL DEFAULT '0', `y` float NOT NULL DEFAULT '0', `z` float NOT NULL DEFAULT '0', `o` float NOT NULL DEFAULT '0', `guid` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `x` of table `waypoint_scripts`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13288, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13315
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13718, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13699
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE creature_template SET health_mod=15, minlevel=85, maxlevel=85, faction_A=16, faction_H=16, mindmg=530, maxdmg=713, attackpower=827, baseattacktime=2000  WHERE entry IN (39708,39980,39982,39985,39978,39985,40004,40019,40017,40021,50284)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `joinZ` of table `character_battleground_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13036, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13008
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `reportId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0', `lagType` tinyint(3) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `latency` int(10) unsigned NOT NULL DEFAULT '0', `createTime` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`reportId`))
+ in following column `posY` of table `lag_reports`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13340, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13301
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13355, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13356
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13389, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13391  WHERE entry = 13390
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `character_glyphs` ( `guid` int(10) unsigned NOT NULL, `spec` tinyint(3) unsigned NOT NULL DEFAULT '0', `glyph1` smallint(5) unsigned NOT NULL DEFAULT '0', `glyph2` smallint(5) unsigned DEFAULT '0', `glyph3` smallint(5) unsigned DEFAULT '0', `glyph4` smallint(5) unsigned DEFAULT '0', `glyph5` smallint(5) unsigned DEFAULT '0', `glyph6` smallint(5) unsigned DEFAULT '0', `glyph7` smallint(5) unsigned DEFAULT '0', `glyph8` smallint(5) unsigned DEFAULT '0', `glyph9` int(11) unsigned DEFAULT '0', PRIMARY KEY (`guid`,`spec`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13723, RequiredRaces = 1101  WHERE entry = 13715
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13726, RequiredRaces = 690  WHERE entry = 13697
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13664, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 14017  WHERE entry = 14016
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc2` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12938, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12999  WHERE entry = 12955
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12807, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 12840  WHERE entry = 12839
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13771, NextQuestInChain = 0, RequiredRaces = 1101  WHERE entry = 13755
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `joinO` of table `character_battleground_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13680, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13694
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_surveys` ( `surveyid` int(10) NOT NULL auto_increment, `player` int(11) UNSIGNED NOT NULL DEFAULT '0', `mainSurvey` int(11) UNSIGNED NOT NULL DEFAULT '0', `overall_comment` longtext NOT NULL, `timestamp` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`surveyid`))
+ in following column `overall_comment` of table `gm_surveys`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13168, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13169
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `lag_reports` ( `reportId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0', `lagType` tinyint(3) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `latency` int(10) unsigned NOT NULL DEFAULT '0', `createTime` int(10) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`reportId`))
+ in following column `posZ` of table `lag_reports`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `warden_checks` ( `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT, `type` tinyint(3) unsigned DEFAULT NULL, `data` varchar(48) DEFAULT NULL, `str` varchar(20) DEFAULT NULL, `address` int(10) unsigned DEFAULT NULL, `length` tinyint(3) unsigned DEFAULT NULL, `result` varchar(24) DEFAULT NULL, `comment` varchar(50) DEFAULT NULL, PRIMARY KEY (`id`))
+ in following column `address` and in column `address` of table `realmlist`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13795, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13788
+
+Detected: God Table Found in following statement: CREATE TABLE `character_pet` ( `id` int(10) unsigned NOT NULL DEFAULT '0', `entry` int(10) unsigned NOT NULL DEFAULT '0', `owner` int(10) unsigned NOT NULL DEFAULT '0', `modelid` int(10) unsigned DEFAULT '0', `CreatedBySpell` mediumint(8) unsigned NOT NULL DEFAULT '0', `PetType` tinyint(3) unsigned NOT NULL DEFAULT '0', `level` smallint(5) unsigned NOT NULL DEFAULT '1', `exp` int(10) unsigned NOT NULL DEFAULT '0', `Reactstate` tinyint(3) unsigned NOT NULL DEFAULT '0', `name` varchar(21) NOT NULL DEFAULT 'Pet', `renamed` tinyint(3) unsigned NOT NULL DEFAULT '0', `slot` tinyint(3) unsigned NOT NULL DEFAULT '0', `curhealth` int(10) unsigned NOT NULL DEFAULT '1', `curmana` int(10) unsigned NOT NULL DEFAULT '0', `curhappiness` int(10) unsigned NOT NULL DEFAULT '0', `savetime` int(10) unsigned NOT NULL DEFAULT '0', `abdata` text, PRIMARY KEY (`id`), KEY `owner` (`owner`) USING BTREE, KEY `idx_slot` (`slot`) USING BTREE)
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE instance SET completedEncounters=?, data=?  WHERE id=?
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `guild_news` ( `guildid` int(12) NOT NULL, `type` int(10) NOT NULL, `date` int(12) NOT NULL, `value1` int(10) NOT NULL, `value2` int(10) NOT NULL, `source_guid` int(12) NOT NULL, `flags` int(10) NOT NULL, PRIMARY KEY (`guildid`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13682
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13237, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13264
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+ in following column `comment` of table `gm_tickets`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13145, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13147
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13373, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13406
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `locales_creature_text` ( `entry` INT(10) UNSIGNED NOT NULL, `textGroup` TINYINT(3) UNSIGNED NOT NULL, `id` INT(10) UNSIGNED NOT NULL, `text_loc1` TEXT, `text_loc2` TEXT, `text_loc3` TEXT, `text_loc4` TEXT, `text_loc5` TEXT, `text_loc6` TEXT, `text_loc7` TEXT, `text_loc8` TEXT, PRIMARY KEY (`entry`,`textGroup`,`id`))
+ in following column `text_loc5` of table `locales_creature_text`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13036, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13040
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 12810, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 12814
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13143, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13145
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13045, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13086  WHERE entry = 13070
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13352, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13358
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13142, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13213
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13282, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13304
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `creature_transport` ( `guid` int(16) NOT NULL AUTO_INCREMENT COMMENT 'GUID of NPC on transport - not the same as creature.guid', `transport_entry` int(8) NOT NULL COMMENT 'Transport entry', `npc_entry` int(8) NOT NULL COMMENT 'NPC entry', `TransOffsetX` float NOT NULL DEFAULT '0', `TransOffsetY` float NOT NULL DEFAULT '0', `TransOffsetZ` float NOT NULL DEFAULT '0', `TransOffsetO` float NOT NULL DEFAULT '0', `emote` int(16) NOT NULL, PRIMARY KEY (`transport_entry`,`guid`), UNIQUE KEY `entry` (`transport_entry`,`guid`))
+ in following column `TransOffsetX` of table `creature_transport`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `game_event_seasonal_questrelation` ( `questId` INT(10) UNSIGNED NOT NULL COMMENT 'Quest Identifier', `eventEntry` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT 0 COMMENT 'Entry of the game event', PRIMARY KEY (`questId`))
+ in following column `eventEntry` and in column `eventEntry` of table `game_event_save`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13680, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13691
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `achievement_dbc` (	`ID` BIGINT(20) NOT NULL DEFAULT '0',	`Faction` BIGINT(20) NOT NULL DEFAULT '0',	`Map` BIGINT(20) NOT NULL DEFAULT '0',	`Previous` BIGINT(20) NOT NULL DEFAULT '0',	`Name` TEXT NOT NULL,	`Description` TEXT NOT NULL,	`Category` BIGINT(20) NOT NULL DEFAULT '0',	`Points` BIGINT(20) NOT NULL DEFAULT '0',	`OrderInGroup` BIGINT(20) NOT NULL DEFAULT '0',	`Flags` BIGINT(20) NOT NULL DEFAULT '0',	`SpellIcon` BIGINT(20) NOT NULL DEFAULT '0',	`Reward` TEXT NOT NULL,	`Demands` TEXT NOT NULL,	`ReferencedAchievement` BIGINT(20) NOT NULL DEFAULT '0',	PRIMARY KEY (`ID`))
+ in following column `Demands` of table `achievement_dbc`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spellclassoptions_dbc` ( `Id` int(10) unsigned NOT NULL DEFAULT '0', `modalNextSpell` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_1` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_2` int(10) unsigned NOT NULL DEFAULT '0', `spellClassMask_3` int(10) unsigned NOT NULL DEFAULT '0', `spellClassSet` int(10) unsigned NOT NULL DEFAULT '0', `description` text NOT NULL, PRIMARY KEY (`Id`))
+ in following column `description` of table `spellclassoptions_dbc`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+ in following column `posZ` of table `gm_tickets`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13680, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13696
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `playercreateinfo_action` ( `race` tinyint(3) unsigned NOT NULL DEFAULT '0', `class` tinyint(3) unsigned NOT NULL DEFAULT '0', `button` smallint(5) unsigned NOT NULL DEFAULT '0', `action` int(10) unsigned NOT NULL DEFAULT '0', `type` smallint(5) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`race`,`class`,`button`), KEY `playercreateinfo_race_class_index` (`race`,`class`))
+ in following column `button` and in column `button` of table `character_action`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `vehicle_scaling_info` ( `entry` mediumint(8) unsigned NOT NULL default '0', `baseItemLevel` float NOT NULL default '0', `scalingFactor` float NOT NULL default '0', PRIMARY KEY (`entry`))
+ in following column `scalingFactor` of table `vehicle_scaling_info`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13857
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13857, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13856
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13672, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13679
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `spellclassoptions_dbc` ( `Id` INT(10) UNSIGNED NOT NULL DEFAULT '0', `modalNextSpell` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_1` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_2` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassMask_3` INT(10) UNSIGNED NOT NULL DEFAULT '0', `spellClassSet` INT(10) UNSIGNED NOT NULL DEFAULT '0', `description` TEXT NOT NULL, PRIMARY KEY (`Id`))
+ in following column `description` of table `spellclassoptions_dbc`
+Detected: God Table Found in following statement: CREATE TABLE `character_glyphs` ( `guid` int(10) unsigned NOT NULL, `spec` tinyint(3) unsigned NOT NULL DEFAULT '0', `glyph1` smallint(5) unsigned NOT NULL DEFAULT '0', `glyph2` smallint(5) unsigned DEFAULT '0', `glyph3` smallint(5) unsigned DEFAULT '0', `glyph4` smallint(5) unsigned DEFAULT '0', `glyph5` smallint(5) unsigned DEFAULT '0', `glyph6` smallint(5) unsigned DEFAULT '0', `glyph7` smallint(5) unsigned DEFAULT '0', `glyph8` smallint(5) unsigned DEFAULT '0', `glyph9` int(11) unsigned DEFAULT '0', PRIMARY KEY (`guid`,`spec`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `gm_tickets` ( `ticketId` int(10) unsigned NOT NULL AUTO_INCREMENT, `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier of ticket creator', `name` varchar(12) NOT NULL COMMENT 'Name of ticket creator', `message` text NOT NULL, `createTime` int(10) unsigned NOT NULL DEFAULT '0', `mapId` smallint(5) unsigned NOT NULL DEFAULT '0', `posX` float NOT NULL DEFAULT '0', `posY` float NOT NULL DEFAULT '0', `posZ` float NOT NULL DEFAULT '0', `lastModifiedTime` int(10) unsigned NOT NULL DEFAULT '0', `closedBy` int(10) NOT NULL DEFAULT '0', `assignedTo` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'GUID of admin to whom ticket is assigned', `comment` text NOT NULL, `completed` tinyint(3) unsigned NOT NULL DEFAULT '0', `escalated` tinyint(3) unsigned NOT NULL DEFAULT '0', `viewed` tinyint(3) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`ticketId`))
+ in following column `posY` of table `gm_tickets`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `creature_transport` ( `guid` int(16) NOT NULL AUTO_INCREMENT COMMENT 'GUID of NPC on transport - not the same as creature.guid', `transport_entry` int(8) NOT NULL COMMENT 'Transport entry', `npc_entry` int(8) NOT NULL COMMENT 'NPC entry', `TransOffsetX` float NOT NULL DEFAULT '0', `TransOffsetY` float NOT NULL DEFAULT '0', `TransOffsetZ` float NOT NULL DEFAULT '0', `TransOffsetO` float NOT NULL DEFAULT '0', `emote` int(16) NOT NULL, PRIMARY KEY (`transport_entry`,`guid`), UNIQUE KEY `entry` (`transport_entry`,`guid`))
+ in following column `TransOffsetZ` of table `creature_transport`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13794, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13809
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13291, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13292
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13237, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13279  WHERE entry = 13277
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13772, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13777
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `character_battleground_data` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `instanceId` int(10) unsigned NOT NULL COMMENT 'Instance Identifier', `team` smallint(5) unsigned NOT NULL, `joinX` float NOT NULL DEFAULT '0', `joinY` float NOT NULL DEFAULT '0', `joinZ` float NOT NULL DEFAULT '0', `joinO` float NOT NULL DEFAULT '0', `joinMapId` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Map Identifier', `taxiStart` int(10) unsigned NOT NULL DEFAULT '0', `taxiEnd` int(10) unsigned NOT NULL DEFAULT '0', `mountSpell` mediumint(8) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`))
+ in following column `joinY` of table `character_battleground_data`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13728, RequiredRaces = 690  WHERE entry = 13720
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 13724, RequiredRaces = 1101  WHERE entry = 13716
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `character_queststatus` ( `guid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Global Unique Identifier', `quest` int(10) unsigned NOT NULL DEFAULT '0' COMMENT 'Quest Identifier', `status` tinyint(3) unsigned NOT NULL DEFAULT '0', `explored` tinyint(3) unsigned NOT NULL DEFAULT '0', `timer` int(10) unsigned NOT NULL DEFAULT '0', `mobcount1` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount2` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount3` smallint(5) unsigned NOT NULL DEFAULT '0', `mobcount4` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount1` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount2` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount3` smallint(5) unsigned NOT NULL DEFAULT '0', `itemcount4` smallint(5) unsigned NOT NULL DEFAULT '0', `playercount` smallint(5) unsigned NOT NULL DEFAULT '0', PRIMARY KEY (`guid`,`quest`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE creature_template SET IconName=vehichleCursor, minlevel=1, maxlevel=1, unit_flags=32768, type_flags=2048, spell1=66300, spell3=66298, spell4=66299, VehicleId=468, speed_walk = 2,speed_run = 3,mechanic_immune_mask=1073741823, ScriptName=npc_hotrod  WHERE entry=34840
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 0, NextQuestId = 0, ExclusiveGroup = 13768, NextQuestInChain = 0, RequiredRaces = 690  WHERE entry = 13778
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13296, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13280
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE quest_template SET PrevQuestId = 13679, NextQuestId = 0, ExclusiveGroup = 0, NextQuestInChain = 0  WHERE entry = 13689
+

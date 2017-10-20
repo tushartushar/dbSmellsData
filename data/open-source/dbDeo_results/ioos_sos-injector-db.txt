@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['station', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sensor', 'id']

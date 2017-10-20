@@ -1,0 +1,22 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', '=']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', 'get_table_nfirst_lines']
+Detected: God Table Found in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column age of table bankfull
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column campaign of table bankfull
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', 'line']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column balance of table bankfull
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', 'db']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column day of table bankfull
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column duration of table bankfull
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column pdays of table bankfull
+Detected: Index Shotgun Variant: 3 Following index not used : ['ACAPA', 'Date']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE bankfull (age float, job string, marital string, education string, default2 string, balance float, housing string, loan string, contact string, day float, month string, duration float, campaign float, pdays float, previous float, poutcome string, y string)
+ in following column previous of table bankfull

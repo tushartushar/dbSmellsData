@@ -1,0 +1,17 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros_acos`', '`aco_id`']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `' . $this->options['extras']['prefix'] . 'items` (`feed_id` TEXT CHARACTER SET utf8 NOT NULL, `id` TEXT CHARACTER SET utf8 NOT NULL, `data` TEXT CHARACTER SET utf8 NOT NULL, `posted` INT UNSIGNED NOT NULL, INDEX `feed_id` (`feed_id`(125)))
+ in following column `data` and in column `data` of table `' . $this->options['extras']['prefix'] . 'cache_data`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cake_sessions ( id varchar(255) NOT NULL default '', data text, expires int(11) default NULL, PRIMARY KEY (id))
+ in following column data of table cake_sessions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE acos ( id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT, parent_id INTEGER(10) DEFAULT NULL, model VARCHAR(255) DEFAULT '', foreign_key INTEGER(10) UNSIGNED DEFAULT NULL, alias VARCHAR(255) DEFAULT '', lft INTEGER(10) DEFAULT NULL, rght INTEGER(10) DEFAULT NULL, PRIMARY KEY (id))
+ in following column foreign_key and in column foreign_key of table i18n
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`alias`']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE aros_acos ( id INTEGER(10) UNSIGNED NOT NULL AUTO_INCREMENT, aro_id INTEGER(10) UNSIGNED NOT NULL, aco_id INTEGER(10) UNSIGNED NOT NULL, _create CHAR(2) NOT NULL DEFAULT 0, _read CHAR(2) NOT NULL DEFAULT 0, _update CHAR(2) NOT NULL DEFAULT 0, _delete CHAR(2) NOT NULL DEFAULT 0, PRIMARY KEY(id))
+ in following column id and in column id of table ' . $name . '
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`lft`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`rght`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`lft`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`rght`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`alias`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE i18n (	id int(10) NOT NULL auto_increment,	locale varchar(6) NOT NULL,	model varchar(255) NOT NULL,	foreign_key int(10) NOT NULL,	field varchar(255) NOT NULL,	content mediumtext,	PRIMARY KEY	(id),#	UNIQUE INDEX I18N_LOCALE_FIELD(locale, model, foreign_key, field),#	INDEX I18N_LOCALE_ROW(locale, model, foreign_key),#	INDEX I18N_LOCALE_MODEL(locale, model),#	INDEX I18N_FIELD(model, foreign_key, field),#	INDEX I18N_ROW(model, foreign_key),	INDEX locale (locale),	INDEX model (model),	INDEX row_id (foreign_key),	INDEX field (field))
+ in following column content of table i18n

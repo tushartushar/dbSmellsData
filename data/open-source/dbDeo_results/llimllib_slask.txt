@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS github_room_repo_defaults (room text, repo text)
+ in following column repo of table github_room_repo_defaults
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS github_room_repo_defaults (room text, repo text)
+ in following column room of table github_room_repo_defaults

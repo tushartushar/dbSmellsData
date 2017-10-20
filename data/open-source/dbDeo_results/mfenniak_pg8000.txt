@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t2 (id serial, data text)
+ in following column data of table t2

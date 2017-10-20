@@ -1,0 +1,5 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table1 ( id serial PRIMARY KEY, value char(1) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table2 ( id serial PRIMARY KEY, value char(1) )
+
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ALERT SET ALERT = ?, RISK = ?,RELIABILITY = ?,DESCRIPTION = ?,URI = ?,PARAM = ?,ATTACK = ?,OTHERINFO = ?,SOLUTION = ?,REFERENCE = ?, EVIDENCE = ?, CWEID = ?, WASCID = ?, SOURCEHISTORYID = ?  WHERE ALERTID = ?
+

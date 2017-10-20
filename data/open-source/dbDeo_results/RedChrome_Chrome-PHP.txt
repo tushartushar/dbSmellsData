@@ -1,0 +1,11 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `cpp_class` ( `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, `name` VARCHAR(256) NOT NULL, `file` VARCHAR(256) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `cpp_design_controller` ( `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, `controller_class` VARCHAR(256) NOT NULL, `design_class` VARCHAR(500) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `cpp_route_dynamic` ( `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, `name` VARCHAR(256) NOT NULL, `class` VARCHAR(256) NOT NULL, `GET` VARCHAR(511) NOT NULL, `POST` VARCHAR(511) NOT NULL, PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `testing`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `testing` ( `id` int(9) NOT NULL AUTO_INCREMENT, `var1` varchar(50) NULL, `var2` varchar(50) NULL, `var3` varchar(100) NULL, `var4` varchar(100) NULL, PRIMARY KEY (`id`))
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `cpp_route_administration` ( `id` INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, `name` VARCHAR(256) NOT NULL, `class` VARCHAR(256) NOT NULL, `file` VARCHAR(256) NOT NULL, `resource_id` VARCHAR(256) NOT NULL, `resource_transformation` VARCHAR(256) NOT NULL, PRIMARY KEY (`id`))
+ in following column `resource_id` and in column `resource_id` of table `cpp_authorisation_resource_default`

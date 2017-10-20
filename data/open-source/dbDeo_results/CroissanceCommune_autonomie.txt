@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 3 Found in following statement: update task set project_id=:p_id, customer_id=:c_id, _number=:number, sequence_number=:seq_number, display_units=:display, expenses=:expenses, expenses_ht=:expenses_ht, address=:address, payment_conditions=:conditions  where id=:id
+

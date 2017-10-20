@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'crval_ra']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'crval_dec']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'obs_end']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'q3c_ang2ipix']

@@ -1,0 +1,5 @@
+SELECT q FROM Admingenerator\GeneratorBundle\Tests\QueryFilter\Entity\Movie q WHERE q.title = :q_title_0', $this->queryFilter->getQuery()->getDql());
+SELECT q FROM Admingenerator\GeneratorBundle\Tests\QueryFilter\Entity\Movie q INNER JOIN q.producer producer_table_filter_join WHERE producer_table_filter_join.name LIKE :producer_table_filter_join_name_0 AND producer_table_filter_join.published = :producer_table_filter_join_published_1', $this->queryFilter->getQuery()->getDql());
+SELECT q FROM Admingenerator\GeneratorBundle\Tests\QueryFilter\Entity\Movie q INNER JOIN q.producer producer_table_filter_join WHERE producer_table_filter_join.name LIKE :producer_table_filter_join_name_0', $this->queryFilter->getQuery()->getDql());
+SELECT q FROM Admingenerator\GeneratorBundle\Tests\QueryFilter\Entity\Movie q WHERE q.title LIKE :q_title_0', $this->queryFilter->getQuery()->getDql());
+SELECT q FROM Admingenerator\GeneratorBundle\Tests\QueryFilter\Entity\Movie q WHERE q.desc LIKE :q_desc_0', $this->queryFilter->getQuery()->getDql());

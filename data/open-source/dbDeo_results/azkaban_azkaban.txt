@@ -1,0 +1,23 @@
+Detected: God Table Found in following statement: CREATE TABLE execution_jobs (	exec_id INT NOT NULL,	project_id INT NOT NULL,	version INT NOT NULL,	flow_id VARCHAR(128) NOT NULL,	job_id VARCHAR(128) NOT NULL,	attempt INT,	start_time BIGINT,	end_time BIGINT,	status TINYINT,	input_params LONGBLOB,	output_params LONGBLOB,	attachments LONGBLOB,	PRIMARY KEY (exec_id, job_id, attempt))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_events', 'event_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['schedules', 'flow_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['executor_events', 'event_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_logs', 'attempt']
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_logs', 'exec_id']
+Detected: God Table Found in following statement: CREATE TABLE execution_flows (	exec_id INT NOT NULL AUTO_INCREMENT,	project_id INT NOT NULL,	version INT NOT NULL,	flow_id VARCHAR(128) NOT NULL,	status TINYINT,	submit_user VARCHAR(64),	submit_time BIGINT,	update_time BIGINT,	start_time BIGINT,	end_time BIGINT,	enc_type TINYINT,	flow_data LONGBLOB,	PRIMARY KEY (exec_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['schedules', 'project_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_versions (	project_id INT NOT NULL,	version INT not NULL,	upload_time BIGINT NOT NULL,	uploader VARCHAR(64) NOT NULL,	file_type VARCHAR(16),	file_name VARCHAR(128),	md5 BINARY(16),	num_chunks INT,	PRIMARY KEY (project_id, version))
+ in following column project_id and in column project_id of table project_permissions
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_flows', 'executor_id']
+Detected: God Table Found in following statement: CREATE TABLE schedules (	schedule_id INT NOT NULL AUTO_INCREMENT,	project_id INT NOT NULL,	project_name VARCHAR(128) NOT NULL,	flow_name VARCHAR(128) NOT NULL,	status VARCHAR(16),	first_sched_time BIGINT,	timezone VARCHAR(64),	period VARCHAR(16),	last_modify_time BIGINT,	next_exec_time BIGINT,	submit_time BIGINT,	submit_user VARCHAR(128),	enc_type TINYINT,	schedule_options LONGBLOB,	PRIMARY KEY (schedule_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_logs', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['executor_events', 'executor_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_flows', 'start_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['execution_flows', 'end_time']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_events (	project_id INT NOT NULL,	event_type TINYINT NOT NULL,	event_time BIGINT NOT NULL,	username VARCHAR(64),	message VARCHAR(512))
+ in following column event_time and in column event_time of table executor_events
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE execution_jobs (	exec_id INT NOT NULL,	project_id INT NOT NULL,	version INT NOT NULL,	flow_id VARCHAR(128) NOT NULL,	job_id VARCHAR(128) NOT NULL,	attempt INT,	start_time BIGINT,	end_time BIGINT,	status TINYINT,	input_params LONGBLOB,	output_params LONGBLOB,	attachments LONGBLOB,	PRIMARY KEY (exec_id, job_id, attempt))
+ in following column status and in column status of table schedules

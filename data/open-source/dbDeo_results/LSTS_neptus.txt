@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [%s].[%s] ([ogr_fid] [int] IDENTITY(1,1) NOT NULL, [%s] [%s] NULL, CONSTRAINT [PK_%s] PRIMARY KEY CLUSTERED ([ogr_fid] ASC))
+ in following column CONSTRAINT and in column CONSTRAINT of table geometry_columns
+Detected: Index Shotgun Variant: 1

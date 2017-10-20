@@ -1,0 +1,2 @@
+CREATE TABLE metadata( objectid VARCHAR(40) NOT NULL, mkey VARCHAR(255) NULL ''' indexes = [ 'CREATE INDEX id_idx ON metadata(objectid)', 'CREATE INDEX mkey_idx ON metadata(mkey)', ] for datatype, name in _TYPES: query += ''' , mvalue_{name} {type} NULL '''.format(name=name, type=datatype) indexes.append(''' CREATE INDEX mvalue_{name} ON metadata(mvalue_{name}) '''.format(name=name)) query += ')
+CREATE INDEX id_idx ON metadata(objectid)', '

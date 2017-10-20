@@ -1,0 +1,230 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] COUNTER NOT NULL, [TestColumn2] INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] [timestamp] NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255), `TestColumn2` INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(5) NOT NULL DEFAULT GetDate())
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` INTEGER NOT NULL AUTO_INCREMENT, `TestColumn2` INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) DEFAULT 'Default' NOT NULL, TestColumn2 INTEGER DEFAULT 0 NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, CONSTRAINT `TestKey` PRIMARY KEY (`TestColumn1`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'Author' (ID integer primary key autoincrement, Version INT not null, CreatedOn DATETIME not null, ModifiedOn DATETIME not null, Status TEXT not null, FirstName TEXT, LastName TEXT, BirthDate DATETIME, WebSiteURL TEXT,unique (FirstName, LastName))
+ in following column Status of table 'Author'
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] [timestamp] NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL DEFAULT 'Default', `TestColumn2` INTEGER NOT NULL DEFAULT 0)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255), [TestColumn2] INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(45,23), [TestColumn2] INT NOT NULL)
+ in following column [TestColumn2] and in column [TestColumn2] of table [TestTable1]
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 INTEGER NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] [timestamp] NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NTEXT NOT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] [timestamp] NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NTEXT NOT NULL, [TestColumn2] INT NOT NULL)
+ in following column [TestColumn1] of table [TestTable1]
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(1,1), [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 BINARY_DOUBLE NOT NULL, PRIMARY KEY (TestColumn1))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL, PRIMARY KEY (TestColumn1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'Author' (ID integer primary key autoincrement, Version INT not null, CreatedOn DATETIME not null, ModifiedOn DATETIME not null, Status TEXT not null, FirstName TEXT, LastName TEXT, BirthDate DATETIME, WebSiteURL TEXT,unique (FirstName, LastName))
+ in following column LastName of table 'Author'
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL, TestColumn2 INTEGER NOT NULL, PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL DEFAULT 'Default', `TestColumn2` INTEGER NOT NULL DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL, TestColumn2 INTEGER NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 INTEGER NOT NULL, PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 BIGINT NOT NULL AS IDENTITY, TestColumn2 INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(45,23), [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL CONSTRAINT [DF_TestTable1_TestColumn1] DEFAULT 'Default', [TestColumn2] INT NOT NULL CONSTRAINT [DF_TestTable1_TestColumn2] DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL DEFAULT NULL, `TestColumn2` INTEGER NOT NULL DEFAULT 0)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL, TestColumn2 INTEGER NOT NULL, PRIMARY KEY (TestColumn1))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(45,23), [TestColumn2] INT NOT NULL)
+ in following column . and in column . of table TestSchema
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, PRIMARY KEY (`TestColumn1`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255), `TestColumn2` INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 INTEGER NOT NULL AS IDENTITY, TestColumn2 INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['TestTable1', 'TestColumn1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(1,1), [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, PRIMARY KEY (`TestColumn1`))
+
+Detected: Clone Tables Found in following statement: create table [TestTable1] ([TestColumn1] nvarchar(255) not null, [TestColumn2] int not null)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 CHAR(1) NOT NULL DEFAULT 'T', TestColumn2 INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] INT NOT NULL IDENTITY(45,23), [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL DEFAULT 'Default', TestColumn2 INTEGER NOT NULL DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL CONSTRAINT [DF_TestTable1_TestColumn1] DEFAULT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL, PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Multicolumn Attribute Found in following statement: create table [TestTable1] ([TestColumn1] nvarchar(255) not null, [TestColumn2] int not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['TestTable1', 'TestColumn2']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) DEFAULT NULL NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255), [TestColumn2] INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL CONSTRAINT [DF_TestTable1_TestColumn1] DEFAULT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, PRIMARY KEY (`TestColumn1`, `TestColumn2`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 INTEGER NOT NULL, TestColumn2 INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL, TestColumn2 INTEGER NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1, TestColumn2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'Author' (ID integer primary key autoincrement, Version INT not null, CreatedOn DATETIME not null, ModifiedOn DATETIME not null, Status TEXT not null, FirstName TEXT, LastName TEXT, BirthDate DATETIME, WebSiteURL TEXT,unique (FirstName, LastName))
+ in following column FirstName of table 'Author'
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 INTEGER NOT NULL, PRIMARY KEY (TestColumn1))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL, TestColumn2 INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: create table table1(id bigint primary key)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, CONSTRAINT `TestKey` PRIMARY KEY (`TestColumn1`, `TestColumn2`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) DEFAULT 'Default' NOT NULL, TestColumn2 NUMBER(10,0) DEFAULT 0 NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255), [TestColumn2] INT NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL DEFAULT NULL, `TestColumn2` INTEGER NOT NULL DEFAULT 0)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200, TestColumn2 INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL DEFAULT NULL, [TestColumn2] INTEGER NOT NULL DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` [timestamp] NOT NULL, PRIMARY KEY (`TestColumn1`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL DEFAULT 'Default', [TestColumn2] INTEGER NOT NULL DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) DEFAULT NULL NOT NULL, TestColumn2 INTEGER DEFAULT 0 NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] [timestamp] NOT NULL, PRIMARY KEY ([TestColumn1]))
+ in following column [TestColumn2] and in column [TestColumn2] of table [TestSchema]
+Detected: Clone Tables Found in following statement: create table table2(id bigint primary key, table1_fk bigint references table1)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255), [TestColumn2] INT NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, PRIMARY KEY (`TestColumn1`, `TestColumn2`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255), TestColumn2 INTEGER NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL DEFAULT NULL, [TestColumn2] INTEGER NOT NULL DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARBINARY(10000) NOT NULL, TestColumn2 INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 DBCLOB(1048576) CCSID 1200 NOT NULL DEFAULT NULL, TestColumn2 INTEGER NOT NULL DEFAULT 0)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL CONSTRAINT [DF_TestTable1_TestColumn1] DEFAULT 'Default', [TestColumn2] INT NOT NULL CONSTRAINT [DF_TestTable1_TestColumn2] DEFAULT 0)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255), TestColumn2 NUMBER(10,0) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 INTEGER NOT NULL, CONSTRAINT TestKey PRIMARY KEY (TestColumn1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NTEXT NOT NULL, [TestColumn2] INT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'Author' (ID integer primary key autoincrement, Version INT not null, CreatedOn DATETIME not null, ModifiedOn DATETIME not null, Status TEXT not null, FirstName TEXT, LastName TEXT, BirthDate DATETIME, WebSiteURL TEXT,unique (FirstName, LastName))
+ in following column WebSiteURL of table 'Author'
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TestTable1 (TestColumn1 VARCHAR(255) NOT NULL, TestColumn2 [timestamp] NOT NULL, PRIMARY KEY (TestColumn1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TestTable1 (TestColumn1 NVARCHAR2(255), TestColumn2 NUMBER(10,0) NOT NULL)
+ in following column TestColumn2 and in column TestColumn2 of table TestSchema
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TestSchema.TestTable1 (TestColumn1 NVARCHAR2(255) NOT NULL, TestColumn2 NUMBER(10,0) NOT NULL)
+ in following column TestColumn2 and in column TestColumn2 of table TestTable1
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL, [TestColumn2] INTEGER NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, CONSTRAINT `TestKey` PRIMARY KEY (`TestColumn1`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` INTEGER NOT NULL, CONSTRAINT `TestKey` PRIMARY KEY (`TestColumn1`, `TestColumn2`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] VARCHAR(255) NOT NULL DEFAULT 'Default', [TestColumn2] INTEGER NOT NULL DEFAULT 0)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` VARCHAR(255) NOT NULL, `TestColumn2` [timestamp] NOT NULL, PRIMARY KEY (`TestColumn1`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [TestTable1] ([TestColumn1] NVARCHAR(255) NOT NULL, [TestColumn2] INT NOT NULL, CONSTRAINT [TestKey] PRIMARY KEY ([TestColumn1], [TestColumn2]))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `TestTable1` (`TestColumn1` INTEGER NOT NULL AUTO_INCREMENT, `TestColumn2` INTEGER NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE [dbo].[TestTable1] ([TestColumn1] DATETIMEOFFSET NOT NULL, [TestColumn2] DATETIME2 NOT NULL, [TestColumn3] DATE NOT NULL, [TestColumn4] TIME NOT NULL)
+

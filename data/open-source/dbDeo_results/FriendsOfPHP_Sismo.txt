@@ -1,0 +1,25 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE project SET slug = :slug, name = :name, repository = :repository, branch = :branch, command = :command, url_pattern = :url_pattern  WHERE slug = :slug
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column sha of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column slug of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column date of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column status of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS project ( slug TEXT, name TEXT, repository TEXT, branch TEXT, command BLOB, url_pattern TEXT, PRIMARY KEY (slug))
+ in following column branch of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS project ( slug TEXT, name TEXT, repository TEXT, branch TEXT, command BLOB, url_pattern TEXT, PRIMARY KEY (slug))
+ in following column name of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column author of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS project ( slug TEXT, name TEXT, repository TEXT, branch TEXT, command BLOB, url_pattern TEXT, PRIMARY KEY (slug))
+ in following column url_pattern of table project
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `commit` ( slug TEXT, sha TEXT, date TEXT, message BLOB, author TEXT, status TEXT, output BLOB, build_date TEXT DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (slug, sha), CONSTRAINT slug FOREIGN KEY (slug) REFERENCES project(slug) ON DELETE CASCADE)
+ in following column build_date of table `commit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS project ( slug TEXT, name TEXT, repository TEXT, branch TEXT, command BLOB, url_pattern TEXT, PRIMARY KEY (slug))
+ in following column slug of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS project ( slug TEXT, name TEXT, repository TEXT, branch TEXT, command BLOB, url_pattern TEXT, PRIMARY KEY (slug))
+ in following column repository of table project

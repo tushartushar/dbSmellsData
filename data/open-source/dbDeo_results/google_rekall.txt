@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS metadata (key TEXT, value TEXT)
+ in following column value of table metadata
+Detected: Index Shotgun Variant: 1

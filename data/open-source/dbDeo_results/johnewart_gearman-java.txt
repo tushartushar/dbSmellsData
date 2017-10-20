@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s(id bigserial, job_handle text, unique_id text, job_data bytea, exception_data bytea, exception_time bigint)
+ in following column job_handle of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s(id bigserial, job_handle text, unique_id text, job_data bytea, exception_data bytea, exception_time bigint)
+ in following column unique_id of table %s
+Detected: Index Shotgun Variant: 1

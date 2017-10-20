@@ -1,0 +1,11 @@
+INSERT INTO companions VALUES (8, 'Aragorn')
+INSERT INTO companions VALUES (2, 'Samwise')
+INSERT INTO companions VALUES (6, 'Legolas')
+CREATE TABLE companions (id INTEGER PRIMARY KEY, name VARCHAR(20) NOT NULL)
+INSERT INTO companions VALUES (7, 'Gimli')
+SELECT name FROM companions
+INSERT INTO companions VALUES (3, 'Meriadoc')
+INSERT INTO companions VALUES (5, 'Gandalf')
+INSERT INTO companions VALUES (4, 'Peregrin')
+INSERT INTO companions VALUES (1, 'Frodo')
+INSERT INTO companions VALUES (9, 'Boromir')

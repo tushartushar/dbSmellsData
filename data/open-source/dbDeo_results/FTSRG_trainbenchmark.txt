@@ -1,0 +1,18 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'Semaphore']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `connectsTo` ( `TrackElement1_id` int(11) NOT NULL, `TrackElement2_id` int(11) NOT NULL, PRIMARY KEY (`TrackElement1_id`,`TrackElement2_id`), KEY `connectsTo_idx1` (`TrackElement1_id`), KEY `connectsTo_idx2` (`TrackElement2_id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `requires` ( `Route_id` int(11) NOT NULL, `Sensor_id` int(11) NOT NULL, PRIMARY KEY (`Route_id`,`Sensor_id`))
+ in following column `Sensor_id` and in column `Sensor_id` of table `monitoredBy`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `monitoredBy` ( `TrackElement_id` int(11) NOT NULL, `Sensor_id` int(11) NOT NULL, PRIMARY KEY (`TrackElement_id`,`Sensor_id`), KEY `monitoredBy_idx` (`Sensor_id`,`TrackElement_id`))
+ in following column `Sensor_id` and in column `Sensor_id` of table `requires`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `Sensor` ( `id` integer NOT NULL PRIMARY KEY AUTOINCREMENT, `region` integer NOT NULL)
+ in following column `region` and in column `region` of table `TrackElement`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `connectsTo` ( `TrackElement1_id` integer NOT NULL, `TrackElement2_id` integer NOT NULL, PRIMARY KEY (`TrackElement1_id`,`TrackElement2_id`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `Segment` ( `id` int(11) NOT NULL AUTO_INCREMENT, `length` int(11) NOT NULL DEFAULT '1', PRIMARY KEY (`id`), KEY `segment_length_idx` (`length`))
+ in following column `id` and in column `id` of table `Sensor`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `Sensor` ( `id` int(11) NOT NULL AUTO_INCREMENT, `region` int(11) NOT NULL, PRIMARY KEY (`id`))
+ in following column `region` and in column `region` of table `TrackElement`
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'monitoredBy']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'connectsTo']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'Route']

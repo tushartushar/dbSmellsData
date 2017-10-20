@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['roster_people', 'username']
+Detected: Index Shotgun Variant: 3 Following index not used : ['roster_people', 'LOWER']

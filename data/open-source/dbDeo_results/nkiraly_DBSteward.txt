@@ -1,0 +1,62 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE i_test ( id SERIAL PRIMARY KEY, col1 int, col2 int, col3 int, col4 int, col5 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(col1 text, col2 text, col3 text)
+ in following column col1 of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['i_test', 'col5']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE linear_hash_test (id int PRIMARY KEY)
+ in following column id and in column id of table i_test
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'foo']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'NO']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'UPDATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'lower']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table` ( `tscol0` timestamp ON UPDATE CURRENT_TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP, `tscol1` timestamp ON UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t2', 'c2']
+Detected: Clone Tables Found in following statement: CREATE TABLE t2 (c1 int, c2 int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE i_test ( id SERIAL PRIMARY KEY, col1 int, col2 int, col3 int, col4 int, col5 int)
+ in following column col3 and in column col3 of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test ( col1 text PRIMARY KEY)
+ in following column col1 and in column col1 of table i_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE i_test ( id SERIAL PRIMARY KEY, col1 int, col2 int, col3 int, col4 int, col5 int)
+ in following column col4 and in column col4 of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['t2', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( col1 text PRIMARY KEY)
+ in following column col1 of table test
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'SET']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `test` (\n `id` int\n)
+ in following column \ and in column \ of table `table`
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['i_test', 'col4']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(name text)
+ in following column name of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(col1 text, col2 text, col3 text)
+ in following column col3 of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'col2']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'NULL']
+Detected: Index Shotgun Variant: 3 Following index not used : ['i_test', 'col1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test ( col1 bigint NOT NULL PRIMARY KEY, col2 bigint NOT NULL, col3 character varying(20) NOT NULL, col4 character varying(20), CONSTRAINT test_constraint UNIQUE (col2, col3, col4))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['i_test', 'col3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `table` (\n `id` int,\n `col` text\n)
+ in following column \ of table `table`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(col1 text, col2 text, col3 text)
+ in following column col2 of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'col1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(name text[])
+ in following column name of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['i_test', 'col2']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test(col1 text, col2 text, col3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1 (c1 int, c2 int)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'bar']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t2 (c1 int, c2 int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE t1 (c1 int, c2 int)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'ON']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE i_test ( id SERIAL PRIMARY KEY, col1 int, col2 int, col3 int, col4 int, col5 int)
+ in following column col2 and in column col2 of table test
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['dummy', 'ACTION']

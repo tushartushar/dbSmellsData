@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {marker_table} ( update_id TEXT PRIMARY KEY, target_table TEXT, inserted TIMESTAMP DEFAULT NOW())
+ in following column target_table of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {table} (id SERIAL PRIMARY KEY, test_text TEXT, test_int INT, test_float FLOAT)
+ in following column test_float of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {marker_table} ( update_id TEXT PRIMARY KEY, target_table TEXT, inserted TIMESTAMP DEFAULT NOW())
+ in following column update_id of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {marker_table} ( update_id TEXT PRIMARY KEY, target_table TEXT, inserted TIMESTAMP)
+ in following column update_id of table {
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {table} (id SERIAL PRIMARY KEY, test_text TEXT, test_int INT, test_float FLOAT)
+ in following column test_text of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {marker_table} ( update_id TEXT PRIMARY KEY, target_table TEXT, inserted TIMESTAMP)
+ in following column target_table of table {

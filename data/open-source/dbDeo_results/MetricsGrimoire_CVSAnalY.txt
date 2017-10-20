@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['commit_graph', 'commit_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['commit_graph', 'parent_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['files', 'file_name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE content( id int(11) NOT NULL auto_increment, commit_id int(11) NOT NULL, file_id int(11) NOT NULL, content mediumtext, loc int(11), size int(11), PRIMARY KEY(id), UNIQUE (commit_id, file_id), index(commit_id), index(file_id) )
+ in following column content of table content

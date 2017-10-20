@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE `handles` ( `handle` varchar(255) NOT NULL, `idx` int(11) NOT NULL, `type` varchar(20) DEFAULT NULL, `data` varchar(200) DEFAULT NULL, `ttl_type` smallint(6) DEFAULT NULL, `ttl` int(11) DEFAULT NULL, `timestamp` int(11) DEFAULT NULL, `refs` blob, `admin_read` tinyint(1) DEFAULT NULL, `admin_write` tinyint(1) DEFAULT NULL, `pub_read` tinyint(1) DEFAULT NULL, `pub_write` tinyint(1) DEFAULT NULL, PRIMARY KEY (`handle`,`idx`))
+

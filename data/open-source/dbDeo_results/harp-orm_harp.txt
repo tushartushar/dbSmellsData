@@ -1,0 +1,7 @@
+Detected: God Table Found in following statement: CREATE TABLE `Post` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `title` varchar(100) NULL, `body` MEDIUMTEXT NULL, `price` DECIMAL(10, 2) NULL, `tags` varchar(255) NULL, `createdAt` TIMESTAMP, `updatedAt` TIMESTAMP, `publishedAt` DATETIME, `userId` int(11) UNSIGNED NULL, `class` varchar(255) NULL, `isPublished` int(1) UNSIGNED NULL, PRIMARY KEY (`id`))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE `Address` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `zipCode` varchar(100) NULL, `location` varchar(100) NULL, PRIMARY KEY (`id`))
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `Post` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `title` varchar(100) NULL, `body` MEDIUMTEXT NULL, `price` DECIMAL(10, 2) NULL, `tags` varchar(255) NULL, `createdAt` TIMESTAMP, `updatedAt` TIMESTAMP, `publishedAt` DATETIME, `userId` int(11) UNSIGNED NULL, `class` varchar(255) NULL, `isPublished` int(1) UNSIGNED NULL, PRIMARY KEY (`id`))
+ in following column `body` of table `Post`

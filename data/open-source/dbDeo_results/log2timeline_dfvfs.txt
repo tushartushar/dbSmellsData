@@ -1,0 +1,8 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE threads (_id INTEGER PRIMARY KEY AUTOINCREMENT,date INTEGER DEFAULT 0,message_count INTEGER DEFAULT 0,recipient_ids TEXT,snippet TEXT,snippet_cs INTEGER DEFAULT 0,read INTEGER DEFAULT 1,type INTEGER DEFAULT 0,error INTEGER DEFAULT 0,has_attachment INTEGER DEFAULT 0)
+ in following column snippet of table threads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE android_metadata (locale TEXT)
+ in following column locale of table android_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `myblobs` (	`name`	TEXT,	`blobs`	BLOB,	PRIMARY KEY(name))
+ in following column `name` of table `myblobs`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE threads (_id INTEGER PRIMARY KEY AUTOINCREMENT,date INTEGER DEFAULT 0,message_count INTEGER DEFAULT 0,recipient_ids TEXT,snippet TEXT,snippet_cs INTEGER DEFAULT 0,read INTEGER DEFAULT 1,type INTEGER DEFAULT 0,error INTEGER DEFAULT 0,has_attachment INTEGER DEFAULT 0)
+ in following column recipient_ids of table threads

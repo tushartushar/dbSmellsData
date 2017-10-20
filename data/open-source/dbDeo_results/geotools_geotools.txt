@@ -1,0 +1,174 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id) )
+ in following column table_name of table gpkg_geometry_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id))
+ in following column column_name of table gpkg_metadata_reference
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE multi( key1 INTEGER NOT NULL, key2 VARCHAR NOT NULL, name VARCHAR, PRIMARY KEY(key1,key2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_column_constraints ( constraint_name TEXT NOT NULL, constraint_type TEXT NOT NULL, value TEXT, min NUMERIC, min_is_inclusive BOOLEAN, max NUMERIC, max_is_inclusive BOOLEAN, description TEXT, CONSTRAINT gdcc_ntv UNIQUE (constraint_name, constraint_type, value))
+ in following column constraint_name of table gpkg_data_column_constraints
+Detected: Values in Column Definition Found in following statement: CREATE TABLE GEOMETRY_COLUMNS(	 F_TABLE_SCHEMA VARCHAR(30) NOT NULL, 	 F_TABLE_NAME VARCHAR(30) NOT NULL, 	 F_GEOMETRY_COLUMN VARCHAR(30) NOT NULL, 	 COORD_DIMENSION INTEGER, 	 SRID INTEGER NOT NULL, 	 TYPE VARCHAR(30) NOT NULL,	 UNIQUE(F_TABLE_SCHEMA, F_TABLE_NAME, F_GEOMETRY_COLUMN),	 CHECK(TYPE IN ('POINT','LINE', 'POLYGON', 'COLLECTION', 'MULTIPOINT', 'MULTILINE', 'MULTIPOLYGON', 'GEOMETRY') ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ppoint(fid int IDENTITY(0,1) PRIMARY KEY, id int, geom geometry, name nvarchar(255) )
+ in following column id and in column id of table dates
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text, CONSTRAINT pk_griddata PRIMARY KEY(zoom_level, tile_column,tile_row,key_name))
+ in following column key_json of table grid_data
+Detected: Metadata as Data Found in following statement: CREATE TABLE multi( key1 INTEGER NOT NULL, key2 VARCHAR NOT NULL, name VARCHAR, PRIMARY KEY(key1,key2))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ppoint(fid int IDENTITY(0,1) PRIMARY KEY, id int, geom geometry, name nvarchar(255) )
+ in following column name and in column name of table plaintable
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ft1 (id INTEGER PRIMARY KEY, geometry BLOB)
+ in following column geometry and in column geometry of table NEIGHBORS
+Detected: Index Shotgun Variant: 3 Following index not used : ['LINE3D(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name text, value text, CONSTRAINT pk_metadata PRIMARY KEY(name))
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_column_constraints ( constraint_name TEXT NOT NULL, constraint_type TEXT NOT NULL, value TEXT, min NUMERIC, min_is_inclusive BOOLEAN, max NUMERIC, max_is_inclusive BOOLEAN, description TEXT, CONSTRAINT gdcc_ntv UNIQUE (constraint_name, constraint_type, value))
+ in following column constraint_type of table gpkg_data_column_constraints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_tile_matrix ( table_name TEXT NOT NULL, zoom_level INTEGER NOT NULL, matrix_width INTEGER NOT NULL, matrix_height INTEGER NOT NULL, tile_width INTEGER NOT NULL, tile_height INTEGER NOT NULL, pixel_x_size DOUBLE NOT NULL, pixel_y_size DOUBLE NOT NULL, CONSTRAINT pk_ttm PRIMARY KEY (table_name, zoom_level), CONSTRAINT fk_tmm_table_name FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column table_name of table gpkg_tile_matrix
+Detected: Index Shotgun Variant: 3 Following index not used : ['FT1(GEOMETRY)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column title of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT uk_gc_table_name UNIQUE (table_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id))
+ in following column geometry_type_name of table gpkg_geometry_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata ( id INTEGER CONSTRAINT m_pk PRIMARY KEY ASC NOT NULL, md_scope TEXT NOT NULL DEFAULT 'dataset', md_standard_uri TEXT NOT NULL, mime_type TEXT NOT NULL DEFAULT 'text/xml', metadata TEXT NOT NULL)
+ in following column md_standard_uri of table gpkg_metadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['FTJOIN(GEOM)', 'GEOM']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS gpkg_contents ( table_name TEXT NOT NULL PRIMARY KEY, data_type TEXT NOT NULL, identifier TEXT UNIQUE, description TEXT DEFAULT '', last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), min_x DOUBLE, min_y DOUBLE, max_x DOUBLE, max_y DOUBLE, srs_id INTEGER, CONSTRAINT fk_gc_r_srs_id FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text, CONSTRAINT pk_griddata PRIMARY KEY(zoom_level, tile_column,tile_row,key_name))
+ in following column key_json of table grid_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_spatial_ref_sys ( srs_name TEXT NOT NULL, srs_id INTEGER NOT NULL PRIMARY KEY, organization TEXT NOT NULL, organization_coordsys_id INTEGER NOT NULL, definition TEXT NOT NULL, description TEXT)
+ in following column definition of table gpkg_spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column mime_type of table gpkg_data_columns
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE plaintable (key1 integer primary key, key2 int, name varchar(255),geom BLOB)
+ in following column key2 and in column key2 of table multi
+Detected: Index Shotgun Variant: 3 Following index not used : ['GTMETA(GEOMETRY)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE plaintable (key1 int, key2 int, name varchar(255), geom GEOMETRY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column column_name of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['CURVES(GEOMETRY)', 'GEOMETRY']
+Detected: Index Shotgun Variant: 3 Following index not used : ['POINT3D(GEOM)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column tile_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata ( id INTEGER CONSTRAINT m_pk PRIMARY KEY ASC NOT NULL, md_scope TEXT NOT NULL DEFAULT 'dataset', md_standard_uri TEXT NOT NULL, mime_type TEXT NOT NULL DEFAULT 'text/xml', metadata TEXT NOT NULL)
+ in following column mime_type of table gpkg_metadata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id) )
+ in following column CONSTRAINT and in column CONSTRAINT of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['LINE3D(GEOM)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['SKIPCOLUMN(GEOM)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT uk_gc_table_name UNIQUE (table_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id))
+ in following column table_name of table gpkg_geometry_columns
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE geopoint ( id SERIAL PRIMARY KEY, name VARCHAR(64), geo GEOGRAPHY(POINT,4326))
+ in following column geo and in column geo of table geoline
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_extensions ( table_name TEXT, column_name TEXT, extension_name TEXT NOT NULL, definition TEXT NOT NULL, scope TEXT NOT NULL, CONSTRAINT ge_tce UNIQUE (table_name, column_name, extension_name))
+ in following column scope of table gpkg_extensions
+Detected: Index Shotgun Variant: 3 Following index not used : ['lakes(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT uk_gc_table_name UNIQUE (table_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id))
+ in following column column_name of table gpkg_geometry_columns
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE plaintable (key1 int, key2 int, name varchar(255), geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_extensions ( table_name TEXT, column_name TEXT, extension_name TEXT NOT NULL, definition TEXT NOT NULL, scope TEXT NOT NULL, CONSTRAINT ge_tce UNIQUE (table_name, column_name, extension_name))
+ in following column extension_name of table gpkg_extensions
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE plaintable (key1 integer primary key, key2 int, name varchar(255),geom BLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_extensions ( table_name TEXT, column_name TEXT, extension_name TEXT NOT NULL, definition TEXT NOT NULL, scope TEXT NOT NULL, CONSTRAINT ge_tce UNIQUE (table_name, column_name, extension_name))
+ in following column definition of table gpkg_extensions
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE plaintable (key1 int, key2 int, name varchar(255))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['EPSG_PRIMEMERIDIAN', 'PRIME_MERIDIAN_NAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['lake(GEOM)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id))
+ in following column reference_scope of table gpkg_metadata_reference
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id) )
+ in following column geometry_type_name of table gpkg_geometry_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['FTJOIN(GEOM)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['EPSG_COORDOPERATION', 'COORD_OP_METHOD_CODE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_column_constraints ( constraint_name TEXT NOT NULL, constraint_type TEXT NOT NULL, value TEXT, min NUMERIC, min_is_inclusive BOOLEAN, max NUMERIC, max_is_inclusive BOOLEAN, description TEXT, CONSTRAINT gdcc_ntv UNIQUE (constraint_name, constraint_type, value))
+ in following column value of table gpkg_data_column_constraints
+Detected: Index Shotgun Variant: 3 Following index not used : ['ROAD(GEOM)', 'GEOM']
+Detected: Index Shotgun Variant: 3 Following index not used : ['RIVER(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata ( id INTEGER CONSTRAINT m_pk PRIMARY KEY ASC NOT NULL, md_scope TEXT NOT NULL DEFAULT 'dataset', md_standard_uri TEXT NOT NULL, mime_type TEXT NOT NULL DEFAULT 'text/xml', metadata TEXT NOT NULL)
+ in following column md_scope of table gpkg_metadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['GTMETA(GEOMETRY)', 'GEOMETRY']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_contents ( table_name TEXT NOT NULL PRIMARY KEY, data_type TEXT NOT NULL, identifier TEXT UNIQUE, description TEXT DEFAULT '', last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), min_x DOUBLE, min_y DOUBLE, max_x DOUBLE, max_y DOUBLE, srs_id INTEGER, CONSTRAINT fk_gc_r_srs_id FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column table_name of table gpkg_contents
+Detected: Index Shotgun Variant: 3 Following index not used : ['ROAD(GEOM)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NEIGHBORS(GEOMETRY)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id))
+ in following column table_name of table gpkg_metadata_reference
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_spatial_ref_sys ( srs_name TEXT NOT NULL, srs_id INTEGER NOT NULL PRIMARY KEY, organization TEXT NOT NULL, organization_coordsys_id INTEGER NOT NULL, definition TEXT NOT NULL, description TEXT)
+ in following column description of table gpkg_spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_extensions ( table_name TEXT, column_name TEXT, extension_name TEXT NOT NULL, definition TEXT NOT NULL, scope TEXT NOT NULL, CONSTRAINT ge_tce UNIQUE (table_name, column_name, extension_name))
+ in following column table_name of table gpkg_extensions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS metadata (name text, value text, CONSTRAINT pk_metadata PRIMARY KEY(name))
+ in following column value of table metadata
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO DATES VALUES ('1969-12-23' (DATE, format 'yyyy-MM-dd'), '2009-06-28 15:12:41' (TIMESTAMP, format 'YYYY-MM-ddBHH:mi:ss'), '15:12:41' (TIME, format 'HH:mi:ss') )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ppoint(fid int IDENTITY(0,1) PRIMARY KEY, id int, geom geometry, name nvarchar(255) )
+ in following column geom and in column geom of table plaintable
+Detected: Index Shotgun Variant: 3 Following index not used : ['NEIGHBORS(GEOMETRY)', 'GEOMETRY']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_geometry_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, geometry_type_name TEXT NOT NULL, srs_id INTEGER NOT NULL, z TINYINT NOT NULL, m TINYINT NOT NULL, CONSTRAINT pk_geom_cols PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gc_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id) )
+ in following column column_name of table gpkg_geometry_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column grid_id of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ppoint(fid int IDENTITY(0,1) PRIMARY KEY, id int, geom geometry, name nvarchar(255) )
+ in following column fid and in column fid of table lake
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO DATES VALUES ('2009-01-15' (DATE, format 'yyyy-MM-dd'), '2009-01-15 13:10:12' (TIMESTAMP, format 'YYYY-MM-ddBHH:mi:ss'), '13:10:12' (TIME, format 'HH:mi:ss') )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_column_constraints ( constraint_name TEXT NOT NULL, constraint_type TEXT NOT NULL, value TEXT, min NUMERIC, min_is_inclusive BOOLEAN, max NUMERIC, max_is_inclusive BOOLEAN, description TEXT, CONSTRAINT gdcc_ntv UNIQUE (constraint_name, constraint_type, value))
+ in following column description of table gpkg_data_column_constraints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_contents ( table_name TEXT NOT NULL PRIMARY KEY, data_type TEXT NOT NULL, identifier TEXT UNIQUE, description TEXT DEFAULT '', last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), min_x DOUBLE, min_y DOUBLE, max_x DOUBLE, max_y DOUBLE, srs_id INTEGER, CONSTRAINT fk_gc_r_srs_id FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column identifier of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_contents ( table_name TEXT NOT NULL PRIMARY KEY, data_type TEXT NOT NULL, identifier TEXT UNIQUE, description TEXT DEFAULT '', last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), min_x DOUBLE, min_y DOUBLE, max_x DOUBLE, max_y DOUBLE, srs_id INTEGER, CONSTRAINT fk_gc_r_srs_id FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column description of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id) )
+ in following column column_name of table gpkg_metadata_reference
+Detected: Index Shotgun Variant: 3 Following index not used : ['EMPTY(GEOM)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['POINT3D(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_spatial_ref_sys ( srs_name TEXT NOT NULL, srs_id INTEGER NOT NULL PRIMARY KEY, organization TEXT NOT NULL, organization_coordsys_id INTEGER NOT NULL, definition TEXT NOT NULL, description TEXT)
+ in following column srs_name of table gpkg_spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['lakes(GEOM)', 'INDEXTYPE']
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO DATES VALUES ('2009-09-29' (DATE, format 'yyyy-MM-dd'), '2009-09-29 17:54:23' (TIMESTAMP, format 'YYYY-MM-ddBHH:mi:ss'), '17:54:23' (TIME, format 'HH:mi:ss') )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column name of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['EMPTY(GEOM)', 'GEOM']
+Detected: Index Shotgun Variant: 3 Following index not used : ['lake(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_contents ( table_name TEXT NOT NULL PRIMARY KEY, data_type TEXT NOT NULL, identifier TEXT UNIQUE, description TEXT DEFAULT '', last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ','now')), min_x DOUBLE, min_y DOUBLE, max_x DOUBLE, max_y DOUBLE, srs_id INTEGER, CONSTRAINT fk_gc_r_srs_id FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column data_type of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text, CONSTRAINT pk_griddata PRIMARY KEY(zoom_level, tile_column,tile_row,key_name))
+ in following column key_name of table grid_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column description of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['CURVES(GEOMETRY)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['RIVER(GEOM)', 'INDEXTYPE']
+Detected: Clone Tables Found in following statement: CREATE TABLE ftjoin ( id int PRIMARY KEY, name VARCHAR(10), geom GEOMETRY, join1intProperty int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grid_data (zoom_level integer, tile_column integer, tile_row integer, key_name text, key_json text, CONSTRAINT pk_griddata PRIMARY KEY(zoom_level, tile_column,tile_row,key_name))
+ in following column key_name of table grid_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name text, value text, CONSTRAINT pk_metadata PRIMARY KEY(name))
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column constraint_name of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column table_name of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_spatial_ref_sys ( srs_name TEXT NOT NULL, srs_id INTEGER NOT NULL PRIMARY KEY, organization TEXT NOT NULL, organization_coordsys_id INTEGER NOT NULL, definition TEXT NOT NULL, description TEXT)
+ in following column organization of table gpkg_spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['SKIPCOLUMN(GEOM)', 'GEOM']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_extensions ( table_name TEXT, column_name TEXT, extension_name TEXT NOT NULL, definition TEXT NOT NULL, scope TEXT NOT NULL, CONSTRAINT ge_tce UNIQUE (table_name, column_name, extension_name))
+ in following column column_name of table gpkg_extensions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_metadata ( id INTEGER CONSTRAINT m_pk PRIMARY KEY ASC NOT NULL, md_scope TEXT NOT NULL DEFAULT 'dataset', md_standard_uri TEXT NOT NULL, mime_type TEXT NOT NULL DEFAULT 'text/xml', metadata TEXT NOT NULL)
+ in following column metadata of table gpkg_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gpkg_tile_matrix_set ( table_name TEXT NOT NULL PRIMARY KEY, srs_id INTEGER NOT NULL, min_x DOUBLE NOT NULL, min_y DOUBLE NOT NULL, max_x DOUBLE NOT NULL, max_y DOUBLE NOT NULL, CONSTRAINT fk_gtms_table_name FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name), CONSTRAINT fk_gtms_srs FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys (srs_id))
+ in following column table_name of table gpkg_tile_matrix_set
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id) )
+ in following column reference_scope of table gpkg_metadata_reference
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE plaintable (key1 int, key2 int, name varchar(255))
+ in following column key1 and in column key1 of table multi
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_metadata_reference ( reference_scope TEXT NOT NULL, table_name TEXT, column_name TEXT, row_id_value INTEGER, timestamp DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)), md_file_id INTEGER NOT NULL, md_parent_id INTEGER, CONSTRAINT crmr_mfi_fk FOREIGN KEY (md_file_id) REFERENCES gpkg_metadata(id), CONSTRAINT crmr_mpi_fk FOREIGN KEY (md_parent_id) REFERENCES gpkg_metadata(id) )
+ in following column table_name of table gpkg_metadata_reference
+Detected: Index Shotgun Variant: 3 Following index not used : ['FT1(GEOMETRY)', 'GEOMETRY']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS metadata (name text, value text, CONSTRAINT pk_metadata PRIMARY KEY(name))
+ in following column name of table metadata

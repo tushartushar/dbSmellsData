@@ -1,0 +1,4 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE repair_run SET cause = :cause, owner = :owner, state = :runState WHERE id = :id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE repair_schedule SET repair_unit_id = :repairUnitId, state = :state WHERE id = :id
+

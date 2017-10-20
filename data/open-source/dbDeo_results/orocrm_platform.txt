@@ -1,0 +1,25 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (column1 VARCHAR(255) NOT NULL COMMENT \'test\')' ] )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (' . 'id INT NOT NULL, ' . 'relation_column1_id INT NOT NULL, ' . 'INDEX idx_table1_relation_column1_id (relation_column1_id), PRIMARY KEY(id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE oro_enum_test_enum (' . 'id VARCHAR(32) NOT NULL, name VARCHAR(255) NOT NULL, ' . 'PRIMARY KEY(id))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE oro_entity_config SET class_name = ?, data = ?  WHERE id = ?
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (' . 'id INT NOT NULL, ' . 'PRIMARY KEY(id))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE oro_entity_config_field SET data = :data, mode = :mode  WHERE id = :id
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (' . 'id INT NOT NULL, ' . 'relation_column1_id INT DEFAULT NULL, ' . 'INDEX idx_table1_relation_column1_id (relation_column1_id), PRIMARY KEY(id))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE oro_config_value SET name = :currency_name, section = :section  where name = :search_name
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table2 (id INT AUTO_INCREMENT NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 (' . 'id INT NOT NULL, ' . 'default_relation_column1_id SMALLINT DEFAULT NULL, ' . 'INDEX IDX_1C95229D63A7B402 (default_relation_column1_id), ' . 'PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE table1 (' . 'id INT NOT NULL, ' . 'relation_column1_id INT NOT NULL, ' . 'INDEX idx_table1_relation_column1_id (relation_column1_id), PRIMARY KEY(id))
+ in following column ' . ' and in column ' . ' of table oro_enum_test_enum
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TEST (id INT AUTO_INCREMENT NOT NULL)
+ in following column id and in column id of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['test_table', 'new_column']

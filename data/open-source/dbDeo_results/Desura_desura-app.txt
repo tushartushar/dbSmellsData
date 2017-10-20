@@ -1,0 +1,86 @@
+Detected: Obsolete Column TypesFound in following statement: create table accoladegroups(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)
+ in following column name of table accoladegroups
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mcfbackup(gid INTEGER, mid INTEGER, path TEXTl, PRIMARY KEY (gid, mid))
+ in following column path of table mcfbackup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvarwin(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column value of table cvarwin
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE config_string(key TEXT primary key, value TEXT)
+ in following column value and in column value of table %
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvaruser(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column name of table cvaruser
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvaruser(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column user of table cvaruser
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mcfitem(internalid INTEGER, mcfbuild INTEGER, path TEXT, branch INTEGER, flags INTEGER, PRIMARY KEY (internalid, mcfbuild, branch))
+ in following column path of table mcfitem
+Detected: Obsolete Column TypesFound in following statement: create table cipiteminfo(internalid INTEGER PRIMARY KEY, name TEXT)
+ in following column name of table cipiteminfo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvarwin(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column user of table cvarwin
+Detected: Obsolete Column TypesFound in following statement: create table cip(internalid INTEGER PRIMARY KEY, path TEXT)
+ in following column path of table cip
+Detected: Obsolete Column TypesFound in following statement: create table Stats(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, name TEXT, type TEXT, value TEXT, dirty INTEGER DEFAULT 0, groupid INTEGER, updatetime DATE)
+ in following column name of table Stats
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config_string(key TEXT primary key, value TEXT)
+ in following column value of table config_string
+Detected: Obsolete Column TypesFound in following statement: create table accolades(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, shortname TEXT, fullname TEXT, description TEXT, lastvalue INTEGER DEFAULT 0, newvalue INTEGER DEFAULT 0, maxvalue INTEGER DEFAULT 1, groupid INTEGER)
+ in following column shortname of table accolades
+Detected: Obsolete Column TypesFound in following statement: create table accolades(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, shortname TEXT, fullname TEXT, description TEXT, lastvalue INTEGER DEFAULT 0, newvalue INTEGER DEFAULT 0, maxvalue INTEGER DEFAULT 1, groupid INTEGER)
+ in following column description of table accolades
+Detected: Obsolete Column TypesFound in following statement: create table Stats(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, name TEXT, type TEXT, value TEXT, dirty INTEGER DEFAULT 0, groupid INTEGER, updatetime DATE)
+ in following column value of table Stats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvaruser(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column value of table cvaruser
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mcfbackup(gid INTEGER, mid INTEGER, path TEXTl, PRIMARY KEY (gid, mid))
+ in following column path and in column path of table imagecache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvar(name TEXT PRIMARY KEY, value TEXT)
+ in following column value of table cvar
+Detected: Obsolete Column TypesFound in following statement: create table accolades(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, shortname TEXT, fullname TEXT, description TEXT, lastvalue INTEGER DEFAULT 0, newvalue INTEGER DEFAULT 0, maxvalue INTEGER DEFAULT 1, groupid INTEGER)
+ in following column fullname of table accolades
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE iteminfo SET statusflags=?,percent=?,icon=?,logo=?,iconurl=?,logourl=?,ibranch=?,lastbranch=?  WHERE internalid=?
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvarwin(user TEXT, name TEXT, value TEXT, PRIMARY KEY (user, name))
+ in following column name of table cvarwin
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mcfupload(key TEXT PRIMARY KEY, file TEXT, internalid INTEGER)
+ in following column file of table mcfupload
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cvar(name TEXT PRIMARY KEY, value TEXT)
+ in following column name of table cvar
+Detected: Obsolete Column TypesFound in following statement: create table StatsGroups(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)
+ in following column name of table StatsGroups
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: create table Stats(id INTEGER PRIMARY KEY AUTOINCREMENT, internalid INTEGER, desuraid INTEGER, name TEXT, type TEXT, value TEXT, dirty INTEGER DEFAULT 0, groupid INTEGER, updatetime DATE)
+ in following column type of table Stats

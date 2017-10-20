@@ -1,0 +1,1 @@
+INSERT INTO actual_wind_total VALUES('2009-01-20 05:05:05', 20203.4232)

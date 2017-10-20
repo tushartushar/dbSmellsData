@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS WIKIDATA_ENTITY_ALIASES ( ENTITY_TYPE char NOT NULL, ENTITY_ID int NOT NULL, LANG_ID smallint NOT NULL, ALIAS TEXT NOT NULL)
+ in following column ALIAS of table WIKIDATA_ENTITY_ALIASES
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS WIKIDATA_ENTITY_DESCRIPTIONS ( ENTITY_TYPE char NOT NULL, ENTITY_ID int NOT NULL, LANG_ID smallint NOT NULL, DESCRIPTION TEXT NOT NULL)
+ in following column DESCRIPTION of table WIKIDATA_ENTITY_DESCRIPTIONS
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS WIKIDATA_ENTITY_LABELS ( ENTITY_TYPE char NOT NULL, ENTITY_ID int NOT NULL, LANG_ID smallint NOT NULL, LABEL TEXT NOT NULL)
+ in following column LABEL of table WIKIDATA_ENTITY_LABELS
+Detected: Index Shotgun Variant: 1

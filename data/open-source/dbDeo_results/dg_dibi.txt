@@ -1,0 +1,22 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [orders] (	[order_id] COUNTER,	[customer_id] INTEGER,	[product_id] INTEGER,	[amount] FLOAT)
+ in following column [amount] of table [orders]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE orders (	order_id int NOT NULL IDENTITY(11,1),	customer_id int NOT NULL,	product_id int NOT NULL,	amount float NOT NULL,	PRIMARY KEY(order_id))
+ in following column customer_id and in column customer_id of table customers
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE products (	product_id int NOT NULL IDENTITY(11,1),	title varchar(50) NOT NULL,	PRIMARY KEY(product_id))
+ in following column product_id and in column product_id of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [orders] (	[order_id] INTEGER NOT NULL PRIMARY KEY,	[customer_id] INTEGER NOT NULL,	[product_id] INTEGER NOT NULL,	[amount] FLOAT NOT NULL,	CONSTRAINT orders_product FOREIGN KEY (product_id) REFERENCES products (product_id),	CONSTRAINT orders_customer FOREIGN KEY (customer_id) REFERENCES customers (customer_id))
+ in following column [amount] of table [orders]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE orders (	order_id int NOT NULL IDENTITY(11,1),	customer_id int NOT NULL,	product_id int NOT NULL,	amount float NOT NULL,	PRIMARY KEY(order_id))
+ in following column product_id and in column product_id of table products
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders (	order_id int NOT NULL IDENTITY(11,1),	customer_id int NOT NULL,	product_id int NOT NULL,	amount float NOT NULL,	PRIMARY KEY(order_id))
+ in following column amount of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `orders` (	`order_id` int(11) NOT NULL AUTO_INCREMENT,	`customer_id` int(11) NOT NULL,	`product_id` int(11) NOT NULL,	`amount` float NOT NULL,	PRIMARY KEY (`order_id`),	KEY `customer_id` (`customer_id`),	KEY `product_id` (`product_id`),	CONSTRAINT `orders_ibfk_4` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`) ON UPDATE CASCADE,	CONSTRAINT `orders_ibfk_3` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON UPDATE CASCADE)
+ in following column `amount` of table `orders`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE orders (	order_id serial NOT NULL,	customer_id integer NOT NULL,	product_id integer NOT NULL,	amount real NOT NULL)
+ in following column amount of table orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [customers] (	[customer_id] COUNTER,	[name] TEXT(50))
+ in following column [name] of table [customers]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [orders] ([order_id] INTEGER NOT NULL PRIMARY KEY,[customer_id] INTEGER NOT NULL,[product_id] INTEGER NOT NULL,[amount] FLOAT NOT NULL)
+ in following column [amount] of table [orders]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products (	product_id COUNTER,	title TEXT(50))
+ in following column title of table products

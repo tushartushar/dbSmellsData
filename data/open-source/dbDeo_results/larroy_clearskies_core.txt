@@ -1,0 +1,82 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS shares ( path TEXT PRIMARY KEY, /* path to the share */ dbpath TEXT UNIQUE NOT NULL /* path to the share database */ )
+ in following column /* path to the share */ of table shares
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column psk_ro of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS files ( path TEXT PRIMARY KEY, mtime TEXT, size INTEGER, mode INTEGER, scan_found INTEGER DEFAULT 0, /* used to find deleted files, the scanner sets this to 1 when found on fs */ deleted INTEGER DEFAULT 0, to_checksum INTEGER DEFAULT 0, checksum TEXT DEFAULT '', last_changed_rev INTEGER DEFAULT 0, /* revision in which this file was changed */ last_changed_by TEXT DEFAULT '', /* peer that changed this file last */ updated INTEGER DEFAULT 0 /* files that were updated, we will notify about these to other peers */ )
+ in following column path of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column pkc_rw of table (
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column size and in column size of table %
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS files_vclock ( path TEXT NOT NULL, key TEXT NOT NULL, value INTEGER DEFAULT 0, FOREIGN KEY(path) REFERENCES files(path) )
+ in following column path of table files_vclock
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['files', 'path']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS files ( path TEXT PRIMARY KEY, mtime TEXT, size INTEGER, mode INTEGER, scan_found INTEGER DEFAULT 0, /* used to find deleted files, the scanner sets this to 1 when found on fs */ deleted INTEGER DEFAULT 0, to_checksum INTEGER DEFAULT 0, checksum TEXT DEFAULT '', last_changed_rev INTEGER DEFAULT 0, /* revision in which this file was changed */ last_changed_by TEXT DEFAULT '', /* peer that changed this file last */ updated INTEGER DEFAULT 0 /* files that were updated, we will notify about these to other peers */ )
+ in following column /* revision in which this file was changed */ of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS files ( path TEXT PRIMARY KEY, mtime TEXT, size INTEGER, mode INTEGER, scan_found INTEGER DEFAULT 0, /* used to find deleted files, the scanner sets this to 1 when found on fs */ deleted INTEGER DEFAULT 0, to_checksum INTEGER DEFAULT 0, checksum TEXT DEFAULT '', last_changed_rev INTEGER DEFAULT 0, /* revision in which this file was changed */ last_changed_by TEXT DEFAULT '', /* peer that changed this file last */ updated INTEGER DEFAULT 0 /* files that were updated, we will notify about these to other peers */ )
+ in following column checksum of table files
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS files ( path TEXT PRIMARY KEY, mtime TEXT, size INTEGER, mode INTEGER, scan_found INTEGER DEFAULT 0, /* used to find deleted files, the scanner sets this to 1 when found on fs */ deleted INTEGER DEFAULT 0, to_checksum INTEGER DEFAULT 0, checksum TEXT DEFAULT '', last_changed_rev INTEGER DEFAULT 0, /* revision in which this file was changed */ last_changed_by TEXT DEFAULT '', /* peer that changed this file last */ updated INTEGER DEFAULT 0 /* files that were updated, we will notify about these to other peers */ )
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE files SET mtime = ?, size = ?, mode = ?, scan_found = ?, deleted = ?, to_checksum = ?, checksum = ?, last_changed_rev = ?, last_changed_by = ?, updated = ?  WHERE path = ? 
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files_vclock ( path TEXT NOT NULL, peer TEXT NOT NULL, key TEXT NOT NULL, value INTEGER DEFAULT 0, FOREIGN KEY(path) REFERENCES peer_files(path) )
+ in following column path of table peer_files_vclock
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column psk_untrusted of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+ in following column b and in column b of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column peer_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column share_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column peer of table peer_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column psk_rw of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (i INTEGER, t TEXT, b BLOB)
+ in following column t of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column checksum of table peer_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS shares ( path TEXT PRIMARY KEY, /* path to the share */ dbpath TEXT UNIQUE NOT NULL /* path to the share database */ )
+ in following column path of table shares
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['peer_files', 'path']
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column tmp_path of table peer_files
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column path of table peer_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS files ( path TEXT PRIMARY KEY, mtime TEXT, size INTEGER, mode INTEGER, scan_found INTEGER DEFAULT 0, /* used to find deleted files, the scanner sets this to 1 when found on fs */ deleted INTEGER DEFAULT 0, to_checksum INTEGER DEFAULT 0, checksum TEXT DEFAULT '', last_changed_rev INTEGER DEFAULT 0, /* revision in which this file was changed */ last_changed_by TEXT DEFAULT '', /* peer that changed this file last */ updated INTEGER DEFAULT 0 /* files that were updated, we will notify about these to other peers */ )
+ in following column mtime of table files
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS share ( share_id TEXT PRIMARY KEY, revision INTEGER DEFAULT 0, peer_id TEXT NOT NULL, psk_rw TEXT NOT NULL, psk_ro TEXT NOT NULL, psk_untrusted TEXT NOT NULL, pkc_rw TEXT, pkc_ro TEXT )
+ in following column pkc_ro of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files_vclock ( path TEXT NOT NULL, peer TEXT NOT NULL, key TEXT NOT NULL, value INTEGER DEFAULT 0, FOREIGN KEY(path) REFERENCES peer_files(path) )
+ in following column peer of table peer_files_vclock
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS peer_files ( path TEXT NOT NULL, peer TEXT NOT NULL, tmp_path TEXT DEFAULT '', mtime TEXT, size INTEGER, mode INTEGER, checksum TEXT, deleted INTEGER DEFAULT 0 )
+ in following column mtime of table peer_files
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS peer_files_vclock ( path TEXT NOT NULL, peer TEXT NOT NULL, key TEXT NOT NULL, value INTEGER DEFAULT 0, FOREIGN KEY(path) REFERENCES peer_files(path) )
+ in following column value and in column value of table %

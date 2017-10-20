@@ -1,0 +1,6 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dagd.pastebin_pastes ( id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, ip VARCHAR(45) NOT NULL, text TEXT NOT NULL, creation_dt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)
+ in following column text of table dagd
+Detected: Index Shotgun Variant: 3 Following index not used : ['command_redirects', 'url']
+Detected: Index Shotgun Variant: 3 Following index not used : ['shorturls', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `shorturls` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT, `shorturl` varbinary(10) NOT NULL DEFAULT '', `longurl` text NOT NULL, `owner_ip` varchar(45) NOT NULL, `creation_dt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`,`shorturl`))
+ in following column `longurl` of table `shorturls`

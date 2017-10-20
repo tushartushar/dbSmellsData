@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo (blk_extent)', 'blk_extent']
+Detected: Multicolumn Attribute Found in following statement: create table res (ptn_id number, point_id number,rid varchar2(24), val_d1 number, val_d2 number, val_d3 number)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['foo (blk_extent)', 'INDEXTYPE']

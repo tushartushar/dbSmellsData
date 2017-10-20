@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'wives']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'child_toy']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'children']

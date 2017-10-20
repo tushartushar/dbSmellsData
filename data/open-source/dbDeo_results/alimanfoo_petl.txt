@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE issue_219 (foo INTEGER, bar TEXT, baz FLOAT)
+ in following column baz of table issue_219
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE issue_219 (foo INTEGER, bar TEXT, baz FLOAT)
+ in following column bar of table issue_219

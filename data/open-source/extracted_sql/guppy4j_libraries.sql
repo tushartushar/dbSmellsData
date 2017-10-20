@@ -1,0 +1,2 @@
+SELECT id FROM test
+CREATE TABLE test (id INT)

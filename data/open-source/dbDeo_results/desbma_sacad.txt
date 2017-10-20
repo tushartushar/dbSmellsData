@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_timestamp (domain TEXT PRIMARY KEY, timestamp FLOAT NOT NULL)
+ in following column timestamp of table access_timestamp
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS access_timestamp (domain TEXT PRIMARY KEY, timestamp FLOAT NOT NULL)
+ in following column domain of table access_timestamp

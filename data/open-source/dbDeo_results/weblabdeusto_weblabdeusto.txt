@@ -1,0 +1,20 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "PostReservationRetrievedData" (	id INTEGER NOT NULL, 	reservation_id VARCHAR(36), 	finished BOOLEAN, 	date DATETIME, 	expiration_date DATETIME, 	initial_data TEXT, 	end_data TEXT, 	PRIMARY KEY (id), 	CHECK (finished IN (0, 1)))
+ in following column initial_data of table "PostReservationRetrievedData"
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'PQ_ConcreteCurrentReservations']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS persist_data (k TEXT UNIQUE NOT NULL PRIMARY KEY, v TEXT NOT NULL)
+ in following column k of table persist_data
+Detected: Metadata as Data Found in following statement: CREATE TABLE WebLabExpiredSessions ( session_id VARCHAR(50) PRIMARY KEY, back VARCHAR(300), expired DATETIME)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS persist_data (k TEXT UNIQUE NOT NULL PRIMARY KEY, v TEXT NOT NULL)
+ in following column v of table persist_data
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `#__weblab_config` ( `host` varchar(100) NOT NULL, `user` varchar(100) NOT NULL, `password` varchar(100) NOT NULL, PRIMARY KEY (`host`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "PostReservationRetrievedData" (	id INTEGER NOT NULL, 	reservation_id VARCHAR(36), 	finished BOOLEAN, 	date DATETIME, 	expiration_date DATETIME, 	initial_data TEXT, 	end_data TEXT, 	PRIMARY KEY (id), 	CHECK (finished IN (0, 1)))
+ in following column end_data of table "PostReservationRetrievedData"
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `#__weblab` ( `gid` int(10) NOT NULL, `exp_name` varchar(200) NOT NULL, `cat_name` varchar(50) NOT NULL, PRIMARY KEY (`gid`,`exp_name`,`cat_name`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'ILAB_BATCH_ILabBatchReservation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'ActiveReservationSchedulerAssociation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'PQ_WaitingReservations']
+Detected: Metadata as Data Found in following statement: CREATE TABLE "ExperimentTypes" (	id INTEGER NOT NULL, 	exp_name VARCHAR(255), 	cat_name VARCHAR(255), 	PRIMARY KEY (id), 	UNIQUE (exp_name, cat_name))
+

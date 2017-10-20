@@ -1,0 +1,6 @@
+CREATE TABLE `tels` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL DEFAULT '0', `number` varchar(255) NOT NULL DEFAULT '', `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, PRIMARY KEY (`id`))
+CREATE TABLE tels ( id integer NOT NULL, user_id integer DEFAULT 0 NOT NULL, number character varying DEFAULT ''::character varying NOT NULL, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL)
+CREATE TABLE `users` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL DEFAULT '', `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, PRIMARY KEY (`id`))
+CREATE TABLE `addresses` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL DEFAULT '0', `prefecture` varchar(255) NOT NULL DEFAULT '', `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL, PRIMARY KEY (`id`))
+CREATE TABLE addresses ( id integer NOT NULL, user_id integer DEFAULT 0 NOT NULL, prefecture character varying DEFAULT ''::character varying NOT NULL, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL)
+CREATE TABLE users ( id integer NOT NULL, name character varying DEFAULT ''::character varying NOT NULL, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL)

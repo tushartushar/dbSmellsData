@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `destinations` ( `destination_id` int(11) NOT NULL AUTO_INCREMENT, `city` varchar(50) NOT NULL, `iso` varchar(3) NOT NULL, PRIMARY KEY (`destination_id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `settings` ( `company_name` varchar(50) NOT NULL, `company_street` varchar(50) NOT NULL, `company_zip` varchar(50) NOT NULL, `company_city` varchar(50) NOT NULL, `company_state` varchar(50) NOT NULL, `company_phone_one` varchar(50) NOT NULL, `company_phone_two` varchar(50) NOT NULL, `company_email` varchar(50) NOT NULL, `company_rules` text NOT NULL, `company_currency` varchar(30) NOT NULL)
+ in following column `company_rules` of table `settings`
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `currency` ( `currency_id` int(11) NOT NULL AUTO_INCREMENT, `iso` varchar(3) NOT NULL, `symbol` varchar(10) NOT NULL, PRIMARY KEY (`currency_id`))
+

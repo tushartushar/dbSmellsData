@@ -1,0 +1,4 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{table_name} (permalink text PRIMARY KEY)
+ in following column permalink of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{table_name} ( blog_subdomain text, permalink ascii, PRIMARY KEY (blog_subdomain, permalink) )
+ in following column blog_subdomain of table #

@@ -1,0 +1,214 @@
+Detected: God Table Found in following statement: CREATE TABLE payments ( record_id serial unique, id varchar(36) NOT NULL, account_id varchar(36) NOT NULL, payment_method_id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, state_name varchar(64) DEFAULT NULL, last_success_state_name varchar(64) DEFAULT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY (record_id))
+
+Detected: God Table Found in following statement: CREATE TABLE payment_methods ( record_id serial unique, id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, account_id varchar(36) NOT NULL, plugin_name varchar(50) NOT NULL, is_active boolean default true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY (record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscriptions', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_history', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE tags ( record_id serial unique, id varchar(36) NOT NULL, tag_definition_id varchar(36) NOT NULL, object_id varchar(36) NOT NULL, object_type varchar(30) NOT NULL, is_active boolean default true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_field_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_definitions', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_ext_events', 'processing_state']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transactions', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rolled_up_usage', 'tracking_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_events', 'processing_available_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['audit_log', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['roles_permissions', 'permission']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'effective_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempt_history', 'account_record_id']
+Detected: God Table Found in following statement: CREATE TABLE tag_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, object_id varchar(36) NOT NULL, object_type varchar(30) NOT NULL, tag_definition_id varchar(36) NOT NULL, is_active boolean default true, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: God Table Found in following statement: CREATE TABLE audit_log ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, table_name varchar(50) NOT NULL, change_type varchar(6) NOT NULL, created_date datetime NOT NULL, created_by varchar(50) NOT NULL, reason_code varchar(255) DEFAULT NULL, comments varchar(255) DEFAULT NULL, user_token varchar(36), /* Note: can be NULL (e.g. tenant_kvs audits) */ account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'subscription_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['audit_log', 'created_by']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', 'tenant_record_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE notifications_history ( record_id serial unique, class_name varchar(256) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 bigint /*! unsigned */ not null, search_key2 bigint /*! unsigned */ not null default 0, queue_name varchar(64) NOT NULL, effective_date datetime NOT NULL, future_user_token varchar(36), PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_definition_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_email_history', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE _invoice_payment_control_plugin_auto_pay_off ( record_id serial unique, attempt_id varchar(36) NOT NULL, payment_external_key varchar(255) NOT NULL, transaction_external_key varchar(255) NOT NULL, account_id varchar(36) NOT NULL, plugin_name varchar(50) NOT NULL, payment_id varchar(36), payment_method_id varchar(36) NOT NULL, amount numeric(15,9), currency varchar(3), is_active boolean default true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, PRIMARY KEY (record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempt_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_methods', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_emails', 'email']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'linked_invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_emails', 'account_id']
+Detected: God Table Found in following statement: CREATE TABLE payment_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, account_id varchar(36) NOT NULL, payment_method_id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, state_name varchar(64) DEFAULT NULL, last_success_state_name varchar(64) DEFAULT NULL, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'processing_owner']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node_infos ( record_id serial unique, node_name varchar(50) NOT NULL, boot_date datetime NOT NULL, updated_date datetime DEFAULT NULL, node_info text NOT NULL, is_active boolean default true, PRIMARY KEY(record_id))
+ in following column node_info of table node_infos
+Detected: God Table Found in following statement: CREATE TABLE notifications ( record_id serial unique, class_name varchar(256) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 bigint /*! unsigned */ not null, search_key2 bigint /*! unsigned */ not null default 0, queue_name varchar(64) NOT NULL, effective_date datetime NOT NULL, future_user_token varchar(36), PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'subscription_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tenant_kvs', 'tenant_key']
+Detected: God Table Found in following statement: CREATE TABLE payment_transaction_history ( record_id serial unique, id varchar(36) NOT NULL, attempt_id varchar(36) DEFAULT NULL, transaction_external_key varchar(255) NOT NULL, target_record_id bigint /*! unsigned */ not null, transaction_type varchar(32) NOT NULL, effective_date datetime NOT NULL, transaction_status varchar(50) NOT NULL, amount numeric(15,9), currency varchar(3), processed_amount numeric(15,9), processed_currency varchar(3), payment_id varchar(36) NOT NULL, gateway_error_code varchar(32), gateway_error_msg varchar(256), change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY (record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_method_history', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_emails', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'state_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'is_active']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_events', 'search_key2']
+Detected: God Table Found in following statement: CREATE TABLE custom_field_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, object_id varchar(36) NOT NULL, object_type varchar(30) NOT NULL, is_active boolean default true, field_name varchar(64), field_value varchar(255), change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_phase_definition', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_definition_history', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscriptions', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'tenant_record_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE service_broadcasts ( record_id serial unique, service_name varchar(50) NOT NULL, type varchar(64) NOT NULL, event text NOT NULL, created_date datetime NOT NULL, created_by varchar(50) NOT NULL, PRIMARY KEY(record_id))
+ in following column event of table service_broadcasts
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_methods', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'tenant_record_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, account_id varchar(36) NOT NULL, payment_method_id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, state_name varchar(64) DEFAULT NULL, last_success_state_name varchar(64) DEFAULT NULL, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+ in following column id and in column id of table dummy2
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_methods', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'search_key2']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE subscriptions ( record_id serial unique, id varchar(36) NOT NULL, bundle_id varchar(36) NOT NULL, category varchar(32) NOT NULL, start_date datetime NOT NULL, bundle_start_date datetime NOT NULL, charged_through_date datetime DEFAULT NULL, migrated bool NOT NULL default FALSE, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+ in following column start_date and in column start_date of table invoice_items
+Detected: God Table Found in following statement: CREATE TABLE custom_fields ( record_id serial unique, id varchar(36) NOT NULL, object_id varchar(36) NOT NULL, object_type varchar(30) NOT NULL, is_active boolean default true, field_name varchar(64) NOT NULL, field_value varchar(255), created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) DEFAULT NULL, updated_date datetime DEFAULT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_ext_events', 'search_key1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_plan_phase', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE bundles ( record_id serial unique, id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, account_id varchar(36) NOT NULL, last_sys_update_date datetime, original_created_date datetime NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_phase_definition', 'parent_phase_name']
+Detected: God Table Found in following statement: CREATE TABLE bus_ext_events ( record_id serial unique, class_name varchar(128) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, /* Note: account_record_id can be NULL (e.g. TagDefinition events) */ search_key1 bigint /*! unsigned */ default null, search_key2 bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transactions', 'payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['blocking_states', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'search_key1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoices', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_events', 'search_key1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_fields', 'tenant_record_id']
+Detected: Compound Attribute Variant: 3 Found in following statement: update sessions set start_timestamp = :startTimestamp, last_access_time = :lastAccessTime, timeout = :timeout, host = :host, session_data = :sessionDatawhere id = :idwhere id = :id
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transaction_history', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE blocking_states ( record_id serial unique, id varchar(36) NOT NULL, blockable_id varchar(36) NOT NULL, type varchar(20) NOT NULL, state varchar(50) NOT NULL, service varchar(20) NOT NULL, block_change bool NOT NULL, block_entitlement bool NOT NULL, block_billing bool NOT NULL, effective_date datetime NOT NULL, is_active boolean default true, created_date datetime NOT NULL, created_by varchar(50) NOT NULL, updated_date datetime DEFAULT NULL, updated_by varchar(50) DEFAULT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'effective_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'linked_item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_parent_children', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'account_record_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tenant_kvs ( record_id serial unique, id varchar(36) NOT NULL, tenant_record_id bigint /*! unsigned */ not null default 0, tenant_key varchar(255) NOT NULL, tenant_value mediumtext NOT NULL, is_active boolean default true, created_date datetime NOT NULL, created_by varchar(50) NOT NULL, updated_date datetime DEFAULT NULL, updated_by varchar(50) DEFAULT NULL, PRIMARY KEY(record_id))
+ in following column tenant_value of table tenant_kvs
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'transaction_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transaction_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscriptions', 'bundle_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'payment_cookie_id']
+Detected: God Table Found in following statement: CREATE TABLE bus_ext_events_history ( record_id serial unique, class_name varchar(128) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, /* Note: account_record_id can be NULL (e.g. TagDefinition events) */ search_key1 bigint /*! unsigned */ default null, search_key2 bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_emails', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_plan_phase', 'phase_number']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transaction_history', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transactions', 'transaction_status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_definition_history', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoices', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_ext_events', 'processing_available_date']
+Detected: God Table Found in following statement: CREATE TABLE account_email_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, account_id varchar(36) NOT NULL, email varchar(128) NOT NULL, is_active boolean default true, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE notifications_history ( record_id serial unique, class_name varchar(256) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 bigint /*! unsigned */ not null, search_key2 bigint /*! unsigned */ not null default 0, queue_name varchar(64) NOT NULL, effective_date datetime NOT NULL, future_user_token varchar(36), PRIMARY KEY(record_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE invoice_payments ( record_id serial unique, id varchar(36) NOT NULL, type varchar(24) NOT NULL, invoice_id varchar(36) NOT NULL, payment_id varchar(36), payment_date datetime NOT NULL, amount numeric(15,9) NOT NULL, currency varchar(3) NOT NULL, processed_currency varchar(3) NOT NULL, payment_cookie_id varchar(255) DEFAULT NULL, linked_invoice_payment_id varchar(36) DEFAULT NULL, success bool DEFAULT true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+ in following column amount and in column amount of table rolled_up_usage
+Detected: God Table Found in following statement: CREATE TABLE subscriptions ( record_id serial unique, id varchar(36) NOT NULL, bundle_id varchar(36) NOT NULL, category varchar(32) NOT NULL, start_date datetime NOT NULL, bundle_start_date datetime NOT NULL, charged_through_date datetime DEFAULT NULL, migrated bool NOT NULL default FALSE, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_ext_events', 'processing_owner']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transactions', 'transaction_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundles', 'account_record_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE notifications ( record_id serial unique, class_name varchar(256) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 bigint /*! unsigned */ not null, search_key2 bigint /*! unsigned */ not null default 0, queue_name varchar(64) NOT NULL, effective_date datetime NOT NULL, future_user_token varchar(36), PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_phase_definition', 'currency']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_history', 'tenant_record_id']
+Detected: God Table Found in following statement: CREATE TABLE invoice_items ( record_id serial unique, id varchar(36) NOT NULL, type varchar(24) NOT NULL, invoice_id varchar(36) NOT NULL, account_id varchar(36) NOT NULL, child_account_id varchar(36), bundle_id varchar(36), subscription_id varchar(36), description varchar(255), plan_name varchar(255), phase_name varchar(255), usage_name varchar(255), start_date date, end_date date, amount numeric(15,9) NOT NULL, rate numeric(15,9) NULL, currency varchar(3) NOT NULL, linked_item_id varchar(36), created_by varchar(50) NOT NULL, created_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_fields', 'object_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['audit_log', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_method_history', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'account_id']
+Detected: God Table Found in following statement: CREATE TABLE bus_events_history ( record_id serial unique, class_name varchar(128) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, /* Note: account_record_id can be NULL (e.g. TagDefinition events) */ search_key1 bigint /*! unsigned */ default null, search_key2 bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoices', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundles', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['blocking_states', 'account_record_id']
+Detected: God Table Found in following statement: CREATE TABLE payment_attempt_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, account_id varchar(36) NOT NULL, payment_method_id varchar(36) DEFAULT NULL, payment_external_key varchar(255) NOT NULL, transaction_id varchar(36), transaction_external_key varchar(255) NOT NULL, transaction_type varchar(32) NOT NULL, state_name varchar(32) NOT NULL, amount numeric(15,9), currency varchar(3), plugin_name varchar(1024) NOT NULL, plugin_properties mediumblob, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'transaction_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundles', 'external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_email_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_events', 'processing_owner']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rolled_up_usage', 'subscription_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'payment_id']
+Detected: God Table Found in following statement: CREATE TABLE invoices ( record_id serial unique, id varchar(36) NOT NULL, account_id varchar(36) NOT NULL, invoice_date date NOT NULL, target_date date, currency varchar(3) NOT NULL, status varchar(15) NOT NULL DEFAULT 'COMMITTED', migrated bool NOT NULL, parent_invoice bool NOT NULL DEFAULT FALSE, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE dummy ( dummy_id varchar(36) NOT NULL, value varchar(256) NOT NULL, PRIMARY KEY(dummy_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['audit_log', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_parent_children', 'parent_invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_ext_events', 'search_key2']
+Detected: God Table Found in following statement: CREATE TABLE payment_method_history ( record_id serial unique, id varchar(36) NOT NULL, external_key varchar(255) NOT NULL, target_record_id bigint /*! unsigned */ not null, account_id varchar(36) NOT NULL, plugin_name varchar(50) NOT NULL, is_active boolean default true, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'processing_state']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_definition_history', 'id']
+Detected: God Table Found in following statement: CREATE TABLE account_emails ( record_id serial unique, id varchar(36) NOT NULL, account_id varchar(36) NOT NULL, email varchar(128) NOT NULL, is_active boolean default true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: God Table Found in following statement: CREATE TABLE bus_events ( record_id serial unique, class_name varchar(128) NOT NULL, event_json varchar(2048) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, creating_owner varchar(50) NOT NULL, processing_owner varchar(50) DEFAULT NULL, processing_available_date datetime DEFAULT NULL, processing_state varchar(14) DEFAULT 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, /* Note: account_record_id can be NULL (e.g. TagDefinition events) */ search_key1 bigint /*! unsigned */ default null, search_key2 bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['notifications', 'processing_available_date']
+Detected: God Table Found in following statement: CREATE TABLE rolled_up_usage ( record_id serial unique, id varchar(36) NOT NULL, subscription_id varchar(36) NOT NULL, unit_type varchar(255) NOT NULL, record_date date NOT NULL, amount bigint NOT NULL, tracking_id varchar(128) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: God Table Found in following statement: CREATE TABLE payment_transactions ( record_id serial unique, id varchar(36) NOT NULL, attempt_id varchar(36) DEFAULT NULL, transaction_external_key varchar(255) NOT NULL, transaction_type varchar(32) NOT NULL, effective_date datetime NOT NULL, transaction_status varchar(50) NOT NULL, amount numeric(15,9), currency varchar(3), processed_amount numeric(15,9), processed_currency varchar(3), payment_id varchar(36) NOT NULL, gateway_error_code varchar(32), gateway_error_msg varchar(256), created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY (record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_method_history', 'target_record_id']
+Detected: God Table Found in following statement: CREATE TABLE subscription_events ( record_id serial unique, id varchar(36) NOT NULL, event_type varchar(15) NOT NULL, user_type varchar(25) DEFAULT NULL, effective_date datetime NOT NULL, subscription_id varchar(36) NOT NULL, plan_name varchar(255) DEFAULT NULL, phase_name varchar(255) DEFAULT NULL, price_list_name varchar(64) DEFAULT NULL, billing_cycle_day_local int DEFAULT NULL, is_active boolean default true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_plan_definition', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['blocking_states', 'id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE validation_test ( column1 varchar(25), column2 char(2) NOT NULL, column3 numeric(10,4), column4 datetime)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['rolled_up_usage', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rolled_up_usage', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_parent_children', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_roles', 'role_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundles', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_history', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags', 'account_record_id']
+Detected: God Table Found in following statement: CREATE TABLE tenant_broadcasts ( record_id serial unique, id varchar(36) NOT NULL, /* Note: can be NULL in case of delete */ target_record_id bigint /*! unsigned */ default null, target_table_name varchar(50) NOT NULL, tenant_record_id bigint /*! unsigned */ not null default 0, type varchar(64) NOT NULL, user_token varchar(36), created_date datetime NOT NULL, created_by varchar(50) NOT NULL, updated_date datetime DEFAULT NULL, updated_by varchar(50) DEFAULT NULL, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['blocking_states', 'blockable_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_payments', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_field_history', 'account_record_id']
+Detected: God Table Found in following statement: CREATE TABLE invoice_payments ( record_id serial unique, id varchar(36) NOT NULL, type varchar(24) NOT NULL, invoice_id varchar(36) NOT NULL, payment_id varchar(36), payment_date datetime NOT NULL, amount numeric(15,9) NOT NULL, currency varchar(3) NOT NULL, processed_currency varchar(3) NOT NULL, payment_cookie_id varchar(255) DEFAULT NULL, linked_invoice_payment_id varchar(36) DEFAULT NULL, success bool DEFAULT true, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['tenant_broadcasts', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['account_email_history', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag_history', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', 'parent_account_id']
+Detected: God Table Found in following statement: CREATE TABLE payment_attempts ( record_id serial unique, id varchar(36) NOT NULL, account_id varchar(36) NOT NULL, payment_method_id varchar(36) DEFAULT NULL, payment_external_key varchar(255) NOT NULL, transaction_id varchar(36), transaction_external_key varchar(255) NOT NULL, transaction_type varchar(32) NOT NULL, state_name varchar(32) NOT NULL, amount numeric(15,9), currency varchar(3), plugin_name varchar(1024) NOT NULL, plugin_properties mediumblob, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, account_record_id bigint /*! unsigned */ not null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY (record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_history', 'target_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['catalog_override_plan_phase', 'phase_def_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'payment_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_history', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bus_events', 'processing_state']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscription_events', 'account_record_id']
+Detected: God Table Found in following statement: CREATE TABLE tag_definition_history ( record_id serial unique, id varchar(36) NOT NULL, target_record_id bigint /*! unsigned */ not null, name varchar(30) NOT NULL, description varchar(200), is_active boolean default true, change_type varchar(6) NOT NULL, created_by varchar(50) NOT NULL, created_date datetime NOT NULL, updated_by varchar(50) NOT NULL, updated_date datetime NOT NULL, /* Note: there is no account_record_id to populate */ account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ not null default 0, PRIMARY KEY(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempt_history', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_field_history', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_transactions', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_attempts', 'account_record_id']

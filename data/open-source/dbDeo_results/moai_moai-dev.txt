@@ -1,0 +1,66 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZPARENTNODE)', 'ZPARENTNODE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZORDEREDSUBNODE (ZPARENT)', 'indexZORDEREDSUBNODE_ZNODE_INDEXZORDEREDSUBNODE']
+Detected: Duplicate Column Names Found in following statement: create table fetch_test (		f1	varchar(30),		f2	varchar(30),		f3	varchar(30),		f4	varchar(30),		f5	varchar(30),		f6	varchar(30),		f7	varchar(30),		f8	varchar(30)	)
+ in following column f3 and in column f3 of table test_dt
+Detected: Multicolumn Attribute Found in following statement: create table test_dt (f1 integer, f2 varchar(30), f3 bit )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZLANGUAGE)', 'w']
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Index Shotgun Variant: 3 Following index not used : ['base_urls', 'last_accessed']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZTOKENNAME)', 'ZTOKENNAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN', 'ZTOKENTYPE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Multicolumn Attribute Found in following statement: create table fetch_test (		f1	varchar(30),		f2	varchar(30),		f3	varchar(30),		f4	varchar(30),		f5	varchar(30),		f6	varchar(30),		f7	varchar(30),		f8	varchar(30)	)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZORDEREDSUBNODE (ZPARENT)', 'C']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZCONTAINER)', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZORDEREDSUBNODE (ZPARENT)', 'ZPARENT']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZNODE (ZPRIMARYPARENT)', 'T']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE people ( name varchar(50), email varchar(50) )
+ in following column name and in column name of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN', 'tableZ_10RELATEDGROUPSZ_10RELATEDGROUPS']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZDOCSET', 'tableZDOCSETZDOCSET']
+Detected: Duplicate Column Names Found in following statement: create table fetch_test (		f1	varchar(30),		f2	varchar(30),		f3	varchar(30),		f4	varchar(30),		f5	varchar(30),		f6	varchar(30),		f7	varchar(30),		f8	varchar(30)	)
+ in following column f1 and in column f1 of table test_dt
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZDOCSET', 'ZROOTNODE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZNODE (ZPRIMARYPARENT)', 'ZPRIMARYPARENT']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Z_10RELATEDGROUPS ( Z_10TOKENS INTEGER, Z_11RELATEDGROUPS INTEGER, PRIMARY KEY (Z_10TOKENS, Z_11RELATEDGROUPS) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZLANGUAGE)', 'G']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZDOCSET', 'MtableZFILEPATHZFILEPATH']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZTOKENNAME)', 'e']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZORDEREDSUBNODE (ZPARENT)', 'z']
+Detected: Index Shotgun Variant: 3 Following index not used : ['proxy_requests', 'submitted_on']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZLANGUAGE)', 'ZLANGUAGE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type and in column type of table analytics
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZCONTAINER)', 'indexZTOKEN_ZLANGUAGE_INDEXZTOKEN']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZNODE (ZPRIMARYPARENT)', 'GtableZ_7RELATEDDOCSINVERSEZ_7RELATEDDOCSINVERSE']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZPARENTNODE)', 'e#']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZCONTAINER)', 'ZCONTAINER']
+Detected: God Table Found in following statement: CREATE TABLE ZNODE ( Z_PK INTEGER PRIMARY KEY, Z_ENT INTEGER, Z_OPT INTEGER, ZINSTALLDOMAIN INTEGER, ZKID INTEGER, ZKISSEARCHABLE INTEGER, ZKSUBNODECOUNT INTEGER, ZPRIMARYPARENT INTEGER, ZKANCHOR VARCHAR, ZKFILENAME VARCHAR, ZKNAME VARCHAR, ZKNODETYPE VARCHAR, ZKPATH VARCHAR, ZKURL VARCHAR )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZTOKEN (ZLANGUAGE)', 'indexZTOKEN_ZMETAINFORMATION_INDEXZTOKEN#CREATE']

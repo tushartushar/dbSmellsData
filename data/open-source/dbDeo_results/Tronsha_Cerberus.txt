@@ -1,0 +1,31 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_kick` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `channel` varchar(255) NOT NULL, `nick` varchar(255) NOT NULL, `kicked` varchar(255) NOT NULL, `text` text NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` of table `log_kick`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_topic` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `channel` varchar(255) NOT NULL, `nick` varchar(255) NOT NULL, `topic` text NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `topic` of table `log_topic`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `preform` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `network` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `text` text COLLATE utf8_unicode_ci NOT NULL, `priority` int(11) NOT NULL DEFAULT '50', PRIMARY KEY (`id`))
+ in following column `text` of table `preform`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_notice` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `target` varchar(255) NOT NULL, `nick` varchar(255) NOT NULL, `text` text NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` of table `log_notice`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `send` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `bot_id` int(11) unsigned NOT NULL DEFAULT '0', `text` text COLLATE utf8_unicode_ci NOT NULL, `priority` int(11) NOT NULL DEFAULT '50', PRIMARY KEY (`id`))
+ in following column `text` of table `send`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `status` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `bot_id` int(11) unsigned NOT NULL DEFAULT '0', `status` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `text` text COLLATE utf8_unicode_ci NOT NULL, `data` text COLLATE utf8_unicode_ci NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `data` of table `status`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_quit` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `nick` varchar(255) NOT NULL, `text` text NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` of table `log_quit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `bot_id` int(11) unsigned NOT NULL, `network` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `command` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `irc` text COLLATE utf8_unicode_ci NOT NULL, `time` datetime NOT NULL, `direction` enum('<','>') COLLATE utf8_unicode_ci NOT NULL DEFAULT '<', PRIMARY KEY (`id`))
+ in following column `irc` of table `log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `status` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `bot_id` int(11) unsigned NOT NULL DEFAULT '0', `status` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `text` text COLLATE utf8_unicode_ci NOT NULL, `data` text COLLATE utf8_unicode_ci NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` of table `status`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_part` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `channel` varchar(255) NOT NULL, `nick` varchar(255) NOT NULL, `text` text NOT NULL, `time` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` of table `log_part`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `log_privmsg` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `log_id` int(11) unsigned NOT NULL, `bot_id` int(11) unsigned NOT NULL, `channel` varchar(255) NOT NULL, `nick` varchar(255) NOT NULL, `text` text NOT NULL, `time` datetime NOT NULL, `direction` enum('<','>') COLLATE utf8_unicode_ci NOT NULL DEFAULT '<', PRIMARY KEY (`id`))
+ in following column `text` of table `log_privmsg`
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `auth` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `network` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `authlevel` enum('none','user','admin') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'none', `authname` varchar(255) COLLATE utf8_unicode_ci NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `channellist` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `network` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `channel` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `usercount` int(11) unsigned NOT NULL, `topic` text COLLATE utf8_unicode_ci NOT NULL, `time` datetime NOT NULL, `bot_id` int(11) NOT NULL, PRIMARY KEY (`id`))
+ in following column `topic` of table `channellist`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `channel` ( `id` int(11) NOT NULL AUTO_INCREMENT, `bot_id` int(11) NOT NULL, `channel` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `topic` text COLLATE utf8_unicode_ci DEFAULT NULL, PRIMARY KEY (`id`))
+ in following column `topic` of table `channel`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `control` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `bot_id` int(11) unsigned NOT NULL DEFAULT '0', `command` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `data` text COLLATE utf8_unicode_ci NOT NULL, PRIMARY KEY (`id`))
+ in following column `data` of table `control`

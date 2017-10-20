@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE dtb_base_info set shop_name = :shop_name, email01 = :admin_mail, email02 = :admin_mail, email03 = :admin_mail, email04 = :admin_mail, update_date = current_timestamp  WHERE id = 1
+

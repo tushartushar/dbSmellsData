@@ -1,0 +1,1 @@
+CREATE TABLE toasters (_id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, ImageUrl TEXT, JobDescription TEXT, ShortJob TEXT)

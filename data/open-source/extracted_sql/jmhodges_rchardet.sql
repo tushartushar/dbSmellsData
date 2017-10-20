@@ -1,0 +1,1 @@
+SELECT * FROM tartomanyok&#039;;$result = mysql_query($query) or die(&#039;Query failed: &#039; . mysql_error());$parancs=&quot;insert into tartomanyok (tartomany,nem,email)values (&#039;123xyz.com&#039;,&#039;F&#039;,&#039;dfc##kukac##dfg.hu&#039;)&quot;;mysql_close( $kapcsolat )?&amp;gt;

@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS geofront_public_key ( key_type VARCHAR(64) NOT NULL, key_fingerprint VARCHAR(32) NOT NULL, key_base64 VARCHAR(2048) NOT NULL, team_type VARCHAR(128) NOT NULL, identifier VARCHAR(128) NOT NULL, PRIMARY KEY (key_type, key_fingerprint) )

@@ -1,0 +1,71 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', '#']
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column MBR_XMin of table FOREST
+Detected: God Table Found in following statement: CREATE TABLE `legacy_clients` ( `id` int(10) unsigned NOT NULL auto_increment, `client_code` varchar(15) default NULL, `first_name` varchar(20) NOT NULL default '', `other_name` varchar(20) default NULL, `surname` varchar(30) NOT NULL default '', `address` varchar(50) default NULL, `suburb` varchar(50) default NULL, `postcode` varchar(10) default NULL, `location_id` smallint(3) default NULL, `home_phone` varchar(15) default NULL, `work_phone` varchar(15) default NULL, `fax` varchar(15) default NULL, `mobile` varchar(15) default NULL, `email` varchar(50) default NULL, `date_of_birth` date default NULL, `business_id` int(11) default NULL, `comments` varchar(100) default NULL, `state` char(3) default NULL, `sex` char(1) default NULL, `location_temp` varchar(50) default NULL, `employer_temp` varchar(50) default NULL, PRIMARY KEY (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: create table old_sessions (id integer primary key, sessid text unique, data text)
+ in following column sessid of table old_sessions
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column MBR_YMax of table FOREST
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', '\\']
+Detected: Metadata as Data Found in following statement: CREATE TABLE people ( name VARCHAR, does VARCHAR, email VARCHAR )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'comment']
+Detected: Duplicate Column Names Found in following statement: create table Emergency( Sensor_id int, Report_Time date, constraint emergency_PK primary key(sensor_id, Report_Time) deferrable, constraint emergency_FK foreign key(Sensor_id, report_time) references REPORT (sensor_id, report_time) initially deferred deferrable	)
+ in following column constraint and in column constraint of table SENSOR
+Detected: Metadata as Data Found in following statement: CREATE TABLE people ( name VARCHAR, does VARCHAR, email VARCHAR \)
+
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column Area of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table COVERAGE ( Forest_No	varchar2(10), State	varchar2(2), Percentage	float, Area	float, Constraint coverage_PK primary key (Forest_No, State) deferrable, Constraint coverage_FK1 foreign key (Forest_No) references FOREST( Forest_No ) initially deferred deferrable, Constraint coverage_FK2 foreign key ( State ) references State( Abbreviation ) initially deferred deferrable)
+ in following column Area of table COVERAGE
+Detected: Obsolete Column TypesFound in following statement: create table SENSOR ( Sensor_Id	int, X		float, Y		float, Last_Charged date, Energy	int, Maintainer varchar2(9), LastRead	date, Constraint sensor_PK primary key (Sensor_Id) deferrable, constraint energy_check CHECK (Energy >=0 and Energy <=10) deferrable, constraint sensor_FK foreign key (Maintainer) references WORKER(ssn) initially deferred deferrable	)
+ in following column Y of table SENSOR
+Detected: Obsolete Column TypesFound in following statement: create table SENSOR ( Sensor_Id	int, X		float, Y		float, Last_Charged date, Energy	int, Maintainer varchar2(9), LastRead	date, Constraint sensor_PK primary key (Sensor_Id) deferrable, constraint energy_check CHECK (Energy >=0 and Energy <=10) deferrable, constraint sensor_FK foreign key (Maintainer) references WORKER(ssn) initially deferred deferrable	)
+ in following column X of table SENSOR
+Detected: Obsolete Column TypesFound in following statement: create table ROAD ( Road_No		varchar2(10), Name		varchar2(30), Length		float, Constraint road_PK primary key (Road_No) deferrable)
+ in following column Length of table ROAD
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column MBR_YMin of table FOREST
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE companies (id int(11) auto_increment, client_of int(11), name varchar(255), type varchar(100), PRIMARY KEY (id))
+ in following column id and in column id of table #
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column MBR_YMax of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column MBR_YMin of table FOREST
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer_statuses', 'status_id']
+Detected: Obsolete Column TypesFound in following statement: create table old_sessions (id integer primary key, sessid text unique, data text\)
+ in following column sessid of table old_sessions
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column Area of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table old_sessions (id integer primary key, sessid text unique, data text)
+ in following column data of table old_sessions
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column Acid_Level of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column MBR_XMax of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column MBR_XMin of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable	)
+ in following column MBR_XMax of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table COVERAGE ( Forest_No	varchar2(10), State	varchar2(2), Percentage	float, Area	float, Constraint coverage_PK primary key (Forest_No, State) deferrable, Constraint coverage_FK1 foreign key (Forest_No) references FOREST( Forest_No ) initially deferred deferrable, Constraint coverage_FK2 foreign key ( State ) references State( abbreviation ) initially deferred deferrable)
+ in following column Area of table COVERAGE
+Detected: Duplicate Column Names Found in following statement: create table ROAD ( Road_No		varchar2(10), Name		varchar2(30), Length		float, Constraint road_PK primary key (Road_No) deferrable)
+ in following column Constraint and in column Constraint of table INTERSECTION
+Detected: Obsolete Column TypesFound in following statement: create table SENSOR ( Sensor_Id	int, X		float, Y		float, Last_Charged date, Constraint sensor_PK primary key (Sensor_Id) deferrable)
+ in following column Y of table SENSOR
+Detected: Obsolete Column TypesFound in following statement: create table REPORT ( Sensor_Id	int, Temperature	float, Report_Time	date, Constraint report_PK primary key (Sensor_Id, Report_Time) deferrable, Constraint report_FK foreign key (Sensor_Id) references SENSOR(Sensor_Id) initially deferred deferrable)
+ in following column Temperature of table REPORT
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE public.languages ( language_code char(2) PRIMARY KEY)
+ in following column . and in column . of table mydb
+Detected: Obsolete Column TypesFound in following statement: create table FOREST ( Forest_No varchar2(10), Name	varchar2(30), Area	float, Acid_Level	float, MBR_XMin	float, MBR_XMax	float, MBR_YMin	float, MBR_YMax	float, Constraint forest_PK primary key (Forest_No) deferrable, constraint acidCheck CHECK (Acid_Level>=0 and Acid_Level<=1) deferrable, Constraint forest_UQ_name UNIQUE(name) deferrable, constraint forest_UQ_MBR UNIQUE(MBR_XMin, MBR_XMax, MBR_YMin, MBR_YMax) deferrable	)
+ in following column Acid_Level of table FOREST
+Detected: Obsolete Column TypesFound in following statement: create table COVERAGE ( Forest_No	varchar2(10), State	varchar2(2), Percentage	float, Area	float, Constraint coverage_PK primary key (Forest_No, State) deferrable, Constraint coverage_FK1 foreign key (Forest_No) references FOREST( Forest_No ) initially deferred deferrable, Constraint coverage_FK2 foreign key ( State ) references State( abbreviation ) initially deferred deferrable)
+ in following column Percentage of table COVERAGE
+Detected: Obsolete Column TypesFound in following statement: create table SENSOR ( Sensor_Id	int, X		float, Y		float, Last_Charged date, Constraint sensor_PK primary key (Sensor_Id) deferrable)
+ in following column X of table SENSOR
+Detected: Obsolete Column TypesFound in following statement: create table old_sessions (id integer primary key, sessid text unique, data text\)
+ in following column data of table old_sessions
+Detected: Obsolete Column TypesFound in following statement: create table COVERAGE ( Forest_No	varchar2(10), State	varchar2(2), Percentage	float, Area	float, Constraint coverage_PK primary key (Forest_No, State) deferrable, Constraint coverage_FK1 foreign key (Forest_No) references FOREST( Forest_No ) initially deferred deferrable, Constraint coverage_FK2 foreign key ( State ) references State( Abbreviation ) initially deferred deferrable)
+ in following column Percentage of table COVERAGE
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'name']

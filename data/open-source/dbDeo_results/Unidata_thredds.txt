@@ -1,0 +1,21 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column data2 of table obs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column lon of table obs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column data1 of table obs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column z of table obs
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE station ( lat float, lon float, z float, station_id int)
+ in following column lon of table station
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column time of table obs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE station ( lat float, lon float, z float, station_id int)
+ in following column lat of table station
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE station ( lat float, lon float, z float, station_id int)
+ in following column z of table station
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE obs ( lat float, lon float, z float, time float, data1 float, data2 float, ...)
+ in following column lat of table obs

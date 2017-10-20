@@ -1,0 +1,3 @@
+Detected: Adjacency List Found in following statement: CREATE TABLE %s ( pkgid integer references %s (pkgid) on delete cascade, \		key varchar(255), value text, UNIQUE(pkgid, key))
+
+Detected: Index Shotgun Variant: 1

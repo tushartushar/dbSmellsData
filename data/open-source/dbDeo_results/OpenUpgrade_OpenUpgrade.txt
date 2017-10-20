@@ -1,0 +1,54 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ir_actions ( id serial, primary key(id))
+ in following column id and in column id of table persons
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail_channel_partner', 'seen_message_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_ui_view_custom', 'user_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE res_lang ( id serial, name VARCHAR(64) NOT NULL UNIQUE, code VARCHAR(16) NOT NULL UNIQUE, primary key(id))
+
+Detected: Metadata as Data Found in following statement: create table wkf ( id serial, name varchar(64), osv varchar(64), on_create bool default false, primary key(id))
+
+Detected: God Table Found in following statement: CREATE TABLE ir_model_data ( id serial NOT NULL, create_uid integer, create_date timestamp without time zone, write_date timestamp without time zone, write_uid integer, noupdate boolean, name varchar NOT NULL, date_init timestamp without time zone, date_update timestamp without time zone, module varchar NOT NULL, model varchar NOT NULL, res_id integer, primary key(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_model_data', 'def']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wkf_instance', 'res_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_move', 'location_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'in_date']
+Detected: Adjacency List Found in following statement: CREATE TABLE ir_model_fields ( id serial, model varchar NOT NULL, model_id integer references ir_model on delete cascade, name varchar NOT NULL, state varchar default 'base', field_description varchar, help varchar, ttype varchar, relation varchar, relation_field varchar, index boolean, copy boolean, related varchar, readonly boolean default False, required boolean default False, selectable boolean default False, translate boolean default False, serialization_field_id integer references ir_model_fields on delete cascade, relation_table varchar, column1 varchar, column2 varchar, primary key(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'reservation_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ir_model_constraint ( id serial NOT NULL, date_init timestamp without time zone, date_update timestamp without time zone, module integer NOT NULL references ir_module_module on delete restrict, model integer NOT NULL references ir_model on delete restrict, type character varying(1) NOT NULL, definition varchar, name varchar NOT NULL, primary key(id))
+ in following column module and in column module of table ir_model_data
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail_message', 'model']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ir_model ( id serial, model varchar NOT NULL, name varchar, state varchar, info text, transient boolean, primary key(id))
+ in following column info of table ir_model
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'the']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_move', 'location_dest_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_translation', 'lang']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_translation', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_model_data', 'xmlid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_attachment', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'location_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_ui_view', 'model']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'read_group']
+Detected: God Table Found in following statement: CREATE TABLE ir_model_fields ( id serial, model varchar NOT NULL, model_id integer references ir_model on delete cascade, name varchar NOT NULL, state varchar default 'base', field_description varchar, help varchar, ttype varchar, relation varchar, relation_field varchar, index boolean, copy boolean, related varchar, readonly boolean default False, required boolean default False, selectable boolean default False, translate boolean default False, serialization_field_id integer references ir_model_fields on delete cascade, relation_table varchar, column1 varchar, column2 varchar, primary key(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'Overwrite']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE ir_model_fields ( id serial, model varchar NOT NULL, model_id integer references ir_model on delete cascade, name varchar NOT NULL, state varchar default 'base', field_description varchar, help varchar, ttype varchar, relation varchar, relation_field varchar, index boolean, copy boolean, related varchar, readonly boolean default False, required boolean default False, selectable boolean default False, translate boolean default False, serialization_field_id integer references ir_model_fields on delete cascade, relation_table varchar, column1 varchar, column2 varchar, primary key(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_move', 'company_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'qty']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_attachment', 'commit']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wkf_instance', 'res_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_move', 'product_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail_channel_partner', 'channel_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_attachment', 'res_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail_message', 'res_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_model_data', 'res_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_attachment', 'cr']
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail_channel_partner', 'partner_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_model_data', 'xmlid_lookup']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ir_model_constraint ( id serial NOT NULL, date_init timestamp without time zone, date_update timestamp without time zone, module integer NOT NULL references ir_module_module on delete restrict, model integer NOT NULL references ir_model on delete restrict, type character varying(1) NOT NULL, definition varchar, name varchar NOT NULL, primary key(id))
+ in following column model and in column model of table ir_model
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'product_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stock_quant', 'company_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_ui_view', 'inherit_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ir_ui_view_custom', 'ref_id']

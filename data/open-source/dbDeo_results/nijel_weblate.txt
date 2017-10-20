@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rep_cache ( hash TEXT NOT NULL PRIMARY KEY, revision INTEGER NOT NULL, offset INTEGER NOT NULL, size INTEGER NOT NULL, expanded_size INTEGER NOT NULL )
+ in following column hash of table rep_cache

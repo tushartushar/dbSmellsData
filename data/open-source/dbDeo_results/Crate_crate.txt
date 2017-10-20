@@ -1,0 +1,777 @@
+Detected: Clone Tables Found in following statement: create table t (d double, i integer)
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table15 ( ... title string, ... details object(ignored) as ( ... num_pages integer, ... font_size float ... ) ... )
+ in following column . of table my_table15
+Detected: Clone Tables Found in following statement: create table any1 (id integer, date timestamp, names array(string))
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: create table t (b byte, sa array(string), s string)
+
+Detected: Clone Tables Found in following statement: create table t (pk_col int primary key, message string not null)
+
+Detected: Clone Tables Found in following statement: create table t (i ip)
+
+Detected: Clone Tables Found in following statement: create table my_table (p string)
+
+Detected: Multicolumn Attribute Found in following statement: create table foo (col1 integer primary key, col2 string)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer primary key, name string INDEX using fulltext)
+ in following column name of table foo
+Detected: Clone Tables Found in following statement: create table my_table (x integer INDEX using fulltext with (analyzer='snowball'))
+
+Detected: Obsolete Column TypesFound in following statement: create table offices (height float, name string)
+ in following column height of table offices
+Detected: Obsolete Column TypesFound in following statement: create table t1 (id int primary key, text string index using fulltext)
+ in following column text of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user ( ... id INT primary key, ... name STRING, ... day_joined TIMESTAMP, ... bio STRING INDEX using fulltext, ... address OBJECT (dynamic) AS ( ... city STRING, ... country STRING ... ) ... )
+ in following column . of table (
+Detected: Obsolete Column TypesFound in following statement: create table quotes_de (id int primary key, quote2 string index using fulltext)
+ in following column quote2 of table quotes_de
+Detected: Clone Tables Found in following statement: create table t (id int, primary key (id, id))
+
+Detected: Clone Tables Found in following statement: create table test (id int primary key, message string not null)
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table test2 (col21 double primary key, col22 string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS (col1 + 1))
+
+Detected: Clone Tables Found in following statement: create table test (id int primary key, content string)
+
+Detected: Clone Tables Found in following statement: create table bla1 (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table t1 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t (b boolean, i int)
+
+Detected: Clone Tables Found in following statement: create table my_table ( ... first_column integer, ... second_column string ... )
+
+Detected: Duplicate Column Names Found in following statement: create table test (a string, b int)
+ in following column a and in column a of table t
+Detected: Clone Tables Found in following statement: create table test (id int primary key, name string)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 string, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t (id int, name string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 GENERATED ALWAYS AS date_trunc('day', col1))
+
+Detected: Clone Tables Found in following statement: create table t (o object as (x int, y long))
+
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, details object as (names array(string)))
+
+Detected: Clone Tables Found in following statement: create table test (coolness object)
+
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table test (foo object)
+
+Detected: Obsolete Column TypesFound in following statement: create table t2 (price float, name string)
+ in following column price of table t2
+Detected: Clone Tables Found in following statement: create table my_s2.my_table (id long)
+
+Detected: Clone Tables Found in following statement: create table my_table12 ( ... title string, ... author object(strict) as ( ... name string, ... birthday timestamp ... ) ... )
+
+Detected: Clone Tables Found in following statement: create table t2 (price float)
+
+Detected: Clone Tables Found in following statement: create table test2 (col1 integer, col2 string, age integer)
+
+Detected: Clone Tables Found in following statement: create table my_table5 ( ... first_column int ... )
+
+Detected: Clone Tables Found in following statement: create table t(id int primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE survivor (bla string, blubb float)
+ in following column blubb of table survivor
+Detected: Clone Tables Found in following statement: create table my_table1g ( ... title string, ... author object(dynamic) as ( ... name string, ... birthday timestamp ... ), ... INDEX author_title_ft using fulltext(title, author['name']) ... )
+
+Detected: Duplicate Column Names Found in following statement: create table b (v boolean primary key)
+ in following column v and in column v of table t
+Detected: Clone Tables Found in following statement: create table t2 (y int)
+
+Detected: Clone Tables Found in following statement: create table test (id int primary key, c int)
+
+Detected: Obsolete Column TypesFound in following statement: create table articles ( id integer primary key, name string, price float )
+ in following column price of table articles
+Detected: Clone Tables Found in following statement: create table t (o object as (i int primary key, name string))
+
+Detected: Clone Tables Found in following statement: create table test (col1 string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS date_trunc('day', col1))
+
+Detected: Clone Tables Found in following statement: create table test (a string, b int)
+
+Detected: Clone Tables Found in following statement: create table t (o object as (x int))
+
+Detected: Clone Tables Found in following statement: create table test (a object as (x object as (y int, z int)))
+
+Detected: Obsolete Column TypesFound in following statement: create table articles (price float, name string)
+ in following column price of table articles
+Detected: Clone Tables Found in following statement: create table test (prime long, primes array(long), unique_dates set(timestamp))
+
+Detected: Clone Tables Found in following statement: create table my_table15 ( ... title string, ... details object(ignored) as ( ... num_pages integer, ... font_size float ... ) ... )
+
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, details array(object as (names array(string))))
+
+Detected: Duplicate Column Names Found in following statement: create table test (col1 integer primary key, col2 string)
+ in following column col2 and in column col2 of table export
+Detected: Duplicate Column Names Found in following statement: create table t (b byte, s short, i integer, l long, f float, d double, t timestamp)
+ in following column t and in column t of table \
+Detected: Clone Tables Found in following statement: create table test (col1 geo_shape INDEX using QUADTREE with (distance_error_pct=true))
+
+Detected: Clone Tables Found in following statement: create table my_table11 ( ... title string, ... author string ... )
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update generated_column set ts = ?, user = ?  where id = ?
+
+Detected: Duplicate Column Names Found in following statement: create table test (first_name string, last_name string, age double)
+ in following column age and in column age of table test2
+Detected: Clone Tables Found in following statement: create table t (p geo_point)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo ( id integer primary key, name varchar(255), date datetime, fruits set('apple', 'pear', 'banana') )
+ in following column date and in column date of table parted
+Detected: Clone Tables Found in following statement: create table test (col1 geo_shape INDEX using QUADTREE with (does_not_exist=false))
+
+Detected: Clone Tables Found in following statement: create table t (id integer primary key, name string, female boolean)
+
+Detected: Multicolumn Attribute Found in following statement: create table target(col1 integer primary key, col2 integer not null)
+
+Detected: Multicolumn Attribute Found in following statement: create table export(col1 integer, col2 int)
+
+Detected: Duplicate Column Names Found in following statement: create table t2 (y integer)
+ in following column y and in column y of table t4
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 integer, col2 string)
+
+Detected: Obsolete Column TypesFound in following statement: create table colors ( id integer primary key, name string, rgb string, coolness float )
+ in following column coolness of table colors
+Detected: Obsolete Column TypesFound in following statement: create table my_table3 ( ... first_column integer, ... second_column long, ... third_column short, ... fourth_column double, ... fifth_column float, ... sixth_column byte ... )
+ in following column . of table my_table3
+Detected: Obsolete Column TypesFound in following statement: create table test1 (col1 string index using fulltext)
+ in following column col1 of table test1
+Detected: Compound Attribute Variant: 1 Found in following statement: select i from regex_test where regexp_replace(s, 'is', 'was') is null
+
+Detected: Clone Tables Found in following statement: create table my_table (title string, title integer)
+
+Detected: Obsolete Column TypesFound in following statement: create table employees (salary float, name string)
+ in following column salary of table employees
+Detected: Clone Tables Found in following statement: create table t2 (a string, i integer, y integer)
+
+Detected: Clone Tables Found in following statement: create table t (id int, schema string generated always as current_schema)
+
+Detected: Clone Tables Found in following statement: create table t (ts timestamp, day int)
+
+Detected: Duplicate Column Names Found in following statement: create table foo (id integer primary key, details object as (name string, age integer))
+ in following column details and in column details of table t1
+Detected: Obsolete Column TypesFound in following statement: create table t (text string, index text_ft using fulltext (text))
+ in following column index of table t
+Detected: Clone Tables Found in following statement: create table t2 (x int)
+
+Detected: Clone Tables Found in following statement: create table locations (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table test (arr array(object as (user object as (name string primary key), id long)))
+
+Detected: Multicolumn Attribute Found in following statement: create table import (col1 int, col2 long primary key)
+
+Detected: Duplicate Column Names Found in following statement: create table foo (id integer primary key, content string INDEX using fulltext with (analyzer='german'))
+ in following column content and in column content of table my_table
+Detected: Multicolumn Attribute Found in following statement: create table test1 (col11 integer primary key, col12 float)
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, ts timestamp, day int)
+
+Detected: Clone Tables Found in following statement: create table t1 (x int primary key)
+
+Detected: Clone Tables Found in following statement: create table t (o1 array(object as (o2 array(object as (x int)))))
+
+Detected: Clone Tables Found in following statement: create table t3 (x int)
+
+Detected: Duplicate Column Names Found in following statement: create table t3 (z int)
+ in following column z and in column z of table t
+Detected: Clone Tables Found in following statement: create table test (col1 integer primary key, col2 string)
+
+Detected: Clone Tables Found in following statement: create table my_table12 ( ... title string, ... author string ... )
+
+Detected: Clone Tables Found in following statement: create table t1 (o object)
+
+Detected: Obsolete Column TypesFound in following statement: create table quotes ( id integer primary key, quote string, index quote_ft using fulltext (quote) )
+ in following column index of table quotes
+Detected: Multicolumn Attribute Found in following statement: create table bar (col1 integer primary key, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t1 (id integer)
+
+Detected: Clone Tables Found in following statement: create table test(id integer, geopos geo_point)
+
+Detected: Clone Tables Found in following statement: create table t (string name)
+
+Detected: Clone Tables Found in following statement: create table t (i int primary key, c string primary key)
+
+Detected: Clone Tables Found in following statement: create table t (name string, x int)
+
+Detected: Clone Tables Found in following statement: create table t (x object as (y object as (z int primary key)))
+
+Detected: Duplicate Column Names Found in following statement: create table t (text string index off)
+ in following column text and in column text of table t1
+Detected: Multicolumn Attribute Found in following statement: create table test(col1 integer primary key, col2 as col1 + 3 primary key)
+
+Detected: Clone Tables Found in following statement: create table t (x int primary key)
+
+Detected: Clone Tables Found in following statement: create table test (coolness object as (x string, y string))
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 string GENERATED ALWAYS AS date_trunc('day', col1))
+
+Detected: Multicolumn Attribute Found in following statement: create table target(col1 integer primary key, col2 integer primary key)
+
+Detected: Clone Tables Found in following statement: create table t (i integer, s string, primary key (i, s))
+
+Detected: Clone Tables Found in following statement: create table t3 (z int)
+
+Detected: Clone Tables Found in following statement: create table test (age integer, name string)
+
+Detected: Clone Tables Found in following statement: create table my_table (par int, par_str string, content string)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user ( ... id INT primary key, ... name STRING, ... day_joined TIMESTAMP primary key, ... bio STRING INDEX using fulltext, ... address OBJECT (dynamic) AS ( ... city STRING, ... country STRING ... ) ... )
+ in following column . of table (
+Detected: Obsolete Column TypesFound in following statement: create table test1 (col11 integer primary key, col12 float)
+ in following column col12 of table test1
+Detected: Obsolete Column TypesFound in following statement: create table t (text string index using fulltext)
+ in following column text of table t
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, strings array(string))
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 timestamp)
+
+Detected: Clone Tables Found in following statement: create table t (x long, base long)
+
+Detected: Clone Tables Found in following statement: create table t4 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table schema_equals2 (id byte, tags array(string))
+
+Detected: Clone Tables Found in following statement: create table test(col1 integer primary key, col2 as 2 * col1 primary key)
+
+Detected: Clone Tables Found in following statement: create table my_table2 ( ... first_column integer primary key, ... second_column string not null ... )
+
+Detected: Clone Tables Found in following statement: create table my_table6 ( ... first_column int, ... second_column string ... )
+
+Detected: Clone Tables Found in following statement: create table test (id int primary key, message string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 GENERATED ALWAYS AS (date_trunc('day', col1)))
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, primary key (id))
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 object as (col3 timestamp))
+
+Detected: Clone Tables Found in following statement: create table t (i int primary key, c string primary key, a int)
+
+Detected: Clone Tables Found in following statement: create table test (col1 geo_shape)
+
+Detected: Clone Tables Found in following statement: create table t (id array(int) primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table t4 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table schema_equals4 (id byte, tags array(string), col string)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer, name string INDEX using fulltext)
+ in following column name of table foo
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into t1 values ({a=['123', '456']})
+
+Detected: Clone Tables Found in following statement: create table t (o object as (x string))
+
+Detected: Multicolumn Attribute Found in following statement: create table t1 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t (i int)
+
+Detected: Clone Tables Found in following statement: create table t (content string index using fulltext with (analyzer='foobar'))
+
+Detected: Clone Tables Found in following statement: create table test (id integer, other_id long, name string)
+
+Detected: Obsolete Column TypesFound in following statement: create table t_left (id long primary key, temp float, ref_id int)
+ in following column temp of table t_left
+Detected: Clone Tables Found in following statement: create table test (a int, b int, c int not null)
+
+Detected: Obsolete Column TypesFound in following statement: create table t (content string index using fulltext with (analyzer='foobar'))
+ in following column content of table t
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer, id2 integer, INDEX id_ft using fulltext (id, id2))
+ in following column INDEX of table foo
+Detected: Clone Tables Found in following statement: create table test (object_array array(object(dynamic) as (i integer, s set(string))))
+
+Detected: Clone Tables Found in following statement: create table t (o object as (x int primary key))
+
+Detected: Clone Tables Found in following statement: create table t (c geo_point primary key)
+
+Detected: Clone Tables Found in following statement: create table test (name string)
+
+Detected: Clone Tables Found in following statement: create table my_table1b ( ... first_column string INDEX OFF ... )
+
+Detected: Clone Tables Found in following statement: create table my_table1pk1 ( ... first_column integer, ... second_column string, ... third_column string, ... primary key (first_column, second_column) ... )
+
+Detected: Duplicate Column Names Found in following statement: create table test (id int primary key, c int)
+ in following column c and in column c of table t
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS (cast(col1 as string)))
+
+Detected: Clone Tables Found in following statement: create table t (name string, p string)
+
+Detected: Clone Tables Found in following statement: create table t (o object(dynamic) as (i integer, d double))
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table1f ( ... first_column string, ... INDEX first_column_ft ... using fulltext(first_column) with (analyzer = 'english') ... )
+ in following column . of table my_table1f
+Detected: Clone Tables Found in following statement: create table t (a array(integer))
+
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, strings array(string), integers array(integer))
+
+Detected: Clone Tables Found in following statement: create table my_table2 ( ... first_column string ... )
+
+Detected: Clone Tables Found in following statement: create table t (text string, index text_ft using fulltext (text))
+
+Detected: Clone Tables Found in following statement: create table test (col1 geo_shape INDEX using QUADTREE with (precision='1m', distance_error_pct='0.25'))
+
+Detected: Duplicate Column Names Found in following statement: create table offices (id integer, name string, size integer)
+ in following column size and in column size of table employees
+Detected: Clone Tables Found in following statement: create table schema_equals6 (id byte, tags array(string), col string index off, index ft_index using fulltext(col))
+
+Detected: Clone Tables Found in following statement: create table t2 (id integer, col1 string)
+
+Detected: Clone Tables Found in following statement: create table test (name string, o object(ignored))
+
+Detected: Clone Tables Found in following statement: create table t (d double, i integer, name string)
+
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, text string index using fulltext)
+
+Detected: Clone Tables Found in following statement: create table my_table (id int, metadata object as (date timestamp))
+
+Detected: Clone Tables Found in following statement: create table my_table1b2 ( ... first_column string ... )
+
+Detected: Duplicate Column Names Found in following statement: create table colors ( id integer primary key, name string, rgb string, coolness float )
+ in following column coolness and in column coolness of table test
+Detected: Duplicate Column Names Found in following statement: create table test (a string, b int)
+ in following column b and in column b of table t
+Detected: Clone Tables Found in following statement: create table test (col1 int)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 GENERATED ALWAYS AS (date_trunc('day', col1)))
+
+Detected: Clone Tables Found in following statement: create table any2 (id integer, num long, names array(string))
+
+Detected: Clone Tables Found in following statement: create table uservisits ( id integer primary key, name string, visits integer, last_visit timestamp )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE my_table (col1 object)
+
+Detected: Clone Tables Found in following statement: create table t1 (price float)
+
+Detected: Clone Tables Found in following statement: create table t (n integer)
+
+Detected: Clone Tables Found in following statement: create table my_table8 ( ... first_column int primary key, ... second_column string primary key, ... third_column string ... )
+
+Detected: Clone Tables Found in following statement: create table test1 (col1 string index using fulltext)
+
+Detected: Clone Tables Found in following statement: create table my_table1pk ( ... first_column integer primary key, ... second_column string primary key, ... third_column string ... )
+
+Detected: Clone Tables Found in following statement: create table test (message string, person object(dynamic))
+
+Detected: Clone Tables Found in following statement: create table t (id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table schema_equals6 (id byte, tags array(string), col string index off, index ft_index using fulltext(col))
+ in following column index of table schema_equals6
+Detected: Clone Tables Found in following statement: CREATE TABLE my_table ( id INTEGER, name STRING, data OBJECT )
+
+Detected: Clone Tables Found in following statement: create table test (col1 int primary key not null, col2 timestamp)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int primary key not null, col2 timestamp)
+
+Detected: Clone Tables Found in following statement: create table test (id integer, name string, names string)
+
+Detected: Clone Tables Found in following statement: create table test (coolness array(float))
+
+Detected: Clone Tables Found in following statement: create table t(i int)
+
+Detected: Clone Tables Found in following statement: create table test (arr array(object as (id long primary key)))
+
+Detected: Clone Tables Found in following statement: create table bla (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table t1 (a string, i integer, x integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table test(col1 as 3 * col2 primary key, col2 integer)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 timestamp not null)
+
+Detected: Clone Tables Found in following statement: create table t (id integer primary key, i integer, o object)
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, p geo_point)
+
+Detected: Clone Tables Found in following statement: create table t (count int, id int)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 integer primary key, col2 string index off, age integer not null)
+
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, names array(string))
+
+Detected: Clone Tables Found in following statement: create table t (id integer, name string, primary key (id))
+
+Detected: Duplicate Column Names Found in following statement: create table t (id int primary key, i int, p geo_point)
+ in following column p and in column p of table c
+Detected: Clone Tables Found in following statement: create table t1 (col1 integer)
+
+Detected: Clone Tables Found in following statement: create table bla2 (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table t (tags array(string) index using fulltext)
+
+Detected: Clone Tables Found in following statement: create table test2 (col1a string primary key, col2a timestamp)
+
+Detected: Clone Tables Found in following statement: create table test (id int)
+
+Detected: Clone Tables Found in following statement: create table t (p string primary key, v string)
+
+Detected: Clone Tables Found in following statement: create table schema_equals3 (id byte primary key, tags array(string))
+
+Detected: Clone Tables Found in following statement: create table test (nested set(set(array(boolean))))
+
+Detected: Clone Tables Found in following statement: create table my_table1b1 ( ... first_column string INDEX using plain ... )
+
+Detected: Clone Tables Found in following statement: create table test (col1 integer, col2 string, age integer)
+
+Detected: Clone Tables Found in following statement: create table t (x string, b boolean)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parted_table ( ... id int, ... value string, ... date timestamp ... )
+ in following column . and in column . of table my_table6
+Detected: Clone Tables Found in following statement: create table t (obj object as (id int), primary key (obj['id'], obj['id']))
+
+Detected: Clone Tables Found in following statement: create table test(col1 integer primary key, col2 as col1 + 3 primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table foo (id integer, id2 integer, INDEX id_ft using fulltext (id, id2))
+
+Detected: Clone Tables Found in following statement: create table my_s1.my_table (id long)
+
+Detected: Multicolumn Attribute Found in following statement: create table t2 (col1 integer, col2 string)
+
+Detected: Obsolete Column TypesFound in following statement: create table employees (size float, name string)
+ in following column size of table employees
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 GENERATED ALWAYS AS date_trunc('day', col1))
+
+Detected: Clone Tables Found in following statement: create table t (text string index using fulltext)
+
+Detected: Clone Tables Found in following statement: create table t (id int, created timestamp generated always as current_timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer, name string, INDEX id_ft using fulltext (id, name))
+ in following column INDEX of table foo
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, names array(object as (surname string)))
+
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, text string)
+
+Detected: Clone Tables Found in following statement: create table my_table1d ( ... first_column string INDEX using fulltext with (analyzer = 'english') ... )
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table1e ( ... first_column string, ... INDEX first_column_ft using fulltext (first_column) ... )
+ in following column . of table my_table1e
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, name string primary key)
+
+Detected: Clone Tables Found in following statement: create table t (a integer not null, x string)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 object as (col3 timestamp))
+
+Detected: Duplicate Column Names Found in following statement: create table target(col1 integer primary key)
+ in following column col1 and in column col1 of table test
+Detected: Obsolete Column TypesFound in following statement: create table t2 (price float)
+ in following column price of table t2
+Detected: Obsolete Column TypesFound in following statement: create table t (b byte, s short, i integer, l long, f float, d double, t timestamp)
+ in following column f of table t
+Detected: Clone Tables Found in following statement: create table t (id int, points array(geo_point))
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, date timestamp primary key)
+
+Detected: Clone Tables Found in following statement: create table t2 (col1 integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 AS date_trunc('day', col1))
+
+Detected: Clone Tables Found in following statement: create table write_test (id int primary key, name string)
+
+Detected: Duplicate Column Names Found in following statement: create table attrs (name string, attr string, value integer)
+ in following column attr and in column attr of table object_template_mapping
+Detected: Clone Tables Found in following statement: create table test (shape geo_shape)
+
+Detected: Clone Tables Found in following statement: create table t (s string primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 timestamp)
+
+Detected: Duplicate Column Names Found in following statement: create table quotes_en (id int primary key, quote string)
+ in following column quote and in column quote of table quotes
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS col1['name'] + 1)
+
+Detected: Clone Tables Found in following statement: create table test (_id integer, name string)
+
+Detected: Clone Tables Found in following statement: create table t (lastname string, firstname string, name as (lastname || '_' || firstname))
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 string GENERATED ALWAYS AS (date_trunc('day', col1)))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parted_table (id long, text string, day timestamp)
+ in following column text and in column text of table t
+Detected: Clone Tables Found in following statement: create table t (x string, ts timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table1g ( ... title string, ... author object(dynamic) as ( ... name string, ... birthday timestamp ... ), ... INDEX author_title_ft using fulltext(title, author['name']) ... )
+ in following column . of table my_table1g
+Detected: Clone Tables Found in following statement: create table t (x long primary key)
+
+Detected: Clone Tables Found in following statement: create table test (x integer, y integer)
+
+Detected: Clone Tables Found in following statement: create table test (id string primary key)
+
+Detected: Clone Tables Found in following statement: create table t3 (id integer, col1 string)
+
+Detected: Clone Tables Found in following statement: create table t (i integer, l long, d double)
+
+Detected: Clone Tables Found in following statement: create table t (name string, b byte)
+
+Detected: Duplicate Column Names Found in following statement: create table t (count int, id int)
+ in following column count and in column count of table nodes
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, details object as (id int, more_details object as (id int)))
+
+Detected: Clone Tables Found in following statement: create table t4 (y string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 string, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t2 (col1 integer, col2 string)
+
+Detected: Compound Attribute Variant: 1 Found in following statement: select i from regex_test where regexp_matches(s, 'is') is null
+
+Detected: Clone Tables Found in following statement: create table test (ts timestamp, day as date_trunc('day', ts))
+
+Detected: Duplicate Column Names Found in following statement: create table test (col1 int, col2 GENERATED ALWAYS AS date_trunc('day', col1))
+ in following column col2 and in column col2 of table t3
+Detected: Clone Tables Found in following statement: create table t (x string)
+
+Detected: Clone Tables Found in following statement: create table t1 (id int primary key, x int)
+
+Detected: Clone Tables Found in following statement: create table t (x int, y int, z as x + y primary key)
+
+Detected: Clone Tables Found in following statement: create table t (x int)
+
+Detected: Clone Tables Found in following statement: create table schema_equals1 (id byte, tags array(string))
+
+Detected: Clone Tables Found in following statement: create table t (d long)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 AS (cast(col1 as string)))
+
+Detected: Duplicate Column Names Found in following statement: create table quotes (quote string)
+ in following column quote and in column quote of table quotes_en
+Detected: Clone Tables Found in following statement: create table test (a object as (nested integer))
+
+Detected: Clone Tables Found in following statement: create table test (id integer, name string)
+
+Detected: Clone Tables Found in following statement: create table t3 (x timestamp)
+
+Detected: Duplicate Column Names Found in following statement: create table test (id integer, name string, names string)
+ in following column names and in column names of table any1
+Detected: Clone Tables Found in following statement: create table t1 (id integer, name string, date timestamp)
+
+Detected: Clone Tables Found in following statement: create table test1 (col11 integer primary key, col12 float)
+
+Detected: Duplicate Column Names Found in following statement: create table t (d double, i integer, name string)
+ in following column d and in column d of table \
+Detected: Clone Tables Found in following statement: create table t (obj object as (x int) primary key)
+
+Detected: Clone Tables Found in following statement: create table t (dummy string)
+
+Detected: Duplicate Column Names Found in following statement: create table t (d double, i integer, name string)
+ in following column name and in column name of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE object_template_mapping ( ts TIMESTAMP, attr OBJECT(dynamic) AS ( temp FLOAT ), month STRING )
+ in following column attr of table object_template_mapping
+Detected: Obsolete Column TypesFound in following statement: create table tweets ( ... created_at timestamp, ... id string primary key, ... retweeted boolean, ... source string INDEX using fulltext, ... text string INDEX using fulltext, ... user_id string ... )
+ in following column . of table tweets
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS (date_trunc('day', col1)))
+
+Detected: Clone Tables Found in following statement: create table t (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table my_table1f ( ... first_column string, ... INDEX first_column_ft ... using fulltext(first_column) with (analyzer = 'english') ... )
+
+Detected: Compound Attribute Variant: 1 Found in following statement: select i from regex_test where regexp_matches(s, 'is') is not null
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS col1 + 1)
+
+Detected: Obsolete Column TypesFound in following statement: create table documents ( ... title string, ... body string, ... INDEX title_body_ft ... using fulltext(title, body) with (analyzer = 'english') ... )
+ in following column . of table documents
+Detected: Clone Tables Found in following statement: create table test(a integer)
+
+Detected: Clone Tables Found in following statement: create table my_table1e ( ... first_column string, ... INDEX first_column_ft using fulltext (first_column) ... )
+
+Detected: Clone Tables Found in following statement: create table test (id integer, entity integer, primary key(id, entity))
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer primary key, content string INDEX using fulltext with (analyzer=?))
+ in following column content of table foo
+Detected: Clone Tables Found in following statement: create table my_table (par int, content string)
+
+Detected: Clone Tables Found in following statement: create table t (a array(object as (b array(object as (n integer)))))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE my_table (col1 object as (col2 object))
+
+Detected: Duplicate Column Names Found in following statement: create table t (ts timestamp, day int)
+ in following column day and in column day of table foo
+Detected: Clone Tables Found in following statement: create table t3 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, x int)
+
+Detected: Clone Tables Found in following statement: create table t (c geo_shape primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 integer, col2 string, age integer)
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key, i int, p geo_point)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 timestamp not null)
+
+Detected: Clone Tables Found in following statement: create table t1 (id int, name string)
+
+Detected: Clone Tables Found in following statement: create table my_table13 ( ... title string, ... author string ... )
+
+Detected: Clone Tables Found in following statement: create table t2 (id int primary key)
+
+Detected: Multicolumn Attribute Found in following statement: create table test(col1 integer primary key, col2 as 2 * col1 primary key)
+
+Detected: Clone Tables Found in following statement: create table t (b byte, s short, i integer, l long, f float, d double, t timestamp)
+
+Detected: Obsolete Column TypesFound in following statement: create table regex_fulltext (i integer, s string INDEX USING FULLTEXT)
+ in following column s of table regex_fulltext
+Detected: Clone Tables Found in following statement: create table test (dividend integer, divisor integer, quotient integer)
+
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS date_trunc('day', col1) INDEX OFF)
+
+Detected: Clone Tables Found in following statement: create table test(col1 as 3 * col2 primary key, col2 integer)
+
+Detected: Duplicate Column Names Found in following statement: create table t (id int primary key, i int, p geo_point)
+ in following column i and in column i of table regex_noindex
+Detected: Compound Attribute Variant: 1 Found in following statement: select i from regex_test where regexp_replace(s, 'is', 'was') is not null
+
+Detected: Clone Tables Found in following statement: create table test (id string)
+
+Detected: Clone Tables Found in following statement: create table test (first_name string, last_name string, age double)
+
+Detected: Clone Tables Found in following statement: create table t1 (col string)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 string GENERATED ALWAYS AS date_trunc('day', col1))
+
+Detected: Clone Tables Found in following statement: create table t (a integer not null, b string)
+
+Detected: Multicolumn Attribute Found in following statement: create table abc (col31 integer primary key, col32 string)
+
+Detected: Clone Tables Found in following statement: create table t (o object as (ot object as (x int primary key)))
+
+Detected: Clone Tables Found in following statement: create table t1 (x int)
+
+Detected: Clone Tables Found in following statement: create table my_table1c ( ... first_column string INDEX using fulltext ... )
+
+Detected: Multicolumn Attribute Found in following statement: create table test2 (col1a string primary key, col2a timestamp)
+
+Detected: Clone Tables Found in following statement: create table t (text string index off)
+
+Detected: Clone Tables Found in following statement: create table t1 (x integer)
+
+Detected: Clone Tables Found in following statement: create table test (col1 geo_shape INDEX using QUADTREE with (precision='10%'))
+
+Detected: Clone Tables Found in following statement: create table test (message string, person object)
+
+Detected: Clone Tables Found in following statement: create table t2 (p geo_point)
+
+Detected: Clone Tables Found in following statement: create table test(id long primary key, num long, txt string)
+
+Detected: Clone Tables Found in following statement: create table schema_equals5 (id byte, tags array(string), col string index off)
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table1d ( ... first_column string INDEX using fulltext with (analyzer = 'english') ... )
+ in following column . of table my_table1d
+Detected: Clone Tables Found in following statement: create table my_table14 ( ... title string, ... author object(dynamic) as ( ... name string, ... birthday timestamp ... ) ... )
+
+Detected: Clone Tables Found in following statement: create table if not exists t (id integer primary key, name string)
+
+Detected: Clone Tables Found in following statement: create table t (x array(short))
+
+Detected: Duplicate Column Names Found in following statement: create table my_table (id integer, name string)
+ in following column id and in column id of table t
+Detected: Clone Tables Found in following statement: create table my_table13 ( ... title string, ... author object as ( ... name string, ... birthday timestamp ... ) ... )
+
+Detected: Clone Tables Found in following statement: create table locations (id integer primary key)
+
+Detected: Clone Tables Found in following statement: create table t2 (id int primary key, tags array(string))
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 AS (date_trunc('day', col1)))
+
+Detected: Clone Tables Found in following statement: create table t2 (price float, name string)
+
+Detected: Clone Tables Found in following statement: create table t (ts timestamp)
+
+Detected: Clone Tables Found in following statement: create table t1 (id int)
+
+Detected: Clone Tables Found in following statement: create table my_table (id integer, name string)
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer primary key, content string, INDEX content_ft using fulltext (content))
+ in following column INDEX of table foo
+Detected: Clone Tables Found in following statement: create table test (col1 int, col2 AS cast(col1 as string))
+
+Detected: Clone Tables Found in following statement: create table t (obj object as (id int primary key), primary key (obj['id']))
+
+Detected: Clone Tables Found in following statement: create table t3 (z integer)
+
+Detected: Clone Tables Found in following statement: create table t3 (id int primary key)
+
+Detected: Clone Tables Found in following statement: create table t1 (id integer, col1 string)
+
+Detected: Clone Tables Found in following statement: create table t (name string)
+
+Detected: Clone Tables Found in following statement: create table my_table9 ( ... first_column int primary key, ... second_column string primary key, ... third_column string ... )
+
+Detected: Clone Tables Found in following statement: create table test (id string, data object(ignored))
+
+Detected: Clone Tables Found in following statement: create table test (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table test (message string)
+
+Detected: Clone Tables Found in following statement: create table t2 (id int primary key, x string)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 AS cast(col1 as string))
+
+Detected: Duplicate Column Names Found in following statement: create table t1 (x int)
+ in following column x and in column x of table t
+Detected: Multicolumn Attribute Found in following statement: create table test2 (col21 double primary key, col22 string)
+
+Detected: Obsolete Column TypesFound in following statement: create table quotes (quote string index using fulltext)
+ in following column quote of table quotes
+Detected: Clone Tables Found in following statement: create table t (s string)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 integer primary key, col2 string)
+
+Detected: Clone Tables Found in following statement: create table my_table3 ( ... first_column integer, ... second_column long, ... third_column short, ... fourth_column double, ... fifth_column float, ... sixth_column byte ... )
+
+Detected: Clone Tables Found in following statement: create table my_table1 ( ... first_column integer primary key, ... second_column string ... )
+
+Detected: Duplicate Column Names Found in following statement: create table regex_noindex (i integer, s string INDEX OFF)
+ in following column s and in column s of table regex_fulltext
+Detected: Multicolumn Attribute Found in following statement: create table source(col1 integer, col2 integer)
+
+Detected: Clone Tables Found in following statement: create table test (id integer primary key, other_id long)
+
+Detected: Duplicate Column Names Found in following statement: create table photos ( name string, location geo_point )
+ in following column location and in column location of table departments
+Detected: Multicolumn Attribute Found in following statement: create table test2 (col1 integer, col2 string, age integer)
+
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 string GENERATED ALWAYS AS (date_trunc('day', col1)))
+
+Detected: Clone Tables Found in following statement: create table t (id int primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table hidden_test_table( ... fc string index using fulltext with(analyzer=myanalyzer) ... )
+ in following column . of table hidden_test_table
+Detected: Duplicate Column Names Found in following statement: create table foo (id integer primary key, content string, INDEX content_ft using fulltext (content))
+ in following column content and in column content of table t
+Detected: Clone Tables Found in following statement: create table t2 (y integer)
+
+Detected: Obsolete Column TypesFound in following statement: create table t1 (price float)
+ in following column price of table t1
+Detected: Clone Tables Found in following statement: create table t2 (id integer)
+
+Detected: Clone Tables Found in following statement: create table if not exists t (name string)
+
+Detected: Clone Tables Found in following statement: create table test (col1 integer primary key, col2 string index off, age integer not null)
+
+Detected: Duplicate Column Names Found in following statement: create table t (d double, i integer, name string)
+ in following column i and in column i of table tt
+Detected: Multicolumn Attribute Found in following statement: create table test (col1 int, col2 AS date_trunc('day', col1) INDEX OFF)
+
+Detected: Obsolete Column TypesFound in following statement: create table my_table1c ( ... first_column string INDEX using fulltext ... )
+ in following column . of table my_table1c
+Detected: Multicolumn Attribute Found in following statement: create table t3 (col1 integer, col2 string)
+
+Detected: Clone Tables Found in following statement: create table t1 (x long)
+
+Detected: Clone Tables Found in following statement: create table my_table4 ( ... id integer, ... first_column timestamp ... )
+
+Detected: Obsolete Column TypesFound in following statement: create table foo (id integer primary key, content string INDEX using fulltext with (analyzer='german'))
+ in following column content of table foo
+Detected: Clone Tables Found in following statement: create table my_table10 ( ... first_column int, ... second_column string ... )
+

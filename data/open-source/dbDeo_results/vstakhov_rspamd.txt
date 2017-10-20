@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x (id INT, value TEXT)
+ in following column value of table x
+Detected: Index Shotgun Variant: 1

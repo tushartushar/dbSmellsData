@@ -1,0 +1,97 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column id and in column id of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column ol_key of table import_item
+Detected: Duplicate Column Names Found in following statement: create table lccn ( rec integer, value varchar(32))
+ in following column value and in column value of table transaction_index
+Detected: Index Shotgun Variant: 3 Following index not used : ['posts', 'slug']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column error of table import_item
+Detected: Duplicate Column Names Found in following statement: create table marc_file ( id serial not null, marc_source integer not null, filename varchar(100) not null)
+ in following column filename and in column filename of table cover
+Detected: Index Shotgun Variant: 3 Following index not used : ['page', 'revision']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stats ( id serial primary key, key text unique, type text, created timestamp without time zone, updated timestamp without time zone, json text )
+ in following column json of table stats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( id serial primary key, name text unique, value int default 0 )
+ in following column name of table seq
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['posts', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column filename_m of table cover
+Detected: Obsolete Column TypesFound in following statement: create table comments ( id serial primary key, post_id int references posts(id), comment text )
+ in following column comment of table comments
+Detected: Index Shotgun Variant: 3 Following index not used : ['lccn', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['import_item', 'batch_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE waitingloan ( id serial primary key, book_key text, user_key text, status text default 'waiting', position integer, wl_size integer, since timestamp without time zone default (current_timestamp at time zone 'utc'), last_update timestamp without time zone default (current_timestamp at time zone 'utc'), expiry timestamp without time zone, available_email_sent boolean default 'f', UNIQUE (book_key, user_key) )
+ in following column status of table waitingloan
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column filename of table cover
+Detected: God Table Found in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+
+Detected: Obsolete Column TypesFound in following statement: create table transaction_index ( tx_id int references transaction, key text, value text )
+ in following column value of table transaction_index
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE waitingloan ( id serial primary key, book_key text, user_key text, status text default 'waiting', position integer, wl_size integer, since timestamp without time zone default (current_timestamp at time zone 'utc'), last_update timestamp without time zone default (current_timestamp at time zone 'utc'), expiry timestamp without time zone, available_email_sent boolean default 'f', UNIQUE (book_key, user_key) )
+ in following column user_key of table waitingloan
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column source of table cover
+Detected: Index Shotgun Variant: 3 Following index not used : ['cover', 'olid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['thing', 'get_olid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['isbn', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['waitingloan', 'status']
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column filename_s of table cover
+Detected: Index Shotgun Variant: 3 Following index not used : ['waitingloan', 'user_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cover', 'archived']
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column isbn of table cover
+Detected: Obsolete Column TypesFound in following statement: create table posts ( id int auto_increment not null primary key, slug varchar(255) unique not null, title varchar(255) not null, body text, created_on datetime default UTC_TIMESTAMP )
+ in following column body of table posts
+Detected: Index Shotgun Variant: 3 Following index not used : ['page', 'path']
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column filename_l of table cover
+Detected: Index Shotgun Variant: 3 Following index not used : ['cover', 'created']
+Detected: Index Shotgun Variant: 3 Following index not used : ['import_batch', 'submitter']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cover', 'deleted']
+Detected: Index Shotgun Variant: 3 Following index not used : ['import_batch', 'submit_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['oclc', 'value']
+Detected: Obsolete Column TypesFound in following statement: create table log ( id serial primary key, cover_id int references cover(id), action text, timestamp timestamp)
+ in following column action of table log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stats ( id serial primary key, key text unique, type text, timestamp timestamp without time zone, json text )
+ in following column type of table stats
+Detected: Obsolete Column TypesFound in following statement: create table posts ( id serial primary key, slug character varying(255) unique not null, title character varying(255) not null, body text, created_on timestamp default (current_timestamp at time zone 'utc') )
+ in following column body of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column ia_id of table import_item
+Detected: Metadata as Data Found in following statement: create table marc_source ( id serial not null, archive_id varchar(100) not null unique, name varchar(100))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column comments of table import_item
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_batch ( id serial primary key, name text, submitter text, submit_time timestamp without time zone default (current_timestamp at time zone 'utc') )
+ in following column name of table import_batch
+Detected: Index Shotgun Variant: 3 Following index not used : ['cover', 'last_modified']
+Detected: Obsolete Column TypesFound in following statement: create table comments ( id int auto_increment not null primary key, post_id int, comment text, foreign key (post_id) references posts(id) )
+ in following column comment of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_batch ( id serial primary key, name text, submitter text, submit_time timestamp without time zone default (current_timestamp at time zone 'utc') )
+ in following column submitter of table import_batch
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column source_url of table cover
+Detected: Index Shotgun Variant: 3 Following index not used : ['title', 'value']
+Detected: Obsolete Column TypesFound in following statement: create table category ( id serial primary key, name text)
+ in following column name of table category
+Detected: Index Shotgun Variant: 3 Following index not used : ['stats', 'created']
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column olid of table cover
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE seq ( id serial primary key, name text unique, value int default 0 )
+ in following column name and in column name of table marc_source
+Detected: Index Shotgun Variant: 3 Following index not used : ['import_item', 'status']
+Detected: Index Shotgun Variant: 3 Following index not used : ['import_item', 'import_time']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE import_item ( id serial primary key, batch_id integer references import_batch, added_time timestamp without time zome default (current_timestamp at time zone 'utc'), import_time timestamp without time zone, status text default 'pending', error text, ia_id text, ol_key text, comments text, UNIQUE (batch_id, ia_id) )
+ in following column status of table import_item
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE waitingloan ( id serial primary key, book_key text, user_key text, status text default 'waiting', position integer, wl_size integer, since timestamp without time zone default (current_timestamp at time zone 'utc'), last_update timestamp without time zone default (current_timestamp at time zone 'utc'), expiry timestamp without time zone, available_email_sent boolean default 'f', UNIQUE (book_key, user_key) )
+ in following column book_key of table waitingloan
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stats ( id serial primary key, key text unique, type text, created timestamp without time zone, updated timestamp without time zone, json text )
+ in following column type of table stats
+Detected: Index Shotgun Variant: 3 Following index not used : ['user', 'email']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stats ( id serial primary key, key text unique, type text, timestamp timestamp without time zone, json text )
+ in following column json of table stats
+Detected: Obsolete Column TypesFound in following statement: create table cover ( id serial primary key, category_id int references category, olid text, filename text, filename_s text, filename_m text, filename_l text, author text, ip inet, source_url text, source text, isbn text, width int, height int, archived boolean, deleted boolean default false, created timestamp default(current_timestamp at time zone 'utc'), last_modified timestamp default(current_timestamp at time zone 'utc'))
+ in following column author of table cover

@@ -1,0 +1,55 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache ( query TEXT, engine TEXT, title TEXT, fulltext TEXT, reference TEXT, id BIGINT, created_on INTEGER DEFAULT CURRENT_TIMESTAMP)
+ in following column reference of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relate_words( id INTEGER PRIMARY KEY, name TEXT UNIQUE, count INTEGER)
+ in following column name of table relate_words
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache_scores', 'passage_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta ( id INTEGER PRIMARY KEY, title TEXT, source TEXT, reference TEXT, pageviews INTEGER)
+ in following column source of table meta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE questions (rowid int primary key, question text, answer text, category text)
+ in following column answer of table questions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE questions (rowid int primary key, question text, answer text, category text)
+ in following column question of table questions
+Detected: Index Shotgun Variant: 3 Following index not used : ['meta', 'title']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE meta ( id INTEGER PRIMARY KEY, title TEXT, source TEXT, reference TEXT, pageviews INTEGER)
+ in following column id and in column id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache ( query TEXT, engine TEXT, title TEXT, fulltext TEXT, reference TEXT, id BIGINT, created_on INTEGER DEFAULT CURRENT_TIMESTAMP)
+ in following column fulltext of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE results (question int, rank int, score double, engine text, title text, fulltext text, correct boolean, reference text)
+ in following column question and in column question of table questions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache_scores(passage_id int, name text, value float)
+ in following column value of table cache_scores
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (question int, rank int, score double, engine text, title text, fulltext text, correct boolean, reference text)
+ in following column reference of table results
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['meta', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (question int, rank int, score double, engine text, title text, fulltext text, correct boolean, reference text)
+ in following column engine of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (question int, rank int, score double, engine text, title text, fulltext text, correct boolean, reference text)
+ in following column fulltext of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache_scores(passage_id int, name text, value float)
+ in following column name of table cache_scores
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache ( query TEXT, engine TEXT, title TEXT, fulltext TEXT, reference TEXT, id BIGINT, created_on INTEGER DEFAULT CURRENT_TIMESTAMP)
+ in following column title of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE meta ( id INTEGER PRIMARY KEY, title TEXT, source TEXT, reference TEXT, pageviews INTEGER)
+ in following column source and in column source of table relate_links
+Detected: Index Shotgun Variant: 3 Following index not used : ['results', 'question']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (question int, rank int, score double, engine text, title text, fulltext text, correct boolean, reference text)
+ in following column title of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE redirects ( target_id INTEGER, source_title TEXT, FOREIGN KEY(target_id) REFERENCES meta(id))
+ in following column source_title of table redirects
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['relate_words', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache ( query TEXT, engine TEXT, title TEXT, fulltext TEXT, reference TEXT, id BIGINT, created_on INTEGER DEFAULT CURRENT_TIMESTAMP)
+ in following column query of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache ( query TEXT, engine TEXT, title TEXT, fulltext TEXT, reference TEXT, id BIGINT, created_on INTEGER DEFAULT CURRENT_TIMESTAMP)
+ in following column engine of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'query']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'created_on']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta ( id INTEGER PRIMARY KEY, title TEXT, source TEXT, reference TEXT, pageviews INTEGER)
+ in following column title of table meta
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'engine']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta ( id INTEGER PRIMARY KEY, title TEXT, source TEXT, reference TEXT, pageviews INTEGER)
+ in following column reference of table meta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE questions (rowid int primary key, question text, answer text, category text)
+ in following column category of table questions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE content ( id INTEGER PRIMARY KEY, text TEXT, FOREIGN KEY(id) REFERENCES meta(id))
+ in following column text of table content
+Detected: Index Shotgun Variant: 3 Following index not used : ['redirects', 'target_id']

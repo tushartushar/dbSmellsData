@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `sqrl_pubkey` ( * `id` INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY, * `public_key` CHAR(44) NOT NULL, * `vuk` CHAR(44) NOT NULL, * `suk` CHAR(44) NOT NULL, * `disabled` TINYINT NOT NULL DEFAULT 0, * UNIQUE (`public_key`) * )
+ in following column * and in column * of table `sqrl_nonce`

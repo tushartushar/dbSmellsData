@@ -1,0 +1,13 @@
+Detected: Multicolumn Attribute Found in following statement: create table test_inserta (t timestamp, v1 int, v2 int, primary key(t))
+
+Detected: Multicolumn Attribute Found in following statement: create table test_insert (t timestamp, v1 int, v2 int, primary key(t))
+
+Detected: Multicolumn Attribute Found in following statement: create table if not exists existstest_test1(col1 int, col2 int, primary key(col1))
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table abcde1(aak1 timestamp, aak2 int, aav1 string, aav2 binary, aav3 enum, primary key(aak1, aak2))
+
+Detected: Multicolumn Attribute Found in following statement: create table test_upserta (t timestamp, v1 int, v2 int, primary key(t))
+
+Detected: Multicolumn Attribute Found in following statement: create table test_upsert (t timestamp, v1 int, v2 int, primary key(t))
+

@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: create table sample_work_item ( uuid char(36) unique not null, organisation_id int not null, test_id int not null, activity_id varchar(100) not null, package_id varchar(100) not null, xml_data text not null, xml_parent_data text, test_kind varchar(20) not null )
+ in following column xml_data of table sample_work_item
+Detected: Obsolete Column TypesFound in following statement: create table sample_work_item ( uuid char(36) unique not null, organisation_id int not null, test_id int not null, activity_id varchar(100) not null, package_id varchar(100) not null, xml_data text not null, xml_parent_data text, test_kind varchar(20) not null )
+ in following column xml_parent_data of table sample_work_item
+Detected: Index Shotgun Variant: 1

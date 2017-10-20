@@ -1,0 +1,10 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0} ( id INTEGER PRIMARY KEY, name TEXT UNIQUE, version INTEGER)
+ in following column name of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['photo_versions', 'import_md5']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users (ID INTEGER PRIMARY KEY, Name TEXT)
+ in following column Name of table Users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0} (CacheID INTEGER PRIMARY KEY, ModelID TEXT UNIQUE)
+ in following column ModelID of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Lusers (ID INTEGER PRIMARY KEY, Name TEXT)
+ in following column Name of table Lusers
+Detected: Index Shotgun Variant: 3 Following index not used : ['photos', 'roll_id']

@@ -1,0 +1,49 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['stars', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column unix_time of table images
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column path of table images
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column dec of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column x of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column airmass of table images
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column ra of table stars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column UNIQUE and in column UNIQUE of table light_curves
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS candidate_parameters ( id INTEGER PRIMARY KEY, pparams_id INTEGER NOT NULL, filter_id INTEGER NOT NULL, stdev REAL NOT NULL, FOREIGN KEY (pparams_id) REFERENCES photometric_parameters(id), FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (pparams_id, filter_id))
+ in following column stdev of table candidate_parameters
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['images', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS light_curves ( id INTEGER PRIMARY KEY, star_id INTEGER NOT NULL, image_id INTEGER NOT NULL, magnitude REAL NOT NULL, snr REAL, FOREIGN KEY (star_id) REFERENCES stars(id), FOREIGN KEY (image_id) REFERENCES images(id), UNIQUE (star_id, image_id))
+ in following column snr of table light_curves
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column epoch of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column pm_dec of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column pm_ra of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column imag of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column ra of table images
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS stars ( id INTEGER PRIMARY KEY, x REAL NOT NULL, y REAL NOT NULL, ra REAL NOT NULL, dec REAL NOT NULL, epoch REAL NOT NULL, pm_ra REAL, pm_dec REAL, imag REAL NOT NULL)
+ in following column y of table stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column gain of table images
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cmp_stars ( id INTEGER PRIMARY KEY, star_id INTEGER NOT NULL, filter_id INTEGER NOT NULL, cstar_id INTEGER NOT NULL, stdev REAL NOT NULL, weight REAL NOT NULL, FOREIGN KEY (star_id) REFERENCES stars(id), FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), FOREIGN KEY (cstar_id) REFERENCES stars(id))
+ in following column stdev of table cmp_stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cmp_stars ( id INTEGER PRIMARY KEY, star_id INTEGER NOT NULL, filter_id INTEGER NOT NULL, cstar_id INTEGER NOT NULL, stdev REAL NOT NULL, weight REAL NOT NULL, FOREIGN KEY (star_id) REFERENCES stars(id), FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), FOREIGN KEY (cstar_id) REFERENCES stars(id))
+ in following column weight of table cmp_stars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column dec of table images
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['photometric_parameters', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS images ( id INTEGER PRIMARY KEY, path TEXT NOT NULL, filter_id INTEGER, unix_time REAL, object TEXT, airmass REAL, gain REAL, ra REAL NOT NULL, dec REAL NOT NULL, sources INTEGER NOT NULL, FOREIGN KEY (filter_id) REFERENCES photometric_filters(id), UNIQUE (filter_id, unix_time))
+ in following column object of table images
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['photometric_filters', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS light_curves ( id INTEGER PRIMARY KEY, star_id INTEGER NOT NULL, image_id INTEGER NOT NULL, magnitude REAL NOT NULL, snr REAL, FOREIGN KEY (star_id) REFERENCES stars(id), FOREIGN KEY (image_id) REFERENCES images(id), UNIQUE (star_id, image_id))
+ in following column magnitude of table light_curves

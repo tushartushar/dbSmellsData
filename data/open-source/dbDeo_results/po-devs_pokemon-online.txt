@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['trainers', 'ban_expire_time']
+Detected: Compound Attribute Variant: 3 Found in following statement: update trainers set laston=:laston, auth=:auth, banned=:banned, salt=:salt, hash=:hash, ip=:ip, ban_expire_time=:banexpire  where name=:name
+

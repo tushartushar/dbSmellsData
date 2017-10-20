@@ -1,0 +1,11 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatatest', 'upper']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE prep (a integer, b integer)
+ in following column a and in column a of table batch_perf_test
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatatest', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatatest', 'quest']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE prep (a integer, b integer)
+ in following column b and in column b of table batch_perf_test
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatatest', 'colour']
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatatest', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mixednulltest (key serial primary key, value text)
+ in following column value of table mixednulltest

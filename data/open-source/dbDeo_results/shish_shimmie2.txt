@@ -1,0 +1,30 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['aliases', 'newtag']
+Detected: Index Shotgun Variant: 3 Following index not used : ['note_request', 'image_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'width']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bans', 'end_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['forum_posts', 'date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bookmark', 'owner_id']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE images SET filename = :filename, filesize = :filesize,hash = :hash,ext = :ext, width = :width, height = :height, source = :sourceWHERE id = :idWHERE id = :id
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['forum_threads', 'date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['numeric_score_votes', 'score']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'image_id']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE images SET filename = :filename, filesize = :filesize, hash = :hash, width = :width, height = :heightWHERE id = :idWHERE id = :id
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'owner_ip']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'hash']
+Detected: Index Shotgun Variant: 3 Following index not used : ['blocks', 'pages']
+Detected: Index Shotgun Variant: 3 Following index not used : ['private_message', 'to_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'height']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE images SET filename = :filename, filesize = :filesize,hash = :hash, width = :width, height = :heightWHERE id = :idWHERE id = :id
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['image_tags', 'tag_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'rating']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_favorites', 'image_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'favorites']
+Detected: Index Shotgun Variant: 3 Following index not used : ['note_histories', 'image_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['images', 'numeric_score']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config( * name VARCHAR(255) NOT NULL, * value TEXT * )
+ in following column * of table config
+Detected: Index Shotgun Variant: 3 Following index not used : ['numeric_score_votes', 'image_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'posted']

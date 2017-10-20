@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['SYS_FOREIGN', 'FOR_NAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['SYS_FOREIGN', 'REF_NAME']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE SYS_TABLES SET ID = :new_id, SPACE = :space  WHERE ID = :old_id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE SYS_INDEXES SET TABLE_ID = :new_id, SPACE = :space  WHERE TABLE_ID = :old_id
+

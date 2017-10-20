@@ -1,0 +1,6 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `example` (a TEXT, b TEXT)
+ in following column a of table `example`
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['pdo_group', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `example` (a TEXT, b TEXT)
+ in following column b of table `example`

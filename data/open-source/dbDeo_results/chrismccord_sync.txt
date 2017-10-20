@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE projects (id INTEGER PRIMARY KEY, name TEXT)
+ in following column name of table projects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE todos (id INTEGER PRIMARY KEY, name TEXT, complete BOOLEAN, user_id INTEGER)
+ in following column name of table todos
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, cool BOOLEAN, group_id INTEGER, project_id INTEGER, age INTEGER)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (id INTEGER PRIMARY KEY, name TEXT)
+ in following column name of table (

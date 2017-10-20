@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE widgets (sku varchar(10) NOT NULL PRIMARY KEY, name text NOT NULL, qty integer NOT NULL)
+ in following column name of table widgets
+Detected: Index Shotgun Variant: 1

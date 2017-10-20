@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (plugin text, time timeuuid, stat map<text,float>, PRIMARY KEY (plugin, time))
+ in following column plugin of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (plugin text, time timeuuid, stat map<text,float>, PRIMARY KEY (plugin, time))
+ in following column stat of table %s

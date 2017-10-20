@@ -1,0 +1,18 @@
+Detected: Obsolete Column TypesFound in following statement: create table passwd (passwd_id integer primary key autoincrement, passwd text)
+ in following column passwd of table passwd
+Detected: Obsolete Column TypesFound in following statement: create table essid (essid_id integer primary key autoincrement, essid text, prio integer default 64)
+ in following column essid of table essid
+Detected: Duplicate Column Names Found in following statement: create table pmk (pmk_id integer primary key autoincrement, passwd_id int, essid_id int, pmk blob)
+ in following column essid_id and in column essid_id of table workbench
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE clients set speed = ?, last = datetime where id = ?
+
+Detected: Metadata as Data Found in following statement: create table nets (bssid varchar(255), pass varchar(255),			state integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['workbench', 'lockid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE essid (essid_id integer primary key autoincrement, essid text, prio integer default 64)
+ in following column essid of table essid
+Detected: Duplicate Column Names Found in following statement: create table clients (id varchar(255),			speed integer, last datetime)
+ in following column id and in column id of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['pmk', 'passwd_id']
+Detected: Duplicate Column Names Found in following statement: create table passwd (passwd_id integer primary key autoincrement, passwd text)
+ in following column passwd_id and in column passwd_id of table pmk

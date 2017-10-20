@@ -1,0 +1,885 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['mucService', 'serviceID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL)
+ in following column rosterGroup and in column rosterGroup of table ofPubsubNodeGroups
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username VARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword VARCHAR(32), encryptedPassword VARCHAR(255), name VARCHAR(100), email VARCHAR(100), creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column naturalName and in column naturalName of table mucRoom2
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveRoster', 'jid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pubsubItem ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload TEXT NULL, CONSTRAINT pubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table pubsubItem
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50), INDEX gatewayRstr_ttype_idx(transportType), INDEX gatewayRstr_uname_idx(username))
+ in following column transportType and in column transportType of table ofGatewayRegistration
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50))
+
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup( workgroupID INTEGER NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50), description VARCHAR(255) , chatserver VARCHAR(255) , status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule LONG VARCHAR, CONSTRAINT fpworkgroup_pk PRIMARY KEY (workgroupID))
+
+Detected: God Table Found in following statement: CREATE TABLE pfRules ( id SERIAL, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT pfRules_id PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column createDate and in column createDate of table ofGatewayAvatars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column logEnabled and in column logEnabled of table mucRoom2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column canChangeNick and in column canChangeNick of table mucRoom2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivacyList ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, isDefault INTEGER NOT NULL, list TEXT NOT NULL, CONSTRAINT ofPrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table ofPrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofBookmarkProp ( bookmarkID BIGINT NOT NULL, name NVARCHAR(100) NOT NULL, propValue NTEXT NOT NULL, CONSTRAINT ofBookmarkProp_pk PRIMARY KEY (bookmarkID, name))
+ in following column bookmarkID and in column bookmarkID of table ofBookmarkPerm
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column subscriptionType and in column subscriptionType of table ofPubsubSubscription
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofRemoteServerConf ( xmppDomain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL, PRIMARY KEY (xmppDomain))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroupProp ( ownerID INT NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT, CONSTRAINT fpWorkgroupProp_pk PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpWorkgroupProp
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR2(50) NOT NULL, naturalName VARCHAR2(255) NOT NULL, description VARCHAR2(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INTEGER NOT NULL, maxUsers INTEGER NOT NULL, publicRoom INTEGER NOT NULL, moderated INTEGER NOT NULL, membersOnly INTEGER NOT NULL, canInvite INTEGER NOT NULL, roomPassword VARCHAR2(50) NULL, canDiscoverJID INTEGER NOT NULL, logEnabled INTEGER NOT NULL, subject VARCHAR2(100) NULL, rolesToBroadcast INTEGER NOT NULL, useReservedNick INTEGER NOT NULL, canChangeNick INTEGER NOT NULL, canRegister INTEGER NOT NULL, allowpm INTEGER NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column subscriptionDepth and in column subscriptionDepth of table pubsubSubscription
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ofPubsubSubscription SET owner=?, state=?, deliver=?, digest=? WHERE serviceID=? AND nodeID=? AND id=?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayVCards', 'jid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pubsubNodeGroups', 'nodeID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPresence ( username NVARCHAR(64) NOT NULL, offlinePresence NTEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlineDate and in column offlineDate of table jivePresence
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column creationDate and in column creationDate of table pubsubItem
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubNode ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, leaf INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, parent VARCHAR(100), deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER, persistItems INTEGER, maxItems INTEGER, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, configSubscription INTEGER NOT NULL, accessModel VARCHAR(10) NOT NULL, payloadType VARCHAR(100), bodyXSLT VARCHAR(100), dataformXSLT VARCHAR(100), creator VARCHAR(1024) NOT NULL, description VARCHAR(255), language VARCHAR(255), name VARCHAR(50), replyPolicy VARCHAR(15), associationPolicy VARCHAR(15), maxLeafNodes INTEGER, CONSTRAINT ofPubsubNode_pk PRIMARY KEY (serviceID, nodeID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column showValues and in column showValues of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column sendItemSubscribe and in column sendItemSubscribe of table pubsubDefaultConf
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionMetadata( sessionID varchar(31) NOT NULL, metadataName varChar(200) NOT NULL, metadataValue LONG VARCHAR NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofProperty ( name VARCHAR2(100) NOT NULL, propValue VARCHAR2(4000) NOT NULL, CONSTRAINT ofProperty_pk PRIMARY KEY (name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveExtComponentConf ( subdomain VARCHAR(255) NOT NULL, secret VARCHAR(255), permission VARCHAR(10) NOT NULL, PRIMARY KEY (subdomain))
+ in following column subdomain and in column subdomain of table ofExtComponentConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(4000) NOT NULL, CONSTRAINT jiveSASLAuthoirzed_pk PRIMARY KEY (username, principal))
+ in following column principal and in column principal of table ofSASLAuthorized
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSetting ( workgroupName VARCHAR(255) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(255) NOT NULL, value TEXT NOT NULL, PRIMARY KEY (workgroupName, name, namespace))
+ in following column value of table fpSetting
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofConversation', 'startDate']
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpWorkgroupProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue VARCHAR(4000) NOT NULL, PRIMARY KEY (ownerID,name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofProperty ( name NVARCHAR(100) NOT NULL, propValue NTEXT NOT NULL, CONSTRAINT ofProperty_pk PRIMARY KEY (name))
+ in following column propValue of table ofProperty
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPresence ( username VARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate VARCHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlineDate and in column offlineDate of table jivePresence
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column accessModel and in column accessModel of table pubsubDefaultConf
+Detected: Index Shotgun Variant: 3 Following index not used : ['pfRules', 'id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofPubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL, INDEX ofPubsubNodeGroups_idx (serviceID, nodeID))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column body of table ofMucConversationLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofExtComponentConf ( subdomain VARCHAR2(255) NOT NULL, wildcard INTEGER NOT NULL, secret VARCHAR2(255), permission VARCHAR2(10) NOT NULL, CONSTRAINT ofExtComponentConf_pk PRIMARY KEY (subdomain))
+ in following column subdomain and in column subdomain of table jiveExtComponentConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePresence ( username VARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate CHAR(15) NOT NULL, PRIMARY KEY (username))
+ in following column offlinePresence of table jivePresence
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpWorkgroup', 'workgroupID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveUserFlag ( username VARCHAR2(64) NOT NULL, name VARCHAR2(100) NOT NULL, startTime CHAR(15), endTime CHAR(15), CONSTRAINT jiveUserFlag_pk PRIMARY KEY (username, name))
+ in following column startTime and in column startTime of table ofUserFlag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePrivacyList ( username NVARCHAR(32) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list NTEXT NOT NULL, CONSTRAINT jivePrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table jivePrivacyList
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofBookmarkProp ( bookmarkID BIGINT NOT NULL, name NVARCHAR(100) NOT NULL, propValue NTEXT NOT NULL, CONSTRAINT ofBookmarkProp_pk PRIMARY KEY (bookmarkID, name))
+ in following column propValue of table ofBookmarkProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mucRoomProp ( roomID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (roomID, name))
+ in following column propValue of table mucRoomProp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPrivate ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(200) NOT NULL, privateData VARCHAR(2000) NOT NULL, CONSTRAINT ofPrivate_pk PRIMARY KEY (username, name, namespace))
+ in following column namespace and in column namespace of table fpSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayVCards ( jid VARCHAR(255) NOT NULL, value MEDIUMTEXT NOT NULL, PRIMARY KEY (jid))
+ in following column value of table gatewayVCards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column messageType of table ofGojaraStatistics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMessageArchive ( messageID		 BIGINT			 NULL, conversationID BIGINT NOT NULL, fromJID VARCHAR(255) NOT NULL, fromJIDResource VARCHAR(100) NULL, toJID VARCHAR(255) NOT NULL, toJIDResource VARCHAR(100) NULL, sentDate BIGINT NOT NULL, stanza			 TEXT			 NULL, body TEXT, INDEX ofMessageArchive_con_idx (conversationID), INDEX ofMessageArchive_fromjid_idx (fromJID), INDEX ofMessageArchive_tojid_idx (toJID))
+ in following column stanza of table ofMessageArchive
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID NVARCHAR(31) NOT NULL, userID NVARCHAR(200) NOT NULL, workgroupID INT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INT, state int NOT NULL, caseID NVARCHAR(20), status CHAR(15), notes TEXT, CONSTRAINT fpSession_pk PRIMARY KEY (sessionID))
+ in following column notes of table fpSession
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofGroupUser ( groupName VARCHAR(50) NOT NULL, username VARCHAR2(100) NOT NULL, administrator INTEGER NOT NULL, CONSTRAINT ofGroupUser_pk PRIMARY KEY (groupName, username, administrator))
+ in following column administrator and in column administrator of table fpQueueAgent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofOffline ( username VARCHAR(64) NOT NULL, messageID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, messageSize INTEGER NOT NULL, stanza TEXT NOT NULL, CONSTRAINT ofOffline_pk PRIMARY KEY (username, messageID))
+ in following column stanza of table ofOffline
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpAgentSession( sessionID varchar(31) NOT NULL, agentJID varchar(255) NOT NULL, joinTime CHAR(15) NOT NULL, leftTime CHAR(15))
+ in following column sessionID and in column sessionID of table fpSessionMetadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofSecurityAuditLog', 'username']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column subject and in column subject of table ofMucRoom
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column workgroupID and in column workgroupID of table fpSearchIndex
+Detected: Metadata as Data Found in following statement: CREATE TABLE pubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL, INDEX pubsubNodeGroups_idx (serviceID, nodeID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column deliver and in column deliver of table pubsubSubscription
+Detected: God Table Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY(10,2), ruleorder BIGINT, type varchar(255), tojid varchar(255), fromjid varchar(255), rulef varchar(255), disabled bit, log bit, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpDispatcherProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue varchar(4000) NOT NULL, PRIMARY KEY (ownerID,name))
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubNode ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, leaf INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, parent NVARCHAR(100) NULL, deliverPayloads INT NOT NULL, maxPayloadSize INT NULL, persistItems INT NULL, maxItems INT NULL, notifyConfigChanges INT NOT NULL, notifyDelete INT NOT NULL, notifyRetract INT NOT NULL, presenceBased INT NOT NULL, sendItemSubscribe INT NOT NULL, publisherModel NVARCHAR(15) NOT NULL, subscriptionEnabled INT NOT NULL, configSubscription INT NOT NULL, accessModel NVARCHAR(10) NOT NULL, payloadType NVARCHAR(100) NULL, bodyXSLT NVARCHAR(100) NULL, dataformXSLT NVARCHAR(100) NULL, creator NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, language NVARCHAR(255) NULL, name NVARCHAR(50) NULL, replyPolicy NVARCHAR(15) NULL, associationPolicy NVARCHAR(15) NULL, maxLeafNodes INT NULL, CONSTRAINT ofPubsubNode_pk PRIMARY KEY (serviceID, nodeID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofRosterGroups ( rosterID INTEGER NOT NULL, rank INTEGER NOT NULL, groupName VARCHAR2(255) NOT NULL, CONSTRAINT ofRosterGroups_pk PRIMARY KEY (rosterID, rank))
+ in following column rosterID and in column rosterID of table ofRoster
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting ( workgroupNode NVARCHAR(100), type INT, label NVARCHAR(100), description NVARCHAR(255), name NVARCHAR(100), value TEXT, defaultValue TEXT)
+ in following column defaultValue of table fpChatSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucAffiliation ( roomID BIGINT NOT NULL, jid TEXT NOT NULL, affiliation TINYINT NOT NULL, PRIMARY KEY (roomID,jid(70)))
+ in following column jid of table ofMucAffiliation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting( workgroupNode varchar(100), type int, label varchar(100), description varchar(255), name varchar(100), value text, defaultValue text, INDEX fpChatSetting_idx(workgroupNode, name))
+ in following column value of table fpChatSetting
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofConversation ( conversationID BIGINT NOT NULL, room VARCHAR(255) NULL, isExternal TINYINT NOT NULL, startDate BIGINT NOT NULL, lastActivity BIGINT NOT NULL, messageCount INT NOT NULL, PRIMARY KEY (conversationID), INDEX ofConversation_ext_idx (isExternal), INDEX ofConversation_start_idx (startDate), INDEX ofConversation_last_idx (lastActivity))
+ in following column lastActivity and in column lastActivity of table ofGojaraSessions
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayRestrictions', 'transportType']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(200) NOT NULL, workgroupID INTEGER NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INTEGER, state INTEGER NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID))
+ in following column transcript of table fpSession
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pubsubItem ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload TEXT NULL, CONSTRAINT pubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table pubsubItem
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column fromJID of table ofGojaraStatistics
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGojaraSessions( username 			varchar(255) NOT NULL, transport 		varchar(255) NOT NULL, lastActivity		BIGINT		 NOT NULL, PRIMARY KEY(username, transport))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jivePrivacyList ( username NVARCHAR(32) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list NTEXT NOT NULL, CONSTRAINT jivePrivacyList_pk PRIMARY KEY (username, name))
+ in following column list and in column list of table ofPrivacyList
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofProperty ( name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofProperty_pk PRIMARY KEY (name))
+ in following column propValue of table ofProperty
+Detected: God Table Found in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(200) NOT NULL, workgroupID INTEGER NOT NULL, transcript LONG, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INTEGER, state int NOT NULL, caseID varchar(20), status CHAR(15), notes VARCHAR(4000), CONSTRAINT fpSession_pk PRIMARY KEY (sessionID))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveSASLAuthorized ( username VARCHAR(64) NOT NULL, principal VARCHAR(4000) NOT NULL, CONSTRAINT jiveSASLAuthorized_pk PRIMARY KEY (username, principal))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcher( queueID INTEGER NOT NULL, name VARCHAR(50) NULL, description VARCHAR(255) NULL, offerTimeout INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, PRIMARY KEY (queueID))
+ in following column offerTimeout and in column offerTimeout of table fpWorkgroup
+Detected: Index Shotgun Variant: 3 Following index not used : ['mucRoom', 'serviceID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column notifyRetract and in column notifyRetract of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column moderated and in column moderated of table mucRoom2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucServiceProp ( serviceID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column propValue of table ofMucServiceProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofSecurityAuditLog ( msgID BIGINT NOT NULL, username VARCHAR(64) NOT NULL, entryStamp BIGINT NOT NULL, summary VARCHAR(255) NOT NULL, node VARCHAR(255) NOT NULL, details TEXT, PRIMARY KEY (msgID), INDEX ofSecurityAuditLog_tstamp_idx (entryStamp), INDEX ofSecurityAuditLog_uname_idx (username))
+ in following column details of table ofSecurityAuditLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column state and in column state of table fpSession
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucServiceProp ( serviceID INT NOT NULL, name VARCHAR2(100) NOT NULL, propValue VARCHAR2(1024) NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column serviceID and in column serviceID of table ofPubsubNodeJIDs
+Detected: God Table Found in following statement: CREATE TABLE ofPfRules( id INT NOT NULL, ruleorder INT , type varchar2(255) , tojid varchar2(255) , fromjid varchar2(255) , rulef varchar2(255) , disabled INT, log INT, description varchar2(255), sourcetype varchar2(255), desttype varchar2(255), CONSTRAINT ofPfRules_pk PRIMARY KEY (id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveRemoteServerConf2 ( xmppDomain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivacyList ( username NVARCHAR(64) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list NTEXT NOT NULL, CONSTRAINT ofPrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table ofPrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column canChangeSubject and in column canChangeSubject of table mucRoom2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofUserProp ( username NVARCHAR(64) NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofUserProp_pk PRIMARY KEY (username, name))
+ in following column propValue of table ofUserProp
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT ofPubsubSubscription_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column minchats and in column minchats of table fpAgent
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50), INDEX gatewayRstr_ttype_idx(transportType), INDEX gatewayRstr_uname_idx(username))
+ in following column groupname and in column groupname of table ofGatewayRestrictions
+Detected: Metadata as Data Found in following statement: CREATE TABLE pubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL)
+
+Detected: God Table Found in following statement: CREATE TABLE ofPfRules ( id SERIAL, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT pfRules_id PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username NVARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword NVARCHAR(32) NULL, encryptedPassword NVARCHAR(255) NULL, name NVARCHAR(100) NULL, email VARCHAR(100) NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mucRoomProp ( roomID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT mucRoomProp_pk PRIMARY KEY (roomID, name))
+ in following column propValue of table mucRoomProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INT NOT NULL, messageID INT NOT NULL, sender TEXT NOT NULL, nickname NVARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject NVARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column body of table ofMucConversationLog
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofSecurityAuditLog ( msgID INTEGER NOT NULL, username VARCHAR(64) NOT NULL, entryStamp BIGINT NOT NULL, summary VARCHAR(255) NOT NULL, node VARCHAR(255) NOT NULL, details TEXT, CONSTRAINT ofSecurityAuditLog_pk PRIMARY KEY (msgID))
+ in following column details of table ofSecurityAuditLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column persistItems and in column persistItems of table pubsubDefaultConf
+Detected: God Table Found in following statement: CREATE TABLE pubsubDefaultConf ( serviceID VARCHAR(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR(10) NOT NULL, language VARCHAR(255) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT pubsubDefConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column toJID and in column toJID of table ofMessageArchive
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column language and in column language of table pubsubDefaultConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpDispatcherProp ( ownerID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpDispatcherProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INTEGER NOT NULL, messageID INTEGER NOT NULL, sender VARCHAR(1024) NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column body of table ofMucConversationLog
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveRoster', 'username']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting ( workgroupNode NVARCHAR(100), type INT, label NVARCHAR(100), description NVARCHAR(255), name NVARCHAR(100), value TEXT, defaultValue TEXT)
+ in following column value of table fpChatSetting
+Detected: Clone Tables Found in following statement: CREATE TABLE jiveRemoteServerConf ( domain VARCHAR2(255) NOT NULL, remotePort INTEGER, permission VARCHAR2(10) NOT NULL, CONSTRAINT jiveRemoteServerConf_pk PRIMARY KEY (domain))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpagent', 'agentJID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofRoster ( rosterID INTEGER NOT NULL, username NVARCHAR(64) NOT NULL, jid TEXT NOT NULL, sub INTEGER NOT NULL, ask INTEGER NOT NULL, recv INTEGER NOT NULL, nick NVARCHAR(255) NULL, CONSTRAINT ofRoster_pk PRIMARY KEY (rosterID))
+ in following column jid of table ofRoster
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column component of table ofGojaraStatistics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMessageArchive ( messageID		 BIGINT			 NULL, conversationID INTEGER NOT NULL, fromJID VARCHAR(1024) NOT NULL, fromJIDResource VARCHAR(1024) NULL, toJID VARCHAR(1024) NOT NULL, toJIDResource VARCHAR(1024) NULL, sentDate BIGINT NOT NULL, stanza			 TEXT			 NULL, body TEXT)
+ in following column body of table ofMessageArchive
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpRouteRule ( workgroupID INTEGER NOT NULL, queueID INTEGER NOT NULL, rulePosition INTEGER NOT NULL, query TEXT)
+ in following column query of table fpRouteRule
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username NVARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword NVARCHAR(32), encryptedPassword NVARCHAR(255), name NVARCHAR(100), email VARCHAR(100), creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID NVARCHAR(100) NOT NULL, leaf INT NOT NULL, deliverPayloads INT NOT NULL, maxPayloadSize INT NOT NULL, persistItems INT NOT NULL, maxItems INT NOT NULL, notifyConfigChanges INT NOT NULL, notifyDelete INT NOT NULL, notifyRetract INT NOT NULL, presenceBased INT NOT NULL, sendItemSubscribe INT NOT NULL, publisherModel NVARCHAR(15) NOT NULL, subscriptionEnabled INT NOT NULL, accessModel NVARCHAR(10) NOT NULL, language NVARCHAR(255) NULL, replyPolicy NVARCHAR(15) NULL, associationPolicy NVARCHAR(15) NOT NULL, maxLeafNodes INT NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpAgentProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpAgentProp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column maxPayloadSize and in column maxPayloadSize of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucServiceProp ( serviceID INT NOT NULL, name VARCHAR2(100) NOT NULL, propValue VARCHAR2(1024) NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column propValue and in column propValue of table ofProperty
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayPseudoRoster ( registrationID BIGINT NOT NULL, username VARCHAR(255) NOT NULL, nickname VARCHAR(255), groups VARCHAR(255), INDEX gatewayPsRs_regid_idx(registrationID), INDEX gatewayPsRs_uname_idx(username))
+ in following column groups and in column groups of table ofGatewayPseudoRoster
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50), INDEX ofGatewayRestrictions_ttype_idx(transportType), INDEX ofGatewayRestrictions_uname_idx(username))
+
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID INTEGER NOT NULL, roomID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR(50) NOT NULL, naturalName VARCHAR(255) NOT NULL, description VARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15), canChangeSubject INTEGER NOT NULL, maxUsers INTEGER NOT NULL, publicRoom INTEGER NOT NULL, moderated INTEGER NOT NULL, membersOnly INTEGER NOT NULL, canInvite INTEGER NOT NULL, roomPassword VARCHAR(50), canDiscoverJID INTEGER NOT NULL, logEnabled INTEGER NOT NULL, subject VARCHAR(100), rolesToBroadcast INTEGER NOT NULL, useReservedNick INTEGER NOT NULL, canChangeNick INTEGER NOT NULL, canRegister INTEGER NOT NULL, allowpm INTEGER NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting ( workgroupNode varchar(100), type INTEGER, label varchar(100), description varchar(255), name varchar(100), value TEXT, defaultValue TEXT)
+ in following column defaultValue of table fpChatSetting
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR(100) NOT NULL, leaf TINYINT NOT NULL, deliverPayloads TINYINT NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems TINYINT NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges TINYINT NOT NULL, notifyDelete TINYINT NOT NULL, notifyRetract TINYINT NOT NULL, presenceBased TINYINT NOT NULL, sendItemSubscribe TINYINT NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled TINYINT NOT NULL, accessModel VARCHAR(10) NOT NULL, language VARCHAR(255) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, PRIMARY KEY (serviceID, leaf))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column subscriptionEnabled and in column subscriptionEnabled of table pubsubDefaultConf
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroup ( groupName VARCHAR2(50) NOT NULL, description VARCHAR2(255), CONSTRAINT ofGroup_pk PRIMARY KEY (groupName))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpQueue', 'queueID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column stanza of table ofMucConversationLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column stanza and in column stanza of table jiveOffline2
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucRoomProp ( roomID INT NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofMucRoomProp_pk PRIMARY KEY (roomID, name))
+ in following column propValue of table ofMucRoomProp
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveUserFlag', 'endTime']
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpagent', 'agentID']
+Detected: God Table Found in following statement: create table ofSipUser (	username varchar(255) not null,	sipUsername varchar(255),	sipAuthuser varchar(255),	sipDisplayName varchar(255),	sipPassword varchar(255),	sipServer varchar(255),	stunServer varchar(255),	stunPort varchar(255),	useStun integer,	voicemail varchar(255),	enabled integer,	status varchar(255),	outboundproxy VARCHAR(255) NULL,	promptCredentials INTEGER NULL, PRIMARY KEY (username))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID INTEGER NOT NULL, messageID INTEGER NOT NULL, sender VARCHAR(1024) NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column messageID and in column messageID of table ofOffline
+Detected: God Table Found in following statement: CREATE TABLE pfRules ( id BIGINT NOT NULL AUTO_INCREMENT, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column legacyIdentifier and in column legacyIdentifier of table ofGatewayAvatars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayVCards ( jid VARCHAR(255) NOT NULL, value TEXT NOT NULL)
+ in following column value of table ofGatewayVCards
+Detected: Clone Tables Found in following statement: CREATE TABLE jiveRemoteServerConf ( domain NVARCHAR(255) NOT NULL, remotePort INTEGER, permission NVARCHAR(10) NOT NULL, CONSTRAINT jiveRemoteServerConf_pk PRIMARY KEY (domain))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER, imageType NVARCHAR(25))
+ in following column imageData of table ofGatewayAvatars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpQueueAgent ( queueID INTEGER NOT NULL, objectID INTEGER NOT NULL, objectType INTEGER NOT NULL, administrator INTEGER, CONSTRAINT fpQueueAgent_pk PRIMARY KEY (queueID,objectID,objectType))
+ in following column administrator and in column administrator of table ofGroupUser
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveUserFlag', 'startTime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroupProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue MEDIUMTEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpWorkgroupProp
+Detected: God Table Found in following statement: create table ofSipUser (	username varchar(255) not null unique,	sipUsername varchar(255),	sipAuthuser varchar(255),	sipDisplayName varchar(255),	sipPassword varchar(255),	sipServer varchar(255),	stunServer varchar(255),	stunPort varchar(255),	useStun int,	voicemail varchar(255),	enabled int,	status varchar(255),	outboundproxy VARCHAR(255) NULL,	promptCredentials INTEGER NULL, PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPubsubItem ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload NTEXT NULL, CONSTRAINT ofPubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table ofPubsubItem
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucServiceProp ( serviceID INT NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column propValue of table ofMucServiceProp
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofecurityAuditLog', 'username']
+Detected: God Table Found in following statement: CREATE TABLE mucRoom2 ( roomID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR(50) NOT NULL, naturalName VARCHAR(255) NOT NULL, description VARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15), canChangeSubject INTEGER NOT NULL, maxUsers INTEGER NOT NULL, publicRoom INTEGER NOT NULL, moderated INTEGER NOT NULL, membersOnly INTEGER NOT NULL, canInvite INTEGER NOT NULL, roomPassword VARCHAR(50), canDiscoverJID INTEGER NOT NULL, logEnabled INTEGER NOT NULL, subject VARCHAR(100), rolesToBroadcast INTEGER NOT NULL, useReservedNick INTEGER NOT NULL, canChangeNick INTEGER NOT NULL, canRegister INTEGER NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofUserProp ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (username, name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE gatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50), INDEX gatewayRstr_ttype_idx(transportType), INDEX gatewayRstr_uname_idx(username))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofRoster ( rosterID INTEGER NOT NULL, username VARCHAR(64) NOT NULL, jid VARCHAR(2000) NOT NULL, sub INTEGER NOT NULL, ask INTEGER NOT NULL, recv INTEGER NOT NULL, nick VARCHAR(255), CONSTRAINT ofRoster_pk PRIMARY KEY (rosterID))
+ in following column rosterID and in column rosterID of table ofRosterGroups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate CHAR(15) NOT NULL, lastUpdate CHAR(15), imageType VARCHAR(25))
+ in following column imageData of table ofGatewayAvatars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INTEGER NOT NULL, messageID INTEGER NOT NULL, sender VARCHAR(1024) NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column stanza of table ofMucConversationLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubNodeJIDs ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, associationType VARCHAR(20) NOT NULL, CONSTRAINT ofPubsubNodeJIDs_pk PRIMARY KEY (serviceID, nodeID, jid))
+ in following column nodeID and in column nodeID of table pubsubNodeJIDs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroupRoster ( workgroupID BIGINT NOT NULL, jid TEXT NOT NULL, lastContact VARCHAR(15) NULL, PRIMARY KEY (workgroupID, jid(255)), INDEX fpWrkgrpRoster_workgroupjid_idx(workgroupID))
+ in following column jid of table fpWorkgroupRoster
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayPseudoRoster ( registrationID BIGINT NOT NULL, username NVARCHAR(255) NOT NULL, nickname NVARCHAR(255), groups NVARCHAR(255))
+ in following column groups and in column groups of table ofGatewayPseudoRoster
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(4000) NOT NULL, CONSTRAINT jiveSASLAuthoirzed_pk PRIMARY KEY (username, principal))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPresence ( username NVARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlinePresence and in column offlinePresence of table jivePresence
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(200) NOT NULL, workgroupID INTEGER NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INTEGER, state INTEGER NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID))
+ in following column notes of table fpSession
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionProp ( sessionID VARCHAR(31) NOT NULL, name VARCHAR(100) NOT NULL, propValue LONGVARCHAR NOT NULL, PRIMARY KEY (sessionID,name))
+
+Detected: God Table Found in following statement: create table ofSipUser (	username VARCHAR2(255) NOT NULL,	sipUsername VARCHAR2(255),	sipAuthuser VARCHAR2(255),	sipDisplayName VARCHAR2(255),	sipPassword VARCHAR2(255),	sipServer VARCHAR2(255),	stunServer VARCHAR2(255),	stunPort VARCHAR2(255),	useStun INTEGER,	voicemail VARCHAR2(255),	enabled INTEGER,	status VARCHAR2(255),	outboundproxy VARCHAR(255) NULL,	promptCredentials INT NULL, CONSTRAINT ofSipUser_pk PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpOfflineSetting ( workgroupID BIGINT NOT NULL, redirectPage varChar(255), emailAddress varChar(255), subject varChar(255), offlineText TEXT, PRIMARY KEY(workgroupID))
+ in following column offlineText of table fpOfflineSetting
+Detected: God Table Found in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(255) NOT NULL, workgroupID BIGINT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime BIGINT, state int NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID), INDEX fpsession_workgroupid_idx(workgroupID, userID), INDEX fpsession_starttime_idx(workgroupID, startTime))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column sender of table ofMucConversationLog
+Detected: Metadata as Data Found in following statement: CREATE TABLE pubsubNodeGroups ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, rosterGroup NVARCHAR(100) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT ofPfRules_pk PRIMARY KEY (id))
+ in following column disabled and in column disabled of table pfRules
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveExtComponentConf ( subdomain VARCHAR(255) NOT NULL, secret VARCHAR(255), permission VARCHAR(10) NOT NULL, PRIMARY KEY (subdomain))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column publicRoom and in column publicRoom of table mucRoom2
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ofSipUser SET sipusername = ?, sipauthuser = ?, sipdisplayname = ?, sippassword = ?, sipserver = ?, enabled = ?, status = ?, stunserver = ?, stunport = ?, usestun = ?, voicemail= ?, outboundproxy = ?, promptCredentials = ?  WHERE username = ?
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucServiceProp ( serviceID INT NOT NULL, name VARCHAR2(100) NOT NULL, propValue VARCHAR2(1024) NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column name and in column name of table fpDispatcher
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSessionMetadata( sessionID NVARCHAR(31) NOT NULL, metadataName NVARCHAR(200) NOT NULL, metadataValue TEXT NOT NULL)
+ in following column metadataValue of table fpSessionMetadata
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR(10) NOT NULL, language VARCHAR(255), replyPolicy VARCHAR(15), associationPolicy VARCHAR(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: God Table Found in following statement: create table ofSipUser (	username NVARCHAR(255) not null,	sipUsername NVARCHAR(255),	sipAuthuser NVARCHAR(255),	sipDisplayname NVARCHAR(255),	sipPassword NVARCHAR(255),	sipServer NVARCHAR(255),	stunServer NVARCHAR(255),	stunPort NVARCHAR(255),	useStun int,	voicemail NVARCHAR(255),	enabled int,	status NVARCHAR(255),	outboundproxy VARCHAR(255) NULL,	promptCredentials INT NULL, CONSTRAINT sipUser_pk PRIMARY KEY (username))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ofGatewayRegistration SET jid=?,transportType=?,username=?,password=?,nickname=?,registrationDate=?,lastLogin=?  WHERE registrationID=?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpqueue', 'queueID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column digest_frequency and in column digest_frequency of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column maxItems and in column maxItems of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofRemoteServerConf ( xmppDomain VARCHAR2(255) NOT NULL, remotePort INTEGER, permission VARCHAR2(10) NOT NULL, CONSTRAINT ofRemoteServerConf_pk PRIMARY KEY (xmppDomain))
+ in following column permission and in column permission of table jiveRemoteServerConf
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofGatewayVCards', 'jid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePresence ( username VARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate VARCHAR(15) NOT NULL, CONSTRAINT jivePresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table jivePresence
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePrivacyList ( username VARCHAR(32) NOT NULL, name VARCHAR(100) NOT NULL, isDefault INTEGER NOT NULL, list TEXT NOT NULL, CONSTRAINT jivePrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table jivePrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcher( queueID INT NOT NULL, name NVARCHAR(50) NULL, description NVARCHAR(255) NULL, offerTimeout INT NOT NULL, requestTimeout INT NOT NULL, CONSTRAINT fpDispatcher_pk PRIMARY KEY (queueID))
+ in following column offerTimeout and in column offerTimeout of table fpWorkgroup
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column modificationDate and in column modificationDate of table ofUser
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT ofPfRules_pk PRIMARY KEY (id))
+ in following column log and in column log of table pfRules
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column canRegister and in column canRegister of table mucRoom2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayVCards ( jid NVARCHAR(255) NOT NULL, value TEXT NOT NULL)
+ in following column value of table ofGatewayVCards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpQueueProp ( ownerID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpQueueProp
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID BIGINT NOT NULL, roomID BIGINT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR(50) NOT NULL, naturalName VARCHAR(255) NOT NULL, description VARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject TINYINT NOT NULL, maxUsers INTEGER NOT NULL, publicRoom TINYINT NOT NULL, moderated TINYINT NOT NULL, membersOnly TINYINT NOT NULL, canInvite TINYINT NOT NULL, roomPassword VARCHAR(50) NULL, canDiscoverJID TINYINT NOT NULL, logEnabled TINYINT NOT NULL, subject VARCHAR(100) NULL, rolesToBroadcast TINYINT NOT NULL, useReservedNick TINYINT NOT NULL, canChangeNick TINYINT NOT NULL, canRegister TINYINT NOT NULL, allowpm TINYINT NULL, PRIMARY KEY (serviceID,name), INDEX ofMucRoom_roomid_idx (roomID), INDEX ofMucRoom_serviceid_idx (serviceID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofVCard ( username VARCHAR(64) NOT NULL, vcard MEDIUMTEXT NOT NULL, PRIMARY KEY (username))
+ in following column vcard and in column vcard of table jiveVCard2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT ofPfRules_pk PRIMARY KEY (id))
+ in following column type and in column type of table fpChatSetting
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofExtComponentConf ( subdomain VARCHAR2(255) NOT NULL, wildcard INTEGER NOT NULL, secret VARCHAR2(255), permission VARCHAR2(10) NOT NULL, CONSTRAINT ofExtComponentConf_pk PRIMARY KEY (subdomain))
+ in following column secret and in column secret of table jiveExtComponentConf
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofProperty ( name VARCHAR(100) NOT NULL, propValue VARCHAR(4000) NOT NULL, CONSTRAINT ofProperty_pk PRIMARY KEY (name))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayAvatars', 'jid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofOffline ( username VARCHAR(64) NOT NULL, messageID BIGINT NOT NULL, creationDate CHAR(15) NOT NULL, messageSize INTEGER NOT NULL, stanza TEXT NOT NULL, PRIMARY KEY (username, messageID))
+ in following column stanza of table ofOffline
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofSASLAuthorized ( username VARCHAR(64) NOT NULL, principal TEXT NOT NULL, PRIMARY KEY (username, principal(200)))
+ in following column principal of table ofSASLAuthorized
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column nickname and in column nickname of table ofGatewayRegistration
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column rolesToBroadcast and in column rolesToBroadcast of table mucRoom2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpSetting ( workgroupName VARCHAR(255) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(255) NOT NULL, value LONG VARCHAR NOT NULL, CONSTRAINT fpSetting_pk PRIMARY KEY (workgroupName, name, namespace))
+ in following column namespace and in column namespace of table ofPrivate
+Detected: Index Shotgun Variant: 3 Following index not used : ['mucConversationLog', 'logTime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpOfflineSetting ( workgroupID INT NOT NULL, redirectPage NVARCHAR(255), emailAddress NVARCHAR(255), subject NVARCHAR(255), offlineText TEXT, CONSTRAINT fpOfflineSetting_pk PRIMARY KEY(workgroupID))
+ in following column offlineText of table fpOfflineSetting
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column subscriptionType and in column subscriptionType of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofBookmarkPerm ( bookmarkID INTEGER NOT NULL, bookmarkType INTEGER NOT NULL, name VARCHAR(255) NOT NULL, CONSTRAINT ofBookmarkPerm_pk PRIMARY KEY(bookmarkID, name, bookmarkType))
+ in following column bookmarkType and in column bookmarkType of table ofBookmark
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData MEDIUMTEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT, imageType VARCHAR(25), PRIMARY KEY (jid))
+ in following column imageData of table ofGatewayAvatars
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofPubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column leaf and in column leaf of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column useReservedNick and in column useReservedNick of table mucRoom2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column lastUpdate and in column lastUpdate of table ofGatewayAvatars
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpAgent', 'agentJID']
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofProperty ( name VARCHAR(100) NOT NULL, propValue VARCHAR(3000) NOT NULL, CONSTRAINT ofProperty_pk PRIMARY KEY (name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column digest_frequency and in column digest_frequency of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcher( queueID INTEGER NOT NULL, name VARCHAR(50) NULL, description VARCHAR(255) NULL, offerTimeout INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, PRIMARY KEY (queueID))
+ in following column requestTimeout and in column requestTimeout of table fpWorkgroup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofSecurityAuditLog ( msgID INTEGER NOT NULL, username NVARCHAR(64) NOT NULL, entryStamp INTEGER NOT NULL, summary NVARCHAR(255) NOT NULL, node NVARCHAR(255) NOT NULL, details TEXT, CONSTRAINT ofSecurityAuditLog_pk PRIMARY KEY (msgID))
+ in following column details of table ofSecurityAuditLog
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroup ( groupName NVARCHAR(50) NOT NULL, description NVARCHAR(255) NULL, CONSTRAINT ofGroup_pk PRIMARY KEY (groupName))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPubsubItem ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload TEXT NULL, CONSTRAINT ofPubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table ofPubsubItem
+Detected: God Table Found in following statement: CREATE TABLE pfRules ( id BIGINT IDENTITY(10,2), ruleorder BIGINT, type varchar(255), tojid varchar(255), fromjid varchar(255), rulef varchar(255), disabled bit, log bit, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column presenceBased and in column presenceBased of table pubsubDefaultConf
+Detected: God Table Found in following statement: CREATE TABLE pfRules ( id BIGINT IDENTITY, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT pfRules_pk PRIMARY KEY (id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID NVARCHAR(31) NOT NULL, userID NVARCHAR(200) NOT NULL, workgroupID INT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INT, state int NOT NULL, caseID NVARCHAR(20), status CHAR(15), notes TEXT, CONSTRAINT fpSession_pk PRIMARY KEY (sessionID))
+ in following column transcript of table fpSession
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpAgentSession( sessionID varchar(31) NOT NULL, agentJID varchar(255) NOT NULL, joinTime CHAR(15) NOT NULL, leftTime CHAR(15))
+ in following column agentJID and in column agentJID of table fpAgent
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ofUser SET plainPassword=?, encryptedPassword=?, storedKey=?, serverKey=?, salt=?, iterations=?  WHERE username=?
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column replyPolicy and in column replyPolicy of table pubsubDefaultConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPubsubItem ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload TEXT NULL, CONSTRAINT ofPubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table ofPubsubItem
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column digest and in column digest of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPresence ( username NVARCHAR(64) NOT NULL, offlinePresence NTEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlinePresence and in column offlinePresence of table jivePresence
+Detected: God Table Found in following statement: CREATE TABLE fpSession ( sessionID VARCHAR(31) NOT NULL, userID VARCHAR(200) NOT NULL, workgroupID BIGINT NOT NULL, transcript LONGVARCHAR, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime BIGINT, state INTEGER NOT NULL, caseID VARCHAR(20), status CHAR(15), notes LONGVARCHAR, PRIMARY KEY (sessionID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubNodeGroups ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, rosterGroup VARCHAR(100) NOT NULL, INDEX ofPubsubNodeGroups_idx (serviceID, nodeID))
+ in following column rosterGroup and in column rosterGroup of table pubsubNodeGroups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofVCard ( username VARCHAR(64) NOT NULL, vcard MEDIUMTEXT NOT NULL, PRIMARY KEY (username))
+ in following column vcard of table ofVCard
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePrivacyList ( username VARCHAR(32) NOT NULL, name VARCHAR(100) NOT NULL, isDefault TINYINT NOT NULL, list TEXT NOT NULL, PRIMARY KEY (username, name), INDEX jivePList_default_idx (username, isDefault))
+ in following column list of table jivePrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column sender and in column sender of table mucConversationLog2
+Detected: God Table Found in following statement: create table ofSipUser (	username varchar(255) not null,	sipUsername varchar(255),	sipAuthuser varchar(255),	sipDisplayName varchar(255),	sipPassword varchar(255),	sipServer varchar(255),	stunServer varchar(255),	stunPort varchar(255),	useStun INTEGER,	voicemail varchar(255),	enabled INTEGER,	status varchar(255),	outboundproxy VARCHAR(255) NULL,	promptCredentials INTEGER NULL, PRIMARY KEY (username))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofRoster', 'jid']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGatewayRestrictions ( transportType VARCHAR2(15) NOT NULL, username VARCHAR2(255), groupname VARCHAR2(50))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData NTEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT, imageType NVARCHAR(25))
+ in following column imageData of table ofGatewayAvatars
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionMetadata ( sessionID VARCHAR(31) NOT NULL, metadataName VARCHAR(200) NOT NULL, metadataValue VARCHAR(200) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofRoster ( rosterID INTEGER NOT NULL, username VARCHAR(64) NOT NULL, jid VARCHAR(2000) NOT NULL, sub INTEGER NOT NULL, ask INTEGER NOT NULL, recv INTEGER NOT NULL, nick VARCHAR(255), CONSTRAINT ofRoster_pk PRIMARY KEY (rosterID))
+ in following column username and in column username of table jivePrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column notifyDelete and in column notifyDelete of table pubsubDefaultConf
+Detected: God Table Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column deliverPayloads and in column deliverPayloads of table pubsubDefaultConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column imageData of table gatewayAvatars
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMucRoom', 'sericeID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofConParticipant', 'conversationID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column maxUsers and in column maxUsers of table mucRoom2
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofUserFlag', 'startTime']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMessageArchive ( messageID		 BIGINT			 NULL, conversationID INTEGER NOT NULL, fromJID VARCHAR(1024) NOT NULL, fromJIDResource VARCHAR(1024) NULL, toJID VARCHAR(1024) NOT NULL, toJIDResource VARCHAR(1024) NULL, sentDate BIGINT NOT NULL, stanza			 TEXT			 NULL, body TEXT)
+ in following column stanza of table ofMessageArchive
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpQueueGroup ( queueID INTEGER NOT NULL, groupName VARCHAR(50) NOT NULL, PRIMARY KEY (queueID,groupName))
+ in following column groupName and in column groupName of table ofGroupUser
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column canInvite and in column canInvite of table mucRoom2
+Detected: God Table Found in following statement: create table ofSipUser (	username VARCHAR(255) NOT NULL,	sipUsername VARCHAR(255),	sipAuthuser VARCHAR(255),	sipDisplayName VARCHAR(255),	sipPassword VARCHAR(255),	sipServer VARCHAR(255),	stunServer VARCHAR(255),	stunPort VARCHAR(255),	useStun INTEGER,	voicemail VARCHAR(255),	enabled INTEGER,	status VARCHAR(255),	outboundproxy VARCHAR(255),	promptCredentials INTEGER, CONSTRAINT ofSipUser_pk PRIMARY KEY(username))
+
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username VARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword VARCHAR(32), encryptedPassword VARCHAR(255), name VARCHAR(100), email VARCHAR(100), creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, PRIMARY KEY (username), INDEX ofUser_cDate_idx (creationDate))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcherProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column ownerID and in column ownerID of table fpWorkgroupProp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column xmppHash and in column xmppHash of table ofGatewayAvatars
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofUser', 'creationDate']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column membersOnly and in column membersOnly of table mucRoom2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofConversation ( conversationID BIGINT NOT NULL, room VARCHAR(255) NULL, isExternal TINYINT NOT NULL, startDate BIGINT NOT NULL, lastActivity BIGINT NOT NULL, messageCount INT NOT NULL, PRIMARY KEY (conversationID), INDEX ofConversation_ext_idx (isExternal), INDEX ofConversation_start_idx (startDate), INDEX ofConversation_last_idx (lastActivity))
+ in following column INDEX and in column INDEX of table ofMucConversationLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column associationPolicy and in column associationPolicy of table pubsubDefaultConf
+Detected: Clone Tables Found in following statement: CREATE TABLE jiveRemoteServerConf ( domain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL, PRIMARY KEY (domain))
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR2(100) NOT NULL, nodeID VARCHAR2(100) NOT NULL, id VARCHAR2(100) NOT NULL, jid VARCHAR2(1024) NOT NULL, owner VARCHAR2(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR2(200) NULL, CONSTRAINT ofPubsubSubscription_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofVCard ( username VARCHAR(64) NOT NULL, vcard TEXT NOT NULL, CONSTRAINT ofVCard_pk PRIMARY KEY (username))
+ in following column vcard of table ofVCard
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayVCards ( jid VARCHAR(255) NOT NULL, value MEDIUMTEXT NOT NULL, PRIMARY KEY (jid))
+ in following column value and in column value of table ofGatewayVCards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData MEDIUMTEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT, PRIMARY KEY (jid), INDEX gatewayAvtr_jid_idx(jid))
+ in following column imageData of table gatewayAvatars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jivePrivacyList ( username NVARCHAR(32) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list NTEXT NOT NULL, CONSTRAINT jivePrivacyList_pk PRIMARY KEY (username, name))
+ in following column isDefault and in column isDefault of table ofPrivacyList
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveSecurityAuditLog', 'entryStamp']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGojaraSessions ( username		VARCHAR(255) NOT NULL, transport		VARCHAR(255) NOT NULL, lastActivity		BIGINT NOT NULL, PRIMARY KEY (username, transport))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPresence ( username VARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate VARCHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table ofPresence
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroup ( groupName VARCHAR(50) NOT NULL, description VARCHAR(255), CONSTRAINT ofGroup_pk PRIMARY KEY (groupName))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSetting ( workgroupName VARCHAR(100) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(255) NOT NULL, value TEXT NOT NULL, PRIMARY KEY (workgroupName, name))
+ in following column value of table fpSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pubsubItem ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload NTEXT NULL, CONSTRAINT pubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table pubsubItem
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveUserFlag ( username VARCHAR2(64) NOT NULL, name VARCHAR2(100) NOT NULL, startTime CHAR(15), endTime CHAR(15), CONSTRAINT jiveUserFlag_pk PRIMARY KEY (username, name))
+ in following column endTime and in column endTime of table ofUserFlag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMessageArchive ( messageID		 BIGINT			 NULL, conversationID BIGINT NOT NULL, fromJID VARCHAR(255) NOT NULL, fromJIDResource VARCHAR(100) NULL, toJID VARCHAR(255) NOT NULL, toJIDResource VARCHAR(100) NULL, sentDate BIGINT NOT NULL, stanza			 TEXT			 NULL, body TEXT, INDEX ofMessageArchive_con_idx (conversationID), INDEX ofMessageArchive_fromjid_idx (fromJID), INDEX ofMessageArchive_tojid_idx (toJID))
+ in following column body of table ofMessageArchive
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubNodeJIDs ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, associationType VARCHAR(20) NOT NULL, PRIMARY KEY (serviceID, nodeID, jid(70)))
+ in following column associationType and in column associationType of table ofPubsubNodeJIDs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column imageData and in column imageData of table ofGatewayAvatars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pfRules ( id BIGINT IDENTITY(10,2), ruleorder BIGINT, type varchar(255), tojid varchar(255), fromjid varchar(255), rulef varchar(255), disabled bit, log bit, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+ in following column ruleorder and in column ruleorder of table ofPfRules
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubItem ( serviceID VARCHAR2(100) NOT NULL, nodeID VARCHAR2(100) NOT NULL, id VARCHAR2(100) NOT NULL, jid VARCHAR2(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload VARCHAR(4000) NULL, CONSTRAINT pubsubItem_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload and in column payload of table ofPubsubItem
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveSecurityAuditLog', 'username']
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubNode ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, leaf INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, parent NVARCHAR(100) NULL, deliverPayloads INT NOT NULL, maxPayloadSize INT NULL, persistItems INT NULL, maxItems INT NULL, notifyConfigChanges INT NOT NULL, notifyDelete INT NOT NULL, notifyRetract INT NOT NULL, presenceBased INT NOT NULL, sendItemSubscribe INT NOT NULL, publisherModel NVARCHAR(15) NOT NULL, subscriptionEnabled INT NOT NULL, configSubscription INT NOT NULL, accessModel NVARCHAR(10) NOT NULL, payloadType NVARCHAR(100) NULL, bodyXSLT NVARCHAR(100) NULL, dataformXSLT NVARCHAR(100) NULL, creator NVARCHAR(1024) NOT NULL, description NVARCHAR(255) NULL, language NVARCHAR(255) NULL, name NVARCHAR(50) NULL, replyPolicy NVARCHAR(15) NULL, associationPolicy NVARCHAR(15) NULL, maxLeafNodes INT NULL, CONSTRAINT ofPubsubNode_pk PRIMARY KEY (serviceID, nodeID))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE gatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraSessions ( username			text NOT NULL, transport			text NOT NULL, lastActivity		bigint(20) NOT NULL, PRIMARY KEY (username(255), transport(255)))
+ in following column username of table ofGojaraSessions
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofConParticipant', 'joinedDate']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY(10,2), ruleorder BIGINT, type varchar(255), tojid varchar(255), fromjid varchar(255), rulef varchar(255), disabled bit, log bit, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+ in following column disabled and in column disabled of table pfRules
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofGatewayRestrictions ( transportType VARCHAR(15) NOT NULL, username VARCHAR(255), groupname VARCHAR(50))
+ in following column groupname and in column groupname of table gatewayRestrictions
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofSecurityAuditLog', 'entryStamp']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData NTEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column imageData of table gatewayAvatars
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGojaraSessions( username			VARCHAR2(255) NOT NULL, transport			VARCHAR2(255) NOT NULL, lastActivity		NUMBER(10) NOT NULL, PRIMARY KEY (username, transport))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivate ( username NVARCHAR(64) NOT NULL, name NVARCHAR(100) NOT NULL, namespace NVARCHAR(200) NOT NULL, privateData TEXT NOT NULL, CONSTRAINT ofPrivate_pk PRIMARY KEY (username, name, namespace))
+ in following column privateData of table ofPrivate
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcher( queueID INT NOT NULL, name NVARCHAR(50) NULL, description NVARCHAR(255) NULL, offerTimeout INT NOT NULL, requestTimeout INT NOT NULL, CONSTRAINT fpDispatcher_pk PRIMARY KEY (queueID))
+ in following column description and in column description of table ofPfRules
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofUser ( username VARCHAR2(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword VARCHAR2(32), encryptedPassword VARCHAR2(255), name VARCHAR2(100), email VARCHAR2(100), creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+ in following column email and in column email of table ofMucMember
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofRRDs ( id VARCHAR2(100) NOT NULL, updatedDate INTEGER NOT NULL, bytes BLOB NULL, CONSTRAINT ofRRDs_pk PRIMARY KEY (id))
+ in following column id and in column id of table ofPfRules
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofProperty ( name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (name))
+ in following column propValue of table ofProperty
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofConParticipant', 'bareJID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucRoomProp ( roomID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (roomID, name))
+ in following column propValue of table ofMucRoomProp
+Detected: God Table Found in following statement: CREATE TABLE pubsubDefaultConf ( serviceID NVARCHAR(100) NOT NULL, leaf INT NOT NULL, deliverPayloads INT NOT NULL, maxPayloadSize INT NOT NULL, persistItems INT NOT NULL, maxItems INT NOT NULL, notifyConfigChanges INT NOT NULL, notifyDelete INT NOT NULL, notifyRetract INT NOT NULL, presenceBased INT NOT NULL, sendItemSubscribe INT NOT NULL, publisherModel NVARCHAR(15) NOT NULL, subscriptionEnabled INT NOT NULL, accessModel NVARCHAR(10) NOT NULL, language NVARCHAR(255) NULL, replyPolicy NVARCHAR(15) NULL, associationPolicy NVARCHAR(15) NOT NULL, maxLeafNodes INT NOT NULL, CONSTRAINT pubsubDefConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofUserFlag', 'endTime']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMessageArchive ( messageID		 BIGINT			 NULL, conversationID INTEGER NOT NULL, fromJID VARCHAR(1024) NOT NULL, fromJIDResource VARCHAR(1024) NULL, toJID VARCHAR(1024) NOT NULL, toJIDResource VARCHAR(1024) NULL, sentDate BIGINT NOT NULL, stanza			 TEXT			 NULL, body TEXT)
+ in following column body and in column body of table ofMucConversationLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpAgentSession( sessionID NVARCHAR(31) NOT NULL, agentJID NVARCHAR(255) NOT NULL, joinTime CHAR(15) NOT NULL, leftTime CHAR(15))
+ in following column agentJID and in column agentJID of table fpAgent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraSessions( username			text NOT NULL, transport			text NOT NULL, lastActivity		bigint(20) NOT NULL, PRIMARY KEY (username, transport))
+ in following column transport of table ofGojaraSessions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGroupProp ( groupName VARCHAR(50) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (groupName, name))
+ in following column propValue of table ofGroupProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPresence ( username NVARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table ofPresence
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofSASLAuthorized ( username VARCHAR(64) NOT NULL, principal VARCHAR(190) NOT NULL, CONSTRAINT ofSASLAuthrizd_pk PRIMARY KEY (username, principal))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGroupProp ( groupName VARCHAR(50) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofGroupProp_pk PRIMARY KEY (groupName, name))
+ in following column propValue of table ofGroupProp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofUser ( username NVARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword NVARCHAR(32) NULL, encryptedPassword NVARCHAR(255) NULL, name NVARCHAR(100) NULL, email VARCHAR(100) NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+ in following column encryptedPassword and in column encryptedPassword of table jiveUser2
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSessionMetadata( sessionID varchar(31) NOT NULL, metadataName varChar(200) NOT NULL, metadataValue TEXT NOT NULL)
+ in following column metadataValue of table fpSessionMetadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMessageArchive', 'fromJID']
+Detected: God Table Found in following statement: CREATE TABLE pubsubSubscription ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, owner NVARCHAR(1024) NOT NULL, state NVARCHAR(15) NOT NULL, deliver INT NOT NULL, digest INT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody INT NOT NULL, showValues NVARCHAR(30) NOT NULL, subscriptionType NVARCHAR(10) NOT NULL, subscriptionDepth INT NOT NULL, keyword NVARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofGatewayRegistration ( registrationID INTEGER NOT NULL, jid NVARCHAR(255) NOT NULL, transportType NVARCHAR(15) NOT NULL, username NVARCHAR(255) NOT NULL, password NVARCHAR(1024), nickname NVARCHAR(255), registrationDate INTEGER NOT NULL, lastLogin INTEGER, CONSTRAINT ofGatewayRegistration_pk PRIMARY KEY (registrationID))
+ in following column registrationID and in column registrationID of table gatewayPseudoRoster
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofSASLAuthorized ( username VARCHAR(64) NOT NULL, principal VARCHAR(4000) NOT NULL, CONSTRAINT ofSASLAuthorized_pk PRIMARY KEY (username, principal))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofBookmarkProp ( bookmarkID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofBookmarkProp_pk PRIMARY KEY (bookmarkID, name))
+ in following column propValue of table ofBookmarkProp
+Detected: Index Shotgun Variant: 3 Following index not used : ['jivePrivacyList', 'isDefault']
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup( workgroupID INT NOT NULL, jid VARCHAR(255) NOT NULL, displayName NVARCHAR(50) NULL, description NVARCHAR(255) NULL, status INT NOT NULL, modes INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, maxchats INT NOT NULL, minchats INT NOT NULL, requestTimeout INT NOT NULL, offerTimeout INT NOT NULL, schedule NVARCHAR(3400) NULL, CONSTRAINT fpWorkgroup_pk PRIMARY KEY (workgroupID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayPseudoRoster', 'registrationID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucAffiliation ( roomID INT NOT NULL, jid NVARCHAR(424) NOT NULL, affiliation INT NOT NULL, CONSTRAINT ofMucAffiliation_pk PRIMARY KEY (roomID,jid))
+ in following column affiliation and in column affiliation of table pubsubAffiliation
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column includeBody and in column includeBody of table pubsubSubscription
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username VARCHAR2(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword VARCHAR2(32), encryptedPassword VARCHAR2(255), name VARCHAR2(100), email VARCHAR2(100), creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column imageData of table gatewayAvatars
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveRemoteServerConf2 ( xmppDomain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL)
+ in following column xmppDomain and in column xmppDomain of table ofRemoteServerConf
+Detected: Clone Tables Found in following statement: CREATE TABLE jiveRemoteServerConf ( domain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL, CONSTRAINT jiveRemoteServerConf_pk PRIMARY KEY (domain))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofOffline ( username NVARCHAR(64) NOT NULL, messageID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, messageSize INTEGER NOT NULL, stanza TEXT NOT NULL, CONSTRAINT ofOffline_pk PRIMARY KEY (username, messageID))
+ in following column stanza of table ofOffline
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivacyList ( username NVARCHAR(64) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list TEXT NOT NULL, CONSTRAINT ofPrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table ofPrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column maxchats and in column maxchats of table fpAgent
+Detected: God Table Found in following statement: CREATE TABLE pubsubDefaultConf ( serviceID VARCHAR(100) NOT NULL, leaf TINYINT NOT NULL, deliverPayloads TINYINT NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems TINYINT NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges TINYINT NOT NULL, notifyDelete TINYINT NOT NULL, notifyRetract TINYINT NOT NULL, presenceBased TINYINT NOT NULL, sendItemSubscribe TINYINT NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled TINYINT NOT NULL, accessModel VARCHAR(10) NOT NULL, language VARCHAR(255) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, PRIMARY KEY (serviceID, leaf))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayVCards ( jid VARCHAR2(255) NOT NULL, value BLOB NOT NULL)
+ in following column value and in column value of table fpChatSetting
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucAffiliation ( roomID INT NOT NULL, jid NVARCHAR(424) NOT NULL, affiliation INT NOT NULL, CONSTRAINT ofMucAffiliation_pk PRIMARY KEY (roomID,jid))
+ in following column roomID and in column roomID of table ofMucConversationLog
+Detected: God Table Found in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(200) NOT NULL, workgroupID INTEGER NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INTEGER, state INTEGER NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMucRoom', 'roomID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column publisherModel and in column publisherModel of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid VARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash VARCHAR(255), legacyIdentifier VARCHAR(255), createDate BIGINT NOT NULL, lastUpdate BIGINT)
+ in following column legacyIdentifier and in column legacyIdentifier of table ofGatewayAvatars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column toJID of table ofGojaraStatistics
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMessageArchive', 'toJID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMucRoom', 'serviceID']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column showValues and in column showValues of table ofPubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofUser ( username NVARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword NVARCHAR(32) NULL, encryptedPassword NVARCHAR(255) NULL, name NVARCHAR(100) NULL, email VARCHAR(100) NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+ in following column plainPassword and in column plainPassword of table jiveUser2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column createDate and in column createDate of table ofGatewayAvatars
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionProp( sessionID varchar(31) NOT NULL, name varchar(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (sessionID,name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPrivate ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(200) NOT NULL, privateData TEXT NOT NULL, CONSTRAINT ofPrivate_pk PRIMARY KEY (username, name, namespace))
+ in following column privateData and in column privateData of table jivePrivate2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column digest and in column digest of table pubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofConversation ( conversationID BIGINT NOT NULL, room VARCHAR(255) NULL, isExternal TINYINT NOT NULL, startDate BIGINT NOT NULL, lastActivity BIGINT NOT NULL, messageCount INT NOT NULL, PRIMARY KEY (conversationID), INDEX ofConversation_ext_idx (isExternal), INDEX ofConversation_start_idx (startDate), INDEX ofConversation_last_idx (lastActivity))
+ in following column conversationID and in column conversationID of table ofMessageArchive
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jiveSASLAuthorized ( username VARCHAR(64) NOT NULL, principal TEXT NOT NULL, PRIMARY KEY (username, principal(200)))
+ in following column principal of table jiveSASLAuthorized
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup( workgroupID INTEGER NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule TEXT NULL, PRIMARY KEY (workgroupID))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column maxLeafNodes and in column maxLeafNodes of table pubsubDefaultConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpRouteRule ( workgroupID BIGINT NOT NULL, queueID BIGINT NOT NULL, rulePosition INT NOT NULL, query TEXT)
+ in following column query of table fpRouteRule
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(255) NOT NULL, workgroupID BIGINT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime BIGINT, state int NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID), INDEX fpsession_workgroupid_idx(workgroupID, userID), INDEX fpsession_starttime_idx(workgroupID, startTime))
+ in following column transcript of table fpSession
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucAffiliation ( roomID INT NOT NULL, jid NVARCHAR(424) NOT NULL, affiliation INT NOT NULL, CONSTRAINT ofMucAffiliation_pk PRIMARY KEY (roomID,jid))
+ in following column jid and in column jid of table ofRoster
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayVCards ( jid NVARCHAR(255) NOT NULL, value NTEXT NOT NULL)
+ in following column value of table ofGatewayVCards
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofUserProp ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofUserProp_pk PRIMARY KEY (username, name))
+ in following column propValue of table ofUserProp
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubNode ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, leaf TINYINT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, parent VARCHAR(100) NULL, deliverPayloads TINYINT NOT NULL, maxPayloadSize INTEGER NULL, persistItems TINYINT NULL, maxItems INTEGER NULL, notifyConfigChanges TINYINT NOT NULL, notifyDelete TINYINT NOT NULL, notifyRetract TINYINT NOT NULL, presenceBased TINYINT NOT NULL, sendItemSubscribe TINYINT NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled TINYINT NOT NULL, configSubscription TINYINT NOT NULL, accessModel VARCHAR(10) NOT NULL, payloadType VARCHAR(100) NULL, bodyXSLT VARCHAR(100) NULL, dataformXSLT VARCHAR(100) NULL, creator VARCHAR(255) NOT NULL, description VARCHAR(255) NULL, language VARCHAR(255) NULL, name VARCHAR(50) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NULL, maxLeafNodes INTEGER NULL, PRIMARY KEY (serviceID, nodeID))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePrivacyList ( username NVARCHAR(32) NOT NULL, name NVARCHAR(100) NOT NULL, isDefault INT NOT NULL, list TEXT NOT NULL, CONSTRAINT jivePrivacyList_pk PRIMARY KEY (username, name))
+ in following column list of table jivePrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column body and in column body of table ofMessageArchive
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jiveExtComponentConf ( subdomain VARCHAR(255) NOT NULL, secret VARCHAR(255), permission VARCHAR(10) NOT NULL, PRIMARY KEY (subdomain))
+ in following column secret and in column secret of table ofExtComponentConf
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePresence ( username NVARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT jivePresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table jivePresence
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofVCard ( username NVARCHAR(64) NOT NULL, vcard TEXT NOT NULL, CONSTRAINT ofVCard_pk PRIMARY KEY (username))
+ in following column vcard of table ofVCard
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubNodeJIDs ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, associationType VARCHAR(20) NOT NULL, CONSTRAINT ofPubsubNodeJIDs_pk PRIMARY KEY (serviceID, nodeID, jid))
+ in following column associationType and in column associationType of table pubsubNodeJIDs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSessionProp( sessionID varchar(31) NOT NULL, name varchar(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (sessionID,name))
+ in following column propValue of table fpSessionProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPresence ( username NVARCHAR(64) NOT NULL, offlinePresence NTEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT ofPresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table ofPresence
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivate ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(200) NOT NULL, privateData TEXT NOT NULL, CONSTRAINT ofPrivate_pk PRIMARY KEY (username, name, namespace))
+ in following column privateData of table ofPrivate
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column roomPassword and in column roomPassword of table mucRoom2
+Detected: God Table Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR2(100) NOT NULL, nodeID VARCHAR2(100) NOT NULL, id VARCHAR2(100) NOT NULL, jid VARCHAR2(1024) NOT NULL, owner VARCHAR2(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR2(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pubsubNodeGroups', 'serviceID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(255) NOT NULL, workgroupID BIGINT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime BIGINT, state int NOT NULL, caseID varchar(20), status CHAR(15), notes TEXT, PRIMARY KEY (sessionID), INDEX fpsession_workgroupid_idx(workgroupID, userID), INDEX fpsession_starttime_idx(workgroupID, startTime))
+ in following column notes of table fpSession
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSetting ( workgroupName NVARCHAR(100) NOT NULL, name NVARCHAR(100) NOT NULL, namespace NVARCHAR(245) NOT NULL, value TEXT NOT NULL, CONSTRAINT fpSetting_pk PRIMARY KEY (workgroupName, name, namespace))
+ in following column value of table fpSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpRouteRule ( workgroupID INT NOT NULL, queueID INT NOT NULL, rulePosition INT NOT NULL, query TEXT)
+ in following column query of table fpRouteRule
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionProp( sessionID varchar(31) NOT NULL, name varchar(100) NOT NULL, propValue LONG NOT NULL, CONSTRAINT fpSessionProp_pk PRIMARY KEY (sessionID,name))
+
+Detected: God Table Found in following statement: CREATE TABLE ofUser ( username VARCHAR(64) NOT NULL, storedKey VARCHAR(32), serverKey VARCHAR(32), salt VARCHAR(32), iterations INTEGER, plainPassword VARCHAR(32), encryptedPassword VARCHAR(255), name VARCHAR(100), email VARCHAR(100), creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, CONSTRAINT ofUser_pk PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayVCards ( jid NVARCHAR(255) NOT NULL, value TEXT NOT NULL)
+ in following column value of table gatewayVCards
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column deliver and in column deliver of table pubsubSubscription
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroupProp ( ownerID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpWorkgroupProp
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column owner and in column owner of table ofPubsubSubscription
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column owner and in column owner of table pubsubSubscription
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveRemoteServerConf ( domain VARCHAR(255) NOT NULL, remotePort INTEGER, permission VARCHAR(10) NOT NULL, PRIMARY KEY (domain))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucServiceProp ( serviceID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (serviceID, name))
+ in following column propValue of table ofMucServiceProp
+Detected: Index Shotgun Variant: 3 Following index not used : ['mucRoom', 'roomID']
+Detected: God Table Found in following statement: CREATE TABLE fpSession( sessionID NVARCHAR(31) NOT NULL, userID NVARCHAR(200) NOT NULL, workgroupID INT NOT NULL, transcript TEXT, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INT, state int NOT NULL, caseID NVARCHAR(20), status CHAR(15), notes TEXT, CONSTRAINT fpSession_pk PRIMARY KEY (sessionID))
+
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID BIGINT NOT NULL, roomID BIGINT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR(50) NOT NULL, naturalName VARCHAR(255) NOT NULL, description VARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INTEGER NOT NULL, maxUsers INTEGER NOT NULL, publicRoom INTEGER NOT NULL, moderated INTEGER NOT NULL, membersOnly INTEGER NOT NULL, canInvite INTEGER NOT NULL, roomPassword VARCHAR(50) NULL, canDiscoverJID INTEGER NOT NULL, logEnabled INTEGER NOT NULL, subject VARCHAR(100) NULL, rolesToBroadcast INTEGER NOT NULL, useReservedNick INTEGER NOT NULL, canChangeNick INTEGER NOT NULL, canRegister INTEGER NOT NULL, allowpm INTEGER NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup( workgroupID INT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INT NOT NULL, modes INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, maxchats INT NOT NULL, minchats INT NOT NULL, requestTimeout INT NOT NULL, offerTimeout INT NOT NULL, schedule VARCHAR(3900) NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column xmppHash and in column xmppHash of table ofGatewayAvatars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INT NOT NULL, messageID INT NOT NULL, sender TEXT NOT NULL, nickname NVARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject NVARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column stanza of table ofMucConversationLog
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofBookmarkProp ( bookmarkID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (bookmarkID, name))
+ in following column propValue of table ofBookmarkProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGroupProp ( groupName NVARCHAR(50) NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofGroupProp_pk PRIMARY KEY (groupName, name))
+ in following column propValue of table ofGroupProp
+Detected: Index Shotgun Variant: 3 Following index not used : ['jivePrivacyList', 'username']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroupUser ( groupName VARCHAR(50) NOT NULL, username VARCHAR(100) NOT NULL, administrator TINYINT NOT NULL, PRIMARY KEY (groupName, username, administrator))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(2000) NOT NULL, CONSTRAINT jiveSASLAuthoirzed_pk PRIMARY KEY (username, principal))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofUserProp ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (username, name))
+ in following column propValue of table ofUserProp
+Detected: God Table Found in following statement: CREATE TABLE ofMucRoom ( serviceID INTEGER NOT NULL, roomID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name VARCHAR(50) NOT NULL, naturalName VARCHAR(255) NOT NULL, description VARCHAR(255), lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INTEGER NOT NULL, maxUsers INTEGER NOT NULL, publicRoom INTEGER NOT NULL, moderated INTEGER NOT NULL, membersOnly INTEGER NOT NULL, canInvite INTEGER NOT NULL, roomPassword VARCHAR(50) NULL, canDiscoverJID INTEGER NOT NULL, logEnabled INTEGER NOT NULL, subject VARCHAR(100) NULL, rolesToBroadcast INTEGER NOT NULL, useReservedNick INTEGER NOT NULL, canChangeNick INTEGER NOT NULL, canRegister INTEGER NOT NULL, allowpm INTEGER NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpAgentProp ( ownerID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpAgentProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivate ( username NVARCHAR(64) NOT NULL, name NVARCHAR(100) NOT NULL, namespace NVARCHAR(200) NOT NULL, privateData NTEXT NOT NULL, CONSTRAINT ofPrivate_pk PRIMARY KEY (username, name, namespace))
+ in following column privateData of table ofPrivate
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INT NOT NULL, messageID INT NOT NULL, sender NVARCHAR(1024) NOT NULL, nickname NVARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject NVARCHAR(255) NULL, body NTEXT NULL, stanza NTEXT NULL)
+ in following column body of table ofMucConversationLog
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMucConversationLog', 'logTime']
+Detected: God Table Found in following statement: CREATE TABLE fpSession( sessionID varchar(31) NOT NULL, userID varchar(200) NOT NULL, workgroupID INTEGER NOT NULL, transcript LONG VARCHAR, startTime CHAR(15) NOT NULL, endTime CHAR(15) NOT NULL, queueWaitTime INTEGER, state INTEGER NOT NULL, caseID varchar(20), status CHAR(15), notes LONG VARCHAR, CONSTRAINT fpSession_pk PRIMARY KEY (sessionID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpqueue', 'workgroupID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpOfflineSetting ( workgroupID INTEGER NOT NULL, redirectPage varChar(255), emailAddress varChar(255), subject varChar(255), offlineText TEXT, PRIMARY KEY(workgroupID))
+ in following column offlineText of table fpOfflineSetting
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofVCard ( username VARCHAR(64) NOT NULL, vcard VARCHAR(2000) NOT NULL, CONSTRAINT ofVCard_pk PRIMARY KEY (username))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofPubsubNodeGroups ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, rosterGroup NVARCHAR(100) NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofRosterGroups', 'rosterID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting( workgroupNode varchar(100), type int, label varchar(100), description varchar(255), name varchar(100), value text, defaultValue text, INDEX fpChatSetting_idx(workgroupNode, name))
+ in following column defaultValue of table fpChatSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayVCards ( jid NVARCHAR(255) NOT NULL, value NTEXT NOT NULL)
+ in following column value of table gatewayVCards
+Detected: Index Shotgun Variant: 3 Following index not used : ['JIVEUSER', 'CREATIONDATE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(2000) NOT NULL, CONSTRAINT ofSASLAuthorized_pk PRIMARY KEY (username, principal))
+ in following column principal and in column principal of table jiveSASLAuthorized
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivate ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, namespace VARCHAR(200) NOT NULL, privateData TEXT NOT NULL, PRIMARY KEY (username, name, namespace(100)))
+ in following column privateData of table ofPrivate
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pubsubItem ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, creationDate CHAR(15) NOT NULL, payload TEXT NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table pubsubItem
+Detected: Index Shotgun Variant: 3 Following index not used : ['jiveUser', 'creationDate']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column keyword and in column keyword of table pubsubSubscription
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroup( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule TEXT NULL, PRIMARY KEY (workgroupID), INDEX fpWorkgroup_workgroupid_idx(workgroupID))
+ in following column schedule of table fpWorkgroup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucRoomProp ( roomID INTEGER NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT ofMucRoomProp_pk PRIMARY KEY (roomID, name))
+ in following column propValue of table ofMucRoomProp
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpChatSetting ( workgroupNode varchar(100), type INTEGER, label varchar(100), description varchar(255), name varchar(100), value TEXT, defaultValue TEXT)
+ in following column value of table fpChatSetting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPresence ( username VARCHAR(64) NOT NULL, offlinePresence TEXT, offlineDate CHAR(15) NOT NULL, PRIMARY KEY (username))
+ in following column offlinePresence of table ofPresence
+Detected: God Table Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), CONSTRAINT ofPfRules_pk PRIMARY KEY (id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofVCard ( username NVARCHAR(64) NOT NULL, vcard NTEXT NOT NULL, CONSTRAINT ofVCard_pk PRIMARY KEY (username))
+ in following column vcard of table ofVCard
+Detected: Metadata as Data Found in following statement: CREATE TABLE gatewayRestrictions ( transportType NVARCHAR(15) NOT NULL, username NVARCHAR(255), groupname NVARCHAR(50))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGojaraSessions( username 			VARCHAR(255) NOT NULL, transport 		VARCHAR(255) NOT NULL, lastActivity		BIGINT		 NOT NULL, PRIMARY KEY(username, transport))
+
+Detected: God Table Found in following statement: CREATE TABLE fpWorkgroup( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule TEXT NULL, PRIMARY KEY (workgroupID), INDEX fpWorkgroup_workgroupid_idx(workgroupID))
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR(10) NOT NULL, language VARCHAR(255) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE gatewayRestrictions ( transportType VARCHAR2(15) NOT NULL, username VARCHAR2(255), groupname VARCHAR2(50))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT ofPubsubDefaultConf_pk PRIMARY KEY (serviceID, leaf))
+ in following column notifyConfigChanges and in column notifyConfigChanges of table pubsubDefaultConf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpWorkgroup ( workgroupID BIGINT NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule varchar(4000) NULL, PRIMARY KEY (workgroupID))
+ in following column status and in column status of table ofSipUser
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpSessionProp( sessionID NVARCHAR(31) NOT NULL, name NVARCHAR(100) NOT NULL, propValue TEXT NOT NULL, CONSTRAINT fpSessionProp_pk PRIMARY KEY (sessionID,name))
+ in following column propValue of table fpSessionProp
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroup ( groupName NVARCHAR(50) NOT NULL, description NVARCHAR(255), CONSTRAINT ofGroup_pk PRIMARY KEY (groupName))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucConversationLog ( roomID BIGINT NOT NULL, messageID BIGINT NOT NULL, sender TEXT NOT NULL, nickname VARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject VARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL, INDEX ofMucConversationLog_time_idx (logTime), INDEX ofMucConversationLog_msg_id (messageID))
+ in following column messageID and in column messageID of table jiveOffline2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INT NOT NULL, messageID INT NOT NULL, sender TEXT NOT NULL, nickname NVARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject NVARCHAR(255) NULL, body TEXT NULL, stanza TEXT NULL)
+ in following column sender of table ofMucConversationLog
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPubsubItem ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, creationDate CHAR(15) NOT NULL, payload MEDIUMTEXT NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column payload of table ofPubsubItem
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGatewayRestrictions ( transportType NVARCHAR(15) NOT NULL, username NVARCHAR(255), groupname NVARCHAR(50))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofPrivacyList ( username VARCHAR(64) NOT NULL, name VARCHAR(100) NOT NULL, isDefault TINYINT NOT NULL, list TEXT NOT NULL, PRIMARY KEY (username, name), INDEX ofPrivacyList_default_idx (username, isDefault))
+ in following column list of table ofPrivacyList
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofGojaraStatistics ( logID 			bigint(20) NOT NULL AUTO_INCREMENT, messageDate		bigint(20) NOT NULL, messageType 		tinytext NOT NULL, fromJID 			text NOT NULL, toJID 			text NOT NULL, component			text NOT NULL, PRIMARY KEY (logID))
+ in following column fromJID and in column fromJID of table ofMessageArchive
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpDispatcherProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpDispatcherProp
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpQueueProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue VARCHAR(4000) NOT NULL, PRIMARY KEY (ownerID,name))
+
+Detected: God Table Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency TINYINT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpQueueGroup ( queueID INTEGER NOT NULL, groupName VARCHAR(50) NOT NULL, PRIMARY KEY (queueID,groupName))
+ in following column queueID and in column queueID of table fpDispatcher
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpChatSetting', 'name']
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubNode ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, leaf INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, parent VARCHAR(100) NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NULL, persistItems INTEGER NULL, maxItems INTEGER NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, configSubscription INTEGER NOT NULL, accessModel VARCHAR(10) NOT NULL, payloadType VARCHAR(100) NULL, bodyXSLT VARCHAR(100) NULL, dataformXSLT VARCHAR(100) NULL, creator VARCHAR(1024) NOT NULL, description VARCHAR(255) NULL, language VARCHAR(255) NULL, name VARCHAR(50) NULL, replyPolicy VARCHAR(15) NULL, associationPolicy VARCHAR(15) NULL, maxLeafNodes INTEGER NULL, CONSTRAINT ofPubsubNode_pk PRIMARY KEY (serviceID, nodeID))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofSecurityAuditLog ( msgID INTEGER NOT NULL, username NVARCHAR(64) NOT NULL, entryStamp BIGINT NOT NULL, summary NVARCHAR(255) NOT NULL, node NVARCHAR(255) NOT NULL, details NTEXT, CONSTRAINT ofSecurityAuditLog_pk PRIMARY KEY (msgID))
+ in following column details of table ofSecurityAuditLog
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(80) NOT NULL, nodeID VARCHAR(80) NOT NULL, id VARCHAR(90) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15), includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200), CONSTRAINT ofPubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column includeBody and in column includeBody of table pubsubSubscription
+Detected: Index Shotgun Variant: 3 Following index not used : ['fpSession', 'userID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofConParticipant', 'jidResource']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayPseudoRoster', 'username']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpQueueProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (ownerID,name))
+ in following column propValue of table fpQueueProp
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(4000) NOT NULL, CONSTRAINT ofSASLAuthorized_pk PRIMARY KEY (username, principal))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucConversationLog ( roomID INT NOT NULL, messageID INT NOT NULL, sender NVARCHAR(1024) NOT NULL, nickname NVARCHAR(255) NULL, logTime CHAR(15) NOT NULL, subject NVARCHAR(255) NULL, body NTEXT NULL, stanza NTEXT NULL)
+ in following column stanza of table ofMucConversationLog
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofVCard ( username VARCHAR(64) NOT NULL, vcard LONGVARCHAR NOT NULL, CONSTRAINT ofVCard_pk PRIMARY KEY (username))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGatewayVCards ( jid VARCHAR(255) NOT NULL, value MEDIUMTEXT NOT NULL, PRIMARY KEY (jid))
+ in following column value of table ofGatewayVCards
+Detected: Index Shotgun Variant: 3 Following index not used : ['ofMucConversationLog', 'messageID']
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionMetadata( sessionID NVARCHAR(31) NOT NULL, metadataName NVARCHAR(200) NOT NULL, metadataValue TEXT NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(255) NOT NULL, owner VARCHAR(255) NOT NULL, state VARCHAR(15) NOT NULL, deliver TINYINT NOT NULL, digest TINYINT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody TINYINT NOT NULL, showValues VARCHAR(30) NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth TINYINT NOT NULL, keyword VARCHAR(200) NULL, PRIMARY KEY (serviceID, nodeID, id))
+ in following column subscriptionDepth and in column subscriptionDepth of table pubsubSubscription
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionMetadata( sessionID varchar(31) NOT NULL, metadataName varChar(200) NOT NULL, metadataValue varChar(200) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofPubsubNodeGroups ( serviceID VARCHAR2(100) NOT NULL, nodeID VARCHAR2(100) NOT NULL, rosterGroup VARCHAR2(100) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pubsubSubscription ( serviceID VARCHAR(100) NOT NULL, nodeID VARCHAR(100) NOT NULL, id VARCHAR(100) NOT NULL, jid VARCHAR(1024) NOT NULL, owner VARCHAR(1024) NOT NULL, state VARCHAR(15) NOT NULL, deliver INTEGER NOT NULL, digest INTEGER NOT NULL, digest_frequency INTEGER NOT NULL, expire CHAR(15) NULL, includeBody INTEGER NOT NULL, showValues VARCHAR(30) NOT NULL, subscriptionType VARCHAR(10) NOT NULL, subscriptionDepth INTEGER NOT NULL, keyword VARCHAR(200) NULL, CONSTRAINT pubsubSubs_pk PRIMARY KEY (serviceID, nodeID, id))
+ in following column keyword and in column keyword of table ofPubsubSubscription
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraSessions( username			text NOT NULL, transport			text NOT NULL, lastActivity		bigint(20) NOT NULL, PRIMARY KEY (username, transport))
+ in following column username of table ofGojaraSessions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofMucMember ( roomID BIGINT NOT NULL, jid TEXT NOT NULL, nickname VARCHAR(255) NULL, firstName VARCHAR(100) NULL, lastName VARCHAR(100) NULL, url VARCHAR(100) NULL, email VARCHAR(100) NULL, faqentry VARCHAR(100) NULL, PRIMARY KEY (roomID,jid(70)))
+ in following column jid of table ofMucMember
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpSessionMetadata( sessionID varchar(31) NOT NULL, metadataName varChar(200) NOT NULL, metadataValue TEXT NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucServiceProp ( serviceID INT NOT NULL, name VARCHAR2(100) NOT NULL, propValue VARCHAR2(1024) NOT NULL, CONSTRAINT ofMucServiceProp_pk PRIMARY KEY (serviceID, name))
+ in following column CONSTRAINT and in column CONSTRAINT of table pubsubItem
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofBookmarkProp ( bookmarkID INTEGER NOT NULL, name VARCHAR2(100) NOT NULL, propValue LONG NOT NULL, CONSTRAINT ofBookmarkProp_pk PRIMARY KEY (bookmarkID, name))
+ in following column bookmarkID and in column bookmarkID of table ofBookmarkPerm
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gatewayAvatars ( jid NVARCHAR(255) NOT NULL, imageData TEXT NOT NULL, xmppHash NVARCHAR(255), legacyIdentifier NVARCHAR(255), createDate INTEGER NOT NULL, lastUpdate INTEGER)
+ in following column lastUpdate and in column lastUpdate of table ofGatewayAvatars
+Detected: Metadata as Data Found in following statement: CREATE TABLE fpAgentProp ( ownerID BIGINT NOT NULL, name VARCHAR(100) NOT NULL, propValue VARCHAR(4000) NOT NULL, PRIMARY KEY (ownerID,name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofGroupProp ( groupName VARCHAR(50) NOT NULL, name VARCHAR(100) NOT NULL, propValue TEXT NOT NULL, PRIMARY KEY (groupName, name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE pubsubNodeGroups ( serviceID VARCHAR2(100) NOT NULL, nodeID VARCHAR2(100) NOT NULL, rosterGroup VARCHAR2(100) NOT NULL)
+
+Detected: God Table Found in following statement: CREATE TABLE ofPubsubSubscription ( serviceID NVARCHAR(100) NOT NULL, nodeID NVARCHAR(100) NOT NULL, id NVARCHAR(100) NOT NULL, jid NVARCHAR(1024) NOT NULL, owner NVARCHAR(1024) NOT NULL, state NVARCHAR(15) NOT NULL, deliver INT NOT NULL, digest INT NOT NULL, digest_frequency INT NOT NULL, expire CHAR(15) NULL, includeBody INT NOT NULL, showValues NVARCHAR(30) NOT NULL, subscriptionType NVARCHAR(10) NOT NULL, subscriptionDepth INT NOT NULL, keyword NVARCHAR(200) NULL, CONSTRAINT ofPubsubSubscription_pk PRIMARY KEY (serviceID, nodeID, id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofMucRoom ( serviceID INT NOT NULL, roomID INT NOT NULL, creationDate CHAR(15) NOT NULL, modificationDate CHAR(15) NOT NULL, name NVARCHAR(50) NOT NULL, naturalName NVARCHAR(255) NOT NULL, description NVARCHAR(255) NULL, lockedDate CHAR(15) NOT NULL, emptyDate CHAR(15) NULL, canChangeSubject INT NOT NULL, maxUsers INT NOT NULL, publicRoom INT NOT NULL, moderated INT NOT NULL, membersOnly INT NOT NULL, canInvite INT NOT NULL, roomPassword NVARCHAR(50) NULL, canDiscoverJID INT NOT NULL, logEnabled INT NOT NULL, subject NVARCHAR(100) NULL, rolesToBroadcast INT NOT NULL, useReservedNick INT NOT NULL, canChangeNick INT NOT NULL, canRegister INT NOT NULL, allowpm INT NULL, CONSTRAINT ofMucRoom_pk PRIMARY KEY (serviceID, name))
+ in following column canDiscoverJID and in column canDiscoverJID of table mucRoom2
+Detected: Metadata as Data Found in following statement: CREATE TABLE ofSASLAuthorized ( username NVARCHAR(64) NOT NULL, principal NVARCHAR(2000) NOT NULL, CONSTRAINT ofSASLAuthorized_pk PRIMARY KEY (username, principal))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE fpDispatcher( queueID INT NOT NULL, name NVARCHAR(50) NULL, description NVARCHAR(255) NULL, offerTimeout INT NOT NULL, requestTimeout INT NOT NULL, CONSTRAINT fpDispatcher_pk PRIMARY KEY (queueID))
+ in following column requestTimeout and in column requestTimeout of table fpWorkgroup
+Detected: God Table Found in following statement: CREATE TABLE ofPfRules ( id BIGINT NOT NULL AUTO_INCREMENT, ruleorder BIGINT , type varchar(255) , tojid varchar(255) , fromjid varchar(255) , rulef varchar(255) , disabled boolean, log boolean, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['gatewayRestrictions', 'username']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofOffline ( username NVARCHAR(64) NOT NULL, messageID INTEGER NOT NULL, creationDate CHAR(15) NOT NULL, messageSize INTEGER NOT NULL, stanza NTEXT NOT NULL, CONSTRAINT ofOffline_pk PRIMARY KEY (username, messageID))
+ in following column stanza of table ofOffline
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gatewayVCards ( jid VARCHAR(255) NOT NULL, value TEXT NOT NULL)
+ in following column value of table gatewayVCards
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ofPfRules ( id BIGINT IDENTITY(10,2), ruleorder BIGINT, type varchar(255), tojid varchar(255), fromjid varchar(255), rulef varchar(255), disabled bit, log bit, description varchar(255), sourcetype varchar(255), desttype varchar(255), PRIMARY KEY (id))
+ in following column log and in column log of table pfRules
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ofGojaraSessions ( username			text NOT NULL, transport			text NOT NULL, lastActivity		bigint(20) NOT NULL, PRIMARY KEY (username(255), transport(255)))
+ in following column transport of table ofGojaraSessions
+Detected: God Table Found in following statement: CREATE TABLE pubsubDefaultConf ( serviceID VARCHAR2(100) NOT NULL, leaf INTEGER NOT NULL, deliverPayloads INTEGER NOT NULL, maxPayloadSize INTEGER NOT NULL, persistItems INTEGER NOT NULL, maxItems INTEGER NOT NULL, notifyConfigChanges INTEGER NOT NULL, notifyDelete INTEGER NOT NULL, notifyRetract INTEGER NOT NULL, presenceBased INTEGER NOT NULL, sendItemSubscribe INTEGER NOT NULL, publisherModel VARCHAR2(15) NOT NULL, subscriptionEnabled INTEGER NOT NULL, accessModel VARCHAR2(10) NOT NULL, language VARCHAR2(255) NULL, replyPolicy VARCHAR2(15) NULL, associationPolicy VARCHAR2(15) NOT NULL, maxLeafNodes INTEGER NOT NULL, CONSTRAINT pubsubDefConf_pk PRIMARY KEY (serviceID, leaf))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE jiveSASLAuthorized ( username VARCHAR(64) NOT NULL, principal VARCHAR(4000) NOT NULL, CONSTRAINT jiveSASLAuthoirzed_pk PRIMARY KEY (username, principal))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fpWorkgroup( workgroupID INTEGER NOT NULL, jid VARCHAR(255) NOT NULL, displayName VARCHAR(50) NULL, description VARCHAR(255) NULL, status INTEGER NOT NULL, modes INTEGER NOT NULL, creationDate VARCHAR(15) NOT NULL, modificationDate VARCHAR(15) NOT NULL, maxchats INTEGER NOT NULL, minchats INTEGER NOT NULL, requestTimeout INTEGER NOT NULL, offerTimeout INTEGER NOT NULL, schedule TEXT NULL, PRIMARY KEY (workgroupID))
+ in following column schedule of table fpWorkgroup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jivePresence ( username NVARCHAR(64) NOT NULL, offlinePresence NTEXT, offlineDate CHAR(15) NOT NULL, CONSTRAINT jivePresence_pk PRIMARY KEY (username))
+ in following column offlinePresence of table jivePresence

@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table t ( Project varchar(500) , Language varchar(500) , File varchar(500) , File_dirname varchar(500) , File_basename varchar(500) , nBlank integer , nComment integer , nCode integer , nScaled real )
+ in following column nScaled of table t
+Detected: Index Shotgun Variant: 1

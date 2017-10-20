@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (queue_name VARCHAR(%i), uuid VARCHAR(%i), data VARCHAR, ttl FLOAT, flags INTEGER)
+ in following column ttl of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (queue_name VARCHAR(%i), uuid VARCHAR(%i), data BLOB, ttl REAL, flags INTEGER)
+ in following column ttl of table items

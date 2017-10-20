@@ -1,0 +1,7 @@
+Detected: God Table Found in following statement: CREATE TABLE numeric_types_basics ( id int,	f_tinyint TINYINT,	f_smallint SMALLINT,	f_mediumint MEDIUMINT,	f_int INT,	f_integer INTEGER,	f_bigint BIGINT,	f_real REAL,	f_double DOUBLE,	f_float FLOAT,	f_decimal DECIMAL,	f_numeric NUMERIC)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE numeric_types_basics ( id int,	f_tinyint TINYINT,	f_smallint SMALLINT,	f_mediumint MEDIUMINT,	f_int INT,	f_integer INTEGER,	f_bigint BIGINT,	f_real REAL,	f_double DOUBLE,	f_float FLOAT,	f_decimal DECIMAL,	f_numeric NUMERIC)
+ in following column f_real of table numeric_types_basics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE numeric_types_basics ( id int,	f_tinyint TINYINT,	f_smallint SMALLINT,	f_mediumint MEDIUMINT,	f_int INT,	f_integer INTEGER,	f_bigint BIGINT,	f_real REAL,	f_double DOUBLE,	f_float FLOAT,	f_decimal DECIMAL,	f_numeric NUMERIC)
+ in following column f_float of table numeric_types_basics
+Detected: Index Shotgun Variant: 1

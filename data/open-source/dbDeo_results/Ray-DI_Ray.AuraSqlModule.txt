@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `comments` ( id INTEGER PRIMARY KEY AUTOINCREMENT, post_id INTEGER, username VARCHAR(32), content TEXT )
+ in following column content of table `comments`
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `posts` ( id INTEGER PRIMARY KEY AUTOINCREMENT, username VARCHAR(32) NOT NULL, post_content varchar(128) )
+
+Detected: Index Shotgun Variant: 1

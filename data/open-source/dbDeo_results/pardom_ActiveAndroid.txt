@@ -1,0 +1,21 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity1 ( Id INTEGER AUTOINCREMENT PRIMARY KEY NOT NULL, */ Column1 INTEGER )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Entity2 ( Id INTEGER AUTO_INCREMENT PRIMARY KEY, Column TEXT NOT NULL, Column2 INTEGER NULL )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Entity2 ( Id INTEGER AUTO_INCREMENT PRIMARY KEY, Column TEXT NOT NULL, Column2 INTEGER NULL )
+ in following column Column of table Entity2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS MockMigration(	Id INTEGER AUTO_INCREMENT PRIMARY KEY,	Column TEXT NOT NULL)
+ in following column Column of table MockMigration
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity1 ( Id INTEGER AUTOINCREMENT PRIMARY KEY NOT NULL, Column1 INTEGER )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity2 ( Id INTEGER AUTO_INCREMENT PRIMARY KEY, Column TEXT NOT NULL, Column2 INTEGER NULL )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['table_name', 'member2']
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity2 ( Id INTEGER AUTOINCREMENT PRIMARY KEY NOT NULL, Column1 INTEGER )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['table_name', 'member']
+Detected: Index Shotgun Variant: 3 Following index not used : ['table_name', 'member1']
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity1(	Id INTEGER AUTOINCREMENT PRIMARY KEY NOT NULL,	Column1 INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE Entity1(	Id INTEGER AUTOINCREMENT PRIMARY KEY NOT NULL,																		Column1					INTEGER)
+

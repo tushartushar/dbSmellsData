@@ -1,0 +1,28 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE NetworkShares ( id IDENTITY, hostname VARCHAR(256) NOT NULL, name VARCHAR(256) NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Dependencies', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['ExperimentTasks', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Resources', 'ON']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resources', 'status']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE Dependencies SET type=?, status=?, lock=?, data=?  WHERE fromId=? and toId=?
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Dependencies', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['NetworkShares', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['NetworkShares', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Connectors', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Connectors', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Resources', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Experiments', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Experiments', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Dependencies', 'DELETE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resources', 'priority']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Experiments', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['NetworkShares', 'ON']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Locks ( id IDENTITY, type BIGINT NOT NULL, data BLOB NOT NULL)
+ in following column id and in column id of table Jobs
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['ExperimentTasks', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Resources', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Connectors', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['ExperimentTasks', 'CASCADE']
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE Connectors SET type=?, uri=?, data=?  WHERE id=?
+

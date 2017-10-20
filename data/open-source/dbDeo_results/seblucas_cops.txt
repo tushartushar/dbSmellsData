@@ -1,0 +1,243 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'italicize_common_cases']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '&']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'mile']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE books_custom_column_8_link( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER NOT NULL, value INTEGER NOT NULL, UNIQUE(book, value) )
+ in following column value and in column value of table custom_column_10
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', 'indexbooks_custom_column_16_link_bidxbooks_custom_column_16_link']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_5( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_5
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_1_link', 'KA']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (book)', 'O8']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_3_link (value)', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_6( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_6
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE library_id ( id INTEGER PRIMARY KEY, uuid TEXT NOT NULL, UNIQUE(uuid) )
+ in following column uuid of table library_id
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (book)', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Conan']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'mobi_file_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_languages_link', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'renumber_headings']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Arthur']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', '3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series ( id INTEGER PRIMARY KEY, name TEXT NOT NULL COLLATE NOCASE, sort TEXT COLLATE NOCASE, UNIQUE (name) )
+ in following column sort of table series
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['booLn', 'YC']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_8_link', 'KA']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE preferences(id INTEGER PRIMARY KEY, key TEXT NON NULL, val TEXT NON NULL, UNIQUE(key))
+ in following column val of table preferences
+Detected: Index Shotgun Variant: 3 Following index not used : ['conversion_options (book)', 'eF']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_9 (value )', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'unsmarten_punctuation']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x00']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x02']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (author)', 'author']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (rating)', 'rating']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_6_link', 'KA']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', 'value']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_4( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'no_chapters_in_toc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'p']
+Detected: Index Shotgun Variant: 3 Following index not used : ['conversion_options (book)', 'book']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_13( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_series_link', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (book)', 'indexbooks_series_link_aidxbooks_series_linkOCREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['publishers', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'fix_indents']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_10 (book)', 'C']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE publishers ( id INTEGER PRIMARY KEY, name TEXT NOT NULL COLLATE NOCASE, sort TEXT COLLATE NOCASE, UNIQUE(name) )
+ in following column name of table publishers
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'X']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_publishers_link', 'indexbooks_publishers_link_bidxbooks_publishers_linkKCREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'ze_mapping']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_1( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'G']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_15( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+ in following column value of table custom_column_15
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_10( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value INT NOT NULL , UNIQUE(book))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_1_link', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_publishers_link', 'publisher']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x0e']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_7 (book)', 'triggerfkc_insert_custom_column_7custom_column_7CREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_7 (book)', 'A']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x17']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id INTEGER PRIMARY KEY, book INTEGER NON NULL, text TEXT NON NULL COLLATE NOCASE, UNIQUE(book) )
+ in following column text of table comments
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_5_link', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_6', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_languages_link', 'lang_code']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE languages ( id INTEGER PRIMARY KEY, lang_code TEXT NON NULL COLLATE NOCASE, UNIQUE(lang_code) )
+ in following column lang_code and in column lang_code of table books_languages_link
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', '\x1c']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_8( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_3( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_3
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_1_link', 'x']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_1', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_6_link', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Lewis']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_10 (book)', 'book']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds ( id INTEGER PRIMARY KEY, title TEXT NOT NULL, script TEXT NOT NULL, UNIQUE(title) )
+ in following column title of table feeds
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'dehyphenate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'sr3_search']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_series_link', 'series']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_4_link', 'indexbooks_custom_column_4_link_bidxbooks_custom_column_4_link']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE books_custom_column_1_link( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER NOT NULL, value INTEGER NOT NULL, extra REAL, UNIQUE(book, value) )
+ in following column extra of table books_custom_column_1_link
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x14']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'book']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_1( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value INT NOT NULL , UNIQUE(book))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_2( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_2
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_tags_link', 'tag']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x11']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Zola']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '%']
+Detected: Index Shotgun Variant: 3 Following index not used : ['booLn', 'triggerfkc_insert_books_custom_column_16_linkbooks_custom_column_16_linkCREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_13', 's']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_2( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data ( id INTEGER PRIMARY KEY, book INTEGER NON NULL, format TEXT NON NULL COLLATE NOCASE, uncompressed_size INTEGER NON NULL, name TEXT NON NULL, UNIQUE(book, format))
+ in following column name of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_5_link', 'KA']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '-']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_16( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_16
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_3_link (value)', 'wtablecustom_column_3custom_column_3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x01']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'London']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_5_link', 'indexbooks_custom_column_5_link_bidxbooks_custom_column_5_link']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE languages ( id INTEGER PRIMARY KEY, lang_code TEXT NON NULL COLLATE NOCASE, UNIQUE(lang_code) )
+ in following column lang_code of table languages
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_9 (value )', 'AA']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (rating)', 'w']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_7 (book)', 'P']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_2_link (value)', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_8( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_8
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (book)', 'windexbooks_idxbooksGCREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', '[PDOC]']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'H']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE publishers ( id INTEGER PRIMARY KEY, name TEXT NOT NULL COLLATE NOCASE, sort TEXT COLLATE NOCASE, UNIQUE(name) )
+ in following column sort of table publishers
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', 'MC']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x0b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data ( id INTEGER PRIMARY KEY, book INTEGER NON NULL, format TEXT NON NULL COLLATE NOCASE, uncompressed_size INTEGER NON NULL, name TEXT NON NULL, UNIQUE(book, format))
+ in following column format of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_4_link', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Dumas']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_1_link', 'indexbooks_custom_column_1_link_bidxbooks_custom_column_1_link']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\t']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_3_link (value)', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Doyle']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'remove_fake_margins']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_4( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_4
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (author)', 'w']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'use_auto_toc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_publishers_link', 'A7']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x0f']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Wells']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_tags_link', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_publishers_link', 'book']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_3( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['conversion_options', 'book']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_6( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'mobi_toc_at_start']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Carroll']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_16', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_15', 't']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_3 (book)', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x10']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x12']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_16( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_3 (book)', 'OP']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'level1_toc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_13', 'book']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_7( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'html_unwrap_factor']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_1( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+ in following column value of table custom_column_1
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'author']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE feeds ( id INTEGER PRIMARY KEY, title TEXT NOT NULL, script TEXT NOT NULL, UNIQUE(title) )
+ in following column script of table feeds
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x0c']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_16_link (value)', 'k']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE books_plugin_data(id INTEGER PRIMARY KEY, book INTEGER NON NULL, name TEXT NON NULL, val TEXT NON NULL, UNIQUE(book,name))
+ in following column name of table books_plugin_data
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_9( id INTEGER PRIMARY KEY AUTOINCREMENT, value INT NOT NULL , UNIQUE(value))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_8', 'value']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE books_plugin_data(id INTEGER PRIMARY KEY, book INTEGER NON NULL, name TEXT NON NULL, val TEXT NON NULL, UNIQUE(book,name))
+ in following column val of table books_plugin_data
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_15', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_13', 't']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_13', 'Q']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'minimum_line_height']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_9 (value )', 'tablebooks_custom_column_9_linkbooks_custom_column_9_link']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_6_link', 'indexbooks_custom_column_6_link_bidxbooks_custom_column_6_link']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_2_link (value)', 'wtablecustom_column_2custom_column_2']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series ( id INTEGER PRIMARY KEY, name TEXT NOT NULL COLLATE NOCASE, sort TEXT COLLATE NOCASE, UNIQUE (name) )
+ in following column name of table series
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (book)', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books', 'author_sort']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_7 (book)', 'book']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link', 'rating']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_10 (book)', 'Ctriggerfkc_insert_custom_column_10custom_column_10CREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_8_link', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Jack']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_13( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+ in following column value of table custom_column_13
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_4', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link (author)', 'w7']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE ratings ( id INTEGER PRIMARY KEY, rating INTEGER CHECK(rating > -1 AND rating < 11), UNIQUE (rating) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x03']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_10 (book)', 'TJ']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE books_custom_column_4_link( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER NOT NULL, value INTEGER NOT NULL, extra REAL, UNIQUE(book, value) )
+ in following column extra of table books_custom_column_4_link
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'personal_doc']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_2_link (value)', 'N']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_9 (value )', 'N']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'share_not_sync']
+Detected: Index Shotgun Variant: 3 Following index not used : ['conversion_options', 'format']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_11( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value BOOL NOT NULL , UNIQUE(book))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_5( id INTEGER PRIMARY KEY AUTOINCREMENT, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(value))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tags ( id INTEGER PRIMARY KEY, name TEXT NOT NULL COLLATE NOCASE, UNIQUE (name) )
+ in following column name of table tags
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (rating)', 'wC']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_3 (book)', 'viewmetametaCREATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_5', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', '\x08']
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_15', 'x']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_4_link', 'KA']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_column_7( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+ in following column value of table custom_column_7
+Detected: Index Shotgun Variant: 3 Following index not used : ['custom_column_11', 'insert_blank_line_size']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_ratings_link (book)', 'u']
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_2_link (value)', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['conversion_options (book)', 'indexcustom_columns_idxcustom_columnsWCREATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE conversion_options ( id INTEGER PRIMARY KEY, format TEXT NOT NULL COLLATE NOCASE, book INTEGER, data BLOB NOT NULL, UNIQUE(format,book) )
+ in following column format of table conversion_options
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_authors_link', 'Alexandre']
+Detected: Clone Tables Found in following statement: CREATE TABLE custom_column_15( id INTEGER PRIMARY KEY AUTOINCREMENT, book INTEGER, value TEXT NOT NULL COLLATE NOCASE, UNIQUE(book))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books_custom_column_8_link', 'indexbooks_custom_column_8_link_bidxbooks_custom_column_8_link']

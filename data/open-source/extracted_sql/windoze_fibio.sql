@@ -1,0 +1,2 @@
+CREATE TABLE test(id INT)
+SELECT id FROM test ORDER BY id ASC

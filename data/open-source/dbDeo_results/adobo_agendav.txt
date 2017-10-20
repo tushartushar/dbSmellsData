@@ -1,0 +1,24 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'synctoken']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "addressbooks_1471965751" ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer)
+ in following column principaluri of table "addressbooks_1471965751"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "addressbooks_1471965751" ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer)
+ in following column displayname of table "addressbooks_1471965751"
+Detected: Index Shotgun Variant: 3 Following index not used : ['sessions', 'last_activity']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc, calendardata blob, uri text, calendarid integer, lastmodified integer, etag text, size integer, componenttype text, firstoccurence integer, lastoccurence integer, uid text)
+ in following column etag of table calendarobjects
+Detected: God Table Found in following statement: CREATE TABLE calendarobjects ( id integer primary key asc, calendardata blob, uri text, calendarid integer, lastmodified integer, etag text, size integer, componenttype text, firstoccurence integer, lastoccurence integer, uid text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'tablecalendarobjectscalendarobjects']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc, calendardata blob, uri text, calendarid integer, lastmodified integer, etag text, size integer, componenttype text, firstoccurence integer, lastoccurence integer, uid text)
+ in following column componenttype of table calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "addressbooks_1471965751" ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer)
+ in following column description of table "addressbooks_1471965751"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc, calendardata blob, uri text, calendarid integer, lastmodified integer, etag text, size integer, componenttype text, firstoccurence integer, lastoccurence integer, uid text)
+ in following column uri of table calendarobjects
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "addressbooks_1471965751" ( id integer primary key asc, principaluri text, displayname text, uri text, description text, synctoken integer)
+ in following column uri of table "addressbooks_1471965751"
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'j']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calendarobjects ( id integer primary key asc, calendardata blob, uri text, calendarid integer, lastmodified integer, etag text, size integer, componenttype text, firstoccurence integer, lastoccurence integer, uid text)
+ in following column uid of table calendarobjects
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', '5']
+Detected: Index Shotgun Variant: 3 Following index not used : ['addressbookchanges', 'addressbookid']

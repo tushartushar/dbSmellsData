@@ -1,0 +1,147 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column time_run of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(id, cycle, name))
+ in following column name of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_events(time TEXT, change TEXT, point TEXT, namespace TEXT, key TEXT, value TEXT)
+ in following column value of table broadcast_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE suite_template_vars(key TEXT, value TEXT, PRIMARY KEY(key))
+ in following column value of table suite_template_vars
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(cycle, name))
+ in following column status of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE suite_params_checkpoints(id INTEGER, key TEXT, value TEXT, PRIMARY KEY(id, key))
+ in following column value of table suite_params_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT)
+ in following column message of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column host of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column batch_sys_job_id of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column submit_method_id of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(cycle, name))
+ in following column cycle of table task_pool
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(cycle, name))
+ in following column name of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_events(time TEXT, change TEXT, point TEXT, namespace TEXT, key TEXT, value TEXT)
+ in following column change of table broadcast_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(id, cycle, name))
+ in following column hold_swap of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_events(time TEXT, change TEXT, point TEXT, namespace TEXT, key TEXT, value TEXT)
+ in following column time of table broadcast_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column cycle of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column delay of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column cycle of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT)
+ in following column event of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states_checkpoints(id INTEGER, point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(id, point, namespace, key))
+ in following column point of table broadcast_states_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column ctx_pickle of table task_action_timers
+Detected: God Table Found in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT)
+ in following column name of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(cycle, name))
+ in following column name of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column message of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column cycle of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states_checkpoints(id INTEGER, point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(id, point, namespace, key))
+ in following column value of table broadcast_states_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, status TEXT, PRIMARY KEY(name, cycle))
+ in following column time_updated of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, status TEXT, PRIMARY KEY(name, cycle))
+ in following column status of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column time_submit of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column event of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT)
+ in following column time of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(id, cycle, name))
+ in following column status of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column delays_pickle of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states(point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(point, namespace, key))
+ in following column value of table broadcast_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column submit_method of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column status of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, status TEXT, PRIMARY KEY(name, cycle))
+ in following column name of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column timeout of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states_checkpoints(id INTEGER, point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(id, point, namespace, key))
+ in following column namespace of table broadcast_states_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column time_run_exit of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_events(time TEXT, change TEXT, point TEXT, namespace TEXT, key TEXT, value TEXT)
+ in following column namespace of table broadcast_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, PRIMARY KEY(id, cycle, name))
+ in following column cycle of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE checkpoint_id(id INTEGER, time TEXT, event TEXT, PRIMARY KEY(id))
+ in following column time of table checkpoint_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(id, cycle, name))
+ in following column status of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column time of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column cycle of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column name of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(cycle, name))
+ in following column hold_swap of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column time_created of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column misc of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(cycle, name))
+ in following column cycle of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states(point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(point, namespace, key))
+ in following column point of table broadcast_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, status TEXT, PRIMARY KEY(name, cycle))
+ in following column cycle of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE suite_params(key TEXT, value TEXT, PRIMARY KEY(key))
+ in following column value of table suite_params
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column ctx_key_pickle of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+ in following column time_updated of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(id, cycle, name))
+ in following column name of table task_pool_checkpoints
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT)
+ in following column cycle of table task_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE checkpoint_id(id INTEGER, time TEXT, event TEXT, PRIMARY KEY(id))
+ in following column event of table checkpoint_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column time_submit_exit of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_states(point TEXT, namespace TEXT, key TEXT, value TEXT, PRIMARY KEY(point, namespace, key))
+ in following column namespace of table broadcast_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_action_timers(cycle TEXT, name TEXT, ctx_key_pickle TEXT, ctx_pickle TEXT, delays_pickle TEXT, num INTEGER, delay TEXT, timeout TEXT, PRIMARY KEY(cycle, name, ctx_key_pickle))
+ in following column name of table task_action_timers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column run_signal of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column batch_sys_name of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool_checkpoints(id INTEGER, cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(id, cycle, name))
+ in following column cycle of table task_pool_checkpoints
+Detected: God Table Found in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, host TEXT, submit_method TEXT, submit_method_id TEXT, status TEXT, PRIMARY KEY(name, cycle))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column user_at_host of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE broadcast_events(time TEXT, change TEXT, point TEXT, namespace TEXT, key TEXT, value TEXT)
+ in following column point of table broadcast_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_states(name TEXT, cycle TEXT, time_created TEXT, time_updated TEXT, submit_num INTEGER, status TEXT, PRIMARY KEY(name, cycle))
+ in following column time_created of table task_states
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_pool(cycle TEXT, name TEXT, spawned INTEGER, status TEXT, hold_swap TEXT, PRIMARY KEY(cycle, name))
+ in following column status of table task_pool
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_jobs(cycle TEXT, name TEXT, submit_num INTEGER, is_manual_submit INTEGER, try_num INTEGER, time_submit TEXT, time_submit_exit TEXT, submit_status INTEGER, time_run TEXT, time_run_exit TEXT, run_signal TEXT, run_status INTEGER, user_at_host TEXT, batch_sys_name TEXT, batch_sys_job_id TEXT, PRIMARY KEY(cycle, name, submit_num))
+ in following column name of table task_jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_events(name TEXT, cycle TEXT, time TEXT, submit_num INTEGER, event TEXT, message TEXT, misc TEXT)
+ in following column name of table task_events

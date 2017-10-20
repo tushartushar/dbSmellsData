@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS output_scores (uuid varchar(40), raw_text longtext, bathroom double,breakfast double,cleanliness double,facilities double,internet double,location double,noise double,parking double,restaurant double,room double,sleeping_comfort double,staff double,swimming_pool double,value_for_money double, overall double)
+ in following column raw_text of table output_scores
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS output_scores (uuid varchar(40), raw_text longtext, bathroom double,breakfast double,cleanliness double,facilities double,internet double,location double,noise double,parking double,restaurant double,room double,sleeping_comfort double,staff double,swimming_pool double,value_for_money double, overall double)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['output_scores', 'uuid']

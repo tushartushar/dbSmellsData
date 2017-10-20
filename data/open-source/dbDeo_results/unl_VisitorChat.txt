@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `messages` ( `id` int(11) NOT NULL AUTO_INCREMENT, `conversations_id` int(10) NOT NULL, `users_id` int(10) NOT NULL COMMENT 'The id of the user account creating the message', `date_created` datetime NOT NULL, `message` mediumtext COLLATE utf8_unicode_ci NOT NULL, PRIMARY KEY (`id`), KEY `fk_messages_users1` (`users_id`), KEY `fk_messages_conversations1` (`conversations_id`))
+ in following column `message` of table `messages`
+Detected: Index Shotgun Variant: 1

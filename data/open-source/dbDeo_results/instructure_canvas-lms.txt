@@ -1,0 +1,92 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'ActiveRecord']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column url of table page_views
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'path']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'quoted_table_name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column context_type of table grade_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE authentications ( id text PRIMARY KEY, created_at timestamp, pseudonym_id bigint, account_id bigint, user_id bigint, event_type text )
+ in following column event_type of table authentications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{MAPPING_TABLE} ( record_type text, id text, new_id text, created_at timestamp, PRIMARY KEY (record_type, id, created_at) )
+ in following column record_type of table #
+Detected: Obsolete Column TypesFound in following statement: create table page_views (request_id text primary key, user_id bigint)
+ in following column request_id of table page_views
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE courses ( id text PRIMARY KEY, created_at timestamp, request_id text, course_id bigint, event_type text, user_id bigint, data text )
+ in following column event_type of table courses
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'failed_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['__migrated_conversation_stats', 'conversation_participant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['__migrated_messages', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'asset_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'nulls']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'CommunicationChannel']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'Job']
+Detected: Index Shotgun Variant: 3 Following index not used : ['__migrated_message_participants', 'migrated_message_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column request_id of table grade_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{MAPPING_TABLE} ( record_type text, id text, new_id text, created_at timestamp, PRIMARY KEY (record_type, id, created_at) )
+ in following column new_id of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column request_id of table page_views
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE authentications ( id text PRIMARY KEY, created_at timestamp, pseudonym_id bigint, account_id bigint, user_id bigint, event_type text )
+ in following column id of table authentications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views_migration_metadata_per_account ( shard_id text, account_id bigint, last_created_at timestamp, last_request_id text, PRIMARY KEY (shard_id, account_id) )
+ in following column last_request_id of table page_views_migration_metadata_per_account
+Detected: Index Shotgun Variant: 3 Following index not used : ['_conversation_message_attachments', 'conversation_message_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{MAPPING_TABLE} ( record_type text, id text, new_id text, created_at timestamp, PRIMARY KEY (record_type, id, created_at) )
+ in following column id of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column user_agent of table page_views
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column grade_before of table grade_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column asset_type of table page_views
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', '::']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'Attachment']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column grade_after of table grade_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column context_type of table page_views
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'sortable_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'ConversationMessage']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'priority']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column controller of table page_views
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'root_attachment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'Delayed']
+Detected: Index Shotgun Variant: 3 Following index not used : ['_conversation_message_attachments', 'attachment_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE courses ( id text PRIMARY KEY, created_at timestamp, request_id text, course_id bigint, event_type text, user_id bigint, data text )
+ in following column request_id of table courses
+Detected: Duplicate Column Names Found in following statement: create table previous (key blob primary key, data blob)
+ in following column data and in column data of table courses
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'unique_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'effective_context_code']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views_migration_metadata_per_account ( shard_id text, account_id bigint, last_created_at timestamp, last_request_id text, PRIMARY KEY (shard_id, account_id) )
+ in following column shard_id of table page_views_migration_metadata_per_account
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'run_at']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'path_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['__migrated_messages', 'signature']
+Detected: Index Shotgun Variant: 3 Following index not used : ['__migrated_message_participant_strings', 'migrated_message_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column action of table page_views
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'Pseudonym']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'User']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE courses ( id text PRIMARY KEY, created_at timestamp, request_id text, course_id bigint, event_type text, user_id bigint, data text )
+ in following column data of table courses
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column id of table grade_changes
+Detected: God Table Found in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+
+Detected: God Table Found in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'Backend']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'CalendarEvent']
+Detected: Index Shotgun Variant: 3 Following index not used : ['_conversation_message_old_contexts', 'conversation_message_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE grade_changes ( id text PRIMARY KEY, created_at timestamp, request_id text, account_id bigint, submission_id bigint, version_number int, grader_id bigint, student_id bigint, assignment_id bigint, context_id bigint, context_type text, event_type text, grade_before text, grade_after text )
+ in following column event_type of table grade_changes
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'LOWER']
+Detected: Index Shotgun Variant: 3 Following index not used : ['#', 'asset_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE page_views ( request_id text PRIMARY KEY, session_id text, user_id bigint, url text, context_id bigint, context_type text, asset_id bigint, asset_type text, controller text, action text, contributed boolean, interaction_seconds double, created_at timestamp, updated_at timestamp, developer_key_id bigint, user_request boolean, render_time double, user_agent text, asset_user_access_id bigint, participated boolean, summarized boolean, account_id bigint, real_user_id bigint )
+ in following column session_id of table page_views
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE courses ( id text PRIMARY KEY, created_at timestamp, request_id text, course_id bigint, event_type text, user_id bigint, data text )
+ in following column id of table courses

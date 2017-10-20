@@ -1,0 +1,15 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`mentor`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*mentor Associations*/ student_number_1 VARCHAR(255), student_number_2 VARCHAR(255), student_number_3 VARCHAR(255), student_number_4 VARCHAR(255), /*mentor Attributes*/ name VARCHAR(255), PRIMARY KEY(name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`student`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*student Associations*/ mentor_name VARCHAR(255), /*student Attributes*/ name VARCHAR(255), number INT, PRIMARY KEY(name))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`student`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*student Associations*/ mentor_name_1 VARCHAR(255), mentor_name_2 VARCHAR(255), mentor_name_3 VARCHAR(255), /*student Attributes*/ number VARCHAR(255), PRIMARY KEY(number))
+ in following column . and in column . of table `elections`
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `elections`.`position`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*position Attributes*/ id_position INT AUTO_INCREMENT, name VARCHAR(255), description VARCHAR(255), PRIMARY KEY(id_position))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`student`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*student Associations*/ mentor_name_1 VARCHAR(255), mentor_name_2 VARCHAR(255), mentor_name_3 VARCHAR(255), /*student Attributes*/ number VARCHAR(255), PRIMARY KEY(number))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`mentor`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*mentor Associations*/ student_name VARCHAR(255), /*mentor Attributes*/ name VARCHAR(255), id VARCHAR(255), PRIMARY KEY(name))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `example`.`mentor`( /*------------------------*/ /* MEMBER VARIABLES */ /*------------------------*/ /*mentor Associations*/ student_number_1 VARCHAR(255), student_number_2 VARCHAR(255), student_number_3 VARCHAR(255), /*mentor Attributes*/ name VARCHAR(255), PRIMARY KEY(name))
+

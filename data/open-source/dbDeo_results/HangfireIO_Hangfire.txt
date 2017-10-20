@@ -1,0 +1,17 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [$(HangFireSchema)].[Hash](		[Id] [int] IDENTITY(1,1) NOT NULL,		[Key] [nvarchar](100) NOT NULL,		[Field] [nvarchar](100) NOT NULL,		[Value] [nvarchar](max) NULL,		[ExpireAt] [datetime2](7) NULL,				CONSTRAINT [PK_HangFire_Hash] PRIMARY KEY CLUSTERED ([Id] ASC)	)
+ in following column [ExpireAt] and in column [ExpireAt] of table [HangFire]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [$(HangFireSchema)].[Hash](		[Id] [int] IDENTITY(1,1) NOT NULL,		[Key] [nvarchar](100) NOT NULL,		[Field] [nvarchar](100) NOT NULL,		[Value] [nvarchar](max) NULL,		[ExpireAt] [datetime2](7) NULL,				CONSTRAINT [PK_HangFire_Hash] PRIMARY KEY CLUSTERED ([Id] ASC)	)
+ in following column [Value] and in column [Value] of table [HangFire]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [HangFire].[Set]( [Id] [int] IDENTITY(1,1) NOT NULL, [Key] [nvarchar](100) NOT NULL, [Score] [float] NOT NULL, [Value] [nvarchar](256) NOT NULL, [ExpireAt] [datetime] NULL, CONSTRAINT [PK_HangFire_Set] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column . and in column . of table [$(HangFireSchema)]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [HangFire].[Set]( [Id] [int] IDENTITY(1,1) NOT NULL, [Key] [nvarchar](100) NOT NULL, [Score] [float] NOT NULL, [Value] [nvarchar](256) NOT NULL, [ExpireAt] [datetime] NULL, CONSTRAINT [PK_HangFire_Set] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column [Value] and in column [Value] of table [$(HangFireSchema)]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [$(HangFireSchema)].[State] ( [Id] [int] IDENTITY(1,1) NOT NULL, [JobId] [int] NOT NULL,		[Name] [nvarchar](20) NOT NULL,		[Reason] [nvarchar](100) NULL, [CreatedAt] [datetime] NOT NULL, [Data] [nvarchar](max) NULL, CONSTRAINT [PK_HangFire_State] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column . and in column . of table [HangFire]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [$(HangFireSchema)].[List]( [Id] [int] IDENTITY(1,1) NOT NULL, [Key] [nvarchar](100) NOT NULL, [Value] [nvarchar](max) NULL, [ExpireAt] [datetime] NULL, CONSTRAINT [PK_HangFire_List] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column [ExpireAt] and in column [ExpireAt] of table [HangFire]
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [HangFire].[Set]( [Id] [int] IDENTITY(1,1) NOT NULL, [Key] [nvarchar](100) NOT NULL, [Score] [float] NOT NULL, [Value] [nvarchar](256) NOT NULL, [ExpireAt] [datetime] NULL, CONSTRAINT [PK_HangFire_Set] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column [Score] of table [HangFire]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [$(HangFireSchema)].[Set]( [Id] [int] IDENTITY(1,1) NOT NULL, [Key] [nvarchar](100) NOT NULL, [Score] [float] NOT NULL, [Value] [nvarchar](256) NOT NULL, [ExpireAt] [datetime] NULL, CONSTRAINT [PK_HangFire_Set] PRIMARY KEY CLUSTERED ([Id] ASC) )
+ in following column [Score] of table [$(HangFireSchema)]

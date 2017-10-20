@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE job (	id INTEGER(3) NOT NULL,	name VARCHAR(40) NOT NULL,	description TEXT(100) NOT NULL,	PRIMARY KEY (id))
+ in following column description of table job
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `logs` (	 `id` int(11) NOT NULL AUTO_INCREMENT,	 `uri` varchar(255) NOT NULL,	 `method` varchar(6) NOT NULL,	 `params` text NOT NULL,	 `api_key` varchar(40) NOT NULL,	 `ip_address` varchar(15) NOT NULL,	 `time` int(11) NOT NULL,	 `authorized` tinyint(1) NOT NULL,	 PRIMARY KEY (`id`)	)
+ in following column `params` of table `logs`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `limits` (	 `id` int(11) NOT NULL AUTO_INCREMENT,	 `uri` varchar(255) NOT NULL,	 `count` int(10) NOT NULL,	 `hour_started` int(11) NOT NULL,	 `api_key` varchar(40) NOT NULL,	 PRIMARY KEY (`id`)	)
+ in following column `id` and in column `id` of table `' . $this->options['prefix'][0] . 'items`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `".$this->db->dbprefix($config['streams.assignments_table'])
+ in following column dbprefix and in column dbprefix of table "
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `' . $this->options['prefix'][0] . 'items` (`feed_id` TEXT CHARACTER SET utf8 NOT NULL, `id` TEXT CHARACTER SET utf8 NOT NULL, `data` TEXT CHARACTER SET utf8 NOT NULL, `posted` INT UNSIGNED NOT NULL, INDEX `feed_id` (`feed_id`(125)))
+ in following column `data` and in column `data` of table `' . $this->options['prefix'][0] . 'cache_data`

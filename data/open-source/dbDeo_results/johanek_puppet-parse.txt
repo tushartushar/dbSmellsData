@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['resources', 'restype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resources', 'title']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resources', '50']

@@ -1,0 +1,2 @@
+SELECT %s FROM %s %s
+CREATE TABLE %s(%s)

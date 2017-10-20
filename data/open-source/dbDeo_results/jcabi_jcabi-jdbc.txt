@@ -1,0 +1,21 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE foo (name VARCHAR(50))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo (name VARCHAR(30))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS foo (name VARCHAR(50))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo99 (name VARCHAR(30))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo (date DATETIME)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo16 (name VARCHAR(50))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS usersids (id INTEGER, name VARCHAR(50))
+ in following column id and in column id of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE foo5 (name VARCHAR(30))
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE foo (id INT auto_increment, name VARCHAR(50))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE foo776 (name VARCHAR(30))
+

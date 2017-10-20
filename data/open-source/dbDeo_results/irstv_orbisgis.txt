@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: create table test (id integer primary key, str varchar(30), flt float)
+ in following column flt of table test
+Detected: Obsolete Column TypesFound in following statement: create table test (id integer, str varchar(30), flt float)
+ in following column flt of table test
+Detected: Duplicate Column Names Found in following statement: create table "+dummy+"(the_geom GEOMETRY)
+ in following column the_geom and in column the_geom of table PTS
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "+outputTableName+"(ID INT PRIMARY KEY, THE_GEOM GEOMETRY)
+ in following column ID and in column ID of table TEST
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table test (id integer primary key, y float)
+ in following column y of table test

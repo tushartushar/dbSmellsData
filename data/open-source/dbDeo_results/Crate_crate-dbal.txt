@@ -1,0 +1,7 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (id INTEGER, test STRING, PRIMARY KEY(id))
+ in following column id and in column id of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (foo STRING, bar STRING, ' . 'INDEX UNIQ_D87F7E0C8C73652176FF8CAA USING FULLTEXT (foo, bar))
+ in following column ' . ' of table test
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (column1 STRING, INDEX key USING FULLTEXT (column1))
+ in following column INDEX of table test

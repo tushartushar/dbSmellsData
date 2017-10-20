@@ -1,0 +1,13 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['affiliations', 'updated']
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'node']
+Detected: Index Shotgun Variant: 3 Following index not used : ['subscriptions', 'updated']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (node TEXT REFERENCES nodes (node), 	 	 id TEXT NOT NULL,		 updated TIMESTAMP,		 xml TEXT,		 PRIMARY KEY (node, id))
+ in following column id of table items
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'updated']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (node TEXT REFERENCES nodes (node), 	 	 id TEXT NOT NULL,		 updated TIMESTAMP,		 xml TEXT,		 PRIMARY KEY (node, id))
+ in following column xml of table items
+Detected: Index Shotgun Variant: 3 Following index not used : ['items', 'in_reply_to']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nodes (node TEXT NOT NULL PRIMARY KEY)
+ in following column node of table nodes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (node TEXT REFERENCES nodes (node), 	 	 id TEXT NOT NULL,		 updated TIMESTAMP,		 xml TEXT,		 PRIMARY KEY (node, id))
+ in following column node of table items

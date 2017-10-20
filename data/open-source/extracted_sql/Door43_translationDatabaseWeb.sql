@@ -1,0 +1,1 @@
+SELECT id, user_account_id FROM gl_tracking_regionaldirector

@@ -1,0 +1,5 @@
+CREATE TABLE `reports` ( `id` int(11) NOT NULL auto_increment, `created_at` datetime default NULL, `target` varchar(255) default NULL, `LIBRUBY` varchar(255) default NULL, `prefix` varchar(255) default NULL, `host_cpu` varchar(255) default NULL, `arch` varchar(255) default NULL, `host_os` varchar(255) default NULL, `build` varchar(255) default NULL, `LIBRUBY_SO` varchar(255) default NULL, `ruby_install_name` varchar(255) default NULL, `target_cpu` varchar(255) default NULL, `host_vendor` varchar(255) default NULL, `SHELL` varchar(255) default NULL, `report_time` varchar(255) default NULL, `rubygems_version` varchar(255) default NULL, `ruby_version` varchar(255) default NULL, `user_key` char(64) default NULL, `remote_ip` varchar(255) default NULL, PRIMARY KEY (`id`))
+create table ruport_test ( a varchar(55), b varchar(55), c varchar(55), d varchar(55))
+SELECT * FROM ruport_test;
+CREATE TABLE `schema_info` ( `version` int(11) default NULL)
+insert into ruport_test values( 'a column, row 1', 'b column, row 1', 'c column, row 1', 'd column, row 1' )

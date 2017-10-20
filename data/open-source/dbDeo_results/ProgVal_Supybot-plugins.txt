@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE variables ( domainType TEXT, domainName TEXT, variableName TEXT, value TEXT, sticky BOOLEAN )
+ in following column value of table variables
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( chan VARCHAR(128), nick VARCHAR(128), time TIMESTAMP, content TEXT )
+ in following column content of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moves ( chan VARCHAR(128), nick VARCHAR(128), time TIMESTAMP, type VARCHAR(16), content TEXT )
+ in following column content of table moves
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE variables ( domainType TEXT, domainName TEXT, variableName TEXT, value TEXT, sticky BOOLEAN )
+ in following column variableName of table variables
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE %s_cache ( chan VARCHAR(128), %s year INT, month TINYINT, day TINYINT, dayofweek TINYINT, hour TINYINT, lines INTEGER, words INTEGER, chars INTEGER, joins INTEGER, parts INTEGER, quits INTEGER, nicks INTEGER, kickers INTEGER, kickeds INTEGER )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE variables ( domainType TEXT, domainName TEXT, variableName TEXT, value TEXT, sticky BOOLEAN )
+ in following column domainName of table variables
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE variables ( domainType TEXT, domainName TEXT, variableName TEXT, value TEXT, sticky BOOLEAN )
+ in following column domainType of table variables

@@ -1,0 +1,42 @@
+Detected: God Table Found in following statement: CREATE TABLE dbo_ATTENDEE_REG ( ATTENDEE_ID integer NOT NULL, YEAR integer NOT NULL, DATE_CREATED timestamp NOT NULL, AMT_PAID numeric(19) NOT NULL, WEB_TRANSACTION_ID char(50), PAYMENT_TYPE_ID integer NOT NULL, COMMENTS char(255), ATTENDEE_EMAILED_IND boolean, REG_TYPE_ID integer NOT NULL, DATE_MODIFIED timestamp, DATE_EMAIL_SENT timestamp, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, ASL_IND boolean, SEND_ART_SHOW_INFO boolean, WEB_TRANSACTION_DATE_ISSUED timestamp, REGISTRATION_PICKED_UP_IND boolean, REGISTRATION_PICKED_UP_BY char(50), REGISTRATION_PICKED_UP_DATE timestamp, VOLUNTEER_INTEREST boolean, SPECIAL_PRICING boolean, SPECIAL_PRICING_REASON char(50), PRIMARY KEY (ATTENDEE_ID, YEAR), /* Foreign keys */ FOREIGN KEY (ATTENDEE_ID) REFERENCES dbo_ATTENDEE(ATTENDEE_ID) ON DELETE NO ACTION ON UPDATE NO ACTION)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dbo_ATTENDEE ( ATTENDEE_ID integer PRIMARY KEY AUTOINCREMENT NOT NULL, FIRST_NAME char(50) NOT NULL, MIDDLE_NAME char(50), LAST_NAME char(50) NOT NULL, DATE_OF_BIRTH timestamp, COMMENTS char(100), EMAIL char(255), BAD_EMAIL_IND boolean, HOME_PHONE char(15), WORK_PHONE char(15), OTHER_PHONE char(15), ADDRESS_LINE_1 char(75), ADDRESS_LINE_2 char(50), ADDRESS_LINE_3 char(50), ADDRESS_CITY char(50), ADDRESS_STATE_CODE char(2), ADDRESS_ZIP char(20), FOREIGN_POSTAL_CODE char(12), BAD_ADDRESS_IND boolean, BAD_ADDRESS_DATE timestamp, COUNTRY_CODE char(3), NO_SEND_IND boolean, ADDRESS_TYPE_ID integer, PR_OPT_OUT_IND boolean, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, INTERNATIONAL_ADDRESS_INFO text, DECEASED boolean)
+ in following column COMMENTS and in column COMMENTS of table dbo_BAN
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dbo_ATTENDEE ( ATTENDEE_ID integer PRIMARY KEY AUTOINCREMENT NOT NULL, FIRST_NAME char(50) NOT NULL, MIDDLE_NAME char(50), LAST_NAME char(50) NOT NULL, DATE_OF_BIRTH timestamp, COMMENTS char(100), EMAIL char(255), BAD_EMAIL_IND boolean, HOME_PHONE char(15), WORK_PHONE char(15), OTHER_PHONE char(15), ADDRESS_LINE_1 char(75), ADDRESS_LINE_2 char(50), ADDRESS_LINE_3 char(50), ADDRESS_CITY char(50), ADDRESS_STATE_CODE char(2), ADDRESS_ZIP char(20), FOREIGN_POSTAL_CODE char(12), BAD_ADDRESS_IND boolean, BAD_ADDRESS_DATE timestamp, COUNTRY_CODE char(3), NO_SEND_IND boolean, ADDRESS_TYPE_ID integer, PR_OPT_OUT_IND boolean, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, INTERNATIONAL_ADDRESS_INFO text, DECEASED boolean)
+ in following column INTERNATIONAL_ADDRESS_INFO of table dbo_ATTENDEE
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', 'add_index']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '10']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE products ( id int(11) NOT NULL auto_increment, name varchar(255), PRIMARY KEY (id))
+ in following column id and in column id of table items
+Detected: God Table Found in following statement: CREATE TABLE dbo_ATTENDEE ( ATTENDEE_ID integer PRIMARY KEY AUTOINCREMENT NOT NULL, FIRST_NAME char(50) NOT NULL, MIDDLE_NAME char(50), LAST_NAME char(50) NOT NULL, DATE_OF_BIRTH timestamp, COMMENTS char(100), EMAIL char(255), BAD_EMAIL_IND boolean, HOME_PHONE char(15), WORK_PHONE char(15), OTHER_PHONE char(15), ADDRESS_LINE_1 char(75), ADDRESS_LINE_2 char(50), ADDRESS_LINE_3 char(50), ADDRESS_CITY char(50), ADDRESS_STATE_CODE char(2), ADDRESS_ZIP char(20), FOREIGN_POSTAL_CODE char(12), BAD_ADDRESS_IND boolean, BAD_ADDRESS_DATE timestamp, COUNTRY_CODE char(3), NO_SEND_IND boolean, ADDRESS_TYPE_ID integer, PR_OPT_OUT_IND boolean, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, INTERNATIONAL_ADDRESS_INFO text, DECEASED boolean)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dbo_BAN ( ATTENDEE_ID integer NOT NULL, YEAR integer NOT NULL, DATE_CREATED timestamp, ACTIVE_IND boolean, COMMENTS text, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, PRIMARY KEY (ATTENDEE_ID, YEAR))
+ in following column COMMENTS of table dbo_BAN
+Detected: Obsolete Column TypesFound in following statement: create table all_types ( a integer primary key, b float, c string, d integer )
+ in following column b of table all_types
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', ':name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '}']
+Detected: Obsolete Column TypesFound in following statement: create table foo ( a integer primary key, b text )
+ in following column b of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', ':length']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', ':accounts']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '15']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '=>']
+Detected: Duplicate Column Names Found in following statement: create table defaults_test ( a string default NULL, b string default 'Hello' )
+ in following column a and in column a of table the_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', ':surname']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '{']
+Detected: Duplicate Column Names Found in following statement: create table defaults_test ( a string default NULL, b string default 'Hello' )
+ in following column b and in column b of table the_table
+Detected: Obsolete Column TypesFound in following statement: create table foo_real(a real)
+ in following column a of table foo_real
+Detected: Duplicate Column Names Found in following statement: create table foo(data text)
+ in following column data and in column data of table ex
+Detected: Obsolete Column TypesFound in following statement: create table foo(data text)
+ in following column data of table foo
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE dbo_ATTENDEE ( ATTENDEE_ID integer PRIMARY KEY AUTOINCREMENT NOT NULL, FIRST_NAME char(50) NOT NULL, MIDDLE_NAME char(50), LAST_NAME char(50) NOT NULL, DATE_OF_BIRTH timestamp, COMMENTS char(100), EMAIL char(255), BAD_EMAIL_IND boolean, HOME_PHONE char(15), WORK_PHONE char(15), OTHER_PHONE char(15), ADDRESS_LINE_1 char(75), ADDRESS_LINE_2 char(50), ADDRESS_LINE_3 char(50), ADDRESS_CITY char(50), ADDRESS_STATE_CODE char(2), ADDRESS_ZIP char(20), FOREIGN_POSTAL_CODE char(12), BAD_ADDRESS_IND boolean, BAD_ADDRESS_DATE timestamp, COUNTRY_CODE char(3), NO_SEND_IND boolean, ADDRESS_TYPE_ID integer, PR_OPT_OUT_IND boolean, SSMA_TimeStamp blob NOT NULL, CREATE_APPLICATION_NAME char(50), CREATE_DATE timestamp, UPDATE_APPLICATION_NAME char(50), UPDATE_DATE timestamp, INTERNATIONAL_ADDRESS_INFO text, DECEASED boolean)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', '[:name, :surname]']
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['accounts', "'by_name_surname'"]

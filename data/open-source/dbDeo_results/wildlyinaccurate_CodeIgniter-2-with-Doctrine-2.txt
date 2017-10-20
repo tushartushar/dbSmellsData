@@ -1,0 +1,23 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE EntitySubClass (mapped1 INTEGER NOT NULL, mapped2 TEXT NOT NULL, id INTEGER NOT NULL, name TEXT NOT NULL, related1_id INTEGER DEFAULT NULL, PRIMARY KEY(id))
+ in following column mapped2 of table EntitySubClass
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s(%s TEXT PRIMARY KEY NOT NULL, %s BLOB, %s INTEGER)
+ in following column %s of table %s
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users_groups ( user_id INT NOT NULL, group_id INT NOT NULL, PRIMARY KEY(user_id, group_id) )
+ in following column user_id and in column user_id of table user_read_comments
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE product_attributes ( product_id INTEGER, attribute_name VARCHAR, attribute_value VARCHAR, PRIMARY KEY (product_id, attribute_name) )
+ in following column product_id and in column product_id of table Feature
+Detected: Metadata as Data Found in following statement: CREATE TABLE Person ( id INT AUTO_INCREMENT NOT NULL, name VARCHAR(50) NOT NULL, discr VARCHAR(255) NOT NULL, PRIMARY KEY(id) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE EntitySubClass (mapped1 INTEGER NOT NULL, mapped2 TEXT NOT NULL, id INTEGER NOT NULL, name TEXT NOT NULL, related1_id INTEGER DEFAULT NULL, PRIMARY KEY(id))
+ in following column name of table EntitySubClass
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE EntitySubClass (mapped1 INTEGER NOT NULL, mapped2 TEXT NOT NULL, id INTEGER NOT NULL, name TEXT NOT NULL, related1_id INTEGER DEFAULT NULL, PRIMARY KEY(id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE product_attributes ( product_id INTEGER, attribute_name VARCHAR, attribute_value VARCHAR, PRIMARY KEY (product_id, attribute_name) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Group ( id INT AUTO_INCREMENT NOT NULL, PRIMARY KEY(id) )
+ in following column id and in column id of table product
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Phonenumber ( id INT AUTO_INCREMENT NOT NULL, PRIMARY KEY(id) )
+ in following column id and in column id of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE product ( id INTEGER, name VARCHAR, PRIMARY KEY(id) )
+ in following column name and in column name of table EntitySubClass

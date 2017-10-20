@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message ( id INTEGER PRIMARY KEY ASC, sender TEXT, recipients TEXT, subject TEXT, source BLOB, size TEXT, type TEXT, created_at DATETIME DEFAULT CURRENT_DATETIME )
+ in following column type of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message ( id INTEGER PRIMARY KEY ASC, sender TEXT, recipients TEXT, subject TEXT, source BLOB, size TEXT, type TEXT, created_at DATETIME DEFAULT CURRENT_DATETIME )
+ in following column recipients of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message ( id INTEGER PRIMARY KEY ASC, sender TEXT, recipients TEXT, subject TEXT, source BLOB, size TEXT, type TEXT, created_at DATETIME DEFAULT CURRENT_DATETIME )
+ in following column sender of table message
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message ( id INTEGER PRIMARY KEY ASC, sender TEXT, recipients TEXT, subject TEXT, source BLOB, size TEXT, type TEXT, created_at DATETIME DEFAULT CURRENT_DATETIME )
+ in following column size of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message ( id INTEGER PRIMARY KEY ASC, sender TEXT, recipients TEXT, subject TEXT, source BLOB, size TEXT, type TEXT, created_at DATETIME DEFAULT CURRENT_DATETIME )
+ in following column subject of table message

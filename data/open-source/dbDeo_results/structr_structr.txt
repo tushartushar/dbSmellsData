@@ -1,0 +1,26 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS CacheGroups (id INTEGER PRIMARY KEY AUTOINCREMENT, manifestHostHash INTEGER NOT NULL ON CONFLICT FAIL, manifestURL TEXT UNIQUE ON CONFLICT FAIL, newestCache INTEGER, origin TEXT)
+ in following column origin of table CacheGroups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column origin of table Databases
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconInfo', 'url']
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconInfo', 'iconID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['PageURL', 'url']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Origins (origin TEXT UNIQUE ON CONFLICT REPLACE, quota INTEGER NOT NULL ON CONFLICT FAIL)
+ in following column origin of table Origins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column path of table Databases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS CacheGroups (id INTEGER PRIMARY KEY AUTOINCREMENT, manifestHostHash INTEGER NOT NULL ON CONFLICT FAIL, manifestURL TEXT UNIQUE ON CONFLICT FAIL, newestCache INTEGER, origin TEXT)
+ in following column manifestURL of table CacheGroups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE PageURL (url TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,iconID INTEGER NOT NULL ON CONFLICT FAIL)
+ in following column url of table PageURL
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IconInfo (iconID INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE ON CONFLICT REPLACE, url TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT FAIL, stamp INTEGER)
+ in following column url of table IconInfo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IconDatabaseInfo (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL)
+ in following column value and in column value of table ItemTable
+Detected: Index Shotgun Variant: 3 Following index not used : ['IconData', 'iconID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IconDatabaseInfo (key TEXT NOT NULL ON CONFLICT FAIL UNIQUE ON CONFLICT REPLACE,value TEXT NOT NULL ON CONFLICT FAIL)
+ in following column value of table IconDatabaseInfo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column name of table Databases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Databases (guid INTEGER PRIMARY KEY AUTOINCREMENT, origin TEXT, name TEXT, displayName TEXT, estimatedSize INTEGER, path TEXT)
+ in following column displayName of table Databases

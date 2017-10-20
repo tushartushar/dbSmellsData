@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE dogs (name varchar(100) primary key, owner varchar(100), CONSTRAINT fk_owner FOREIGN KEY (owner) REFERENCES people(name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE people (name varchar(100) primary key, email varchar(100), birthday timestamp(0))
+
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE people (name varchar(100) primary key, email varchar(16), birthday timestamp with time zone)
+

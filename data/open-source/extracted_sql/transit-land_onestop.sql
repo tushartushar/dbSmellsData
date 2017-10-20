@@ -1,0 +1,1 @@
+SELECT * FROM #{table} WITH NO DATA;

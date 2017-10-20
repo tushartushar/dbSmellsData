@@ -1,0 +1,14 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE django_admin_log ( id integer NOT NULL, action_time timestamp with time zone NOT NULL, object_id text, object_repr character varying(200) NOT NULL, action_flag smallint NOT NULL, change_message text NOT NULL, content_type_id integer, user_id integer NOT NULL, CONSTRAINT django_admin_log_action_flag_check CHECK ((action_flag >= 0)))
+ in following column object_id of table django_admin_log
+Detected: God Table Found in following statement: CREATE TABLE auth_user ( id integer NOT NULL, password character varying(128) NOT NULL, last_login timestamp with time zone, is_superuser boolean NOT NULL, username character varying(30) NOT NULL, first_name character varying(30) NOT NULL, last_name character varying(30) NOT NULL, email character varying(254) NOT NULL, is_staff boolean NOT NULL, is_active boolean NOT NULL, date_joined timestamp with time zone NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `' . $this->options['extras']['prefix'] . 'cache_data` (`id` TEXT CHARACTER SET utf8 NOT NULL, `items` SMALLINT NOT NULL DEFAULT 0, `data` BLOB NOT NULL, `mtime` INT UNSIGNED NOT NULL, UNIQUE (`id`(125)))
+ in following column `data` and in column `data` of table `' . $this->options['extras']['prefix'] . 'items`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `wpvk_usermeta` ( `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `user_id` bigint(20) unsigned NOT NULL DEFAULT '0', `meta_key` varchar(255) DEFAULT NULL, `meta_value` longtext, PRIMARY KEY (`umeta_id`), KEY `user_id` (`user_id`), KEY `meta_key` (`meta_key`(191)))
+ in following column `meta_value` of table `wpvk_usermeta`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE django_admin_log ( id integer NOT NULL, action_time timestamp with time zone NOT NULL, object_id text, object_repr character varying(200) NOT NULL, action_flag smallint NOT NULL, change_message text NOT NULL, content_type_id integer, user_id integer NOT NULL, CONSTRAINT django_admin_log_action_flag_check CHECK ((action_flag >= 0)))
+ in following column change_message of table django_admin_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE timetracker_worklog ( id integer NOT NULL, time_from timestamp with time zone NOT NULL, time_until timestamp with time zone NOT NULL, description text NOT NULL, office_hour_rate boolean NOT NULL, project_id integer NOT NULL, user_id integer NOT NULL, billing_period_id integer)
+ in following column description of table timetracker_worklog
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE django_session ( session_key character varying(40) NOT NULL, session_data text NOT NULL, expire_date timestamp with time zone NOT NULL)
+ in following column session_data of table django_session

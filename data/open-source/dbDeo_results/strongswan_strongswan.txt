@@ -1,0 +1,122 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['child_configs', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	username TEXT, password TEXT)
+ in following column password of table users
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE versions SET release = ?, time = ?  WHERE id = ?
+
+Detected: God Table Found in following statement: CREATE TABLE ike_sas ( local_spi BLOB NOT NULL PRIMARY KEY, remote_spi BLOB NOT NULL, id INTEGER NOT NULL, initiator INTEGER NOT NULL, local_id_type INTEGER NOT NULL, local_id_data BLOB DEFAULT NULL, remote_id_type INTEGER NOT NULL, remote_id_data BLOB DEFAULT NULL, host_family INTEGER NOT NULL, local_host_data BLOB NOT NULL, remote_host_data BLOB NOT NULL, created INTEGER NOT NULL DEFAULT CURRENT_TIMESTAMP)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pools ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL UNIQUE, start BLOB NOT NULL, end BLOB NOT NULL, timeout INTEGER NOT NULL)
+ in following column id and in column id of table triplets
+Detected: Index Shotgun Variant: 3 Following index not used : ['child_config_traffic_selector', 'traffic_selector']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gateways (	name TEXT,	port INTEGER,	address text)
+ in following column address of table gateways
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE addresses SET acquired = ?, released = 0, identity = ?  WHERE id = ? AND identity = 0
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['versions', 'release']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `results` ( `id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, `session` INTEGER NOT NULL REFERENCES `measurements`(`id`), `policy` INTEGER NOT NULL REFERENCES `policies`(`id`), `rec` INTEGER NOT NULL, `result` TEXT NOT NULL)
+ in following column `result` of table `results`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `sessions` ( `id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, `time` INTEGER NOT NULL, `connection` INTEGER NOT NULL, `identity` INTEGER DEFAULT 0 REFERENCES `identities`(`id`), `device` INTEGER DEFAULT 0 REFERENCES `devices`(`id`), `product` INTEGER DEFAULT 0 REFERENCES `products`(`id`), `rec` INTEGER DEFAULT 3)
+ in following column `time` and in column `time` of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+ in following column local_id of table peer_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE versions ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, package INTEGER NOT NULL REFERENCES packages(id), product INTEGER NOT NULL REFERENCES products(id), release TEXT NOT NULL, security INTEGER DEFAULT 0, blacklist INTEGER DEFAULT 0, time INTEGER DEFAULT 0)
+ in following column release of table versions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE certificate_distribution_points ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, ca INTEGER NOT NULL, type INTEGER NOT NULL, uri TEXT NOT NULL)
+ in following column uri of table certificate_distribution_points
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE policies ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, type INTEGER NOT NULL, name VARCHAR(100) NOT NULL UNIQUE, argument TEXT DEFAULT '' NOT NULL, rec_fail INTEGER NOT NULL, rec_noresult INTEGER NOT NULL, file INTEGER DEFAULT 0 REFERENCES files(id), dir INTEGER DEFAULT 0 REFERENCES directories(id))
+ in following column argument of table policies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pools ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL UNIQUE, start BLOB NOT NULL, end BLOB NOT NULL, timeout INTEGER NOT NULL)
+ in following column name of table pools
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	username TEXT, password TEXT)
+ in following column username of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE child_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, lifetime INTEGER NOT NULL DEFAULT '1500', rekeytime INTEGER NOT NULL DEFAULT '1200', jitter INTEGER NOT NULL DEFAULT '60', updown TEXT DEFAULT NULL, hostaccess INTEGER NOT NULL DEFAULT '0', mode INTEGER NOT NULL DEFAULT '2', start_action INTEGER NOT NULL DEFAULT '0', dpd_action INTEGER NOT NULL DEFAULT '0', close_action INTEGER NOT NULL DEFAULT '0', ipcomp INTEGER NOT NULL DEFAULT '0', reqid INTEGER NOT NULL DEFAULT '0')
+ in following column name of table child_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE triplets ( id TEXT NOT NULL, used INTEGER NOT NULL, rand BLOB NOT NULL, sres BLOB NOT NULL, kc BLOB NOT NULL)
+ in following column id of table triplets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+ in following column name of table peer_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE directories ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, path TEXT NOT NULL)
+ in following column path of table directories
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addresses ( `id` int(10) unsigned NOT NULL auto_increment, `pool` int(10) unsigned NOT NULL, `address` varbinary(16) NOT NULL, `identity` int(10) unsigned NOT NULL DEFAULT 0, `acquired` int(10) unsigned NOT NULL DEFAULT 0, `released` int(10) unsigned NOT NULL DEFAULT 1, PRIMARY KEY (`id`), INDEX (`pool`), INDEX (`identity`), INDEX (`address`))
+ in following column `identity` and in column `identity` of table `sessions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, local_spi BLOB NOT NULL, signal INTEGER NOT NULL, level INTEGER NOT NULL, msg TEXT NOT NULL, time INTEGER NOT NULL DEFAULT CURRENT_TIMESTAMP)
+ in following column msg of table logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL)
+ in following column name of table products
+Detected: God Table Found in following statement: CREATE TABLE `child_configs` ( `id` int(10) unsigned NOT NULL auto_increment, `name` varchar(32) collate utf8_unicode_ci NOT NULL, `lifetime` mediumint(8) unsigned NOT NULL default '1500', `rekeytime` mediumint(8) unsigned NOT NULL default '1200', `jitter` mediumint(8) unsigned NOT NULL default '60', `updown` varchar(128) collate utf8_unicode_ci default NULL, `hostaccess` tinyint(1) unsigned NOT NULL default '0', `mode` tinyint(4) unsigned NOT NULL default '2', `start_action` tinyint(4) unsigned NOT NULL default '0', `dpd_action` tinyint(4) unsigned NOT NULL default '0', `close_action` tinyint(4) unsigned NOT NULL default '0', `ipcomp` tinyint(4) unsigned NOT NULL default '0', `reqid` mediumint(8) unsigned NOT NULL default '0', PRIMARY KEY (`id`), INDEX (`name`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE attribute_pools ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL)
+ in following column name of table attribute_pools
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ike_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, certreq INTEGER NOT NULL DEFAULT '1', force_encap INTEGER NOT NULL DEFAULT '0', local TEXT NOT NULL, remote TEXT NOT NULL)
+ in following column local of table ike_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `regids` ( `id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, `name` TEXT NOT NULL)
+ in following column `name` of table `regids`
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE addresses SET acquired = ?, released = 0, identity = ?  WHERE id = ? AND released != 0
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pools ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL UNIQUE, start BLOB NOT NULL, end BLOB NOT NULL, timeout INTEGER NOT NULL)
+ in following column name and in column name of table policies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE components ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, vendor_id INTEGER NOT NULL, name INTEGER NOT NULL, qualifier INTEGER DEFAULT 0, label TEXT NOT NULL)
+ in following column label of table components
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE child_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, lifetime INTEGER NOT NULL DEFAULT '1500', rekeytime INTEGER NOT NULL DEFAULT '1200', jitter INTEGER NOT NULL DEFAULT '60', updown TEXT DEFAULT NULL, hostaccess INTEGER NOT NULL DEFAULT '0', mode INTEGER NOT NULL DEFAULT '2', start_action INTEGER NOT NULL DEFAULT '0', dpd_action INTEGER NOT NULL DEFAULT '0', close_action INTEGER NOT NULL DEFAULT '0', ipcomp INTEGER NOT NULL DEFAULT '0', reqid INTEGER NOT NULL DEFAULT '0')
+ in following column updown of table child_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE devices ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, description TEXT DEFAULT '', value TEXT NOT NULL, product INTEGER REFERENCES products(id), trusted INTEGER DEFAULT 0, created INTEGER)
+ in following column description of table devices
+Detected: God Table Found in following statement: CREATE TABLE child_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, lifetime INTEGER NOT NULL DEFAULT '1500', rekeytime INTEGER NOT NULL DEFAULT '1200', jitter INTEGER NOT NULL DEFAULT '60', updown TEXT DEFAULT NULL, hostaccess INTEGER NOT NULL DEFAULT '0', mode INTEGER NOT NULL DEFAULT '2', start_action INTEGER NOT NULL DEFAULT '0', dpd_action INTEGER NOT NULL DEFAULT '0', close_action INTEGER NOT NULL DEFAULT '0', ipcomp INTEGER NOT NULL DEFAULT '0', reqid INTEGER NOT NULL DEFAULT '0')
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE leases ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, address INTEGER NOT NULL, identity INTEGER NOT NULL, acquired INTEGER NOT NULL, released INTEGER NOT NULL)
+ in following column address and in column address of table addresses
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE packages ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, blacklist INTEGER DEFAULT 0)
+ in following column name of table packages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE private_keys ( `id` int(10) unsigned NOT NULL auto_increment, `type` tinyint(3) unsigned NOT NULL, `data` BLOB NOT NULL, PRIMARY KEY (`id`))
+ in following column `data` and in column `data` of table shared_secrets
+Detected: God Table Found in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['addresses', 'address']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE attributes ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, identity INTEGER NOT NULL DEFAULT 0, pool INTEGER NOT NULL DEFAULT 0, type INTEGER NOT NULL, value BLOB NOT NULL)
+ in following column pool and in column pool of table peer_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+ in following column remote_id of table peer_configs
+Detected: Index Shotgun Variant: 3 Following index not used : ['child_config_traffic_selector', 'child_cfg']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attributes', 'pool']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, session INTEGER NOT NULL REFERENCES measurements(id), policy INTEGER NOT NULL REFERENCES policies(id), rec INTEGER NOT NULL, result TEXT NOT NULL)
+ in following column result of table results
+Detected: Index Shotgun Variant: 3 Following index not used : ['peer_configs', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ike_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, certreq INTEGER NOT NULL DEFAULT '1', force_encap INTEGER NOT NULL DEFAULT '0', local TEXT NOT NULL, remote TEXT NOT NULL)
+ in following column remote of table ike_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE files ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, dir INTEGER DEFAULT 0 REFERENCES directories(id), name TEXT NOT NULL)
+ in following column name of table files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+ in following column virtual of table peer_configs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `results` ( `id` INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, `session` INTEGER NOT NULL REFERENCES `measurements`(`id`), `policy` INTEGER NOT NULL REFERENCES `policies`(`id`), `rec` INTEGER NOT NULL, `result` TEXT NOT NULL)
+ in following column `result` and in column `result` of table `workitems`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE addresses ( `id` int(10) unsigned NOT NULL auto_increment, `pool` int(10) unsigned NOT NULL, `address` varbinary(16) NOT NULL, `identity` int(10) unsigned NOT NULL DEFAULT 0, `acquired` int(10) unsigned NOT NULL DEFAULT 0, `released` int(10) unsigned NOT NULL DEFAULT 1, PRIMARY KEY (`id`), INDEX (`pool`), INDEX (`identity`), INDEX (`address`))
+ in following column `address` and in column `address` of table leases
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ike_sas ( `local_spi` varbinary(8) NOT NULL, `remote_spi` varbinary(8) NOT NULL, `id` int(10) unsigned NOT NULL, `initiator` tinyint(1) NOT NULL, `local_id_type` tinyint(3) NOT NULL, `local_id_data` varbinary(64) DEFAULT NULL, `remote_id_type` tinyint(3) NOT NULL, `remote_id_data` varbinary(64) DEFAULT NULL, `host_family` tinyint(3) NOT NULL, `local_host_data` varbinary(16) NOT NULL, `remote_host_data` varbinary(16) NOT NULL, `lastuse` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (`local_spi`))
+ in following column `id` and in column `id` of table `groups_members`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE attributes ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, identity INTEGER NOT NULL DEFAULT 0, pool INTEGER NOT NULL DEFAULT 0, type INTEGER NOT NULL, value BLOB NOT NULL)
+ in following column value and in column value of table devices
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE proposals ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, proposal TEXT NOT NULL)
+ in following column proposal of table proposals
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE workitems ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, session INTEGER NOT NULL REFERENCES sessions(id), enforcement INTEGER NOT NULL REFERENCES enforcements(id), type INTEGER NOT NULL, arg_str TEXT, arg_int INTEGER DEFAULT 0, rec_fail INTEGER NOT NULL, rec_noresult INTEGER NOT NULL, rec_final INTEGER, result TEXT)
+ in following column arg_str of table workitems
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quintuplets ( id TEXT NOT NULL, used INTEGER NOT NULL, rand BLOB NOT NULL, autn BLOB NOT NULL, ck BLOB NOT NULL, ik BLOB NOT NULL, res BLOB NOT NULL)
+ in following column id of table quintuplets
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE attributes ( `id` int(10) unsigned NOT NULL auto_increment, `identity` int(10) unsigned NOT NULL default '0', `pool` int(10) unsigned NOT NULL default '0', `type` int(10) unsigned NOT NULL, `value` varbinary(16) NOT NULL, PRIMARY KEY (`id`), INDEX (`identity`), INDEX (`pool`))
+ in following column `value` and in column `value` of table `tags`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE workitems ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, session INTEGER NOT NULL REFERENCES sessions(id), enforcement INTEGER NOT NULL REFERENCES enforcements(id), type INTEGER NOT NULL, arg_str TEXT, arg_int INTEGER DEFAULT 0, rec_fail INTEGER NOT NULL, rec_noresult INTEGER NOT NULL, rec_final INTEGER, result TEXT)
+ in following column result of table workitems
+Detected: God Table Found in following statement: CREATE TABLE ike_sas ( `local_spi` varbinary(8) NOT NULL, `remote_spi` varbinary(8) NOT NULL, `id` int(10) unsigned NOT NULL, `initiator` tinyint(1) NOT NULL, `local_id_type` tinyint(3) NOT NULL, `local_id_data` varbinary(64) DEFAULT NULL, `remote_id_type` tinyint(3) NOT NULL, `remote_id_data` varbinary(64) DEFAULT NULL, `host_family` tinyint(3) NOT NULL, `local_host_data` varbinary(16) NOT NULL, `remote_host_data` varbinary(16) NOT NULL, `lastuse` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (`local_spi`))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE pools SET start = ?, end = ?  WHERE id = ?
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `algorithms` ( `id` INTEGER PRIMARY KEY, `name` VARCHAR(20) NOT NULL)
+ in following column `name` and in column `name` of table `components`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gateways (	name TEXT,	port INTEGER,	address text)
+ in following column name of table gateways
+Detected: Index Shotgun Variant: 3 Following index not used : ['addresses', 'pool']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE peer_configs ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, ike_version INTEGER NOT NULL DEFAULT '2', ike_cfg INTEGER NOT NULL, local_id TEXT NOT NULL, remote_id TEXT NOT NULL, cert_policy INTEGER NOT NULL DEFAULT '1', uniqueid INTEGER NOT NULL DEFAULT '0', auth_method INTEGER NOT NULL DEFAULT '1', eap_type INTEGER NOT NULL DEFAULT '0', eap_vendor INTEGER NOT NULL DEFAULT '0', keyingtries INTEGER NOT NULL DEFAULT '3', rekeytime INTEGER NOT NULL DEFAULT '7200', reauthtime INTEGER NOT NULL DEFAULT '0', jitter INTEGER NOT NULL DEFAULT '180', overtime INTEGER NOT NULL DEFAULT '300', mobike INTEGER NOT NULL DEFAULT '1', dpd_delay INTEGER NOT NULL DEFAULT '120', virtual TEXT DEFAULT NULL, pool TEXT DEFAULT NULL, mediation INTEGER NOT NULL DEFAULT '0', mediated_by INTEGER NOT NULL DEFAULT '0', peer_id INTEGER NOT NULL DEFAULT '0')
+ in following column pool of table peer_configs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE private_keys ( `id` int(10) unsigned NOT NULL auto_increment, `type` tinyint(3) unsigned NOT NULL, `data` BLOB NOT NULL, PRIMARY KEY (`id`))
+ in following column `type` and in column `type` of table attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE devices ( id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, description TEXT DEFAULT '', value TEXT NOT NULL, product INTEGER REFERENCES products(id), trusted INTEGER DEFAULT 0, created INTEGER)
+ in following column value of table devices

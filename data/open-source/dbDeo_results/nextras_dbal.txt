@@ -1,0 +1,11 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE dates_read (				a timestamp,				b timestamptz			)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dates_read (				a timestamp,				b timestamptz			)
+ in following column a and in column a of table dates_write2
+Detected: Clone Tables Found in following statement: CREATE TABLE dates_read (				a datetime,				b timestamp			)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE dates_write (				a timestamp,				b timestamptz			)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE dates_write (				a datetime,				b timestamp			)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['books', 'title']

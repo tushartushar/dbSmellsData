@@ -1,0 +1,3 @@
+Detected: Multicolumn Attribute Found in following statement: create table squares (n int, n2 int)
+
+Detected: Index Shotgun Variant: 1

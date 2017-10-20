@@ -1,0 +1,63 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tags` (	`id` INTEGER PRIMARY KEY AUTOINCREMENT,	`guid` TEXT,	`type` TEXT,	`version` INTEGER DEFAULT 1,	`name` TEXT)
+ in following column `type` of table `tags`
+Detected: God Table Found in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column guid of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests_post ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, date TEXT NOT NULL, post TEXT NOT NULL, latest_comment_id INTEGER)
+ in following column post of table tests_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column password of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['tests_post', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests_post ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, date TEXT NOT NULL, post TEXT NOT NULL, latest_comment_id INTEGER)
+ in following column date of table tests_post
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column title_en of table posts
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `tests_comment` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `user_id` bigint(20) unsigned NOT NULL, `post_id` bigint(20) unsigned NOT NULL, `date` datetime NOT NULL, `comment` text NOT NULL, PRIMARY KEY (`id`), KEY `user_id` (`user_id`,`post_id`))
+ in following column `id` and in column `id` of table `tags`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column email of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_users (	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	login VARCHAR(64) NOT NULL,	password VARCHAR(64) NOT NULL)
+ in following column login and in column login of table tests_user
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column guid of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `test` (`a` text)
+ in following column `a` of table `test`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column version and in column version of table posts
+Detected: Metadata as Data Found in following statement: CREATE TABLE test_users (	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	login VARCHAR(64) NOT NULL,	password VARCHAR(64) NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column login of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests_comment ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, post_id INTEGER NOT NULL, date TEXT NOT NULL, comment TEXT NOT NULL)
+ in following column comment of table tests_comment
+Detected: Index Shotgun Variant: 3 Following index not used : ['tests_comment', 'post_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tests_comment` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `user_id` bigint(20) unsigned NOT NULL, `post_id` bigint(20) unsigned NOT NULL, `date` datetime NOT NULL, `comment` text NOT NULL, PRIMARY KEY (`id`), KEY `user_id` (`user_id`,`post_id`))
+ in following column `comment` of table `tests_comment`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tags` (	`id` INTEGER PRIMARY KEY AUTOINCREMENT,	`guid` TEXT,	`type` TEXT,	`version` INTEGER DEFAULT 1,	`name` TEXT)
+ in following column `name` of table `tags`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests_user ( id INTEGER PRIMARY KEY AUTOINCREMENT, login TEXT NOT NULL)
+ in following column login of table tests_user
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column content_en of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column type of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['tests_comment', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tags` (	`id` INTEGER PRIMARY KEY AUTOINCREMENT,	`guid` TEXT,	`type` TEXT,	`version` INTEGER DEFAULT 1,	`name` TEXT)
+ in following column `guid` of table `tags`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column content of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tests_post` ( `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, `user_id` bigint(20) unsigned NOT NULL, `date` datetime NOT NULL, `post` text NOT NULL, `latest_comment_id` bigint(20) unsigned, PRIMARY KEY (`id`), KEY `user_id` (`user_id`))
+ in following column `post` of table `tests_post`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (name TEXT, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, version NUMERIC NOT NULL DEFAULT 1, login TEXT, email TEXT, password TEXT, is_active INTEGER)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column tags of table posts
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_users (	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,	login VARCHAR(64) NOT NULL,	password VARCHAR(64) NOT NULL)
+ in following column password and in column password of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tests_comment ( id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, post_id INTEGER NOT NULL, date TEXT NOT NULL, comment TEXT NOT NULL)
+ in following column date of table tests_comment
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column title of table posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE posts (title_en TEXT, content_en TEXT, owner_id INTEGER, id INTEGER PRIMARY KEY, guid TEXT, type TEXT, publish_time INTEGER, tags TEXT, version INTEGER NOT NULL DEFAULT 1, title TEXT, content TEXT)
+ in following column type of table posts

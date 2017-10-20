@@ -1,0 +1,1 @@
+CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )

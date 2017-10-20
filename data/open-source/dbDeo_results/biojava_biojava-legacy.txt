@@ -1,0 +1,31 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE taxon_name ( taxon_id		INT NOT NULL, name		VARCHAR(255) NOT NULL, name_class	VARCHAR(32) NOT NULL, UNIQUE (taxon_id,name,name_class))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['bioentry', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bioentry_relationship', 'subject_bioentry_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['seqfeature', 'source_term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bioentry_path', 'subject_bioentry_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['biodatabase', 'authority']
+Detected: Index Shotgun Variant: 3 Following index not used : ['seqfeature_relationship', 'subject_seqfeature_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bioentry_reference', 'reference_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['seqfeature_path', 'subject_seqfeature_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbxref_qualifier_value', 'dbxref_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_relationship', 'ontology_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE ontology ( 	ontology_id INT NOT NULL IDENTITY, 	name	 	 VARCHAR(32) NOT NULL, 	definition	 LONGVARCHAR, PRIMARY KEY (ontology_id),	UNIQUE (name))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['location', 'end_pos']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_relationship', 'predicate_term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_path', 'ontology_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE bioentry_reference ( 	bioentry_id 	INT NOT NULL, 	reference_id 	INT NOT NULL, 	start_pos	INT, 	end_pos	 	INT, 	rank 		SMALLINT DEFAULT 0 NOT NULL, 	PRIMARY KEY(bioentry_id,reference_id,rank))
+ in following column rank and in column rank of table bioentry_relationship
+Detected: Index Shotgun Variant: 3 Following index not used : ['bioentry_qualifier_value', 'term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_relationship', 'object_term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['location', 'start_pos']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_path', 'object_term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_dbxref', 'dbxref_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_path', 'predicate_term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['taxon_name', 'taxon_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dbxref_qualifier_value', 'term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term', 'ontology_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['location_qualifier_value', 'term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['seqfeature_qualifier_value', 'term_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['taxon', 'parent_taxon_id']

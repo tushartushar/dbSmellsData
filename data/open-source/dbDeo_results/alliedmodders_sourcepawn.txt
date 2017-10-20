@@ -1,0 +1,31 @@
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_include` ( `id` int unsigned not null auto_increment primary key, `name` varchar(64) not null, `doc` text not null, `content` text not null, unique key `name_key` (`name`))
+ in following column `content` of table `spdoc_include`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_enum` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `brief` of table `spdoc_enum`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `spdoc_function` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(12), `parent_id` int unsigned, `kind` varchar(16), `name` varchar(64) not null, `signature` text not null, `brief` text not null, `data` text not null)
+ in following column `brief` of table `spdoc_function`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_property` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `class_id` int unsigned not null, `name` varchar(64) not null, `type` varchar(128) not null, `getter` tinyint(1) not null, `setter` tinyint(1) not null, `brief` text not null, `data` text not null, unique key `fun_key` (`include_id`, `class_id`, `name`))
+ in following column `data` of table `spdoc_property`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_type` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(12), `parent_id` int unsigned, `kind` varchar(12) not null, `name` varchar(64) not null, `brief` text not null, `data` text not null)
+ in following column `brief` of table `spdoc_type`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_enum` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `data` of table `spdoc_enum`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_type` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(12), `parent_id` int unsigned, `kind` varchar(12) not null, `name` varchar(64) not null, `brief` text not null, `data` text not null)
+ in following column `data` of table `spdoc_type`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_class` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `brief` of table `spdoc_class`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_property` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `class_id` int unsigned not null, `name` varchar(64) not null, `type` varchar(128) not null, `getter` tinyint(1) not null, `setter` tinyint(1) not null, `brief` text not null, `data` text not null, unique key `fun_key` (`include_id`, `class_id`, `name`))
+ in following column `brief` of table `spdoc_property`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `spdoc_function` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(12), `parent_id` int unsigned, `kind` varchar(16), `name` varchar(64) not null, `signature` text not null, `brief` text not null, `data` text not null)
+ in following column `signature` of table `spdoc_function`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `spdoc_function` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(12), `parent_id` int unsigned, `kind` varchar(16), `name` varchar(64) not null, `signature` text not null, `brief` text not null, `data` text not null)
+ in following column `data` of table `spdoc_function`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_class` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `data` of table `spdoc_class`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_include` ( `id` int unsigned not null auto_increment primary key, `name` varchar(64) not null, `doc` text not null, `content` text not null, unique key `name_key` (`name`))
+ in following column `doc` of table `spdoc_include`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_constant` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(32), `parent_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `brief` of table `spdoc_constant`
+Detected: Obsolete Column TypesFound in following statement: create table if not exists `spdoc_constant` ( `id` int unsigned not null auto_increment primary key, `include_id` int unsigned not null, `parent_type` varchar(32), `parent_id` int unsigned not null, `name` varchar(64) not null, `brief` text not null, `data` text not null, unique key `class_key` (`include_id`, `name`))
+ in following column `data` of table `spdoc_constant`

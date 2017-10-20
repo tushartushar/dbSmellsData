@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `messages` ( `id` bigint(20) NOT NULL AUTO_INCREMENT, `uid` bigint(20) unsigned NOT NULL, `stanza` mediumtext NOT NULL, `timestamp` datetime NOT NULL, `expired` datetime DEFAULT NULL, PRIMARY KEY (`id`), KEY `uid` (`uid`))
+ in following column `stanza` of table `messages`
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE `push` ( `user_id` varchar(300) CHARACTER SET utf8 NOT NULL COMMENT 'User ID', `provider` varchar(20) NOT NULL COMMENT 'Push provider', `reg_id` varchar(1000) NOT NULL COMMENT 'Registration ID')
+

@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE products ( product_id INTEGER DISTKEY PRIMARY KEY ,product_name VARCHAR(200) ,supplier_id INTEGER REFERENCES suppliers(supplier_id) ,category_id INTEGER REFERENCES categories(category_id) ,unit VARCHAR(200) ,price REAL)
+ in following column price of table products
+Detected: Metadata as Data Found in following statement: CREATE TABLE shippers ( shipper_id INTEGER DISTKEY PRIMARY KEY ,shipper_name VARCHAR(200) ,phone VARCHAR(20))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE categories ( category_id INTEGER DISTKEY PRIMARY KEY ,category_name VARCHAR(100) ,description VARCHAR(2000))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE first_table ( id1 INTEGER, id2 INTEGER REFERENCES second_table(id2) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE first_table ( id1 INTEGER, id2 INTEGER )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE second_table ( id1 INTEGER, id2 INTEGER )
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE second_table ( id1 INTEGER REFERENCES first_table(id1), id2 INTEGER )
+

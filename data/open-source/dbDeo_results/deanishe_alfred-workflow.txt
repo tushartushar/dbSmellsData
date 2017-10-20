@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE payload (name text, value blob)
+ in following column name of table payload
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT)
+ in following column name of table searchIndex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT)
+ in following column type of table searchIndex
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE searchIndex(id INTEGER PRIMARY KEY, name TEXT, type TEXT, path TEXT)
+ in following column path of table searchIndex

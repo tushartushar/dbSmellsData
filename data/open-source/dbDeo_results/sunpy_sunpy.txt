@@ -1,0 +1,8 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event( insertion_time INTEGER DEFAULT (strftime('%s', 'now')), begin_time NUMERIC, reference_time NUMERIC, end_time NUMERIC, eventType_id REFERENCES eventType(id), reference TEXT)
+ in following column reference of table event
+Detected: Index Shotgun Variant: 3 Following index not used : ['event', 'end_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event(end_time)', 'S']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event', 'qindexbegin_time_indexevent']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event', 'A']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event(end_time)', 'end_time']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event(end_time)', 'qindexbegin_time_indexevent']

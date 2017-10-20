@@ -1,0 +1,534 @@
+SELECT COUNT(*) FROM " + edgesName + " WHERE 
+SELECT ST_CoordDim(geom) FROM input_table;
+INSERT INTO stream_geom VALUES(101, 38.0, 18.0, 52.0, 48.0,HEXTOVARBINARY('01020000000500000000000000000043400000000000004840000000000000464000000000008044400000000000804440000000000000424000000000000046400000000000003f400000000000004a400000000000003240'))
+insert into area values(null, 2.2250738585072009, 'second area')
+INSERT INTO stream_geom VALUES(102, 73.0, 0.0, 78.0, 9.0,HEXTOVARBINARY('010200000003000000000000000000534000000000000000000000000000805340000000000000104000000000004052400000000000002240'))
+insert into GEOM_COLL values(1, 'GEOMETRYCOLLECTION (LINESTRING (184 375, 97 245), POLYGON ((180 270, 220 270, 220 230, 180 230, 180 270)))')
+SELECT value FROM AREA2 order by id
+select idarea, the_geom from area
+INSERT INTO streams VALUES(111, 'Cam Stream', 101)
+insert into T_SRID values('POINT(1 1)')
+INSERT INTO divided_route_geom VALUES(101, 10.0, 0.0, 16.0, 48.0,HEXTOVARBINARY('010500000002000000010200000003000000000000000000244000000000000048400000000000002440000000000000354000000000000024400000000000000000010200000003000000000000000000304000000000000000000000000000002440000000000000374000000000000030400000000000004840'))
+CREATE TABLE forests (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),boundary_gid INTEGER)
+INSERT INTO streams VALUES(111, 'Cam Stream',ST_LineFromText('LINESTRING( 38 48, 44 41, 41 36, 44 31, 52 18 )', 101))
+SELECT ST_GeometryType(centerlines) FROM divided_routes WHERE name = 'Route 75';
+CREATE TABLE CORMEN_EDGES(EDGE_ID INT AUTO_INCREMENT PRIMARY KEY, START_NODE INT, END_NODE INT)
+INSERT INTO road_segment_geom VALUES (101, 0.0, 18.0, 44.0, 31.0,HEXTOVARBINARY('0102000000050000000000000000000000000000000000324000000000000024400000000000003540000000000000304000000000000037400000000000003c400000000000003a4000000000000046400000000000003f40'))
+insert into area values(1, 'POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))')
+create table TABLE_MULTIPOLYGON(idarea int primary key, the_geom MULTIPOLYGON)
+SELECT * FROM ST_TRIANGLECONTOURING('input_table','m1','m2','m3',10,20,30,40)
+insert into test VALUES (ST_GeomFromText('MULTILINESTRING EMPTY'),108)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'GPXDATA_ROUTEPOINT'
+CREATE TABLE stream_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+INSERT INTO input_table VALUES ('POINT(1 2)')
+create table KML_POINTS(id int primary key, the_geom POINT, response boolean)
+INSERT INTO road_segments VALUES(105, 'Main Street', NULL, 4,ST_LineFromText('LINESTRING( 70 38, 84 42 )' ,101))
+SELECT ST_NumPoints(centerline) FROM road_segments WHERE fid = 102
+insert into LINE values(2, 'LINESTRING (90 109, 190 109, 190 9, 90 9)')
+create table MAP_WAY_GEOM(ID_WAY BIGINT PRIMARY KEY, THE_GEOM POLYGON)
+SELECT * FROM SHPTABLE WHERE THE_GEOM && ST_BUFFER('POINT(183541 2426015)', 15)");
+CREATE TABLE bridges (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),position POINT)
+SELECT count(*) FROM buildings, bridges 
+CREATE TABLE building_pt_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,CONSTRAINT bp_gid_pk PRIMARY KEY (gid, eseq, seq))
+CREATE TABLE cormen_nodes(node_id int auto_increment primary key, the_geom point)
+INSERT INTO ponds VALUES(120, NULL, 'Stock Pond', 101)
+SELECT srid from SPATIAL_REF_SYS;
+insert into area values(4, 'POLYGON ((-10 9, 90 9, 90 -91, -10 -91, -10 9))')
+select * from GEOMETRY_COLUMNS where F_TABLE_NAME in ('T_GEOMETRY','T_POINT','T_LINE','T_POLYGON','T_MGEOMETRY','T_MPOINT','T_MLINE','T_MPOLYGON') ORDER BY F_TABLE_NAME
+INSERT INTO road_segments VALUES(102, 'Route 5', NULL, 2,ST_LineFromText('LINESTRING( 0 18, 10 21, 16 23, 28 26, 44 31 )' ,101))
+INSERT INTO stream_geom VALUES(101, 1, 3, 2, 44,31, 52,18, NULL,NULL)
+insert into area values(ST_GEOMFROMTEXT('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))', 9999), 1)
+insert into KML_LINESTRING values(1, ST_Geomfromtext('LINESTRING (2.19 47.58,1.19 46.58)', 4326))
+CREATE TABLE POINT3D (gid int , the_geom GEOMETRY)
+SELECT count(*) FROM test
+create table TABLE_POINTS(the_geom POINT)
+SELECT * FROM TABLE_COMPLEX_READ;
+INSERT INTO road_segment_geom VALUES (103, 70.0, 38.0, 72.0, 48.0,HEXTOVARBINARY('0102000000020000000000000000805140000000000000434000000000000052400000000000004840'))
+SELECT * FROM " + tableName + "_EDGE_CENT
+SELECT * FROM st_makegrid('input_table', 0.5, 0.5);");
+CREATE TABLE input_table(geomA Polygon, geomB Polygon)
+INSERT INTO geometry_columns VALUES ('map_neatlines', 'neatline_gid','map_neatline_geom',0, 5, 2, 5, 101)
+CREATE TABLE building_area_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+select * from ST_TRIANGLECONTOURING('input_table',10,20,30,40)\n
+select * from "+new TableLocation(UpdateTrigger.TRIGGER_SCHEMA, UpdateTrigger.NOTIFICATION_TABLE));
+CREATE TABLE input_table(geom Geometry)
+SELECT ST_Y(position) FROM bridges WHERE name = 'Cam Bridge'
+INSERT INTO building_pt_geom VALUES(101, 52.0, 30.0, 52.0, 30.0,HEXTOVARBINARY('01010000000000000000004a400000000000003e40'))
+insert into area values(6, 'POLYGON ((190 9, 290 9, 290 -91, 190 -91, 190 9))')
+CREATE TABLE SCHEM.TEMPTABLE(id integer primary key)
+SELECT * FROM " + tableName + "_NODE_CENT
+INSERT INTO COPY_EDGES_ALL VALUES ('LINESTRING (3 1, 4 2)', 11, 1.0, 1, 11, 6, 7)
+SELECT ST_3DLength(geom) FROM input_table;
+SELECT ST_AsText(boundary) FROM named_places WHERE name = 'Goose Island';
+SELECT SRTEXT FROM ");
+SELECT ST_AsText(boundary) FROM ST_Explode('forests', 'the_geom') WHERE name = 'Green Forest' and explod_id=2
+SELECT * FROM shptable where PK >=4 order by PK limit 5");
+SELECT SRID FROM GEOMETRY_COLUMNS WHERE F_TABLE_NAME='OSM_NODE'
+INSERT INTO lakes VALUES (101, 'BLUE LAKE', 101)
+INSERT INTO named_places VALUES(117, 'Ashton',ST_PolyFromText('POLYGON( ( 62 48, 84 48, 84 30, 56 30, 56 34, 62 48) )', 101))
+INSERT INTO lake_geom VALUES(101, 1, 5, 1, 52,18, 66,23, 73,9, 48,6,52,18)
+SELECT COUNT(*) FROM PUBLIC.SPATIAL_REF_SYS;
+insert into TABLE_MIXED values( 'LINESTRING (150 290, 180 170, 266 275)')
+CREATE TABLE named_place_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT np_gid_pk PRIMARY KEY (gid, eseq, seq))
+SELECT * FROM shptable
+insert into TABLE_COMPLEX values( null, 1463655908000)
+SELECT ST_NumGeometries(centerlines) FROM divided_routes WHERE name = 'Route 75'
+SELECT * FROM ST_ShortestPathLength('INF_EDGES_ALL', 
+create table area(idarea int primary key, the_geom geometry)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'GPXDATA_WAYPOINT'
+INSERT INTO road_segment_geom VALUES (104, 70.0, 38.0, 84.0, 42.0,HEXTOVARBINARY('0102000000020000000000000000805140000000000000434000000000000055400000000000004540'))
+insert into myTSV values('POLYGON ((90 109, 190 109, 190 9, 90 9, 90 109))', 2)
+SELECT * FROM ST_ShortestPathTree('COPY_EDGES_ALL', 
+SELECT * from "+informationSchemaTable+" where 
+create table T_SRID (the_geom GEOMETRY CHECK ST_SRID(the_geom) = 27572)
+INSERT INTO lakes VALUES (101, 'Blue Lake',ST_PolyFromText('POLYGON((52 18,66 23,73 9,48 6,52 18),(59 18,67 18,67 13,59 13,59 18))',101))
+insert into LIDAR_PTS VALUES ('POINT(13 18)')
+CREATE TABLE test(road POINT, description VARCHAR, id INT AUTO_INCREMENT PRIMARY KEY)
+INSERT INTO road_segment_geom VALUES (103, 1, 3, 1, 70,38, 72,48, NULL,NULL)
+INSERT INTO map_neatlines VALUES(115,ST_PolyFromText('POLYGON( ( 0 0, 0 48, 84 48, 84 0, 0 0 ) )', 101))
+CREATE TABLE stream_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT s_gid_pk PRIMARY KEY (gid, eseq, seq))
+INSERT INTO building_pt_geom VALUES(101, 1, 1, 1, 52,30)
+insert into LINE values(1, 'LINESTRING (-10 109, 90 109, 90 9, -10 9)')
+CREATE TABLE input_table(the_geom POLYGON)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'DBFTABLE'
+create table area(the_geom GEOMETRY CHECK ST_SRID(THE_GEOM) = 9999, idarea int primary key)
+CREATE TABLE RIGHT_TEST(GID serial, the_geom POINT)
+CREATE TABLE divided_route_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT dr_gid_pk PRIMARY KEY (gid, eseq, seq))
+create table lineal(idarea int primary key, the_geom LINESTRING)
+CREATE TABLE buildings (fid INTEGER NOT NULL PRIMARY KEY,address CHARACTER VARYING(64),position_gid INTEGER,footprint_gid INTEGER)
+SELECT ST_AsKml(the_geom) from KML_POINTS
+CREATE TABLE input_table(multi_point MultiPoint)
+INSERT INTO geometry_columns VALUES ('named_places', 'boundary_gid','named_place_geom',0, 5, 2, 4, 101)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'SHPTABLE'
+SELECT * FROM st_makegrid('input_table', 1, 0.5);");
+insert into TABLE_POINTS values( 'POINT(10 200)', 2, 'good')
+CREATE TABLE nonexistent_node_table(id INT)
+CREATE TABLE named_place_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+SELECT count(id) FROM GPXDATA_ROUTEPOINT
+INSERT INTO named_places VALUES(118, 'Goose Island',ST_PolyFromText('POLYGON( ( 67 13, 67 18, 59 18, 59 13, 67 13) )', 101))
+SELECT * FROM CORMEN_EDGES_ALL");
+SELECT * FROM ST_ShortestPathLength('COPY_EDGES_ALL', 
+insert into area values(5, 'POLYGON ((90 9, 190 9, 190 -91, 90 -91, 90 9))')
+insert into TABLE_POINTS_CRS values( ST_GEOMFROMTEXT('POINT(1 2)', 4326), 1, 'bad')
+INSERT INTO building_area_geom VALUES(101, 1, 5, 1, 50,31, 54,31,54,29, 50,29, 50,31)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'WAYPOINT_WAYPOINT'
+INSERT INTO buildings VALUES(113, '123 Main Street',ST_PointFromText('POINT( 52 30 )', 101),ST_PolyFromText('POLYGON( ( 50 31, 54 31, 54 29, 50 29, 50 31) )', 101))
+CREATE TABLE test(road GEOMETRY, description VARCHAR, id INT AUTO_INCREMENT PRIMARY KEY)
+INSERT INTO geometry_columns VALUES ('streams', 'centerline_gid','stream_geom',0, 3, 2, 3, 101)
+create table area(idarea int primary key, value DOUBLE, descr CHAR(50))
+insert into area values(null, 4.9406564584124654, 'main area')
+SELECT count(id) FROM GPXDATA_ROUTE
+INSERT INTO road_segments VALUES(102, 'Route 5', NULL, 2, 101)
+SELECT count(TABLE_NAME) FROM INFORMATION_SCHEMA.TABLES where TABLE_NAME LIKE 'OSM%'
+INSERT INTO map_neatlines VALUES(115, 101)
+SELECT srtext FROM SPATIAL_REF_SYS WHERE SRID = 101;
+INSERT INTO divided_routes VALUES(119, 'Route 75', 4,ST_MLineFromText('MULTILINESTRING((10 48,10 21,10 0),(16 0,16 23,16 48))', 101))
+SELECT * FROM TEST_NODES ORDER BY NODE_ID
+create table testSrid(the_geom geometry)
+select * from myshp
+INSERT INTO forest_geom VALUES(101, 2, 11, 1, 59,18, 67,18, 67,13, 59,13,59,18)
+SELECT ST_IsClosed(centerlines) FROM divided_routes WHERE name = 'Route 75'
+insert into TABLE_POINTS values( null, 1)
+CREATE TABLE dest_table(destination INT)
+SELECT * FROM DBFTABLE WHERE "+H2TableIndex.PK_COLUMN_NAME+" = 5");
+SELECT ST_AsText(boundary) FROM ST_Explode('forests', 'boundary') WHERE name = 'Green Forest' and explod_id=2
+SELECT ST_Dimension(shore) FROM lakes WHERE name = 'Blue Lake'
+SELECT count(ID_NODE) FROM OSM_NODE
+insert into TABLE_MIXED values( 'MULTIPOINT ((140 260), (246 284))')
+CREATE TABLE ponds (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),type CHARACTER VARYING(64),shores_gid INTEGER)
+CREATE TABLE road_segments (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),aliases CHARACTER VARYING(64),num_lanes INTEGER,centerline_gid INTEGER)
+CREATE TABLE POINT2D (gid int PRIMARY KEY AUTO_INCREMENT , the_geom GEOMETRY)
+insert into KML_POINTS values(2, ST_Geomfromtext('POINT (47.59 1.06)'), false)
+insert into area values(2, 'POLYGON ((90 109, 190 109, 190 9, 90 9, 90 109))')
+insert into TABLE_POINTS values( ST_GEOMFROMTEXT('POINT(10 200)',9999), 2, 'good')
+CREATE TABLE input_table(the_geom POINT)
+create table area(the_geom GEOMETRY CHECK ST_SRID(THE_GEOM) = 4326, idarea int primary key)
+SELECT * FROM shptable where PK >=4 order by PK limit 5
+SELECT * FROM TABLE_POLYGON_READ;
+create table TABLE_POINTS(the_geom POINT CHECK ST_SRID(THE_GEOM)=9999, id INT, climat VARCHAR)
+INSERT INTO road_segment_geom VALUES (105, 1, 3, 1, 28,26, 28,0, NULL,NULL)
+SELECT * FROM cormen_nodes");
+SELECT * FROM ST_ShortestPathLength('CORMEN_EDGES_ALL', 
+insert into TABLE_POLYGON values( 'POLYGON ((110 320, 220 320, 220 200, 110 200, 110 320))')
+SELECT ST_RemoveHoles(the_geom) FROM input_table;
+insert into area values(1, 4.9406564584124654, 'main area')
+SELECT THE_GEOM FROM IMPORT_AREA;
+SELECT storage_type FROM geometry_columns WHERE f_table_name = 'streams';
+CREATE TABLE input_table(point Point)
+INSERT INTO map_neatline_geom VALUES(101, 1, 5, 1, 0,0, 0,48, 84,48,84,0, 0,0)
+insert into LIDAR_PTS VALUES ('POINT(12 14 56)')
+SELECT ST_AsGeoJSON(the_geom) from TABLE_GEOMETRYCOLLECTION;
+select * from GEOMETRY_COLUMNS where f_table_name IN ('T_GEOMETRY', 'T_POINT',
+SELECT THE_GEOM FROM IMPORT_PUNCTUAL;
+SELECT * FROM " + EDGES + NODE_COMP_SUFFIX)));
+create table TABLE_MULTIPOINT(idarea int primary key, the_geom MULTIPOINT)
+SELECT * FROM dbftable where _rowid_ = ?
+insert into KML_POINTS values(2, ST_Geomfromtext('POINT (47.59 1.06)',27572), false)
+SELECT ST_AsText(boundary) FROM ST_Explode('select * from forests') WHERE name = 'Green Forest' and explod_id=2
+insert into KML_POINTS values(1, ST_Geomfromtext('POINT (2.19 47.58)',4326), true)
+insert into LIDAR_PTS VALUES ('POINT(12 14)')
+INSERT INTO pond_geom VALUES(101, 1, 11, 1, 24,44, 22,42, 24,40, 24,44 )
+insert into punctual values(1, 'POINT(-10 109 5)')
+SELECT * from POINT3D;
+insert into area values(2, 'POLYGON ((90 109 3, 190 109 3, 190 9 3, 90 9 3, 90 109 3))')
+INSERT INTO buildings VALUES(114, '215 Main Street',ST_PointFromText('POINT( 64 33 )', 101),ST_PolyFromText('POLYGON( ( 66 34, 62 34, 62 32, 66 32, 66 34) )', 101))
+create table TABLE_MULTIPOLYGON(the_geom MULTIPOLYGON)
+insert into area values('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))', 1)
+CREATE TABLE dest15(destination INT)
+create table TABLE_MULTILINESTRING(idarea int primary key, the_geom MULTILINESTRING)
+create table TABLE_COMPLEX(the_geom geometry, gid long)
+INSERT INTO road_segments VALUES(105, 'Main Street', NULL, 4, 104)
+insert into roads values(7, 'LINESTRING (60.321361058601155 -13.099243856332663, 149.24385633270325 5.955576559546344)')
+SELECT g_table_name FROM geometry_columns;
+INSERT INTO named_place_geom VALUES(102, 59.0, 13.0, 67.0, 18.0,HEXTOVARBINARY('010300000001000000050000000000000000c050400000000000002a400000000000c0504000000000000032400000000000804d4000000000000032400000000000804d400000000000002a400000000000c050400000000000002a40'))
+create table blah.testSFSUtilities(id integer, the_geom point)
+SELECT NULL, END_POINT, END_POINT_EXP FROM COORDS;
+INSERT INTO road_segment_geom VALUES (105, 28.0, 0.0, 28.0, 26.0,HEXTOVARBINARY('0102000000020000000000000000805140000000000000434000000000000055400000000000004540'))
+SELECT TYPE_AXE, GID, LENGTH FROM SHPTABLE;
+insert into TABLE_POINTS values( 'POINT(1 2)', 1, 'bad')
+SELECT f_geometry_column FROM geometry_columns WHERE f_table_name = 'STREAMS';
+SELECT ST_IsRectangle(the_geom) FROM input_table;
+SELECT count(*) FROM buildings, bridges WHERE Contains(Buffer(bridges.position, 15.0), buildings.footprint) = 1;
+SELECT ST_3DPerimeter(geom) FROM input_table;
+create table TABLE_POINTS(the_geom POINT, id INT, climat VARCHAR)
+SELECT ST_CompactnessRatio(geom) FROM input_table;
+CREATE TABLE input_table(point Geometry)
+create table KML_LINESTRING(id int primary key, the_geom LINESTRING)
+CREATE TABLE divided_routes (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),num_lanes INTEGER,centerlines_gid INTEGER)
+SELECT * FROM ST_ShortestPath('" + table + "', 
+CREATE TABLE test(road MULTILINESTRING, description VARCHAR, id INT AUTO_INCREMENT PRIMARY KEY)
+SELECT ST_AsText(boundary) FROM ST_Explode('forests') WHERE name = 'Green Forest' and explod_id=2
+SELECT ST_IsEmpty(centerline) FROM road_segments WHERE name = 'Route 5' AND aliases = 'Main Street'
+SELECT * FROM GEOMETRY_COLUMNS WHERE F_TABLE_NAME IN ('T_GEOMETRY2D','T_GEOMETRY3D') ORDER BY F_TABLE_NAME
+INSERT INTO building_area_geom VALUES(102, 1, 5, 1, 66,34, 62,34, 62,32,66,32, 66,34)
+insert into TABLE_MULTIPOINTS values( 'MULTIPOINT ((150 290), (180 170), (266 275))')
+create table T_POINT (the_geom POINT)
+INSERT INTO stream_geom VALUES(101, 1, 3, 1, 38,48, 44,41, 41,36)
+SELECT * FROM GPXDATA_TRACK
+SELECT * FROM TABLE_MULTIPOLYGON_READ;
+create table area(the_geom GEOMETRY, idarea int primary key, type varchar)
+INSERT INTO road_segments VALUES(106, 'Dirt Road by Green Forest', NULL,1, 105)
+INSERT INTO stream_geom VALUES(102, 1, 3, 1, 76,0, 78,4, 73,9 )
+insert into area values('POLYGON ((90 109, 190 109, 190 9, 90 9, 90 109))', 2, False)
+insert into roads values(1, 'LINESTRING (27.65595463138 -16.728733459357244, 47.61814744801515 40.435727788279806)')
+select * from grid;
+create table T_POLYGON (the_geom POLYGON)
+CREATE TABLE map_neatlines (fid INTEGER NOT NULL PRIMARY KEY,neatline_gid INTEGER)
+create table area(the_geom POLYGON, idarea int primary key)
+INSERT INTO named_places VALUES(118, 'Goose Island', 102)
+insert into TABLE_POINTS values( ST_GEOMFROMTEXT('POINT(1 2)', 9999), 1, 'bad')
+INSERT INTO dest234 VALUES (2)
+create table ptClouds(id INTEGER PRIMARY KEY AUTO_INCREMENT, the_geom MultiPoint)
+create table TABLE_POINTS(the_geom POINT, id int)
+SELECT * FROM st_makegrid((select st_union(st_accum(the_geom)) from input_table), 1, 1);");
+INSERT INTO road_segments VALUES(103, 'Route 5', 'Main Street', 4, 102)
+SELECT * FROM ST_ShortestPathLength('CORMEN_EDGES_ALL', 'undirected', 1, 2.0)
+SELECT ID_TAG FROM ").append(tagTableName).append(" WHERE TAG_KEY = ? LIMIT 1)");
+create table LINE(idarea int primary key, the_geom LINESTRING)
+select * from %s
+insert into KML_POINTS values(1, ST_Geomfromtext('POINT (47.58 2.19)'), true)
+insert into TABLE_COMPLEX values( 'LINESTRING(15 20, 0 0)', NULL)
+insert into testSrid values (ST_GeomFromText('POINT( 15 25 )',27572))
+CREATE TABLE map_neatline_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+SELECT * FROM TEST_EDGES
+SELECT * FROM sotchi
+INSERT INTO pond_geom VALUES(101, 22.0, 40.0, 28.0, 44.0,HEXTOVARBINARY('0106000000020000000103000000010000000400000000000000000038400000000000004640000000000000364000000000000045400000000000003840000000000000444000000000000038400000000000004640010300000001000000040000000000000000003a4000000000000046400000000000003a4000000000000044400000000000003c4000000000000045400000000000003a400000000000004640'))
+CREATE TABLE source_table(source INT)
+INSERT INTO bridge_geom VALUES(101, 1, 1, 1, 44, 31)
+CREATE TABLE streams (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),centerline LINESTRING)
+INSERT INTO buildings VALUES(113, '123 Main Street', 101, 101)
+select count(*) from %s
+SELECT NULL, END_POINT FROM COORDS;
+SELECT * FROM " + tableName);
+SELECT f_table_name FROM geometry_columns;
+insert into roads values(2, 'LINESTRING (17.674858223062415 55.861058601134246, 55.78449905482046 76.73062381852554)')
+create table test (the_geom GEOMETRY)
+SELECT * FROM st_makegrid((select the_geom from input_table), 1, 1);");
+SELECT ST_Length(centerline) FROM road_segments WHERE fid = 106
+SELECT * FROM AREA2
+INSERT INTO streams VALUES(112, NULL,ST_LineFromText('LINESTRING( 76 0, 78 4, 73 9 )', 101))
+SELECT ST_IsValid(the_geom) FROM input_table;
+SELECT * FROM ST_ShortestPathLength('CORMEN_EDGES_ALL', 'undirected', 1, '2, 7')
+SELECT SLEEP(10) FROM SYSTEM_RANGE(1, 200)
+CREATE TABLE forests (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),boundary MULTIPOLYGON)
+select * from area
+SELECT ST_AsText(boundary) FROM ST_Explode('select * from forests limit 1') WHERE name = 'Green Forest' and explod_id=2
+INSERT INTO road_segment_geom VALUES (104, 1, 3, 1, 70,38, 84,42, NULL,NULL)
+insert into area values(ST_GEOMFROMTEXT('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))'), 1,ST_GEOMFROMTEXT('POINT (-10 109)'))
+SELECT NULL, START_POINT FROM COORDS 
+CREATE TABLE input_table(the_geom Polygon)
+CREATE TABLE lakes (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),shore POLYGON)
+CREATE TABLE named_places (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),boundary POLYGON)
+SELECT * FROM " + location.toString()), null);
+SELECT * FROM ST_ShortestPath(
+insert into TABLE_POLYGON values(1, 'POLYGON((0 0, 2 0, 2 2, 0 2, 0 0))')
+INSERT INTO map_neatline_geom VALUES(101, 0.0, 0.0, 84.0, 48.0,HEXTOVARBINARY('010300000001000000050000000000000000000000000000000000000000000000000000000000000000004840000000000000554000000000000048400000000000005540000000000000000000000000000000000000000000000000'))
+SELECT THE_GEOM FROM OSM_NODE WHERE ID_NODE=462020579
+INSERT INTO lake_geom VALUES(101, 48.0, 6.0, 73.0, 23.0,HEXTOVARBINARY('010300000002000000050000000000000000004a4000000000000032400000000000805040000000000000374000000000004052400000000000002240000000000000484000000000000018400000000000004a400000000000003240050000000000000000804d4000000000000032400000000000c0504000000000000032400000000000c050400000000000002a400000000000804d400000000000002a400000000000804d400000000000003240'))
+create table T_LINE (the_geom LINESTRING)
+SELECT ST_AsText(boundary) FROM ST_Explode('select *') WHERE name = 'Green Forest' and explod_id=2
+create table area(id integer, value REAL, descr CHAR(50))
+INSERT INTO building_area_geom VALUES(101, 50.0, 29.0, 54.0, 31.0,HEXTOVARBINARY('0103000000010000000500000000000000000049400000000000003f400000000000004b400000000000003f400000000000004b400000000000003d4000000000000049400000000000003d4000000000000049400000000000003f40'))
+insert into TABLE_LINESTRINGS values( 'LINESTRING(1 10, 20 15)')
+insert into TABLE_MULTIPOINTS values( 'MULTIPOINT ((140 260))')
+SELECT * FROM st_makegridpoints('input_table', 1, 1);");
+create table GEOM_COLL(idarea int primary key, the_geom GEOMETRY)
+SELECT ST_AsText(boundary) FROM ST_Explode('select * from forests limit 1;') WHERE name = 'Green Forest' and explod_id=2
+CREATE TABLE empty_table(id INT)
+SELECT count(id) FROM WAYPOINT_WAYPOINT
+SELECT * FROM dbftable
+SELECT ST_AsGeoJSON(the_geom) from TABLE_POINT;
+CREATE TABLE test(road LINESTRING, description VARCHAR, id INT AUTO_INCREMENT PRIMARY KEY)
+INSERT INTO geometry_columns VALUES ('buildings', 'position_gid','building_pt_geom',0, 1, 2, 1, 101)
+CREATE TABLE map_neatlines (fid INTEGER NOT NULL PRIMARY KEY,neatline POLYGON)
+CREATE TABLE temptable(id integer, name varchar)
+SELECT * FROM TABLE_LINESTRINGS_READ;
+create table area(the_geom GEOMETRY, idarea int primary key)
+CREATE TABLE divided_route_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+insert into KML_POINTS values(1, ST_Geomfromtext('POINT (2.19 47.58)', 4326), true)
+CREATE TABLE streams (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),centerline_gid INTEGER)
+CREATE TABLE TIN(pk serial, THE_GEOM GEOMETRY)
+INSERT INTO bridges VALUES(110, 'Cam Bridge', 101)
+insert into TABLE_POINT values(1, 'POINT(1 2)')
+SELECT _rowid_ FROM dbftable
+INSERT INTO forests VALUES(109, 'Green Forest',ST_MPolyFromText('MULTIPOLYGON(((28 26,28 0,84 0,84 42,28 26),(52 18,66 23,73 9,48 6,52 18)),((59 18,67 18,67 13,59 13,59 18)))',101))
+SELECT * FROM TABLE_POINTS_CRS_READ;
+insert into area values('POLYGON ((90 109, 190 109, 190 9, 90 9, 90 109))', 2)
+create table T_MLINE (the_geom MULTILINESTRING)
+INSERT INTO dest15 VALUES (1)
+SELECT ST_Accum(footprint) FROM buildings GROUP BY SUBSTRING(address,4)
+create table test (the_geom POINT)
+CREATE TABLE dest234(destination INT)
+CREATE TABLE TEMPTABLE(id varchar primary key)
+SELECT SRID FROM GEOMETRY_COLUMNS WHERE F_TABLE_NAME = 'T_SRID'
+CREATE TABLE input_table(the_geom LINESTRING)
+insert into TABLE_POINTS values( 'POINT(10 200)', 2)
+insert into area values('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))', 1, True)
+SELECT * FROM TEST_EDGES ORDER BY EDGE_ID
+SELECT * FROM AREA_READ;
+create table TABLE_GEOMETRYCOLLECTION(idarea int primary key, the_geom GEOMETRY)
+INSERT INTO named_place_geom VALUES(101, 1, 5, 1, 62,48, 84,48, 84,30,56,30)
+SELECT count(id) FROM GPXDATA_TRACKSEGMENT
+CREATE TABLE bridge_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+SELECT coord_dimension FROM geometry_columns WHERE f_table_name = 'STREAMS';
+SELECT * FROM DBFTABLE WHERE "+H2TableIndex.PK_COLUMN_NAME+" = 5
+SELECT * from INFORMATION_SCHEMA.TABLES where 
+SELECT ST_Accum(the_geom) FROM TESTACCUMCOLLECT
+SELECT * FROM st_makegrid('input_table', 1, 1);");
+CREATE TABLE lake_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT l_gid_pk PRIMARY KEY (gid, eseq, seq))
+SELECT * FROM TABLE_MULTILINESTRINGS_READ;
+SELECT ST_AsText(boundary) FROM ST_Explode('select \"LIMIT\", boundary from forests limit 1') WHERE explod_id=2
+insert into TABLE_MULTIPOLYGON values( 'MULTIPOLYGON (((95 352, 160 352, 160 290, 95 290, 95 352)))')
+CREATE TABLE test(road LINESTRING, description VARCHAR)
+SELECT count(ID_RELATION) FROM OSM_RELATION
+INSERT INTO named_place_geom VALUES(101, 1, 5, 2, 56,30, 56,34, 62,48,NULL,NULL)
+CREATE TABLE source_dest(source INT, destination INT)
+CREATE TABLE input_table(line Linestring)
+CREATE TABLE GEOMTABLE (gid INTEGER AUTO_INCREMENT PRIMARY KEY, the_geom GEOMETRY)
+CREATE TABLE pond_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,CONSTRAINT p_gid_pk PRIMARY KEY (gid, eseq, seq))
+insert into test values (ST_LineFromText('LINESTRING( 0 18, 10 21, 16 23, 28 26, 44 31 )' ,101))
+CREATE TABLE bridges (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),position_gid INTEGER)
+SELECT AUTH_NAME FROM ");
+insert into TABLE_POINTS_CRS values( ST_GEOMFROMTEXT('POINT(10 200)',4326), 2, 'good')
+INSERT INTO geometry_columns VALUES ('ponds', 'shores_gid','pond_geom',0, 11, 2, 4, 101)
+SELECT ST_NumInteriorRing(shore) FROM lakes WHERE name = 'Blue Lake'
+INSERT INTO named_place_geom VALUES(102, 1, 5, 2, 59,13, 67,13,NULL,NULL, NULL,NULL)
+SELECT ST_Area(shores) FROM ponds WHERE fid = 120
+INSERT INTO named_places VALUES(117, 'Ashton', 101)
+create table punctual(idarea int primary key, the_geom POINT)
+INSERT INTO road_segments VALUES(104, 'Route 5', NULL, 2, 103)
+CREATE TABLE road_segment_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,CONSTRAINT rs_gid_pk PRIMARY KEY (gid, eseq, seq))
+SELECT geometry_type FROM geometry_columns WHERE f_table_name = 'streams';
+SELECT ST_Area(boundary) FROM named_places WHERE name = 'Goose Island'
+create table TABLE_GEOMETRYCOLLECTION(the_geom GEOMETRY)
+SELECT * FROM OSM_NODE WHERE ID_NODE=670177172
+create table area(idarea int primary key, the_geom POLYGON)
+select * from lakes");
+SELECT count(SRID) from PUBLIC.SPATIAL_REF_SYS WHERE SRID = ?
+SELECT count(*) FROM " + table1);
+SELECT * FROM WATERNETWORK
+INSERT INTO road_segments VALUES(103, 'Route 5', 'Main Street', 4,ST_LineFromText('LINESTRING( 44 31, 56 34, 70 38 )' ,101))
+INSERT INTO geometry_columns VALUES ('lakes', 'shore_gid','lake_geom',0, 5, 2, 5, 101)
+SELECT * FROM " + name + NODE_COMP_SUFFIX)));
+create table dep(id INTEGER PRIMARY KEY AUTO_INCREMENT, the_geom MultiPolygon)
+INSERT INTO building_pt_geom VALUES(102, 1, 1, 1, 64,33)
+CREATE TABLE road_segment_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+INSERT INTO geometry_columns VALUES ('divided_routes', 'centerlines_gid','divided_route_geom',0, 9, 2, 3, 101)
+insert into KML_LINESTRING values(2, ST_Geomfromtext('LINESTRING (1.06 47.59,1.19 46.58)', 4326))
+SELECT ST_SRID(THE_GEOM) FROM AREA_READ;
+INSERT INTO divided_routes VALUES(119, 'Route 75', 4, 101)
+CREATE TABLE road_segments (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),aliases CHARACTER VARYING(64),num_lanes INTEGER,centerline LINESTRING)
+SELECT the_geom FROM shptable
+CREATE TABLE forest_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT f_gid_pk PRIMARY KEY (gid, eseq, seq))
+insert into lineal values(1, 'LINESTRING(-10 109 5, 12 6)')
+SELECT _rowid_ FROM shptable
+create table T_MPOINT (the_geom MULTIPOINT)
+insert into area values(1, 'POLYGON ((-10 109 5, 90 109 5, 90 9 5, -10 9 5, -10 109 5))')
+SELECT NULL, START_POINT, START_POINT_EXP FROM COORDS 
+INSERT INTO pond_geom VALUES(101, 2, 11, 1, 26,44, 26,40, 28,42, 26,44 )
+insert into myTSV values('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))', 1)
+CREATE TABLE ATEMPSCHEMA.TEMPTABLE(id integer)
+INSERT INTO road_segments VALUES(104, 'Route 5', NULL, 2,ST_LineFromText('LINESTRING( 70 38, 72 48 )' ,101))
+SELECT ST_AsGeoJSON(the_geom) from TABLE_MULTILINESTRING;
+CREATE TABLE input_table(smallc POLYGON, bigc POLYGON)
+SELECT ST_Is3D(geom) FROM input_table;
+SELECT coord_dimension FROM geometry_columns WHERE f_table_name = 'streams';
+SELECT srid FROM geometry_columns WHERE f_table_name = 'STREAMS';
+create table TABLE_POINTS_CRS(the_geom POINT CHECK ST_SRID(THE_GEOM)=4326, id INT, climat VARCHAR)
+create table T_GEOMETRY3D (the_geom GEOMETRY CHECK ST_COORDDIM(the_geom) = 3)
+insert into T_SRID values(ST_GeomFromText('POINT(1 1)', 27572))
+CREATE TABLE testschema.testRowCount(id integer primary key, val double)
+SELECT * FROM ST_ShortestPathTree('" + table + "', 
+SELECT PK FROM SHPTABLE WHERE THE_GEOM && ST_BUFFER('POINT(183541 2426015)', 15) ORDER BY PK
+insert into roads values(6, 'LINESTRING (144.70699432892252 55.861058601134246, 150.1512287334594 83.9896030245747)')
+CREATE TABLE test(road LINESTRING, description VARCHAR, way LINESTRING, id INT AUTO_INCREMENT PRIMARY KEY)
+SELECT * FROM ST_ShortestPathLength('CORMEN_EDGES_ALL', 'undirected', 'weight', 1, 2.0)
+create table TABLE_LINE(idarea int primary key, the_geom LINESTRING)
+SELECT * FROM " + EDGES + EDGE_COMP_SUFFIX)));
+INSERT INTO forest_geom VALUES(101, 1, 11, 1, 28,26, 28,0, 84,0, 84,42,28,26)
+SELECT * FROM TABLE_POINTS_READ;
+SELECT * FROM shptable order by PK limit 8
+create table T_SRID (the_geom GEOMETRY)
+SELECT * FROM shptable where _rowid_ = 1
+insert into TABLE_LINESTRINGS values( 'LINESTRING(1 2, 5 3, 10 19)')
+INSERT INTO building_area_geom VALUES(102, 62.0, 32.0, 66.0, 34.0,HEXTOVARBINARY('01030000000100000005000000000000000080504000000000000041400000000000004f4000000000000041400000000000004f4000000000000040400000000000805040000000000000404000000000008050400000000000004140'))
+CREATE TABLE cormen(road LINESTRING, id INT AUTO_INCREMENT PRIMARY KEY, weight DOUBLE, edge_orientation INT)
+select the_geom from POINT2D
+CREATE TABLE TEMPTABLE(id integer, name varchar)
+SELECT count(id) FROM GPXDATA_WAYPOINT
+CREATE TABLE \"teMpTAbLE\"(id integer, name varchar)
+INSERT INTO geometry_columns VALUES ('buildings', 'footprint_gid','building_area_geom',0, 5, 2, 5, 101)
+CREATE TABLE ponds (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),type CHARACTER VARYING(64),shores MULTIPOLYGON)
+SELECT count(id) FROM GPXDATA_TRACK
+INSERT INTO road_segment_geom VALUES (102, 1, 3, 1, 44,31, 56,34, 70,38)
+create table test(the_geom GEOMETRY, value Integer)
+SELECT * FROM ST_ShortestPathTree(
+SELECT ST_AsText(boundary) FROM ST_Explode('select ') WHERE name = 'Green Forest' and explod_id=2
+SELECT COUNT(*) FROM shptable
+CREATE TABLE lake_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+SELECT * FROM GPXDATA_WAYPOINT
+create table TABLE_LINESTRINGS(the_geom LINESTRING)
+create table area(id integer, value DECIMAL(13,3), descr CHAR(50))
+SELECT THE_GEOM FROM IMPORT_LINEAL;
+insert into TABLE_LINE values(1, 'LINESTRING(1 2, 2 3)')
+SELECT pk FROM ST_TriangleContouring('TIN', -1 ,1 , 4)
+SELECT count(*) FROM " + table2);
+insert into TABLE_COMPLEX values( 'POINT(10 200)', 1)
+SELECT * FROM TABLE_MIXED_READ;
+insert into roads values(5, 'LINESTRING (106.5973534971645 -12.191871455576518, 143.79962192816637 30.454631379962223)')
+SELECT * FROM "+tableName);
+insert into TABLE_MULTIPOINT values(1, 'MULTIPOINT ((190 320), (180 160), (394 276))')
+SELECT * FROM CORMEN_EDGES_ALL
+CREATE TABLE " + tagTableName + "(ID_TAG SERIAL PRIMARY KEY, TAG_KEY VARCHAR UNIQUE)
+insert into area values(ST_GEOMFROMTEXT('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))', 4326), 1)
+SELECT * FROM geometry_columns where F_TABLE_NAME = 'LAKES_VIEW';
+CREATE TABLE geometry_columns (f_table_schema CHARACTER VARYING,f_table_name CHARACTER VARYING,f_geometry_column CHARACTER VARYING,g_table_schema CHARACTER VARYING,g_table_name CHARACTER VARYING,storage_type INTEGER,geometry_type INTEGER,coord_dimension INTEGER,max_ppr INTEGER,srid INTEGER DEFAULT (SELECT srid from spatial_ref_sys LIMIT 1) REFERENCES spatial_ref_sys ,CONSTRAINT gc_pk PRIMARY KEY (f_table_name,f_geometry_column))
+INSERT INTO geometry_columns VALUES ('bridges', 'position_gid','bridge_geom',0, 1, 2, 1, 101)
+create table test (the_geom LINESTRING)
+INSERT INTO buildings VALUES(114, '215 Main Street', 102, 102)
+CREATE TABLE divided_routes (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),num_lanes INTEGER,centerlines MULTILINESTRING)
+INSERT INTO named_place_geom VALUES(102, 1, 5, 1, 67,13, 67,18, 59,18,59,13)
+create table roads(idroad int primary key, the_geom geometry)
+INSERT INTO bridges VALUES(110, 'Cam Bridge', ST_PointFromText('POINT( 44 31 )', 101))
+insert into area values(ST_GEOMFROMTEXT('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))'), 1, 'breton')
+insert into test values(2, 'POINT(5 5)')
+select * from ST_TriangleContouring('TIN', DOUBLERANGE(2,6,1))
+insert into area values(2, 2.2250738585072009, 'second area')
+create table area(the_geom GEOMETRY, idarea int primary key, geom GEOMETRY)
+create table T_GEOMETRY2D (the_geom GEOMETRY)
+select count(*) from grid;
+insert into TABLE_MULTILINESTRINGS values( 'MULTILINESTRING ((90 220, 260 320, 280 200))')
+INSERT INTO named_place_geom VALUES(101, 56.0, 30.0, 84.0, 48.0,HEXTOVARBINARY('010300000001000000060000000000000000004f4000000000000048400000000000005540000000000000484000000000000055400000000000003e400000000000004c400000000000003e400000000000004c4000000000000041400000000000004f400000000000004840'))
+INSERT INTO forest_geom VALUES(101, 1, 11, 2, 52,18, 66,23, 73,9, 48,6,52,18)
+insert into TABLE_POINTS values( 'POINT(10 200)')
+CREATE TABLE input_table(twoDLine Geometry, threeDLine Geometry)
+INSERT INTO dummy values (1)
+SELECT ST_SRID(boundary) FROM named_places WHERE name = 'Goose Island'
+create table area(the_geom GEOMETRY, idarea int primary key, geom GEOMETRY, type varchar)
+create table TABLE_POLYGON(the_geom POLYGON)
+SELECT max_ppr FROM geometry_columns WHERE f_table_name = 'streams';
+INSERT INTO forests VALUES(109, 'Green Forest', 101)
+select idtrigger, trigger_name from "+triggerTable+" where trigger_name = ?
+INSERT INTO forest_geom VALUES(101, 28.0, 0.0, 84.0, 42.0,HEXTOVARBINARY('010600000002000000010300000002000000050000000000000000003c400000000000003a400000000000003c40000000000000000000000000000055400000000000000000000000000000554000000000000045400000000000003c400000000000003a40050000000000000000004a4000000000000032400000000000805040000000000000374000000000004052400000000000002240000000000000484000000000000018400000000000004a400000000000003240010300000001000000050000000000000000804d4000000000000032400000000000c0504000000000000032400000000000c050400000000000002a400000000000804d400000000000002a400000000000804d400000000000003240'))
+CREATE TABLE building_pt_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+insert into KML_POINTS values(1, ST_Geomfromtext('POINT (47.58 2.19)',27572), true)
+SELECT * FROM TABLE_GEOMETRYCOLLECTION_READ;
+SELECT * FROM SOTCHI_GOODHEADER
+insert into KML_POINTS values(2, ST_Geomfromtext('POINT (1.06 47.59)', 4326), false)
+insert into TABLE_POINTS values( 'POINT(1 2)')
+SELECT ST_AsGeoJSON(the_geom) from TABLE_MULTIPOLYGON;
+create table TABLE_MULTIPOINTS(the_geom MULTIPOINT)
+CREATE TABLE LEFT_TEST(GID serial, the_geom POINT)
+create table LIDAR_PTS (the_geom POINT CHECK ST_COORDDIM(the_geom) = 3)
+SELECT ST_AsGeoJSON(the_geom) from TABLE_POLYGON;
+INSERT INTO bridge_geom VALUES(101, 44.0, 31.0, 44.0, 31.0,HEXTOVARBINARY('010100000000000000000046400000000000003f40'))
+SELECT * FROM " + name + EDGE_COMP_SUFFIX)));
+INSERT INTO divided_route_geom VALUES(101, 2, 9, 1, 16,0, 10,23, 16,48)
+CREATE TABLE bridge_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,CONSTRAINT b_gid_pk PRIMARY KEY (gid, eseq, seq))
+CREATE TABLE dummy(id INTEGER)
+SELECT ST_Length(centerlines) FROM divided_routes WHERE name = 'Route 75'
+CREATE TABLE teMpTAbLE(id integer, name varchar)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'GPXDATA_TRACK'
+SELECT srid FROM geometry_columns WHERE f_table_name = 'streams';
+CREATE TABLE buildings (fid INTEGER NOT NULL PRIMARY KEY,address CHARACTER VARYING(64),position POINT,footprint POLYGON)
+select * from INFORMATION_SCHEMA.INDEXES WHERE TABLE_NAME = 'SHPTABLE' and COLUMN_NAME='THE_GEOM'
+CREATE TABLE map_neatline_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT mn_gid_pk PRIMARY KEY (gid, eseq, seq))
+INSERT INTO road_segment_geom VALUES (101, 1, 3, 2, 28,26, 44,31, NULL,NULL)
+insert into area values(3, 'POLYGON ((190 109, 290 109, 290 9, 190 9, 190 109))')
+SELECT THE_GEOM FROM OSM_NODE WHERE ID_NODE=3003052969
+create table T_MPOLYGON (the_geom MULTIPOLYGON)
+SELECT * FROM COPY_EDGES_ALL
+SELECT ST_AsGeoJSON(the_geom) from TABLE_LINE;
+select * from ST_TriangleContouring('TIN', 2,3,4,5)
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'WATERNETWORK'
+CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name CHARACTER VARYING,auth_srid INTEGER,srtext CHARACTER VARYING(2048))
+CREATE TABLE building_area_geom (gid INTEGER NOT NULL,eseq INTEGER NOT NULL,etype INTEGER NOT NULL,seq INTEGER NOT NULL,x1 INTEGER,y1 INTEGER,x2 INTEGER,y2 INTEGER,x3 INTEGER,y3 INTEGER,x4 INTEGER,y4 INTEGER,x5 INTEGER,y5 INTEGER,CONSTRAINT ba_gid_pk PRIMARY KEY (gid, eseq, seq))
+create table TABLE_MULTILINESTRINGS(the_geom MULTILINESTRING)
+create table TABLE_POINT(idarea int primary key, the_geom POINT)
+insert into area values(NULL, 2)
+SELECT count(id) FROM GPXDATA_TRACKPOINT
+CREATE TABLE pond_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+SELECT * FROM GPXDATA_ROUTE
+create table MAP_BUILDINGS(ID_WAY bigint primary key)
+INSERT INTO streams VALUES(112, 'Cam Stream', 102)
+INSERT INTO road_segments VALUES(106, 'Dirt Road by Green Forest', NULL,1,ST_LineFromText('LINESTRING( 28 26, 28 0 )',101))
+CREATE TABLE geometry_columns (f_table_name CHARACTER VARYING,f_geometry_column CHARACTER VARYING,g_table_name CHARACTER VARYING,storage_type INTEGER,geometry_type INTEGER,coord_dimension INTEGER,max_ppr INTEGER,srid INTEGER REFERENCES spatial_ref_sys,CONSTRAINT gc_pk PRIMARY KEY (f_table_name, f_geometry_column))
+insert into roads values(4, 'LINESTRING (177.3724007561437 18.65879017013235, 196.4272211720227 -16.728733459357244)')
+SELECT ST_IsSimple(shore) FROM lakes WHERE name = 'Blue Lake'
+create table TABLE_MIXED(the_geom GEOMETRY)
+INSERT INTO road_segment_geom VALUES (102, 44.0, 31.0, 70.0, 38.0,HEXTOVARBINARY('01020000000300000000000000000046400000000000003f400000000000004c40000000000000414000000000008051400000000000004340'))
+SELECT * FROM TABLE_MULTIPOINTS_READ;
+CREATE TABLE TEMPTABLE(id integer primary key)
+INSERT INTO lake_geom VALUES(101, 2, 5, 1, 59,18, 67,18, 67,13, 59,13,59,18)
+insert into area values(ST_GEOMFROMTEXT('POLYGON ((-10 109, 90 109, 90 9, -10 9, -10 109))'), 1)
+CREATE TABLE lakes (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),shore_gid INTEGER)
+SELECT * FROM TEST_NODES
+create table TABLE_POLYGON(idarea int primary key, the_geom POLYGON)
+INSERT INTO building_pt_geom VALUES(102, 64.0, 33.0, 64.0, 33.0,HEXTOVARBINARY('010100000000000000000050400000000000804040'))
+select * from ST_TriangleContouring('TIN','m1','m2','m3',2,3,4,5)
+INSERT INTO geometry_columns VALUES ('forests', 'boundary_gid','forest_geom',0, 11, 2, 5, 101)
+SELECT ST_AsGeoJSON(the_geom) from TABLE_MULTIPOINT;
+SELECT * FROM " + TableLocation.parse(tableName) + " LIMIT 0;
+create table T_GEOMETRY (the_geom GEOMETRY)
+CREATE TABLE forest_geom (gid INTEGER NOT NULL PRIMARY KEY,xmin INTEGER,ymin INTEGER,xmax INTEGER,ymax INTEGER,wkbgeometry VARBINARY)
+CREATE TABLE input_table(the_geom Geometry)
+SELECT ST_X(position) FROM bridges WHERE name = 'Cam Bridge'
+SELECT * FROM WAYPOINT_WAYPOINT
+SELECT the_geom from myTable)");
+insert into KML_POINTS values(2, ST_Geomfromtext('POINT (1.06 47.59)',4326), false)
+INSERT INTO ponds VALUES(120, NULL, 'Stock Pond',ST_MPolyFromText('MULTIPOLYGON( ( ( 24 44, 22 42, 24 40, 24 44) ),( ( 26 44, 26 40, 28 42, 26 44) ) )', 101))
+SELECT * FROM INFORMATION_SCHEMA.COLUMNS where TABLE_NAME = 'GPXDATA_ROUTE'
+SELECT proj4text, auth_name FROM SPATIAL_REF_SYS where srid=?
+create table myTSV(the_geom GEOMETRY, idarea int primary key)
+SELECT * FROM " + EDGES + EDGE_COMP_SUFFIX), GraphConstants.EDGE_ID);
+INSERT INTO divided_route_geom VALUES(101, 1, 9, 1, 10,48, 10,21, 10,0)
+SELECT * FROM ST_ShortestPathLength('CORMEN_EDGES_ALL', 'undirected', 2.0)
+INSERT INTO geometry_columns VALUES ('road_segments', 'centerline_gid','road_segment_geom',0, 3, 2, 3, 101)
+SELECT * FROM st_makegrid('POLYGON((0 0, 2 0, 2 2, 0 0 ))'::GEOMETRY, 1, 1);");
+SELECT * FROM ST_Accessibility('CORMEN_EDGES_ALL', 
+INSERT INTO road_segment_geom VALUES (101, 1, 3, 1, 0,18, 10,21, 16,23)
+CREATE TABLE input_table(smallc Polygon, bigc Polygon)
+insert into area values('POINT (-10 109)', 1)
+insert into roads values(3, 'LINESTRING (68.48771266540646 67.65689981096412, 108.4120982986768 88.52646502835542)')
+insert into TABLE_MULTIPOINTS values( 'MULTIPOINT ((140 260), (246 284))')
+CREATE TABLE named_places (fid INTEGER NOT NULL PRIMARY KEY,name CHARACTER VARYING(64),boundary_gid INTEGER)

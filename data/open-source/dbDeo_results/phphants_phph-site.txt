@@ -1,0 +1,10 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['video', 'talk_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE talk (id UUID NOT NULL, meetup_id UUID NOT NULL, speaker_id UUID DEFAULT NULL, time TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, title VARCHAR(1024) NOT NULL, abstract TEXT DEFAULT NULL, PRIMARY KEY(id))
+ in following column abstract of table talk
+Detected: Metadata as Data Found in following statement: CREATE TABLE "user" (id UUID NOT NULL, email VARCHAR(1024) NOT NULL, password VARCHAR(1024) NOT NULL, PRIMARY KEY(id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE speaker (id UUID NOT NULL, full_name VARCHAR(1024) NOT NULL, twitterHandle VARCHAR(1024) DEFAULT NULL, PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['talk', 'meetup_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['meetup', 'location_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['talk', 'speaker_id']

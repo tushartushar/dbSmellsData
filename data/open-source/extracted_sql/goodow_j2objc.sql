@@ -1,0 +1,1 @@
+SELECT price, quantity FROM STOCKTABLE

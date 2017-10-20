@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['assay_well', 'well_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['well', 'library_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['assay_plate', 'plate_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['plate', 'copy_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['assay_well', 'screen_result_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['assay_well', 'is_positive']

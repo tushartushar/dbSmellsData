@@ -1,0 +1,126 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZoneDNSKeys', 'zone_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZoneAlsoNotify', 'zone_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'modified_at']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id SERIAL PRIMARY KEY, domain_id INT REFERENCES domains(id) ON DELETE CASCADE, kind VARCHAR(32), content TEXT)
+ in following column content of table domainmetadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, flags INT NOT NULL, active BOOL, content TEXT, FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE ON UPDATE CASCADE )
+ in following column content of table cryptokeys
+Detected: Index Shotgun Variant: 3 Following index not used : ['Records', 'zone_id']
+Detected: Obsolete Column TypesFound in following statement: create table cryptokeys ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column content of table cryptokeys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id INT AUTO_INCREMENT, domain_id INT NOT NULL, flags INT NOT NULL, active BOOL, content TEXT, PRIMARY KEY(id))
+ in following column content of table cryptokeys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE domains ( id INT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, PRIMARY KEY (id))
+ in following column last_check and in column last_check of table Zones
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column content of table cryptokeys
+Detected: God Table Found in following statement: CREATE TABLE records ( id INT AUTO_INCREMENT, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(64000) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled TINYINT(1) DEFAULT 0, ordername VARCHAR(255) BINARY DEFAULT NULL, auth TINYINT(1) DEFAULT 1, PRIMARY KEY (id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cryptokeys ( id SERIAL PRIMARY KEY, domain_id INT REFERENCES domains(id) ON DELETE CASCADE, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column content and in column content of table domainmetadata
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['domains', 'ON']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Records ( id INTEGER CONSTRAINT pkey_records PRIMARY KEY, zone_id INTEGER NOT NULL CONSTRAINT fkey_records_zones REFERENCES Zones, fqdn VARCHAR2(512) NOT NULL, revfqdn VARCHAR2(512) NOT NULL, fqdnhash VARCHAR2(512), ttl NUMBER(10,0) NOT NULL, type VARCHAR2(32), content VARCHAR2(2048), last_change INTEGER DEFAULT 0 NOT NULL, auth NUMBER(1,0) DEFAULT 1 NOT NULL, CONSTRAINT chk_records_fqdn CHECK (fqdn = lower(fqdn)), CONSTRAINT chk_records_ttl CHECK (ttl BETWEEN 0 AND 4294967295), CONSTRAINT chk_records_type CHECK (type = upper(type)), CONSTRAINT unq_records_zntc UNIQUE (zone_id, fqdn, type, content), CONSTRAINT chk_records_tc CHECK ( content IS NOT NULL OR type IN('NS', 'CNAME') OR type IS NULL ), CONSTRAINT chk_records_auth CHECK (auth IN (0, 1)))
+ in following column auth and in column auth of table records
+Detected: Values in Column Definition Found in following statement: CREATE TABLE tsigkeys ( id SERIAL PRIMARY KEY, name VARCHAR(255), algorithm VARCHAR(50), secret VARCHAR(255), constraint c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tsigkeys ( id SERIAL PRIMARY KEY, name VARCHAR(255), algorithm VARCHAR(50), secret VARCHAR(255), constraint c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+ in following column constraint of table tsigkeys
+Detected: Index Shotgun Variant: 3 Following index not used : ['Records', 'revfqdn']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS soa ( id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, origin CHAR(255) NOT NULL, ns CHAR(255) NOT NULL, mbox CHAR(255) NOT NULL, serial INT UNSIGNED NOT NULL default '1', refresh INT UNSIGNED NOT NULL default '28800', retry INT UNSIGNED NOT NULL default '7200', expire INT UNSIGNED NOT NULL default '604800', minimum INT UNSIGNED NOT NULL default '86400', ttl INT UNSIGNED NOT NULL default '86400', active ENUM('Y', 'N') NOT NULL DEFAULT 'Y', UNIQUE KEY (origin))
+ in following column refresh and in column refresh of table Zones
+Detected: Index Shotgun Variant: 3 Following index not used : ['Records', 'fqdnhash']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE records ( id SERIAL PRIMARY KEY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(65535) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BOOL DEFAULT 'f', ordername VARCHAR(255), auth BOOL DEFAULT 't', CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+ in following column CONSTRAINT of table records
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cryptokeys ( id SERIAL PRIMARY KEY, domain_id INT REFERENCES domains(id) ON DELETE CASCADE, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column flags and in column flags of table ZoneDNSKeys
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['domains', 'CASCADE']
+Detected: Metadata as Data Found in following statement: CREATE TABLE AccessControlList ( acl_type VARCHAR2(64) NOT NULL, acl_key VARCHAR2(256) NOT NULL, acl_val VARCHAR2(2048), CONSTRAINT chk_acl_type CHECK (acl_type = 'allow-axfr'), CONSTRAINT unq_acl_tkv UNIQUE (acl_type, acl_key, acl_val))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE supermasters ( ip VARCHAR2(64) NOT NULL, nameserver VARCHAR2(255) NOT NULL, account VARCHAR2(40) NOT NULL, PRIMARY KEY (ip, nameserver))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['domains', 'UPDATE']
+Detected: Metadata as Data Found in following statement: CREATE TABLE supermasters ( ip VARCHAR(64) NOT NULL, nameserver VARCHAR(255) NOT NULL COLLATE NOCASE, account VARCHAR(40) NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE comments ( id INTEGER PRIMARY KEY, domain_id INTEGER NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(10) NOT NULL, modified_at INT NOT NULL, account VARCHAR(40) DEFAULT NULL, comment VARCHAR(65535) NOT NULL)
+ in following column domain_id and in column domain_id of table cryptokeys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id SERIAL PRIMARY KEY, domain_id INT REFERENCES domains(id) ON DELETE CASCADE, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column content of table cryptokeys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Supermasters ( id INTEGER CONSTRAINT pkey_supermasters PRIMARY KEY, name VARCHAR2(64) NOT NULL, ip VARCHAR2(64) NOT NULL, nameserver VARCHAR2(512) NOT NULL)
+ in following column name and in column name of table rr
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INT AUTO_INCREMENT, domain_id INT NOT NULL, kind VARCHAR(32), content TEXT, PRIMARY KEY (id))
+ in following column content of table domainmetadata
+Detected: Metadata as Data Found in following statement: CREATE TABLE supermasters ( ip VARCHAR(64) NOT NULL, nameserver VARCHAR(255) NOT NULL COLLATE NOCASE, account VARCHAR(40) NOT NULL )
+
+Detected: Metadata as Data Found in following statement: create table supermasters ( ip VARCHAR(25) NOT NULL, nameserver VARCHAR(255) NOT NULL COLLATE NOCASE, account VARCHAR(40) DEFAULT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['domains', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata_backup ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(32) COLLATE NOCASE, content TEXT )
+ in following column content of table domainmetadata_backup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(32) COLLATE NOCASE, content TEXT, FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column content of table domainmetadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['Records', 'last_change']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Supermasters ( id INTEGER CONSTRAINT pkey_supermasters PRIMARY KEY, name VARCHAR2(64) NOT NULL, ip VARCHAR2(64) NOT NULL, nameserver VARCHAR2(512) NOT NULL)
+ in following column id and in column id of table tsigkeys
+Detected: Metadata as Data Found in following statement: CREATE TABLE supermasters ( ip VARCHAR(64) NOT NULL, nameserver VARCHAR(255) NOT NULL, account VARCHAR(40) NOT NULL, PRIMARY KEY (ip, nameserver))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(32) COLLATE NOCASE, content TEXT, FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE ON UPDATE CASCADE )
+ in following column content of table domainmetadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['AccessControlList', 'acl_type']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS soa ( id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, origin CHAR(255) NOT NULL, ns CHAR(255) NOT NULL, mbox CHAR(255) NOT NULL, serial INT UNSIGNED NOT NULL default '1', refresh INT UNSIGNED NOT NULL default '28800', retry INT UNSIGNED NOT NULL default '7200', expire INT UNSIGNED NOT NULL default '604800', minimum INT UNSIGNED NOT NULL default '86400', ttl INT UNSIGNED NOT NULL default '86400', active ENUM('Y', 'N') NOT NULL DEFAULT 'Y', UNIQUE KEY (origin))
+ in following column ttl and in column ttl of table records
+Detected: Values in Column Definition Found in following statement: CREATE TABLE Zones ( id INTEGER CONSTRAINT pkey_zones PRIMARY KEY, name VARCHAR2(512) NOT NULL, type VARCHAR2(32) NOT NULL, last_check INTEGER, refresh NUMBER(10,0), serial NUMBER(10,0) DEFAULT 0 NOT NULL, notified_serial NUMBER(10,0), CONSTRAINT chk_zones_name CHECK (name = lower(name)), CONSTRAINT unq_zones_name UNIQUE (name), CONSTRAINT chk_zones_type CHECK ( type IN ('NATIVE', 'MASTER', 'SLAVE') AND (type = 'SLAVE' OR last_check IS NULL) ), CONSTRAINT chk_zones_serial CHECK (serial BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_nserial CHECK (notified_serial BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_refresh CHECK (refresh BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_master CHECK (type = 'MASTER' OR notified_serial IS NULL))
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE records ( id SERIAL PRIMARY KEY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(65535) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BOOL DEFAULT 'f', ordername VARCHAR(255), auth BOOL DEFAULT 't', CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(32) COLLATE NOCASE, content TEXT )
+ in following column content of table domainmetadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(32) COLLATE NOCASE, content TEXT)
+ in following column content of table domainmetadata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE domains ( id INTEGER PRIMARY KEY, name VARCHAR(255) NOT NULL COLLATE NOCASE, master VARCHAR(128) DEFAULT NULL, last_check INTEGER DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INTEGER DEFAULT NULL, account VARCHAR(40) DEFAULT NULL)
+ in following column notified_serial and in column notified_serial of table Zones
+Detected: Obsolete Column TypesFound in following statement: create table domainmetadata ( id INTEGER PRIMARY KEY, domain VARCHAR(255) COLLATE NOCASE, kind VARCHAR(32) COLLATE NOCASE, content TEXT)
+ in following column content of table domainmetadata
+Detected: Index Shotgun Variant: 3 Following index not used : ['Supermasters', 'ip']
+Detected: God Table Found in following statement: CREATE TABLE records ( id INTEGER NOT NULL, domain_id INTEGER DEFAULT NULL REFERENCES domains (id) ON DELETE CASCADE, name VARCHAR2(255) DEFAULT NULL, type VARCHAR2(10) DEFAULT NULL, content VARCHAR2(4000) DEFAULT NULL, ttl INTEGER DEFAULT NULL, prio INTEGER DEFAULT NULL, change_date INTEGER DEFAULT NULL, disabled NUMBER(1,0) DEFAULT 0 NOT NULL, ordername VARCHAR2(255) DEFAULT NULL, auth NUMBER(1,0) DEFAULT 1 NOT NULL, PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Zonemasters', 'zone_id']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE domains ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: God Table Found in following statement: CREATE TABLE records ( id SERIAL PRIMARY KEY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(65535) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BOOL DEFAULT 'f', ordername VARCHAR(255), auth BOOL DEFAULT 't', CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE TSIGKeys ( name VARCHAR2(256), algorithm VARCHAR2(64) NOT NULL, secret VARCHAR2(2048) NOT NULL, CONSTRAINT chk_tsigkeys_name CHECK (name = lower(name)), CONSTRAINT chk_tsigkeys_algorithm CHECK (algorithm = lower(algorithm)), CONSTRAINT unq_tsigkeys_nav UNIQUE (name, algorithm, secret))
+
+Detected: Obsolete Column TypesFound in following statement: create table domainmetadata ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, kind VARCHAR(16) COLLATE NOCASE, content TEXT)
+ in following column content of table domainmetadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id SERIAL PRIMARY KEY, domain_id INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(10) NOT NULL, modified_at INT NOT NULL, account VARCHAR(40) DEFAULT NULL, comment VARCHAR(65535) NOT NULL, CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+ in following column CONSTRAINT of table comments
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Zones ( id INTEGER CONSTRAINT pkey_zones PRIMARY KEY, name VARCHAR2(512) NOT NULL, type VARCHAR2(32) NOT NULL, last_check INTEGER, refresh NUMBER(10,0), serial NUMBER(10,0) DEFAULT 0 NOT NULL, notified_serial NUMBER(10,0), CONSTRAINT chk_zones_name CHECK (name = lower(name)), CONSTRAINT unq_zones_name UNIQUE (name), CONSTRAINT chk_zones_type CHECK ( type IN ('NATIVE', 'MASTER', 'SLAVE') AND (type = 'SLAVE' OR last_check IS NULL) ), CONSTRAINT chk_zones_serial CHECK (serial BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_nserial CHECK (notified_serial BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_refresh CHECK (refresh BETWEEN 0 AND 4294967295), CONSTRAINT chk_zones_master CHECK (type = 'MASTER' OR notified_serial IS NULL))
+ in following column CONSTRAINT and in column CONSTRAINT of table ZoneMetadata
+Detected: Values in Column Definition Found in following statement: CREATE TABLE comments ( id SERIAL PRIMARY KEY, domain_id INT NOT NULL, name VARCHAR(255) NOT NULL, type VARCHAR(10) NOT NULL, modified_at INT NOT NULL, account VARCHAR(40) DEFAULT NULL, comment VARCHAR(65535) NOT NULL, CONSTRAINT domain_exists FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domains ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, master VARCHAR(128) DEFAULT NULL, last_check INT DEFAULT NULL, type VARCHAR(6) NOT NULL, notified_serial INT DEFAULT NULL, account VARCHAR(40) DEFAULT NULL, CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+ in following column CONSTRAINT of table domains
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id INT AUTO_INCREMENT, domain_id INT NOT NULL, flags INT NOT NULL, active TINYINT(1), content TEXT, PRIMARY KEY(id))
+ in following column content of table cryptokeys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tsigkeys ( id SERIAL PRIMARY KEY, name VARCHAR(255), algorithm VARCHAR(50), secret VARCHAR(255), CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+ in following column CONSTRAINT of table tsigkeys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE domainmetadata ( id INT AUTO_INCREMENT, domain_id INT NOT NULL, kind VARCHAR(32), content TEXT, PRIMARY KEY(id))
+ in following column content of table domainmetadata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS soa ( id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, origin CHAR(255) NOT NULL, ns CHAR(255) NOT NULL, mbox CHAR(255) NOT NULL, serial INT UNSIGNED NOT NULL default '1', refresh INT UNSIGNED NOT NULL default '28800', retry INT UNSIGNED NOT NULL default '7200', expire INT UNSIGNED NOT NULL default '604800', minimum INT UNSIGNED NOT NULL default '86400', ttl INT UNSIGNED NOT NULL default '86400', active ENUM('Y', 'N') NOT NULL DEFAULT 'Y', UNIQUE KEY (origin))
+ in following column serial and in column serial of table Zones
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cryptokeys ( id INT AUTO_INCREMENT, domain_id INT NOT NULL, flags INT NOT NULL, active TINYINT(1), content TEXT, PRIMARY KEY(id))
+ in following column active and in column active of table ZoneDNSKeys
+Detected: Obsolete Column TypesFound in following statement: create table cryptokeys ( id INTEGER PRIMARY KEY, domain VARCHAR(255) COLLATE NOCASE, flags INT NOT NULL, active BOOL, content TEXT)
+ in following column content of table cryptokeys
+Detected: Index Shotgun Variant: 3 Following index not used : ['records', 'text_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['AccessControlList', 'acl_key']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE tsigkeys ( id SERIAL PRIMARY KEY, name VARCHAR(255), algorithm VARCHAR(50), secret VARCHAR(255), CONSTRAINT c_lowercase_name CHECK (((name)::TEXT = LOWER((name)::TEXT))))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['domains', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cryptokeys ( id INTEGER PRIMARY KEY, domain_id INT NOT NULL, flags INT NOT NULL, active BOOL, content TEXT, FOREIGN KEY(domain_id) REFERENCES domains(id) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column content of table cryptokeys
+Detected: God Table Found in following statement: CREATE TABLE records ( id INT IDENTITY, domain_id INT DEFAULT NULL, name VARCHAR(255) DEFAULT NULL, type VARCHAR(10) DEFAULT NULL, content VARCHAR(MAX) DEFAULT NULL, ttl INT DEFAULT NULL, prio INT DEFAULT NULL, change_date INT DEFAULT NULL, disabled BIT DEFAULT 0, ordername VARBINARY(255) DEFAULT NULL, auth BIT DEFAULT 1, PRIMARY KEY (id))
+
+Detected: Duplicate Column Names Found in following statement: create table domainmetadata ( id INTEGER PRIMARY KEY, domain VARCHAR(255) COLLATE NOCASE, kind VARCHAR(32) COLLATE NOCASE, content TEXT)
+ in following column content and in column content of table records
+Detected: Index Shotgun Variant: 3 Following index not used : ['domainmetadata', 'domain_id']

@@ -1,0 +1,2 @@
+UPDATE Device SET lastValidLatitude = :latitude, lastValidLongitude = :longitude, lastGPSTimestamp = UNIX_TIMESTAMP WHERE imeiNumber = SUBSTRING
+UPDATE server SET registration = :registration, readonly = :readonly, map = :map, bingKey = :bingKey, mapUrl = :mapUrl, distanceUnit = :distanceUnit, speedUnit = :speedUnit, latitude = :latitude, longitude = :longitude, zoom = :zoom, twelveHourFormat = :twelveHourFormat, attributes = :attributes  WHERE id = :id

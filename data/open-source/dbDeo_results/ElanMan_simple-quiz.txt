@@ -1,0 +1,9 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `quizzes` ( `id` int(11) unsigned NOT NULL, `name` varchar(50) NOT NULL, `description` varchar(255) NOT NULL, `category` int(11) NOT NULL, `active` tinyint(1) NOT NULL DEFAULT '1', `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `updated` datetime NOT NULL)
+ in following column `description` and in column `description` of table `categories`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `quizzes` ( `id` int(11) unsigned NOT NULL, `name` varchar(50) NOT NULL, `description` varchar(255) NOT NULL, `category` int(11) NOT NULL, `active` tinyint(1) NOT NULL DEFAULT '1', `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `updated` datetime NOT NULL)
+ in following column `id` and in column `id` of table `sessions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `categories` ( `id` int(11) NOT NULL, `name` varchar(50) NOT NULL, `description` text NOT NULL)
+ in following column `description` of table `categories`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sessions` ( `id` varchar(32) NOT NULL, `access` int(10) unsigned DEFAULT NULL, `data` text)
+ in following column `data` of table `sessions`

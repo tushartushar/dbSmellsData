@@ -1,0 +1,19 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_wiki_refs', 'URL']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_plants', 'fk_group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_locations_list', 'fk_country_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_users', 'longitude']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_plant_groups', 'group_title']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_plants', 'plant_tilte']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_users', 'street_name']
+Detected: God Table Found in following statement: CREATE TABLE core_users( user_id SMALLINT NOT NULL AUTO_INCREMENT COMMENT 'unique id of user', fk_lang_id INT COMMENT 'the language user prefer', f_name VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT 'first name', l_name VARCHAR(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci COMMENT 'last name', base_location VARCHAR(15)CHARACTER SET utf8 COLLATE utf8_unicode_ci COMMENT 'the base location of the user', pwd VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci, e_mail VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL COMMENT 'will used as login (as it''s unique per user)', street_name VARCHAR(25) CHARACTER SET utf8 COLLATE utf8_unicode_ci, def_phone_num VARCHAR(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci, zip_code NUMERIC, longitude NUMERIC, latitude NUMERIC, PRIMARY KEY (user_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_plant_groups', 'fk_lang_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_users', 'latitude']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_wiki_refs', 'fk_plant_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_plants', 'fk_lang_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_users', 'base_location']
+Detected: Index Shotgun Variant: 3 Following index not used : ['core_users', 'zip_code']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_growing_plan_xml_schemas', 'xsd_id']
+Detected: God Table Found in following statement: create table core_users( user_id smallint not null auto_increment comment 'unique id of user', fk_lang_id int comment 'the language user prefer', f_name varchar(10) not null comment 'first name', l_name varchar(10) comment 'last name', base_location varchar(15) comment 'the base location of the user', pwd varchar(20), e_mail varchar(20) not null comment 'will used as login (as it''s unique per user)', street_name varchar(25), def_phone_num varchar(10), zip_code numeric, longitude numeric, latitude numeric, primary key (user_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pg_growing_plan_xml_schemas', 'fk_pgp_id']

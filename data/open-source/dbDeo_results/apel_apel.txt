@@ -1,0 +1,5 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE GroupAttributes ( StarRecordID VARCHAR(255) NOT NULL, AttributeType VARCHAR(255), AttributeValue VARCHAR(255), PRIMARY KEY(StarRecordID, AttributeType) )
+
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE StarRecords ( RecordId VARCHAR(255) NOT NULL PRIMARY KEY, CreateTime DATETIME NOT NULL, StorageSystemID INT NOT NULL, SiteID INT NOT NULL, StorageShareID INT NOT NULL, StorageMediaID INT NOT NULL, StorageClassID INT NOT NULL, FileCount INTEGER, DirectoryPath VARCHAR(255), LocalUser VARCHAR(255), LocalGroup VARCHAR(255), UserIdentityID INT NOT NULL, GroupID INT NOT NULL, SubGroupID INT NOT NULL, RoleID INT NOT NULL, StartTime DATETIME NOT NULL, EndTime DATETIME NOT NULL, ResourceCapacityUsed BIGINT NOT NULL, LogicalCapacityUsed BIGINT, ResourceCapacityAllocated BIGINT, INDEX(StorageSystemID), INDEX(StorageShareID), INDEX(StorageMediaID), INDEX(StorageClassID), INDEX(UserIdentityID), INDEX(GroupID))
+

@@ -1,0 +1,2 @@
+SELECT COUNT(*) FROM #{archived_table_name}
+CREATE TABLE archived_#{table_name} ( LIKE #{table_name} INCLUDING DEFAULTS INCLUDING CONSTRAINTS INCLUDING INDEXES )

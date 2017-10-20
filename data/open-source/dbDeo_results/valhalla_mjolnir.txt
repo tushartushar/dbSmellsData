@@ -1,0 +1,399 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_name of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_headsign of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column shape_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column start_date of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_timezone of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "shapes"( shape_key integer, shape_id text, shape_pt_lat double precision, shape_pt_lon double precision, shape_pt_sequence integer, shape_dist_traveled double precision)
+ in following column shape_id of table "shapes"
+Detected: God Table Found in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column direction_id of table "trips_tmp"
+Detected: Index Shotgun Variant: 3 Following index not used : ['geometry_columns', 'indexidx_virtssridvirts_geometry_columns5CREATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers"( transfer_key integer primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column from_stop_id of table "transfers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_text_color of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column pickup_type of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column service_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_long_name of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column route_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_url of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column departure_time of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column block_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column departure_time of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key serial primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column end_date of table "calendar_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_name of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_dates_tmp"( service_key integer, service_id text, date text, exception_type integer)
+ in following column date of table "calendar_dates_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column trip_id of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column block_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key serial primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column start_date of table "calendar_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column osm_way_id and in column osm_way_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_short_name of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column direction_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column arrival_time of table "stop_times"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_url of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE admin_access (admin_id INTEGER NOT NULL,iso_code TEXT,trunk INTEGER DEFAULT NULL,trunk_link INTEGER DEFAULT NULL,track INTEGER DEFAULT NULL,footway INTEGER DEFAULT NULL,pedestrian INTEGER DEFAULT NULL,bridleway INTEGER DEFAULT NULL,cycleway INTEGER DEFAULT NULL,path INTEGER DEFAULT NULL)
+ in following column iso_code of table admin_access
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_url of table "stops"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "shapes"( shape_key integer, shape_id text, shape_pt_lat double precision, shape_pt_lon double precision, shape_pt_sequence integer, shape_dist_traveled double precision)
+ in following column shape_key and in column shape_key of table "shape_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_url of table "agency_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column direction_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column pickup_type of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_id of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_id of table "trips_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "calendar_tmp"( service_key integer primary key autoincrement, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column service_key and in column service_key of table "cal_dates_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_id of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_short_name of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_url of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_desc of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_lang of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key integer primary key autoincrement, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column from_stop_id of table "transfers_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_key and in column stop_key of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key serial primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column to_stop_id of table "transfers_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_timezone of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column departure_time of table "stop_times_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar"( service_key integer primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column end_date of table "calendar"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_url of table "routes_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column auth_name of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key integer primary key autoincrement, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column min_transfer_time of table "transfers_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_desc of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column trip_id of table "stop_times_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_times_key and in column stop_times_key of table "stop_times"
+Detected: God Table Found in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_url of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key integer primary key autoincrement, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column start_date of table "calendar_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_desc of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column drop_off_type of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column drop_off_type of table "stop_times_tmp"
+Detected: Index Shotgun Variant: 3 Following index not used : ['stop_times_tmp', 'stop_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key serial primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column from_stop_id of table "transfers_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_url of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "shape_tmp"( shape_key integer primary key autoincrement, shape_id text)
+ in following column shape_id of table "shape_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "calendar_tmp"( service_key serial primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column route_key and in column route_key of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_lang of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_timezone of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column shape_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_desc of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column arrival_time of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_text_color of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "shape"( shape_key integer primary key, shape_id text)
+ in following column shape_id of table "shape"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column proj4text of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_text_color of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_desc of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_id of table "routes_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key integer primary key autoincrement, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column end_date of table "calendar_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column service_id of table "trips_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_short_name of table "routes_tmp"
+Detected: Index Shotgun Variant: 3 Following index not used : ['stops_tmp', 'onestop_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column drop_off_type of table "stop_times"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_headsign of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "cal_dates_tmp"( service_key serial primary key, service_id text)
+ in following column service_id of table "cal_dates_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column block_id of table "schedule_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_key and in column agency_key of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar"( service_key integer primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column service_id of table "calendar"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_id of table "stop_times"
+Detected: Index Shotgun Variant: 3 Following index not used : ['admins', 'drive_on_right']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE geometry_columns_time (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,last_insert TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_update TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_delete TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',CONSTRAINT pk_gc_time PRIMARY KEY (f_table_name, f_geometry_column),CONSTRAINT fk_gc_time FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_geometry_column of table geometry_columns_time
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column parent_station of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers"( transfer_key integer primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column to_stop_id of table "transfers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE geometry_columns_time (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,last_insert TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_update TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_delete TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',CONSTRAINT pk_gc_time PRIMARY KEY (f_table_name, f_geometry_column),CONSTRAINT fk_gc_time FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_table_name of table geometry_columns_time
+Detected: God Table Found in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['stops', 'onestop_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "shape_tmp"( shape_key serial primary key, shape_id text)
+ in following column shape_id of table "shape_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column block_id of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers"( transfer_key integer primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column min_transfer_time of table "transfers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_id of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_name of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_code of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column parent_station of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column headsign of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column arrival_time of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column route_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column agency_id of table "routes"
+Detected: Index Shotgun Variant: 3 Following index not used : ['stops', 'stop_key']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key integer primary key autoincrement, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column to_stop_id of table "transfers_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column onestop_id of table "stops"
+Detected: Index Shotgun Variant: 3 Following index not used : ['admins', 'admin_level']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column route_id of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_desc of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_headsign of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "cal_dates_tmp"( service_key integer primary key autoincrement, service_id text)
+ in following column service_id of table "cal_dates_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column agency_id of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_short_name of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_name of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column onestop_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_name of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column arrival_time of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_lang of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_dates"( service_key integer, service_id text, date text, exception_type integer)
+ in following column service_id of table "calendar_dates"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column parent_station of table "stops"
+Detected: God Table Found in following statement: CREATE TABLE "calendar"( service_key integer primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_name of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column end_date of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_long_name of table "routes_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+
+Detected: God Table Found in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_headsign of table "trips_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "transfers"( transfer_key integer primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column transfer_key and in column transfer_key of table "transfers_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column trip_id of table "stop_times"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_code of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_color of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column service_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_code of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column zone_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_phone of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_id of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column onestop_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column parent_station of table "stops_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column arrival_time of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_color of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key serial primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_id of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "shapes_tmp"( shape_key integer, shape_id text, shape_pt_lat double precision, shape_pt_lon double precision, shape_pt_sequence integer, shape_dist_traveled double precision)
+ in following column shape_id of table "shapes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column shape_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes"( route_key integer primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_long_name of table "routes"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column ref_sys_name of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column zone_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column departure_time of table "stop_times"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column start_date of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column end_date of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key serial primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column service_id of table "calendar_tmp"
+Detected: Index Shotgun Variant: 3 Following index not used : ['trips_tmp', 'service_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_desc of table "routes_tmp"
+Detected: God Table Found in following statement: CREATE TABLE "schedule_tmp"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_dates_tmp"( service_key integer, service_id text, date text, exception_type integer)
+ in following column service_id of table "calendar_dates_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column headsign of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column pickup_type of table "stop_times"
+Detected: God Table Found in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times"( stop_times_key integer primary key, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_headsign of table "stop_times"
+Detected: God Table Found in following statement: CREATE TABLE "calendar_tmp"( service_key integer primary key autoincrement, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+
+Detected: God Table Found in following statement: CREATE TABLE "routes_tmp"( route_key integer primary key autoincrement, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column onestop_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key integer primary key autoincrement, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column block_id of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_tmp"( service_key integer primary key autoincrement, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column service_id of table "calendar_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column zone_id of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_name of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column srtext of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency"( agency_key integer primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_phone of table "agency"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops"( stop_key integer primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column zone_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key integer primary key autoincrement, stop_id text, onestop_id text, osm_way_id INTEGER, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_code of table "stops_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_headsign of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_short_name of table "trips_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_color of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar"( service_key integer primary key, service_id text, monday integer, tuesday integer, wednesday integer, thursday integer, friday integer, saturday integer, sunday integer, start_date text, end_date text)
+ in following column start_date of table "calendar"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "trips"( trip_key integer primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_short_name of table "trips"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column route_id of table "routes_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "routes_tmp"( route_key serial primary key, route_id text, agency_id text, agency_key integer, route_short_name text, route_long_name text, route_desc text, route_type integer, route_url text, route_color text, route_text_color text)
+ in following column agency_id of table "routes_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column osm_way_id and in column osm_way_id of table "stops"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "calendar_dates"( service_key integer, service_id text, date text, exception_type integer)
+ in following column date of table "calendar_dates"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key integer primary key autoincrement, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_url of table "agency_tmp"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "trips_tmp"( trip_key serial primary key, route_key integer, route_id text, service_id text, trip_id text, trip_headsign text, trip_short_name text, direction_id text, block_id text, shape_id text, shape_key integer, wheelchair_accessible integer, bikes_allowed integer)
+ in following column trip_key and in column trip_key of table "schedule_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "agency_tmp"( agency_key serial primary key, agency_id text, agency_name text, agency_url text, agency_timezone text, agency_lang text, agency_phone text)
+ in following column agency_phone of table "agency_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "transfers_tmp"( transfer_key serial primary key, from_stop_id text, from_stop_key integer, to_stop_id text, to_stop_key integer, transfer_type integer, min_transfer_time text)
+ in following column min_transfer_time of table "transfers_tmp"
+Detected: Index Shotgun Variant: 3 Following index not used : ['geometry_columns', 'srid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "schedule"( origin_stop_key integer, dest_stop_key integer, trip_key integer, route_key integer, service_key integer, shape_key integer, departure_time text, arrival_time text, start_date text, end_date text, dow_mask integer, has_subtractions integer, block_id text, headsign text, wheelchair_accessible integer, bikes_allowed integer)
+ in following column departure_time of table "schedule"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stop_times_tmp"( stop_times_key integer primary key autoincrement, stop_key integer, trip_key integer, trip_id text, arrival_time text, departure_time text, stop_id text, stop_sequence integer, stop_headsign text, pickup_type text, drop_off_type text, shape_dist_traveled double precision)
+ in following column stop_id of table "stop_times_tmp"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stops_tmp"( stop_key serial primary key, stop_id text, onestop_id text, osm_way_id bigint, stop_code text, stop_name text, stop_desc text, stop_lat double precision, stop_lon double precision, zone_id text, stop_url text, location_type integer, parent_station text, parent_station_key integer, wheelchair_boarding integer)
+ in following column stop_url of table "stops_tmp"

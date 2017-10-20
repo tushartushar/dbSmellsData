@@ -1,0 +1,128 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claim_attributes ( id text NOT NULL, interaction_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL)
+ in following column id of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_aliases ( id text NOT NULL, gene_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column alias of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_aliases ( id text NOT NULL, drug_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column drug_claim_id of table drug_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims_drugs ( drug_id text NOT NULL, drug_claim_id text NOT NULL)
+ in following column drug_claim_id of table drug_claims_drugs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_aliases ( id text NOT NULL, gene_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column gene_claim_id of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_aliases ( id text NOT NULL, drug_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column nomenclature of table drug_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_aliases ( id text NOT NULL, drug_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column id of table drug_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text, primary_name character varying(255))
+ in following column id of table drug_claims
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE drug_claim_types_drug_claims ( drug_claim_id character varying(255) NOT NULL, drug_claim_type_id character varying(255) NOT NULL)
+ in following column drug_claim_id and in column drug_claim_id of table drug_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_attributes ( id text NOT NULL, drug_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column name of table drug_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column description of table gene_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column id of table gene_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column name of table gene_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text, primary_name character varying(255))
+ in following column name of table drug_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claim_attributes ( id text NOT NULL, interaction_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL)
+ in following column interaction_claim_id of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_attributes ( id text NOT NULL, drug_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column value of table drug_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_attributes ( id text NOT NULL, gene_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column value of table gene_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_attributes ( id text NOT NULL, gene_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column description of table gene_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column gene_claim_id of table interaction_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column drug_claim_id of table interaction_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims_drugs ( drug_id text NOT NULL, drug_claim_id text NOT NULL)
+ in following column drug_id of table drug_claims_drugs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_aliases ( id text NOT NULL, gene_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column id of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column full_name of table sources
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column interaction_type of table interaction_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text, primary_name character varying(255))
+ in following column nomenclature of table drug_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column source_id of table interaction_claims
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gene_gene_interaction_claims ( id character varying(255) NOT NULL, gene_id character varying(255) NOT NULL, interacting_gene_id character varying(255) NOT NULL, source_id character varying(255) NOT NULL)
+ in following column gene_id and in column gene_id of table gene_claims_genes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text, primary_name character varying(255))
+ in following column description of table drug_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column id of table interaction_claims
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gene_gene_interaction_claim_attributes ( id character varying(255) NOT NULL, gene_gene_interaction_claim_id character varying(255) NOT NULL, name character varying(255) NOT NULL, value character varying(255) NOT NULL)
+ in following column value and in column value of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_attributes ( id text NOT NULL, drug_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column drug_claim_id of table drug_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column base_url of table sources
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drugs ( id text NOT NULL, name text)
+ in following column id of table drugs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE drugs ( id text NOT NULL, name text)
+ in following column id and in column id of table source_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_attributes ( id text NOT NULL, drug_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column id of table drug_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column id of table sources
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claims ( id text NOT NULL, drug_claim_id text NOT NULL, gene_claim_id text NOT NULL, interaction_type text, description text, source_id text, known_action_type character varying(255))
+ in following column description of table interaction_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_aliases ( id text NOT NULL, gene_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column nomenclature of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column source_id of table gene_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column source_db_version of table sources
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claim_attributes ( id text NOT NULL, interaction_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL)
+ in following column value of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column nomenclature of table gene_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column source_db_name of table sources
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE interaction_claim_types_interaction_claims ( interaction_claim_type_id character varying(255) NOT NULL, interaction_claim_id character varying(255) NOT NULL)
+ in following column interaction_claim_id and in column interaction_claim_id of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_aliases ( id text NOT NULL, gene_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column description of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drugs ( id text NOT NULL, name text)
+ in following column name of table drugs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column citation of table sources
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_attributes ( id text NOT NULL, gene_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column id of table gene_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_attributes ( id text NOT NULL, gene_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column name of table gene_claim_attributes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gene_claim_categories_gene_claims ( gene_claim_id character varying(255) NOT NULL, gene_claim_category_id character varying(255) NOT NULL)
+ in following column gene_claim_id and in column gene_claim_id of table gene_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_aliases ( id text NOT NULL, drug_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column description of table drug_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claim_attributes ( id text NOT NULL, gene_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column gene_claim_id of table gene_claim_attributes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE drugs ( id text NOT NULL, name text)
+ in following column name and in column name of table gene_claim_categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genes ( id text NOT NULL, name text, long_name character varying(255))
+ in following column id of table genes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text, primary_name character varying(255))
+ in following column source_id of table drug_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims_genes ( gene_id text NOT NULL, gene_claim_id text NOT NULL)
+ in following column gene_claim_id of table gene_claims_genes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+ in following column site_url of table sources
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gene_claims ( id text NOT NULL, name text NOT NULL, description text, nomenclature text NOT NULL, source_id text)
+ in following column source_id and in column source_id of table gene_gene_interaction_claims
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interaction_claim_attributes ( id text NOT NULL, interaction_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL)
+ in following column name of table interaction_claim_attributes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gene_claims_genes ( gene_id text NOT NULL, gene_claim_id text NOT NULL)
+ in following column gene_id of table gene_claims_genes
+Detected: God Table Found in following statement: CREATE TABLE sources ( id text NOT NULL, source_db_name text NOT NULL, source_db_version text NOT NULL, citation text, base_url text, site_url text, full_name text, source_type_id character varying(255), gene_claims_count integer DEFAULT 0, drug_claims_count integer DEFAULT 0, interaction_claims_count integer DEFAULT 0, interaction_claims_in_groups_count integer DEFAULT 0, gene_claims_in_groups_count integer DEFAULT 0, drug_claims_in_groups_count integer DEFAULT 0, source_trust_level_id character varying(255), gene_gene_interaction_claims_count integer DEFAULT 0)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_aliases ( id text NOT NULL, drug_claim_id text NOT NULL, alias text NOT NULL, description text, nomenclature text NOT NULL)
+ in following column alias of table drug_claim_aliases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE genes ( id text NOT NULL, name text, long_name character varying(255))
+ in following column name of table genes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drug_claim_attributes ( id text NOT NULL, drug_claim_id text NOT NULL, name text NOT NULL, value text NOT NULL, description text)
+ in following column description of table drug_claim_attributes

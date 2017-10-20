@@ -1,0 +1,64 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id SERIAL, date date, time time, date_time timestamp, test_int BIGINT, test_float float, test_text text, test_bit boolean, test_varchar VARCHAR(10), CONSTRAINT PK_type_test PRIMARY KEY (id))
+ in following column test_text of table type_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id int(11) NOT NULL AUTO_INCREMENT, `date` date DEFAULT NULL, `time` time DEFAULT NULL, date_time datetime DEFAULT NULL, test_int int(11) DEFAULT NULL, test_float float DEFAULT NULL, test_text text, test_bit tinyint(1) DEFAULT NULL, test_varchar varchar(10) DEFAULT NULL, PRIMARY KEY (id))
+ in following column test_text of table type_test
+Detected: Index Shotgun Variant: 3 Following index not used : ['project', 'project_status_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['two_key', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['related_project_assn', 'child_project_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, project_status_type_id INTEGER UNSIGNED NOT NULL, manager_person_id INTEGER UNSIGNED, name VARCHAR(100) NOT NULL, description TEXT, start_date DATE, end_date DATE, budget DECIMAL, CONSTRAINT PK_project PRIMARY KEY (id), KEY IDX_project_1(project_status_type_id), KEY IDX_project_2(manager_person_id))
+ in following column description of table project
+Detected: Index Shotgun Variant: 3 Following index not used : ['project', 'manager_person_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['team_member_project_assn', 'project_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['person_persontype_assn', 'person_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['milestone', 'project_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, description TEXT, guidelines TEXT, is_active tinyint(1) NOT NULL, CONSTRAINT PK_project_status_type PRIMARY KEY (id), UNIQUE KEY IDX_projectstatustype_1(name))
+ in following column description of table project_status_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id INT NOT NULL IDENTITY, project_status_type_id INT NOT NULL, manager_person_id INT, name VARCHAR(100) NOT NULL, description TEXT, start_date DATETIME, end_date DATETIME, budget FLOAT, spent FLOAT, CONSTRAINT PK_project PRIMARY KEY (id))
+ in following column description of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id INT NOT NULL IDENTITY, date date, time time, date_time datetime, test_int BIGINT, test_float float, test_text text, test_bit bit, test_varchar VARCHAR(10), PRIMARY KEY (id))
+ in following column test_text of table type_test
+Detected: Index Shotgun Variant: 3 Following index not used : ['person', 'last_name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id int(11) NOT NULL AUTO_INCREMENT, `date` date DEFAULT NULL, `time` time DEFAULT NULL, date_time datetime DEFAULT NULL, test_int int(11) DEFAULT NULL, test_float float DEFAULT NULL, test_text text, test_bit tinyint(1) DEFAULT NULL, test_varchar varchar(10) DEFAULT NULL, PRIMARY KEY (id))
+ in following column test_float of table type_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE related_project_assn ( project_id BIGINT NOT NULL, child_project_id BIGINT NOT NULL, CONSTRAINT PK_related_project_assn PRIMARY KEY (project_id, child_project_id))
+ in following column CONSTRAINT and in column CONSTRAINT of table qc_watchers
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'person_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id SERIAL, project_status_type_id BIGINT NOT NULL, manager_person_id BIGINT, name VARCHAR(100) NOT NULL, description TEXT, start_date DATE, end_date DATE, budget DECIMAL(12,2), spent DECIMAL(12,2), CONSTRAINT PK_project PRIMARY KEY (id))
+ in following column description of table project
+Detected: Index Shotgun Variant: 3 Following index not used : ['person_persontype_assn', 'person_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE person_with_lock ( id SERIAL, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, sys_timestamp TIMESTAMP, CONSTRAINT PK_person_with_lock PRIMARY KEY (id))
+ in following column id and in column id of table project
+Detected: Metadata as Data Found in following statement: CREATE TABLE qc_watchers ( table_key varchar(200) NOT NULL, ts varchar(40) NOT NULL, CONSTRAINT PK_qc_watchers PRIMARY KEY (table_key))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id INT NOT NULL IDENTITY, date date, time time, date_time datetime, test_int BIGINT, test_float float, test_text text, test_bit bit, test_varchar VARCHAR(10), PRIMARY KEY (id))
+ in following column test_float of table type_test
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS qc_watchers (	 * table_key varchar(200) NOT NULL,	 * ts varchar(40) NOT NULL,	 * PRIMARY KEY (table_key)	 * )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, project_status_type_id INTEGER UNSIGNED NOT NULL, manager_person_id INTEGER UNSIGNED, name VARCHAR(100) NOT NULL, description TEXT, start_date DATE, end_date DATE, budget DECIMAL(12,2), spent DECIMAL(12,2), CONSTRAINT PK_project PRIMARY KEY (id), KEY IDX_project_1(project_status_type_id), KEY IDX_project_2(manager_person_id))
+ in following column description of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id INT NOT NULL IDENTITY, project_status_type_id INT NOT NULL, manager_person_id INT, name VARCHAR(100) NOT NULL, description TEXT, start_date DATETIME, end_date DATETIME, budget FLOAT, spent FLOAT, CONSTRAINT PK_project PRIMARY KEY (id))
+ in following column budget of table project
+Detected: Metadata as Data Found in following statement: CREATE TABLE qc_watchers ( table_key VARCHAR(200) NOT NULL, ts varchar(40) NOT NULL, CONSTRAINT PK_qc_watchers PRIMARY KEY (table_key))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['team_member_project_assn', 'person_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id INT NOT NULL IDENTITY, name VARCHAR(50) NOT NULL CONSTRAINT UQ_projectstatustype_1 UNIQUE, description TEXT, guidelines TEXT, CONSTRAINT PK_project_status_type PRIMARY KEY (id))
+ in following column description of table project_status_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id INT NOT NULL IDENTITY, name VARCHAR(50) NOT NULL CONSTRAINT UQ_projectstatustype_1 UNIQUE, description TEXT, guidelines TEXT, CONSTRAINT PK_project_status_type PRIMARY KEY (id))
+ in following column guidelines of table project_status_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id SERIAL, name VARCHAR(50) NOT NULL, description TEXT, guidelines TEXT, is_active BOOLEAN NOT NULL, CONSTRAINT PK_project_status_type PRIMARY KEY (id), UNIQUE (name))
+ in following column guidelines of table project_status_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project ( id INT NOT NULL IDENTITY, project_status_type_id INT NOT NULL, manager_person_id INT, name VARCHAR(100) NOT NULL, description TEXT, start_date DATETIME, end_date DATETIME, budget FLOAT, spent FLOAT, CONSTRAINT PK_project PRIMARY KEY (id))
+ in following column spent of table project
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id SERIAL, name VARCHAR(50) NOT NULL, description TEXT, guidelines TEXT, is_active BOOLEAN NOT NULL, CONSTRAINT PK_project_status_type PRIMARY KEY (id), UNIQUE (name))
+ in following column description of table project_status_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_status_type ( id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT, name VARCHAR(50) NOT NULL, description TEXT, guidelines TEXT, is_active tinyint(1) NOT NULL, CONSTRAINT PK_project_status_type PRIMARY KEY (id), UNIQUE KEY IDX_projectstatustype_1(name))
+ in following column guidelines of table project_status_type
+Detected: Index Shotgun Variant: 3 Following index not used : ['two_key', 'person_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE related_project_assn ( project_id BIGINT NOT NULL, child_project_id BIGINT NOT NULL, CONSTRAINT PK_related_project_assn PRIMARY KEY (project_id, child_project_id))
+ in following column project_id and in column project_id of table team_member_project_assn
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE type_test ( id SERIAL, date date, time time, date_time timestamp, test_int BIGINT, test_float float, test_text text, test_bit boolean, test_varchar VARCHAR(10), CONSTRAINT PK_type_test PRIMARY KEY (id))
+ in following column test_float of table type_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE person_persontype_assn ( person_id BIGINT NOT NULL, person_type_id BIGINT NOT NULL, CONSTRAINT PK_person_persontype_assn PRIMARY KEY (person_id, person_type_id))
+ in following column person_id and in column person_id of table login
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE related_project_assn ( project_id INT NOT NULL, child_project_id INT NOT NULL, CONSTRAINT PK_related_project_assn PRIMARY KEY (project_id, child_project_id))
+ in following column project_id and in column project_id of table milestone

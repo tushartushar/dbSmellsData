@@ -1,0 +1,47 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #rowset(n INTEGER, c VARCHAR(20))
+ in following column c and in column c of table #tmp1
+Detected: Obsolete Column TypesFound in following statement: create table #test_output (id int, msg text)
+ in following column msg of table #test_output
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE #ctlib0009 (col1 int not null, col2 char(1) not null, col3 datetime not null)
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #test_table (id int, name text)
+ in following column name of table #test_table
+Detected: Obsolete Column TypesFound in following statement: create table tempdb..prepare_bug (c1 char(20), c2 varchar(255), p1 float, p2 real)
+ in following column p1 of table tempdb
+Detected: Clone Tables Found in following statement: create table #mytab1 (k int, c char(30))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #tmp (i INT, t %s)
+ in following column i and in column i of table #tmp1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE #ctlibarray (col1 int null, col2 char(4) not null, col3 datetime not null)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #ctlibarray (col1 int not null, col2 char(4) not null, col3 datetime not null)
+ in following column col1 and in column col1 of table #test_table2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #test_table (id int, name varchar(255))
+ in following column name and in column name of table api#
+Detected: Obsolete Column TypesFound in following statement: create table #ctparam_lang (id numeric identity not null, \		name varchar(30), name2 varchar(20), age int, cost money, bdate datetime, fval float)
+ in following column fval of table #ctparam_lang
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TestTransaction ( value INT )
+ in following column value and in column value of table #tmp1
+Detected: Obsolete Column TypesFound in following statement: create table #ct_dynamic (id numeric identity not null, \ name varchar(30), age int, cost money, bdate datetime, fval float)
+ in following column fval of table #ct_dynamic
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #rowset(n INTEGER, c VARCHAR(20))
+ in following column n and in column n of table #mars1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #test_table (id int, name varchar(255))
+ in following column id and in column id of table #tmp1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #odbc_test(i INT, t TEXT)
+ in following column t of table #odbc_test
+Detected: Obsolete Column TypesFound in following statement: create table tempdb..prepare_bug (c1 char(20), c2 varchar(255), p1 float, p2 real)
+ in following column p2 of table tempdb
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #odbc_test(i INT, t TEXT)
+ in following column t and in column t of table test_transaction
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #test_table (id int, val float(48))
+ in following column val of table #test_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #test_table (id int, val real)
+ in following column val of table #test_table
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE #ctlibarray (col1 int not null, col2 char(4) not null, col3 datetime not null)
+
+Detected: Multicolumn Attribute Found in following statement: create table tempdb..prepare_bug (c1 char(20), c2 varchar(255), p1 float, p2 real)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #test_table (id int, name text)
+ in following column name and in column name of table #tester

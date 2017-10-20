@@ -1,0 +1,51 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'cascade']
+Detected: Obsolete Column TypesFound in following statement: create table permission ( id bigint not null, name TEXT, url TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_permission primary key (id))
+ in following column name of table permission
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'on']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'restrict']
+Detected: Obsolete Column TypesFound in following statement: create table role ( id bigint not null, name TEXT, url TEXT, permissions TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_role primary key (id))
+ in following column revision of table (
+Detected: Obsolete Column TypesFound in following statement: create table role ( id bigint not null, name TEXT, url TEXT, permissions TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_role primary key (id))
+ in following column description of table (
+Detected: Duplicate Column Names Found in following statement: create table saved_search ( id			bigint not null, name 		varchar(255), url			TEXT, last_update timestamp not null, user_id 		bigint NOT NULL, FOREIGN KEY (user_id) REFERENCES account(id), constraint pk_saved_search primary key (id))
+ in following column name and in column name of table (
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table account ( id 	bigint not null, email varchar(255), name varchar(255), password varchar(255), field_affiliation varchar(255), url varchar(255), edit_url varchar(255), last_access varchar(255), last_login varchar(255), created varchar(255), status bigint, language varchar(255), feed_nid bigint, roles TEXT, revision TEXT, last_update timestamp not null, constraint pk_account primary key (id))
+ in following column roles of table account
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'on']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'update']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'update']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'delete']
+Detected: Obsolete Column TypesFound in following statement: create table role ( id bigint not null, name TEXT, url TEXT, permissions TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_role primary key (id))
+ in following column url of table (
+Detected: Obsolete Column TypesFound in following statement: create table account ( id 	bigint not null, email varchar(255), name varchar(255), password varchar(255), field_affiliation varchar(255), url varchar(255), edit_url varchar(255), last_access varchar(255), last_login varchar(255), created varchar(255), status bigint, language varchar(255), feed_nid bigint, roles TEXT, revision TEXT, last_update timestamp not null, constraint pk_account primary key (id))
+ in following column revision of table account
+Detected: God Table Found in following statement: create table account ( id 	bigint not null, email varchar(255), name varchar(255), password varchar(255), field_affiliation varchar(255), url varchar(255), edit_url varchar(255), last_access varchar(255), last_login varchar(255), created varchar(255), status bigint, language varchar(255), feed_nid bigint, roles TEXT, revision TEXT, last_update timestamp not null, constraint pk_account primary key (id))
+
+Detected: Obsolete Column TypesFound in following statement: create table corpus ( id			bigint not null, name 		varchar(255), metaData		TEXT, last_update timestamp not null, user_id 		bigint NOT NULL, FOREIGN KEY (user_id) REFERENCES account(id), constraint pk_corpus primary key (id))
+ in following column metaData of table corpus
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'update']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'restrict']
+Detected: Obsolete Column TypesFound in following statement: create table permission ( id bigint not null, name TEXT, url TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_permission primary key (id))
+ in following column revision of table permission
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'cascade']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'on']
+Detected: Obsolete Column TypesFound in following statement: create table permission ( id bigint not null, name TEXT, url TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_permission primary key (id))
+ in following column description of table permission
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'delete']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['account', 'delete']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['permission', 'cascade']
+Detected: Obsolete Column TypesFound in following statement: create table role ( id bigint not null, name TEXT, url TEXT, permissions TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_role primary key (id))
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: create table permission ( id bigint not null, name TEXT, url TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_permission primary key (id))
+ in following column url of table permission
+Detected: Obsolete Column TypesFound in following statement: create table saved_search ( id			bigint not null, name 		varchar(255), url			TEXT, last_update timestamp not null, user_id 		bigint NOT NULL, FOREIGN KEY (user_id) REFERENCES account(id), constraint pk_saved_search primary key (id))
+ in following column url of table saved_search
+Detected: Duplicate Column Names Found in following statement: create table saved_search ( id			bigint not null, name 		varchar(255), url			TEXT, last_update timestamp not null, user_id 		bigint NOT NULL, FOREIGN KEY (user_id) REFERENCES account(id), constraint pk_saved_search primary key (id))
+ in following column url and in column url of table account
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table role ( id bigint not null, name TEXT, url TEXT, permissions TEXT, description TEXT, revision TEXT, last_update timestamp not null, constraint pk_role primary key (id))
+ in following column permissions of table (
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['role', 'restrict']

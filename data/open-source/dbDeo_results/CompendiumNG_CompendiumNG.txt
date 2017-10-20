@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE ViewProperty set HorizontalScroll = ?, VerticalScroll = ?, Width = ?, Height = ?, XPosition = ?, YPosition = ?, IsIcon = ?, IsMaximum = ? WHERE UserID = ? AND ViewID = ?
+

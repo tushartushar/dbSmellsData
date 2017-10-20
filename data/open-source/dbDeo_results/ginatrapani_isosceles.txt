@@ -1,0 +1,11 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `templates` ( * `name` varchar(100) NOT NULL, * `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, * `source` text, * PRIMARY KEY (`name`) * )
+ in following column * and in column * of table `output_cache`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE iso_test_table(' . 'id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,' . 'test_name varchar(20),' . 'test_id int(11),' . 'unique key test_id_idx (test_id)' . ')
+ in following column ' . ' and in column ' . ' of table ' . $config_array['
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `output_cache` ( * `id` CHAR(40) NOT NULL COMMENT 'sha1 hash', * `name` VARCHAR(250) NOT NULL, * `cache_id` VARCHAR(250) NULL DEFAULT NULL, * `compile_id` VARCHAR(250) NULL DEFAULT NULL, * `modified` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, * `content` LONGTEXT NOT NULL, * PRIMARY KEY (`id`), * INDEX(`name`), * INDEX(`cache_id`), * INDEX(`compile_id`), * INDEX(`modified`) * )
+ in following column * of table `output_cache`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `templates` ( * `name` varchar(100) NOT NULL, * `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, * `source` text, * PRIMARY KEY (`name`) * )
+ in following column * of table `templates`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo.bar (name VARCHAR(20))
+ in following column . and in column . of table psql_schema_tester

@@ -1,0 +1,82 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_BOARDLIST(TIMEINFO TIMESTAMP, BOARDNAME_KANJI TEXT, BOARD_URL TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARDNAME_ASCII of table USER_CLOSED_BOARDLIST
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_LOOKING_THREADLIST(THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_ORIG_NUM of table USER_LOOKING_THREADLIST
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_SEARCHED_THREADNAME(TIMEINFO TIMESTAMP, KEYWORD TEXT)
+ in following column KEYWORD of table USER_SEARCHED_THREADNAME
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS CACHED_IMAGE(TIMEINFO TIMESTAMP, FILENAME TEXT, UUID_FILENAME TEXT)
+ in following column FILENAME of table CACHED_IMAGE
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_BOARDLIST(TIMEINFO TIMESTAMP, BOARDNAME_KANJI TEXT, BOARD_URL TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARD_URL of table USER_CLOSED_BOARDLIST
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARDNAME_ASCII of table USER_CLOSED_THREADLIST
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_LOOKING_THREADLIST(THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_TITLE of table USER_LOOKING_THREADLIST
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS %Q.'%q_stat'" "(id INTEGER PRIMARY KEY, value BLOB)
+ in following column value and in column value of table x
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_TITLE of table USER_CLOSED_THREADLIST
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_FAVORITE_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARDNAME_ASCII of table USER_FAVORITE_THREADLIST
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS BOARD_INFO_SHINGETSU(TIMEINFO TIMESTAMP, BOARD_URL TEXT)
+ in following column BOARD_URL of table BOARD_INFO_SHINGETSU
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_SEARCHED_THREADCONTENTS(TIMEINFO TIMESTAMP, KEYWORD TEXT)
+ in following column KEYWORD of table USER_SEARCHED_THREADCONTENTS
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_LOOKING_BOARDLIST(BOARDNAME_KANJI TEXT)
+ in following column BOARDNAME_KANJI of table USER_LOOKING_BOARDLIST
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_FAVORITE_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_TITLE of table USER_FAVORITE_THREADLIST
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_SEARCHED_BOARDNAME(TIMEINFO TIMESTAMP, KEYWORD TEXT)
+ in following column KEYWORD of table USER_SEARCHED_BOARDNAME
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS CACHED_IMAGE(TIMEINFO TIMESTAMP, FILENAME TEXT, UUID_FILENAME TEXT)
+ in following column UUID_FILENAME of table CACHED_IMAGE
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_BOARDLIST(TIMEINFO TIMESTAMP, BOARDNAME_KANJI TEXT, BOARD_URL TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARDNAME_KANJI of table USER_CLOSED_BOARDLIST
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_CLOSED_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_ORIG_NUM of table USER_CLOSED_THREADLIST
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_LOOKING_THREADLIST(THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column BOARDNAME_ASCII of table USER_LOOKING_THREADLIST
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS USER_FAVORITE_THREADLIST(TIMEINFO TIMESTAMP, THREAD_TITLE TEXT, THREAD_ORIG_NUM TEXT, BOARDNAME_ASCII TEXT)
+ in following column THREAD_ORIG_NUM of table USER_FAVORITE_THREADLIST
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

@@ -1,0 +1,49 @@
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}credential` ( `id` varchar(30) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `name` varchar(255) DEFAULT NULL, `image` text, `clientSecret` varchar(255) DEFAULT NULL, `userToken` varchar(255) DEFAULT NULL, `userSecret` varchar(255) DEFAULT NULL, `permissions` varchar(255) DEFAULT NULL, `verifier` varchar(255) DEFAULT NULL, `type` varchar(100) NOT NULL, `status` int(11) DEFAULT '0', `dateCreated` INT(11) DEFAULT NULL, PRIMARY KEY `owner` (`owner`,`id`) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}album` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `actor` varchar(127) NOT NULL, `name` varchar(255) NOT NULL, `groups` text, `extra` text, `countPublic` int(10) unsigned NOT NULL DEFAULT '0', `countPrivate` int(10) unsigned NOT NULL DEFAULT '0', `dateLastPhotoAdded` int(11) NOT NULL DEFAULT '0', PRIMARY KEY `owner` (`owner`,`id`) )
+ in following column `groups` of table `{$this->mySqlTablePrefix}album`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `{$this->mySqlTablePrefix}shareToken` ( `id` VARCHAR( 10 ) NOT NULL , `owner` VARCHAR( 127 ) NOT NULL , `actor` VARCHAR( 127 ) NOT NULL , `type` ENUM( 'album', 'photo', 'photos', 'video' ) NOT NULL , `data` VARCHAR( 255 ) NOT NULL , `dateExpires` INT UNSIGNED NOT NULL , PRIMARY KEY ( `owner` , `id` ), KEY `owner` (`owner`,`type`,`data`) )
+ in following column `data` and in column `data` of table `{$this->mySqlTablePrefix}activity`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "cache" (	expires timestamp without time zone NOT NULL,	id character(40) NOT NULL,	data text NOT NULL)
+ in following column expires and in column expires of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "cache" (	expires timestamp without time zone NOT NULL,	id character(40) NOT NULL,	data text NOT NULL)
+ in following column data of table "cache"
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE `{$this->mySqlTablePrefix}albumGroup` ( `owner` VARCHAR( 127 ) NOT NULL , `album` VARCHAR( 127 ) NOT NULL , `group` VARCHAR( 127 ) NOT NULL , UNIQUE ( `owner` , `album` , `group` ) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "cache" (	expires timestamp without time zone NOT NULL,	id character(40) NOT NULL,	data text NOT NULL)
+ in following column id and in column id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}resourceMap` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `actor` varchar(127) NOT NULL, `resource` text NOT NULL, `dateCreated` int(11) NOT NULL, PRIMARY KEY (`owner`,`id`) )
+ in following column `resource` of table `{$this->mySqlTablePrefix}resourceMap`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}config` ( `id` varchar(255) NOT NULL DEFAULT '', `aliasOf` varchar(255) DEFAULT NULL, `value` text NOT NULL, PRIMARY KEY (`id`) )
+ in following column `value` of table `{$this->mySqlTablePrefix}config`
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}relationship` ( `actor` varchar(127) NOT NULL, `follows` varchar(127) NOT NULL, `dateCreated` datetime NOT NULL, PRIMARY KEY (`actor`,`follows`) )
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}action` ( `id` varchar(6) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `appId` varchar(255) DEFAULT NULL, `targetId` varchar(255) DEFAULT NULL, `targetType` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `avatar` varchar(255) DEFAULT NULL, `website` varchar(255) DEFAULT NULL, `targetUrl` varchar(1000) DEFAULT NULL, `permalink` varchar(1000) DEFAULT NULL, `type` varchar(255) DEFAULT NULL, `value` varchar(255) DEFAULT NULL, `datePosted` varchar(255) DEFAULT NULL, `status` int(11) DEFAULT NULL, PRIMARY KEY `owner` (`owner`,`id`) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}resourceMap` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `resource` text NOT NULL, `dateCreated` int(11) NOT NULL, PRIMARY KEY (`owner`,`id`) )
+ in following column `dateCreated` and in column `dateCreated` of table `{$this->mySqlTablePrefix}relationship`
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}config` ( `id` varchar(255) NOT NULL DEFAULT '', `aliasOf` varchar(255) DEFAULT NULL, `value` text NOT NULL, PRIMARY KEY (`id`) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}group` ( `id` varchar(6) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `appId` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `permission` tinyint(4) NOT NULL COMMENT 'Bitmask of permissions', UNIQUE KEY `id` (`id`,`owner`) )
+ in following column `permission` and in column `permission` of table `{$this->mySqlTablePrefix}activity`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "cache" (	expires timestamp without time zone NOT NULL,	id character(40) NOT NULL,	data text NOT NULL)
+ in following column data and in column data of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}resourceMap` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `resource` text NOT NULL, `dateCreated` int(11) NOT NULL, PRIMARY KEY (`owner`,`id`) )
+ in following column `id` and in column `id` of table `{$this->mySqlTablePrefix}elementTag`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}activity` ( `id` varchar(6) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `appId` varchar(255) NOT NULL, `type` varchar(32) NOT NULL, `elementId` VARCHAR( 6 ) NOT NULL, `data` text NOT NULL, `permission` BOOLEAN NOT NULL DEFAULT '0', `dateCreated` int(10) unsigned NOT NULL, PRIMARY KEY `owner` (`owner`,`id`) )
+ in following column `data` of table `{$this->mySqlTablePrefix}activity`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}action` ( `id` varchar(6) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `appId` varchar(255) DEFAULT NULL, `targetId` varchar(255) DEFAULT NULL, `targetType` varchar(255) DEFAULT NULL, `email` varchar(255) DEFAULT NULL, `name` varchar(255) DEFAULT NULL, `avatar` varchar(255) DEFAULT NULL, `website` varchar(255) DEFAULT NULL, `targetUrl` varchar(1000) DEFAULT NULL, `permalink` varchar(1000) DEFAULT NULL, `type` varchar(255) DEFAULT NULL, `value` varchar(255) DEFAULT NULL, `datePosted` varchar(255) DEFAULT NULL, `status` int(11) DEFAULT NULL, PRIMARY KEY `owner` (`owner`,`id`) )
+ in following column `value` and in column `value` of table `{$this->mySqlTablePrefix}config`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}resourceMap` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `resource` text NOT NULL, `dateCreated` int(11) NOT NULL, PRIMARY KEY (`owner`,`id`) )
+ in following column `resource` of table `{$this->mySqlTablePrefix}resourceMap`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}credential` ( `id` varchar(30) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `name` varchar(255) DEFAULT NULL, `image` text, `clientSecret` varchar(255) DEFAULT NULL, `userToken` varchar(255) DEFAULT NULL, `userSecret` varchar(255) DEFAULT NULL, `permissions` varchar(255) DEFAULT NULL, `verifier` varchar(255) DEFAULT NULL, `type` varchar(100) NOT NULL, `status` int(11) DEFAULT '0', `dateCreated` INT(11) DEFAULT NULL, PRIMARY KEY `owner` (`owner`,`id`) )
+ in following column `image` of table `{$this->mySqlTablePrefix}credential`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache (id TEXT, expires NUMERIC, data BLOB)
+ in following column id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}tag` ( `id` varchar(127) NOT NULL, `owner` varchar(127) NOT NULL, `actor` varchar(127) NOT NULL, `countPublic` int(11) NOT NULL DEFAULT '0', `countPrivate` int(11) NOT NULL DEFAULT '0', `extra` text NOT NULL, UNIQUE KEY `owner` (`owner`,`id`) )
+ in following column `extra` of table `{$this->mySqlTablePrefix}tag`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}user` ( `id` varchar(255) NOT NULL COMMENT 'User''s email address', `password` varchar(64) NOT NULL, `extra` text NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY (`id`) )
+ in following column `extra` of table `{$this->mySqlTablePrefix}user`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$this->mySqlTablePrefix}album` ( `id` varchar(6) NOT NULL, `owner` varchar(255) NOT NULL, `actor` varchar(127) NOT NULL, `name` varchar(255) NOT NULL, `groups` text, `extra` text, `countPublic` int(10) unsigned NOT NULL DEFAULT '0', `countPrivate` int(10) unsigned NOT NULL DEFAULT '0', `dateLastPhotoAdded` int(11) NOT NULL DEFAULT '0', PRIMARY KEY `owner` (`owner`,`id`) )
+ in following column `extra` of table `{$this->mySqlTablePrefix}album`

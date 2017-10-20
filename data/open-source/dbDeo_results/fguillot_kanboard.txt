@@ -1,0 +1,371 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `project_has_categories` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `project_id` int(11) NOT NULL, `description` text, PRIMARY KEY (`id`), UNIQUE KEY `idx_project_category` (`project_id`,`name`), KEY `categories_project_idx` (`project_id`), CONSTRAINT `project_has_categories_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE)
+ in following column `description` of table `project_has_categories`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column ip of table remember_me
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_groups ( group_id INTEGER NOT NULL, project_id INTEGER NOT NULL, role TEXT NOT NULL, FOREIGN KEY(group_id) REFERENCES groups(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(group_id, project_id) )
+ in following column role of table project_has_groups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column token of table remember_me
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE column_has_restrictions ( restriction_id SERIAL PRIMARY KEY, project_id INTEGER NOT NULL, role_id INTEGER NOT NULL, column_id INTEGER NOT NULL, rule VARCHAR(255) NOT NULL, UNIQUE(role_id, column_id, rule), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(role_id) REFERENCES project_has_roles(role_id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column restriction_id and in column restriction_id of table project_role_has_restrictions
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['projects', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_files ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, path TEXT, is_image INTEGER DEFAULT 0, task_id INTEGER NOT NULL, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column path and in column path of table project_has_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_daily_stats ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, avg_lead_time INTEGER NOT NULL DEFAULT 0, avg_cycle_time INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column day of table project_daily_stats
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column ip and in column ip of table password_reset
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user_has_notification_types ( id INT NOT NULL AUTO_INCREMENT, user_id INT NOT NULL, notification_type VARCHAR(50), PRIMARY KEY(id), FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column notification_type and in column notification_type of table project_has_notification_types
+Detected: Index Shotgun Variant: 3 Following index not used : ['tasks', 'project_id']
+Detected: God Table Found in following statement: CREATE TABLE tasks ( id SERIAL PRIMARY KEY, title VARCHAR(255), description TEXT, date_creation INTEGER, color_id VARCHAR(255), project_id INTEGER, column_id INTEGER, owner_id INTEGER DEFAULT 0, position INTEGER, is_active BOOLEAN DEFAULT '1', date_completed INTEGER, score INTEGER, date_due INTEGER, category_id INTEGER DEFAULT 0, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id INT NOT NULL AUTO_INCREMENT, title VARCHAR(255), description TEXT, date_creation INT, date_completed INT, date_due INT, color_id VARCHAR(50), project_id INT, column_id INT, owner_id INT DEFAULT '0', position INT, score INT, is_active TINYINT DEFAULT 1, PRIMARY KEY (id), INDEX `idx_task_active` (is_active), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column description of table tasks
+Detected: Metadata as Data Found in following statement: CREATE TABLE `groups` ( `id` int(11) NOT NULL AUTO_INCREMENT, `external_id` varchar(255) DEFAULT '', `name` varchar(100) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `name` (`name`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, comment_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(comment_id) REFERENCES comments(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table comment_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config ( language TEXT DEFAULT 'en_US', webhooks_token TEXT DEFAULT '' )
+ in following column language of table config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id INTEGER PRIMARY KEY, task_id INTEGER NOT NULL, user_id INTEGER DEFAULT 0, date_creation INTEGER NOT NULL, comment TEXT NOT NULL, reference VARCHAR(50), FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column comment of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id INTEGER PRIMARY KEY, title TEXT NOCASE NOT NULL, description TEXT, date_creation INTEGER, color_id TEXT, project_id INTEGER, column_id INTEGER, owner_id INTEGER DEFAULT '0', position INTEGER, is_active INTEGER DEFAULT 1, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column description of table tasks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE user_has_notifications ( user_id INTEGER, project_id INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, user_id) )
+ in following column user_id and in column user_id of table user_has_unread_notifications
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['projects', 'ON']
+Detected: Metadata as Data Found in following statement: CREATE TABLE user_has_metadata ( user_id INT NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, UNIQUE(user_id, name) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column title of table task_has_external_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tags ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, project_id INTEGER NOT NULL, UNIQUE(project_id, name) )
+ in following column name of table tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups ( id INTEGER PRIMARY KEY, external_id TEXT DEFAULT '', name TEXT NOCASE NOT NULL UNIQUE )
+ in following column name of table (
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['projects', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['users', 'is_admin']
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'reference']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+ in following column name of table task_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column url of table task_has_external_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_files ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, path TEXT, is_image INTEGER DEFAULT 0, task_id INTEGER NOT NULL, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column path of table task_has_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE currencies (`currency` CHAR(3) NOT NULL UNIQUE, `rate` FLOAT DEFAULT 0)
+ in following column `rate` of table currencies
+Detected: God Table Found in following statement: CREATE TABLE tasks ( id INT NOT NULL AUTO_INCREMENT, title VARCHAR(255), description TEXT, date_creation INT, date_completed INT, date_due INT, color_id VARCHAR(50), project_id INT, column_id INT, owner_id INT DEFAULT '0', position INT, score INT, is_active TINYINT DEFAULT 1, PRIMARY KEY (id), INDEX `idx_task_active` (is_active), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE subtask_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, subtask_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column event_name of table subtask_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_files ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, path TEXT, is_image INTEGER DEFAULT 0, task_id INTEGER NOT NULL, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column name of table task_has_files
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INT NOT NULL AUTO_INCREMENT, user_id INT, ip VARCHAR(45), user_agent VARCHAR(255), token VARCHAR(255), sequence VARCHAR(255), expiration INT, date_creation INT, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column user_agent and in column user_agent of table last_logins
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tasks ( id INT NOT NULL AUTO_INCREMENT, title VARCHAR(255), description TEXT, date_creation INT, date_completed INT, date_due INT, color_id VARCHAR(50), project_id INT, column_id INT, owner_id INT DEFAULT '0', position INT, score INT, is_active TINYINT DEFAULT 1, PRIMARY KEY (id), INDEX `idx_task_active` (is_active), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column is_active and in column is_active of table projects
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['project_has_roles', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `subtasks` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL, `status` int(11) DEFAULT '0', `time_estimated` float DEFAULT NULL, `time_spent` float DEFAULT NULL, `task_id` int(11) NOT NULL, `user_id` int(11) DEFAULT NULL, `position` int(11) DEFAULT '1', PRIMARY KEY (`id`), KEY `subtasks_task_idx` (`task_id`), CONSTRAINT `subtasks_ibfk_1` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE)
+ in following column `time_spent` of table `subtasks`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_roles ( role_id INTEGER PRIMARY KEY, role TEXT NOT NULL, project_id INTEGER NOT NULL, UNIQUE(project_id, role), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column role of table project_has_roles
+Detected: Metadata as Data Found in following statement: CREATE TABLE config ( language CHAR(5) DEFAULT 'en_US', webhooks_token VARCHAR(255) DEFAULT '', timezone VARCHAR(50) DEFAULT 'UTC' )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'CASCADE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+ in following column name and in column name of table project_has_categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_unread_notifications ( id SERIAL PRIMARY KEY, user_id INTEGER NOT NULL, date_creation BIGINT NOT NULL, event_name VARCHAR(50) NOT NULL, event_data TEXT NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column event_data of table user_has_unread_notifications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_integrations ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL UNIQUE, hipchat INTEGER DEFAULT 0, hipchat_api_url TEXT DEFAULT 'https://api.hipchat.com', hipchat_room_id TEXT, hipchat_room_token TEXT, slack INTEGER DEFAULT 0, slack_webhook_url TEXT, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column slack_webhook_url of table project_integrations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE last_logins ( id INTEGER PRIMARY KEY, auth_type TEXT, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column auth_type of table last_logins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `currencies` ( `currency` char(3) NOT NULL, `rate` float DEFAULT '0', UNIQUE KEY `currency` (`currency`))
+ in following column `rate` of table `currencies`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE settings ( option TEXT PRIMARY KEY, value TEXT DEFAULT '' )
+ in following column value of table settings
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column user_agent and in column user_agent of table password_reset
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['columns', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, comment_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(comment_id) REFERENCES comments(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column event_name of table comment_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE action_has_params ( id INTEGER PRIMARY KEY, action_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL, FOREIGN KEY(action_id) REFERENCES actions(id) ON DELETE CASCADE )
+ in following column value of table action_has_params
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_notification_types ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL, notification_type TEXT NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, notification_type) )
+ in following column notification_type of table project_has_notification_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_integrations ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL UNIQUE, hipchat INTEGER DEFAULT 0, hipchat_api_url TEXT DEFAULT 'https://api.hipchat.com', hipchat_room_id TEXT, hipchat_room_token TEXT, slack INTEGER DEFAULT 0, slack_webhook_url TEXT, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column hipchat_api_url of table project_integrations
+Detected: Index Shotgun Variant: 3 Following index not used : ['last_logins', 'user_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE project_has_metadata ( project_id INT NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, name) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY, username TEXT NOT NULL, password TEXT, is_admin INTEGER DEFAULT 0 )
+ in following column password of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_integrations ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL UNIQUE, hipchat INTEGER DEFAULT 0, hipchat_api_url TEXT DEFAULT 'https://api.hipchat.com', hipchat_room_id TEXT, hipchat_room_token TEXT, slack INTEGER DEFAULT 0, slack_webhook_url TEXT, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column hipchat_room_id of table project_integrations
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE column_has_restrictions ( restriction_id SERIAL PRIMARY KEY, project_id INTEGER NOT NULL, role_id INTEGER NOT NULL, column_id INTEGER NOT NULL, rule VARCHAR(255) NOT NULL, UNIQUE(role_id, column_id, rule), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(role_id) REFERENCES project_has_roles(role_id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column role_id and in column role_id of table project_has_roles
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_has_notification_types ( id SERIAL PRIMARY KEY, project_id INTEGER NOT NULL, notification_type VARCHAR(50) NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, notification_type) )
+ in following column notification_type and in column notification_type of table user_has_notification_types
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['groups', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE subtask_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, subtask_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column data of table subtask_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE password_reset ( token TEXT PRIMARY KEY, user_id INTEGER NOT NULL, date_expiration INTEGER NOT NULL, date_creation INTEGER NOT NULL, ip TEXT NOT NULL, user_agent TEXT NOT NULL, is_active INTEGER NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column ip of table password_reset
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id INTEGER PRIMARY KEY, task_id INTEGER, user_id INTEGER, date INTEGER, comment TEXT, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column comment of table comments
+Detected: Index Shotgun Variant: 3 Following index not used : ['task_has_files', 'task_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_unread_notifications ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, event_data TEXT NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column event_name of table user_has_unread_notifications
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['groups', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_daily_summaries ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, column_id INTEGER NOT NULL, total INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column day of table project_daily_summaries
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INT NOT NULL AUTO_INCREMENT, user_id INT, ip VARCHAR(45), user_agent VARCHAR(255), token VARCHAR(255), sequence VARCHAR(255), expiration INT, date_creation INT, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column ip and in column ip of table last_logins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `projects` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `is_active` tinyint(4) DEFAULT '1', `token` varchar(255) DEFAULT NULL, `last_modified` bigint(20) DEFAULT NULL, `is_public` tinyint(1) DEFAULT '0', `is_private` tinyint(1) DEFAULT '0', `is_everybody_allowed` tinyint(1) DEFAULT '0', `default_swimlane` varchar(200) DEFAULT 'Default swimlane', `show_default_swimlane` int(11) DEFAULT '1', `description` text, `identifier` varchar(50) DEFAULT '', `start_date` varchar(10) DEFAULT '', `end_date` varchar(10) DEFAULT '', `owner_id` int(11) DEFAULT '0', `priority_default` int(11) DEFAULT '0', `priority_start` int(11) DEFAULT '0', `priority_end` int(11) DEFAULT '3', PRIMARY KEY (`id`))
+ in following column `description` of table `projects`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE plugin_schema_versions ( plugin TEXT NOT NULL PRIMARY KEY, version INTEGER NOT NULL DEFAULT 0 )
+ in following column plugin of table plugin_schema_versions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_events ( id SERIAL PRIMARY KEY, date_creation INTEGER NOT NULL, event_name VARCHAR(50) NOT NULL, creator_id INTEGER, project_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table task_has_events
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `project_has_files` ( `id` int(11) NOT NULL AUTO_INCREMENT, `project_id` int(11) NOT NULL, `name` varchar(255) NOT NULL, `path` varchar(255) NOT NULL, `is_image` tinyint(1) DEFAULT '0', `size` int(11) NOT NULL DEFAULT '0', `user_id` int(11) NOT NULL DEFAULT '0', `date` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `project_id` (`project_id`), CONSTRAINT `project_has_files_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE)
+ in following column `date` and in column `date` of table `task_has_files`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `comments` ( `id` int(11) NOT NULL AUTO_INCREMENT, `task_id` int(11) NOT NULL, `user_id` int(11) DEFAULT '0', `date_creation` bigint(20) DEFAULT NULL, `comment` text, `reference` varchar(50) DEFAULT '', PRIMARY KEY (`id`), KEY `user_id` (`user_id`), KEY `comments_reference_idx` (`reference`), KEY `comments_task_idx` (`task_id`), CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE)
+ in following column `comment` of table `comments`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['project_has_roles', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `password_reset` ( `token` varchar(80) NOT NULL, `user_id` int(11) NOT NULL, `date_expiration` int(11) NOT NULL, `date_creation` int(11) NOT NULL, `ip` varchar(45) NOT NULL, `user_agent` varchar(255) NOT NULL, `is_active` tinyint(1) NOT NULL, PRIMARY KEY (`token`), KEY `user_id` (`user_id`), CONSTRAINT `password_reset_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+ in following column `is_active` and in column `is_active` of table `swimlanes`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column user_agent of table remember_me
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, comment_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(comment_id) REFERENCES comments(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column data of table comment_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column data of table task_has_events
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['actions', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_filters ( id INTEGER PRIMARY KEY, filter TEXT NOT NULL, project_id INTEGER NOT NULL, user_id INTEGER NOT NULL, name TEXT NOT NULL, is_shared INTEGER DEFAULT 0 )
+ in following column name of table custom_filters
+Detected: Metadata as Data Found in following statement: CREATE TABLE project_has_metadata ( project_id INTEGER NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, name) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+ in following column value and in column value of table action_has_params
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `subtask_time_tracking` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `subtask_id` int(11) NOT NULL, `start` bigint(20) DEFAULT NULL, `end` bigint(20) DEFAULT NULL, `time_spent` float DEFAULT '0', PRIMARY KEY (`id`), KEY `user_id` (`user_id`), KEY `subtask_id` (`subtask_id`), CONSTRAINT `subtask_time_tracking_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE, CONSTRAINT `subtask_time_tracking_ibfk_2` FOREIGN KEY (`subtask_id`) REFERENCES `subtasks` (`id`) ON DELETE CASCADE)
+ in following column `time_spent` and in column `time_spent` of table transitions
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['task_has_subtasks', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column link_type of table task_has_external_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_activities ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name VARCHAR(50) NOT NULL, creator_id INT, project_id INT, task_id INT, data TEXT, PRIMARY KEY(id), FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table project_activities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE config ( language TEXT DEFAULT 'en_US', webhooks_token TEXT DEFAULT '' )
+ in following column webhooks_token of table config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column event_name of table task_has_events
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['project_has_roles', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE custom_filters ( id INTEGER PRIMARY KEY, filter TEXT NOT NULL, project_id INTEGER NOT NULL, user_id INTEGER NOT NULL, name TEXT NOT NULL, is_shared INTEGER DEFAULT 0 )
+ in following column filter of table custom_filters
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table task_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id INTEGER PRIMARY KEY, task_id INTEGER, user_id INTEGER, date INTEGER, comment TEXT, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, FOREIGN KEY(user_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column comment of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE last_logins ( id INTEGER PRIMARY KEY, auth_type TEXT, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column ip of table last_logins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_unread_notifications ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, event_data TEXT NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column event_data of table user_has_unread_notifications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_subtasks ( id INTEGER PRIMARY KEY, title TEXT COLLATE NOCASE NOT NULL, status INTEGER DEFAULT 0, time_estimated NUMERIC DEFAULT 0, time_spent NUMERIC DEFAULT 0, task_id INTEGER NOT NULL, user_id INTEGER, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column title of table task_has_subtasks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id SERIAL PRIMARY KEY, task_id INTEGER, user_id INTEGER, date INTEGER, comment TEXT, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column comment of table comments
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_daily_summaries ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, column_id INTEGER NOT NULL, total INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column day and in column day of table project_daily_stats
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['project_has_roles', 'role_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_daily_summaries ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, column_id INTEGER NOT NULL, total INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column id and in column id of table project_has_categories
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tags', 'CASCADE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE subtask_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, subtask_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column subtask_id and in column subtask_id of table subtask_time_tracking
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_metadata ( user_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, UNIQUE(user_id, name) )
+ in following column name of table user_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_activities ( id SERIAL PRIMARY KEY, date_creation INTEGER NOT NULL, event_name VARCHAR(50) NOT NULL, creator_id INTEGER, project_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table project_activities
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INT NOT NULL AUTO_INCREMENT, user_id INT, ip VARCHAR(45), user_agent VARCHAR(255), token VARCHAR(255), sequence VARCHAR(255), expiration INT, date_creation INT, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column token and in column token of table password_reset
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['columns', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `user_has_unread_notifications` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `date_creation` bigint(20) NOT NULL, `event_name` varchar(50) NOT NULL, `event_data` text NOT NULL, PRIMARY KEY (`id`), KEY `user_id` (`user_id`), CONSTRAINT `user_has_unread_notifications_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+ in following column `event_data` of table `user_has_unread_notifications`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_metadata ( project_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, name) )
+ in following column name of table project_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_files ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL, name TEXT COLLATE NOCASE NOT NULL, path TEXT NOT NULL, is_image INTEGER DEFAULT 0, size INTEGER DEFAULT 0 NOT NULL, user_id INTEGER DEFAULT 0 NOT NULL, date INTEGER DEFAULT 0 NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column name of table project_has_files
+Detected: Metadata as Data Found in following statement: CREATE TABLE task_has_metadata ( task_id INT NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_files ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, path TEXT, is_image INTEGER DEFAULT 0, task_id INTEGER NOT NULL, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column is_image and in column is_image of table project_has_files
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `task_has_metadata` ( `task_id` int(11) NOT NULL, `name` varchar(50) NOT NULL, `value` varchar(255) DEFAULT '', `changed_by` int(11) NOT NULL DEFAULT '0', `changed_on` int(11) NOT NULL DEFAULT '0', UNIQUE KEY `task_id` (`task_id`,`name`), CONSTRAINT `task_has_metadata_ibfk_1` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE)
+ in following column `value` and in column `value` of table `settings`
+Detected: Index Shotgun Variant: 3 Following index not used : ['project_has_categories', 'project_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE last_logins ( id INTEGER PRIMARY KEY, auth_type TEXT, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column user_agent of table last_logins
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_has_roles ( role_id INTEGER PRIMARY KEY, role TEXT NOT NULL, project_id INTEGER NOT NULL, UNIQUE(project_id, role), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column role and in column role of table project_has_groups
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tasks', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['task_has_subtasks', 'task_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tasks', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['users', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column token and in column token of table projects
+Detected: Metadata as Data Found in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['transitions', 'task_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `subtasks` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL, `status` int(11) DEFAULT '0', `time_estimated` float DEFAULT NULL, `time_spent` float DEFAULT NULL, `task_id` int(11) NOT NULL, `user_id` int(11) DEFAULT NULL, `position` int(11) DEFAULT '1', PRIMARY KEY (`id`), KEY `subtasks_task_idx` (`task_id`), CONSTRAINT `subtasks_ibfk_1` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE)
+ in following column `time_estimated` of table `subtasks`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_metadata ( user_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, UNIQUE(user_id, name) )
+ in following column value of table user_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `subtask_time_tracking` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `subtask_id` int(11) NOT NULL, `start` bigint(20) DEFAULT NULL, `end` bigint(20) DEFAULT NULL, `time_spent` float DEFAULT '0', PRIMARY KEY (`id`), KEY `user_id` (`user_id`), KEY `subtask_id` (`subtask_id`), CONSTRAINT `subtask_time_tracking_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE, CONSTRAINT `subtask_time_tracking_ibfk_2` FOREIGN KEY (`subtask_id`) REFERENCES `subtasks` (`id`) ON DELETE CASCADE)
+ in following column `time_spent` of table `subtask_time_tracking`
+Detected: Metadata as Data Found in following statement: CREATE TABLE user_has_metadata ( user_id INTEGER NOT NULL, name VARCHAR(50) NOT NULL, value VARCHAR(255) DEFAULT '', FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, UNIQUE(user_id, name) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_integrations ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL UNIQUE, hipchat INTEGER DEFAULT 0, hipchat_api_url TEXT DEFAULT 'https://api.hipchat.com', hipchat_room_id TEXT, hipchat_room_token TEXT, slack INTEGER DEFAULT 0, slack_webhook_url TEXT, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column hipchat_room_token of table project_integrations
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `project_daily_column_stats` ( `id` int(11) NOT NULL AUTO_INCREMENT, `day` char(10) NOT NULL, `project_id` int(11) NOT NULL, `column_id` int(11) NOT NULL, `total` int(11) NOT NULL DEFAULT '0', `score` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), UNIQUE KEY `project_daily_column_stats_idx` (`day`,`project_id`,`column_id`), KEY `column_id` (`column_id`), KEY `project_id` (`project_id`), CONSTRAINT `project_daily_column_stats_ibfk_1` FOREIGN KEY (`column_id`) REFERENCES `columns` (`id`) ON DELETE CASCADE, CONSTRAINT `project_daily_column_stats_ibfk_2` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE)
+ in following column CONSTRAINT and in column CONSTRAINT of table `subtask_time_tracking`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE password_reset ( token TEXT PRIMARY KEY, user_id INTEGER NOT NULL, date_expiration INTEGER NOT NULL, date_creation INTEGER NOT NULL, ip TEXT NOT NULL, user_agent TEXT NOT NULL, is_active INTEGER NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column user_agent of table password_reset
+Detected: Index Shotgun Variant: 3 Following index not used : ['comments', 'task_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `columns` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL, `position` int(11) NOT NULL, `project_id` int(11) NOT NULL, `task_limit` int(11) DEFAULT '0', `description` text, `hide_in_dashboard` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), UNIQUE KEY `idx_title_project` (`title`,`project_id`), KEY `columns_project_idx` (`project_id`), CONSTRAINT `columns_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE)
+ in following column `description` of table `columns`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_notification_types ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, notification_type TEXT, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column notification_type of table user_has_notification_types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_activities ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGE NOT NULL, project_id INTEGER NOT NULL, task_id INTEGER NOT NULL, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table project_activities
+Detected: Index Shotgun Variant: 3 Following index not used : ['swimlanes', 'project_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tags', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['groups', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id INTEGER PRIMARY KEY, title TEXT NOCASE NOT NULL, description TEXT, date_creation INTEGER, color_id TEXT, project_id INTEGER, column_id INTEGER, owner_id INTEGER DEFAULT '0', position INTEGER, is_active INTEGER DEFAULT 1, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column title of table tasks
+Detected: God Table Found in following statement: CREATE TABLE `projects` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `is_active` tinyint(4) DEFAULT '1', `token` varchar(255) DEFAULT NULL, `last_modified` bigint(20) DEFAULT NULL, `is_public` tinyint(1) DEFAULT '0', `is_private` tinyint(1) DEFAULT '0', `is_everybody_allowed` tinyint(1) DEFAULT '0', `default_swimlane` varchar(200) DEFAULT 'Default swimlane', `show_default_swimlane` int(11) DEFAULT '1', `description` text, `identifier` varchar(50) DEFAULT '', `start_date` varchar(10) DEFAULT '', `end_date` varchar(10) DEFAULT '', `owner_id` int(11) DEFAULT '0', `priority_default` int(11) DEFAULT '0', `priority_start` int(11) DEFAULT '0', `priority_end` int(11) DEFAULT '3', PRIMARY KEY (`id`))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['task_has_subtasks', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tasks ( id INT NOT NULL AUTO_INCREMENT, title VARCHAR(255), description TEXT, date_creation INT, date_completed INT, date_due INT, color_id VARCHAR(50), project_id INT, column_id INT, owner_id INT DEFAULT '0', position INT, score INT, is_active TINYINT DEFAULT 1, PRIMARY KEY (id), INDEX `idx_task_active` (is_active), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column position and in column position of table columns
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['columns', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['task_has_links', 'task_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comments ( id INT NOT NULL AUTO_INCREMENT, task_id INT, user_id INT, `date` INT, comment TEXT, PRIMARY KEY (id), FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column comment of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE columns ( id INTEGER PRIMARY KEY, title TEXT NOT NULL, position INTEGER, project_id INTEGER NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE (title, project_id) )
+ in following column title of table columns
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['users', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, comment_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(comment_id) REFERENCES comments(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column event_name of table comment_has_events
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['actions', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['transitions', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column dependency of table task_has_external_links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `project_activities` ( `id` int(11) NOT NULL AUTO_INCREMENT, `date_creation` bigint(20) DEFAULT NULL, `event_name` varchar(50) NOT NULL, `creator_id` int(11) DEFAULT NULL, `project_id` int(11) DEFAULT NULL, `task_id` int(11) DEFAULT NULL, `data` text, PRIMARY KEY (`id`), KEY `creator_id` (`creator_id`), KEY `project_id` (`project_id`), KEY `task_id` (`task_id`), CONSTRAINT `project_activities_ibfk_1` FOREIGN KEY (`creator_id`) REFERENCES `users` (`id`) ON DELETE CASCADE, CONSTRAINT `project_activities_ibfk_2` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE, CONSTRAINT `project_activities_ibfk_3` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`) ON DELETE CASCADE)
+ in following column `data` of table `project_activities`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['groups', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE subtask_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, subtask_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table subtask_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE settings ( option TEXT PRIMARY KEY, value TEXT DEFAULT '' )
+ in following column option of table settings
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tasks', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_daily_summaries ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, column_id INTEGER NOT NULL, total INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column column_id and in column column_id of table tasks
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['columns', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['actions', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tags', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_files ( id SERIAL PRIMARY KEY, name VARCHAR(255), path VARCHAR(255), is_image BOOLEAN DEFAULT '0', task_id INTEGER, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column path and in column path of table project_has_files
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['comments', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['users', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE actions ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL, event_name TEXT NOT NULL, action_name TEXT NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column event_name of table actions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_metadata ( project_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE(project_id, name) )
+ in following column value of table project_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_activities ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGE NOT NULL, project_id INTEGER NOT NULL, task_id INTEGER NOT NULL, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column event_name of table project_activities
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE subtask_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, subtask_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column subtask_id and in column subtask_id of table subtask_time_tracking
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['links', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['task_has_subtasks', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['task_has_subtasks', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE password_reset ( token TEXT PRIMARY KEY, user_id INTEGER NOT NULL, date_expiration INTEGER NOT NULL, date_creation INTEGER NOT NULL, ip TEXT NOT NULL, user_agent TEXT NOT NULL, is_active INTEGER NOT NULL, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column token of table password_reset
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column title and in column title of table tasks
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tasks', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['actions', 'CASCADE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column date_creation and in column date_creation of table tasks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `last_logins` ( `id` int(11) NOT NULL AUTO_INCREMENT, `auth_type` varchar(25) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `ip` varchar(45) DEFAULT NULL, `user_agent` varchar(255) DEFAULT NULL, `date_creation` bigint(20) DEFAULT NULL, PRIMARY KEY (`id`), KEY `user_id` (`user_id`), CONSTRAINT `last_logins_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+ in following column `date_creation` and in column `date_creation` of table `password_reset`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tags', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE swimlanes ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, position INTEGER DEFAULT 1, is_active INTEGER DEFAULT 1, project_id INTEGER NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE (name, project_id) )
+ in following column name of table swimlanes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE group_has_users ( group_id INT NOT NULL, user_id INT NOT NULL, FOREIGN KEY(group_id) REFERENCES groups(id) ON DELETE CASCADE, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE, UNIQUE(group_id, user_id) )
+ in following column group_id and in column group_id of table project_has_groups
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_has_categories ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, project_id INTEGER NOT NULL, UNIQUE (project_id, name), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column name and in column name of table tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE action_has_params ( id INTEGER PRIMARY KEY, action_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT NOT NULL, FOREIGN KEY(action_id) REFERENCES actions(id) ON DELETE CASCADE )
+ in following column name of table action_has_params
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_files ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL, name TEXT COLLATE NOCASE NOT NULL, path TEXT NOT NULL, is_image INTEGER DEFAULT 0, size INTEGER DEFAULT 0 NOT NULL, user_id INTEGER DEFAULT 0 NOT NULL, date INTEGER DEFAULT 0 NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column path of table project_has_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE subtask_has_events ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGER, project_id INTEGER, subtask_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column event_name of table subtask_has_events
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['users', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id INTEGER PRIMARY KEY, title TEXT NOCASE NOT NULL, description TEXT, date_creation INTEGER, color_id TEXT, project_id INTEGER, column_id INTEGER, owner_id INTEGER DEFAULT '0', position INTEGER, is_active INTEGER DEFAULT 1, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column color_id of table tasks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_daily_summaries ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, column_id INTEGER NOT NULL, total INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column project_id and in column project_id of table tasks
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['links', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment_has_events ( id SERIAL PRIMARY KEY, date_creation INTEGER NOT NULL, event_name VARCHAR(50) NOT NULL, creator_id INTEGER, project_id INTEGER, comment_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(comment_id) REFERENCES comments(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table comment_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE actions ( id INTEGER PRIMARY KEY, project_id INTEGER NOT NULL, event_name TEXT NOT NULL, action_name TEXT NOT NULL, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column action_name of table actions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_has_unread_notifications ( id INT NOT NULL AUTO_INCREMENT, user_id INT NOT NULL, date_creation BIGINT NOT NULL, event_name VARCHAR(50) NOT NULL, event_data TEXT NOT NULL, PRIMARY KEY(id), FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column event_data of table user_has_unread_notifications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE links ( id INTEGER PRIMARY KEY, label TEXT NOT NULL, opposite_id INTEGER DEFAULT 0, UNIQUE(label) )
+ in following column label of table links
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE subtask_has_events ( id SERIAL PRIMARY KEY, date_creation INTEGER NOT NULL, event_name VARCHAR(50) NOT NULL, creator_id INTEGER, project_id INTEGER, subtask_id INTEGER, task_id INTEGER, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(subtask_id) REFERENCES task_has_subtasks(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column data of table subtask_has_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE remember_me ( id INTEGER PRIMARY KEY, user_id INTEGER NOT NULL, ip TEXT, user_agent TEXT, token TEXT, sequence TEXT, expiration INTEGER, date_creation INTEGER, FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE )
+ in following column sequence of table remember_me
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_activities ( id INTEGER PRIMARY KEY, date_creation INTEGER NOT NULL, event_name TEXT NOT NULL, creator_id INTEGE NOT NULL, project_id INTEGER NOT NULL, task_id INTEGER NOT NULL, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column event_name and in column event_name of table user_has_unread_notifications
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['links', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['columns', 'project_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+ in following column value of table task_has_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY, username TEXT NOT NULL, password TEXT, is_admin INTEGER DEFAULT 0 )
+ in following column username of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_metadata ( task_id INTEGER NOT NULL, name TEXT NOT NULL, value TEXT DEFAULT '', FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, UNIQUE(task_id, name) )
+ in following column task_id and in column task_id of table task_has_links
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['projects', 'DELETE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['transitions', 'project_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE projects ( id INTEGER PRIMARY KEY, name TEXT NOCASE NOT NULL, is_active INTEGER DEFAULT 1 )
+ in following column name of table projects
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['links', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE project_has_categories ( id INTEGER PRIMARY KEY, name TEXT COLLATE NOCASE NOT NULL, project_id INTEGER NOT NULL, UNIQUE (project_id, name), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column name of table project_has_categories
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_files ( id SERIAL PRIMARY KEY, name VARCHAR(255), path VARCHAR(255), is_image BOOLEAN DEFAULT '0', task_id INTEGER, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column is_image and in column is_image of table project_has_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE task_has_events ( id INT NOT NULL AUTO_INCREMENT, date_creation INT NOT NULL, event_name TEXT NOT NULL, creator_id INT, project_id INT, task_id INT, data TEXT, FOREIGN KEY(creator_id) REFERENCES users(id) ON DELETE CASCADE, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE, PRIMARY KEY (id) )
+ in following column event_name of table task_has_events
+Detected: Index Shotgun Variant: 3 Following index not used : ['tasks', 'reference']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_has_roles ( role_id INT NOT NULL AUTO_INCREMENT, role VARCHAR(255) NOT NULL, project_id INT NOT NULL, UNIQUE(project_id, role), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, PRIMARY KEY(role_id) )
+ in following column role and in column role of table project_has_groups
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_daily_stats ( id INTEGER PRIMARY KEY, day TEXT NOT NULL, project_id INTEGER NOT NULL, avg_lead_time INTEGER NOT NULL DEFAULT 0, avg_cycle_time INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE )
+ in following column day and in column day of table project_daily_summaries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups ( id INTEGER PRIMARY KEY, external_id TEXT DEFAULT '', name TEXT NOCASE NOT NULL UNIQUE )
+ in following column external_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `settings` ( `option` varchar(100) NOT NULL, `value` text, `changed_by` int(11) NOT NULL DEFAULT '0', `changed_on` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`option`))
+ in following column `value` of table `settings`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE swimlanes ( id INT NOT NULL AUTO_INCREMENT, name VARCHAR(200) NOT NULL, position INT DEFAULT 1, is_active INT DEFAULT 1, project_id INT, PRIMARY KEY(id), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, UNIQUE (name, project_id) )
+ in following column position and in column position of table tasks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE task_has_external_links ( id INTEGER PRIMARY KEY, link_type TEXT NOT NULL, dependency TEXT NOT NULL, title TEXT NOT NULL, url TEXT NOT NULL, date_creation INTEGER NOT NULL, date_modification INTEGER NOT NULL, task_id INTEGER NOT NULL, creator_id INTEGER DEFAULT 0, FOREIGN KEY(task_id) REFERENCES tasks(id) ON DELETE CASCADE )
+ in following column creator_id and in column creator_id of table project_activities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id SERIAL PRIMARY KEY, title VARCHAR(255), description TEXT, date_creation INTEGER, color_id VARCHAR(255), project_id INTEGER, column_id INTEGER, owner_id INTEGER DEFAULT 0, position INTEGER, is_active BOOLEAN DEFAULT '1', date_completed INTEGER, score INTEGER, date_due INTEGER, category_id INTEGER DEFAULT 0, FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(column_id) REFERENCES columns(id) ON DELETE CASCADE )
+ in following column description of table tasks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `swimlanes` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(200) NOT NULL, `position` int(11) DEFAULT '1', `is_active` int(11) DEFAULT '1', `project_id` int(11) DEFAULT NULL, `description` text, PRIMARY KEY (`id`), UNIQUE KEY `name` (`name`,`project_id`), KEY `swimlanes_project_idx` (`project_id`), CONSTRAINT `swimlanes_ibfk_1` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE)
+ in following column `description` of table `swimlanes`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE project_role_has_restrictions ( restriction_id SERIAL PRIMARY KEY, project_id INTEGER NOT NULL, role_id INTEGER NOT NULL, rule VARCHAR(255) NOT NULL, UNIQUE(role_id, rule), FOREIGN KEY(project_id) REFERENCES projects(id) ON DELETE CASCADE, FOREIGN KEY(role_id) REFERENCES project_has_roles(role_id) ON DELETE CASCADE )
+ in following column restriction_id and in column restriction_id of table column_has_restrictions

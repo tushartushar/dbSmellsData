@@ -1,0 +1,19 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE test3 (id INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (id INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS meta ( name VARCHAR(24) PRIMARY KEY, value TEXT )
+ in following column value of table meta
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS version ( id INTEGER PRIMARY KEY, version BLOB NOT NULL, time LONG NOT NULL )
+ in following column version and in column version of table spec_version
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INTEGER PRIMARY KEY )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS externals ( is_folder BOOLEAN NOT NULL, owner BLOB NOT NULL, name VARCHAR(255)NOT NULL PRIMARY KEY, key BLOB NOT NULL, url TEXT NOT NULL )
+ in following column url of table externals
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (id INTEGER PRIMARY KEY, FAIL HERE!!!!!)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['contact', 'publicKey']
+Detected: Clone Tables Found in following statement: CREATE TABLE test1 (id INTEGER PRIMARY KEY)
+

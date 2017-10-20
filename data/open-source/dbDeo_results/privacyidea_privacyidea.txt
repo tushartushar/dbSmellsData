@@ -1,0 +1,38 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column username of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column mobile of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column username of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column password of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column name of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['openid_user', 'expire']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column givenname of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column phone of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column password of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column givenname of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE openid_trustedroot (	id INTEGER NOT NULL, 	user VARCHAR(255), 	site TEXT, 	PRIMARY KEY (id))
+ in following column site of table openid_trustedroot
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE openid_user (	user VARCHAR(255) NOT NULL, 	token TEXT, 	expire INTEGER, 	PRIMARY KEY (user))
+ in following column token of table openid_user
+Detected: God Table Found in following statement: CREATE TABLE pidea_audit (	id INTEGER NOT NULL, 	date DATETIME, 	signature VARCHAR(620), 	action VARCHAR(50), 	success INTEGER, 	serial VARCHAR(20), 	token_type VARCHAR(12), 	user VARCHAR(20), 	realm VARCHAR(20), 	administrator VARCHAR(20), 	action_detail VARCHAR(50), 	info VARCHAR(50), 	privacyidea_server VARCHAR(20), 	client VARCHAR(20), 	loglevel VARCHAR(12), 	clearance_level VARCHAR(12), 	PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['openid_user', 'itableopenid_useropenid_user']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column phone of table users
+Detected: Obsolete Column TypesFound in following statement: create table users (id INTEGER PRIMARY KEY ,\	username TEXT UNIQUE,\	surname TEXT, \	givenname TEXT, \	email TEXT, \	password TEXT, \	description TEXT, \	mobile TEXT, \	phone TEXT)
+ in following column \ of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (id INTEGER PRIMARY KEY, username TEXT UNIQUE, email TEXT, name TEXT, givenname TEXT, mobile TEXT, phone TEXT, password TEXT)
+ in following column mobile of table users

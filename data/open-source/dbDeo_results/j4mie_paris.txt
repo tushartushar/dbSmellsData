@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE post ( id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT )
+ in following column title of table post
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tag', 'id']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT )
+ in following column name of table tag
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['post', 'id']

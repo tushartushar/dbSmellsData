@@ -1,0 +1,111 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column resonant_charge of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_param ('type' text, 'sigma' float, 'epsilon' float, 'nbfix_identifier' text, 'memo' text, id integer primary key)
+ in following column 'type' of table nonbonded_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_info ( vdw_funct text, vdw_rule text, es_funct text)
+ in following column vdw_funct of table nonbonded_info
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE virtual_out3_term (p0 integer, p1 integer, p2 integer, p3 integer, param integer not null)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE cmap1 ('phi' float, 'psi' float, 'energy' float)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column vx of table particle
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE constraint_hoh_term (p0 integer, p1 integer, p2 integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column workdir of table provenance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column vy of table particle
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE pair_12_6_es_term (p0 integer, p1 integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column insertion of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE msys_ct ('msys_name' text, id integer primary key)
+ in following column 'msys_name' of table msys_ct
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_param ('type' text, 'sigma' float, 'epsilon' float, 'nbfix_identifier' text, 'memo' text, id integer primary key)
+ in following column 'memo' of table nonbonded_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_info ( vdw_funct text, vdw_rule text, es_funct text)
+ in following column vdw_rule of table nonbonded_info
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE constraint_ah2_term (p0 integer, p1 integer, p2 integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap2 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'psi' of table cmap2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column name of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap1 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'phi' of table cmap1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE constraint_ah1_term (p0 integer, p1 integer, param integer not null)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE cmap2 ('phi' float, 'psi' float, 'energy' float)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE exclusion (p0 integer, p1 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column z of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_param ('type' text, 'sigma' float, 'epsilon' float, 'nbfix_identifier' text, 'memo' text, id integer primary key)
+ in following column 'sigma' of table nonbonded_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_param ('type' text, 'sigma' float, 'epsilon' float, 'nbfix_identifier' text, 'memo' text, id integer primary key)
+ in following column 'nbfix_identifier' of table nonbonded_param
+Detected: God Table Found in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap2 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'energy' of table cmap2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+ in following column 'c1' of table virtual_out3_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column user of table provenance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap1 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'psi' of table cmap1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap2 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'phi' of table cmap2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_param ('type' text, 'sigma' float, 'epsilon' float, 'nbfix_identifier' text, 'memo' text, id integer primary key)
+ in following column 'epsilon' of table nonbonded_param
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE torsiontorsion_cmap_term (p0 integer, p1 integer, p2 integer, p3 integer, p4 integer, p5 integer, p6 integer, p7 integer, param integer not null)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE constraint_ah3_term (p0 integer, p1 integer, p2 integer, p3 integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column charge of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+ in following column 'c2' of table virtual_out3_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column version of table provenance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+ in following column 'c3' of table virtual_out3_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column y of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column cmdline of table provenance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column vz of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nonbonded_info ( vdw_funct text, vdw_rule text, es_funct text)
+ in following column es_funct of table nonbonded_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column mass of table particle
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE angle_harm_term (p0 integer, p1 integer, p2 integer, 'constrained' integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+ in following column 'memo' of table virtual_out3_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column x of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column resname of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE virtual_out3_param ('type' text, 'c1' float, 'c2' float, 'c3' float, 'memo' text, id integer primary key)
+ in following column 'type' of table virtual_out3_param
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column chain of table particle
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE particle ( id integer primary key, anum integer, name text not null, x float, y float, z float, vx float, vy float, vz float, resname text not null, resid integer, chain text not null, segid text not null, mass float, charge float, formal_charge integer, resonant_charge float, insertion text not null, msys_ct integer not null, nbtype integer not null)
+ in following column segid of table particle
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE dihedral_trig_term (p0 integer, p1 integer, p2 integer, p3 integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cmap1 ('phi' float, 'psi' float, 'energy' float)
+ in following column 'energy' of table cmap1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column timestamp of table provenance
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE stretch_harm_term (p0 integer, p1 integer, 'constrained' integer, param integer not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE provenance ( id integer primary key, version text, timestamp text, user text, workdir text, cmdline text, executable text)
+ in following column executable of table provenance

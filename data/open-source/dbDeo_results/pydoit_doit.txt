@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table if not exists doit ( task_id text not null primary key, task_data json )
+ in following column task_id of table doit

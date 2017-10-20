@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['SelfProfile', 'profile_type']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ContactProfile', 'profile_identity']

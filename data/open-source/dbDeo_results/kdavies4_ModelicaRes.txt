@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: create table t ( Project text , Language text , File text , nBlank integer, nComment integer, nCode integer, nScaled real )
+ in following column File of table t
+Detected: Obsolete Column TypesFound in following statement: create table t ( Project text , Language text , File text , nBlank integer, nComment integer, nCode integer, nScaled real )
+ in following column Language of table t
+Detected: Obsolete Column TypesFound in following statement: create table t ( Project text , Language text , File text , nBlank integer, nComment integer, nCode integer, nScaled real )
+ in following column Project of table t
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table t ( Project text , Language text , File text , nBlank integer, nComment integer, nCode integer, nScaled real )
+ in following column nScaled of table t

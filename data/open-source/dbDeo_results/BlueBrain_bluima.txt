@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['infos', 'value']
+Detected: Index Shotgun Variant: 3 Following index not used : ['infos', 'entity_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attributes', 'entity_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attributes', 'normvalue']
+Detected: Index Shotgun Variant: 3 Following index not used : ['attributes', 'value']

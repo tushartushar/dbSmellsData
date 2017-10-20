@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'last_names']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'zipcodes']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'first_names']

@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column version_file of table vulnerabilities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column cve of table vulnerabilities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column secure_version of table vulnerabilities
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column appname of table vulnerabilities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column timestamp of table vulnerabilities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column user of table vulnerabilities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS vulnerabilities (user TEXT, timestamp TEXT, appname TEXT, version_file TEXT, file_version TEXT, secure_version TEXT, cve TEXT)
+ in following column file_version of table vulnerabilities

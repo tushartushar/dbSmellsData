@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO foos VALUES ((0,'abc'))
+

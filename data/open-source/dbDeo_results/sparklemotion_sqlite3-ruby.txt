@@ -1,0 +1,21 @@
+Detected: Duplicate Column Names Found in following statement: create table numbers ( name varchar(30), val int )
+ in following column name and in column name of table test_table
+Detected: Obsolete Column TypesFound in following statement: create table all_types ( a integer primary key, b float, c string, d integer )
+ in following column b of table all_types
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE blobs ( id INTEGER, hash BLOB(10) )
+ in following column id and in column id of table ex
+Detected: Duplicate Column Names Found in following statement: create table defaults_test ( a string default NULL, b string default 'Hello', c string default '--- []\n' )
+ in following column b and in column b of table the_table
+Detected: Obsolete Column TypesFound in following statement: create table foo_real(a real)
+ in following column a of table foo_real
+Detected: Duplicate Column Names Found in following statement: create table foo(data text)
+ in following column data and in column data of table ex
+Detected: Obsolete Column TypesFound in following statement: create table foo(data text)
+ in following column data of table foo
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table defaults_test ( a string default NULL, b string default 'Hello', c string default '--- []\n' )
+ in following column a and in column a of table the_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_table (name text, age int)
+ in following column name of table test_table
+Detected: Obsolete Column TypesFound in following statement: create table foo ( a integer primary key, b text )
+ in following column b of table foo

@@ -1,0 +1,181 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sessions (	sesskey		CHAR(32)	DEFAULT '' NOT NULL,	expiry		INT		DEFAULT 0 NOT NULL,	expireref	VARCHAR(64)	DEFAULT '',	data		CLOB		DEFAULT '',	PRIMARY KEY	(sesskey))
+ in following column expiry and in column expiry of table sessions2
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+ in following column `reason` and in column `reason` of table `{prefix}_bans`
+Detected: Clone Tables Found in following statement: create table sessions (	 SESSKEY char(32) not null,	 EXPIRY int(11) unsigned not null,	 EXPIREREF varchar(64),	 DATA CLOB,	 primary key (sesskey) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['SESSIONS2', 'EXPIRY']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sessions2', 'expiry']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comments` ( `cid` int(6) NOT NULL auto_increment, `bid` int(6) NOT NULL, `type` varchar(1) NOT NULL, `aid` int(6) NOT NULL, `commenttxt` longtext NOT NULL, `added` int(11) NOT NULL, `editaid` int(6) default NULL, `edittime` int(11) default NULL, FULLTEXT `commenttxt` (`commenttxt`), KEY `cid` (`cid`))
+ in following column `commenttxt` of table `{prefix}_comments`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		 created timestamp NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created timestamp NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column params of table adodb_logsql
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+ in following column `type` and in column `type` of table `{prefix}_groups`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_log` ( `lid` int(11) NOT NULL auto_increment, `type` enum('m','w','e') NOT NULL, `title` varchar(512) NOT NULL, `message` text NOT NULL, `function` text NOT NULL, `query` text NOT NULL, `aid` int(11) NOT NULL, `host` text NOT NULL, `created` int(11) NOT NULL, PRIMARY KEY (`lid`))
+ in following column `message` of table `{prefix}_log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue2 ( \			id INTEGER PRIMARY KEY, \			steam_id TEXT, \			time INTEGER, \			start_time INTEGER, \			reason TEXT, \			name TEXT, \			admin_id TEXT, \			admin_ip TEXT, \			type INTEGER)
+ in following column \ of table queue2
+Detected: Clone Tables Found in following statement: CREATE TABLE sessions (	sesskey		CHAR(32)	DEFAULT '' NOT NULL,	expiry		INT		DEFAULT 0 NOT NULL,	expireref	VARCHAR(64)	DEFAULT '',	data		VARCHAR(4000)	DEFAULT '',	PRIMARY KEY	(sesskey),	INDEX expiry (expiry))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column tracer and in column tracer of table $perf_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['sessions2', 'expireref']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column params and in column params of table $perf_table
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_servers_groups` ( `server_id` int(10) NOT NULL, `group_id` int(10) NOT NULL, PRIMARY KEY (`server_id`,`group_id`))
+ in following column `group_id` and in column `group_id` of table `{prefix}_srvgroups_overrides`
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id int, firstname varchar(24), lastname varchar(24),created date)
+ in following column lastname and in column lastname of table d
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "_comms` (			`bid` int(6) NOT NULL AUTO_INCREMENT,			`authid` varchar(64) NOT NULL,			`name` varchar(128) NOT NULL DEFAULT 'unnamed',			`created` int(11) NOT NULL DEFAULT '0',			`ends` int(11) NOT NULL DEFAULT '0',			`length` int(10) NOT NULL DEFAULT '0',			`reason` text NOT NULL,			`aid` int(6) NOT NULL DEFAULT '0',			`adminIp` varchar(32) NOT NULL DEFAULT '',			`sid` int(6) NOT NULL DEFAULT '0',			`RemovedBy` int(8) DEFAULT NULL,			`RemoveType` varchar(3) DEFAULT NULL,			`RemovedOn` int(11) DEFAULT NULL,			`type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag',			`ureason` text,			PRIMARY KEY (`bid`),			KEY `sid` (`sid`),			KEY `type` (`type`),			KEY `RemoveType` (`RemoveType`),			KEY `authid` (`authid`),			KEY `created` (`created`),			KEY `aid` (`aid`)		)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column steam_id of table queue
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		 created TIMESTAMP NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 varchar(4000) NOT NULL,		 params varchar(3000) NOT NULL,		 tracer varchar(500) NOT NULL,		 timer decimal(16,6) NOT NULL		)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column ip of table queue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created timestamp NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column tracer of table adodb_logsql
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_log` ( `lid` int(11) NOT NULL auto_increment, `type` enum('m','w','e') NOT NULL, `title` varchar(512) NOT NULL, `message` text NOT NULL, `function` text NOT NULL, `query` text NOT NULL, `aid` int(11) NOT NULL, `host` text NOT NULL, `created` int(11) NOT NULL, PRIMARY KEY (`lid`))
+ in following column `function` of table `{prefix}_log`
+Detected: Multicolumn Attribute Found in following statement: create table $perf_table (				created varchar(50),				sql0 varchar(250),				sql1 varchar(4000),				params varchar(3000),				tracer varchar(500),				timer decimal(16,6))
+
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id int, firstname varchar(24), lastname varchar(24),created date)
+ in following column firstname and in column firstname of table d
+Detected: Clone Tables Found in following statement: create table sessions ( SESSKEY char(32) not null, EXPIRY int(11) unsigned not null, EXPIREREF varchar(64),	 DATA text not null,	 primary key (sesskey)	 )
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT bid FROM %s_bans WHERE ((type = 0 AND authid REGEXP '^STEAM_[0-9]:%s$') OR (type = 1 AND ip = '%s')) AND (length = '0' OR ends > UNIX_TIMESTAMP()) AND RemoveType IS NULL
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['KUTU', '.']
+Detected: Clone Tables Found in following statement: create table sessions (<br> SESSKEY char(32) not null,<br> EXPIRY int(11) unsigned not null,<br> EXPIREREF varchar(64),<br> DATA CLOB,<br> primary key (sesskey)<br> )
+
+Detected: Clone Tables Found in following statement: create table sessions (	 SESSKEY char(32) not null,	 EXPIRY int(11) unsigned not null,	 EXPIREREF varchar(64),	 DATA text not null,	 primary key (sesskey) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comments` ( `cid` int(6) NOT NULL auto_increment, `bid` int(6) NOT NULL, `type` varchar(1) NOT NULL, `aid` int(6) NOT NULL, `commenttxt` longtext NOT NULL, `added` int(11) NOT NULL, `editaid` int(6) default NULL, `edittime` int(11) default NULL, FULLTEXT `commenttxt` (`commenttxt`), KEY `cid` (`cid`))
+ in following column `added` and in column `added` of table `" . DB_PREFIX . "_comments`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sessions2(	 sesskey VARCHAR( 64 ) NOT NULL DEFAULT '', 	 expiry DATETIME NOT NULL ,	 expireref VARCHAR( 250 ) DEFAULT '',	 created DATETIME NOT NULL ,	 modified DATETIME NOT NULL ,	 sessdata LONGTEXT,	 PRIMARY KEY ( sesskey ) ,	 INDEX sess2_expiry( expiry ),	 INDEX sess2_expireref( expireref ))
+ in following column sessdata of table sessions2
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created timestamp NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column sql1 of table adodb_logsql
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_bans` ( `bid` int(6) NOT NULL auto_increment, `ip` varchar(32) default NULL, `authid` varchar(64) character set utf8 NOT NULL default '', `name` varchar(128) character set utf8 NOT NULL default 'unnamed', `created` int(11) NOT NULL default '0', `ends` int(11) NOT NULL default '0', `length` int(10) NOT NULL default '0', `reason` text character set utf8 NOT NULL, `aid` int(6) NOT NULL default '0', `adminIp` varchar(32) NOT NULL default '', `sid` int(6) NOT NULL default '0', `country` varchar(4) default NULL, `RemovedBy` int(8) NULL, `RemoveType` VARCHAR(3) NULL, `RemovedOn` int(10) NULL, `type` TINYINT NOT NULL DEFAULT '0', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), FULLTEXT KEY `reason` (`reason`), FULLTEXT KEY `authid_2` (`authid`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_srvgroups` ( `id` int(10) unsigned NOT NULL auto_increment, `flags` varchar(30) NOT NULL, `immunity` int(10) unsigned NOT NULL, `name` varchar(120) NOT NULL, `groups_immune` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+ in following column `flags` and in column `flags` of table `{prefix}_groups`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+ in following column `reason` of table `{prefix}_comms`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE KUTU.testtable (id INTEGER NOT NULL AUTO_INCREMENT,firstname VARCHAR(30) DEFAULT 'Joan',lastname VARCHAR(28) NOT NULL DEFAULT 'Chen',averylonglongfieldname LONGTEXT NOT NULL,price NUMERIC(7,2) NOT NULL DEFAULT 0.00,MYDATE DATE DEFAULT CURDATE(), PRIMARY KEY (id, lastname))
+ in following column averylonglongfieldname of table KUTU
+Detected: Clone Tables Found in following statement: CREATE TABLE sessions ( SESSKEY VARCHAR(32) NOT NULL, EXPIRY NUMBER(16) NOT NULL, EXPIREREF VARCHAR(64), DATA CLOB, PRIMARY KEY (sesskey) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+ in following column `ureason` of table `{prefix}_comms`
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_overrides` ( `id` int(11) NOT NULL AUTO_INCREMENT, `type` enum('command','group') NOT NULL, `name` varchar(32) NOT NULL, `flags` varchar(30) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `type` (`type`,`name`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comments` ( `cid` int(6) NOT NULL auto_increment, `bid` int(6) NOT NULL, `type` varchar(1) NOT NULL, `aid` int(6) NOT NULL, `commenttxt` longtext NOT NULL, `added` int(11) NOT NULL, `editaid` int(6) default NULL, `edittime` int(11) default NULL, FULLTEXT `commenttxt` (`commenttxt`), KEY `cid` (`cid`))
+ in following column `edittime` and in column `edittime` of table `" . DB_PREFIX . "_comments`
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT COUNT(bid) FROM %s_bans WHERE ((type = 0 AND authid REGEXP '^STEAM_[0-9]:%s$') OR (type = 1 AND ip = '%s')) AND ((length > '0' AND ends > UNIX_TIMESTAMP()) OR RemoveType IS NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_submissions` ( `subid` int(6) NOT NULL auto_increment, `submitted` int(11) NOT NULL, `ModID` int(6) NOT NULL, `SteamId` varchar(64) NOT NULL default 'unnamed', `name` varchar(128) NOT NULL, `email` varchar(128) NOT NULL, `reason` text NOT NULL, `ip` varchar(64) NOT NULL, `subname` varchar(128) default NULL, `sip` varchar(64) default NULL, `archiv` tinyint(1) default '0', `archivedby` INT(11) NULL, `server` tinyint(3) default NULL, PRIMARY KEY (`subid`))
+ in following column `reason` of table `{prefix}_submissions`
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id integer, firstname char(24), lastname char(24),price numeric(12,2),created date)
+ in following column id and in column id of table $seq
+Detected: Index Shotgun Variant: 3 Following index not used : ['sessions', 'expiry']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_log` ( `lid` int(11) NOT NULL auto_increment, `type` enum('m','w','e') NOT NULL, `title` varchar(512) NOT NULL, `message` text NOT NULL, `function` text NOT NULL, `query` text NOT NULL, `aid` int(11) NOT NULL, `host` text NOT NULL, `created` int(11) NOT NULL, PRIMARY KEY (`lid`))
+ in following column `query` of table `{prefix}_log`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_srvgroups` ( `id` int(10) unsigned NOT NULL auto_increment, `flags` varchar(30) NOT NULL, `immunity` int(10) unsigned NOT NULL, `name` varchar(120) NOT NULL, `groups_immune` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+ in following column `name` and in column `name` of table `{prefix}_bans`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column sql1 and in column sql1 of table $perf_table
+Detected: Index Shotgun Variant: 3 Following index not used : ['SESSIONS2', 'EXPIREREF']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "_comments` (									 `cid` int(6) NOT NULL auto_increment,									 `bid` int(6) NOT NULL,									 `type` varchar(1) NOT NULL,									 `aid` int(6) NOT NULL,									 `commenttxt` longtext NOT NULL,									 `added` datetime NOT NULL,									 `editaid` int(6) default NULL,									 `edittime` datetime default NULL,									 KEY `cid` (`cid`)									)
+ in following column `commenttxt` of table `" . DB_PREFIX . "_comments`
+Detected: Duplicate Column Names Found in following statement: create table sessions (<br> SESSKEY char(32) not null,<br> EXPIRY int(11) unsigned not null,<br> EXPIREREF varchar(64),<br> DATA CLOB,<br> primary key (sesskey)<br> )
+ in following column < and in column < of table SESSIONS2<br
+Detected: Index Shotgun Variant: 3 Following index not used : ['KUTU', 'price']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column name of table queue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE KUTU.testtable (id SERIAL,firstname VARCHAR(30) DEFAULT 'Joan',lastname VARCHAR(28) DEFAULT 'Chen' NOT NULL,averylonglongfieldname TEXT NOT NULL,price NUMERIC(7,2) DEFAULT 0.00 NOT NULL,MYDATE DATE DEFAULT CURRENT_DATE, PRIMARY KEY (id, lastname))
+ in following column averylonglongfieldname of table KUTU
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `mytable` ( `row1` int(11) NOT NULL auto_increment, `row2` varchar(16) NOT NULL default '', PRIMARY KEY (`row1`), KEY `myindex` (`row1`,`row2`))
+
+Detected: Clone Tables Found in following statement: create table sessions (	 SESSKEY char(32) not null,	 EXPIRY DECIMAL(16) not null,	 EXPIREREF varchar(64),	 DATA varchar(4000) not null,	 primary key (sesskey) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_comms` ( `bid` int(6) NOT NULL AUTO_INCREMENT, `authid` varchar(64) NOT NULL, `name` varchar(128) NOT NULL DEFAULT 'unnamed', `created` int(11) NOT NULL DEFAULT '0', `ends` int(11) NOT NULL DEFAULT '0', `length` int(10) NOT NULL DEFAULT '0', `reason` text NOT NULL, `aid` int(6) NOT NULL DEFAULT '0', `adminIp` varchar(32) NOT NULL DEFAULT '', `sid` int(6) NOT NULL DEFAULT '0', `RemovedBy` int(8) DEFAULT NULL, `RemoveType` varchar(3) DEFAULT NULL, `RemovedOn` int(11) DEFAULT NULL, `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), KEY `type` (`type`), KEY `RemoveType` (`RemoveType`), KEY `authid` (`authid`), KEY `created` (`created`), KEY `aid` (`aid`))
+ in following column `authid` and in column `authid` of table `{prefix}_bans`
+Detected: Obsolete Column TypesFound in following statement: create table $seq (id float(53))
+ in following column id of table $seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column tracer of table adodb_logsql
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column reason of table queue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "_comms` (			`bid` int(6) NOT NULL AUTO_INCREMENT,			`authid` varchar(64) NOT NULL,			`name` varchar(128) NOT NULL DEFAULT 'unnamed',			`created` int(11) NOT NULL DEFAULT '0',			`ends` int(11) NOT NULL DEFAULT '0',			`length` int(10) NOT NULL DEFAULT '0',			`reason` text NOT NULL,			`aid` int(6) NOT NULL DEFAULT '0',			`adminIp` varchar(32) NOT NULL DEFAULT '',			`sid` int(6) NOT NULL DEFAULT '0',			`RemovedBy` int(8) DEFAULT NULL,			`RemoveType` varchar(3) DEFAULT NULL,			`RemovedOn` int(11) DEFAULT NULL,			`type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag',			`ureason` text,			PRIMARY KEY (`bid`),			KEY `sid` (`sid`),			KEY `type` (`type`),			KEY `RemoveType` (`RemoveType`),			KEY `authid` (`authid`),			KEY `created` (`created`),			KEY `aid` (`aid`)		)
+ in following column `reason` of table `" . DB_PREFIX . "_comms`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_bans` ( `bid` int(6) NOT NULL auto_increment, `ip` varchar(32) default NULL, `authid` varchar(64) character set utf8 NOT NULL default '', `name` varchar(128) character set utf8 NOT NULL default 'unnamed', `created` int(11) NOT NULL default '0', `ends` int(11) NOT NULL default '0', `length` int(10) NOT NULL default '0', `reason` text character set utf8 NOT NULL, `aid` int(6) NOT NULL default '0', `adminIp` varchar(32) NOT NULL default '', `sid` int(6) NOT NULL default '0', `country` varchar(4) default NULL, `RemovedBy` int(8) NULL, `RemoveType` VARCHAR(3) NULL, `RemovedOn` int(10) NULL, `type` TINYINT NOT NULL DEFAULT '0', `ureason` text, PRIMARY KEY (`bid`), KEY `sid` (`sid`), FULLTEXT KEY `reason` (`reason`), FULLTEXT KEY `authid_2` (`authid`))
+ in following column `ureason` of table `{prefix}_bans`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE KUTU.testtable (id INT IDENTITY(1,1) NOT NULL,firstname VARCHAR(30) DEFAULT 'Joan',lastname VARCHAR(28) DEFAULT 'Chen' NOT NULL,averylonglongfieldname TEXT NOT NULL,price NUMERIC(7,2) DEFAULT 0.00 NOT NULL,MYDATE DATETIME DEFAULT GetDate(), PRIMARY KEY (id, lastname))
+ in following column averylonglongfieldname of table KUTU
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_log` ( `lid` int(11) NOT NULL auto_increment, `type` enum('m','w','e') NOT NULL, `title` varchar(512) NOT NULL, `message` text NOT NULL, `function` text NOT NULL, `query` text NOT NULL, `aid` int(11) NOT NULL, `host` text NOT NULL, `created` int(11) NOT NULL, PRIMARY KEY (`lid`))
+ in following column `host` of table `{prefix}_log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column params of table adodb_logsql
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id integer, firstname char(24), lastname char(24),price numeric(12,2),created date)
+ in following column firstname and in column firstname of table KUTU
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		created datetime year to second NOT NULL,		sql0 varchar(250) NOT NULL,		sql1 varchar(255) NOT NULL,		params varchar(255) NOT NULL,		tracer varchar(255) NOT NULL,		timer decimal(16,6) NOT NULL	)
+
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id integer, firstname char(24), lastname char(24),price numeric(12,2),created date)
+ in following column created and in column created of table adodb_logsql
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column admin_id of table queue
+Detected: Index Shotgun Variant: 3 Following index not used : ['KUTU', 'testtable']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_submissions` ( `subid` int(6) NOT NULL auto_increment, `submitted` int(11) NOT NULL, `ModID` int(6) NOT NULL, `SteamId` varchar(64) NOT NULL default 'unnamed', `name` varchar(128) NOT NULL, `email` varchar(128) NOT NULL, `reason` text NOT NULL, `ip` varchar(64) NOT NULL, `subname` varchar(128) default NULL, `sip` varchar(64) default NULL, `archiv` tinyint(1) default '0', `archivedby` INT(11) NULL, `server` tinyint(3) default NULL, PRIMARY KEY (`subid`))
+
+Detected: Duplicate Column Names Found in following statement: create table atable (id integer, ablob blob)
+ in following column id and in column id of table ADOXYZ
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		 created date NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 varchar(4000) NOT NULL,		 params varchar(4000),		 tracer varchar(4000),		 timer decimal(16,6) NOT NULL		)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sessions (	sesskey		CHAR(32)	DEFAULT '' NOT NULL,	expiry		INT		DEFAULT 0 NOT NULL,	expireref	VARCHAR(64)	DEFAULT '',	data		CLOB		DEFAULT '',	PRIMARY KEY	(sesskey))
+ in following column sesskey and in column sesskey of table sessions2
+Detected: Obsolete Column TypesFound in following statement: create table sessions ( SESSKEY char(32) not null, EXPIRY int(11) unsigned not null, EXPIREREF varchar(64),	 DATA text not null,	 primary key (sesskey)	 )
+ in following column DATA of table sessions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sessions2(	sesskey VARCHAR( 64 ) NOT NULL DEFAULT '',	expiry TIMESTAMP NOT NULL ,	expireref VARCHAR( 250 ) DEFAULT '',	created TIMESTAMP NOT NULL ,	modified TIMESTAMP NOT NULL ,	sessdata LONGTEXT DEFAULT '',	PRIMARY KEY ( sesskey ) ,	INDEX sess2_expiry( expiry ),	INDEX sess2_expireref( expireref ))
+ in following column sessdata of table sessions2
+Detected: Clone Tables Found in following statement: CREATE TABLE sessions (	sesskey		CHAR(32)	DEFAULT '' NOT NULL,	expiry		INT		DEFAULT 0 NOT NULL,	expireref	VARCHAR(64)	DEFAULT '',	data		CLOB		DEFAULT '',	PRIMARY KEY	(sesskey))
+
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id integer, firstname char(24), lastname char(24),price numeric(12,2),created date)
+ in following column price and in column price of table KUTU
+Detected: Obsolete Column TypesFound in following statement: create table sessions (	 SESSKEY char(32) not null,	 EXPIRY int(11) unsigned not null,	 EXPIREREF varchar(64),	 DATA text not null,	 primary key (sesskey) )
+ in following column DATA of table sessions
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "_overrides` (																			`id` int(11) NOT NULL AUTO_INCREMENT,																			`type` enum('command','group') NOT NULL,																			`name` varchar(32) NOT NULL,																			`flags` varchar(30) NOT NULL,																			PRIMARY KEY (`id`),																			UNIQUE KEY `type` (`type`,`name`)																		)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 varchar(4000) NOT NULL,		 params varchar(3000) NOT NULL,		 tracer varchar(500) NOT NULL,		 timer decimal(16,6) NOT NULL		)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['KUTU', 'lastname']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_settings` ( `setting` varchar(128) NOT NULL, `value` text NOT NULL, UNIQUE KEY `setting` (`setting`))
+ in following column `value` of table `{prefix}_settings`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_admins` ( `aid` int(6) NOT NULL auto_increment, `user` varchar(64) NOT NULL, `authid` varchar(64) NOT NULL default '', `password` varchar(128) NOT NULL, `gid` int(6) NOT NULL, `email` varchar(128) NOT NULL, `validate` varchar(128) NULL default NULL, `extraflags` int(10) NOT NULL, `immunity` int(10) NOT NULL default '0', `srv_group` varchar(128) default NULL, `srv_flags` varchar(64) default NULL, `srv_password` varchar(128) default NULL, `lastvisit` int(11) NULL, PRIMARY KEY (`aid`), UNIQUE KEY `user` (`user`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE mytable ( row1 INT IDENTITY(1,1) NOT NULL, row2 varchar(16), PRIMARY KEY (row1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+
+Detected: Duplicate Column Names Found in following statement: create table ADOXYZ (id integer, firstname char(24), lastname char(24),price numeric(12,2),created date)
+ in following column lastname and in column lastname of table KUTU
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adodb_logsql (		 created datetime NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 text NOT NULL,		 params text NOT NULL,		 tracer text NOT NULL,		 timer decimal(16,6) NOT NULL		)
+ in following column sql1 of table adodb_logsql
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE adodb_logsql (		 created date NOT NULL,		 sql0 varchar(250) NOT NULL,		 sql1 varchar(4000) NOT NULL,		 params varchar(4000),		 tracer varchar(4000),		 timer decimal(16,6) NOT NULL		)
+ in following column created and in column created of table ADOXYZ
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queue (steam_id TEXT PRIMARY KEY ON CONFLICT REPLACE, time INTEGER, start_time INTEGER, reason TEXT, name TEXT, ip TEXT, admin_id TEXT, admin_ip TEXT)
+ in following column admin_ip of table queue
+Detected: God Table Found in following statement: CREATE TABLE PLAN_TABLE ( STATEMENT_ID VARCHAR2(30), TIMESTAMP DATE, REMARKS VARCHAR2(80), OPERATION VARCHAR2(30), OPTIONS VARCHAR2(30), OBJECT_NODE VARCHAR2(128), OBJECT_OWNER VARCHAR2(30), OBJECT_NAME VARCHAR2(30), OBJECT_INSTANCE NUMBER(38), OBJECT_TYPE VARCHAR2(30), OPTIMIZER VARCHAR2(255), SEARCH_COLUMNS NUMBER, ID NUMBER(38), PARENT_ID NUMBER(38), POSITION NUMBER(38), COST NUMBER(38), CARDINALITY NUMBER(38), BYTES NUMBER(38), OTHER_TAG VARCHAR2(255), PARTITION_START VARCHAR2(255), PARTITION_STOP VARCHAR2(255), PARTITION_ID NUMBER(38), OTHER LONG, DISTRIBUTION VARCHAR2(30))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{prefix}_protests` ( `pid` int(6) NOT NULL auto_increment, `bid` int(6) NOT NULL, `datesubmitted` int(11) NOT NULL, `reason` text NOT NULL, `email` varchar(128) NOT NULL, `archiv` tinyint(1) default '0', `archivedby` INT(11) NULL, `pip` varchar(64) NOT NULL, PRIMARY KEY (`pid`), KEY `bid` (`bid`))
+ in following column `reason` of table `{prefix}_protests`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `" . DB_PREFIX . "_comms` (			`bid` int(6) NOT NULL AUTO_INCREMENT,			`authid` varchar(64) NOT NULL,			`name` varchar(128) NOT NULL DEFAULT 'unnamed',			`created` int(11) NOT NULL DEFAULT '0',			`ends` int(11) NOT NULL DEFAULT '0',			`length` int(10) NOT NULL DEFAULT '0',			`reason` text NOT NULL,			`aid` int(6) NOT NULL DEFAULT '0',			`adminIp` varchar(32) NOT NULL DEFAULT '',			`sid` int(6) NOT NULL DEFAULT '0',			`RemovedBy` int(8) DEFAULT NULL,			`RemoveType` varchar(3) DEFAULT NULL,			`RemovedOn` int(11) DEFAULT NULL,			`type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '1 - Mute, 2 - Gag',			`ureason` text,			PRIMARY KEY (`bid`),			KEY `sid` (`sid`),			KEY `type` (`type`),			KEY `RemoveType` (`RemoveType`),			KEY `authid` (`authid`),			KEY `created` (`created`),			KEY `aid` (`aid`)		)
+ in following column `ureason` of table `" . DB_PREFIX . "_comms`

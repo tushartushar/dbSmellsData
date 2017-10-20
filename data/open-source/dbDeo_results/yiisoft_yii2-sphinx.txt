@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `yii2_test_item` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `description` text NOT NULL, `category_id` int(11) NOT NULL, `price` float NOT NULL, PRIMARY KEY (`id`))
+ in following column `description` of table `yii2_test_item`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `yii2_test_article` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) NOT NULL, `content` text NOT NULL, `author_id` int(11) NOT NULL, `create_date` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `content` of table `yii2_test_article`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `yii2_test_item` ( `id` int(11) NOT NULL AUTO_INCREMENT, `name` varchar(255) NOT NULL, `description` text NOT NULL, `category_id` int(11) NOT NULL, `price` float NOT NULL, PRIMARY KEY (`id`))
+ in following column `price` of table `yii2_test_item`

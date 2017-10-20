@@ -1,0 +1,337 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_spatial_ref_sys (srs_name TEXT NOT NULL,srs_id INTEGER NOT NULL PRIMARY KEY,organization TEXT NOT NULL,organization_coordsys_id INTEGER NOT NULL,definition TEXT NOT NULL,description TEXT)
+ in following column organization of table gpkg_spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_styled_group_refs', 'f_geometry_column']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages_keyword (coverage_name TEXT NOT NULL,keyword TEXT NOT NULL,CONSTRAINT pk_raster_coverages_keyword PRIMARY KEY (coverage_name, keyword),CONSTRAINT fk_raster_coverages_keyword FOREIGN KEY (coverage_name) REFERENCES raster_coverages (coverage_name) ON DELETE CASCADE)
+ in following column coverage_name of table raster_coverages_keyword
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column datum of table spatial_ref_sys_aux
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE splite_metacatalog (table_name TEXT NOT NULL,column_name TEXT NOT NULL,type TEXT NOT NULL,not_null INTEGER NOT NULL,primary_key INTEGER NOT NULL,foreign_key INTEGER NOT NULL,unique_value INTEGER NOT NULL,CONSTRAINT pk_splite_metacatalog PRIMARY KEY (table_name, column_name))
+ in following column type of table splite_metacatalog
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_raster_styled_layers', 'style_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column filename of table "%s"
+Detected: Duplicate Column Names Found in following statement: create table t2 (c1 int, c2 int)
+ in following column c1 and in column c1 of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages_keyword (coverage_name TEXT NOT NULL,keyword TEXT NOT NULL,CONSTRAINT pk_vector_coverages_keyword PRIMARY KEY (coverage_name, keyword),CONSTRAINT fk_vector_coverages_keyword FOREIGN KEY (coverage_name) REFERENCES vector_coverages (coverage_name) ON DELETE CASCADE)
+ in following column coverage_name of table vector_coverages_keyword
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type and in column type of table mxp
+Detected: Clone Tables Found in following statement: create table t1 (c1 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column title of table vector_coverages
+Detected: God Table Found in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column pixel_type of table raster_coverages
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (db_prefix TEXT, f_table_name TEXT, f_geometry_column TEXT, origin_rowid INTEGER, item_no INTEGER, geometry BLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_vector_styled_layers (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,style_id INTEGER NOT NULL,style_name TEXT NOT NULL DEFAULT 'missing_name',style BLOB NOT NULL,CONSTRAINT pk_sevstl PRIMARY KEY (f_table_name, f_geometry_column, style_id),CONSTRAINT fk_sevstl FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column style_name of table SE_vector_styled_layers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column data_type of table gpkg_contents
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column coverage_name of table raster_coverages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column data_type of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL)
+ in following column layer of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL)
+ in following column block_id of table "%s"
+Detected: Clone Tables Found in following statement: create table t (c text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL)
+ in following column layer of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column last_change of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column block_id of table "%s"
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column table_name of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (edge_id INTEGER PRIMARY KEY AUTOINCREMENT,node_from_code TEXT,node_to_code TEXT,edge_code TEXT)
+ in following column node_to_code of table "%s"
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['parent', 'id2']
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom TEXT, NodeTo TEXT, Cost DOUBLE, Geometry BLOB, Name TEXT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (rowid INTEGER, mbr BLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom TEXT, NodeTo TEXT, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column Algorithm of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_vector_styled_layers (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,style_id INTEGER NOT NULL,style_name TEXT NOT NULL DEFAULT 'missing_name',style BLOB NOT NULL,CONSTRAINT pk_sevstl PRIMARY KEY (f_table_name, f_geometry_column, style_id),CONSTRAINT fk_sevstl FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_geometry_column of table SE_vector_styled_layers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column description of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE splite_metacatalog (table_name TEXT NOT NULL,column_name TEXT NOT NULL,type TEXT NOT NULL,not_null INTEGER NOT NULL,primary_key INTEGER NOT NULL,foreign_key INTEGER NOT NULL,unique_value INTEGER NOT NULL,CONSTRAINT pk_splite_metacatalog PRIMARY KEY (table_name, column_name))
+ in following column table_name of table splite_metacatalog
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom INTEGER, NodeTo INTEGER, Cost DOUBLE, Geometry BLOB, Name TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column axis_2_orientation of table spatial_ref_sys_aux
+Detected: God Table Found in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+
+Detected: Clone Tables Found in following statement: create table child1 (id1 integer, id2 integer,\r\n foreign\tkey(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Clone Tables Found in following statement: create table tbl (col int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_vector_styled_layers', 'style_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+ in following column xpath_expr of table "%s"
+Detected: Clone Tables Found in following statement: create table pk3 (col1, col2, col3, col4, primary key (col3, col2 ))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE %s (ROWNO INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (f_table_name TEXT, f_geometry_column TEXT, search_frame BLOB)
+ in following column f_geometry_column of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (db_prefix TEXT, f_table_name TEXT, f_geometry_column TEXT, origin_rowid INTEGER, item_no INTEGER, geometry BLOB)
+ in following column f_table_name of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column table_name of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column sample_type of table raster_coverages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS %Q.'%q_stat'(id INTEGER PRIMARY KEY, value BLOB)
+ in following column value and in column value of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata (id INTEGER PRIMARY KEY AUTOINCREMENT,md_scope TEXT NOT NULL DEFAULT 'dataset',metadata BLOB NOT NULL DEFAULT (zeroblob(4)),fileId TEXT,parentId TEXT)
+ in following column md_scope of table ISO_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column tbl_name of table x
+Detected: Clone Tables Found in following statement: create table t2 (c2)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column layer of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+ in following column parent of table "%s"
+Detected: Multicolumn Attribute Found in following statement: create table child1 (id1 integer, id2 integer, foreign key(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages_srid (coverage_name TEXT NOT NULL,srid INTEGER NOT NULL,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,CONSTRAINT pk_raster_coverages_srid PRIMARY KEY (coverage_name, srid),CONSTRAINT fk_raster_coverages_srid FOREIGN KEY (coverage_name) REFERENCES raster_coverages (coverage_name) ON DELETE CASCADE,CONSTRAINT fk_raster_srid FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column coverage_name of table raster_coverages_srid
+Detected: Clone Tables Found in following statement: create table t1 (c1)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name and in column name of table person
+Detected: Multicolumn Attribute Found in following statement: create table parent (id1 integer, id2 integer, primary key(id1, id2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column name of table x
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (curve_id INTEGER NOT NULL,edge_code TEXT NOT NULL,orientation TEXT,CONSTRAINT pk_curves PRIMARY KEY (curve_id, edge_code))
+ in following column edge_code of table "%s"
+Detected: Clone Tables Found in following statement: create table t (c1)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (db_prefix TEXT, f_table_name TEXT, f_geometry_column TEXT, origin_rowid INTEGER, item_no INTEGER, geometry BLOB)
+ in following column f_geometry_column of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL)
+ in following column filename of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column label of table "%s"
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (PKUID INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column description of table gpkg_contents
+Detected: Clone Tables Found in following statement: create table t1 (c1 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column layer of table "%s"
+Detected: Clone Tables Found in following statement: create table child2 (id1 integer, id2 integer, foreign key(id2, id1) references parent(id2, id1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column identifier of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: create table test (id integer primary key, fn float default 0.0, sn not null)
+ in following column fn of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column compression of table raster_coverages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL)
+ in following column filename of table "%s"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE SE_vector_styled_layers (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,style_id INTEGER NOT NULL,style_name TEXT NOT NULL DEFAULT 'missing_name',style BLOB NOT NULL,CONSTRAINT pk_sevstl PRIMARY KEY (f_table_name, f_geometry_column, style_id),CONSTRAINT fk_sevstl FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column CONSTRAINT and in column CONSTRAINT of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column type of table x
+Detected: Index Shotgun Variant: 3 Following index not used : ['ISO_metadata', 'parentId']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ISO_metadata_reference', 'md_file_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom TEXT, NodeTo TEXT, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column NodeFrom of table "%s"
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_styled_group_refs', 'f_table_name']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['parent', 'id1']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE IF NOT EXISTS  sql_statements_log (      id INTEGER PRIMARY KEY AUTOINCREMENT,  time_start TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',      time_end TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z', user_agent TEXT NOT NULL, sql_statement TEXT NOT NULL,       success INTEGER NOT NULL DEFAULT 0,    error_cause TEXT NOT NULL DEFAULT 'ABORTED',   CONSTRAINT sqllog_success CHECK  (success IN (0,1)))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column label of table "%s"
+Detected: Duplicate Column Names Found in following statement: create table tbl (colid integer primary key AUTOINCREMENT, col varchar)
+ in following column col and in column col of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column label of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column unit of table spatial_ref_sys_aux
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (edge_id INTEGER PRIMARY KEY AUTOINCREMENT,node_from_code TEXT,node_to_code TEXT,edge_code TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata (id INTEGER PRIMARY KEY AUTOINCREMENT,md_scope TEXT NOT NULL DEFAULT 'dataset',metadata BLOB NOT NULL DEFAULT (zeroblob(4)),fileId TEXT,parentId TEXT)
+ in following column fileId of table ISO_metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_geometry_column of table vector_coverages
+Detected: Multicolumn Attribute Found in following statement: create table child1 (id1 integer, id2 integer,\r\n foreign\tkey(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS  sql_statements_log (      id INTEGER PRIMARY KEY AUTOINCREMENT,  time_start TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',      time_end TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z', user_agent TEXT NOT NULL, sql_statement TEXT NOT NULL,       success INTEGER NOT NULL DEFAULT 0,    error_cause TEXT NOT NULL DEFAULT 'ABORTED',   CONSTRAINT sqllog_success CHECK  (success IN (0,1)))
+ in following column   of table  
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_external_graphics (xlink_href TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** undefined ***',abstract TEXT NOT NULL DEFAULT '*** undefined ***',resource BLOB NOT NULL,file_name TEXT NOT NULL DEFAULT '*** undefined ***')
+ in following column title of table SE_external_graphics
+Detected: Obsolete Column TypesFound in following statement: create table t (c text)
+ in following column c of table t
+Detected: Clone Tables Found in following statement: create table t (c)
+
+Detected: Obsolete Column TypesFound in following statement: create table testindex (id integer primary key, fn float default 0.0, sn not null)
+ in following column fn of table testindex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+ in following column attribute of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages_srid (coverage_name TEXT NOT NULL,srid INTEGER NOT NULL,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,CONSTRAINT pk_vector_coverages_srid PRIMARY KEY (coverage_name, srid),CONSTRAINT fk_vector_coverages_srid FOREIGN KEY (coverage_name) REFERENCES vector_coverages (coverage_name) ON DELETE CASCADE,CONSTRAINT fk_vector_srid FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column coverage_name of table vector_coverages_srid
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['artist', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['person', 'id']
+Detected: Clone Tables Found in following statement: create table t2 (c1 int, c2 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_spatial_ref_sys (srs_name TEXT NOT NULL,srs_id INTEGER NOT NULL PRIMARY KEY,organization TEXT NOT NULL,organization_coordsys_id INTEGER NOT NULL,definition TEXT NOT NULL,description TEXT)
+ in following column description of table gpkg_spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_external_graphics (xlink_href TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** undefined ***',abstract TEXT NOT NULL DEFAULT '*** undefined ***',resource BLOB NOT NULL,file_name TEXT NOT NULL DEFAULT '*** undefined ***')
+ in following column xlink_href of table SE_external_graphics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE splite_metacatalog (table_name TEXT NOT NULL,column_name TEXT NOT NULL,type TEXT NOT NULL,not_null INTEGER NOT NULL,primary_key INTEGER NOT NULL,foreign_key INTEGER NOT NULL,unique_value INTEGER NOT NULL,CONSTRAINT pk_splite_metacatalog PRIMARY KEY (table_name, column_name))
+ in following column column_name of table splite_metacatalog
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom INTEGER, NodeTo INTEGER, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column Name of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_external_graphics (xlink_href TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** undefined ***',abstract TEXT NOT NULL DEFAULT '*** undefined ***',resource BLOB NOT NULL,file_name TEXT NOT NULL DEFAULT '*** undefined ***')
+ in following column abstract of table SE_external_graphics
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column axis_1_orientation of table spatial_ref_sys_aux
+Detected: Clone Tables Found in following statement: create table t2 (c1 integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE x(type text,name text,tbl_name text,rootpage integer,sql text)
+ in following column sql of table x
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column axis_1_name of table spatial_ref_sys_aux
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column coverage_name of table vector_coverages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (curve_id INTEGER NOT NULL,edge_code TEXT NOT NULL,orientation TEXT,CONSTRAINT pk_curves PRIMARY KEY (curve_id, edge_code))
+ in following column orientation of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_spatial_ref_sys (srs_name TEXT NOT NULL,srs_id INTEGER NOT NULL PRIMARY KEY,organization TEXT NOT NULL,organization_coordsys_id INTEGER NOT NULL,definition TEXT NOT NULL,description TEXT)
+ in following column srs_name of table gpkg_spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom TEXT, NodeTo TEXT, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column Name of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom INTEGER, NodeTo INTEGER, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column Algorithm of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+ in following column node of table "%s"
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_vector_styles', 'style_name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (edge_id INTEGER PRIMARY KEY AUTOINCREMENT,node_from_code TEXT,node_to_code TEXT,edge_code TEXT)
+ in following column node_from_code of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column abstract of table raster_coverages
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (f_table_name TEXT, f_geometry_column TEXT, search_frame BLOB)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column filename of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_fonts (font_facename TEXT NOT NULL PRIMARY KEY,font BLOB NOT NULL)
+ in following column font_facename of table SE_fonts
+Detected: Clone Tables Found in following statement: create table pk1 (col1 primary key, col2, col3)
+
+Detected: Multicolumn Attribute Found in following statement: create table child2 (id1 integer, id2 integer, foreign key(id2, id1) references parent(id2, id1))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages_keyword (coverage_name TEXT NOT NULL,keyword TEXT NOT NULL,CONSTRAINT pk_vector_coverages_keyword PRIMARY KEY (coverage_name, keyword),CONSTRAINT fk_vector_coverages_keyword FOREIGN KEY (coverage_name) REFERENCES vector_coverages (coverage_name) ON DELETE CASCADE)
+ in following column keyword of table vector_coverages_keyword
+Detected: God Table Found in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (curve_id INTEGER NOT NULL,edge_code TEXT NOT NULL,orientation TEXT,CONSTRAINT pk_curves PRIMARY KEY (curve_id, edge_code))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS ResourcesTags (bd_fid VARCHAR(255), name VARCHAR(64), version INTEGER)
+
+Detected: Clone Tables Found in following statement: create table t1 (c1 integer primary key, v)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (db_prefix TEXT, f_table_name TEXT, f_geometry_column TEXT, origin_rowid INTEGER, item_no INTEGER, geometry BLOB)
+ in following column db_prefix of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (Algorithm TEXT, ArcRowid INTEGER, NodeFrom TEXT, NodeTo TEXT, Cost DOUBLE, Geometry BLOB, Name TEXT)
+ in following column NodeTo of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages_keyword (coverage_name TEXT NOT NULL,keyword TEXT NOT NULL,CONSTRAINT pk_raster_coverages_keyword PRIMARY KEY (coverage_name, keyword),CONSTRAINT fk_raster_coverages_keyword FOREIGN KEY (coverage_name) REFERENCES raster_coverages (coverage_name) ON DELETE CASCADE)
+ in following column keyword of table raster_coverages_keyword
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (edge_id INTEGER PRIMARY KEY AUTOINCREMENT,node_from_code TEXT,node_to_code TEXT,edge_code TEXT)
+ in following column edge_code of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata_reference (reference_scope TEXT NOT NULL DEFAULT 'table',table_name TEXT NOT NULL DEFAULT 'undefined',column_name TEXT NOT NULL DEFAULT 'undefined',row_id_value INTEGER NOT NULL DEFAULT 0,timestamp TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),md_file_id INTEGER NOT NULL DEFAULT 0,md_parent_id INTEGER NOT NULL DEFAULT 0,CONSTRAINT fk_isometa_mfi FOREIGN KEY (md_file_id) REFERENCES ISO_metadata(id),CONSTRAINT fk_isometa_mpi FOREIGN KEY (md_parent_id) REFERENCES ISO_metadata(id))
+ in following column timestamp of table ISO_metadata_reference
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata_reference (reference_scope TEXT NOT NULL DEFAULT 'table',table_name TEXT NOT NULL DEFAULT 'undefined',column_name TEXT NOT NULL DEFAULT 'undefined',row_id_value INTEGER NOT NULL DEFAULT 0,timestamp TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),md_file_id INTEGER NOT NULL DEFAULT 0,md_parent_id INTEGER NOT NULL DEFAULT 0,CONSTRAINT fk_isometa_mfi FOREIGN KEY (md_file_id) REFERENCES ISO_metadata(id),CONSTRAINT fk_isometa_mpi FOREIGN KEY (md_parent_id) REFERENCES ISO_metadata(id))
+ in following column column_name of table ISO_metadata_reference
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL)
+ in following column layer of table "%s"
+Detected: Duplicate Column Names Found in following statement: create table t1 (c1 int)
+ in following column c1 and in column c1 of table t2
+Detected: Clone Tables Found in following statement: create table child1 (id1 integer, id2 integer, foreign key(id1) references parent(id1), foreign key(id2) references parent(id2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_vector_styled_layers (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,style_id INTEGER NOT NULL,style_name TEXT NOT NULL DEFAULT 'missing_name',style BLOB NOT NULL,CONSTRAINT pk_sevstl PRIMARY KEY (f_table_name, f_geometry_column, style_id),CONSTRAINT fk_sevstl FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_table_name of table SE_vector_styled_layers
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_table_name of table vector_coverages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata (id INTEGER PRIMARY KEY AUTOINCREMENT,md_scope TEXT NOT NULL DEFAULT 'dataset',metadata BLOB NOT NULL DEFAULT (zeroblob(4)),fileId TEXT,parentId TEXT)
+ in following column parentId of table ISO_metadata
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOTT NULL, layer TEXT NOT NULL)
+ in following column filename of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column prime_meridian of table spatial_ref_sys_aux
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ISO_metadata_reference (reference_scope TEXT NOT NULL DEFAULT 'table',table_name TEXT NOT NULL DEFAULT 'undefined',column_name TEXT NOT NULL DEFAULT 'undefined',row_id_value INTEGER NOT NULL DEFAULT 0,timestamp TEXT NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),md_file_id INTEGER NOT NULL DEFAULT 0,md_parent_id INTEGER NOT NULL DEFAULT 0,CONSTRAINT fk_isometa_mfi FOREIGN KEY (md_file_id) REFERENCES ISO_metadata(id),CONSTRAINT fk_isometa_mpi FOREIGN KEY (md_parent_id) REFERENCES ISO_metadata(id))
+ in following column table_name of table ISO_metadata_reference
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column axis_2_name of table spatial_ref_sys_aux
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Multicolumn Attribute Found in following statement: create table t2 (c1 int, c2 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_raster_styles', 'style_name']
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_contents (table_name TEXT NOT NULL PRIMARY KEY,data_type TEXT NOT NULL,identifier TEXT UNIQUE,description TEXT DEFAULT '',last_change DATETIME NOT NULL DEFAULT (strftime('%Y-%m-%dT%H:%M:%fZ',CURRENT_TIMESTAMP)),min_x DOUBLE,min_y DOUBLE,max_x DOUBLE,max_y DOUBLE,srs_id INTEGER,CONSTRAINT fk_gc_r_srid FOREIGN KEY (srs_id) REFERENCES gpkg_spatial_ref_sys(srs_id))
+ in following column identifier of table gpkg_contents
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE SE_external_graphics (xlink_href TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** undefined ***',abstract TEXT NOT NULL DEFAULT '*** undefined ***',resource BLOB NOT NULL,file_name TEXT NOT NULL DEFAULT '*** undefined ***')
+ in following column file_name of table SE_external_graphics
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_spatial_ref_sys (srs_name TEXT NOT NULL,srs_id INTEGER NOT NULL PRIMARY KEY,organization TEXT NOT NULL,organization_coordsys_id INTEGER NOT NULL,definition TEXT NOT NULL,description TEXT)
+ in following column definition of table gpkg_spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (pkid INTEGER, sub INTEGER, parent TEXT, node TEXT, attribute TEXT, value TEXT, xpath_expr TEXT)
+ in following column value of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, block_id TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column layer of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" (f_table_name TEXT, f_geometry_column TEXT, search_frame BLOB)
+ in following column f_table_name of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column spheroid of table spatial_ref_sys_aux
+Detected: Clone Tables Found in following statement: create table pk2 (col1, col2 primary key, col3)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "%s" ( feature_id INTEGER PRIMARY KEY AUTOINCREMENT, filename TEXT NOT NULL, layer TEXT NOT NULL, label TEXT NOT NULL, rotation DOUBLE NOT NULL)
+ in following column filename of table "%s"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS spatial_ref_sys_aux (	srid INTEGER NOT NULL PRIMARY KEY,	is_geographic INTEGER,	has_flipped_axes INTEGER,	spheroid TEXT,	prime_meridian TEXT,	datum TEXT,	projection TEXT,	unit TEXT,	axis_1_name TEXT,	axis_1_orientation TEXT,	axis_2_name TEXT,	axis_2_orientation TEXT,	CONSTRAINT fk_sprefsys FOREIGN KEY (srid) 	REFERENCES spatial_ref_sys (srid))
+ in following column projection of table spatial_ref_sys_aux
+Detected: Index Shotgun Variant: 3 Following index not used : ['testindex', 'sn']
+Detected: God Table Found in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE "%s" (PKUID INTEGER, Geometry BLOB)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['SE_styled_group_refs', 'vector_coverage_name']
+Detected: Clone Tables Found in following statement: create table tbl (colid integer primary key AUTOINCREMENT, col varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vector_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,geo_minx DOUBLE,geo_miny DOUBLE,geo_maxx DOUBLE,geo_maxy DOUBLE,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',is_queryable INTEGER,CONSTRAINT fk_vector_coverages FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column abstract of table vector_coverages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raster_coverages (coverage_name TEXT NOT NULL PRIMARY KEY,title TEXT NOT NULL DEFAULT '*** missing Title ***',abstract TEXT NOT NULL DEFAULT '*** missing Abstract ***',sample_type TEXT NOT NULL DEFAULT '*** undefined ***',pixel_type TEXT NOT NULL DEFAULT '*** undefined ***',num_bands INTEGER NOT NULL DEFAULT 1,compression TEXT NOT NULL DEFAULT 'NONE',quality INTEGER NOT NULL DEFAULT 100,tile_width INTEGER NOT NULL DEFAULT 512,tile_height INTEGER NOT NULL DEFAULT 512,horz_resolution DOUBLE NOT NULL,vert_resolution DOUBLE NOT NULL,srid INTEGER NOT NULL,nodata_pixel BLOB NOT NULL,palette BLOB,statistics BLOB,extent_minx DOUBLE,extent_miny DOUBLE,extent_maxx DOUBLE,extent_maxy DOUBLE,strict_resolution INTEGER NOT NULL,mixed_resolutions INTEGER NOT NULL,section_paths INTEGER NOT NULL,section_md5 INTEGER NOT NULL,section_summary INTEGER NOT NULL,CONSTRAINT fk_rc_srs FOREIGN KEY (srid) REFERENCES spatial_ref_sys (srid))
+ in following column title of table raster_coverages

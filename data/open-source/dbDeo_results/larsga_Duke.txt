@@ -1,0 +1,3 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into testdata values (1, 'smith, john')
+
+Detected: Index Shotgun Variant: 1

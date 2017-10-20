@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM '.db('shop_products').' WHERE LOWER(name) REGEXP \'[[:<:]]'.mb_strtolower($pattern_info['search'], 'UTF-8').'[[:>:]]\''.$where;
+

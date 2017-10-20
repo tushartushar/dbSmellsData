@@ -1,0 +1,1 @@
+CREATE TABLE `libraryBook` ( `library` int(11) NOT NULL, `book` int(11) NOT NULL, KEY `library` (`library`), KEY `book` (`book`), CONSTRAINT `librarybook_ibfk_1` FOREIGN KEY (`library`) REFERENCES `library` (`id`), CONSTRAINT `librarybook_ibfk_2` FOREIGN KEY (`book`) REFERENCES `book` (`id`) )

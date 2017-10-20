@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clusters(Id INT, Description TEXT, Locus TEXT, Annotation TEXT, Sequences TEXT, Profile TXT, Precursor TXT)
+ in following column Annotation of table clusters
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clusters(Id INT, Description TEXT, Locus TEXT, Annotation TEXT, Sequences TEXT, Profile TXT, Precursor TXT)
+ in following column Description of table clusters
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clusters(Id INT, Description TEXT, Locus TEXT, Annotation TEXT, Sequences TEXT, Profile TXT, Precursor TXT)
+ in following column Locus of table clusters
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clusters(Id INT, Description TEXT, Locus TEXT, Annotation TEXT, Sequences TEXT, Profile TXT, Precursor TXT)
+ in following column Sequences of table clusters

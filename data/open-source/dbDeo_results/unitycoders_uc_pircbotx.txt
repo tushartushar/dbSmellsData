@@ -1,0 +1,23 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS permissions (user TEXT, name TEXT)
+ in following column user of table permissions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS factoid (name TEXT PRIMARY KEY, body TEXT)
+ in following column name of table factoid
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS profiles (user TEXT)
+ in following column user of table profiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS larts" + "(id INTEGER PRIMARY KEY AUTOINCREMENT, channel TEXT, nick TEXT, pattern TEXT)
+ in following column pattern of table larts
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS joins (nick TEXT PRIMARY KEY, joins INTEGER DEFAULT 1)
+ in following column nick of table joins
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS lines (line TEXT)
+ in following column line of table lines
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS larts" + "(id INTEGER PRIMARY KEY AUTOINCREMENT, channel TEXT, nick TEXT, pattern TEXT)
+ in following column channel of table larts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS larts" + "(id INTEGER PRIMARY KEY AUTOINCREMENT, channel TEXT, nick TEXT, pattern TEXT)
+ in following column nick of table larts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS permissions (user TEXT, name TEXT)
+ in following column name of table permissions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS factoid (name TEXT PRIMARY KEY, body TEXT)
+ in following column body of table factoid
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS karma (target TEXT PRIMARY KEY, karma INTEGER DEFAULT 1)
+ in following column target of table karma

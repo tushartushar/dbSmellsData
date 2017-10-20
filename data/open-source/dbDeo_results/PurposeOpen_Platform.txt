@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `temp_AK_usermailing` ( `id` int(11) NOT NULL, `mailing_id` int(11) NOT NULL, `user_id` int(11) NOT NULL, `subject_id` int(11) DEFAULT NULL, `created_at` datetime NOT NULL, COMPLETED_AT datetime, PRIMARY KEY (`id`), UNIQUE KEY `mailing_id` (`mailing_id`,`user_id`), KEY `core_usermailing_mailing_id` (`mailing_id`), KEY `core_usermailing_user_id` (`user_id`), KEY `core_usermailing_subject_id` (`subject_id`), KEY `core_usermailing_created_at` (`created_at`) )
+ in following column `created_at` and in column `created_at` of table `temp_AK_click`
+Detected: Index Shotgun Variant: 1

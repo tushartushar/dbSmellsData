@@ -1,0 +1,182 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE msg2folder (					Id INTEGER PRIMARY KEY AUTOINCREMENT,					MsgId INTEGER NOT NULL REFERENCES messages (Id) ON DELETE CASCADE,					FolderId INTEGER NOT NULL REFERENCES folders (Id) ON DELETE CASCADE,					FolderMessageId TEXT NOT NULL					)
+ in following column FolderMessageId of table msg2folder
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column item_parents_hash of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column title of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column rating of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Identities (	Ver BLOB NOT NULL,	Category TEXT,	Language TEXT,	Name TEXT,	Type TEXT)
+ in following column Language of table Identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column type of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE packages (	package_id INTEGER PRIMARY KEY AUTOINCREMENT,	name TEXT NOT NULL,	version TEXT NOT NULL)
+ in following column name of table packages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column item_url of table mrss
+Detected: God Table Found in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Tags (		TagId INTEGER PRIMARY KEY,		TagLCId TEXT UNIQUE ON CONFLICT IGNORE,		TagText TEXT	)
+ in following column TagText of table Tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_peerlinks ( mrss_peerlink_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, type TEXT, link TEXT)
+ in following column type of table mrss_peerlinks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Tags (		TagId INTEGER PRIMARY KEY,		TagLCId TEXT UNIQUE ON CONFLICT IGNORE,		TagText TEXT	)
+ in following column TagLCId of table Tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column copyright_text of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column medium of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column display_title of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE enclosures ( enclosure_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT NOT NULL, type TEXT NOT NULL, length BIGINT NOT NULL, lang TEXT )
+ in following column type of table enclosures
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE images (	name TEXT NOT NULL,	url TEXT NOT NULL,	type SMALLINT NOT NULL)
+ in following column url of table images
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tags (	name TEXT NOT NULL,	tag TEXT NOT NULL)
+ in following column tag of table tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column description of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column longdescr of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column maint_email of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column title of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column url of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column keywords of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column tags of table channels
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column type and in column type of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_thumbnails ( mrss_thumb_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, url TEXT, width INTEGER, height INTEGER, time TEXT)
+ in following column time of table mrss_thumbnails
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE packages (	package_id INTEGER PRIMARY KEY AUTOINCREMENT,	name TEXT NOT NULL,	version TEXT NOT NULL)
+ in following column version of table packages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column name of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Identities (	Ver BLOB NOT NULL,	Category TEXT,	Language TEXT,	Name TEXT,	Type TEXT)
+ in following column Category of table Identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_credits ( mrss_credits_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, role TEXT, who TEXT)
+ in following column who of table mrss_credits
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_thumbnails ( mrss_thumb_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, url TEXT, width INTEGER, height INTEGER, time TEXT)
+ in following column url of table mrss_thumbnails
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_peerlinks ( mrss_peerlink_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, type TEXT, link TEXT)
+ in following column link of table mrss_peerlinks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column item_title of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE folders (					Id INTEGER PRIMARY KEY AUTOINCREMENT,					FolderPath TEXT UNIQUE NOT NULL					)
+ in following column FolderPath of table folders
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE channels SET description = :description, last_build = :last_build, tags = :tags, language = :language, author = :author, pixmap_url = :pixmap_url, pixmap = :pixmap, favicon = :favicon, display_title = :display_title  WHERE channel_id = :channel_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column longitude of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column maint_name of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column icon_url of table infos
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE packagesizes (	package_id INTEGER PRIMARY KEY,	size INTEGER NOT NULL)
+ in following column size and in column size of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column language of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_scenes ( mrss_scene_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, title TEXT, description TEXT, start_time TEXT, end_time TEXT)
+ in following column end_time of table mrss_scenes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column author of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE History (		EntryId INTEGER PRIMARY KEY,		Title TEXT NOT NULL,		TS TIMESTAMP NOT NULL	)
+ in following column Title of table History
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Identities (	Ver BLOB NOT NULL,	Category TEXT,	Language TEXT,	Name TEXT,	Type TEXT)
+ in following column Name of table Identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column name of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column rating_scheme of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column maint_name of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column framerate of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Identities (	Ver BLOB NOT NULL,	Category TEXT,	Language TEXT,	Name TEXT,	Type TEXT)
+ in following column Type of table Identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_scenes ( mrss_scene_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, title TEXT, description TEXT, start_time TEXT, end_time TEXT)
+ in following column start_time of table mrss_scenes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column tags of table mrss
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE items SET description = :description, author = :author, category = :category, pub_date = :pub_date, unread = :unread, num_comments = :num_comments, comments_url = :comments_url, comments_page_url = :comments_page_url, latitude = :latitude, longitude = :longitude  WHERE item_id = :item_id
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column title of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column long_descr of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE enclosures ( enclosure_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT NOT NULL, type TEXT NOT NULL, length BIGINT NOT NULL, lang TEXT )
+ in following column lang of table enclosures
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column comments_page_url of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column description of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column url of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column url of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_scenes ( mrss_scene_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, title TEXT, description TEXT, start_time TEXT, end_time TEXT)
+ in following column description of table mrss_scenes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column latitude of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column expression of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_comments ( mrss_comment_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, type TEXT, comment TEXT)
+ in following column type of table mrss_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE deps (	package_id INTEGER REFERENCES packages ON DELETE CASCADE,	name TEXT NOT NULL,	version TEXT NOT NULL,	type SMALLINT NOT NULL)
+ in following column version of table deps
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE images (	name TEXT NOT NULL,	url TEXT NOT NULL,	type SMALLINT NOT NULL)
+ in following column name of table images
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE deps (	package_id INTEGER REFERENCES packages ON DELETE CASCADE,	name TEXT NOT NULL,	version TEXT NOT NULL,	type SMALLINT NOT NULL)
+ in following column name of table deps
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE enclosures ( enclosure_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT NOT NULL, type TEXT NOT NULL, length BIGINT NOT NULL, lang TEXT )
+ in following column url of table enclosures
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column url of table items
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE feeds ( feed_id BIGINT PRIMARY KEY, url VARCHAR(255) UNIQUE NOT NULL, last_update TIMESTAMP )
+ in following column url and in column url of table repos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column author of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column copyright_url of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_credits ( mrss_credits_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, role TEXT, who TEXT)
+ in following column role of table mrss_credits
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_comments ( mrss_comment_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, type TEXT, comment TEXT)
+ in following column comment of table mrss_comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column comments_url of table items
+Detected: God Table Found in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column description of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tags (	name TEXT NOT NULL,	tag TEXT NOT NULL)
+ in following column name of table tags
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column pixmap_url of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column category of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE channels ( channel_id BIGINT PRIMARY KEY, feed_id BIGINT NOT NULL, url TEXT, title TEXT, display_title TEXT, description TEXT, last_build TIMESTAMP, tags TEXT, language TEXT, author TEXT, pixmap_url TEXT, pixmap BLOB, favicon BLOB)
+ in following column language of table channels
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss_scenes ( mrss_scene_id BIGINT PRIMARY KEY, mrss_id BIGINT NOT NULL, title TEXT, description TEXT, start_time TEXT, end_time TEXT)
+ in following column title of table mrss_scenes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items ( item_id BIGINT PRIMARY KEY, channel_id BIGINT NOT NULL, title TEXT, url TEXT, description TEXT, author TEXT, category TEXT, guid TEXT, pub_date TIMESTAMP, unread TINYINT, num_comments SMALLINT, comments_url TEXT, comments_page_url TEXT, latitude TEXT, longitude TEXT)
+ in following column guid of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column description of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE components (	component_id INTEGER PRIMARY KEY AUTOINCREMENT,	repo_id INTEGER REFERENCES repos CHECK (repo_id >= 0),	component TEXT)
+ in following column component of table components
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE repos (	repo_id INTEGER PRIMARY KEY AUTOINCREMENT,	url TEXT NOT NULL UNIQUE,	name TEXT NOT NULL UNIQUE,	description TEXT NOT NULL,	longdescr TEXT,	maint_name TEXT,	maint_email TEXT)
+ in following column maint_email of table repos
+Detected: God Table Found in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE infos (	name TEXT NOT NULL UNIQUE,	short_descr TEXT NOT NULL,	long_descr TEXT,	type SMALLINT NOT NULL,	language TEXT,	maint_name TEXT NOT NULL,	maint_email TEXT NOT NULL,	icon_url TEXT)
+ in following column short_descr of table infos
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column samplingrate of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mrss ( mrss_id BIGINT PRIMARY KEY, item_id BIGINT NOT NULL, url TEXT, size BIGINT, type TEXT, medium TEXT, is_default TINYINT, expression TEXT, bitrate INTEGER, framerate REAL, samplingrate REAL, channels SMALLINT, duration INTEGER, width INTEGER, height INTEGER, lang TEXT, mediagroup INTEGER, rating TEXT, rating_scheme TEXT, title TEXT, description TEXT, keywords TEXT, copyright_url TEXT, copyright_text TEXT, star_rating_average SMALLINT, star_rating_count INTEGER, star_rating_min SMALLINT, star_rating_max SMALLINT, stat_views INTEGER, stat_favs INTEGER, tags TEXT, item_parents_hash TEXT, item_title TEXT, item_url TEXT)
+ in following column lang of table mrss
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages (					Id INTEGER PRIMARY KEY AUTOINCREMENT,					UniqueId TEXT UNIQUE,					IsRead BOOL NOT NULL					)
+ in following column UniqueId of table messages

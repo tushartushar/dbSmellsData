@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE jms_jobs SET stackTrace = :trace, memoryUsage = :memoryUsage, memoryUsageReal = :memoryUsageReal  WHERE id = :id
+

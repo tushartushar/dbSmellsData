@@ -1,0 +1,65 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smdefine` ( `id` int(11) NOT NULL, `variable` varchar(64) NOT NULL, `value` tinytext NOT NULL, `comment` tinytext NOT NULL)
+ in following column `comment` of table `sm_smdefine`
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `description` of table `sm_smfunctions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `treturn` of table `sm_smfunctions`
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smdefine` ( `id` int(11) NOT NULL, `variable` varchar(64) NOT NULL, `value` tinytext NOT NULL, `comment` tinytext NOT NULL)
+ in following column `value` of table `sm_smdefine`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smposts` (`id` int(11) NOT NULL, `file` int(11) NOT NULL, `func` int(11) NOT NULL, `time` int(11) NOT NULL, `poster` varchar(32) NOT NULL, `body` text NOT NULL, `ip` varchar(16) NOT NULL)
+ in following column `body` of table `sm_smposts`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s ( auth TEXT NOT NULL DEFAULT '', password TEXT NOT NULL DEFAULT '', access TEXT NOT NULL DEFAULT '', flags TEXT NOT NULL DEFAULT '' )
+ in following column password of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s ( auth TEXT NOT NULL DEFAULT '', password TEXT NOT NULL DEFAULT '', access TEXT NOT NULL DEFAULT '', flags TEXT NOT NULL DEFAULT '' )
+ in following column access of table %s
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smconst` (`id` int(11) NOT NULL, `fileid` int(11) NOT NULL, `descrip` tinytext NOT NULL, `fulltext` text NOT NULL)
+ in following column `descrip` of table `sm_smconst`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `onerror` of table `sm_smfunctions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s ( auth TEXT NOT NULL DEFAULT '', password TEXT NOT NULL DEFAULT '', access TEXT NOT NULL DEFAULT '', flags TEXT NOT NULL DEFAULT '' )
+ in following column auth of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `funcinput` of table `sm_smfunctions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s ( auth TEXT NOT NULL DEFAULT '', password TEXT NOT NULL DEFAULT '', access TEXT NOT NULL DEFAULT '', flags TEXT NOT NULL DEFAULT '' )
+ in following column flags of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfilescon` ( `id` int(11) NOT NULL, `cont` text NOT NULL)
+ in following column `cont` of table `sm_smfilescon`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `fullfunc` of table `sm_smfunctions`
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smconst` (`id` int(11) NOT NULL, `fileid` int(11) NOT NULL, `descrip` tinytext NOT NULL, `fulltext` text NOT NULL)
+ in following column `fulltext` of table `sm_smconst`
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `sm_sminfo` ( `master` varchar(32) NOT NULL, `infoa` int(11) NOT NULL, `infob` varchar(32) NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `sm_smposts` (`id` int(11) NOT NULL, `file` int(11) NOT NULL, `func` int(11) NOT NULL, `time` int(11) NOT NULL, `poster` varchar(32) NOT NULL, `body` text NOT NULL, `ip` varchar(16) NOT NULL)
+ in following column `func` and in column `func` of table `sm_smfunctions`
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `sm_smfunctions` ( `id` int(11) NOT NULL, `func` varchar(64) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL, `fullfunc` text NOT NULL, `description` text NOT NULL, `treturn` tinytext NOT NULL, `onerror` tinytext NOT NULL, `funcinput` text NOT NULL, `exemple` text NOT NULL, `inc` int(11) NOT NULL, `incname` varchar(32) NOT NULL, `typeof` int(11) NOT NULL, `depreached` tinyint(1) NOT NULL, `version` varchar(32) NOT NULL)
+ in following column `exemple` of table `sm_smfunctions`
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

@@ -1,0 +1,44 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'cnumpyndarrayq']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_minima (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	fvib FLOAT, 	pgorder INTEGER, 	invalid INTEGER, 	user_data BLOB, 	PRIMARY KEY (_id))
+ in following column energy of table tbl_minima
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'tbT8']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'cnumpy']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE tbl_transition_states (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	_minimum1_id INTEGER, 	_minimum2_id INTEGER, 	eigenval FLOAT, 	eigenvec BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id), 	FOREIGN KEY(_minimum1_id) REFERENCES tbl_minima (_id), 	FOREIGN KEY(_minimum2_id) REFERENCES tbl_minima (_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_minima (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	fvib FLOAT, 	pgorder INTEGER, 	invalid INTEGER, 	user_data BLOB, 	PRIMARY KEY (_id))
+ in following column fvib of table tbl_minima
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'U']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'cnumpydtypeq']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'Kt']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', '_minimum1_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_transition_states (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	_minimum1_id INTEGER, 	_minimum2_id INTEGER, 	eigenval FLOAT, 	eigenvec BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id), 	FOREIGN KEY(_minimum1_id) REFERENCES tbl_minima (_id), 	FOREIGN KEY(_minimum2_id) REFERENCES tbl_minima (_id))
+ in following column energy of table tbl_transition_states
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tbl_minima', '_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'tabletbl_distancestbl_distances']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'W']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'K']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'k']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'F']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'Rq']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_transition_states (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	_minimum1_id INTEGER, 	_minimum2_id INTEGER, 	eigenval FLOAT, 	eigenvec BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id), 	FOREIGN KEY(_minimum1_id) REFERENCES tbl_minima (_id), 	FOREIGN KEY(_minimum2_id) REFERENCES tbl_minima (_id))
+ in following column fvib of table tbl_transition_states
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', '6']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'NNNJJK']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'multiarray_reconstructq']
+Detected: God Table Found in following statement: CREATE TABLE tbl_transition_states (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	_minimum1_id INTEGER, 	_minimum2_id INTEGER, 	eigenval FLOAT, 	eigenvec BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id), 	FOREIGN KEY(_minimum1_id) REFERENCES tbl_minima (_id), 	FOREIGN KEY(_minimum2_id) REFERENCES tbl_minima (_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'L']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_minima', 'fvib']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'f8K']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_minima (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id))
+ in following column fvib of table tbl_minima
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', '_minimum2_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'bRq']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_transition_states (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	_minimum1_id INTEGER, 	_minimum2_id INTEGER, 	eigenval FLOAT, 	eigenvec BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id), 	FOREIGN KEY(_minimum1_id) REFERENCES tbl_minima (_id), 	FOREIGN KEY(_minimum2_id) REFERENCES tbl_minima (_id))
+ in following column eigenval of table tbl_transition_states
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'CDa']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'core']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_transition_states', 'p']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl_minima (	_id INTEGER NOT NULL, 	energy FLOAT, 	coords BLOB, 	fvib FLOAT, 	pgorder INTEGER, invalid INTEGER, user_data BLOB, 	PRIMARY KEY (_id))
+ in following column energy of table tbl_minima

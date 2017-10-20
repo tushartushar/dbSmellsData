@@ -1,0 +1,16 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['access_log', 'sc_status']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE environ (\n\ name text PRIMARY KEY,\n\ value text\n\)
+ in following column \ of table environ
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lnav_views (\n\ name text PRIMARY KEY,\n\ top integer,\n\ left integer,\n\ height integer,\n\ inner_height integer\n\)
+ in following column \ of table lnav_views
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foobar ( mykey integer primary key, name text)
+ in following column name of table foobar
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS db.person ( id integer PRIMARY KEY, first_name text, last_name, age integer )
+ in following column first_name of table db
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS http_status_codes ( status integer PRIMARY KEY, message text, FOREIGN KEY(status) REFERENCES access_log(sc_status))
+ in following column message of table http_status_codes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE http_status_codes ( status integer PRIMARY KEY, message text, FOREIGN KEY(status) REFERENCES access_log(sc_status))
+ in following column message of table http_status_codes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE environ (\n\ name text PRIMARY KEY,\n\ value text\n\)
+ in following column \ and in column \ of table lnav_views

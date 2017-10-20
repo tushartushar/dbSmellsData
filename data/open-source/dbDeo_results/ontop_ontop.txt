@@ -1,0 +1,191 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE T1( id INT NOT NULL, p1 VARCHAR(10), CONSTRAINT r_pk1 PRIMARY KEY (id ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `seis_acquisition_progress` ( `seaProgressDate` date NOT NULL, `seaProgressText2` varchar(40) NOT NULL, `seaProgressText` text NOT NULL, `seaProgressDescription` text, `seaNpdidSurvey` int(11) NOT NULL COMMENT 'NPDID for survey', `seis_acquisition_progress_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`seis_acquisition_progress_id`,`seaProgressText2`), UNIQUE `seis_acquisition_progress_id` (`seis_acquisition_progress_id`), CONSTRAINT `seis_acquisition_progress_ibfk_1` FOREIGN KEY (`seaNpdidSurvey`) REFERENCES `seis_acquisition` (`seaNpdidSurvey`))
+ in following column `seaProgressDescription` of table `seis_acquisition_progress`
+Detected: God Table Found in following statement: CREATE TABLE `bsns_arr_area_area_poly_hst` ( `baaName` varchar(40) NOT NULL COMMENT 'Name', `baaAreaPolyDateValidFrom` date NOT NULL COMMENT 'Date valid from', `baaAreaPolyDateValidTo` date NOT NULL DEFAULT '0000-00-00' COMMENT 'Date valid to', `baaAreaPolyNationCode2` varchar(2) NOT NULL COMMENT 'Nation code', `baaAreaPolyBlockName` varchar(40) NOT NULL DEFAULT '' COMMENT 'Block name', `baaAreaPolyNo` int(11) NOT NULL, `baaAreaPolyArea` decimal(13,6) NOT NULL COMMENT 'Polygon area [km2]', `baaNpdidBsnsArrArea` int(11) NOT NULL COMMENT 'NPDID Bsns. Arr. Area', `baaAreaPolyDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`baaNpdidBsnsArrArea`,`baaAreaPolyBlockName`,`baaAreaPolyNo`,`baaAreaPolyDateValidFrom`,`baaAreaPolyDateValidTo`), CONSTRAINT `bsns_arr_area_area_poly_hst_ibfk_1` FOREIGN KEY (`baaNpdidBsnsArrArea`) REFERENCES `bsns_arr_area` (`baaNpdidBsnsArrArea`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE DS2 ( wid integer NOT NULL, WellboreName character varying(100), Active character varying(100), Well character varying(100))
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE AKA_NAME( ID INT NOT NULL, PERSON_ID INTEGER NOT NULL, NAME TEXT NOT NULL, IMDB_INDEX VARCHAR(12), NAME_PCODE_CF VARCHAR(5), NAME_PCODE_NF VARCHAR(5), SURNAME_PCODE VARCHAR(5), CONSTRAINT AKA_NAME_PKEY PRIMARY KEY (ID), CONSTRAINT AKA_NAME_PERSON_ID_EXISTS FOREIGN KEY (PERSON_ID) REFERENCES NAME (ID) )
+ in following column NAME of table AKA_NAME
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE "R"( id INT NOT NULL, p1 VARCHAR(10), p2 VARCHAR(10), CONSTRAINT r_pk PRIMARY KEY (id ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE company (	id INT, 	addressid INT,	name VARCHAR(100), 	marketshares VARCHAR(100), 	networth INT)
+ in following column marketshares and in column marketshares of table "stockexchange"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".stockinformation ( id integer NOT NULL, numberofshares integer, sharetype boolean, companyid integer, description text)
+ in following column numberofshares and in column numberofshares of table stockinformation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE NAME( ID INT NOT NULL, NAME TEXT NOT NULL, IMDB_INDEX VARCHAR(12), IMDB_ID INTEGER, NAME_PCODE_CF VARCHAR(5), NAME_PCODE_NF VARCHAR(5), SURNAME_PCODE VARCHAR(5), CONSTRAINT NAME_PKEY PRIMARY KEY (ID))
+ in following column NAME of table NAME
+Detected: Clone Tables Found in following statement: CREATE TABLE TABLE1 ( uri character varying(100) NOT NULL, val1 integer NOT NULL, val2 integer NOT NULL, val3 integer NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE reverseuri_test ( name1 character varying(100),	name2 character varying(100),	name3 character varying(100))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE brokerworksfor (	id INT, 	clientid INT,	brokerid INT,	companyid INT)
+ in following column clientid and in column clientid of table "stockexchange"
+Detected: God Table Found in following statement: CREATE TABLE `licence_phase_hst` ( `prlName` varchar(50) NOT NULL COMMENT 'Production licence', `prlDatePhaseValidFrom` date NOT NULL DEFAULT '0000-00-00' COMMENT 'Date phase valid from', `prlDatePhaseValidTo` date NOT NULL DEFAULT '0000-00-00' COMMENT 'Date phase valid to', `prlPhase` varchar(40) NOT NULL COMMENT 'Phase', `prlDateGranted` date NOT NULL COMMENT 'Date granted', `prlDateValidTo` date NOT NULL COMMENT 'Date valid to', `prlDateInitialPeriodExpires` date NOT NULL COMMENT 'Expiry date, initial period', `prlActiveStatusIndicator` varchar(40) NOT NULL COMMENT 'Active', `prlNpdidLicence` int(11) NOT NULL COMMENT 'NPDID production licence', `prlPhaseDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`prlNpdidLicence`,`prlPhase`,`prlDatePhaseValidFrom`,`prlDatePhaseValidTo`), CONSTRAINT `licence_phase_hst_ibfk_1` FOREIGN KEY (`prlNpdidLicence`) REFERENCES `licence` (`prlNpdidLicence`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE company ( id integer NOT NULL, name character varying(100), marketshares integer, networth real, addressid integer)
+ in following column networth of table company
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO books VALUES (4, 'The Logic Book: Introduction, Second Edition', 10, 0.15, 'good', 'en', '1967-11-05' )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column number and in column number of table address
+Detected: Clone Tables Found in following statement: CREATE TABLE T4( id INT NOT NULL, p1 FLOAT, CONSTRAINT r_pk4 PRIMARY KEY (id ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column . and in column . of table new
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TsameAs13 ( wid1 integer NOT NULL, wid3 integer NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TsameAs12 ( wid1 integer NOT NULL, wid2 integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE client ( id integer NOT NULL, name VARCHAR(100), lastname VARCHAR(100), dateofbirth date, ssn VARCHAR(100), addressid integer)
+ in following column addressid and in column addressid of table company
+Detected: God Table Found in following statement: CREATE TABLE `tuf_petreg_licence_oper` ( `Textbox42` varchar(20) NOT NULL, `Textbox2` varchar(20) NOT NULL, `ptlName` varchar(40) NOT NULL COMMENT 'Tillatelse', `cmpLongName` varchar(200) NOT NULL COMMENT 'Company name', `tufName` varchar(40) NOT NULL COMMENT 'TUF', `tufNpdidTuf` int(11) NOT NULL COMMENT 'NPDID tuf', `cmpNpdidCompany` int(11) NOT NULL COMMENT 'NPDID company', `ptlOperDateUpdated` date DEFAULT NULL COMMENT 'Dato oppdatert', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`tufNpdidTuf`), CONSTRAINT `tuf_petreg_licence_oper_ibfk_2` FOREIGN KEY (`cmpNpdidCompany`) REFERENCES `company` (`cmpNpdidCompany`), CONSTRAINT `tuf_petreg_licence_oper_ibfk_1` FOREIGN KEY (`tufNpdidTuf`) REFERENCES `tuf_petreg_licence` (`tufNpdidTuf`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T9( id INT NOT NULL, id2 INT NOT NULL, CONSTRAINT r_pk9 PRIMARY KEY (id, id2 ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE client ( id integer NOT NULL, name VARCHAR(100), lastname VARCHAR(100), dateofbirth date, ssn VARCHAR(100), addressid integer)
+ in following column lastname and in column lastname of table broker
+Detected: God Table Found in following statement: CREATE TABLE `licence_area_poly_hst` ( `prlName` varchar(50) NOT NULL COMMENT 'Production licence', `prlAreaPolyDateValidFrom` date NOT NULL COMMENT 'Date valid from', `prlAreaPolyDateValidTo` date NOT NULL DEFAULT '0000-00-00' COMMENT 'Date valid to', `prlAreaPolyNationCode` varchar(2) NOT NULL, `prlAreaPolyBlockName` varchar(40) NOT NULL COMMENT 'Block name', `prlAreaPolyStratigraphical` varchar(4) NOT NULL COMMENT 'Stratigraphcal', `prlAreaPolyPolyNo` int(11) NOT NULL, `prlAreaPolyPolyArea` decimal(13,6) NOT NULL COMMENT 'Polygon area [km2]', `prlNpdidLicence` int(11) NOT NULL COMMENT 'NPDID production licence', `prlAreaDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`prlNpdidLicence`,`prlAreaPolyBlockName`,`prlAreaPolyPolyNo`,`prlAreaPolyDateValidFrom`,`prlAreaPolyDateValidTo`), CONSTRAINT `licence_area_poly_hst_ibfk_1` FOREIGN KEY (`prlNpdidLicence`) REFERENCES `licence` (`prlNpdidLicence`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T2( id INT NOT NULL, p1 INTEGER, CONSTRAINT r_pk2 PRIMARY KEY (id ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE COMPANY_NAME( ID INT NOT NULL, NAME TEXT NOT NULL, COUNTRY_CODE VARCHAR(255), IMDB_ID INTEGER, NAME_PCODE_NF VARCHAR(5), NAME_PCODE_SF VARCHAR(5), CONSTRAINT COMPANY_NAME_PKEY PRIMARY KEY (ID))
+ in following column NAME of table COMPANY_NAME
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `tuf_petreg_licence_oper` ( `Textbox42` varchar(20) NOT NULL, `Textbox2` varchar(20) NOT NULL, `ptlName` varchar(40) NOT NULL COMMENT 'Tillatelse', `cmpLongName` varchar(200) NOT NULL COMMENT 'Company name', `tufName` varchar(40) NOT NULL COMMENT 'TUF', `tufNpdidTuf` int(11) NOT NULL COMMENT 'NPDID tuf', `cmpNpdidCompany` int(11) NOT NULL COMMENT 'NPDID company', `ptlOperDateUpdated` date DEFAULT NULL COMMENT 'Dato oppdatert', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`tufNpdidTuf`), CONSTRAINT `tuf_petreg_licence_oper_ibfk_2` FOREIGN KEY (`cmpNpdidCompany`) REFERENCES `company` (`cmpNpdidCompany`), CONSTRAINT `tuf_petreg_licence_oper_ibfk_1` FOREIGN KEY (`tufNpdidTuf`) REFERENCES `tuf_petreg_licence` (`tufNpdidTuf`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `licence_petreg_message` ( `prlName` varchar(50) NOT NULL COMMENT 'Production licence', `ptlMessageDocumentNo` int(11) NOT NULL, `ptlMessage` text NOT NULL COMMENT 'Utdrag av dokument', `ptlMessageRegisteredDate` date NOT NULL COMMENT 'Registreringsdato', `ptlMessageKindDesc` varchar(100) NOT NULL COMMENT 'Type', `ptlMessageDateUpdated` date DEFAULT NULL COMMENT 'Dato oppdatert', `prlNpdidLicence` int(11) NOT NULL COMMENT 'NPDID production licence', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`prlNpdidLicence`,`ptlMessageDocumentNo`), CONSTRAINT `licence_petreg_message_ibfk_1` FOREIGN KEY (`prlNpdidLicence`) REFERENCES `licence` (`prlNpdidLicence`))
+ in following column `ptlMessage` of table `licence_petreg_message`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TsameAs23 ( wid2 integer NOT NULL, wid3 integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column state and in column state of table address
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `seis_acquisition_coordinates_inc_turnarea` ( `seaSurveyName` varchar(100) NOT NULL COMMENT 'Survey name', `seaNpdidSurvey` int(11) NOT NULL COMMENT 'NPDID for survey', `seaPolygonPointNumber` int(11) NOT NULL COMMENT 'Point number', `seaPolygonNSDeg` int(11) NOT NULL COMMENT 'NS degrees', `seaPolygonNSMin` int(11) NOT NULL COMMENT 'NS minutes', `seaPolygonNSSec` decimal(13,6) NOT NULL COMMENT 'NS seconds', `seaPolygonEWDeg` int(11) NOT NULL COMMENT 'EW degrees', `seaPolygonEWMin` int(11) NOT NULL COMMENT 'EW minutes', `seaPolygonEWSec` decimal(13,6) NOT NULL COMMENT 'EW seconds', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`seaSurveyName`,`seaPolygonPointNumber`), CONSTRAINT `seis_acquisition_coordinates_inc_turnarea_ibfk_1` FOREIGN KEY (`seaNpdidSurvey`) REFERENCES `seis_acquisition` (`seaNpdidSurvey`))
+ in following column CONSTRAINT and in column CONSTRAINT of table CHAR_NAME
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE transaction ( id integer NOT NULL, date timestamp, stockid integer, type smallint, brokerid integer, forclientid integer, forcompanyid integer, amount decimal(10,4))
+ in following column stockid and in column stockid of table stockbooklist
+Detected: Clone Tables Found in following statement: CREATE TABLE TABLE2 ( URI2 character varying(100) NOT NULL, VAL integer NOT NULL,)
+
+Detected: Compound Attribute Variant: 1 Found in following statement: select id from Student) JOIN Enrollment ON student_id = StudentId where regexp_like(first_name,'foo') 
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TABLE3 ( URI3 character varying(100) NOT NULL, VAL integer NOT NULL,)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T5( id INT NOT NULL, p1 TIMESTAMP, CONSTRAINT r_pk5 PRIMARY KEY (id ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE company ( id integer NOT NULL, name VARCHAR(100), marketshares integer, networth real, addressid integer)
+ in following column networth of table company
+Detected: Compound Attribute Variant: 1 Found in following statement: select id from (select id from Student) JOIN Enrollment ON student_id = id where regexp_like(first_name,'foo') 
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TsameAs23 ( wid2 integer NOT NULL, wid3 integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE client ( id integer NOT NULL, name VARCHAR(100), lastname VARCHAR(100), dateofbirth date, ssn VARCHAR(100), addressid integer)
+ in following column ssn and in column ssn of table broker
+Detected: God Table Found in following statement: CREATE TABLE `bsns_arr_area` ( `baaName` varchar(40) NOT NULL COMMENT 'Name', `baaKind` varchar(40) NOT NULL COMMENT 'Kind', `baaDateApproved` date NOT NULL COMMENT 'Date approved', `baaDateValidFrom` date NOT NULL COMMENT 'Date valid from', `baaDateValidTo` date DEFAULT NULL COMMENT 'Date valid to', `baaFactPageUrl` varchar(200) NOT NULL COMMENT 'Fact page', `baaFactMapUrl` varchar(200) DEFAULT NULL COMMENT 'Fact map', `baaNpdidBsnsArrArea` int(11) NOT NULL COMMENT 'NPDID Bsns. Arr. Area', `baaDateUpdated` date DEFAULT NULL COMMENT 'Date main level updated', `baaDateUpdatedMax` date DEFAULT NULL COMMENT 'Date all updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`baaNpdidBsnsArrArea`), UNIQUE `index__bsns_arr_area__baaName` (`baaName`))
+
+Detected: God Table Found in following statement: CREATE TABLE `baaArea` ( `baaNpdidBsnsArrArea` int(11) NOT NULL COMMENT 'NPDID Bsns. Arr. Area', `baaNpdidBsnsArrAreaPoly` int(11) NOT NULL, `baaName` varchar(40) NOT NULL COMMENT 'Name', `baaKind` varchar(40) NOT NULL COMMENT 'Kind', `baaAreaPolyDateValidFrom` date NOT NULL COMMENT 'Date valid from', `baaAreaPolyDateValidTo` date DEFAULT NULL COMMENT 'Date valid to', `baaAreaPolyActive` varchar(40) NOT NULL, `baaDateApproved` date NOT NULL COMMENT 'Date approved', `baaDateValidFrom` date NOT NULL COMMENT 'Date valid from', `baaDateValidTo` date DEFAULT NULL COMMENT 'Date valid to', `baaActive` varchar(20) NOT NULL COMMENT 'Active', `baaFactPageUrl` varchar(200) NOT NULL COMMENT 'Fact page', `baaFactMapUrl` varchar(200) DEFAULT NULL COMMENT 'Fact map', `baaAreaGeometryWKT` geometry NOT NULL, PRIMARY KEY (`baaNpdidBsnsArrArea`,`baaNpdidBsnsArrAreaPoly`), CONSTRAINT `baaArea_ibfk_1` FOREIGN KEY (`baaNpdidBsnsArrArea`) REFERENCES `bsns_arr_area` (`baaNpdidBsnsArrArea`))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE T8( id INT NOT NULL, p1 VARCHAR(10), p2 VARCHAR(2), CONSTRAINT r_pk8 PRIMARY KEY (id ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE stockinformation ( id integer NOT NULL, numberofshares integer, sharetype boolean, companyid integer)
+ in following column companyid and in column companyid of table brokerworksfor
+Detected: God Table Found in following statement: CREATE TABLE `facility_moveable` ( `fclName` varchar(40) NOT NULL COMMENT 'Name', `fclCurrentRespCompanyName` varchar(100) DEFAULT NULL COMMENT 'Current responsible company', `fclKind` varchar(40) NOT NULL COMMENT 'Kind', `fclFunctions` varchar(400) DEFAULT NULL COMMENT 'Functions', `fclNationName` varchar(40) NOT NULL COMMENT 'Nation', `fclFactPageUrl` varchar(200) NOT NULL COMMENT 'Fact page', `fclNpdidFacility` int(11) NOT NULL COMMENT 'NPDID facility', `fclNpdidCurrentRespCompany` int(11) DEFAULT NULL COMMENT 'NPDID responsible company', `fclDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`fclNpdidFacility`), CONSTRAINT `facility_moveable_ibfk_1` FOREIGN KEY (`fclNpdidCurrentRespCompany`) REFERENCES `company` (`cmpNpdidCompany`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T3( id INT NOT NULL, p1 DECIMAL, CONSTRAINT r_pk3 PRIMARY KEY (id ))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE transaction ( id integer NOT NULL, date timestamp, stockid integer, type smallint, brokerid integer, forclientid integer, forcompanyid integer, amount decimal(10,4))
+ in following column type and in column type of table "stockexchange"
+Detected: Clone Tables Found in following statement: CREATE TABLE TsameAs14 ( oid1 integer NOT NULL, oid4 integer NOT NULL)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE T9( id INT NOT NULL, id2 INT NOT NULL, CONSTRAINT r_pk9 PRIMARY KEY (id, id2 ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE CHAR_NAME( ID INT NOT NULL, NAME TEXT NOT NULL, IMDB_INDEX VARCHAR(12), IMDB_ID INTEGER, NAME_PCODE_NF VARCHAR(5), SURNAME_PCODE VARCHAR(5), CONSTRAINT CHAR_NAME_PKEY PRIMARY KEY (ID))
+ in following column NAME of table CHAR_NAME
+Detected: God Table Found in following statement: CREATE TABLE `wellbore_mud` ( `wlbName` varchar(60) NOT NULL COMMENT 'Wellbore name', `wlbMD` decimal(13,6) NOT NULL COMMENT 'Depth MD [m]', `wlbMudWeightAtMD` decimal(13,6) NOT NULL COMMENT 'Mud weight [g/cm3]', `wlbMudViscosityAtMD` decimal(13,6) NOT NULL COMMENT 'Visc. [mPa.s]', `wlbYieldPointAtMD` decimal(13,6) NOT NULL COMMENT 'Yield point [Pa]', `wlbMudType` varchar(40) DEFAULT NULL COMMENT 'Mud type', `wlbMudDateMeasured` date DEFAULT NULL COMMENT 'Date measured', `wlbNpdidWellbore` int(11) NOT NULL COMMENT 'NPDID wellbore', `wlbMudDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, `wellbore_mud_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`wellbore_mud_id`,`wlbNpdidWellbore`), UNIQUE `wellbore_mud_id` (`wellbore_mud_id`), CONSTRAINT `wellbore_mud_ibfk_1` FOREIGN KEY (`wlbNpdidWellbore`) REFERENCES `wellbore_npdid_overview` (`wlbNpdidWellbore`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stockinformation ( id integer NOT NULL, numberofshares integer, sharetype boolean, companyid integer, description text)
+ in following column description of table stockinformation
+Detected: Clone Tables Found in following statement: CREATE TABLE DS3 ( wid integer NOT NULL, WellboreName character varying(100), Depth integer, Happy character varying(100))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE transaction ( id integer NOT NULL, date timestamp, stockid integer, type smallint, brokerid integer, forclientid integer, forcompanyid integer, amount decimal(10,4))
+ in following column id and in column id of table address
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `seis_acquisition_progress` ( `seaProgressDate` date NOT NULL, `seaProgressText2` varchar(40) NOT NULL, `seaProgressText` text NOT NULL, `seaProgressDescription` text, `seaNpdidSurvey` int(11) NOT NULL COMMENT 'NPDID for survey', `seis_acquisition_progress_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`seis_acquisition_progress_id`,`seaProgressText2`), UNIQUE `seis_acquisition_progress_id` (`seis_acquisition_progress_id`), CONSTRAINT `seis_acquisition_progress_ibfk_1` FOREIGN KEY (`seaNpdidSurvey`) REFERENCES `seis_acquisition` (`seaNpdidSurvey`))
+ in following column `seaProgressText` of table `seis_acquisition_progress`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE transaction ( id integer NOT NULL, date timestamp, stockid integer, type smallint, brokerid integer, forclientid integer, forcompanyid integer, amount decimal(10,4))
+ in following column date and in column date of table stockbooklist
+Detected: God Table Found in following statement: CREATE TABLE `discovery_reserves` ( `dscName` varchar(40) NOT NULL COMMENT 'Discovery name', `dscReservesRC` varchar(40) NOT NULL COMMENT 'Resource class', `dscRecoverableOil` decimal(13,6) NOT NULL COMMENT 'Rec. oil [mill Sm3]', `dscRecoverableGas` decimal(13,6) NOT NULL COMMENT 'Rec. gas [bill Sm3]', `dscRecoverableNGL` decimal(13,6) NOT NULL COMMENT 'Rec. NGL [mill tonn]', `dscRecoverableCondensate` decimal(13,6) NOT NULL COMMENT 'Rec. cond. [mill Sm3]', `dscDateOffResEstDisplay` date NOT NULL COMMENT 'Resource updated date', `dscNpdidDiscovery` int(11) NOT NULL COMMENT 'NPDID discovery', `dscReservesDateUpdated` date NOT NULL, `dateSyncNPD` date NOT NULL, PRIMARY KEY (`dscNpdidDiscovery`,`dscReservesRC`), CONSTRAINT `discovery_reserves_ibfk_1` FOREIGN KEY (`dscNpdidDiscovery`) REFERENCES `discovery` (`dscNpdidDiscovery`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column street and in column street of table address
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TsameAs14 ( oid1 integer NOT NULL, oid4 integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE T6( id INT NOT NULL, p1 BOOLEAN, CONSTRAINT r_pk6 PRIMARY KEY (id ))
+ in following column p1 and in column p1 of table "R"
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TsameAs12 ( wid1 integer NOT NULL, wid2 integer NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "stockexchange".stockinformation ( id integer NOT NULL, numberofshares integer, sharetype boolean, companyid integer, description text)
+ in following column description of table "stockexchange"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE books ( id int NOT NULL, title character varying(100), price int, discount decimal, description character varying(100), lang character varying(100), publication_date TIMESTAMP)
+ in following column description and in column description of table stockinformation
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE stockinformation ( id integer NOT NULL, numberofshares integer, sharetype bit, companyid integer, description character varying(200)	CONSTRAINT stockinformation_pkey PRIMARY KEY NONCLUSTERED (id))
+ in following column sharetype and in column sharetype of table "stockexchange"
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE TABLE1 ( uri character varying(100) NOT NULL, val1 integer NOT NULL, val2 integer NOT NULL, val3 integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE brokerworksfor ( brokerid integer NOT NULL, companyid integer, clientid integer)
+ in following column companyid and in column companyid of table stockinformation
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test ( name1 character varying(100),	name2 character varying(100),	name3 character varying(100))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `field_description` ( `fldName` varchar(40) NOT NULL COMMENT 'Field name', `fldDescriptionHeading` varchar(255) NOT NULL COMMENT 'Heading', `fldDescriptionText` longtext NOT NULL COMMENT 'Text', `fldNpdidField` int(11) NOT NULL COMMENT 'NPDID field', `fldDescriptionDateUpdated` date NOT NULL COMMENT 'Date updated', PRIMARY KEY (`fldNpdidField`,`fldDescriptionHeading`), CONSTRAINT `field_description_ibfk_1` FOREIGN KEY (`fldNpdidField`) REFERENCES `field` (`fldNpdidField`))
+ in following column `fldDescriptionText` of table `field_description`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE KIND_TYPE( ID INTEGER NOT NULL, KIND VARCHAR(15) NOT NULL, CONSTRAINT KIND_TYPE_PKEY PRIMARY KEY (ID), CONSTRAINT KIND_TYPE_KIND_KEY UNIQUE (KIND))
+ in following column ID and in column ID of table COMPANY_TYPE
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column country and in column country of table address
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE T4( id INT NOT NULL, p1 FLOAT, CONSTRAINT r_pk4 PRIMARY KEY (id ))
+ in following column p1 of table T4
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `apaAreaGross` ( `apaMap_no` int(11) NOT NULL, `apaAreaGeometryEWKT` geometry NOT NULL, `apaAreaGeometry_KML_WGS84` text NOT NULL, `apaAreaGross_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`apaAreaGross_id`), UNIQUE `apaAreaGross_id` (`apaAreaGross_id`))
+ in following column `apaAreaGeometry_KML_WGS84` of table `apaAreaGross`
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM pet WHERE name REGEXP BINARY '^b'
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE company ( id integer NOT NULL, name character varying(100), marketshares integer, networth double precision, addressid integer)
+ in following column addressid and in column addressid of table client
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "stockexchange".address ( id integer NOT NULL, street character varying(100), number integer, city character varying(100), state character varying(100), country character varying(100))
+ in following column city and in column city of table address
+Detected: Clone Tables Found in following statement: CREATE TABLE DS1 ( wid integer NOT NULL, WellboreName character varying(100), Active character varying(100), OwnerID integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tuf_petreg_message` ( `ptlName` varchar(40) NOT NULL COMMENT 'Tillatelse', `ptlMessageDocumentNo` int(11) NOT NULL, `ptlMessage` text NOT NULL COMMENT 'Utdrag av dokument', `ptlMessageRegisteredDate` date NOT NULL COMMENT 'Registreringsdato', `ptlMessageKindDesc` varchar(100) NOT NULL COMMENT 'Type', `tufName` varchar(40) NOT NULL COMMENT 'TUF', `ptlMessageDateUpdated` date DEFAULT NULL COMMENT 'Dato oppdatert', `tufNpdidTuf` int(11) NOT NULL COMMENT 'NPDID tuf', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`tufNpdidTuf`,`ptlMessageDocumentNo`), CONSTRAINT `tuf_petreg_message_ibfk_1` FOREIGN KEY (`tufNpdidTuf`) REFERENCES `tuf_petreg_licence` (`tufNpdidTuf`))
+ in following column `ptlMessage` of table `tuf_petreg_message`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `seis_acquisition_progress` ( `seaProgressDate` date NOT NULL, `seaProgressText2` varchar(40) NOT NULL, `seaProgressText` text NOT NULL, `seaProgressDescription` text, `seaNpdidSurvey` int(11) NOT NULL COMMENT 'NPDID for survey', `seis_acquisition_progress_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`seis_acquisition_progress_id`,`seaProgressText2`), UNIQUE `seis_acquisition_progress_id` (`seis_acquisition_progress_id`), CONSTRAINT `seis_acquisition_progress_ibfk_1` FOREIGN KEY (`seaNpdidSurvey`) REFERENCES `seis_acquisition` (`seaNpdidSurvey`))
+
+Detected: Compound Attribute Variant: 1 Found in following statement: select id from Student) JOIN Enrollment ON student_id = StudentId where first_name regexp 'foo' 
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM pet WHERE REGEXP_LIKE(testcol, '[[:alpha:]]')
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T6( id INT NOT NULL, p1 BOOLEAN, CONSTRAINT r_pk6 PRIMARY KEY (id ))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE DS4 ( oid integer NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE wellboreFinland ( idf integer NOT NULL, name character varying(100), depth integer)
+ in following column name and in column name of table client
+Detected: Clone Tables Found in following statement: CREATE TABLE T8( id INT NOT NULL, p1 VARCHAR(10), p2 VARCHAR(2), CONSTRAINT r_pk8 PRIMARY KEY (id ))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE T7( id INT NOT NULL, p1 VARCHAR(10), CONSTRAINT r_pk7 PRIMARY KEY (id ))
+
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM pet WHERE name REGEXP '^b'
+
+Detected: God Table Found in following statement: CREATE TABLE `wellbore_formation_top` ( `wlbName` varchar(60) NOT NULL COMMENT 'Wellbore name', `lsuTopDepth` decimal(13,6) NOT NULL COMMENT 'Top depth [m]', `lsuBottomDepth` decimal(13,6) NOT NULL COMMENT 'Bottom depth [m]', `lsuName` varchar(20) NOT NULL COMMENT 'Lithostrat. unit', `lsuLevel` varchar(9) NOT NULL COMMENT 'Level', `lsuNameParent` varchar(20) DEFAULT NULL COMMENT 'Lithostrat. unit, parent', `wlbNpdidWellbore` int(11) NOT NULL COMMENT 'NPDID wellbore', `lsuNpdidLithoStrat` int(11) NOT NULL COMMENT 'NPDID lithostrat. unit', `lsuNpdidLithoStratParent` int(11) DEFAULT NULL COMMENT 'NPDID parent lithostrat. unit', `lsuWellboreUpdatedDate` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`wlbNpdidWellbore`,`lsuNpdidLithoStrat`,`lsuTopDepth`,`lsuBottomDepth`), CONSTRAINT `wellbore_formation_top_ibfk_1` FOREIGN KEY (`wlbNpdidWellbore`) REFERENCES `wellbore_npdid_overview` (`wlbNpdidWellbore`))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE TsameAs13 ( wid1 integer NOT NULL, wid3 integer NOT NULL)
+
+Detected: God Table Found in following statement: CREATE TABLE `pipLine` ( `pipNpdidPipe` int(11) NOT NULL, `pipNpdidFromFacility` int(11) NOT NULL, `pipNpdidToFacility` int(11) NOT NULL, `pipNpdidOperator` int(11) DEFAULT NULL, `pipName` varchar(50) NOT NULL, `pipNameFromFacility` varchar(50) NOT NULL, `pipNameToFacility` varchar(50) NOT NULL, `pipNameCurrentOperator` varchar(100) DEFAULT NULL, `pipCurrentPhase` varchar(40) NOT NULL, `pipMedium` varchar(20) NOT NULL, `pipMainGrouping` varchar(20) NOT NULL, `pipDimension` decimal(13,6) NOT NULL, `pipLineGeometryWKT` geometry NOT NULL, PRIMARY KEY (`pipNpdidPipe`), CONSTRAINT `pipLine_ibfk_1` FOREIGN KEY (`pipNpdidOperator`) REFERENCES `company` (`cmpNpdidCompany`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE company ( id integer NOT NULL, name VARCHAR(100), marketshares integer, networth real, addressid integer)
+ in following column networth and in column networth of table "stockexchange"
+Detected: God Table Found in following statement: CREATE TABLE `strat_litho_wellbore` ( `wlbName` varchar(60) NOT NULL COMMENT 'Wellbore name', `lsuTopDepth` decimal(13,6) NOT NULL COMMENT 'Top depth [m]', `lsuBottomDepth` decimal(13,6) NOT NULL COMMENT 'Bottom depth [m]', `lsuName` varchar(20) NOT NULL COMMENT 'Lithostrat. unit', `lsuLevel` varchar(9) NOT NULL COMMENT 'Level', `lsuNpdidLithoStrat` int(11) NOT NULL COMMENT 'NPDID lithostrat. unit', `wlbCompletionDate` date NOT NULL COMMENT 'Completion date', `wlbNpdidWellbore` int(11) NOT NULL COMMENT 'NPDID wellbore', `lsuWellboreUpdatedDate` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`wlbNpdidWellbore`,`lsuNpdidLithoStrat`,`lsuTopDepth`,`lsuBottomDepth`), CONSTRAINT `strat_litho_wellbore_ibfk_1` FOREIGN KEY (`wlbNpdidWellbore`) REFERENCES `wellbore_npdid_overview` (`wlbNpdidWellbore`))
+
+Detected: God Table Found in following statement: CREATE TABLE `seis_acquisition_coordinates_inc_turnarea` ( `seaSurveyName` varchar(100) NOT NULL COMMENT 'Survey name', `seaNpdidSurvey` int(11) NOT NULL COMMENT 'NPDID for survey', `seaPolygonPointNumber` int(11) NOT NULL COMMENT 'Point number', `seaPolygonNSDeg` int(11) NOT NULL COMMENT 'NS degrees', `seaPolygonNSMin` int(11) NOT NULL COMMENT 'NS minutes', `seaPolygonNSSec` decimal(13,6) NOT NULL COMMENT 'NS seconds', `seaPolygonEWDeg` int(11) NOT NULL COMMENT 'EW degrees', `seaPolygonEWMin` int(11) NOT NULL COMMENT 'EW minutes', `seaPolygonEWSec` decimal(13,6) NOT NULL COMMENT 'EW seconds', `dateSyncNPD` date NOT NULL, PRIMARY KEY (`seaSurveyName`,`seaPolygonPointNumber`), CONSTRAINT `seis_acquisition_coordinates_inc_turnarea_ibfk_1` FOREIGN KEY (`seaNpdidSurvey`) REFERENCES `seis_acquisition` (`seaNpdidSurvey`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE transaction ( id integer NOT NULL, date timestamp, stockid integer, type smallint, brokerid integer, forclientid integer, forcompanyid integer, amount decimal(10,4))
+ in following column brokerid and in column brokerid of table brokerworksfor
+Detected: God Table Found in following statement: CREATE TABLE `wellbore_document` ( `wlbName` varchar(60) NOT NULL COMMENT 'Wellbore name', `wlbDocumentType` varchar(40) NOT NULL COMMENT 'Document type', `wlbDocumentName` varchar(200) NOT NULL COMMENT 'Document name', `wlbDocumentUrl` varchar(200) NOT NULL COMMENT 'Document URL', `wlbDocumentFormat` varchar(40) NOT NULL COMMENT 'Document format', `wlbDocumentSize` decimal(13,6) NOT NULL COMMENT 'Document size [MB]', `wlbNpdidWellbore` int(11) NOT NULL COMMENT 'NPDID wellbore', `wlbDocumentDateUpdated` date DEFAULT NULL COMMENT 'Date updated', `dateSyncNPD` date NOT NULL, `wellbore_document_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`wellbore_document_id`,`wlbNpdidWellbore`,`wlbDocumentName`), UNIQUE `wellbore_document_id` (`wellbore_document_id`), CONSTRAINT `wellbore_document_ibfk_1` FOREIGN KEY (`wlbNpdidWellbore`) REFERENCES `wellbore_npdid_overview` (`wlbNpdidWellbore`))
+

@@ -1,0 +1,51 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion', 'contest_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem', 'author_id']
+Detected: Obsolete Column TypesFound in following statement: create table mail ( id bigint auto_increment not null, subject varchar(255), receiver varchar(255), content longtext, status integer, create_time datetime, user_id bigint, constraint pk_mail primary key (id))
+ in following column content of table mail
+Detected: Index Shotgun Variant: 3 Following index not used : ['solution', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion', 'parent_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'discussion_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion', 'problem_id']
+Detected: God Table Found in following statement: create table solution ( id bigint auto_increment not null, user_id bigint, is_private tinyint(1) default 0, contest_id bigint, language integer, code longtext, problem_id bigint, submit_time datetime, dispatch_time datetime, judge_time datetime, judge_id integer, result integer, judge_response longtext, time_used integer, memory_used integer, constraint pk_solution primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_follower', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: create table discussion ( id bigint auto_increment not null, title varchar(255), problem_id bigint, solution_id bigint, contest_id bigint, parent_id bigint, user_id bigint, content longtext, create_time datetime, last_reply_time datetime, contain_solution tinyint(1) default 0, always_on_top integer, constraint pk_discussion primary key (id))
+ in following column content of table discussion
+Detected: Index Shotgun Variant: 3 Following index not used : ['contest_problem', 'contest_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['contest', 'manager_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_vote', 'problem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion', 'solution_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'problem_id']
+Detected: Duplicate Column Names Found in following statement: create table solution ( id bigint auto_increment not null, user_id bigint, is_private tinyint(1) default 0, contest_id bigint, language integer, code longtext, problem_id bigint, submit_time datetime, dispatch_time datetime, judge_time datetime, judge_id integer, result integer, judge_response longtext, time_used integer, memory_used integer, constraint pk_solution primary key (id))
+ in following column id and in column id of table client
+Detected: Index Shotgun Variant: 3 Following index not used : ['mail', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['solution', 'problem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_follower', 'problem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['solution', 'contest_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['contest_participant', 'contest_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion_follower', 'user_id']
+Detected: God Table Found in following statement: create table problem ( id bigint auto_increment not null, slug varchar(255) not null, status integer, title varchar(255), description longtext, tags varchar(255), source varchar(255), time_limit integer, memory_limit integer, special_judge tinyint(1) default 0, resources_hash varchar(255), create_time datetime, last_modify_time datetime, author_id bigint, show_in_problems tinyint(1) default 0, constraint uq_problem_slug unique (slug), constraint pk_problem primary key (id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['solution', 'judge_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['contest_participant', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: create table solution ( id bigint auto_increment not null, user_id bigint, is_private tinyint(1) default 0, contest_id bigint, language integer, code longtext, problem_id bigint, submit_time datetime, dispatch_time datetime, judge_time datetime, judge_id integer, result integer, judge_response longtext, time_used integer, memory_used integer, constraint pk_solution primary key (id))
+ in following column judge_response of table solution
+Detected: Index Shotgun Variant: 3 Following index not used : ['discussion_follower', 'discussion_id']
+Detected: God Table Found in following statement: create table discussion ( id bigint auto_increment not null, title varchar(255), problem_id bigint, solution_id bigint, contest_id bigint, parent_id bigint, user_id bigint, content longtext, create_time datetime, last_reply_time datetime, contain_solution tinyint(1) default 0, always_on_top integer, constraint pk_discussion primary key (id))
+
+Detected: God Table Found in following statement: create table contest ( id bigint auto_increment not null, title varchar(255), description varchar(255), begin_time datetime, duration integer, is_public tinyint(1) default 0, password varchar(255), manager_id bigint, status integer, create_time datetime, constraint pk_contest primary key (id))
+
+Detected: Obsolete Column TypesFound in following statement: create table problem ( id bigint auto_increment not null, slug varchar(255) not null, status integer, title varchar(255), description longtext, tags varchar(255), source varchar(255), time_limit integer, memory_limit integer, special_judge tinyint(1) default 0, resources_hash varchar(255), create_time datetime, last_modify_time datetime, author_id bigint, show_in_problems tinyint(1) default 0, constraint uq_problem_slug unique (slug), constraint pk_problem primary key (id))
+ in following column description of table problem
+Detected: Duplicate Column Names Found in following statement: create table problem ( id bigint auto_increment not null, slug varchar(255) not null, status integer, title varchar(255), description longtext, tags varchar(255), source varchar(255), time_limit integer, memory_limit integer, special_judge tinyint(1) default 0, resources_hash varchar(255), create_time datetime, last_modify_time datetime, author_id bigint, show_in_problems tinyint(1) default 0, constraint uq_problem_slug unique (slug), constraint pk_problem primary key (id))
+ in following column description and in column description of table contest
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_relation', 'following_id']
+Detected: Obsolete Column TypesFound in following statement: create table solution ( id bigint auto_increment not null, user_id bigint, is_private tinyint(1) default 0, contest_id bigint, language integer, code longtext, problem_id bigint, submit_time datetime, dispatch_time datetime, judge_time datetime, judge_id integer, result integer, judge_response longtext, time_used integer, memory_used integer, constraint pk_solution primary key (id))
+ in following column code of table solution
+Detected: Index Shotgun Variant: 3 Following index not used : ['contest_problem', 'problem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_star', 'problem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_vote', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['problem_star', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_relation', 'follower_id']

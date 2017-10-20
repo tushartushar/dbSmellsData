@@ -1,0 +1,15 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE generated_table (	 name VARCHAR(6) NOT NULL, 	 kg INTEGER NOT NULL, 	 species VARCHAR(8) NOT NULL )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE merovingians (	name VARCHAR(12) NOT NULL, 	twitter TEXT, 	reign_from INTEGER NOT NULL, 	reign_to INTEGER NOT NULL, 	UNIQUE (name), 	UNIQUE (reign_from), 	UNIQUE (reign_to))
+ in following column twitter of table merovingians
+Detected: Metadata as Data Found in following statement: CREATE TABLE solarsystem (	kg DECIMAL(34, 0) NOT NULL, 	name VARCHAR(7) NOT NULL, 	orbits VARCHAR(7), 	UNIQUE (kg), 	UNIQUE (name))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE cities_of_ohio (	city VARCHAR(22) NOT NULL, 	population VARCHAR(7) NOT NULL, 	county VARCHAR(60) NOT NULL, 	UNIQUE (city))
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE sql_keywords_appendix (	key_word VARCHAR(32) NOT NULL, 	postgresql VARCHAR(41), 	sql_2011 VARCHAR(12), 	sql_2008 VARCHAR(12), 	sql_92 VARCHAR(12))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE knights ( 	name VARCHAR(8) NOT NULL, 	kg DECIMAL(3, 1) NOT NULL, 	dob TIMESTAMP WITHOUT TIME ZONE, 	UNIQUE (name), 	UNIQUE (dob) )
+ in following column kg and in column kg of table generated_table
+Detected: Metadata as Data Found in following statement: CREATE TABLE menu (	name VARCHAR(14) NOT NULL, 	cost DECIMAL(3, 2) NOT NULL, 	warning VARCHAR(13), 	UNIQUE (name), 	UNIQUE (warning))
+

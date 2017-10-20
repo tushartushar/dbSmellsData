@@ -1,0 +1,29 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `map_properties` (`name` TEXT NOT NULL, `value` TEXT NOT NULL)
+ in following column `name` of table `map_properties`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE attacks(remaining_ticks INT, weapon_id INT, damage INT, dest_x INT, dest_y INT)
+ in following column remaining_ticks and in column remaining_ticks of table ai_pirate
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ship_route_resources(ship_id INTEGER, waypoint_index INTEGER, res INTEGER, amount INTEGER)
+ in following column amount and in column amount of table settlement_produced_res
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `map_properties` (`name` TEXT NOT NULL, `value` TEXT NOT NULL)
+ in following column `value` of table `map_properties`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'component'(worldid INT, name TEXT, module TEXT, class TEXT)
+ in following column name of table 'component'
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `metadata` (`name` TEXT NOT NULL DEFAULT '', `value` TEXT DEFAULT '')
+ in following column `name` of table `metadata`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'component'(worldid INT, name TEXT, module TEXT, class TEXT)
+ in following column module of table 'component'
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE 'component'(worldid INT, name TEXT, module TEXT, class TEXT)
+ in following column class of table 'component'
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "last_active_settlement" ( type STRING NOT NULL, value INTEGER NOT NULL )
+ in following column value and in column value of table storage_global_limit
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE atlas('atlas_id' INTEGER NOT NULL PRIMARY KEY, 'atlas_path' TEXT NOT NULL)
+ in following column 'atlas_path' of table atlas
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `metadata` (`name` TEXT NOT NULL DEFAULT '', `value` TEXT DEFAULT '')
+ in following column `value` of table `metadata`
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "disaster" ( type STRING NOT NULL, settlement INTEGER NOT NULL, remaining_ticks_expand INTEGER NOT NULL)
+ in following column settlement and in column settlement of table settlement_produced_res
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "production_queue" (object INTEGER NOT NULL, position INTEGER NOT NULL, production_line_id INTEGER NOT NULL)
+ in following column object and in column object of table storage_global_limit
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ship_route_resources(ship_id INTEGER, waypoint_index INTEGER, res INTEGER, amount INTEGER)
+ in following column res and in column res of table settlement_produced_res

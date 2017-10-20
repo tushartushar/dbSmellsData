@@ -1,0 +1,4 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE document SET mime_type=?, timestamp=?, content=?  WHERE url=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE document ( url VARCHAR(255), mime_type VARCHAR(255), size INTEGER, timestamp TIMESTAMP, content TEXT, PRIMARY KEY (url))
+ in following column content of table document

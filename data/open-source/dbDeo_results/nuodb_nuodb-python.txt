@@ -1,0 +1,5 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE executemany_table (f1 INTEGER, f2 INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: create table typetest (id integer GENERATED ALWAYS AS IDENTITY, time_col time, timestamp_col timestamp)
+ in following column id and in column id of table (
+Detected: Index Shotgun Variant: 1

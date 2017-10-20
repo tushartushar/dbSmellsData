@@ -1,0 +1,29 @@
+Detected: God Table Found in following statement: create table orders ( orderid int not null, userid VARCHAR(80) not null, orderdate date not null, shipaddr1 VARCHAR(80) not null, shipaddr2 VARCHAR(80), shipcity VARCHAR(80) not null, shipstate VARCHAR(80) not null, shipzip VARCHAR(20) not null, shipcountry VARCHAR(20) not null, billaddr1 VARCHAR(80) not null, billaddr2 VARCHAR(80), billcity VARCHAR(80) not null, billstate VARCHAR(80) not null, billzip VARCHAR(20) not null, billcountry VARCHAR(20) not null, courier VARCHAR(80) not null, totalprice decimal(10,2) not null, billtofirstname VARCHAR(80) not null, billtolastname VARCHAR(80) not null, shiptofirstname VARCHAR(80) not null, shiptolastname VARCHAR(80) not null, creditcard VARCHAR(80) not null, exprdate VARCHAR(7) not null, cardtype VARCHAR(80) not null, locale VARCHAR(80) not null, constraint pk_orders primary key (orderid))
+
+Detected: Metadata as Data Found in following statement: create table foo ( column1 varchar(50), column2 varchar(50), column3 varchar(50) )
+
+Detected: God Table Found in following statement: create table item ( itemid VARCHAR(10) not null, productid VARCHAR(10) not null, listprice decimal(10,2), unitcost decimal(10,2), supplier int, status VARCHAR(2), attr1 VARCHAR(80), attr2 VARCHAR(80), attr3 VARCHAR(80), attr4 VARCHAR(80), attr5 VARCHAR(80), constraint pk_item primary key (itemid), constraint fk_item_1 foreign key (productid) references product (productid), constraint fk_item_2 foreign key (supplier) references supplier (suppid))
+
+Detected: Metadata as Data Found in following statement: create table signon ( username VARCHAR(25) not null, password VARCHAR(25) not null, constraint pk_signon primary key (username))
+
+Detected: Multicolumn Attribute Found in following statement: create table orders ( orderid int not null, userid VARCHAR(80) not null, orderdate date not null, shipaddr1 VARCHAR(80) not null, shipaddr2 VARCHAR(80), shipcity VARCHAR(80) not null, shipstate VARCHAR(80) not null, shipzip VARCHAR(20) not null, shipcountry VARCHAR(20) not null, billaddr1 VARCHAR(80) not null, billaddr2 VARCHAR(80), billcity VARCHAR(80) not null, billstate VARCHAR(80) not null, billzip VARCHAR(20) not null, billcountry VARCHAR(20) not null, courier VARCHAR(80) not null, totalprice decimal(10,2) not null, billtofirstname VARCHAR(80) not null, billtolastname VARCHAR(80) not null, shiptofirstname VARCHAR(80) not null, shiptolastname VARCHAR(80) not null, creditcard VARCHAR(80) not null, exprdate VARCHAR(7) not null, cardtype VARCHAR(80) not null, locale VARCHAR(80) not null, constraint pk_orders primary key (orderid))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE ACCOUNT ( ACC_ID INTEGER NOT NULL, ACC_FIRST_NAME VARCHAR(255) NOT NULL, ACC_LAST_NAME VARCHAR(255) NOT NULL, ACC_EMAIL VARCHAR(255), ACC_AGE						 NUMERIC, ACC_BANNER_OPTION VARCHAR(255), ACC_CART_OPTION INTEGER, ACC_DATE_ADDED DATE, PRIMARY KEY (ACC_ID))
+
+Detected: Multicolumn Attribute Found in following statement: create table account ( userid VARCHAR(80) not null, email VARCHAR(80) not null, firstname VARCHAR(80) not null, lastname VARCHAR(80) not null, status VARCHAR(2), addr1 VARCHAR(80) not null, addr2 VARCHAR(40), city VARCHAR(80) not null, state VARCHAR(80) not null, zip VARCHAR(20) not null, country VARCHAR(20) not null, phone VARCHAR(80) not null, constraint pk_account primary key (userid))
+
+Detected: Multicolumn Attribute Found in following statement: create table supplier ( suppid int not null, name VARCHAR(80), status VARCHAR(2) not null, addr1 VARCHAR(80), addr2 VARCHAR(80), city VARCHAR(80), state VARCHAR(80), zip VARCHAR(5), phone VARCHAR(80), constraint pk_supplier primary key (suppid))
+
+Detected: God Table Found in following statement: create table account ( userid VARCHAR(80) not null, email VARCHAR(80) not null, firstname VARCHAR(80) not null, lastname VARCHAR(80) not null, status VARCHAR(2), addr1 VARCHAR(80) not null, addr2 VARCHAR(40), city VARCHAR(80) not null, state VARCHAR(80) not null, zip VARCHAR(20) not null, country VARCHAR(20) not null, phone VARCHAR(80) not null, constraint pk_account primary key (userid))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ACCOUNT ( ACC_ID INTEGER NOT NULL, ACC_FIRST_NAME VARCHAR(255) NOT NULL, ACC_LAST_NAME VARCHAR(255) NOT NULL, ACC_EMAIL VARCHAR(255), ACC_AGE						 NUMERIC, ACC_BANNER_OPTION VARCHAR(255), ACC_CART_OPTION INTEGER, ACC_DATE_ADDED DATE, PRIMARY KEY (ACC_ID))
+ in following column ACC_ID and in column ACC_ID of table ACCOUNT2
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE ORDERS ( ORD_ID INT NOT NULL, ORD_ACC_ID INT NOT NULL, ORD_DATE TIMESTAMP NOT NULL, ORD_CARD_TYPE VARCHAR(255), ORD_CARD_NUMBER VARCHAR(255), ORD_CARD_EXPIRY VARCHAR(255), ORD_STREET VARCHAR(255), ORD_CITY VARCHAR(255), ORD_PROVINCE VARCHAR(255), ORD_POSTAL_CODE VARCHAR(255), ORD_FAVOURITE_LINE INT, PRIMARY KEY (ORD_ID))
+
+Detected: Multicolumn Attribute Found in following statement: create table item ( itemid VARCHAR(10) not null, productid VARCHAR(10) not null, listprice decimal(10,2), unitcost decimal(10,2), supplier int, status VARCHAR(2), attr1 VARCHAR(80), attr2 VARCHAR(80), attr3 VARCHAR(80), attr4 VARCHAR(80), attr5 VARCHAR(80), constraint pk_item primary key (itemid), constraint fk_item_1 foreign key (productid) references product (productid), constraint fk_item_2 foreign key (supplier) references supplier (suppid))
+
+Detected: Metadata as Data Found in following statement: create table bannerdata ( favcategory VARCHAR(80) not null, bannername VARCHAR(255), constraint pk_bannerdata primary key (favcategory))
+
+Detected: Multicolumn Attribute Found in following statement: create table foo ( column1 varchar(50), column2 varchar(50), column3 varchar(50) )
+

@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber ( app_name text NOT NULL, next_run timestamp with time zone, first_run timestamp with time zone, last_run timestamp with time zone, last_success timestamp with time zone, ongoing timestamp with time zone, error_count integer DEFAULT 0, depends_on text[], last_error json )
+ in following column app_name of table crontabber
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber_log ( id SERIAL NOT NULL, app_name text NOT NULL, log_time timestamp with time zone DEFAULT now() NOT NULL, duration interval, success timestamp with time zone, exc_type text, exc_value text, exc_traceback text )
+ in following column exc_traceback of table crontabber_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber_log ( id SERIAL NOT NULL, app_name text NOT NULL, log_time timestamp with time zone DEFAULT now() NOT NULL, duration interval, success timestamp with time zone, exc_type text, exc_value text, exc_traceback text )
+ in following column app_name of table crontabber_log
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber_log ( id SERIAL NOT NULL, app_name text NOT NULL, log_time timestamp with time zone DEFAULT now() NOT NULL, duration interval, success timestamp with time zone, exc_type text, exc_value text, exc_traceback text )
+ in following column exc_value of table crontabber_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber ( app_name text NOT NULL, next_run timestamp with time zone, first_run timestamp with time zone, last_run timestamp with time zone, last_success timestamp with time zone, ongoing timestamp with time zone, error_count integer DEFAULT 0, depends_on text[], last_error json )
+ in following column depends_on of table crontabber
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE crontabber_log ( id SERIAL NOT NULL, app_name text NOT NULL, log_time timestamp with time zone DEFAULT now() NOT NULL, duration interval, success timestamp with time zone, exc_type text, exc_value text, exc_traceback text )
+ in following column exc_type of table crontabber_log

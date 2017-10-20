@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: update tabDocPerm set submit=0, cancel=0, amend=0  where parent=Opportunity
+

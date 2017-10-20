@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table characters ( id string primary key, name string, quote string, details object, more_details array(object), INDEX name_ft using fulltext(name) with (analyzer = 'english'), INDEX quote_ft using fulltext(quote) with (analyzer = 'english') )
+ in following column INDEX of table characters
+Detected: Index Shotgun Variant: 1

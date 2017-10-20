@@ -1,0 +1,40 @@
+Detected: Obsolete Column TypesFound in following statement: create table release ( name text not null, distro text not null, foreign key(distro) references distro(name), primary key(name))
+ in following column name of table release
+Detected: Obsolete Column TypesFound in following statement: create table release ( name text not null, distro text not null, foreign key(distro) references distro(name), primary key(name))
+ in following column distro of table release
+Detected: Obsolete Column TypesFound in following statement: create table build ( id int not null, test_run int not null, name text not null, succeeded int not null, details text, foreign key (test_run) references test_run(id), primary key(id))
+ in following column details of table build
+Detected: Obsolete Column TypesFound in following statement: create table architecture ( name text not null, distro text not null, foreign key(distro) references distro(name), primary key(name))
+ in following column distro of table architecture
+Detected: Obsolete Column TypesFound in following statement: create table test_run ( id int not null, hypervisor text not null, distro text not null, release text not null, architecture text not null, status text not null, foreign key(hypervisor) references hypervisor(name), foreign key(distro) references distro(name), foreign key(release) references release(name), foreign key(architecture) references architecture(name), primary key(id))
+ in following column distro of table test_run
+Detected: Obsolete Column TypesFound in following statement: create table candidate ( distro text not null, release text not null, architecture text not null, foreign key(release, distro) references release(name, distro), foreign key(architecture, distro) references architecture(name, distro))
+ in following column distro of table candidate
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table test_run ( id int not null, hypervisor text not null, distro text not null, release text not null, architecture text not null, status text not null, foreign key(hypervisor) references hypervisor(name), foreign key(distro) references distro(name), foreign key(release) references release(name), foreign key(architecture) references architecture(name), primary key(id))
+ in following column status of table test_run
+Detected: Obsolete Column TypesFound in following statement: create table test_run ( id int not null, hypervisor text not null, distro text not null, release text not null, architecture text not null, status text not null, foreign key(hypervisor) references hypervisor(name), foreign key(distro) references distro(name), foreign key(release) references release(name), foreign key(architecture) references architecture(name), primary key(id))
+ in following column release of table test_run
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['hypervisor', 'name']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['distro', 'name']
+Detected: Obsolete Column TypesFound in following statement: create table candidate ( distro text not null, release text not null, architecture text not null, foreign key(release, distro) references release(name, distro), foreign key(architecture, distro) references architecture(name, distro))
+ in following column architecture of table candidate
+Detected: Obsolete Column TypesFound in following statement: create table test_run ( id int not null, hypervisor text not null, distro text not null, release text not null, architecture text not null, status text not null, foreign key(hypervisor) references hypervisor(name), foreign key(distro) references distro(name), foreign key(release) references release(name), foreign key(architecture) references architecture(name), primary key(id))
+ in following column hypervisor of table test_run
+Detected: Obsolete Column TypesFound in following statement: create table hypervisor ( name text not null)
+ in following column name of table hypervisor
+Detected: Obsolete Column TypesFound in following statement: create table build ( id int not null, test_run int not null, name text not null, succeeded int not null, details text, foreign key (test_run) references test_run(id), primary key(id))
+ in following column name of table build
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['architecture', 'name']
+Detected: Obsolete Column TypesFound in following statement: create table architecture ( name text not null, distro text not null, foreign key(distro) references distro(name), primary key(name))
+ in following column name of table architecture
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['test_run', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['release', 'distro']
+Detected: Obsolete Column TypesFound in following statement: create table distro ( name text not null, primary key(name))
+ in following column name of table distro
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['release', 'name']
+Detected: Obsolete Column TypesFound in following statement: create table candidate ( distro text not null, release text not null, architecture text not null, foreign key(release, distro) references release(name, distro), foreign key(architecture, distro) references architecture(name, distro))
+ in following column release of table candidate
+Detected: Obsolete Column TypesFound in following statement: create table test_run ( id int not null, hypervisor text not null, distro text not null, release text not null, architecture text not null, status text not null, foreign key(hypervisor) references hypervisor(name), foreign key(distro) references distro(name), foreign key(release) references release(name), foreign key(architecture) references architecture(name), primary key(id))
+ in following column architecture of table test_run
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['architecture', 'distro']

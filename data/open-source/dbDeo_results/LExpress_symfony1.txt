@@ -1,0 +1,28 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE subscription (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255), status VARCHAR(255))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `trans_unit` ( * `msg_id` int(11) NOT NULL auto_increment, * `cat_id` int(11) NOT NULL default '1', * `id` varchar(255) NOT NULL default '', * `source` text NOT NULL, * `target` text NOT NULL, * `comments` text NOT NULL, * `date_added` int(11) NOT NULL default '0', * `date_modified` int(11) NOT NULL default '0', * `author` varchar(255) NOT NULL default '', * `translated` tinyint(1) NOT NULL default '0', * PRIMARY KEY (`msg_id`) * )
+ in following column * of table `trans_unit`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE trans_unit ( * msg_id INTEGER PRIMARY KEY, * cat_id INTEGER NOT NULL DEFAULT '1', * id VARCHAR, * source TEXT, * target TEXT, * comments TEXT, * date_added INT, * date_modified INT, * author VARCHAR, * translated INT(1) NOT NULL DEFAULT '0')
+ in following column * of table trans_unit
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE unique_test (id INTEGER PRIMARY KEY AUTOINCREMENT, unique_test1 VARCHAR(255) UNIQUE, unique_test2 VARCHAR(255), unique_test3 VARCHAR(255), unique_test4 VARCHAR(255))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE form_generator_test3 (id INTEGER PRIMARY KEY AUTOINCREMENT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE setting (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255) NOT NULL, value TEXT, weight DOUBLE, created_at DATETIME NOT NULL)
+ in following column value of table setting
+Detected: Metadata as Data Found in following statement: CREATE TABLE author (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255), type VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE trans_unit ( * msg_id INTEGER PRIMARY KEY, * cat_id INTEGER NOT NULL DEFAULT '1', * id VARCHAR, * source TEXT, * target TEXT, * comments TEXT, * date_added INT, * date_modified INT, * author VARCHAR, * translated INT(1) NOT NULL DEFAULT '0')
+ in following column * and in column * of table catalogue
+Detected: God Table Found in following statement: CREATE TABLE `trans_unit` ( * `msg_id` int(11) NOT NULL auto_increment, * `cat_id` int(11) NOT NULL default '1', * `id` varchar(255) NOT NULL default '', * `source` text NOT NULL, * `target` text NOT NULL, * `comments` text NOT NULL, * `date_added` int(11) NOT NULL default '0', * `date_modified` int(11) NOT NULL default '0', * `author` varchar(255) NOT NULL default '', * `translated` tinyint(1) NOT NULL default '0', * PRIMARY KEY (`msg_id`) * )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE form_generator_test2 (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE catalogue (cat_id INTEGER PRIMARY KEY, name VARCHAR NOT NULL, source_lang VARCHAR, target_lang VARCHAR, date_created INT, date_modified INT, author VARCHAR)
+ in following column cat_id and in column cat_id of table trans_unit
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE author_inheritance_concrete (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255), type VARCHAR(255), additional VARCHAR(255))
+ in following column id and in column id of table resource_type
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `session` ( `sess_id` varchar(40) NOT NULL PRIMARY KEY, `sess_time` int(10) unsigned NOT NULL default '0', `sess_data` text collate utf8_unicode_ci)
+ in following column `sess_data` of table `session`
+Detected: Clone Tables Found in following statement: CREATE TABLE form_generator_test (id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR(255))
+

@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dataset ( id INTEGER PRIMARY KEY, name text, raw_data text, created datetime DEFAULT CURRENT_TIMESTAMP)
+ in following column name of table dataset
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dataset ( id INTEGER PRIMARY KEY, name text, raw_data text, created datetime DEFAULT CURRENT_TIMESTAMP)
+ in following column raw_data of table dataset

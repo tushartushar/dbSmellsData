@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column url of table api_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column local_date of table api_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column last_modified of table api_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column vary_headers of table api_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column mime_type of table api_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column item_mime_type of table api_cache
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE api_cache( url TEXT, vary_headers TEXT, max_age INTEGER, etag TEXT, local_date TEXT, last_modified TEXT, mime_type TEXT, item_mime_type TEXT, response_body BLOB, PRIMARY KEY(url, vary_headers) )
+ in following column etag of table api_cache

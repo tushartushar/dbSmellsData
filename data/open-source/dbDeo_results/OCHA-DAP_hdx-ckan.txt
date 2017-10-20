@@ -1,0 +1,169 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column id of table activity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column guid of table harvested_document_revision
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_summary', 'url']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column user_id of table activity
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group_revision', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_group_revision', 'revision_timestamp']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column id of table harvested_document_revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column object_id of table activity_detail
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column source_id of table harvested_document_revision
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag', 'tag_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_a (id_a text)
+ in following column id_a of table test_a
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra_revision', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column id of table related
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column object_id of table activity
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_revision', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE term_translation ( term text NOT NULL, term_translation text NOT NULL, lang_code text NOT NULL )
+ in following column term of table term_translation
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_resource_revision', 'revision_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_relationship_revision', 'revision_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_relationship_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_group_revision', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_revision', 'revision_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column owner_id of table related
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rating', 'user_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column url of table related
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_translation', 'lang_code']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rating', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_object_role', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column id of table activity_detail
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column activity_type of table activity_detail
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity_detail', 'activity_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column title of table related
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column content of table harvested_document_revision
+Detected: Index Shotgun Variant: 3 Following index not used : ['role_action', 'action']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_extra_revision', 'revision_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'revision_timestamp']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column data of table activity
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_raw', 'url']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_extra_revision', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_revision', 'revision_timestamp']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related_dataset (	id text NOT NULL,	dataset_id text NOT NULL,	related_id text NOT NULL,	status text)
+ in following column related_id of table related_dataset
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_resource', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_extra_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_relationship_revision', 'object_package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_raw', 'access_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_revision', 'revision_timestamp']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column package_id of table harvested_document_revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracking_raw ( user_key character varying(100) NOT NULL, url text NOT NULL, tracking_type character varying(10) NOT NULL, access_timestamp timestamp without time zone DEFAULT current_timestamp )
+ in following column url of table tracking_raw
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_group_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group_revision', 'group_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracking_summary( url text NOT NULL, package_id text, tracking_type character varying(10) NOT NULL, count int NOT NULL, running_total int NOT NULL DEFAULT 0, recent_views int NOT NULL DEFAULT 0, tracking_date date )
+ in following column package_id of table tracking_summary
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column activity_id of table activity_detail
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_revision', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related_dataset (	id text NOT NULL,	dataset_id text NOT NULL,	related_id text NOT NULL,	status text)
+ in following column status of table related_dataset
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column activity_type of table activity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_group ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column object_id of table user_following_group
+Detected: Obsolete Column TypesFound in following statement: create table tmp_expired_id(id text, revision_id text, revision_timestamp timestamp, expired_timestamp timestamp, expired_id text)
+ in following column id of table tmp_expired_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_user ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column follower_id of table user_following_user
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE term_translation ( term text NOT NULL, term_translation text NOT NULL, lang_code text NOT NULL )
+ in following column lang_code of table term_translation
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'package_id']
+Detected: Obsolete Column TypesFound in following statement: create table tmp_expired_id(id text, revision_id text, revision_timestamp timestamp, expired_timestamp timestamp, expired_id text)
+ in following column revision_id of table tmp_expired_id
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_summary', 'tracking_date']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE term_translation ( term text NOT NULL, term_translation text NOT NULL, lang_code text NOT NULL )
+ in following column term_translation of table term_translation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_dataset ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column follower_id of table user_following_dataset
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity (	id text NOT NULL,	timestamp timestamp without time zone,	user_id text,	object_id text,	revision_id text,	activity_type text,	data text)
+ in following column revision_id of table activity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vocabulary ( id text NOT NULL, name character varying(100) NOT NULL )
+ in following column id of table vocabulary
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column image_url of table related
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra', 'package_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_group ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column follower_id of table user_following_group
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracking_summary( url text NOT NULL, package_id text, tracking_type character varying(10) NOT NULL, count int NOT NULL, running_total int NOT NULL DEFAULT 0, recent_views int NOT NULL DEFAULT 0, tracking_date date )
+ in following column url of table tracking_summary
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'revision']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_resource', 'url']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column object_type of table activity_detail
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE activity_detail (	id text NOT NULL,	activity_id text NOT NULL,	object_id text,	object_type text,	activity_type text,	data text)
+ in following column data of table activity_detail
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'object_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group_revision', 'revision_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_group_revision', 'package_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dashboard ( user_id text NOT NULL, activity_stream_last_viewed timestamp without time zone NOT NULL)
+ in following column user_id of table dashboard
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_user ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column object_id of table user_following_user
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column state of table harvested_document_revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column description of table related
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'tag_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_relationship_revision', 'subject_package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_raw', 'user_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column revision_id of table harvested_document_revision
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_revision', 'resource_group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'revision_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['activity', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rating', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE harvested_document_revision ( id text NOT NULL, guid text, created timestamp without time zone, content text NOT NULL, source_id text, package_id text, state text, revision_id text NOT NULL, continuity_id text )
+ in following column continuity_id of table harvested_document_revision
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related (	id text NOT NULL,	type text NOT NULL,	title text,	description text,	image_url text,	url text,	created timestamp without time zone,	owner_id text)
+ in following column type of table related
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related_dataset (	id text NOT NULL,	dataset_id text NOT NULL,	related_id text NOT NULL,	status text)
+ in following column dataset_id of table related_dataset
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_revision', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra_revision', 'revision_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['term_translation', 'term']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_object_role', 'context']
+Detected: Obsolete Column TypesFound in following statement: create table tmp_expired_id(id text, revision_id text, revision_timestamp timestamp, expired_timestamp timestamp, expired_id text)
+ in following column expired_id of table tmp_expired_id
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_tag_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resource_revision', 'revision_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['user_object_role', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tracking_summary', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra_revision', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_resource', 'package_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group', 'group_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE related_dataset (	id text NOT NULL,	dataset_id text NOT NULL,	related_id text NOT NULL,	status text)
+ in following column id of table related_dataset
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_following_dataset ( follower_id text NOT NULL, object_id text NOT NULL, datetime timestamp without time zone NOT NULL)
+ in following column object_id of table user_following_dataset
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra_revision', 'expired_timestamp']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_extra_revision', 'revision_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_extra_revision', 'group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['package_group', 'id']

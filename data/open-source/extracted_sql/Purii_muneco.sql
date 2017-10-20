@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS " . MUNECO_TABLE_CONNECTIONS . " (		id bigint(200) NOT NULL AUTO_INCREMENT,		bid bigint(20) DEFAULT '0' NOT NULL,		pid bigint(20) DEFAULT '0' NOT NULL,		cbid bigint(20) DEFAULT '0' NOT NULL,		cpid bigint(20) DEFAULT '0' NOT NULL,		UNIQUE KEY id (id)		)
+SELECT bid, pid FROM " . MUNECO_TABLE_CONNECTIONS . " WHERE cbid = $currentBID AND cpid = $currentPID AND bid != 0 AND pid != 0

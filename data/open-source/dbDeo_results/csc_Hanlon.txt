@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{collection_name} ( uuid TEXT, json_obj_str TEXT, PRIMARY KEY (uuid) )
+ in following column uuid of table #
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{collection_name} ( uuid TEXT, json_obj_str TEXT, PRIMARY KEY (uuid) )
+ in following column json_obj_str of table #

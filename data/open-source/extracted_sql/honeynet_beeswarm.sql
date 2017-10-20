@@ -1,0 +1,4 @@
+SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA 
+CREATE TABLE test( clave numeric(7,0) not null, PRIMARY KEY (clave))
+SELECT 1 FROM pg_database WHERE datname='%s'
+INSERT INTO test VALUES (x)

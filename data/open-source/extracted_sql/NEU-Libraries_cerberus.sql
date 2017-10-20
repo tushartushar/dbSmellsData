@@ -1,0 +1,7 @@
+CREATE TABLE `deleted_handles` ( `handle` varchar(255) NOT NULL, `idx` int(11) NOT NULL, `type` varchar(20) DEFAULT NULL, `data` varchar(200) DEFAULT NULL, `timestamp` int(11) DEFAULT NULL, PRIMARY KEY (`handle`,`idx`))
+CREATE TABLE `members` ( `member_id` int(11) unsigned NOT NULL AUTO_INCREMENT, `firstname` varchar(100) DEFAULT NULL, `lastname` varchar(100) DEFAULT NULL, `login` varchar(100) NOT NULL DEFAULT '', `passwd` varchar(32) NOT NULL DEFAULT '', `priv` int(1) DEFAULT NULL, PRIMARY KEY (`member_id`))
+CREATE TABLE `privileges` ( `priv_num` int(11) NOT NULL, `privileges` varchar(50) NOT NULL)
+CREATE TABLE `nas` ( `na` varchar(255) NOT NULL, PRIMARY KEY (`na`))
+SELECT handle FROM handles WHERE type=\"URL\" and data=\"#{url}\";
+CREATE TABLE `handles` ( `handle` varchar(255) NOT NULL, `idx` int(11) NOT NULL, `type` varchar(20) DEFAULT NULL, `data` varchar(200) DEFAULT NULL, `ttl_type` smallint(6) DEFAULT NULL, `ttl` int(11) DEFAULT NULL, `timestamp` int(11) DEFAULT NULL, `refs` blob, `admin_read` tinyint(1) DEFAULT NULL, `admin_write` tinyint(1) DEFAULT NULL, `pub_read` tinyint(1) DEFAULT NULL, `pub_write` tinyint(1) DEFAULT NULL, PRIMARY KEY (`handle`,`idx`))
+CREATE TABLE `transactions` ( `trans_id` int(1) NOT NULL AUTO_INCREMENT, `transaction` varchar(10) NOT NULL, `member` int(1) NOT NULL, `handle` varchar(50) NOT NULL, `URL` varchar(50) NOT NULL, `date` date NOT NULL, PRIMARY KEY (`trans_id`))

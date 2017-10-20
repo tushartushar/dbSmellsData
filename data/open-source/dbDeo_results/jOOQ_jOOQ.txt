@@ -1,0 +1,270 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental(inventory_id)', 'indexidx_rental_fk_customer_idrental']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment', 'indexidx_fk_customer_idpayment']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(film_id)', 'p9']
+Detected: Index Shotgun Variant: 3 Following index not used : ['actor(last_name)', 'T']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 't']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (staff_id), CONSTRAINT fk_staff_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column first_name and in column first_name of table actor
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film_text ( film_id SMALLINT NOT NULL, title VARCHAR(255) NOT NULL, description TEXT, PRIMARY KEY (film_id), FULLTEXT KEY idx_title_description (title,description))
+ in following column description of table film_text
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE LICENSE_SERVER.LOG_VERIFY ( ID SERIAL8 NOT NULL, LICENSEE TEXT NOT NULL, LICENSE TEXT NOT NULL, REQUEST_IP VARCHAR(50) NOT NULL, MATCH BOOLEAN NOT NULL, VERSION VARCHAR(50) NOT NULL, CONSTRAINT PK_LOG_VERIFY PRIMARY KEY (ID))
+ in following column LICENSEE of table LICENSE_SERVER
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'P']
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'Anpolis']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'p']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'R']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(store_id,film_id)', 'store_id']
+Detected: God Table Found in following statement: CREATE TABLE film ( film_id int NOT NULL, title VARCHAR(255) NOT NULL, description CLOB DEFAULT NULL, release_year VARCHAR(4) DEFAULT NULL, language_id SMALLINT NOT NULL, original_language_id SMALLINT DEFAULT NULL, rental_duration SMALLINT DEFAULT 3 NOT NULL, rental_rate DECIMAL(4,2) DEFAULT 4.99 NOT NULL, length SMALLINT DEFAULT NULL, replacement_cost DECIMAL(5,2) DEFAULT 19.99 NOT NULL, rating VARCHAR(10) DEFAULT 'G', special_features VARCHAR(100) DEFAULT NULL, last_update DATE NOT NULL, CONSTRAINT pk_film PRIMARY KEY (film_id), CONSTRAINT fk_film_language FOREIGN KEY (language_id) REFERENCES language (language_id) , CONSTRAINT fk_film_language_original FOREIGN KEY (original_language_id) REFERENCES language (language_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'k']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rental ( rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL, rental_date timestamp without time zone NOT NULL, inventory_id integer NOT NULL, customer_id smallint NOT NULL, return_date timestamp without time zone, staff_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column rental_id and in column rental_id of table payment
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'x']
+Detected: Adjacency List Found in following statement: CREATE TABLE flyway_test.book ( id INT NOT NULL, author_id INT NOT NULL, title VARCHAR(400) NOT NULL, CONSTRAINT pk_t_book PRIMARY KEY (id), CONSTRAINT fk_t_book_author_id FOREIGN KEY (author_id) REFERENCES flyway_test.author(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', '2011']
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(store_id)', 'indexidx_customer_fk_address_idcustomerZCREATE']
+Detected: Metadata as Data Found in following statement: CREATE TABLE AUTHOR ( ID INT, FIRST_NAME VARCHAR(50) NOT NULL, LAST_NAME VARCHAR(50))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE country ( country_id SMALLINT NOT NULL, country VARCHAR(50) NOT NULL, last_update TIMESTAMP, PRIMARY KEY (country_id))
+ in following column last_update and in column last_update of table address
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column first_name and in column first_name of table author
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE language ( language_id SMALLINT NOT NULL , name CHAR(20) NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (language_id))
+ in following column language_id and in column language_id of table film
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'F']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff(store_id)', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'k']
+Detected: Adjacency List Found in following statement: CREATE TABLE flyway_test.book ( id INT NOT NULL, author_id INT NOT NULL, title VARCHAR(400) NOT NULL, CONSTRAINT pk_book PRIMARY KEY (id), CONSTRAINT fk_book_author_id FOREIGN KEY (author_id) REFERENCES flyway_test.author(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'K']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_category', 'triggerfilm_category_trigger_aifilm_category']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id int NOT NULL, address VARCHAR(50) NOT NULL, address2 VARCHAR(50) DEFAULT NULL, district VARCHAR(20) NOT NULL, city_id INT NOT NULL, postal_code VARCHAR(10) DEFAULT NULL, phone VARCHAR(20) NOT NULL, last_update DATE NOT NULL, CONSTRAINT pk_address PRIMARY KEY (address_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment ( payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL, customer_id smallint NOT NULL, staff_id smallint NOT NULL, rental_id integer NOT NULL, amount numeric(5,2) NOT NULL, payment_date timestamp without time zone NOT NULL)
+ in following column rental_id and in column rental_id of table rental
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'q']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'Hino22011']
+Detected: God Table Found in following statement: CREATE TABLE rental ( rental_id INT NOT NULL, rental_date DATE NOT NULL, inventory_id INT NOT NULL, customer_id INT NOT NULL, return_date DATE DEFAULT NULL, staff_id SMALLINT NOT NULL, last_update DATE NOT NULL, CONSTRAINT pk_rental PRIMARY KEY (rental_id), CONSTRAINT fk_rental_staff FOREIGN KEY (staff_id) REFERENCES staff (staff_id) , CONSTRAINT fk_rental_inventory FOREIGN KEY (inventory_id) REFERENCES inventory (inventory_id) , CONSTRAINT fk_rental_customer FOREIGN KEY (customer_id) REFERENCES customer (customer_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rental ( rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL, rental_date timestamp without time zone NOT NULL, inventory_id integer NOT NULL, customer_id smallint NOT NULL, return_date timestamp without time zone, staff_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column customer_id and in column customer_id of table payment
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment', 'staff_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'T']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id integer NOT NULL, original_language_id integer, rental_duration integer DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length integer, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column special_features of table film
+Detected: God Table Found in following statement: CREATE TABLE customer ( customer_id INT NOT NULL, store_id INT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, email VARCHAR(50) DEFAULT NULL, address_id INT NOT NULL, active CHAR(1) DEFAULT 'Y' NOT NULL, create_date TIMESTAMP NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (customer_id), CONSTRAINT fk_customer_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_customer_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE AUTHOR ( ID INT, FIRST_NAME VARCHAR(50) NOT NULL, LAST_NAME VARCHAR(50))
+ in following column ID and in column ID of table authors
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', '\x05']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(film_id)', 'film_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'r']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(store_id,film_id)', 'G']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `author` ( `id` int NOT NULL, `first_name` varchar(255) DEFAULT NULL, `last_name` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `posts`
+Detected: God Table Found in following statement: CREATE TABLE rental ( rental_id INT NOT NULL AUTO_INCREMENT, rental_date DATETIME NOT NULL, inventory_id MEDIUMINT UNSIGNED NOT NULL, customer_id SMALLINT UNSIGNED NOT NULL, return_date DATETIME DEFAULT NULL, staff_id TINYINT UNSIGNED NOT NULL, last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (rental_id), UNIQUE KEY (rental_date,inventory_id,customer_id), KEY idx_fk_inventory_id (inventory_id), KEY idx_fk_customer_id (customer_id), KEY idx_fk_staff_id (staff_id), CONSTRAINT fk_rental_staff FOREIGN KEY (staff_id) REFERENCES staff (staff_id) ON DELETE RESTRICT ON UPDATE CASCADE, CONSTRAINT fk_rental_inventory FOREIGN KEY (inventory_id) REFERENCES inventory (inventory_id) ON DELETE RESTRICT ON UPDATE CASCADE, CONSTRAINT fk_rental_customer FOREIGN KEY (customer_id) REFERENCES customer (customer_id) ON DELETE RESTRICT ON UPDATE CASCADE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE author ( id NUMBER(7) NOT NULL PRIMARY KEY, first_name VARCHAR2(50), last_name VARCHAR2(50) NOT NULL, date_of_birth DATE, year_of_birth NUMBER(7), distinguished NUMBER(1))
+ in following column year_of_birth and in column year_of_birth of table flyway_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_text ( film_id SMALLINT NOT NULL, title VARCHAR(255) NOT NULL, description BLOB SUB_TYPE TEXT, PRIMARY KEY (film_id))
+ in following column description and in column description of table film
+Detected: God Table Found in following statement: CREATE TABLE customer ( customer_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, store_id TINYINT UNSIGNED NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, email VARCHAR(50) DEFAULT NULL, address_id SMALLINT UNSIGNED NOT NULL, active BOOLEAN NOT NULL DEFAULT TRUE, create_date DATETIME NOT NULL, last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (customer_id), KEY idx_fk_store_id (store_id), KEY idx_fk_address_id (address_id), KEY idx_last_name (last_name), CONSTRAINT fk_customer_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE RESTRICT ON UPDATE CASCADE, CONSTRAINT fk_customer_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE RESTRICT ON UPDATE CASCADE)
+
+Detected: God Table Found in following statement: CREATE TABLE staff ( staff_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id SMALLINT UNSIGNED NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id TINYINT UNSIGNED NOT NULL, active BOOLEAN NOT NULL DEFAULT TRUE, username VARCHAR(16) NOT NULL, password VARCHAR(40) BINARY DEFAULT NULL, last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (staff_id), KEY idx_fk_store_id (store_id), KEY idx_fk_address_id (address_id), CONSTRAINT fk_staff_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE RESTRICT ON UPDATE CASCADE, CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE RESTRICT ON UPDATE CASCADE)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL, address character varying(50) NOT NULL, address2 character varying(50), district character varying(20) NOT NULL, city_id smallint NOT NULL, postal_code character varying(10), phone character varying(20) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'Z']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'H']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_05 (CONSTRAINT payment_p2007_05_payment_date_check CHECK (((payment_date >= '2007-05-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-06-01 00:00:00'::timestamp without time zone))))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE LICENSE_SERVER.LICENSE ( ID SERIAL8 NOT NULL, LICENSE_DATE TIMESTAMP NOT NULL, LICENSEE TEXT NOT NULL, LICENSE TEXT NOT NULL, VERSION VARCHAR(50) NOT NULL DEFAULT '.*', CONSTRAINT PK_LICENSE PRIMARY KEY (ID), CONSTRAINT UK_LICENSE UNIQUE (LICENSE))
+ in following column LICENSE of table LICENSE_SERVER
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_actor(actor_id)', 'actor_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'triggerfilm_trigger_aifilm']
+Detected: Index Shotgun Variant: 3 Following index not used : ['actor(last_name)', 'tableactoractor']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL, address character varying(50) NOT NULL, address2 character varying(50), district character varying(20) NOT NULL, city_id integer NOT NULL, postal_code character varying(10), phone character varying(20) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rental ( rental_id INT NOT NULL, rental_date TIMESTAMP NOT NULL, inventory_id INT NOT NULL, customer_id INT NOT NULL, return_date TIMESTAMP DEFAULT NULL, staff_id SMALLINT NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (rental_id), CONSTRAINT fk_rental_staff FOREIGN KEY (staff_id) REFERENCES staff (staff_id) , CONSTRAINT fk_rental_inventory FOREIGN KEY (inventory_id) REFERENCES inventory (inventory_id) , CONSTRAINT fk_rental_customer FOREIGN KEY (customer_id) REFERENCES customer (customer_id))
+ in following column inventory_id and in column inventory_id of table inventory
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(last_name)', 'triggercustomer_trigger_aicustomer']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_actor(film_id)', 'film_id']
+Detected: God Table Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update DATE NOT NULL, CONSTRAINT pk_staff PRIMARY KEY (staff_id), CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'Reis']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column last_name and in column last_name of table author
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id integer NOT NULL, original_language_id integer, rental_duration integer DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length integer, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column description of table film
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'M']
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'Amroha']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'n']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film_text ( film_id SMALLINT NOT NULL, title VARCHAR(255) NOT NULL, description BLOB SUB_TYPE TEXT, PRIMARY KEY (film_id))
+ in following column description of table film_text
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'j']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'w']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE address ( address_id integer DEFAULT nextval('address_address_id_seq'::regclass) NOT NULL, address character varying(50) NOT NULL, address2 character varying(50), district character varying(20) NOT NULL, city_id integer NOT NULL, postal_code character varying(10), phone character varying(20) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column address and in column address of table flyway_test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id integer NOT NULL, original_language_id integer, rental_duration integer DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length integer, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column title and in column title of table film_text
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'A']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id int NOT NULL, address VARCHAR(50) NOT NULL, address2 VARCHAR(50) DEFAULT NULL, district VARCHAR(20) NOT NULL, city_id INT NOT NULL, postal_code VARCHAR(10) DEFAULT NULL, phone VARCHAR(20) NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (address_id), CONSTRAINT fk_address_city FOREIGN KEY (city_id) REFERENCES city (city_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_04 (CONSTRAINT payment_p2007_04_payment_date_check CHECK (((payment_date >= '2007-04-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-05-01 00:00:00'::timestamp without time zone))))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_category ( film_id INT NOT NULL, category_id SMALLINT NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (film_id, category_id), CONSTRAINT fk_film_category_film FOREIGN KEY (film_id) REFERENCES film (film_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_film_category_category FOREIGN KEY (category_id) REFERENCES category (category_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column category_id and in column category_id of table category
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_actor(film_id)', 'j']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'S']
+Detected: God Table Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id integer NOT NULL, original_language_id integer, rental_duration integer DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length integer, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(store_id)', 'store_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'address_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment ( payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL, customer_id smallint NOT NULL, staff_id smallint NOT NULL, rental_id integer NOT NULL, amount numeric(5,2) NOT NULL, payment_date timestamp without time zone NOT NULL)
+ in following column customer_id and in column customer_id of table rental
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'z']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'V']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column active and in column active of table customer
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(store_id)', 'n']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'X']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'n']
+Detected: Index Shotgun Variant: 3 Following index not used : ['store', 'yindexidx_fk_store_addressstore']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental(inventory_id)', 'KCREATE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_category ( film_id INT NOT NULL, category_id SMALLINT NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (film_id, category_id), CONSTRAINT fk_film_category_film FOREIGN KEY (film_id) REFERENCES film (film_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_film_category_category FOREIGN KEY (category_id) REFERENCES category (category_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column film_id and in column film_id of table film
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'original_language_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE world.countries ( code CHAR(2) NOT NULL, year INT NOT NULL, gdp_per_capita DECIMAL(10, 2) NOT NULL, govt_debt DECIMAL(10, 2) NOT NULL, CONSTRAINT pk_countries PRIMARY KEY (code, year))
+ in following column . and in column . of table LICENSE_SERVER
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'v']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_actor(actor_id)', 'L']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column store_id and in column store_id of table store
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column address_id and in column address_id of table store
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_02 (CONSTRAINT payment_p2007_02_payment_date_check CHECK (((payment_date >= '2007-02-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-03-01 00:00:00'::timestamp without time zone))))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_category ( film_id INT NOT NULL, category_id SMALLINT NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (film_id, category_id), CONSTRAINT fk_film_category_film FOREIGN KEY (film_id) REFERENCES film (film_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_film_category_category FOREIGN KEY (category_id) REFERENCES category (category_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column CONSTRAINT and in column CONSTRAINT of table payment_p2007_03
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_03 (CONSTRAINT payment_p2007_03_payment_date_check CHECK (((payment_date >= '2007-03-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-04-01 00:00:00'::timestamp without time zone))))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'J']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'N']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'y']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE LICENSE_SERVER.LICENSE ( ID SERIAL8 NOT NULL, LICENSE_DATE TIMESTAMP NOT NULL, LICENSEE TEXT NOT NULL, LICENSE TEXT NOT NULL, VERSION VARCHAR(50) NOT NULL DEFAULT '.*', CONSTRAINT PK_LICENSE PRIMARY KEY (ID), CONSTRAINT UK_LICENSE UNIQUE (LICENSE))
+ in following column LICENSEE of table LICENSE_SERVER
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE city ( city_id int NOT NULL, city VARCHAR(50) NOT NULL, country_id SMALLINT NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (city_id), CONSTRAINT fk_city_country FOREIGN KEY (country_id) REFERENCES country (country_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column city_id and in column city_id of table address
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'language_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'L']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (staff_id), CONSTRAINT fk_staff_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column email and in column email of table customer
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE address ( address_id int NOT NULL, address VARCHAR(50) NOT NULL, address2 VARCHAR(50) DEFAULT NULL, district VARCHAR(20) NOT NULL, city_id INT NOT NULL, postal_code VARCHAR(10) DEFAULT NULL, phone VARCHAR(20) NOT NULL, last_update DATE NOT NULL, CONSTRAINT pk_address PRIMARY KEY (address_id))
+ in following column city_id and in column city_id of table city
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', '\x19']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental(inventory_id)', 'inventory_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column staff_id and in column staff_id of table rental
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'e']
+Detected: God Table Found in following statement: CREATE TABLE COLUMNS( TABLE_CATALOG VARCHAR, TABLE_SCHEMA VARCHAR, TABLE_NAME VARCHAR, COLUMN_NAME VARCHAR, ORDINAL_POSITION INTEGER, COLUMN_DEFAULT VARCHAR, IS_NULLABLE VARCHAR, DATA_TYPE INTEGER, CHARACTER_MAXIMUM_LENGTH INTEGER, CHARACTER_OCTET_LENGTH INTEGER, NUMERIC_PRECISION INTEGER, NUMERIC_PRECISION_RADIX INTEGER, NUMERIC_SCALE INTEGER, CHARACTER_SET_NAME VARCHAR, COLLATION_NAME VARCHAR, TYPE_NAME VARCHAR, NULLABLE INTEGER, IS_COMPUTED BOOLEAN, SELECTIVITY INTEGER, CHECK_CONSTRAINT VARCHAR, SEQUENCE_NAME VARCHAR, REMARKS VARCHAR, SOURCE_DATA_TYPE SMALLINT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'h']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'D']
+Detected: God Table Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'N']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'B']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental', 'staff_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film_text ( film_id SMALLINT NOT NULL, title VARCHAR(255) NOT NULL, description CLOB, CONSTRAINT pk_film_text PRIMARY KEY (film_id))
+ in following column CONSTRAINT of table film_text
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column description of table film
+Detected: God Table Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (staff_id), CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT, address VARCHAR(50) NOT NULL, address2 VARCHAR(50) DEFAULT NULL, district VARCHAR(20) NOT NULL, city_id SMALLINT UNSIGNED NOT NULL, postal_code VARCHAR(10) DEFAULT NULL, phone VARCHAR(20) NOT NULL, last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (address_id), KEY idx_fk_city_id (city_id), CONSTRAINT `fk_address_city` FOREIGN KEY (city_id) REFERENCES city (city_id) ON DELETE RESTRICT ON UPDATE CASCADE)
+
+Detected: God Table Found in following statement: CREATE TABLE film ( film_id int NOT NULL, title VARCHAR(255) NOT NULL, description BLOB SUB_TYPE TEXT DEFAULT NULL, release_year VARCHAR(4) DEFAULT NULL, language_id SMALLINT NOT NULL, original_language_id SMALLINT DEFAULT NULL, rental_duration SMALLINT DEFAULT 3 NOT NULL, rental_rate DECIMAL(4,2) DEFAULT 4.99 NOT NULL, length SMALLINT DEFAULT NULL, replacement_cost DECIMAL(5,2) DEFAULT 19.99 NOT NULL, rating VARCHAR(10) DEFAULT 'G', special_features VARCHAR(100) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (film_id), CONSTRAINT fk_film_language FOREIGN KEY (language_id) REFERENCES language (language_id) , CONSTRAINT fk_film_language_original FOREIGN KEY (original_language_id) REFERENCES language (language_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_actor(actor_id)', 'Itriggerfilm_actor_trigger_aifilm_actor']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rental ( rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL, rental_date timestamp without time zone NOT NULL, inventory_id integer NOT NULL, customer_id smallint NOT NULL, return_date timestamp without time zone, staff_id smallint NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column inventory_id and in column inventory_id of table inventory
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(last_name)', 'B']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_01 (CONSTRAINT payment_p2007_01_payment_date_check CHECK (((payment_date >= '2007-01-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-02-01 00:00:00'::timestamp without time zone))))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'country_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'Y']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment', 'K']
+Detected: God Table Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (staff_id), CONSTRAINT fk_staff_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff(store_id)', 'store_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['store', 'E']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE book ( id NUMBER(7) NOT NULL PRIMARY KEY, author_id NUMBER(7) NOT NULL, title VARCHAR2(400) NOT NULL, published_in NUMBER(7) NOT NULL, language_id NUMBER(7) NOT NULL, CONSTRAINT fk_book_author FOREIGN KEY (author_id) REFERENCES author(id), CONSTRAINT fk_book_language FOREIGN KEY (language_id) REFERENCES language(id))
+ in following column author_id and in column author_id of table flyway_test
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental', 'customer_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_category', 'G']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'city_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE language ( language_id SMALLINT NOT NULL , name CHAR(20) NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (language_id))
+ in following column name and in column name of table book_store
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'd']
+Detected: Index Shotgun Variant: 3 Following index not used : ['store', 'CREAT3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id int NOT NULL, title VARCHAR(255) NOT NULL, description BLOB SUB_TYPE TEXT DEFAULT NULL, release_year VARCHAR(4) DEFAULT NULL, language_id SMALLINT NOT NULL, original_language_id SMALLINT DEFAULT NULL, rental_duration SMALLINT DEFAULT 3 NOT NULL, rental_rate DECIMAL(4,2) DEFAULT 4.99 NOT NULL, length SMALLINT DEFAULT NULL, replacement_cost DECIMAL(5,2) DEFAULT 19.99 NOT NULL, rating VARCHAR(10) DEFAULT 'G', special_features VARCHAR(100) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (film_id), CONSTRAINT fk_film_language FOREIGN KEY (language_id) REFERENCES language (language_id) , CONSTRAINT fk_film_language_original FOREIGN KEY (original_language_id) REFERENCES language (language_id))
+ in following column description of table film
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'dos']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id SMALLINT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, address_id INT NOT NULL, picture BLOB DEFAULT NULL, email VARCHAR(50) DEFAULT NULL, store_id INT NOT NULL, active SMALLINT DEFAULT 1 NOT NULL, username VARCHAR(16) NOT NULL, password VARCHAR(40) DEFAULT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (staff_id), CONSTRAINT fk_staff_store FOREIGN KEY (store_id) REFERENCES store (store_id) ON DELETE NO ACTION ON UPDATE CASCADE, CONSTRAINT fk_staff_address FOREIGN KEY (address_id) REFERENCES address (address_id) ON DELETE NO ACTION ON UPDATE CASCADE)
+ in following column last_name and in column last_name of table actor
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(last_name)', 'last_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['actor', 'last_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['actor', 'triggeractor_trigger_aiactor']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(store_id,film_id)', 'film_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'f']
+Detected: Index Shotgun Variant: 3 Following index not used : ['store', 'triggerstaff_trigger_aistaff']
+Detected: Metadata as Data Found in following statement: CREATE TABLE authors ( ID NUMBER(7) NOT NULL PRIMARY KEY, first_name VARCHAR2(100 CHAR) NOT NULL, last_name VARCHAR2(100 CHAR) NOT NULL)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['inventory(store_id,film_id)', 'Ctriggerinventory_trigger_aiinventory']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE LICENSE_SERVER.LOG_VERIFY ( ID SERIAL8 NOT NULL, LICENSEE TEXT NOT NULL, LICENSE TEXT NOT NULL, REQUEST_IP VARCHAR(50) NOT NULL, MATCH BOOLEAN NOT NULL, VERSION VARCHAR(50) NOT NULL, CONSTRAINT PK_LOG_VERIFY PRIMARY KEY (ID))
+ in following column LICENSE of table LICENSE_SERVER
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'G']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film_category', 'film_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 't']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film_actor ( actor_id integer NOT NULL, film_id integer NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column actor_id and in column actor_id of table actor
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'L']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'b']
+Detected: Index Shotgun Variant: 3 Following index not used : ['actor(last_name)', 'last_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'u']
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', '\x01']
+Detected: Index Shotgun Variant: 3 Following index not used : ['customer(store_id)', 'A']
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', '_']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE staff ( staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL, first_name character varying(45) NOT NULL, last_name character varying(45) NOT NULL, address_id integer NOT NULL, email character varying(50), store_id integer NOT NULL, active boolean DEFAULT true NOT NULL, username character varying(16) NOT NULL, password character varying(40), last_update timestamp without time zone DEFAULT now() NOT NULL, picture bytea)
+ in following column email and in column email of table customer
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE country ( country_id SMALLINT NOT NULL, country VARCHAR(50) NOT NULL, last_update TIMESTAMP, PRIMARY KEY (country_id))
+ in following column country_id and in column country_id of table city
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental(inventory_id)', 'jQ']
+Detected: Index Shotgun Variant: 3 Following index not used : ['store', 'manager_staff_id']
+Detected: God Table Found in following statement: CREATE TABLE book ( id INT NOT NULL, author_id INT NOT NULL, co_author_id INT, details_id INT, title VARCHAR(400) NOT NULL, published_in INT, language_id INT, content_text CLOB, content_pdf BLOB, rec_version INT, rec_timestamp TIMESTAMP, CONSTRAINT pk_t_book PRIMARY KEY (id), CONSTRAINT fk_t_book_author_id FOREIGN KEY (author_id) REFERENCES author(id), CONSTRAINT fk_t_book_co_author_id FOREIGN KEY (co_author_id) REFERENCES author(id))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE address ( address_id int NOT NULL, address VARCHAR(50) NOT NULL, address2 VARCHAR(50) DEFAULT NULL, district VARCHAR(20) NOT NULL, city_id INT NOT NULL, postal_code VARCHAR(10) DEFAULT NULL, phone VARCHAR(20) NOT NULL, last_update TIMESTAMP NOT NULL, PRIMARY KEY (address_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['address', 'G']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id integer NOT NULL, original_language_id integer, rental_duration integer DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length integer, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column description and in column description of table film_text
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE country ( country_id integer DEFAULT nextval('country_country_id_seq'::regclass) NOT NULL, country character varying(50) NOT NULL, last_update timestamp without time zone DEFAULT now() NOT NULL)
+ in following column country_id and in column country_id of table city
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'AmersfoortC2011']
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'T']
+Detected: Metadata as Data Found in following statement: CREATE TABLE `author` ( `id` int NOT NULL, `first_name` varchar(255) DEFAULT NULL, `last_name` varchar(255) DEFAULT NULL, PRIMARY KEY (`id`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'Higashiosaka22011']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rental', 'inventory_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['film', 'l']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE payment_p2007_06 (CONSTRAINT payment_p2007_06_payment_date_check CHECK (((payment_date >= '2007-06-01 00:00:00'::timestamp without time zone) AND (payment_date < '2007-07-01 00:00:00'::timestamp without time zone))))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['city', 'Angra']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE film ( film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL, title character varying(255) NOT NULL, description text, release_year year, language_id smallint NOT NULL, original_language_id smallint, rental_duration smallint DEFAULT 3 NOT NULL, rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL, length smallint, replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL, rating mpaa_rating DEFAULT 'G'::mpaa_rating, last_update timestamp without time zone DEFAULT now() NOT NULL, special_features text[], fulltext tsvector NOT NULL)
+ in following column special_features of table film
+Detected: Index Shotgun Variant: 3 Following index not used : ['staff', 'I']
+Detected: God Table Found in following statement: CREATE TABLE customer ( customer_id INT NOT NULL, store_id INT NOT NULL, first_name VARCHAR(45) NOT NULL, last_name VARCHAR(45) NOT NULL, email VARCHAR(50) DEFAULT NULL, address_id INT NOT NULL, active CHAR(1) DEFAULT 'Y' NOT NULL, create_date DATE NOT NULL, last_update DATE NOT NULL, CONSTRAINT pk_customer PRIMARY KEY (customer_id), CONSTRAINT fk_customer_address FOREIGN KEY (address_id) REFERENCES address(address_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE author ( id NUMBER(7) NOT NULL PRIMARY KEY, first_name VARCHAR2(50), last_name VARCHAR2(50) NOT NULL, date_of_birth DATE, year_of_birth NUMBER(7), distinguished NUMBER(1))
+ in following column id and in column id of table book

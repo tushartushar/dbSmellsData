@@ -1,0 +1,3 @@
+Detected: God Table Found in following statement: CREATE TABLE photoplatformdb.SYS_USER ( ID INT NOT NULL AUTO_INCREMENT, EMAIL varchar(100) NOT NULL, PASSWORD varchar(255) NOT NULL, FIRST_NAME varchar(20), LAST_NAME varchar(20), COMPANY varchar(255), PHONE varchar(50), HOMEPAGE varchar(100), PAYPALID varchar(255), IBAN varchar(255), SWIFT varchar(50), IS_ACCOUNT_NON_LOCKED tinyint(1) NOT NULL, IS_ENABLED tinyint(1) NOT NULL, LOST_PASSWORD_TOKEN varchar(255), CREATED_AT timestamp NULL, CREATED_BY varchar(50), UPDATED_AT timestamp NULL, UPDATED_BY varchar(50), PRIMARY KEY (ID), UNIQUE INDEX ID_UNIQUE (ID ASC), UNIQUE INDEX USER_EMAIL_UNIQUE (EMAIL ASC))
+
+Detected: Index Shotgun Variant: 1

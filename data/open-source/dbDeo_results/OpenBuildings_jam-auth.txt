@@ -1,0 +1,6 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `roles` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `name` varchar(32) NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `uniq_name` (`name`))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['roles_users', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['roles_users', 'role_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE `test_roles` ( `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, `name` varchar(32) NOT NULL, `description` varchar(255) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `uniq_name` (`name`))
+

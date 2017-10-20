@@ -1,0 +1,89 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gamestate (activecampaign TEXT DEFAULT 'tutorial', version TEXT)
+ in following column activecampaign of table gamestate
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS lives (campaignid TEXT DEFAULT 'tutorial', lives INTEGER DEFAULT 3 NOT NULL, version TEXT, PRIMARY KEY(campaignid))
+ in following column campaignid of table lives
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column campaignid of table maps
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column version of table maps
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c2 and in column c2 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE gamestate SET activecampaign = ?, version = ? WHERE campaignid = ?
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column mapid of table maps
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS lives (campaignid TEXT DEFAULT 'tutorial', lives INTEGER DEFAULT 3 NOT NULL, version TEXT, PRIMARY KEY(campaignid))
+ in following column version of table lives
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gamestate (activecampaign TEXT DEFAULT 'tutorial', version TEXT)
+ in following column version of table gamestate
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column mapid of table maps
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column version of table maps
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lives (campaignid TEXT DEFAULT 'tutorial', lives INTEGER DEFAULT 3 NOT NULL, version TEXT, PRIMARY KEY(campaignid))
+ in following column version of table lives
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lives (campaignid TEXT DEFAULT 'tutorial', lives INTEGER DEFAULT 3 NOT NULL, version TEXT, PRIMARY KEY(campaignid))
+ in following column campaignid of table lives
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS maps (campaignid TEXT, mapid TEXT, locked INTEGER DEFAULT 1 NOT NULL, time INTEGER DEFAULT 0 NOT NULL, finishPoints INTEGER DEFAULT 0 NOT NULL, stars INTEGER DEFAULT 0 NOT NULL, version TEXT, PRIMARY KEY(campaignid, mapid))
+ in following column campaignid of table maps
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c1 and in column c1 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

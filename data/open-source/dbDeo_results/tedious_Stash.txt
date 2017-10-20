@@ -1,0 +1,2 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cacheStore ( key TEXT UNIQUE ON CONFLICT REPLACE, expiration INTEGER, encoding TEXT, data BLOB )
+ in following column encoding of table cacheStore

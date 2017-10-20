@@ -1,0 +1,10 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'CASCADE']
+Detected: God Table Found in following statement: CREATE TABLE sccpline ( id varchar(4) default NULL, pin varchar(45) default NULL, label varchar(45) default NULL, description varchar(45) default NULL, context varchar(45) default NULL, incominglimit varchar(45) default NULL, transfer varchar(45) default NULL, mailbox varchar(45) default NULL, vmnum varchar(45) default NULL, cid_name varchar(45) default NULL, cid_num varchar(45) default NULL, trnsfvm varchar(45) default NULL, secondary_dialtone_digits varchar(45) default NULL, secondary_dialtone_tone varchar(45) default NULL, musicclass varchar(45) default NULL, language varchar(45) default NULL, accountcode varchar(45) default NULL, echocancel varchar(45) default NULL, silencesuppression varchar(45) default NULL, callgroup varchar(45) default NULL, pickupgroup varchar(45) default NULL, dnd varchar(7) default 'reject', amaflags varchar(45) default NULL, regexten character varying(20) DEFAULT NULL, setvar varchar(50) default NULL, name varchar(45) NOT NULL, PRIMARY KEY (name))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['buttontype', 'type']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'name']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'device']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['sccpdevice', 'UPDATE']

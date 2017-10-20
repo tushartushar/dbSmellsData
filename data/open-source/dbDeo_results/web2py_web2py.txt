@@ -1,0 +1,55 @@
+Detected: Clone Tables Found in following statement: create table issue13 (t text)
+
+Detected: Clone Tables Found in following statement: create table issue364 (value_1 binary(3), value_2 varchar(3))
+
+Detected: Clone Tables Found in following statement: create table issue321 (value_1 varchar(1), value_2 varchar(1))
+
+Detected: Clone Tables Found in following statement: create table issue66 (id integer primary key auto_increment, x integer)
+
+Detected: Clone Tables Found in following statement: create table issue15 (t varchar(32))
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table issue66 (id integer primary key auto_increment, x integer)
+ in following column id and in column id of table test_datetime
+Detected: Clone Tables Found in following statement: create table issue16 (name varchar(32) primary key, email varchar(32))
+
+Detected: Duplicate Column Names Found in following statement: create table issue38 (id integer, data mediumblob)
+ in following column data and in column data of table test
+Detected: Obsolete Column TypesFound in following statement: create table test_datatypes (b bit, i int, l bigint, f real, s varchar(32), u varchar(32), bb blob, d date, dt datetime, ts timestamp, td time, t time, st datetime)
+ in following column f of table test_datatypes
+Detected: Multicolumn Attribute Found in following statement: create table issue321 (value_1 varchar(1), value_2 varchar(1))
+
+Detected: Multicolumn Attribute Found in following statement: create table issue364 (value_1 binary(3), value_2 varchar(3))
+
+Detected: Clone Tables Found in following statement: create table issue38 (id integer, data mediumblob)
+
+Detected: Duplicate Column Names Found in following statement: create table issue13 (t text)
+ in following column t and in column t of table issue3
+Detected: Duplicate Column Names Found in following statement: create table issue321 (value_1 varchar(1), value_2 varchar(1))
+ in following column value_1 and in column value_1 of table issue364
+Detected: Duplicate Column Names Found in following statement: create table issue4 (ts timestamp)
+ in following column ts and in column ts of table test_datetime
+Detected: Duplicate Column Names Found in following statement: create table test_aggregates (i integer)
+ in following column i and in column i of table test_datatypes
+Detected: Obsolete Column TypesFound in following statement: create table test_dict (a text)
+ in following column a of table test_dict
+Detected: Clone Tables Found in following statement: create table issue17 (x varchar(32) primary key)
+
+Detected: Obsolete Column TypesFound in following statement: create table issue13 (t text)
+ in following column t of table issue13
+Detected: Duplicate Column Names Found in following statement: create table %sbooze (name varchar(20))
+ in following column name and in column name of table dictcursor
+Detected: Duplicate Column Names Found in following statement: create table issue66 (id integer primary key auto_increment, x integer)
+ in following column x and in column x of table issue17
+Detected: Clone Tables Found in following statement: create table issue3 (d date, t time, dt datetime, ts timestamp)
+
+Detected: God Table Found in following statement: create table test_datatypes (b bit, i int, l bigint, f real, s varchar(32), u varchar(32), bb blob, d date, dt datetime, ts timestamp, td time, t time, st datetime)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_load_local (a INTEGER, b INTEGER)
+ in following column a and in column a of table test
+Detected: Clone Tables Found in following statement: create table issue4 (ts timestamp)
+
+Detected: Clone Tables Found in following statement: create table issue54 (id integer primary key)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_load_local (a INTEGER, b INTEGER)
+ in following column b and in column b of table test_blob

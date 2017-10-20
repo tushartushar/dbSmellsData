@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table if not exists hypothesis_data_mapping( key text, value text, unique(key, value) )
+ in following column value of table hypothesis_data_mapping
+Detected: Index Shotgun Variant: 1

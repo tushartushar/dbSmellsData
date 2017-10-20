@@ -1,0 +1,2 @@
+SELECT * FROM $bugs
+SELECT COUNT(*) FROM $bugs

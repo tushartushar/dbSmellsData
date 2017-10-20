@@ -1,0 +1,4 @@
+Detected: God Table Found in following statement: CREATE TABLE authentications ( id integer NOT NULL, user_id integer, provider character varying(255) NOT NULL, proid character varying(255) NOT NULL, token character varying(255), refresh_token character varying(255), secret character varying(255), expires_at timestamp without time zone, username character varying(255), image_url character varying(255), created_at timestamp without time zone, updated_at timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE oauth_caches ( authentication_id integer NOT NULL, data_json text NOT NULL, created_at timestamp without time zone, updated_at timestamp without time zone)
+ in following column data_json of table oauth_caches

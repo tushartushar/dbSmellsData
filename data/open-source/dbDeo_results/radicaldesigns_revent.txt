@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['zip_codes', 'zip']
+Detected: Index Shotgun Variant: 3 Following index not used : ['events', '64']
+Detected: Index Shotgun Variant: 3 Following index not used : ['events', '2']
+Detected: Index Shotgun Variant: 3 Following index not used : ['events', 'city']
+Detected: Index Shotgun Variant: 3 Following index not used : ['events', 'state']
+Detected: Index Shotgun Variant: 3 Following index not used : ['zip_codes', '15']

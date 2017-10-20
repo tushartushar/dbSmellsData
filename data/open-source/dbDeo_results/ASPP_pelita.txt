@@ -1,0 +1,19 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS games (player1 text, player2 text, result int, stdout text, stderr text, FOREIGN KEY(player1) REFERENCES players(name) ON DELETE CASCADE, FOREIGN KEY(player2) REFERENCES players(name) ON DELETE CASCADE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['players', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS games (player1 text, player2 text, result int, stdout text, stderr text, FOREIGN KEY(player1) REFERENCES players(name) ON DELETE CASCADE, FOREIGN KEY(player2) REFERENCES players(name) ON DELETE CASCADE)
+ in following column player1 of table games
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS players (name text PRIMARY KEY, hash text)
+ in following column hash of table players
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['players', 'DELETE']
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS players (name text PRIMARY KEY, hash text)
+ in following column name of table players
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['players', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS games (player1 text, player2 text, result int, stdout text, stderr text, FOREIGN KEY(player1) REFERENCES players(name) ON DELETE CASCADE, FOREIGN KEY(player2) REFERENCES players(name) ON DELETE CASCADE)
+ in following column stderr of table games
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS games (player1 text, player2 text, result int, stdout text, stderr text, FOREIGN KEY(player1) REFERENCES players(name) ON DELETE CASCADE, FOREIGN KEY(player2) REFERENCES players(name) ON DELETE CASCADE)
+ in following column player2 of table games
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['players', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS games (player1 text, player2 text, result int, stdout text, stderr text, FOREIGN KEY(player1) REFERENCES players(name) ON DELETE CASCADE, FOREIGN KEY(player2) REFERENCES players(name) ON DELETE CASCADE)
+ in following column stdout of table games

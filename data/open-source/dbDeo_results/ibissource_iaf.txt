@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['IBISSTORE', 'EXPIRYDATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ibisstore', 'expiryDate']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ibisstore', 'slotId']
+Detected: God Table Found in following statement: CREATE TABLE IBISSTORE	(	MESSAGEKEY int identity,	TYPE CHAR(1),	SLOTID VARCHAR(100),	HOST VARCHAR(100),	MESSAGEID VARCHAR(100),	CORRELATIONID VARCHAR(256),	MESSAGEDATE datetime,	COMMENTS VARCHAR(1000),	MESSAGE varbinary(max),	EXPIRYDATE datetime,	LABEL VARCHAR(100),	CONSTRAINT PK_IBISSTORE PRIMARY KEY (MESSAGEKEY)	)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ibisstore', 'messageDate']

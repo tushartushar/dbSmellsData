@@ -1,0 +1,994 @@
+Detected: Metadata as Data Found in following statement: create table benoemd_terrein_benoem_archief(	fk_nn_lh_btr_sc_identif varchar2(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_btr_sc_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_PAND_IN_GEBRUIK(THE_GEOM)', 'indextype']
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column postcode and in column postcode of table addresseerb_obj_aand
+Detected: Multicolumn Attribute Found in following statement: create table huishouden_archief(	dat_beg_geldh varchar(19) not null,	nummer decimal(12,0) not null,	datum_einde_geldh varchar(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar(16),	fk_5lpl_sc_identif varchar(16),	fk_7spl_sc_identif varchar(16))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column begindatum_aantek_kad_obj and in column begindatum_aantek_kad_obj of table kad_onrrnd_zk_aantek_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['ONDERSTEUNEND_WEGDEEL (KRUINLIJN)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif character varying(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_lpl_sc_identif and in column fk_nn_lh_lpl_sc_identif of table ligplaats_nummeraand
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZAK_RECHT', 'FK_7KOZ_KAD_IDENTIF']
+Detected: Index Shotgun Variant: 3 Following index not used : ['WEGDEEL (KRUINLIJN)', 'KRUINLIJN']
+Detected: Duplicate Column Names Found in following statement: create table app_re(	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_sectie and in column ka_sectie of table app_re_archief
+Detected: Duplicate Column Names Found in following statement: create table standplaats_nummeraand_archief(	fk_nn_lh_spl_sc_identif character varying(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_spl_sc_dat_beg_geldh and in column fk_nn_lh_spl_sc_dat_beg_geldh of table standplaats_nummeraand
+Detected: Multicolumn Attribute Found in following statement: create table ondrnmng(	kvk_nummer decimal(8,0) not null,	datum_aanvang varchar2(19),	datum_einde varchar2(19),	fk_4mac_kvk_nummer decimal(8,0),	fk_1ond_kvk_nummer decimal(8,0))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh varchar2(19) not null,	eindd_geldh varchar2(19),	omschr varchar2(100))
+ in following column begindatum_geldh and in column begindatum_geldh of table nation
+Detected: God Table Found in following statement: create table pand_archief(	dat_beg_geldh character varying(19) not null,	identif character varying(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh character varying(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd character varying(255),	indic_geconstateerd character varying(1),	inwwijze_geom_bovenaanzicht character varying(24),	inwwijze_geom_maaiveld character varying(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status character varying(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw character varying(24))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'kadperceelcode']
+Detected: Duplicate Column Names Found in following statement: create table wegdeel(	dat_beg_geldh varchar2(19),	identif varchar2(255) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	functie varchar2(25),	fysiek_voork varchar2(20),	relve_hoogteligging decimal(1,0),	status varchar2(8),	fk_8opr_identifcode varchar2(16))
+ in following column fysiek_voork and in column fysiek_voork of table wegdeel_archief
+Detected: God Table Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+
+Detected: Duplicate Column Names Found in following statement: create table openb_rmte_gem_openb_rmte(	fk_nn_lh_opr_identifcode character varying(16) not null,	fk_nn_rh_gor_identifcode character varying(16) not null)
+ in following column fk_nn_lh_opr_identifcode and in column fk_nn_lh_opr_identifcode of table openb_rmte_wnplts
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+ in following column fk_6wpl_identif and in column fk_6wpl_identif of table addresseerb_obj_aand_archief
+Detected: Metadata as Data Found in following statement: create table ligplaats_nummeraand(	fk_nn_lh_lpl_sc_identif varchar2(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar2(19),	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['wijk_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ONBEGROEID_TERREINDEEL (KRUINLIJN)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterdeel (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_adr_object_nummeraand', 'identif']
+Detected: Metadata as Data Found in following statement: create table begr_terreinvakonderd_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1btd_identif varchar2(255))
+
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+ in following column huinummertoevoeging and in column huinummertoevoeging of table addresseerb_obj_aand_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen', 'subjectid']
+Detected: Duplicate Column Names Found in following statement: create table app_re(	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column fk_2nnp_sc_identif and in column fk_2nnp_sc_identif of table app_re_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand (geom_maaiveld)', 'geom_maaiveld']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gemeente (geom)', 'geom']
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh character varying(19),	identif character varying(16) not null,	clazz character varying(255),	dat_eind_geldh character varying(19),	huisletter character varying(1),	huinummer decimal(5,0),	huinummertoevoeging character varying(4),	postcode character varying(6),	fk_6wpl_identif character varying(4),	fk_7opr_identifcode character varying(16))
+
+Detected: Metadata as Data Found in following statement: create table kad_gemeente(	code varchar(5) not null,	indic_vervallen char(1),	naam varchar(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand (geom_maaiveld)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inrichtingselement (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column type_openb_rmte and in column type_openb_rmte of table gem_openb_rmte_archief
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte_archief(	dat_beg_geldh varchar(19) not null,	identifcode varchar(16) not null,	datum_einde_geldh varchar(19),	indic_geconst_openb_rmte varchar(1),	naam_openb_rmte varchar(80),	status_openb_rmte varchar(80),	straatnaam varchar(24),	type_openb_rmte varchar(40),	fk_7gem_code decimal(4,0))
+ in following column indic_geconst_openb_rmte and in column indic_geconst_openb_rmte of table gem_openb_rmte
+Detected: Index Shotgun Variant: 3 Following index not used : ['overig_bouwwerk (geom)', 'INDEXTYPE']
+Detected: God Table Found in following statement: create table vestg(	sc_identif varchar2(32) not null,	activiteit_omschr varchar2(2000),	datum_aanvang varchar2(19),	datum_beeindiging varchar2(19),	datum_voortzetting varchar2(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar2(100),	verkorte_naam varchar2(45),	typering varchar2(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar2(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar2(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar2(16),	sa_indic_hoofdactiviteit varchar2(3),	fk_sa_sbi_activiteit_sbi_code varchar2(6))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_PAND_GEBRUIK_NIET_INGEMETEN(THE_GEOM)', 'indextype']
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces ( dtype varchar(255) not null, id numeric(19,0) identity not null, cron_expressie varchar(255) null, lastrun datetime null, logfile text null, samenvatting text null, status varchar(255) null, primary key (id) )
+ in following column logfile of table automatisch_proces
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lr_valutasoort and in column lr_valutasoort of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table niet_nat_prs(	sc_identif varchar(32) not null,	clazz varchar(255),	naam varchar(500),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	verkorte_naam varchar(45))
+ in following column datum_beeindiging and in column datum_beeindiging of table vestg
+Detected: Duplicate Column Names Found in following statement: create table wegvakonderdeel(	sc_identif character varying(255) not null,	fk_1wgd_identif character varying(255))
+ in following column fk_1wgd_identif and in column fk_1wgd_identif of table wegvakonderdeel_archief
+Detected: Metadata as Data Found in following statement: create table wegvakonderdeel_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	fk_1wgd_identif varchar(255))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['KAD_PERCEEL', 'KA_KAD_GEMEENTECODE']
+Detected: Duplicate Column Names Found in following statement: create table begr_terreinvakonderd(	sc_identif varchar2(255) not null,	fk_1btd_identif varchar2(255))
+ in following column fk_1btd_identif and in column fk_1btd_identif of table begr_terreinvakonderd_archief
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column br_orgineel_xml of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['KAD_PERCEEL', 'KA_SECTIE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['inrichtingselement (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table buurt_archief(	code decimal(8,0) not null,	dat_beg_geldh varchar(19) not null,	naam varchar(80),	datum_einde_geldh varchar(19),	identif_imgeobrt varchar(255),	relve_hoogteligging decimal(1,0),	status varchar(8))
+ in following column identif_imgeobrt and in column identif_imgeobrt of table buurt
+Detected: Duplicate Column Names Found in following statement: create table meta_referentielijsten(	tabel character varying(255) not null,	kolom character varying(255) not null,	referentielijst character varying(255))
+ in following column kolom and in column kolom of table herkomst_metadata
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column straatnaam and in column straatnaam of table gem_openb_rmte_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column ks_valutasoort and in column ks_valutasoort of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl_archief (kruinlijngeom)', 'kruinlijngeom']
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id numeric(19,0) identity not null, br_orgineel_xml text null, br_xml text null, datum datetime null, db_xml text null, job_id varchar(255) null, object_ref varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, volgordenummer int null, xsl_version varchar(255) null, laadprocesid numeric(19,0) null, primary key (id) )
+ in following column br_xml of table bericht
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column kadaster_identif_aantek and in column kadaster_identif_aantek of table kad_onrrnd_zk_aantek
+Detected: Duplicate Column Names Found in following statement: create table functioneel_gebied(	dat_beg_geldh varchar2(19),	identif varchar2(255) not null,	datum_einde_geldh varchar2(19),	naam varchar2(40),	relve_hoogteligging decimal(1,0),	status varchar2(8),	type varchar2(255))
+ in following column naam and in column naam of table wnplts
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lr_aand_aard_liproject and in column lr_aand_aard_liproject of table kad_onrrnd_zk_archief
+Detected: Multicolumn Attribute Found in following statement: create table maatschapp_activiteit(	kvk_nummer decimal(8,0) not null,	datum_aanvang character varying(19),	datum_einde_geldig character varying(19),	fk_3ond_kvk_nummer decimal(8,0),	fk_4pes_sc_identif character varying(32))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column fk_5pes_sc_identif and in column fk_5pes_sc_identif of table kad_onrrnd_zk_aantek
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_nummeraan_archief(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_vbo_sc_identif and in column fk_nn_lh_vbo_sc_identif of table verblijfsobj_nummeraand
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif varchar2(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_lpl_sc_dat_beg_geldh and in column fk_nn_lh_lpl_sc_dat_beg_geldh of table ligplaats_nummeraand
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column ks_aard_bedrag and in column ks_aard_bedrag of table kad_onrrnd_zk_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['BRONDOCUMENT', 'OMSCHRIJVING']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel_archief (begrenzing_perceel)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ONDERSTEUNEND_WEGDEEL (KRUINLIJN)', 'KRUINLIJN']
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column br_xml of table bericht
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoem_archief(	fk_nn_lh_btr_sc_identif varchar(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar(19) not null,	fk_nn_rh_btr_sc_identif varchar(16) not null)
+ in following column fk_nn_lh_btr_dat_beg_geldh and in column fk_nn_lh_btr_dat_beg_geldh of table benoemd_terrein_benoemd_terrei
+Detected: Duplicate Column Names Found in following statement: create table locaand_openb_rmte(	fk_sc_lh_opr_identifcode varchar(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr varchar(40))
+ in following column locomschr and in column locomschr of table locaand_adres
+Detected: Multicolumn Attribute Found in following statement: create table subject(	identif character varying(32) not null,	clazz character varying(255),	adres_binnenland character varying(257),	adres_buitenland character varying(149),	emailadres character varying(254),	fax_nummer character varying(20),	kvk_nummer decimal(8,0),	naam character varying(500),	typering character varying(50),	telefoonnummer character varying(20),	website_url character varying(200),	fk_13wpl_identif character varying(4),	fk_14aoa_identif character varying(16),	fk_15aoa_identif character varying(16),	pa_postadres_postcode character varying(6),	pa_postadrestype character varying(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif character varying(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic character varying(11),	rn_iban character varying(34),	vb_adres_buitenland_1 character varying(35),	vb_adres_buitenland_2 character varying(35),	vb_adres_buitenland_3 character varying(35),	fk_vb_lnd_code_iso character varying(2))
+
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces ( dtype varchar(255) not null, id bigserial not null, cron_expressie varchar(255), lastrun timestamp, logfile text, samenvatting text, status varchar(255), primary key (id) )
+ in following column samenvatting of table automatisch_proces
+Detected: Duplicate Column Names Found in following statement: create table functioneel_gebied(	dat_beg_geldh varchar2(19),	identif varchar2(255) not null,	datum_einde_geldh varchar2(19),	naam varchar2(40),	relve_hoogteligging decimal(1,0),	status varchar2(8),	type varchar2(255))
+ in following column type and in column type of table inrichtingselement_archief
+Detected: God Table Found in following statement: create table subject(	identif varchar(32) not null,	clazz varchar(255),	adres_binnenland varchar(257),	adres_buitenland varchar(149),	emailadres varchar(254),	fax_nummer varchar(20),	kvk_nummer decimal(8,0),	naam varchar(500),	typering varchar(50),	telefoonnummer varchar(20),	website_url varchar(200),	fk_13wpl_identif varchar(4),	fk_14aoa_identif varchar(16),	fk_15aoa_identif varchar(16),	pa_postadres_postcode varchar(6),	pa_postadrestype varchar(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif varchar(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic varchar(11),	rn_iban varchar(34),	vb_adres_buitenland_1 varchar(35),	vb_adres_buitenland_2 varchar(35),	vb_adres_buitenland_3 varchar(35),	fk_vb_lnd_code_iso varchar(2))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_kad_onrrnd_zk(	fk_nn_lh_koz_kad_identif decimal(15,0) not null,	fk_nn_lh_koz_dat_beg_geldh character varying(19),	fk_nn_rh_koz_kad_identif decimal(15,0) not null)
+ in following column fk_nn_lh_koz_dat_beg_geldh and in column fk_nn_lh_koz_dat_beg_geldh of table kad_onrrnd_zk_kad_onrr_archief
+Detected: Multicolumn Attribute Found in following statement: create table maatschapp_activiteit(	kvk_nummer decimal(8,0) not null,	datum_aanvang varchar(19),	datum_einde_geldig varchar(19),	fk_3ond_kvk_nummer decimal(8,0),	fk_4pes_sc_identif varchar(32))
+
+Detected: Duplicate Column Names Found in following statement: create table ondersteunend_wegdeel_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(255) not null,	datum_einde_geldh varchar2(19),	functie varchar2(25),	relve_hoogteligging decimal(1,0),	status varchar2(8),	fk_6opr_identifcode varchar2(16))
+ in following column functie and in column functie of table spoor_archief
+Detected: Metadata as Data Found in following statement: create table woz_belang(	fk_sc_lh_sub_identif varchar2(32) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	aand_eigenaargebruiker varchar2(1))
+
+Detected: Obsolete Column TypesFound in following statement: create table laadproces ( id bigserial not null, bestand_datum timestamp, bestand_naam varchar(255), contact_email varchar(255), gebied varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, automatisch_proces int8, primary key (id) )
+ in following column opmerking of table laadproces
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kad_perceel_over_in', 'kadperceelcode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BEGROEID_TERREINDEEL (KRUINLIJN)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ondersteunend_wegdeel_archief (geom)', 'geom']
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces_config ( proces_id int8 not null, value text, config_key varchar(255), primary key (proces_id, config_key) )
+ in following column value of table automatisch_proces_config
+Detected: Index Shotgun Variant: 3 Following index not used : ['buurt_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['woz_obj_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj (vlakgeom)', 'vlakgeom']
+Detected: Duplicate Column Names Found in following statement: create table pand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar(255),	indic_geconstateerd varchar(1),	inwwijze_geom_bovenaanzicht varchar(24),	inwwijze_geom_maaiveld varchar(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar(24))
+ in following column inwwijze_geom_bovenaanzicht and in column inwwijze_geom_bovenaanzicht of table pand
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif character varying(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_rh_nra_sc_identif and in column fk_nn_rh_nra_sc_identif of table ligplaats_nummeraand
+Detected: Metadata as Data Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif varchar2(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel_recht', 'kadperceelcode']
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh character varying(19),	nummer decimal(12,0) not null,	datum_einde_geldh character varying(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif character varying(16),	fk_5lpl_sc_identif character varying(16),	fk_7spl_sc_identif character varying(16))
+ in following column fk_7spl_sc_identif and in column fk_7spl_sc_identif of table huishouden_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column fk_10pes_sc_identif and in column fk_10pes_sc_identif of table kad_onrrnd_zk_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['wegdeel (geom)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar(19),	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['brondocument', 'omschrijving']
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht_aantek(	kadaster_identif_aantek_recht varchar2(255) not null,	aard_aantek_recht varchar2(255),	begindatum_aantek_recht varchar2(19),	beschrijving_aantek_recht varchar2(255),	eindd_aantek_recht varchar2(255),	fk_5zkr_kadaster_identif varchar2(255),	fk_6pes_sc_identif varchar2(32))
+
+Detected: Duplicate Column Names Found in following statement: create table kunstwerkdeel(	dat_beg_geldh varchar2(19),	identif varchar2(255) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	relve_hoogteligging decimal(1,0),	status varchar2(8),	type_kunstwerk varchar2(40))
+ in following column type_kunstwerk and in column type_kunstwerk of table kunstwerkdeel_archief
+Detected: Duplicate Column Names Found in following statement: create table pand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar2(255),	indic_geconstateerd varchar2(1),	inwwijze_geom_bovenaanzicht varchar2(24),	inwwijze_geom_maaiveld varchar2(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar2(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar2(24))
+ in following column identif_bgtpnd and in column identif_bgtpnd of table pand_archief
+Detected: Duplicate Column Names Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+ in following column typering and in column typering of table inrichtingselement_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['bericht', 'object_ref']
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_pand_archief(	fk_nn_lh_vbo_sc_identif character varying(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_pnd_identif character varying(16) not null)
+ in following column fk_nn_rh_pnd_identif and in column fk_nn_rh_pnd_identif of table verblijfsobj_pand
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE GEOMETRY_COLUMNS ( F_TABLE_SCHEMA VARCHAR(30) NOT NULL, F_TABLE_NAME VARCHAR(30) NOT NULL, F_GEOMETRY_COLUMN VARCHAR(30) NOT NULL, COORD_DIMENSION INTEGER, SRID INTEGER NOT NULL, TYPE VARCHAR(30) NOT NULL, UNIQUE(F_TABLE_SCHEMA, F_TABLE_NAME, F_GEOMETRY_COLUMN), CHECK(TYPE IN ('POINT', 'LINE', 'POLYGON', 'COLLECTION', 'MULTIPOINT', 'MULTILINE', 'MULTIPOLYGON', 'GEOMETRY')))
+ in following column TYPE and in column TYPE of table geometry_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterdeel (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+ in following column ontsluiting_verdieping and in column ontsluiting_verdieping of table verblijfsobj
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lr_valutasoort and in column lr_valutasoort of table kad_onrrnd_zk_archief
+Detected: Duplicate Column Names Found in following statement: create table app_re_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_appartementsindex and in column ka_appartementsindex of table app_re
+Detected: Duplicate Column Names Found in following statement: create table wegdeel_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(255) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	functie varchar(25),	fysiek_voork varchar(20),	relve_hoogteligging decimal(1,0),	status varchar(8),	fk_8opr_identifcode varchar(16))
+ in following column fysiek_voork and in column fysiek_voork of table wegdeel
+Detected: Index Shotgun Variant: 3 Following index not used : ['scheiding_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel (plaatscoordinaten_perceel)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwinstallatie_archief (geom)', 'geom']
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces ( dtype varchar(255) not null, id numeric(19,0) identity not null, cron_expressie varchar(255) null, lastrun datetime null, logfile text null, samenvatting text null, status varchar(255) null, primary key (id) )
+ in following column samenvatting of table automatisch_proces
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht(	kadaster_identif character varying(255) not null,	eindd_recht character varying(255),	indic_betrokken_in_splitsing character varying(255),	ingangsdatum_recht character varying(19),	fk_7koz_kad_identif decimal(15,0),	fk_8pes_sc_identif character varying(32),	ar_noemer decimal(8,0),	ar_teller decimal(8,0),	fk_2aard_recht_verkort_aand character varying(4),	fk_3avr_aand character varying(6))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel', 'postcode']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj character varying(19),	kadaster_identif_aantek character varying(255) not null,	aard_aantek_kad_obj character varying(255),	beschrijving_aantek_kad_obj character varying(124),	eindd_aantek_kad_obj character varying(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif character varying(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel (plaatscoordinaten_perceel)', 'plaatscoordinaten_perceel']
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj(	sc_identif varchar(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar(40),	type varchar(40),	fk_4oao_sc_identif varchar(16),	fk_5nra_sc_identif varchar(16),	fk_6opr_identifcode varchar(16))
+
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code varchar(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar(16),	fk_5tgo_identif varchar(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Metadata as Data Found in following statement: create table benoemd_terrein_benoem_archief(	fk_nn_lh_btr_sc_identif varchar(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar(19) not null,	fk_nn_rh_btr_sc_identif varchar(16) not null)
+
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj_archief(	dat_beg_geldh_deelobj decimal(8,0) not null,	nummer decimal(6,0) not null,	code varchar2(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar2(16),	fk_5tgo_identif varchar2(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lr_bedrag and in column lr_bedrag of table kad_onrrnd_zk
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_nummeraand(	fk_nn_lh_vbo_sc_identif varchar(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar(19),	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Multicolumn Attribute Found in following statement: create table maatschapp_activiteit(	kvk_nummer decimal(8,0) not null,	datum_aanvang varchar2(19),	datum_einde_geldig varchar2(19),	fk_3ond_kvk_nummer decimal(8,0),	fk_4pes_sc_identif varchar2(32))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_gemeente(	code varchar(5) not null,	indic_vervallen char(1),	naam varchar(40))
+ in following column code and in column code of table woz_deelobj
+Detected: Compound Attribute Variant: 3 Found in following statement: update kad_onrrnd_zk set DAT_BEG_GELDH = ?, DATUM_EINDE_GELDH = ?, KAD_IDENTIF = ?, CLAZZ = ?, KS_BEDRAG = ?, KS_VALUTASOORT = ?, KS_MEER_ONROERENDGOED = ?, CU_AARD_BEBOUWING = ?, CU_AARD_CULTUUR_ONBEBOUWD = ?  where kad_identif = ? 
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand_archief (geom_maaiveld)', 'geom_maaiveld']
+Detected: Duplicate Column Names Found in following statement: create table begr_terr_dl_archief(	dat_beg_geldh character varying(19) not null,	identif character varying(255) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	fysiek_voork_begr_terrein character varying(20),	relve_hoogteligging decimal(1,0),	status character varying(8),	fk_8opr_identifcode character varying(16))
+ in following column fysiek_voork_begr_terrein and in column fysiek_voork_begr_terrein of table begr_terr_dl
+Detected: God Table Found in following statement: create table ingezetene(	sc_identif varchar(32) not null,	datum_verkr_verblijfstitel varchar(19),	datum_verlies_verblijfstitel varchar(19),	indic_blokkering varchar(1),	indic_curateleregister decimal(1,0),	indic_gezag_minderjarige varchar(2),	fk_8vbt_aand decimal(2,0),	ek_aand_euro_kiesr decimal(1,0),	ek_verw_eindd_uitsl_euro_kiesr decimal(8,0),	uk_aand_uitgesloten_kiesr varchar(1),	uk_verw_eindd_uitsl_kiesr decimal(8,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES(THE_GEOM)', 'THE_GEOM']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bericht', 'job_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ondersteunend_wegdeel (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_KAD_PERCEEL_MET_APP_VLAK(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE job ( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column br_xml of table job
+Detected: Metadata as Data Found in following statement: create table kad_gemeente(	code varchar2(5) not null,	indic_vervallen char(1),	naam varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lr_aand_aard_liproject and in column lr_aand_aard_liproject of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['gemeente_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_LIGPLAATS(GEOMETRIE)', 'GEOMETRIE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kad_perceel_over_in', 'sectie']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_IN_EIGENDOM(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Metadata as Data Found in following statement: create table watervakonderdeel_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	fk_1wad_identif varchar(255))
+
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+ in following column huisletter and in column huisletter of table addresseerb_obj_aand_archief
+Detected: Multicolumn Attribute Found in following statement: create table vestg(	sc_identif character varying(32) not null,	activiteit_omschr character varying(2000),	datum_aanvang character varying(19),	datum_beeindiging character varying(19),	datum_voortzetting character varying(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres character varying(100),	verkorte_naam character varying(45),	typering character varying(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif character varying(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif character varying(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif character varying(16),	sa_indic_hoofdactiviteit character varying(3),	fk_sa_sbi_activiteit_sbi_code character varying(6))
+
+Detected: Duplicate Column Names Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+ in following column verkorte_naam and in column verkorte_naam of table niet_nat_prs
+Detected: Index Shotgun Variant: 3 Following index not used : ['functioneel_gebied_archief (geom)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: create table laadproces ( id numeric(19,0) identity not null, bestand_datum datetime null, bestand_naam varchar(255) null, contact_email varchar(255) null, gebied varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, automatisch_proces numeric(19,0) null, primary key (id) )
+ in following column opmerking of table laadproces
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj character varying(19) not null,	kadaster_identif_aantek character varying(255) not null,	aard_aantek_kad_obj character varying(255),	beschrijving_aantek_kad_obj character varying(124),	eindd_aantek_kad_obj character varying(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif character varying(32))
+
+Detected: Duplicate Column Names Found in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column status_datum and in column status_datum of table laadproces
+Detected: Duplicate Column Names Found in following statement: create table gebouwd_obj(	dat_beg_geldh varchar2(19),	sc_identif varchar2(16) not null,	clazz varchar2(255),	bouwk_best_act varchar2(255),	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	inwwijze_oppervlakte varchar2(24),	oppervlakte_obj decimal(6,0),	status_voortgang_bouw integer)
+ in following column bouwk_best_act and in column bouwk_best_act of table gebouwd_obj_archief
+Detected: Duplicate Column Names Found in following statement: create table waterdeel(	dat_beg_geldh character varying(19),	identif character varying(255) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	droogvallend character varying(1),	relve_hoogteligging decimal(1,0),	status character varying(8),	type character varying(40),	fk_7opr_identifcode character varying(16))
+ in following column droogvallend and in column droogvallend of table waterdeel_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen ( geom )', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_APP_RE_BIJ_PERCEEL(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lr_aard_bedrag and in column lr_aard_bedrag of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'woonplaats']
+Detected: Metadata as Data Found in following statement: create table standplaats_nummeraand_archief(	fk_nn_lh_spl_sc_identif varchar(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh varchar(19) not null,	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table ondersteunend_wegdeel_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(255) not null,	datum_einde_geldh varchar2(19),	functie varchar2(25),	relve_hoogteligging decimal(1,0),	status varchar2(8),	fk_6opr_identifcode varchar2(16))
+ in following column fk_6opr_identifcode and in column fk_6opr_identifcode of table overig_gebouwd_obj_archief
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh character varying(19) not null,	kad_identif decimal(15,0) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	typering character varying(1),	fk_7kdg_code character varying(5),	fk_10pes_sc_identif character varying(32),	cu_aard_bebouwing character varying(255),	cu_aard_cultuur_onbebouwd character varying(65),	cu_meer_culturen char(1),	ks_aard_bedrag character varying(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort character varying(255),	lr_aand_aard_liproject character varying(1),	lr_aard_bedrag character varying(255),	lr_bedrag character varying(255),	lr_eindjaar integer,	lr_valutasoort character varying(3),	lo_cultuur_bebouwd character varying(65),	lo_loc__omschr character varying(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['spoor_archief (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lo_loc__omschr and in column lo_loc__omschr of table kad_onrrnd_zk_archief
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh varchar2(19) not null,	eindd_geldh varchar2(19),	omschr varchar2(100))
+ in following column omschr and in column omschr of table nation
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte_archief(	dat_beg_geldh varchar(19) not null,	identifcode varchar(16) not null,	datum_einde_geldh varchar(19),	indic_geconst_openb_rmte varchar(1),	naam_openb_rmte varchar(80),	status_openb_rmte varchar(80),	straatnaam varchar(24),	type_openb_rmte varchar(40),	fk_7gem_code decimal(4,0))
+ in following column straatnaam and in column straatnaam of table gem_openb_rmte
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_LIGPLAATS(GEOMETRIE)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel_recht', 'subjectid']
+Detected: Duplicate Column Names Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code varchar2(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar2(16),	fk_5tgo_identif varchar2(16),	fk_6woz_nummer decimal(12,0))
+ in following column fk_4pnd_identif and in column fk_4pnd_identif of table woz_deelobj_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column ks_aard_bedrag and in column ks_aard_bedrag of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwinstallatie (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19))
+ in following column clazz and in column clazz of table begr_terr_dl_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['overig_bouwwerk_archief (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh character varying(19),	nummer decimal(12,0) not null,	datum_einde_geldh character varying(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif character varying(16),	fk_5lpl_sc_identif character varying(16),	fk_7spl_sc_identif character varying(16))
+ in following column fk_5lpl_sc_identif and in column fk_5lpl_sc_identif of table huishouden_archief
+Detected: Multicolumn Attribute Found in following statement: create table huishouden(	dat_beg_geldh varchar(19),	nummer decimal(12,0) not null,	datum_einde_geldh varchar(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar(16),	fk_5lpl_sc_identif varchar(16),	fk_7spl_sc_identif varchar(16))
+
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_nummeraand(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19),	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: God Table Found in following statement: create table nat_prs(	sc_identif varchar(32) not null,	clazz varchar(255),	aand_naamgebruik varchar(1),	geslachtsaand varchar(1),	nm_adellijke_titel_predikaat varchar(10),	nm_geslachtsnaam varchar(200),	nm_voornamen varchar(200),	nm_voorvoegsel_geslachtsnaam varchar(10),	na_aanhef_aanschrijving varchar(50),	na_geslachtsnaam_aanschrijving varchar(200),	na_voorletters_aanschrijving varchar(20),	na_voornamen_aanschrijving varchar(200),	fk_2acd_code varchar(3))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj(	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+ in following column fk_11nra_sc_identif and in column fk_11nra_sc_identif of table verblijfsobj_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_TOTAAL(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table huw_ger_partn(	fk_sc_lh_inp_sc_identif character varying(32) not null,	fk_sc_rh_inp_sc_identif character varying(32) not null,	hs_datum_aangaan decimal(8,0),	fk_hs_lnd_code_iso character varying(2),	hs_plaats character varying(40),	ho_datum_ontb_huw_ger_partn decimal(8,0),	fk_ho_lnd_code_iso character varying(2),	ho_plaats_ontb_huw_ger_partn character varying(40),	ho_reden_ontb_huw_ger_partn character varying(1),	soort_verbintenis character varying(1))
+ in following column fk_sc_lh_inp_sc_identif and in column fk_sc_lh_inp_sc_identif of table huishoudenrel
+Detected: Duplicate Column Names Found in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column opmerking and in column opmerking of table laadproces
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel ( geom )', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_nummeraan_archief(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_vbo_sc_dat_beg_geldh and in column fk_nn_lh_vbo_sc_dat_beg_geldh of table verblijfsobj_nummeraand
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel', 'ka_perceelnummer']
+Detected: Duplicate Column Names Found in following statement: create table pand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar(255),	indic_geconstateerd varchar(1),	inwwijze_geom_bovenaanzicht varchar(24),	inwwijze_geom_maaiveld varchar(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar(24))
+ in following column identif_bgtpnd and in column identif_bgtpnd of table pand
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh character varying(19),	nummer decimal(12,0) not null,	datum_einde_geldh character varying(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif character varying(16),	fk_5lpl_sc_identif character varying(16),	fk_7spl_sc_identif character varying(16))
+ in following column fk_4vbo_sc_identif and in column fk_4vbo_sc_identif of table huishouden_archief
+Detected: Duplicate Column Names Found in following statement: create table app_re_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column fk_2nnp_sc_identif and in column fk_2nnp_sc_identif of table app_re
+Detected: Duplicate Column Names Found in following statement: create table kunstwerkdeel_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(255) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	relve_hoogteligging decimal(1,0),	status varchar(8),	type_kunstwerk varchar(40))
+ in following column identif and in column identif of table inrichtingselement_archief
+Detected: Duplicate Column Names Found in following statement: create table standplaats_nummeraand(	fk_nn_lh_spl_sc_identif character varying(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh character varying(19),	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_spl_sc_identif and in column fk_nn_lh_spl_sc_identif of table standplaats_nummeraand_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column aard_aantek_kad_obj and in column aard_aantek_kad_obj of table kad_onrrnd_zk_aantek
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen', 'perceelnummer']
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh character varying(19) not null,	identif character varying(16) not null,	clazz character varying(255),	dat_eind_geldh character varying(19),	huisletter character varying(1),	huinummer decimal(5,0),	huinummertoevoeging character varying(4),	postcode character varying(6),	fk_6wpl_identif character varying(4),	fk_7opr_identifcode character varying(16))
+
+Detected: Multicolumn Attribute Found in following statement: create table vestg(	sc_identif varchar2(32) not null,	activiteit_omschr varchar2(2000),	datum_aanvang varchar2(19),	datum_beeindiging varchar2(19),	datum_voortzetting varchar2(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar2(100),	verkorte_naam varchar2(45),	typering varchar2(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar2(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar2(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar2(16),	sa_indic_hoofdactiviteit varchar2(3),	fk_sa_sbi_activiteit_sbi_code varchar2(6))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel', 'perceelnummer']
+Detected: God Table Found in following statement: create table subject(	identif varchar2(32) not null,	clazz varchar2(255),	adres_binnenland varchar2(257),	adres_buitenland varchar2(149),	emailadres varchar2(254),	fax_nummer varchar2(20),	kvk_nummer decimal(8,0),	naam varchar2(500),	typering varchar2(50),	telefoonnummer varchar2(20),	website_url varchar2(200),	fk_13wpl_identif varchar2(4),	fk_14aoa_identif varchar2(16),	fk_15aoa_identif varchar2(16),	pa_postadres_postcode varchar2(6),	pa_postadrestype varchar2(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif varchar2(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic varchar2(11),	rn_iban varchar2(34),	vb_adres_buitenland_1 varchar2(35),	vb_adres_buitenland_2 varchar2(35),	vb_adres_buitenland_3 varchar2(35),	fk_vb_lnd_code_iso varchar2(2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code character varying(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif character varying(16),	fk_5tgo_identif character varying(16),	fk_6woz_nummer decimal(12,0))
+ in following column fk_5tgo_identif and in column fk_5tgo_identif of table woz_deelobj_archief
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['prs', 'sc_identif']
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoem_archief(	fk_nn_lh_btr_sc_identif varchar(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar(19) not null,	fk_nn_rh_btr_sc_identif varchar(16) not null)
+ in following column fk_nn_rh_btr_sc_identif and in column fk_nn_rh_btr_sc_identif of table benoemd_terrein_benoemd_terrei
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+
+Detected: Metadata as Data Found in following statement: create table woz_belang(	fk_sc_lh_sub_identif varchar(32) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	aand_eigenaargebruiker varchar(1))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_MAP_KAD_PERCEEL(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column object_ref and in column object_ref of table bericht
+Detected: Duplicate Column Names Found in following statement: create table app_re(	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_perceelnummer and in column ka_perceelnummer of table app_re_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_ZR_ADRESSEN(BEGRENZING_PERCEEL)', 'indextype']
+Detected: God Table Found in following statement: create table verblijfsobj_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd character varying(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping character varying(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status character varying(80),	fk_11nra_sc_identif character varying(16))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh character varying(19) not null,	eindd_geldh character varying(19),	omschr character varying(100))
+ in following column begindatum_geldh and in column begindatum_geldh of table rsdocsoort
+Detected: Index Shotgun Variant: 3 Following index not used : ['vrijstaand_vegetatie_obj (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+ in following column fk_11nra_sc_identif and in column fk_11nra_sc_identif of table verblijfsobj
+Detected: Multicolumn Attribute Found in following statement: create table subject(	identif varchar2(32) not null,	clazz varchar2(255),	adres_binnenland varchar2(257),	adres_buitenland varchar2(149),	emailadres varchar2(254),	fax_nummer varchar2(20),	kvk_nummer decimal(8,0),	naam varchar2(500),	typering varchar2(50),	telefoonnummer varchar2(20),	website_url varchar2(200),	fk_13wpl_identif varchar2(4),	fk_14aoa_identif varchar2(16),	fk_15aoa_identif varchar2(16),	pa_postadres_postcode varchar2(6),	pa_postadrestype varchar2(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif varchar2(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic varchar2(11),	rn_iban varchar2(34),	vb_adres_buitenland_1 varchar2(35),	vb_adres_buitenland_2 varchar2(35),	vb_adres_buitenland_3 varchar2(35),	fk_vb_lnd_code_iso varchar2(2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterschap (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh character varying(19) not null,	eindd_geldh character varying(19),	omschr character varying(100))
+ in following column omschr and in column omschr of table verblijfstitel
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column huisletter and in column huisletter of table addresseerb_obj_aand
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column fk_7kdg_code and in column fk_7kdg_code of table kad_onrrnd_zk_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'adres']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE job ( jid numeric(19,0) identity not null, id numeric(19,0) null, br_xml text null, datum datetime null, object_ref varchar(255) null, soort varchar(255) null, volgordenummer int null, primary key (jid) )
+ in following column br_xml of table job
+Detected: Index Shotgun Variant: 3 Following index not used : ['ovrg_scheiding (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column fk_10pes_sc_identif and in column fk_10pes_sc_identif of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand_archief (geom_bovenaanzicht)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel_archief (begrenzing_perceel)', 'begrenzing_perceel']
+Detected: God Table Found in following statement: create table ingezetene(	sc_identif varchar2(32) not null,	datum_verkr_verblijfstitel varchar2(19),	datum_verlies_verblijfstitel varchar2(19),	indic_blokkering varchar2(1),	indic_curateleregister decimal(1,0),	indic_gezag_minderjarige varchar2(2),	fk_8vbt_aand decimal(2,0),	ek_aand_euro_kiesr decimal(1,0),	ek_verw_eindd_uitsl_euro_kiesr decimal(8,0),	uk_aand_uitgesloten_kiesr varchar2(1),	uk_verw_eindd_uitsl_kiesr decimal(8,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['kunstwerkdeel (geom)', 'geom']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+
+Detected: Duplicate Column Names Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code character varying(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif character varying(16),	fk_5tgo_identif character varying(16),	fk_6woz_nummer decimal(12,0))
+ in following column nummer and in column nummer of table rsdoc
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT_ALLES(THE_GEOM)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kad_perceel_over_in', 'kadperceelcode_over_in_crit']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kad_perceel_over_in', 'perceelnummer']
+Detected: Duplicate Column Names Found in following statement: create table herkomst_metadata (	tabel character varying(255),	kolom character varying(255),	waarde character varying(255),	herkomst_br character varying(255),	datum timestamp without time zone,	primary key (tabel, kolom, waarde, herkomst_br, datum))
+ in following column waarde and in column waarde of table brmo_metadata
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh varchar2(19),	nummer decimal(12,0) not null,	datum_einde_geldh varchar2(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar2(16),	fk_5lpl_sc_identif varchar2(16),	fk_7spl_sc_identif varchar2(16))
+ in following column fk_7spl_sc_identif and in column fk_7spl_sc_identif of table huishouden_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['spoor (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column datum and in column datum of table brondocument
+Detected: Obsolete Column TypesFound in following statement: create table groep_ ( naam varchar(255) not null, beschrijving text null, primary key (naam) )
+ in following column beschrijving of table groep_
+Detected: Index Shotgun Variant: 3 Following index not used : ['WEGDEEL (KRUINLIJN)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['functioneel_gebied (geom)', 'geom']
+Detected: Metadata as Data Found in following statement: create table locaand_openb_rmte(	fk_sc_lh_opr_identifcode varchar2(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column status_openb_rmte and in column status_openb_rmte of table gem_openb_rmte_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj (puntgeom)', 'puntgeom']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column begindatum_aantek_kad_obj and in column begindatum_aantek_kad_obj of table kad_onrrnd_zk_aantek
+Detected: Duplicate Column Names Found in following statement: create table wijk_archief(	dat_beg_geldh varchar(19) not null,	code decimal(6,0) not null,	datum_einde_geldh varchar(19),	identif_imgeowyk varchar(255),	relve_hoogteligging decimal(1,0),	status varchar(8),	naam varchar(80))
+ in following column identif_imgeowyk and in column identif_imgeowyk of table wijk
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id numeric(19,0) identity not null, br_orgineel_xml text null, br_xml text null, datum datetime null, db_xml text null, job_id varchar(255) null, object_ref varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, volgordenummer int null, xsl_version varchar(255) null, laadprocesid numeric(19,0) null, primary key (id) )
+ in following column opmerking of table bericht
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj_archief(	dat_beg_geldh_deelobj decimal(8,0) not null,	nummer decimal(6,0) not null,	code character varying(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif character varying(16),	fk_5tgo_identif character varying(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Duplicate Column Names Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code varchar2(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar2(16),	fk_5tgo_identif varchar2(16),	fk_6woz_nummer decimal(12,0))
+ in following column fk_5tgo_identif and in column fk_5tgo_identif of table woz_deelobj_archief
+Detected: Duplicate Column Names Found in following statement: create table waterdeel(	dat_beg_geldh varchar2(19),	identif varchar2(255) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	droogvallend varchar2(1),	relve_hoogteligging decimal(1,0),	status varchar2(8),	type varchar2(40),	fk_7opr_identifcode varchar2(16))
+ in following column droogvallend and in column droogvallend of table waterdeel_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj (puntgeom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table watervakonderdeel_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1wad_identif varchar2(255))
+ in following column fk_1wad_identif and in column fk_1wad_identif of table watervakonderdeel
+Detected: Index Shotgun Variant: 3 Following index not used : ['buurt_archief (geom)', 'INDEXTYPE']
+Detected: God Table Found in following statement: create table ingezetene(	sc_identif character varying(32) not null,	datum_verkr_verblijfstitel character varying(19),	datum_verlies_verblijfstitel character varying(19),	indic_blokkering character varying(1),	indic_curateleregister decimal(1,0),	indic_gezag_minderjarige character varying(2),	fk_8vbt_aand decimal(2,0),	ek_aand_euro_kiesr decimal(1,0),	ek_verw_eindd_uitsl_euro_kiesr decimal(8,0),	uk_aand_uitgesloten_kiesr character varying(1),	uk_verw_eindd_uitsl_kiesr decimal(8,0))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column eindd_aantek_kad_obj and in column eindd_aantek_kad_obj of table kad_onrrnd_zk_aantek
+Detected: Duplicate Column Names Found in following statement: create table gebouwd_obj_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	bouwk_best_act varchar2(255),	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	inwwijze_oppervlakte varchar2(24),	oppervlakte_obj decimal(6,0),	status_voortgang_bouw integer)
+ in following column inwwijze_oppervlakte and in column inwwijze_oppervlakte of table gebouwd_obj
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column kadaster_identif_aantek and in column kadaster_identif_aantek of table kad_onrrnd_zk_aantek_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lr_bedrag and in column lr_bedrag of table kad_onrrnd_zk_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'perceelnummer']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stadsdeel_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen', 'subjectid']
+Detected: Duplicate Column Names Found in following statement: create table standplaats_nummeraand(	fk_nn_lh_spl_sc_identif character varying(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh character varying(19),	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_spl_sc_dat_beg_geldh and in column fk_nn_lh_spl_sc_dat_beg_geldh of table standplaats_nummeraand_archief
+Detected: Duplicate Column Names Found in following statement: create table watervakonderdeel_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(255) not null,	fk_1wad_identif character varying(255))
+ in following column fk_1wad_identif and in column fk_1wad_identif of table watervakonderdeel
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+
+Detected: God Table Found in following statement: create table nat_prs(	sc_identif character varying(32) not null,	clazz character varying(255),	aand_naamgebruik character varying(1),	geslachtsaand character varying(1),	nm_adellijke_titel_predikaat character varying(10),	nm_geslachtsnaam character varying(200),	nm_voornamen character varying(200),	nm_voorvoegsel_geslachtsnaam character varying(10),	na_aanhef_aanschrijving character varying(50),	na_geslachtsnaam_aanschrijving character varying(200),	na_voorletters_aanschrijving character varying(20),	na_voornamen_aanschrijving character varying(200),	fk_2acd_code character varying(3))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column cu_aard_bebouwing and in column cu_aard_bebouwing of table kad_onrrnd_zk
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar2(19) not null,	kadaster_identif_aantek varchar2(255) not null,	aard_aantek_kad_obj varchar2(255),	beschrijving_aantek_kad_obj varchar2(124),	eindd_aantek_kad_obj varchar2(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar2(32))
+
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	indic_geconst varchar(1),	status varchar(80),	fk_4nra_sc_identif varchar(16))
+ in following column indic_geconst and in column indic_geconst of table wnplts
+Detected: Multicolumn Attribute Found in following statement: create table huishouden_archief(	dat_beg_geldh varchar2(19) not null,	nummer decimal(12,0) not null,	datum_einde_geldh varchar2(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar2(16),	fk_5lpl_sc_identif varchar2(16),	fk_7spl_sc_identif varchar2(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl (kruinlijngeom)', 'kruinlijngeom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ZAK_RECHT_AANTEK', 'FK_5ZKR_KADASTER_IDENTIF']
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column fk_7opr_identifcode and in column fk_7opr_identifcode of table addresseerb_obj_aand
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_nummeraan_archief(	fk_nn_lh_vbo_sc_identif varchar(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar(19) not null,	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar2(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column ks_transactiedatum and in column ks_transactiedatum of table kad_onrrnd_zk
+Detected: God Table Found in following statement: create table functionaris(	fk_sc_lh_pes_sc_identif character varying(32) not null,	fk_sc_rh_pes_sc_identif character varying(32) not null,	beperking_bev_in_euros decimal(18,0),	bv_beperking_in_geld decimal(18,0),	bv_omschr_ovrg_beperkingen character varying(2000),	bv_ovrg_volmacht character varying(3),	bv_soort_handeling character varying(35),	bev_met_andere_prsn character varying(3),	datum_toetr character varying(19),	datum_uittreding character varying(19),	functie character varying(80),	functionaristypering character varying(35),	indic_statutair_volmacht character varying(3),	ovrg_beperking_bev character varying(3),	soort_bev character varying(30),	volledig_beperkt_volmacht character varying(1))
+
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	indic_geconst varchar(1),	status varchar(80),	fk_4nra_sc_identif varchar(16))
+ in following column fk_4nra_sc_identif and in column fk_4nra_sc_identif of table ligplaats
+Detected: Duplicate Column Names Found in following statement: create table huw_ger_partn(	fk_sc_lh_inp_sc_identif varchar2(32) not null,	fk_sc_rh_inp_sc_identif varchar2(32) not null,	hs_datum_aangaan decimal(8,0),	fk_hs_lnd_code_iso varchar2(2),	hs_plaats varchar2(40),	ho_datum_ontb_huw_ger_partn decimal(8,0),	fk_ho_lnd_code_iso varchar2(2),	ho_plaats_ontb_huw_ger_partn varchar2(40),	ho_reden_ontb_huw_ger_partn varchar2(1),	soort_verbintenis varchar2(1))
+ in following column fk_sc_lh_inp_sc_identif and in column fk_sc_lh_inp_sc_identif of table huishoudenrel
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column ks_transactiedatum and in column ks_transactiedatum of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['functioneel_gebied (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column fk_5pes_sc_identif and in column fk_5pes_sc_identif of table kad_onrrnd_zk_aantek_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl_archief (geom)', 'geom']
+Detected: Multicolumn Attribute Found in following statement: create table huishouden_archief(	dat_beg_geldh character varying(19) not null,	nummer decimal(12,0) not null,	datum_einde_geldh character varying(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif character varying(16),	fk_5lpl_sc_identif character varying(16),	fk_7spl_sc_identif character varying(16))
+
+Detected: Duplicate Column Names Found in following statement: create table pand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar(255),	indic_geconstateerd varchar(1),	inwwijze_geom_bovenaanzicht varchar(24),	inwwijze_geom_maaiveld varchar(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar(24))
+ in following column inwwijze_geom_maaiveld and in column inwwijze_geom_maaiveld of table pand
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'sectie']
+Detected: Duplicate Column Names Found in following statement: create table kad_perceel_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_kad_identif decimal(15,0) not null,	aand_soort_grootte char(1),	grootte_perceel decimal(8,0),	omschr_deelperceel varchar2(1120),	fk_7kdp_sc_kad_identif decimal(15,0),	ka_deelperceelnummer varchar2(4),	ka_kad_gemeentecode varchar2(5),	ka_perceelnummer varchar2(5),	ka_sectie varchar2(255))
+ in following column omschr_deelperceel and in column omschr_deelperceel of table kad_perceel
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column dat_eind_geldh and in column dat_eind_geldh of table addresseerb_obj_aand
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_EIGENARENKAART (BEGRENZING_PERCEEL)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterschap_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column cu_aard_bebouwing and in column cu_aard_bebouwing of table kad_onrrnd_zk_archief
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code varchar2(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar2(16),	fk_5tgo_identif varchar2(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['wnplts_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wijk_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column soort and in column soort of table bericht
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+ in following column dat_eind_geldh and in column dat_eind_geldh of table addresseerb_obj_aand_archief
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19))
+ in following column datum_einde_geldh and in column datum_einde_geldh of table inrichtingselement_archief
+Detected: God Table Found in following statement: create table functionaris(	fk_sc_lh_pes_sc_identif varchar(32) not null,	fk_sc_rh_pes_sc_identif varchar(32) not null,	beperking_bev_in_euros decimal(18,0),	bv_beperking_in_geld decimal(18,0),	bv_omschr_ovrg_beperkingen varchar(2000),	bv_ovrg_volmacht varchar(3),	bv_soort_handeling varchar(35),	bev_met_andere_prsn varchar(3),	datum_toetr varchar(19),	datum_uittreding varchar(19),	functie varchar(80),	functionaristypering varchar(35),	indic_statutair_volmacht varchar(3),	ovrg_beperking_bev varchar(3),	soort_bev varchar(30),	volledig_beperkt_volmacht varchar(1))
+
+Detected: Duplicate Column Names Found in following statement: create table app_re_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_perceelnummer and in column ka_perceelnummer of table app_re
+Detected: Index Shotgun Variant: 3 Following index not used : ['benoemd_terrein_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stadsdeel (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column beschrijving_aantek_kad_obj and in column beschrijving_aantek_kad_obj of table kad_onrrnd_zk_aantek
+Detected: Metadata as Data Found in following statement: create table standplaats_nummeraand(	fk_nn_lh_spl_sc_identif varchar(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh varchar(19),	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['wegdeel_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table standplaats_nummeraand_archief(	fk_nn_lh_spl_sc_identif character varying(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_spl_sc_identif and in column fk_nn_lh_spl_sc_identif of table standplaats_nummeraand
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+
+Detected: Metadata as Data Found in following statement: create table meta_referentielijsten(	tabel varchar2(255) not null,	kolom varchar2(255) not null,	referentielijst varchar2(255))
+
+Detected: Metadata as Data Found in following statement: create table overig_terrein_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	fk_2oao_sc_identif varchar2(16))
+
+Detected: God Table Found in following statement: create table verblijfsobj_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar2(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar2(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar2(80),	fk_11nra_sc_identif varchar2(16))
+
+Detected: Metadata as Data Found in following statement: create table onbegr_terreinvakonder_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	fk_1obt_identif varchar(255))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column fk_7kdg_code and in column fk_7kdg_code of table kad_onrrnd_zk
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoemd_terrei(	fk_nn_lh_btr_sc_identif varchar2(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar2(19),	fk_nn_rh_btr_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_btr_dat_beg_geldh and in column fk_nn_lh_btr_dat_beg_geldh of table benoemd_terrein_benoem_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres ( geom )', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar(40),	type varchar(40),	fk_4oao_sc_identif varchar(16),	fk_5nra_sc_identif varchar(16),	fk_6opr_identifcode varchar(16))
+ in following column loc_aand and in column loc_aand of table overig_gebouwd_obj
+Detected: Index Shotgun Variant: 3 Following index not used : ['gemeente_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel', 'straat']
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj_archief(	dat_beg_geldh_deelobj decimal(8,0) not null,	nummer decimal(6,0) not null,	code varchar(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif varchar(16),	fk_5tgo_identif varchar(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ondersteunend_wegdeel (geom)', 'INDEXTYPE']
+Detected: Metadata as Data Found in following statement: create table overig_terrein_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	fk_2oao_sc_identif varchar(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterdeel_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel_archief (plaatscoordinaten_perceel)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen', 'perceelnummer']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'postcode']
+Detected: Metadata as Data Found in following statement: create table meta_referentielijsten(	tabel varchar(255) not null,	kolom varchar(255) not null,	referentielijst varchar(255))
+
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht(	kadaster_identif varchar(255) not null,	eindd_recht varchar(255),	indic_betrokken_in_splitsing varchar(255),	ingangsdatum_recht varchar(19),	fk_7koz_kad_identif decimal(15,0),	fk_8pes_sc_identif varchar(32),	ar_noemer decimal(8,0),	ar_teller decimal(8,0),	fk_2aard_recht_verkort_aand varchar(4),	fk_3avr_aand varchar(6))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['woz_obj (geom)', 'INDEXTYPE']
+Detected: God Table Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar(19),	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+
+Detected: Duplicate Column Names Found in following statement: create table onbegr_terreinvakonder_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1obt_identif varchar2(255))
+ in following column fk_1obt_identif and in column fk_1obt_identif of table onbegr_terreinvakonderd
+Detected: God Table Found in following statement: create table functionaris(	fk_sc_lh_pes_sc_identif varchar2(32) not null,	fk_sc_rh_pes_sc_identif varchar2(32) not null,	beperking_bev_in_euros decimal(18,0),	bv_beperking_in_geld decimal(18,0),	bv_omschr_ovrg_beperkingen varchar2(2000),	bv_ovrg_volmacht varchar2(3),	bv_soort_handeling varchar2(35),	bev_met_andere_prsn varchar2(3),	datum_toetr varchar2(19),	datum_uittreding varchar2(19),	functie varchar2(80),	functionaristypering varchar2(35),	indic_statutair_volmacht varchar2(3),	ovrg_beperking_bev varchar2(3),	soort_bev varchar2(30),	volledig_beperkt_volmacht varchar2(1))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['spoor_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj_archief (puntgeom)', 'puntgeom']
+Detected: Duplicate Column Names Found in following statement: create table overig_terrein(	sc_identif varchar2(16) not null,	fk_2oao_sc_identif varchar2(16))
+ in following column fk_2oao_sc_identif and in column fk_2oao_sc_identif of table overig_terrein_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['buurt (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wnplts_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen( geom )', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj_archief (puntgeom)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek_archief(	begindatum_aantek_kad_obj varchar(19) not null,	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column beschrijving_aantek_kad_obj and in column beschrijving_aantek_kad_obj of table kad_onrrnd_zk_aantek_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_APP_RE_AND_KAD_PERCEEL(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj_archief (vlakgeom)', 'vlakgeom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen', 'sectie']
+Detected: Duplicate Column Names Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+ in following column datum_aanvang and in column datum_aanvang of table ondrnmng
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column br_xml and in column br_xml of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel_aant', 'kadperceelcode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterdeel_archief (geom)', 'INDEXTYPE']
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_nummeraan_archief(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table wegvakonderdeel(	sc_identif varchar(255) not null,	fk_1wgd_identif varchar(255))
+ in following column fk_1wgd_identif and in column fk_1wgd_identif of table wegvakonderdeel_archief
+Detected: Duplicate Column Names Found in following statement: create table app_re_kad_perceel_archief(	fk_nn_lh_apr_sc_kad_identif decimal(15,0) not null,	fk_nn_lh_apr_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_kdp_sc_kad_identif decimal(15,0) not null)
+ in following column fk_nn_lh_apr_sc_dat_beg_geldh and in column fk_nn_lh_apr_sc_dat_beg_geldh of table app_re_kad_perceel
+Detected: Metadata as Data Found in following statement: create table benoemd_terrein_benoemd_terrei(	fk_nn_lh_btr_sc_identif varchar2(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar2(19),	fk_nn_rh_btr_sc_identif varchar2(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(16) not null,	bouwjaar decimal(4,0),	loc_aand character varying(40),	type character varying(40),	fk_4oao_sc_identif character varying(16),	fk_5nra_sc_identif character varying(16),	fk_6opr_identifcode character varying(16))
+ in following column loc_aand and in column loc_aand of table overig_gebouwd_obj
+Detected: Multicolumn Attribute Found in following statement: create table ondrnmng(	kvk_nummer decimal(8,0) not null,	datum_aanvang character varying(19),	datum_einde character varying(19),	fk_4mac_kvk_nummer decimal(8,0),	fk_1ond_kvk_nummer decimal(8,0))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lo_cultuur_bebouwd and in column lo_cultuur_bebouwd of table kad_onrrnd_zk
+Detected: Duplicate Column Names Found in following statement: create table gemeente_gemeente(	fk_nn_lh_gem_code decimal(4,0) not null,	fk_nn_lh_gem_dat_beg_geldh character varying(19),	fk_nn_rh_gem_code decimal(4,0) not null)
+ in following column fk_nn_lh_gem_dat_beg_geldh and in column fk_nn_lh_gem_dat_beg_geldh of table gemeente_gemeente_archief
+Detected: Multicolumn Attribute Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+
+Detected: Metadata as Data Found in following statement: create table locaand_adres(	fk_sc_lh_aoa_identif varchar(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr varchar(40))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh character varying(19) not null,	eindd_geldh character varying(19),	omschr character varying(100))
+ in following column eindd_geldh and in column eindd_geldh of table rsdocsoort
+Detected: Duplicate Column Names Found in following statement: create table buurt(	code decimal(8,0) not null,	dat_beg_geldh varchar(19),	naam varchar(80),	datum_einde_geldh varchar(19),	identif_imgeobrt varchar(255),	relve_hoogteligging decimal(1,0),	status varchar(8))
+ in following column identif_imgeobrt and in column identif_imgeobrt of table buurt_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand_archief (geom_bovenaanzicht)', 'geom_bovenaanzicht']
+Detected: Duplicate Column Names Found in following statement: create table kad_perceel(	sc_kad_identif decimal(15,0) not null,	aand_soort_grootte char(1),	grootte_perceel decimal(8,0),	omschr_deelperceel varchar(1120),	fk_7kdp_sc_kad_identif decimal(15,0),	ka_deelperceelnummer varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(5),	ka_sectie varchar(255))
+ in following column ka_deelperceelnummer and in column ka_deelperceelnummer of table kad_perceel_archief
+Detected: Duplicate Column Names Found in following statement: create table laadproces ( id bigserial not null, bestand_datum timestamp, bestand_naam varchar(255), contact_email varchar(255), gebied varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, automatisch_proces int8, primary key (id) )
+ in following column status_datum and in column status_datum of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['vrijstaand_vegetatie_o_archief (geom)', 'geom']
+Detected: Metadata as Data Found in following statement: create table standplaats_nummeraand_archief(	fk_nn_lh_spl_sc_identif varchar2(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres ( geom )', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte_archief(	dat_beg_geldh varchar(19) not null,	identifcode varchar(16) not null,	datum_einde_geldh varchar(19),	indic_geconst_openb_rmte varchar(1),	naam_openb_rmte varchar(80),	status_openb_rmte varchar(80),	straatnaam varchar(24),	type_openb_rmte varchar(40),	fk_7gem_code decimal(4,0))
+ in following column type_openb_rmte and in column type_openb_rmte of table gem_openb_rmte
+Detected: Index Shotgun Variant: 3 Following index not used : ['woz_obj (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['KAD_ONRRND_ZK_AANTEK', 'FK_4KOZ_KAD_IDENTIF']
+Detected: God Table Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh character varying(19),	kad_identif decimal(15,0) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	typering character varying(1),	fk_7kdg_code character varying(5),	fk_10pes_sc_identif character varying(32),	cu_aard_bebouwing character varying(255),	cu_aard_cultuur_onbebouwd character varying(65),	cu_meer_culturen char(1),	ks_aard_bedrag character varying(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort character varying(255),	lr_aand_aard_liproject character varying(1),	lr_aard_bedrag character varying(255),	lr_bedrag character varying(255),	lr_eindjaar integer,	lr_valutasoort character varying(3),	lo_cultuur_bebouwd character varying(65),	lo_loc__omschr character varying(40))
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update zak_recht set KADASTER_IDENTIF = ?, AR_TELLER = ?, AR_NOEMER = ?, FK_7KOZ_KAD_IDENTIF = ?, FK_3AVR_AAND = ?, INDIC_BETROKKEN_IN_SPLITSING = ?, FK_8PES_SC_IDENTIF = ?  where kadaster_identif = ? 
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwinstallatie_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoemd_terrei(	fk_nn_lh_btr_sc_identif varchar2(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar2(19),	fk_nn_rh_btr_sc_identif varchar2(16) not null)
+ in following column fk_nn_rh_btr_sc_identif and in column fk_nn_rh_btr_sc_identif of table benoemd_terrein_benoem_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['buurt (geom)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: create table huishouden(	dat_beg_geldh varchar2(19),	nummer decimal(12,0) not null,	datum_einde_geldh varchar2(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar2(16),	fk_5lpl_sc_identif varchar2(16),	fk_7spl_sc_identif varchar2(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['bericht', 'status']
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_pand_archief(	fk_nn_lh_vbo_sc_identif varchar(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar(19) not null,	fk_nn_rh_pnd_identif varchar(16) not null)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column br_xml of table job
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterschap (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ovrg_scheiding_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['benoemd_terrein_archief (geom)', 'geom']
+Detected: God Table Found in following statement: create table pand_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar2(255),	indic_geconstateerd varchar2(1),	inwwijze_geom_bovenaanzicht varchar2(24),	inwwijze_geom_maaiveld varchar2(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar2(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar2(24))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['kunstwerkdeel_archief (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column naam_openb_rmte and in column naam_openb_rmte of table gem_openb_rmte_archief
+Detected: God Table Found in following statement: create table bericht ( id number(19,0) not null, br_orgineel_xml clob, br_xml clob, datum timestamp, db_xml clob, job_id varchar2(255 char), object_ref varchar2(255 char), opmerking clob, soort varchar2(255 char), status varchar2(255 char), status_datum timestamp, volgordenummer number(10,0), xsl_version varchar2(255 char), laadprocesid number(19,0), primary key (id) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['bericht', 'soort']
+Detected: Metadata as Data Found in following statement: create table watervakonderdeel_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1wad_identif varchar2(255))
+
+Detected: Metadata as Data Found in following statement: create table standplaats_nummeraand(	fk_nn_lh_spl_sc_identif varchar2(16) not null,	fk_nn_lh_spl_sc_dat_beg_geldh varchar2(19),	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id numeric(19,0) identity not null, br_orgineel_xml text null, br_xml text null, datum datetime null, db_xml text null, job_id varchar(255) null, object_ref varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, volgordenummer int null, xsl_version varchar(255) null, laadprocesid numeric(19,0) null, primary key (id) )
+ in following column br_orgineel_xml of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['kunstwerkdeel_archief (geom)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar(40),	type varchar(40),	fk_4oao_sc_identif varchar(16),	fk_5nra_sc_identif varchar(16),	fk_6opr_identifcode varchar(16))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lr_aard_bedrag and in column lr_aard_bedrag of table kad_onrrnd_zk_archief
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column fk_6wpl_identif and in column fk_6wpl_identif of table addresseerb_obj_aand
+Detected: Duplicate Column Names Found in following statement: create table gebouwd_obj(	dat_beg_geldh varchar2(19),	sc_identif varchar2(16) not null,	clazz varchar2(255),	bouwk_best_act varchar2(255),	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	inwwijze_oppervlakte varchar2(24),	oppervlakte_obj decimal(6,0),	status_voortgang_bouw integer)
+ in following column inwwijze_oppervlakte and in column inwwijze_oppervlakte of table gebouwd_obj_archief
+Detected: Duplicate Column Names Found in following statement: create table pand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar2(255),	indic_geconstateerd varchar2(1),	inwwijze_geom_bovenaanzicht varchar2(24),	inwwijze_geom_maaiveld varchar2(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar2(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar2(24))
+ in following column inwwijze_geom_bovenaanzicht and in column inwwijze_geom_bovenaanzicht of table pand_archief
+Detected: Duplicate Column Names Found in following statement: create table begr_terr_dl_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(255) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	fysiek_voork_begr_terrein varchar2(20),	relve_hoogteligging decimal(1,0),	status varchar2(8),	fk_8opr_identifcode varchar2(16))
+ in following column fysiek_voork_begr_terrein and in column fysiek_voork_begr_terrein of table begr_terr_dl
+Detected: Metadata as Data Found in following statement: create table vestg_activiteit( fk_vestg_nummer varchar2(32) references vestg(sc_identif), fk_sbi_activiteit_code varchar2(6) references sbi_activiteit(sbi_code), indicatie_hoofdactiviteit numeric(1,0), primary key(fk_vestg_nummer, fk_sbi_activiteit_code))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['woz_obj_archief (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table huw_ger_partn(	fk_sc_lh_inp_sc_identif varchar2(32) not null,	fk_sc_rh_inp_sc_identif varchar2(32) not null,	hs_datum_aangaan decimal(8,0),	fk_hs_lnd_code_iso varchar2(2),	hs_plaats varchar2(40),	ho_datum_ontb_huw_ger_partn decimal(8,0),	fk_ho_lnd_code_iso varchar2(2),	ho_plaats_ontb_huw_ger_partn varchar2(40),	ho_reden_ontb_huw_ger_partn varchar2(1),	soort_verbintenis varchar2(1))
+ in following column fk_sc_rh_inp_sc_identif and in column fk_sc_rh_inp_sc_identif of table ouder_kind_rel
+Detected: Duplicate Column Names Found in following statement: create table app_re_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_sectie and in column ka_sectie of table app_re
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT(THE_GEOM)', 'indextype']
+Detected: Metadata as Data Found in following statement: create table locaand_adres(	fk_sc_lh_aoa_identif varchar2(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: create table huw_ger_partn(	fk_sc_lh_inp_sc_identif character varying(32) not null,	fk_sc_rh_inp_sc_identif character varying(32) not null,	hs_datum_aangaan decimal(8,0),	fk_hs_lnd_code_iso character varying(2),	hs_plaats character varying(40),	ho_datum_ontb_huw_ger_partn decimal(8,0),	fk_ho_lnd_code_iso character varying(2),	ho_plaats_ontb_huw_ger_partn character varying(40),	ho_reden_ontb_huw_ger_partn character varying(1),	soort_verbintenis character varying(1))
+ in following column fk_sc_rh_inp_sc_identif and in column fk_sc_rh_inp_sc_identif of table ouder_kind_rel
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoem_archief(	fk_nn_lh_btr_sc_identif varchar(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar(19) not null,	fk_nn_rh_btr_sc_identif varchar(16) not null)
+ in following column fk_nn_lh_btr_sc_identif and in column fk_nn_lh_btr_sc_identif of table benoemd_terrein_benoemd_terrei
+Detected: Metadata as Data Found in following statement: create table meta_enumeratie(	tabel varchar(255) not null,	kolom varchar(255) not null,	enumeratie varchar(255))
+
+Detected: God Table Found in following statement: create table bericht ( id bigint generated by default as identity, br_orgineel_xml clob, br_xml clob, datum timestamp, db_xml clob, job_id varchar(255), object_ref varchar(255), opmerking clob, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer integer, xsl_version varchar(255), laadprocesid bigint, primary key (id) )
+
+Detected: Compound Attribute Variant: 3 Found in following statement: update kad_onrrnd_zk_aantek set FK_4KOZ_KAD_IDENTIF = ?, BEGINDATUM_AANTEK_KAD_OBJ = ?, KADASTER_IDENTIF_AANTEK = ?, AARD_AANTEK_KAD_OBJ = ?, EINDD_AANTEK_KAD_OBJ = ?, BESCHRIJVING_AANTEK_KAD_OBJ = ?  where kadaster_identif_aantek = ? 
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel( geom )', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column lo_cultuur_bebouwd and in column lo_cultuur_bebouwd of table kad_onrrnd_zk_archief
+Detected: Duplicate Column Names Found in following statement: create table gemeente_gemeente(	fk_nn_lh_gem_code decimal(4,0) not null,	fk_nn_lh_gem_dat_beg_geldh varchar(19),	fk_nn_rh_gem_code decimal(4,0) not null)
+ in following column fk_nn_lh_gem_dat_beg_geldh and in column fk_nn_lh_gem_dat_beg_geldh of table gemeente_gemeente_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['wegdeel (geom)', 'geom']
+Detected: God Table Found in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'gemeente']
+Detected: God Table Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh character varying(19) not null,	kad_identif decimal(15,0) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	typering character varying(1),	fk_7kdg_code character varying(5),	fk_10pes_sc_identif character varying(32),	cu_aard_bebouwing character varying(255),	cu_aard_cultuur_onbebouwd character varying(65),	cu_meer_culturen char(1),	ks_aard_bedrag character varying(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort character varying(255),	lr_aand_aard_liproject character varying(1),	lr_aard_bedrag character varying(255),	lr_bedrag character varying(255),	lr_eindjaar integer,	lr_valutasoort character varying(3),	lo_cultuur_bebouwd character varying(65),	lo_loc__omschr character varying(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen ( geom )', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'straat']
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh varchar2(19),	nummer decimal(12,0) not null,	datum_einde_geldh varchar2(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar2(16),	fk_5lpl_sc_identif varchar2(16),	fk_7spl_sc_identif varchar2(16))
+ in following column fk_4vbo_sc_identif and in column fk_4vbo_sc_identif of table huishouden_archief
+Detected: Duplicate Column Names Found in following statement: create table onbegr_terreinvakonderd(	sc_identif varchar(255) not null,	fk_1obt_identif varchar(255))
+ in following column fk_1obt_identif and in column fk_1obt_identif of table onbegr_terreinvakonder_archief
+Detected: Metadata as Data Found in following statement: create table vestg_activiteit( fk_vestg_nummer varchar(32) references vestg(sc_identif), fk_sbi_activiteit_code varchar(6) references sbi_activiteit(sbi_code), indicatie_hoofdactiviteit numeric(1,0), primary key(fk_vestg_nummer, fk_sbi_activiteit_code))
+
+Detected: God Table Found in following statement: create table subject(	identif character varying(32) not null,	clazz character varying(255),	adres_binnenland character varying(257),	adres_buitenland character varying(149),	emailadres character varying(254),	fax_nummer character varying(20),	kvk_nummer decimal(8,0),	naam character varying(500),	typering character varying(50),	telefoonnummer character varying(20),	website_url character varying(200),	fk_13wpl_identif character varying(4),	fk_14aoa_identif character varying(16),	fk_15aoa_identif character varying(16),	pa_postadres_postcode character varying(6),	pa_postadrestype character varying(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif character varying(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic character varying(11),	rn_iban character varying(34),	vb_adres_buitenland_1 character varying(35),	vb_adres_buitenland_2 character varying(35),	vb_adres_buitenland_3 character varying(35),	fk_vb_lnd_code_iso character varying(2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_TOTAAL_VLAK(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table bericht ( id number(19,0) not null, br_orgineel_xml clob, br_xml clob, datum timestamp, db_xml clob, job_id varchar2(255 char), object_ref varchar2(255 char), opmerking clob, soort varchar2(255 char), status varchar2(255 char), status_datum timestamp, volgordenummer number(10,0), xsl_version varchar2(255 char), laadprocesid number(19,0), primary key (id) )
+ in following column opmerking and in column opmerking of table laadproces
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel_archief (plaatscoordinaten_perceel)', 'plaatscoordinaten_perceel']
+Detected: Multicolumn Attribute Found in following statement: create table huishouden(	dat_beg_geldh character varying(19),	nummer decimal(12,0) not null,	datum_einde_geldh character varying(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif character varying(16),	fk_5lpl_sc_identif character varying(16),	fk_7spl_sc_identif character varying(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_EIGENARENKAART (BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column opmerking of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['ovrg_scheiding_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column identifcode and in column identifcode of table openb_rmte
+Detected: Duplicate Column Names Found in following statement: create table app_re(	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_kad_gemeentecode and in column ka_kad_gemeentecode of table app_re_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel ( geom )', 'INDEXTYPE']
+Detected: Compound Attribute Variant: 3 Found in following statement: update kad_perceel set SC_KAD_IDENTIF = ?, KA_KAD_GEMEENTECODE = ?, KA_SECTIE = ?, KA_PERCEELNUMMER = ?, BEGRENZING_PERCEEL = ?, GROOTTE_PERCEEL = ?, AAND_SOORT_GROOTTE = ?, OMSCHR_DEELPERCEEL = ?, PLAATSCOORDINATEN_PERCEEL = ?  where sc_kad_identif = ? 
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand (geom_bovenaanzicht)', 'geom_bovenaanzicht']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwinstallatie (geom)', 'INDEXTYPE']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh character varying(19),	kad_identif decimal(15,0) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	typering character varying(1),	fk_7kdg_code character varying(5),	fk_10pes_sc_identif character varying(32),	cu_aard_bebouwing character varying(255),	cu_aard_cultuur_onbebouwd character varying(65),	cu_meer_culturen char(1),	ks_aard_bedrag character varying(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort character varying(255),	lr_aand_aard_liproject character varying(1),	lr_aard_bedrag character varying(255),	lr_bedrag character varying(255),	lr_eindjaar integer,	lr_valutasoort character varying(3),	lo_cultuur_bebouwd character varying(65),	lo_loc__omschr character varying(40))
+
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19))
+ in following column sc_identif and in column sc_identif of table niet_nat_prs
+Detected: Compound Attribute Variant: 3 Found in following statement: update nat_prs set CLAZZ = ?, SC_IDENTIF = ?, NM_GESLACHTSNAAM = ?, NM_VOORNAMEN = ?, NM_VOORVOEGSEL_GESLACHTSNAAM = ?, GESLACHTSAAND = ?, AAND_NAAMGEBRUIK = ?  where sc_identif = ? 
+
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(16) not null,	bouwjaar decimal(4,0),	loc_aand character varying(40),	type character varying(40),	fk_4oao_sc_identif character varying(16),	fk_5nra_sc_identif character varying(16),	fk_6opr_identifcode character varying(16))
+ in following column fk_5nra_sc_identif and in column fk_5nra_sc_identif of table overig_gebouwd_obj
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+ in following column huinummertoevoeging and in column huinummertoevoeging of table addresseerb_obj_aand
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar(40),	type varchar(40),	fk_4oao_sc_identif varchar(16),	fk_5nra_sc_identif varchar(16),	fk_6opr_identifcode varchar(16))
+ in following column fk_5nra_sc_identif and in column fk_5nra_sc_identif of table overig_gebouwd_obj
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl_archief (kruinlijngeom)', 'kruinlijngeom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'sectie']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel (begrenzing_perceel)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_perceel(	sc_kad_identif decimal(15,0) not null,	aand_soort_grootte char(1),	grootte_perceel decimal(8,0),	omschr_deelperceel varchar(1120),	fk_7kdp_sc_kad_identif decimal(15,0),	ka_deelperceelnummer varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(5),	ka_sectie varchar(255))
+ in following column omschr_deelperceel and in column omschr_deelperceel of table kad_perceel_archief
+Detected: Compound Attribute Variant: 3 Found in following statement: update ingeschr_nat_prs set SC_IDENTIF = ?, BSN = ?, GB_GEBOORTEPLAATS = ?, GB_GEBOORTEDATUM = ?, OL_OVERLIJDENSDATUM = ?, VA_LOC_BESCHRIJVING = ?  where sc_identif = ? 
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_kad_onrrnd_zk(	fk_nn_lh_koz_kad_identif decimal(15,0) not null,	fk_nn_lh_koz_dat_beg_geldh varchar2(19),	fk_nn_rh_koz_kad_identif decimal(15,0) not null)
+ in following column fk_nn_lh_koz_dat_beg_geldh and in column fk_nn_lh_koz_dat_beg_geldh of table kad_onrrnd_zk_kad_onrr_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_STANDPLAATS_ALLES(THE_GEOM)', 'THE_GEOM']
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id numeric(19,0) identity not null, br_orgineel_xml text null, br_xml text null, datum datetime null, db_xml text null, job_id varchar(255) null, object_ref varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, volgordenummer int null, xsl_version varchar(255) null, laadprocesid numeric(19,0) null, primary key (id) )
+ in following column db_xml of table bericht
+Detected: God Table Found in following statement: create table nat_prs(	sc_identif varchar2(32) not null,	clazz varchar2(255),	aand_naamgebruik varchar2(1),	geslachtsaand varchar2(1),	nm_adellijke_titel_predikaat varchar2(10),	nm_geslachtsnaam varchar2(200),	nm_voornamen varchar2(200),	nm_voorvoegsel_geslachtsnaam varchar2(10),	na_aanhef_aanschrijving varchar2(50),	na_geslachtsnaam_aanschrijving varchar2(200),	na_voorletters_aanschrijving varchar2(20),	na_voornamen_aanschrijving varchar2(200),	fk_2acd_code varchar2(3))
+
+Detected: Duplicate Column Names Found in following statement: create table gebouwd_obj_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	bouwk_best_act varchar2(255),	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	inwwijze_oppervlakte varchar2(24),	oppervlakte_obj decimal(6,0),	status_voortgang_bouw integer)
+ in following column status_voortgang_bouw and in column status_voortgang_bouw of table pand_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel( geom )', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['waterschap_archief (geom)', 'geom']
+Detected: Obsolete Column TypesFound in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column db_xml of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_ZR_ADRESSEN(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl (kruinlijngeom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_EENVOUDIG(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Metadata as Data Found in following statement: create table locaand_openb_rmte(	fk_sc_lh_opr_identifcode varchar(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr varchar(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['scheiding (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel_recht', 'kadperceelcode']
+Detected: Metadata as Data Found in following statement: create table begr_terreinvakonderd_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	fk_1btd_identif varchar(255))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['spoor (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stadsdeel (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT_GEVORMD(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table onbegr_terr_dl(	dat_beg_geldh character varying(19),	identif character varying(255) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	fysiek_voork_onbegr_terrein character varying(20),	relve_hoogteligging decimal(1,0),	status character varying(8),	fk_8opr_identifcode character varying(16))
+ in following column fysiek_voork_onbegr_terrein and in column fysiek_voork_onbegr_terrein of table onbegr_terr_dl_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl_archief (kruinlijngeom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel', 'ka_sectie']
+Detected: Metadata as Data Found in following statement: create table onbegr_terreinvakonder_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1obt_identif varchar2(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gt_pk_metadata ( table_schema VARCHAR(32) NOT NULL, table_name VARCHAR(32) NOT NULL, pk_column VARCHAR(32) NOT NULL, pk_column_idx INTEGER, pk_policy VARCHAR(32), pk_sequence VARCHAR(64), unique (table_schema, table_name, pk_column), check (pk_policy in ('sequence', 'assigned', 'autoincrement')))
+ in following column pk_column_idx and in column pk_column_idx of table GT_PK_METADATA
+Detected: Duplicate Column Names Found in following statement: create table openb_rmte_gem_openb_rmte(	fk_nn_lh_opr_identifcode varchar(16) not null,	fk_nn_rh_gor_identifcode varchar(16) not null)
+ in following column fk_nn_lh_opr_identifcode and in column fk_nn_lh_opr_identifcode of table openb_rmte_wnplts
+Detected: Compound Attribute Variant: 3 Found in following statement: update kad_onrrnd_zk_his_rel set FK_SC_LH_KOZ_KAD_IDENTIF = ?, FK_SC_RH_KOZ_KAD_IDENTIF = ?, AARD = ?, OVERGANGSGROOTTE = ?  where fk_sc_lh_koz_kad_identif = ? and fk_sc_rh_koz_kad_identif = ? 
+
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht(	kadaster_identif varchar2(255) not null,	eindd_recht varchar2(255),	indic_betrokken_in_splitsing varchar2(255),	ingangsdatum_recht varchar2(19),	fk_7koz_kad_identif decimal(15,0),	fk_8pes_sc_identif varchar2(32),	ar_noemer decimal(8,0),	ar_teller decimal(8,0),	fk_2aard_recht_verkort_aand varchar2(4),	fk_3avr_aand varchar2(6))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['scheiding_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj_pand_archief(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_pnd_identif varchar2(16) not null)
+ in following column fk_nn_rh_pnd_identif and in column fk_nn_rh_pnd_identif of table verblijfsobj_pand
+Detected: Duplicate Column Names Found in following statement: create table pand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar2(255),	indic_geconstateerd varchar2(1),	inwwijze_geom_bovenaanzicht varchar2(24),	inwwijze_geom_maaiveld varchar2(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar2(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar2(24))
+ in following column inwwijze_geom_maaiveld and in column inwwijze_geom_maaiveld of table pand_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_IN_EIGENDOM(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht_aantek(	kadaster_identif_aantek_recht character varying(255) not null,	aard_aantek_recht character varying(255),	begindatum_aantek_recht character varying(19),	beschrijving_aantek_recht character varying(255),	eindd_aantek_recht character varying(255),	fk_5zkr_kadaster_identif character varying(255),	fk_6pes_sc_identif character varying(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES(THE_GEOM)', 'indextype']
+Detected: Multicolumn Attribute Found in following statement: create table zak_recht_aantek(	kadaster_identif_aantek_recht varchar(255) not null,	aard_aantek_recht varchar(255),	begindatum_aantek_recht varchar(19),	beschrijving_aantek_recht varchar(255),	eindd_aantek_recht varchar(255),	fk_5zkr_kadaster_identif varchar(255),	fk_6pes_sc_identif varchar(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel_aant', 'subjectid']
+Detected: God Table Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['inrichtingselement_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte_archief(	dat_beg_geldh varchar(19) not null,	identifcode varchar(16) not null,	datum_einde_geldh varchar(19),	indic_geconst_openb_rmte varchar(1),	naam_openb_rmte varchar(80),	status_openb_rmte varchar(80),	straatnaam varchar(24),	type_openb_rmte varchar(40),	fk_7gem_code decimal(4,0))
+ in following column status_openb_rmte and in column status_openb_rmte of table gem_openb_rmte
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kad_perceel_over_in', 'kadperceelcode_ontstaan_crit']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wijk (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column cu_aard_cultuur_onbebouwd and in column cu_aard_cultuur_onbebouwd of table kad_onrrnd_zk_archief
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar(40),	type varchar(40),	fk_4oao_sc_identif varchar(16),	fk_5nra_sc_identif varchar(16),	fk_6opr_identifcode varchar(16))
+ in following column fk_4oao_sc_identif and in column fk_4oao_sc_identif of table overig_gebouwd_obj
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_KAD_PERCEEL_EENVOUDIG(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_LIGPLAATS_ALLES(THE_GEOM)', 'indextype']
+Detected: God Table Found in following statement: create table bericht ( id numeric(19,0) identity not null, br_orgineel_xml text null, br_xml text null, datum datetime null, db_xml text null, job_id varchar(255) null, object_ref varchar(255) null, opmerking text null, soort varchar(255) null, status varchar(255) null, status_datum datetime null, volgordenummer int null, xsl_version varchar(255) null, laadprocesid numeric(19,0) null, primary key (id) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column volgordenummer and in column volgordenummer of table bericht
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column cu_aard_cultuur_onbebouwd and in column cu_aard_cultuur_onbebouwd of table kad_onrrnd_zk
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte_archief(	dat_beg_geldh varchar(19) not null,	identifcode varchar(16) not null,	datum_einde_geldh varchar(19),	indic_geconst_openb_rmte varchar(1),	naam_openb_rmte varchar(80),	status_openb_rmte varchar(80),	straatnaam varchar(24),	type_openb_rmte varchar(40),	fk_7gem_code decimal(4,0))
+ in following column naam_openb_rmte and in column naam_openb_rmte of table gem_openb_rmte
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj (vlakgeom)', 'INDEXTYPE']
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_pand(	fk_nn_lh_vbo_sc_identif varchar(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar(19),	fk_nn_rh_pnd_identif varchar(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ovrg_scheiding (geom)', 'geom']
+Detected: God Table Found in following statement: create table vestg(	sc_identif character varying(32) not null,	activiteit_omschr character varying(2000),	datum_aanvang character varying(19),	datum_beeindiging character varying(19),	datum_voortzetting character varying(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres character varying(100),	verkorte_naam character varying(45),	typering character varying(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif character varying(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif character varying(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif character varying(16),	sa_indic_hoofdactiviteit character varying(3),	fk_sa_sbi_activiteit_sbi_code character varying(6))
+
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_pand(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19),	fk_nn_rh_pnd_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['KAD_PERCEEL', 'KA_PERCEELNUMMER']
+Detected: Metadata as Data Found in following statement: create table meta_enumeratie(	tabel varchar2(255) not null,	kolom varchar2(255) not null,	enumeratie varchar2(255))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl_archief (kruinlijngeom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table onbegr_terr_dl_archief(	dat_beg_geldh character varying(19) not null,	identif character varying(255) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	fysiek_voork_onbegr_terrein character varying(20),	relve_hoogteligging decimal(1,0),	status character varying(8),	fk_8opr_identifcode character varying(16))
+ in following column fysiek_voork_onbegr_terrein and in column fysiek_voork_onbegr_terrein of table onbegr_terr_dl
+Detected: Values in Column Definition Found in following statement: CREATE TABLE GEOMETRY_COLUMNS ( F_TABLE_SCHEMA VARCHAR(30) NOT NULL, F_TABLE_NAME VARCHAR(30) NOT NULL, F_GEOMETRY_COLUMN VARCHAR(30) NOT NULL, COORD_DIMENSION INTEGER, SRID INTEGER NOT NULL, TYPE VARCHAR(30) NOT NULL, UNIQUE(F_TABLE_SCHEMA, F_TABLE_NAME, F_GEOMETRY_COLUMN), CHECK(TYPE IN ('POINT', 'LINE', 'POLYGON', 'COLLECTION', 'MULTIPOINT', 'MULTILINE', 'MULTIPOLYGON', 'GEOMETRY')) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BEGROEID_TERREINDEEL (KRUINLIJN)', 'KRUINLIJN']
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh varchar2(19) not null,	eindd_geldh varchar2(19),	omschr varchar2(100))
+ in following column eindd_geldh and in column eindd_geldh of table nation
+Detected: Duplicate Column Names Found in following statement: create table locaand_openb_rmte(	fk_sc_lh_opr_identifcode character varying(16) not null,	fk_sc_rh_woz_nummer decimal(12,0) not null,	locomschr character varying(40))
+ in following column locomschr and in column locomschr of table locaand_adres
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_KAD_PERCEEL_MET_APP_VLAK(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl (kruinlijngeom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_LIGPLAATS_ALLES(THE_GEOM)', 'THE_GEOM']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE geometry_columns ( F_TABLE_SCHEMA VARCHAR(30) NOT NULL, F_TABLE_NAME VARCHAR(30) NOT NULL, F_GEOMETRY_COLUMN VARCHAR(30) NOT NULL, COORD_DIMENSION INTEGER, SRID INTEGER NOT NULL, TYPE VARCHAR(30) NOT NULL, UNIQUE(F_TABLE_SCHEMA, F_TABLE_NAME, F_GEOMETRY_COLUMN), CHECK(TYPE IN ('POINT', 'LINE', 'POLYGON', 'COLLECTION', 'MULTIPOINT', 'MULTILINE', 'MULTIPOLYGON', 'GEOMETRY')) )
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE GEOMETRY_COLUMNS ( F_TABLE_SCHEMA VARCHAR(30) NOT NULL, F_TABLE_NAME VARCHAR(30) NOT NULL, F_GEOMETRY_COLUMN VARCHAR(30) NOT NULL, COORD_DIMENSION INTEGER, SRID INTEGER NOT NULL, TYPE VARCHAR(30) NOT NULL, UNIQUE(F_TABLE_SCHEMA, F_TABLE_NAME, F_GEOMETRY_COLUMN), CHECK(TYPE IN ('POINT', 'LINE', 'POLYGON', 'COLLECTION', 'MULTIPOINT', 'MULTILINE', 'MULTIPOLYGON', 'GEOMETRY')))
+
+Detected: Multicolumn Attribute Found in following statement: create table subject(	identif varchar(32) not null,	clazz varchar(255),	adres_binnenland varchar(257),	adres_buitenland varchar(149),	emailadres varchar(254),	fax_nummer varchar(20),	kvk_nummer decimal(8,0),	naam varchar(500),	typering varchar(50),	telefoonnummer varchar(20),	website_url varchar(200),	fk_13wpl_identif varchar(4),	fk_14aoa_identif varchar(16),	fk_15aoa_identif varchar(16),	pa_postadres_postcode varchar(6),	pa_postadrestype varchar(1),	pa_postbus__of_antwoordnummer decimal(5,0),	fk_pa_4_wpl_identif varchar(4),	rn_bankrekeningnummer decimal(10,0),	rn_bic varchar(11),	rn_iban varchar(34),	vb_adres_buitenland_1 varchar(35),	vb_adres_buitenland_2 varchar(35),	vb_adres_buitenland_3 varchar(35),	fk_vb_lnd_code_iso varchar(2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_APP_RE_BIJ_PERCEEL(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_benoemd_terrei(	fk_nn_lh_btr_sc_identif varchar2(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar2(19),	fk_nn_rh_btr_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_btr_sc_identif and in column fk_nn_lh_btr_sc_identif of table benoemd_terrein_benoem_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['gebouwd_obj_archief (vlakgeom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table gebouwd_obj_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	bouwk_best_act varchar2(255),	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	inwwijze_oppervlakte varchar2(24),	oppervlakte_obj decimal(6,0),	status_voortgang_bouw integer)
+ in following column bouwk_best_act and in column bouwk_best_act of table gebouwd_obj
+Detected: Duplicate Column Names Found in following statement: create table benoemd_terrein_archief(	dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19))
+ in following column dat_beg_geldh and in column dat_beg_geldh of table inrichtingselement_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_STANDPLAATS_ALLES(THE_GEOM)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['scheiding (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['functioneel_gebied_archief (geom)', 'geom']
+Detected: God Table Found in following statement: create table pand_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar(255),	indic_geconstateerd varchar(1),	inwwijze_geom_bovenaanzicht varchar(24),	inwwijze_geom_maaiveld varchar(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar(24))
+
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj(	sc_identif varchar2(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar2(40),	type varchar2(40),	fk_4oao_sc_identif varchar2(16),	fk_5nra_sc_identif varchar2(16),	fk_6opr_identifcode varchar2(16))
+
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	bouwjaar decimal(4,0),	loc_aand varchar2(40),	type varchar2(40),	fk_4oao_sc_identif varchar2(16),	fk_5nra_sc_identif varchar2(16),	fk_6opr_identifcode varchar2(16))
+
+Detected: Duplicate Column Names Found in following statement: create table wnplts_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(4) not null,	datum_einde_geldh varchar2(19),	indic_geconst varchar2(1),	naam varchar2(80),	naam_nen varchar2(24),	status varchar2(80),	fk_7gem_code decimal(4,0))
+ in following column naam_nen and in column naam_nen of table wnplts
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_STANDPLAATS(GEOMETRIE)', 'GEOMETRIE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_PAND_IN_GEBRUIK(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table app_re_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_kad_gemeentecode and in column ka_kad_gemeentecode of table app_re
+Detected: Metadata as Data Found in following statement: create table brugconstructie_elemen_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	type varchar(40))
+
+Detected: Duplicate Column Names Found in following statement: create table bericht ( id bigserial not null, br_orgineel_xml text, br_xml text, datum timestamp, db_xml text, job_id varchar(255), object_ref varchar(255), opmerking text, soort varchar(255), status varchar(255), status_datum timestamp, volgordenummer int4, xsl_version varchar(255), laadprocesid int8, primary key (id) )
+ in following column br_xml and in column br_xml of table job
+Detected: Index Shotgun Variant: 3 Following index not used : ['zak_recht_aantek', 'fk_5zkr_kadaster_identif']
+Detected: God Table Found in following statement: create table pand(	dat_beg_geldh varchar(19),	identif varchar(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar(255),	indic_geconstateerd varchar(1),	inwwijze_geom_bovenaanzicht varchar(24),	inwwijze_geom_maaiveld varchar(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar(24))
+
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(16) not null,	bouwjaar decimal(4,0),	loc_aand character varying(40),	type character varying(40),	fk_4oao_sc_identif character varying(16),	fk_5nra_sc_identif character varying(16),	fk_6opr_identifcode character varying(16))
+
+Detected: Multicolumn Attribute Found in following statement: create table ondrnmng(	kvk_nummer decimal(8,0) not null,	datum_aanvang varchar(19),	datum_einde varchar(19),	fk_4mac_kvk_nummer decimal(8,0),	fk_1ond_kvk_nummer decimal(8,0))
+
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar(19),	identif varchar(16) not null,	clazz varchar(255),	dat_eind_geldh varchar(19),	huisletter varchar(1),	huinummer decimal(5,0),	huinummertoevoeging varchar(4),	postcode varchar(6),	fk_6wpl_identif varchar(4),	fk_7opr_identifcode varchar(16))
+
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces ( dtype varchar(255) not null, id bigserial not null, cron_expressie varchar(255), lastrun timestamp, logfile text, samenvatting text, status varchar(255), primary key (id) )
+ in following column logfile of table automatisch_proces
+Detected: Metadata as Data Found in following statement: create table benoemd_terrein_benoemd_terrei(	fk_nn_lh_btr_sc_identif varchar(16) not null,	fk_nn_lh_btr_dat_beg_geldh varchar(19),	fk_nn_rh_btr_sc_identif varchar(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table overig_terrein_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	fk_2oao_sc_identif varchar2(16))
+ in following column fk_2oao_sc_identif and in column fk_2oao_sc_identif of table overig_terrein
+Detected: Index Shotgun Variant: 3 Following index not used : ['inrichtingselement_archief (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+ in following column datum_beeindiging and in column datum_beeindiging of table niet_nat_prs
+Detected: Duplicate Column Names Found in following statement: create table huishouden(	dat_beg_geldh varchar2(19),	nummer decimal(12,0) not null,	datum_einde_geldh varchar2(19),	grootte decimal(2,0),	soort decimal(2,0),	fk_4vbo_sc_identif varchar2(16),	fk_5lpl_sc_identif varchar2(16),	fk_7spl_sc_identif varchar2(16))
+ in following column fk_5lpl_sc_identif and in column fk_5lpl_sc_identif of table huishouden_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['kunstwerkdeel (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand_archief (geom_maaiveld)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['benoemd_terrein (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_adres', 'gemeente_code']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'perceelnummer']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT_ALLES(THE_GEOM)', 'THE_GEOM']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen( geom )', 'geom']
+Detected: Obsolete Column TypesFound in following statement: create table groep_ ( naam varchar(255) not null, beschrijving text, primary key (naam) )
+ in following column beschrijving of table groep_
+Detected: Duplicate Column Names Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code character varying(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif character varying(16),	fk_5tgo_identif character varying(16),	fk_6woz_nummer decimal(12,0))
+ in following column fk_4pnd_identif and in column fk_4pnd_identif of table woz_deelobj_archief
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column aard_aantek_kad_obj and in column aard_aantek_kad_obj of table kad_onrrnd_zk_aantek_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['benoemd_terrein (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_BD_APP_RE_AND_KAD_PERCEEL(BEGRENZING_PERCEEL)', 'indextype']
+Detected: Metadata as Data Found in following statement: create table wegvakonderdeel_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	fk_1wgd_identif varchar2(255))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen', 'sectie']
+Detected: Duplicate Column Names Found in following statement: create table herkomst_metadata (	tabel character varying(255),	kolom character varying(255),	waarde character varying(255),	herkomst_br character varying(255),	datum timestamp without time zone,	primary key (tabel, kolom, waarde, herkomst_br, datum))
+ in following column tabel and in column tabel of table brondocument
+Detected: Duplicate Column Names Found in following statement: create table addresseerb_obj_aand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+ in following column postcode and in column postcode of table addresseerb_obj_aand_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vrijstaand_vegetatie_obj (geom)', 'INDEXTYPE']
+Detected: Obsolete Column TypesFound in following statement: create table automatisch_proces_config ( proces_id numeric(19,0) not null, value text null, config_key varchar(255) not null, primary key (proces_id, config_key) )
+ in following column value of table automatisch_proces_config
+Detected: God Table Found in following statement: create table vestg(	sc_identif varchar(32) not null,	activiteit_omschr varchar(2000),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	datum_voortzetting varchar(19),	fulltime_werkzame_mannen decimal(5,0),	fulltime_werkzame_vrouwen decimal(5,0),	parttime_werkzame_mannen decimal(5,0),	parttime_werkzame_vrouwen decimal(5,0),	toevoeging_adres varchar(100),	verkorte_naam varchar(45),	typering varchar(26),	fk_15ond_kvk_nummer decimal(8,0),	fk_16tgo_identif varchar(16),	fk_17mac_kvk_nummer decimal(8,0),	fk_18ves_sc_identif varchar(32),	fk_19mac_kvk_nummer decimal(8,0),	fk_20aoa_identif varchar(16),	sa_indic_hoofdactiviteit varchar(3),	fk_sa_sbi_activiteit_sbi_code varchar(6))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj(	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+ in following column ontsluiting_verdieping and in column ontsluiting_verdieping of table verblijfsobj_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['wijk (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif character varying(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_nra_sc_identif character varying(16) not null)
+ in following column fk_nn_lh_lpl_sc_dat_beg_geldh and in column fk_nn_lh_lpl_sc_dat_beg_geldh of table ligplaats_nummeraand
+Detected: God Table Found in following statement: create table verblijfsobj_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+
+Detected: Duplicate Column Names Found in following statement: create table verblijfsobj(	sc_identif varchar(16) not null,	aantal_kamers decimal(2,0),	hoogste_bouwlaag decimal(3,0),	indic_geconstateerd varchar(1),	laagste_bouwlaag decimal(3,0),	ontsluiting_verdieping varchar(3),	soort_woonobj decimal(1,0),	toegang_bouwlaag decimal(3,0),	status varchar(80),	fk_11nra_sc_identif varchar(16))
+ in following column indic_geconstateerd and in column indic_geconstateerd of table pand_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['wnplts (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_MAP_KAD_PERCEEL(BEGRENZING_PERCEEL)', 'BEGRENZING_PERCEEL']
+Detected: God Table Found in following statement: create table pand(	dat_beg_geldh varchar2(19),	identif varchar2(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh varchar2(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd varchar2(255),	indic_geconstateerd varchar2(1),	inwwijze_geom_bovenaanzicht varchar2(24),	inwwijze_geom_maaiveld varchar2(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status varchar2(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw varchar2(24))
+
+Detected: Metadata as Data Found in following statement: create table vestg_activiteit( fk_vestg_nummer varchar(32) references vestg(sc_identif), fk_sbi_activiteit_code varchar(6) references sbi_activiteit(sbi_code), indicatie_hoofdactiviteit decimal(1,0), primary key(fk_vestg_nummer, fk_sbi_activiteit_code))
+
+Detected: Duplicate Column Names Found in following statement: create table overig_terrein_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(16) not null,	fk_2oao_sc_identif varchar2(16))
+ in following column sc_dat_beg_geldh and in column sc_dat_beg_geldh of table ovrg_addresseerb_obj_a_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['onbegr_terr_dl (kruinlijngeom)', 'kruinlijngeom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_STANDPLAATS(GEOMETRIE)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_VERBLIJFSOBJECT_GEVORMD(THE_GEOM)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['gemeente (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table kunstwerkdeel_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(255) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	relve_hoogteligging decimal(1,0),	status varchar(8),	type_kunstwerk varchar(40))
+ in following column type_kunstwerk and in column type_kunstwerk of table kunstwerkdeel
+Detected: Index Shotgun Variant: 3 Following index not used : ['overig_bouwwerk_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stadsdeel_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel', 'sectie']
+Detected: Multicolumn Attribute Found in following statement: create table woz_deelobj(	dat_beg_geldh_deelobj decimal(8,0),	nummer decimal(6,0) not null,	code character varying(4),	datum_einde_geldh_deelobj decimal(8,0),	status decimal(2,0),	fk_4pnd_identif character varying(16),	fk_5tgo_identif character varying(16),	fk_6woz_nummer decimal(12,0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_subject_percelen', 'kadperceelcode']
+Detected: Duplicate Column Names Found in following statement: create table begr_terr_dl_archief(	dat_beg_geldh character varying(19) not null,	identif character varying(255) not null,	clazz character varying(255),	datum_einde_geldh character varying(19),	fysiek_voork_begr_terrein character varying(20),	relve_hoogteligging decimal(1,0),	status character varying(8),	fk_8opr_identifcode character varying(16))
+ in following column fk_8opr_identifcode and in column fk_8opr_identifcode of table begr_terr_dl
+Detected: Compound Attribute Variant: 3 Found in following statement: update zak_recht set KADASTER_IDENTIF = ?, FK_7KOZ_KAD_IDENTIF = ?, FK_3AVR_AAND = ?, INDIC_BETROKKEN_IN_SPLITSING = ?  where kadaster_identif = ? 
+
+Detected: God Table Found in following statement: create table pand(	dat_beg_geldh character varying(19),	identif character varying(16) not null,	bruto_inhoud decimal(6,0),	datum_einde_geldh character varying(19),	hoogste_bouwlaag decimal(3,0),	identif_bgtpnd character varying(255),	indic_geconstateerd character varying(1),	inwwijze_geom_bovenaanzicht character varying(24),	inwwijze_geom_maaiveld character varying(24),	laagste_bouwlaag decimal(3,0),	oorspronkelijk_bouwjaar decimal(4,0),	oppervlakte decimal(6,0),	status character varying(80),	relve_hoogteligging decimal(1,0),	status_voortgang_bouw character varying(24))
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar(19),	kadaster_identif_aantek varchar(255) not null,	aard_aantek_kad_obj varchar(255),	beschrijving_aantek_kad_obj varchar(124),	eindd_aantek_kad_obj varchar(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar(32))
+ in following column eindd_aantek_kad_obj and in column eindd_aantek_kad_obj of table kad_onrrnd_zk_aantek_archief
+Detected: Duplicate Column Names Found in following statement: create table app_re_kad_perceel_archief(	fk_nn_lh_apr_sc_kad_identif decimal(15,0) not null,	fk_nn_lh_apr_sc_dat_beg_geldh character varying(19) not null,	fk_nn_rh_kdp_sc_kad_identif decimal(15,0) not null)
+ in following column fk_nn_lh_apr_sc_dat_beg_geldh and in column fk_nn_lh_apr_sc_dat_beg_geldh of table app_re_kad_perceel
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar2(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+
+Detected: Metadata as Data Found in following statement: create table ligplaats_nummeraand(	fk_nn_lh_lpl_sc_identif varchar(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar(19),	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk(	dat_beg_geldh varchar2(19),	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+ in following column ks_valutasoort and in column ks_valutasoort of table kad_onrrnd_zk_archief
+Detected: God Table Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar2(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar2(255),	datum_einde_geldh varchar2(19),	typering varchar2(1),	fk_7kdg_code varchar2(5),	fk_10pes_sc_identif varchar2(32),	cu_aard_bebouwing varchar2(255),	cu_aard_cultuur_onbebouwd varchar2(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar2(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum timestamp,	ks_valutasoort varchar2(255),	lr_aand_aard_liproject varchar2(1),	lr_aard_bedrag varchar2(255),	lr_bedrag varchar2(255),	lr_eindjaar integer,	lr_valutasoort varchar2(3),	lo_cultuur_bebouwd varchar2(65),	lo_loc__omschr varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: create table overig_gebouwd_obj_archief(	sc_dat_beg_geldh character varying(19) not null,	sc_identif character varying(16) not null,	bouwjaar decimal(4,0),	loc_aand character varying(40),	type character varying(40),	fk_4oao_sc_identif character varying(16),	fk_5nra_sc_identif character varying(16),	fk_6opr_identifcode character varying(16))
+ in following column fk_4oao_sc_identif and in column fk_4oao_sc_identif of table overig_gebouwd_obj
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel_recht', 'subjectid']
+Detected: Duplicate Column Names Found in following statement: create table kad_onrrnd_zk_archief(	dat_beg_geldh varchar(19) not null,	kad_identif decimal(15,0) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	typering varchar(1),	fk_7kdg_code varchar(5),	fk_10pes_sc_identif varchar(32),	cu_aard_bebouwing varchar(255),	cu_aard_cultuur_onbebouwd varchar(65),	cu_meer_culturen char(1),	ks_aard_bedrag varchar(255),	ks_bedrag decimal(9,0),	ks_koopjaar integer,	ks_meer_onroerendgoed char(1),	ks_transactiedatum datetime,	ks_valutasoort varchar(255),	lr_aand_aard_liproject varchar(1),	lr_aard_bedrag varchar(255),	lr_bedrag varchar(255),	lr_eindjaar integer,	lr_valutasoort varchar(3),	lo_cultuur_bebouwd varchar(65),	lo_loc__omschr varchar(40))
+ in following column lo_loc__omschr and in column lo_loc__omschr of table kad_onrrnd_zk
+Detected: Index Shotgun Variant: 3 Following index not used : ['ondersteunend_wegdeel_archief (geom)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table begr_terreinvakonderd_archief(	sc_dat_beg_geldh varchar(19) not null,	sc_identif varchar(255) not null,	fk_1btd_identif varchar(255))
+ in following column fk_1btd_identif and in column fk_1btd_identif of table begr_terreinvakonderd
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_TOTAAL_VLAK(THE_GEOM)', 'indextype']
+Detected: Duplicate Column Names Found in following statement: create table kad_perceel_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_kad_identif decimal(15,0) not null,	aand_soort_grootte char(1),	grootte_perceel decimal(8,0),	omschr_deelperceel varchar2(1120),	fk_7kdp_sc_kad_identif decimal(15,0),	ka_deelperceelnummer varchar2(4),	ka_kad_gemeentecode varchar2(5),	ka_perceelnummer varchar2(5),	ka_sectie varchar2(255))
+ in following column ka_deelperceelnummer and in column ka_deelperceelnummer of table kad_perceel
+Detected: Duplicate Column Names Found in following statement: create table app_re(	sc_kad_identif decimal(15,0) not null,	fk_2nnp_sc_identif varchar(32),	ka_appartementsindex varchar(4),	ka_kad_gemeentecode varchar(5),	ka_perceelnummer varchar(15),	ka_sectie varchar(255))
+ in following column ka_appartementsindex and in column ka_appartementsindex of table app_re_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'postcode']
+Detected: Metadata as Data Found in following statement: create table brugconstructie_elemen_archief(	sc_dat_beg_geldh varchar2(19) not null,	sc_identif varchar2(255) not null,	type varchar2(40))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE job( jid bigserial NOT NULL, id BIGINT, br_xml TEXT, datum TIMESTAMP(6) WITHOUT TIME ZONE, object_ref CHARACTER VARYING(255), soort CHARACTER VARYING(255), volgordenummer INTEGER, PRIMARY KEY (jid) )
+ in following column id and in column id of table bericht
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_PANDVLAK(THE_GEOM)', 'indextype']
+Detected: Duplicate Column Names Found in following statement: create table gem_openb_rmte(	dat_beg_geldh varchar2(19),	identifcode varchar2(16) not null,	datum_einde_geldh varchar2(19),	indic_geconst_openb_rmte varchar2(1),	naam_openb_rmte varchar2(80),	status_openb_rmte varchar2(80),	straatnaam varchar2(24),	type_openb_rmte varchar2(40),	fk_7gem_code decimal(4,0))
+ in following column indic_geconst_openb_rmte and in column indic_geconst_openb_rmte of table gem_openb_rmte_archief
+Detected: Multicolumn Attribute Found in following statement: create table overig_gebouwd_obj(	sc_identif character varying(16) not null,	bouwjaar decimal(4,0),	loc_aand character varying(40),	type character varying(40),	fk_4oao_sc_identif character varying(16),	fk_5nra_sc_identif character varying(16),	fk_6opr_identifcode character varying(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_TOTAAL(THE_GEOM)', 'indextype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wnplts (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'kadperceelcode']
+Detected: Metadata as Data Found in following statement: create table verblijfsobj_pand_archief(	fk_nn_lh_vbo_sc_identif varchar2(16) not null,	fk_nn_lh_vbo_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_pnd_identif varchar2(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['begr_terr_dl_archief (geom)', 'geom']
+Detected: Metadata as Data Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif varchar(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar(19) not null,	fk_nn_rh_nra_sc_identif varchar(16) not null)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel', 'ka_kad_gemeentecode']
+Detected: Multicolumn Attribute Found in following statement: create table addresseerb_obj_aand_archief(	dat_beg_geldh varchar2(19) not null,	identif varchar2(16) not null,	clazz varchar2(255),	dat_eind_geldh varchar2(19),	huisletter varchar2(1),	huinummer decimal(5,0),	huinummertoevoeging varchar2(4),	postcode varchar2(6),	fk_6wpl_identif varchar2(4),	fk_7opr_identifcode varchar2(16))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['pand (geom_bovenaanzicht)', 'INDEXTYPE']
+Detected: Duplicate Column Names Found in following statement: create table woz_obj_archief(	dat_beg_geldh varchar(19) not null,	nummer decimal(12,0) not null,	datum_einde_geldh varchar(19),	gebruikscode decimal(2,0),	grondoppervlakte decimal(11,0),	soort_obj_code decimal(4,0),	status decimal(2,0),	vastgestelde_waarde decimal(11,0),	waardepeildatum date)
+ in following column waardepeildatum and in column waardepeildatum of table woz_waarde
+Detected: Index Shotgun Variant: 3 Following index not used : ['kad_perceel (begrenzing_perceel)', 'begrenzing_perceel']
+Detected: Duplicate Column Names Found in following statement: create table wijk(	dat_beg_geldh varchar(19),	code decimal(6,0) not null,	datum_einde_geldh varchar(19),	identif_imgeowyk varchar(255),	relve_hoogteligging decimal(1,0),	status varchar(8),	naam varchar(80))
+ in following column identif_imgeowyk and in column identif_imgeowyk of table wijk_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_kadastraal_perceel', 'gemeente']
+Detected: Duplicate Column Names Found in following statement: create table verblijfstitel_archief(	aand decimal(2,0) not null,	begindatum_geldh character varying(19) not null,	eindd_geldh character varying(19),	omschr character varying(100))
+ in following column aand and in column aand of table aard_verkregen_recht
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_PAND_GEBRUIK_NIET_INGEMETEN(THE_GEOM)', 'THE_GEOM']
+Detected: Duplicate Column Names Found in following statement: create table niet_nat_prs(	sc_identif varchar(32) not null,	clazz varchar(255),	naam varchar(500),	datum_aanvang varchar(19),	datum_beeindiging varchar(19),	verkorte_naam varchar(45))
+ in following column verkorte_naam and in column verkorte_naam of table vestg
+Detected: Index Shotgun Variant: 3 Following index not used : ['overig_bouwwerk (geom)', 'geom']
+Detected: Duplicate Column Names Found in following statement: create table ligplaats_nummeraand_archief(	fk_nn_lh_lpl_sc_identif varchar2(16) not null,	fk_nn_lh_lpl_sc_dat_beg_geldh varchar2(19) not null,	fk_nn_rh_nra_sc_identif varchar2(16) not null)
+ in following column fk_nn_lh_lpl_sc_identif and in column fk_nn_lh_lpl_sc_identif of table ligplaats_nummeraand
+Detected: Index Shotgun Variant: 3 Following index not used : ['ONBEGROEID_TERREINDEEL (KRUINLIJN)', 'KRUINLIJN']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel', 'straat']
+Detected: Index Shotgun Variant: 3 Following index not used : ['vrijstaand_vegetatie_o_archief (geom)', 'INDEXTYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['wegdeel_archief (geom)', 'geom']
+Detected: Index Shotgun Variant: 3 Following index not used : ['pm_p8_kadastraal_perceel_aant', 'kadperceelcode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['zak_recht', 'fk_7koz_kad_identif']
+Detected: Duplicate Column Names Found in following statement: create table herkomst_metadata (	tabel character varying(255),	kolom character varying(255),	waarde character varying(255),	herkomst_br character varying(255),	datum timestamp without time zone,	primary key (tabel, kolom, waarde, herkomst_br, datum))
+ in following column kolom and in column kolom of table meta_referentielijsten
+Detected: Duplicate Column Names Found in following statement: create table kunstwerkdeel_archief(	dat_beg_geldh varchar(19) not null,	identif varchar(255) not null,	clazz varchar(255),	datum_einde_geldh varchar(19),	relve_hoogteligging decimal(1,0),	status varchar(8),	type_kunstwerk varchar(40))
+ in following column status and in column status of table inrichtingselement_archief
+Detected: Index Shotgun Variant: 3 Following index not used : ['vm_p8_subject_percelen', 'kadperceelcode']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VM_ADRES_PANDVLAK(THE_GEOM)', 'THE_GEOM']
+Detected: Multicolumn Attribute Found in following statement: create table kad_onrrnd_zk_aantek(	begindatum_aantek_kad_obj varchar2(19),	kadaster_identif_aantek varchar2(255) not null,	aard_aantek_kad_obj varchar2(255),	beschrijving_aantek_kad_obj varchar2(124),	eindd_aantek_kad_obj varchar2(19),	fk_4koz_kad_identif decimal(15,0),	fk_5pes_sc_identif varchar2(32))
+

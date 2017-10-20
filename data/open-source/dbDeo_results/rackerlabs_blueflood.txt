@@ -1,0 +1,57 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_metadata ( key text, column1 text, value blob, PRIMARY KEY (key, column1))
+ in following column column1 of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_1440m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_string ( key text, column1 bigint, value text, PRIMARY KEY (key, column1))
+ in following column value of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_240m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_60m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_excess_enums ( key text, column1 bigint, value bigint, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_enum ( key text, column1 bigint, value text, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_20m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_60m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_locator ( key bigint, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column value of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_delayed_locator ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_state ( key bigint, column1 text, value bigint, PRIMARY KEY (key, column1))
+ in following column column1 of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_240m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_string ( key text, column1 bigint, value text, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_1440m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_20m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_delayed_locator ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column value of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_discovery ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column value of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_5m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_enum ( key text, column1 bigint, value text, PRIMARY KEY (key, column1))
+ in following column value of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_delayed_locator ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column column1 of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_5m ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_full ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_locator ( key bigint, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column column1 of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_metadata ( key text, column1 text, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_discovery ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column column1 of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_preaggregated_full ( key text, column1 bigint, value blob, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "DATA".metrics_discovery ( key text, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column . of table "DATA"

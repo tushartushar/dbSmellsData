@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `test_products` ( id INT NOT NULL, title VARCHAR(100), description VARCHAR(100), price FLOAT, location VARCHAR(100), PRIMARY KEY (id))
+ in following column price of table `test_products`
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE `oxobject2category` ( OXID VARCHAR(100), OXCATNID VARCHAR(100), OXOBJECTID VARCHAR(100))
+

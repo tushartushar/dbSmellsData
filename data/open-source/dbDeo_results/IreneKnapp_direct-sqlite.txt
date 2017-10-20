@@ -1,0 +1,91 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE tbl (n INT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (a INT, b TEXT)
+ in following column b of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE tbl (n INT)
+ in following column n and in column n of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE tbl (n TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tbl (n TEXT)
+ in following column n of table tbl
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (i INT, f FLOAT, t TEXT, b BLOB, n TEXT)
+ in following column f of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE testDecodeError (a TEXT)
+ in following column a of table testDecodeError
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE tbl (n BLOB)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Clone Tables Found in following statement: CREATE TABLE tbl (n INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (i INT, f FLOAT, t TEXT, b BLOB, n TEXT)
+ in following column n of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (n INT UNIQUE)
+ in following column n and in column n of table tbl
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (i INT, f FLOAT, t TEXT, b BLOB, n TEXT)
+ in following column t of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (a INT, b INT)
+ in following column a and in column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (a INT, b INT)
+ in following column b and in column b of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (n FLOAT, t TEXT)
+ in following column t of table foo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (n FLOAT, t TEXT)
+ in following column n of table foo
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

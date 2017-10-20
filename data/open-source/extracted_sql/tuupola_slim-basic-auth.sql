@@ -1,0 +1,2 @@
+SELECT * FROM users WHERE user = ? LIMIT 1
+CREATE TABLE users ( user VARCHAR(32) NOT NULL, hash VARCHAR(255) NOT NULL )

@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: create table if not exists BIP32Node (path text not null,key_id integer,address text unique,unique(path, key_id))
+ in following column address of table BIP32Node
+Detected: Obsolete Column TypesFound in following statement: create table if not exists BIP32Node (path text not null,key_id integer,address text unique,unique(path, key_id))
+ in following column path of table BIP32Node
+Detected: Obsolete Column TypesFound in following statement: create table if not exists Spendable (tx_hash text,tx_out_index integer,coin_value integer,script text,block_index_available integer,does_seem_spent boolean,block_index_spent integer,unique(tx_hash, tx_out_index))
+ in following column script of table Spendable
+Detected: Obsolete Column TypesFound in following statement: create table if not exists Global (slug text primary key,data text)
+ in following column slug of table (
+Detected: Obsolete Column TypesFound in following statement: create table if not exists Spendable (tx_hash text,tx_out_index integer,coin_value integer,script text,block_index_available integer,does_seem_spent boolean,block_index_spent integer,unique(tx_hash, tx_out_index))
+ in following column tx_hash of table Spendable
+Detected: Obsolete Column TypesFound in following statement: create table if not exists BIP32Key (id integer primary key,slug text not null unique,as_text text not null)
+ in following column slug of table BIP32Key
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table if not exists Global (slug text primary key,data text)
+ in following column data of table (
+Detected: Obsolete Column TypesFound in following statement: create table if not exists BIP32Key (id integer primary key,slug text not null unique,as_text text not null)
+ in following column as_text of table BIP32Key

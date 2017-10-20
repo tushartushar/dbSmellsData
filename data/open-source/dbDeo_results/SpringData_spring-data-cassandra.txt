@@ -1,0 +1,35 @@
+Detected: Obsolete Column TypesFound in following statement: create table collection_types_table (id text primary key, textlist list<text>, textmap map<text,text>, textset set<text>, uuidlist list<uuid>, textuuidmap map<text, uuid>, uuidset set<uuid>)
+ in following column textmap of table collection_types_table
+Detected: Obsolete Column TypesFound in following statement: create table embedded_id_table (partition_key int, clustering_key text, proptext text, primary key (partition_key, clustering_key))
+ in following column clustering_key of table embedded_id_table
+Detected: Obsolete Column TypesFound in following statement: create table embedded_id_table (partition_key int, clustering_key text, proptext text, primary key (partition_key, clustering_key))
+ in following column proptext of table embedded_id_table
+Detected: Obsolete Column TypesFound in following statement: create table basic_types_table (id text primary key, propascii ascii, propbigint bigint, propblob blob, propboolean boolean, propdecimal decimal, propdouble double, propfloat float, propinet inet, propint int, proptext text, proptimestamp timestamp, propuuid uuid, proptimeuuid timeuuid, propvarchar varchar, propvarint varint)
+ in following column propfloat of table basic_types_table
+Detected: Obsolete Column TypesFound in following statement: create table collection_types_table (id text primary key, textlist list<text>, textmap map<text,text>, textset set<text>, uuidlist list<uuid>, textuuidmap map<text, uuid>, uuidset set<uuid>)
+ in following column id of table collection_types_table
+Detected: Obsolete Column TypesFound in following statement: create table book (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column title of table book
+Detected: Obsolete Column TypesFound in following statement: create table book_alt (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column isbn of table book_alt
+Detected: Obsolete Column TypesFound in following statement: create table book (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column isbn of table book
+Detected: Obsolete Column TypesFound in following statement: create table book_alt (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column title of table book_alt
+Detected: Obsolete Column TypesFound in following statement: create table book_alt (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column author of table book_alt
+Detected: Obsolete Column TypesFound in following statement: create table collection_types_table (id text primary key, textlist list<text>, textmap map<text,text>, textset set<text>, uuidlist list<uuid>, textuuidmap map<text, uuid>, uuidset set<uuid>)
+ in following column textuuidmap of table collection_types_table
+Detected: Obsolete Column TypesFound in following statement: create table basic_types_table (id text primary key, propascii ascii, propbigint bigint, propblob blob, propboolean boolean, propdecimal decimal, propdouble double, propfloat float, propinet inet, propint int, proptext text, proptimestamp timestamp, propuuid uuid, proptimeuuid timeuuid, propvarchar varchar, propvarint varint)
+ in following column proptext of table basic_types_table
+Detected: Obsolete Column TypesFound in following statement: create table book (isbn text, title text, author text, pages int, PRIMARY KEY (isbn))
+ in following column author of table book
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table collection_types_table (id text primary key, textlist list<text>, textmap map<text,text>, textset set<text>, uuidlist list<uuid>, textuuidmap map<text, uuid>, uuidset set<uuid>)
+ in following column textlist of table collection_types_table
+Detected: Obsolete Column TypesFound in following statement: create table collection_types_table (id text primary key, textlist list<text>, textmap map<text,text>, textset set<text>, uuidlist list<uuid>, textuuidmap map<text, uuid>, uuidset set<uuid>)
+ in following column textset of table collection_types_table
+Detected: Obsolete Column TypesFound in following statement: create table basic_types_table (id text primary key, propascii ascii, propbigint bigint, propblob blob, propboolean boolean, propdecimal decimal, propdouble double, propfloat float, propinet inet, propint int, proptext text, proptimestamp timestamp, propuuid uuid, proptimeuuid timeuuid, propvarchar varchar, propvarint varint)
+ in following column id of table basic_types_table
+Detected: God Table Found in following statement: create table basic_types_table (id text primary key, propascii ascii, propbigint bigint, propblob blob, propboolean boolean, propdecimal decimal, propdouble double, propfloat float, propinet inet, propint int, proptext text, proptimestamp timestamp, propuuid uuid, proptimeuuid timeuuid, propvarchar varchar, propvarint varint)
+

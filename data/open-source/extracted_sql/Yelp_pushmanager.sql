@@ -1,0 +1,6 @@
+CREATE TABLE push_pushes (	id INTEGER NOT NULL,	title VARCHAR,	user VARCHAR,	branch VARCHAR,	revision VARCHAR(40),	state VARCHAR,	created INTEGER,	modified INTEGER,	pushtype VARCHAR,	extra_pings VARCHAR,	stageenv VARCHAR,	PRIMARY KEY (id))
+CREATE TABLE push_checklist (	id INTEGER NOT NULL,	request INTEGER NOT NULL,	type VARCHAR(50),	complete SMALLINT NOT NULL,	target VARCHAR(50),	PRIMARY KEY (id))
+CREATE TABLE push_pushcontents (	request INTEGER NOT NULL,	push INTEGER NOT NULL,	PRIMARY KEY (request, push))
+CREATE TABLE push_removals (	id INTEGER NOT NULL,	request INTEGER NOT NULL,	push INTEGER NOT NULL,	reason VARCHAR,	pushmaster VARCHAR,	timestamp INTEGER NOT NULL,	PRIMARY KEY (id))
+CREATE TABLE push_requests (	id INTEGER NOT NULL,	user VARCHAR,	state VARCHAR,	repo VARCHAR,	branch VARCHAR,	revision VARCHAR(40),	tags VARCHAR,	conflicts VARCHAR,	created INTEGER,	modified INTEGER,	title VARCHAR,	comments VARCHAR,	reviewid INTEGER,	description VARCHAR,	watchers VARCHAR,	PRIMARY KEY (id))
+CREATE TABLE push_plans (	id INTEGER NOT NULL,	content VARCHAR,	path VARCHAR,	PRIMARY KEY (id))

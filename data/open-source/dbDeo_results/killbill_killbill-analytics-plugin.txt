@@ -1,0 +1,189 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_transitions', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_tags', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'invoice_item_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_method_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_currency_conversion', 'currency']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_fields', 'bundle_external_key']
+Detected: God Table Found in following statement: create table analytics_bundle_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, bundle_id varchar(36) default null, bundle_external_key varchar(50) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_tags', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_accounts', 'account_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoices', 'invoice_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_transaction_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'invoice_payment_id']
+Detected: God Table Found in following statement: create table analytics_payment_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, payment_id varchar(36) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'processing_available_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_accounts', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_fields', 'bundle_id']
+Detected: Duplicate Column Names Found in following statement: create table analytics_bundle_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, bundle_id varchar(36) default null, bundle_external_key varchar(50) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+ in following column tenant_record_id and in column tenant_record_id of table report_churn_total_usd_monthly
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'search_key2']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundles', 'bundle_external_key']
+Detected: God Table Found in following statement: create table analytics_invoice_payment_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, invoice_payment_id varchar(36) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_tags', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_transaction_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_currency_conversion', 'end_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundles', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_tags', 'account_record_id']
+Detected: Multicolumn Attribute Found in following statement: create table analytics_notifications ( record_id serial unique, class_name varchar(256) not null, event_json varchar(2048) not null, user_token varchar(36), created_date datetime not null, creating_owner varchar(50) not null, processing_owner varchar(50) default null, processing_available_date datetime default null, processing_state varchar(14) default 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 int /*! unsigned */ default null, search_key2 int /*! unsigned */ default null, queue_name varchar(64) not null, effective_date datetime not null, future_user_token varchar(36), primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_tags', 'account_id']
+Detected: God Table Found in following statement: create table analytics_invoice_tags ( record_id serial unique, tag_record_id bigint /*! unsigned */ default null, invoice_id varchar(36) default null, name varchar(50) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoices', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoices', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_tags', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_tags', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_tags', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_method_fields', 'account_record_id']
+Detected: Multicolumn Attribute Found in following statement: create table analytics_notifications_history ( record_id serial unique, class_name varchar(256) not null, event_json varchar(2048) not null, user_token varchar(36), created_date datetime not null, creating_owner varchar(50) not null, processing_owner varchar(50) default null, processing_available_date datetime default null, processing_state varchar(14) default 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 int /*! unsigned */ default null, search_key2 int /*! unsigned */ default null, queue_name varchar(64) not null, effective_date datetime not null, future_user_token varchar(36), primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_tags', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_fields', 'account_record_id']
+Detected: God Table Found in following statement: create table analytics_payment_tags ( record_id serial unique, tag_record_id bigint /*! unsigned */ default null, invoice_payment_id varchar(36) default null, name varchar(50) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_tags', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_payment_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'processing_owner']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoices', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_currency_conversion', 'reference_currency']
+Detected: Duplicate Column Names Found in following statement: create table report_churn_total_usd_monthly (tenant_record_id int(11), day date, term varchar(50), count int(8))
+ in following column count and in column count of table report_churn_percent_monthly
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'invoice_item_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_accounts', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_tags', 'bundle_id']
+Detected: God Table Found in following statement: create table analytics_account_transitions ( record_id serial unique, blocking_state_record_id bigint /*! unsigned */ default null, service varchar(50) default null, state varchar(50) default null, start_date date default null, end_date date default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_currency_conversion', 'start_date']
+Detected: God Table Found in following statement: create table analytics_account_tags ( record_id serial unique, tag_record_id bigint /*! unsigned */ default null, name varchar(50) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'plugin_name']
+Detected: God Table Found in following statement: create table analytics_payment_method_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, payment_method_id varchar(36) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoices', 'tenant_record_id']
+Detected: God Table Found in following statement: create table analytics_transaction_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, transaction_id varchar(36) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_subscription_transitions', 'bundle_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'tenant_record_id']
+Detected: God Table Found in following statement: create table analytics_invoice_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, invoice_id varchar(36) default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'invoice_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_purchases', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_transitions', 'blocking_state_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'invoice_id']
+Detected: God Table Found in following statement: create table analytics_bundle_tags ( record_id serial unique, tag_record_id bigint /*! unsigned */ default null, bundle_id varchar(36) default null, bundle_external_key varchar(50) default null, name varchar(50) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_method_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_subscription_transitions', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_items', 'invoice_item_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'invoice_item_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_subscription_transitions', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'invoice_payment_id']
+Detected: Duplicate Column Names Found in following statement: create table report_churn_total_usd_monthly (tenant_record_id int(11), day date, term varchar(50), count int(8))
+ in following column day and in column day of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'invoice_id']
+Detected: God Table Found in following statement: create table analytics_notifications_history ( record_id serial unique, class_name varchar(256) not null, event_json varchar(2048) not null, user_token varchar(36), created_date datetime not null, creating_owner varchar(50) not null, processing_owner varchar(50) default null, processing_available_date datetime default null, processing_state varchar(14) default 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 int /*! unsigned */ default null, search_key2 int /*! unsigned */ default null, queue_name varchar(64) not null, effective_date datetime not null, future_user_token varchar(36), primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundles', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_tags', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_credits', 'plugin_name']
+Detected: God Table Found in following statement: create table analytics_account_fields ( record_id serial unique, custom_field_record_id bigint /*! unsigned */ default null, name varchar(64) default null, value varchar(255) default null, created_date datetime default null, created_by varchar(50) default null, created_reason_code varchar(255) default null, created_comments varchar(255) default null, account_id varchar(36) default null, account_name varchar(100) default null, account_external_key varchar(50) default null, account_record_id bigint /*! unsigned */ default null, tenant_record_id bigint /*! unsigned */ default null, report_group varchar(50) not null, primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_payment_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'plugin_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_subscription_transitions', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundles', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_tags', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_tags', 'bundle_external_key']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_subscription_transitions', 'bundle_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundle_fields', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'effective_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_credits', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_adjustments', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'invoice_payment_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_transitions', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'tenant_record_id']
+Detected: God Table Found in following statement: create table analytics_notifications ( record_id serial unique, class_name varchar(256) not null, event_json varchar(2048) not null, user_token varchar(36), created_date datetime not null, creating_owner varchar(50) not null, processing_owner varchar(50) default null, processing_available_date datetime default null, processing_state varchar(14) default 'AVAILABLE', error_count int /*! unsigned */ DEFAULT 0, search_key1 int /*! unsigned */ default null, search_key2 int /*! unsigned */ default null, queue_name varchar(64) not null, effective_date datetime not null, future_user_token varchar(36), primary key(record_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'search_key1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_notifications', 'processing_state']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_bundles', 'bundle_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'invoice_payment_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_payment_fields', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_chargebacks', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_refunds', 'created_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_captures', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_transaction_fields', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_voids', 'tenant_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_invoice_item_adjustments', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_accounts', 'account_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_account_transitions', 'account_record_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['analytics_payment_auths', 'invoice_payment_record_id']

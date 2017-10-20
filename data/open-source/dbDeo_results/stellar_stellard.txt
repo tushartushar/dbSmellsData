@@ -1,0 +1,48 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS KnownNodes	(					\		Hanko			CHARACTER(35) PRIMARY KEY,	\		LastSeen		TEXT,						\		HaveContactInfo	CHARACTER(1),				\		ContactObject	BLOB						\	)
+ in following column \ of table KnownNodes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ValidatorReferrals (				\		Validator		CHARACTER(53) NOT NULL,		\		Entry			INTEGER NOT NULL,			\		Referral		TEXT NOT NULL,				\		PRIMARY KEY (Validator,Entry)				\	)
+ in following column \ of table ValidatorReferrals
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE CommittedObjects (				\ Hash		CHARACTER(64) PRIMARY KEY,		\ ObjType		CHAR(1)	NOT	NULL,				\ LedgerIndex	BIGINT UNSIGNED,				\ Object		BLOB							\ )
+ in following column \ and in column \ of table AccountTransactions
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS NodeIdentity (					\		PublicKey		CHARACTER(53),				\		PrivateKey		CHARACTER(52),				\		Dh512			TEXT,						\		Dh1024			TEXT						\	)
+ in following column \ of table NodeIdentity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS SeedDomains (						\		Domain			TEXT PRIMARY KEY NOT NULL,	\		PublicKey		CHARACTER(53),				\		Source			CHARACTER(1) NOT NULL,		\		Next			DATETIME,					\		Scan			DATETIME,					\		Fetch			DATETIME,					\		Sha256			CHARACTER[64],				\		Comment			TEXT						\	)
+ in following column \ of table SeedDomains
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS RPCData (							\		Key			TEXT PRIMARY Key,				\		Value		TEXT							\	)
+ in following column \ of table RPCData
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS IpReferrals (							\		Validator		CHARACTER(53) NOT NULL,			\		Entry			INTEGER NOT NULL,				\		IP				TEXT NOT NULL,					\		Port			INTEGER NOT NULL DEFAULT -1,	\		PRIMARY KEY (Validator,Entry)					\	)
+ in following column \ of table IpReferrals
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS Ledgers (							\		LedgerHash		CHARACTER(64) PRIMARY KEY,	\		LedgerSeq		BIGINT UNSIGNED,			\		PrevHash		CHARACTER(64),				\		TotalCoins		BIGINT UNSIGNED,			\		InflateSeq		BIGINT UNSIGNED,			\		FeePool			BIGINT UNSIGNED,			\		ClosingTime		BIGINT UNSIGNED,			\		PrevClosingTime	BIGINT UNSIGNED,			\		CloseTimeRes	BIGINT UNSIGNED,			\		CloseFlags		BIGINT UNSIGNED,			\		AccountSetHash	CHARACTER(64),				\		TransSetHash	CHARACTER(64)				\	)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS TrustedNodes (							\		PublicKey		CHARACTER(53) PRIMARY KEY NOT NULL,	\		Score			INTEGER DEFAULT 0 NOT NULL,			\		Seen			DATETIME,							\		Comment			TEXT								\	)
+ in following column \ of table TrustedNodes
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE Accounts set  balance=%d, sequence=%d,ownerCount=%d,transferRate=%d, inflationDest=%s,publicKey=%s,requireDest=%d,requireAuth=%d  where accountID=%s
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS SeedNodes (						\		PublicKey		CHARACTER(53) PRIMARY KEY NOT NULL,		\		Source			CHARACTER(1) NOT NULL,		\		Next			DATETIME,					\		Scan			DATETIME,					\		Fetch			DATETIME,					\		Sha256			CHARACTER[64],				\		Comment			TEXT						\	)
+ in following column \ of table SeedNodes
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

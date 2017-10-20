@@ -1,0 +1,18 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta ( attr TEXT UNIQUE, value TEXT )
+ in following column value of table meta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE inverted_indexes ( name TEXT, attr TEXT, value TEXT )
+ in following column value of table inverted_indexes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ivtidx_%IDXNAME%_terms_map ( rank INTEGER, term_id INTEGER, object_type INTEGER, object_id INTEGER, frequency FLOAT )
+ in following column frequency of table ivtidx_%IDXNAME
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE inverted_indexes ( name TEXT, attr TEXT, value TEXT )
+ in following column name of table inverted_indexes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE types ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT UNIQUE, attrs_pickle BLOB, idx_pickle BLOB )
+ in following column name of table types
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta ( attr TEXT UNIQUE, value TEXT )
+ in following column attr of table meta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE inverted_indexes ( name TEXT, attr TEXT, value TEXT )
+ in following column attr of table inverted_indexes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ivtidx_%IDXNAME%_terms ( id INTEGER PRIMARY KEY AUTOINCREMENT, term TEXT, count INTEGER )
+ in following column term of table ivtidx_%IDXNAME
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE types ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT UNIQUE, attrs_pickle BLOB, idx_pickle BLOB )
+ in following column id and in column id of table (

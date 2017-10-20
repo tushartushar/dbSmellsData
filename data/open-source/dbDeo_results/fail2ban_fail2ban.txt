@@ -1,0 +1,8 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['logs', 'path']
+Detected: Index Shotgun Variant: 3 Following index not used : ['logs', 'jail']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jails', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jails(name)', 'qtablelogslogs']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jails(name)', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bans', 'timeofban']
+Detected: Index Shotgun Variant: 3 Following index not used : ['jails(name)', 'G']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bans', 'ip']

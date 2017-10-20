@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS comments (', ' tid REFERENCES threads(id), id INTEGER PRIMARY KEY, parent INTEGER,', ' created FLOAT NOT NULL, modified FLOAT, mode INTEGER, remote_addr VARCHAR,', ' text VARCHAR, author VARCHAR, email VARCHAR, website VARCHAR,', ' likes INTEGER DEFAULT 0, dislikes INTEGER DEFAULT 0, voters BLOB NOT NULL)
+ in following column modified of table comments
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS threads (', ' id INTEGER PRIMARY KEY, uri VARCHAR(256) UNIQUE, title VARCHAR(256))
+ in following column ', ' and in column ', ' of table comments
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS comments (', ' tid REFERENCES threads(id), id INTEGER PRIMARY KEY, parent INTEGER,', ' created FLOAT NOT NULL, modified FLOAT, mode INTEGER, remote_addr VARCHAR,', ' text VARCHAR, author VARCHAR, email VARCHAR, website VARCHAR,', ' likes INTEGER DEFAULT 0, dislikes INTEGER DEFAULT 0, voters BLOB NOT NULL)
+ in following column ', ' of table comments
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS threads (', ' id INTEGER PRIMARY KEY, uri VARCHAR(256) UNIQUE, title VARCHAR(256))
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS comments (', ' tid REFERENCES threads(id), id INTEGER PRIMARY KEY, parent INTEGER,', ' created FLOAT NOT NULL, modified FLOAT, mode INTEGER, remote_addr VARCHAR,', ' text VARCHAR, author VARCHAR, email VARCHAR, website VARCHAR,', ' likes INTEGER DEFAULT 0, dislikes INTEGER DEFAULT 0, voters BLOB NOT NULL)
+

@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `akismet_log` ( `id` int(11) NOT NULL AUTO_INCREMENT, `comment_id` int(11) NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `action` varchar(10) NOT NULL, `is_spam` tinyint(1) NOT NULL, `error` text NULL, `request` text NULL, `response` text NULL, PRIMARY KEY (`id`), KEY `comment_id` (`comment_id`) )
+ in following column `response` of table `akismet_log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `akismet_log` ( `id` int(11) NOT NULL AUTO_INCREMENT, `comment_id` int(11) NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `action` varchar(10) NOT NULL, `is_spam` tinyint(1) NOT NULL, `error` text NULL, `request` text NULL, `response` text NULL, PRIMARY KEY (`id`), KEY `comment_id` (`comment_id`) )
+ in following column `request` of table `akismet_log`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `akismet_log` ( `id` int(11) NOT NULL AUTO_INCREMENT, `comment_id` int(11) NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `action` varchar(10) NOT NULL, `is_spam` tinyint(1) NOT NULL, `error` text NULL, `request` text NULL, `response` text NULL, PRIMARY KEY (`id`), KEY `comment_id` (`comment_id`) )
+ in following column `error` of table `akismet_log`

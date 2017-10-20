@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE adladb485f1590.dbo.adlatable485f1590\n(\n //Define schema of table\n UserId int, \n Start DateTime, \n Region string, \n Query string, \n Duration int, \n Urls string, \n ClickedUrls string,\n INDEX idx1 \n CLUSTERED (Region ASC) \n PARTITIONED BY BUCKETS (UserId) HASH (Region)\n)
+ in following column \ and in column \ of table adladb32e3152c
+Detected: Index Shotgun Variant: 1

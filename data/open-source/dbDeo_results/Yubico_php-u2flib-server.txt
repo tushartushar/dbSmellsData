@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: create table if not exists registrations (id integer primary key, user_id integer, keyHandle varchar(255), publicKey varchar(255), certificate text, counter integer)
+ in following column certificate of table registrations
+Detected: Index Shotgun Variant: 1

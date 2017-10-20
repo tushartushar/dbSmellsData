@@ -1,0 +1,8 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE donations SET team_id = :team_id, amount = :amount, name = :name, time = :time, type = :type, email = :email  WHERE id = :id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE teams SET team_name = :team_name, names = :names, team_number = :team_number, avatar = :avatar, tag_line = :tag_line, university = :university, amount_raised_online = :amount_raised_online, amount_raised_offline = :amount_raised_offline, description = :description, featured = :featured, slug = :slug, video = :video, avatar_large = :avatar_large, last_checkin_id = :last_checkin_id, position = :position  WHERE id = :id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE checkins SET location = :location, status = :status, lat = :lat, lon = :lon, time = :time, team_id = :team_id  WHERE id = :id
+
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE events SET type = :type, object_id = :object_id, time = :time, team_id = :team_id, highlight = :highlight  WHERE id = :id
+

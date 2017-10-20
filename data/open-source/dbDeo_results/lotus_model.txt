@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schema_migrations ( filename text NOT NULL)
+ in following column filename of table schema_migrations
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE reviews ( id integer NOT NULL, title text NOT NULL, rating integer DEFAULT 0)
+ in following column title of table reviews
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,18 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['dept_emp', 'dept_no']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `dept_emp` ( `emp_no` int(11) NOT NULL AUTO_INCREMENT, `emp_no0` int(11) NOT NULL, `dept_no` varchar(4) NOT NULL, `from_date` date NOT NULL, `to_date` date NOT NULL, PRIMARY KEY (`emp_no`) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `dept_emp` ( `emp_no1` int(11) NOT NULL, `emp_no2` int(11) NOT NULL, `emp_no0` int(11) NOT NULL, `dept_no` varchar(4) NOT NULL, `from_date` date NOT NULL, `to_date` date NOT NULL, PRIMARY KEY (`emp_no1`,`emp_no2`) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `dept_emp` ( `emp_no1` int(11) NOT NULL, `emp_no2` int(11) NOT NULL, `emp_no0` int(11) NOT NULL, `dept_no` varchar(4) NOT NULL, `from_date` date NOT NULL, `to_date` date NOT NULL, PRIMARY KEY (`emp_no1`,`emp_no2`) )
+ in following column `dept_no` and in column `dept_no` of table `departments`
+Detected: Index Shotgun Variant: 3 Following index not used : ['employee_clubs', 'club_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['dept_emp', 'emp_no']
+Detected: Index Shotgun Variant: 3 Following index not used : ['titles', 'emp_no']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `dept_emp` ( `emp_no0` int(11) NOT NULL, `emp_no` int(11) NOT NULL, `dept_no` varchar(4) NOT NULL, `from_date` date NOT NULL, `to_date` date NOT NULL )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['dept_manager', 'dept_no']
+Detected: Index Shotgun Variant: 3 Following index not used : ['employee_clubs', 'emp_no']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `dept_emp` ( `id` int(11) NOT NULL AUTO_INCREMENT, `emp_no0` int(11) NOT NULL, `emp_no` int(11) NOT NULL, `dept_no` varchar(4) NOT NULL, `from_date` date NOT NULL, `to_date` date NOT NULL, PRIMARY KEY (`id`) )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['dept_manager', 'emp_no']
+Detected: Index Shotgun Variant: 3 Following index not used : ['salaries', 'emp_no']

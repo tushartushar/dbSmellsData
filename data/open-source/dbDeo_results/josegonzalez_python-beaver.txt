@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: create table sincedb ( fid text primary key, filename text, position integer default 1 )
+ in following column filename of table sincedb
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table sincedb ( fid text primary key, filename text, position integer default 1 )
+ in following column fid of table sincedb

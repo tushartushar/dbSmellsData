@@ -1,0 +1,184 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (str STRING)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 's']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'C']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT)
+ in following column target of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'indexmoz_places_url_uniqueindexmoz_places']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT,iconURL TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column source of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'a3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'indexmoz_places_hostindexmoz_places']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_bookmarks ( id INTEGER PRIMARY KEY, type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER)
+ in following column folder_type of table moz_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column target of table moz_downloads
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column a and in column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory', 'lastUsed']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column source of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'indexmoz_bookmarks_parentindexmoz_bookmarks']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column entityID of table moz_downloads
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'a81']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column target of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE moz_cache SET MetaData = ?, Flags = ?, DataSize = ?, FetchCount = ?, LastFetched = ?, LastModified = ?, ExpirationTime = ?  WHERE ClientID = ? AND Key = ?
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (fieldname)', '_']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(x)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (last_visit_date)', 'indexmoz_places_frecencyindexmoz_places']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'e']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT)
+ in following column source of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_bookmarks (id INTEGER PRIMARY KEY,type INTEGER, fk INTEGER DEFAULT NULL, parent INTEGER, position INTEGER, title LONGVARCHAR, keyword_id INTEGER, folder_type TEXT, dateAdded INTEGER, lastModified INTEGER)
+ in following column folder_type of table moz_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column entityID of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (last_visit_date)', 'last_visit_date']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column source of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column tempPath of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column name of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE test1 (id INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE moz_favicons ( id INTEGER PRIMARY KEY, url LONGVARCHAR UNIQUE, data BLOB, mime_type VARCHAR(32), expiration LONG)
+ in following column id and in column id of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['cookies', 'creation_utc']
+Detected: God Table Found in following statement: CREATE TABLE tMetaTable	 (DATETIME CHAR(14), LASTPING CHAR(14),	 ID CHAR(8), INDEX INTEGER,	 CUR_IDX INTEGER, CUR_CYC INTEGER,	 CUR_CONTENT CHAR(128), STATE INTEGER,	 BLESSED INTEGER, MAXCYC INTEGER,	 MAXIDX INTEGER, REPLACE INTEGER,	 NOCACHE INTEGER, DELAY INTEGER,	 REMOTE_USER CHAR(16), HTTP_USER_AGENT CHAR(128),	 REMOTE_ADDR CHAR(15), USER_EMAIL CHAR(32),	 USER_COMMENT CHAR(256)	 )
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (fieldname)', 'wtablemoz_dummy_tablemoz_dummy_table']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'favicon_id']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT,iconURL TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column target of table moz_downloads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_keywords ( id INTEGER PRIMARY KEY AUTOINCREMENT, keyword TEXT UNIQUE)
+ in following column keyword of table moz_keywords
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (fieldname)', 'fieldname']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_bookmarks', 'lastModified']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT,iconURL TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column name of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (id INTEGER PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, a DESC))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column referrer of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (lastUsed)', 'indexmoz_formhistory_indexmoz_formhistory']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT)
+ in following column tempPath of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'a101']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'visit_date']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE if not exists notifications ( \ id text, \ datetime integer, \ firstNotification integer, \ secondNotification integer, \ serializedJSData string)
+ in following column \ of table notifications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column name of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column referrer of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column source of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: God Table Found in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT)
+ in following column name of table moz_downloads
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE moz_formhistory (id INTEGER PRIMARY KEY, fieldname LONGVARCHAR, value LONGVARCHAR, timesUsed INTEGER, firstUsed INTEGER, lastUsed INTEGER)
+ in following column value and in column value of table %
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE [dbo].[Log] ( [ID] [int] IDENTITY (1, 1) NOT NULL , [Date] [datetime] NOT NULL , [Thread] [varchar] (255) NOT NULL , [Level] [varchar] (20) NOT NULL , [Logger] [varchar] (255) NOT NULL , [Message] [varchar] (4000) NOT NULL )
+ in following column . and in column . of table %
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (lastUsed)', 'lastUsed']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column target of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (last_visit_date)', 'm']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT)
+ in following column referrer of table moz_downloads
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'a102']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b, c, PRIMARY KEY(b, c))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT, startTime INTEGER, endTime INTEGER, state INTEGER, referrer TEXT, entityID TEXT, tempPath TEXT, currBytes INTEGER NOT NULL DEFAULT 0, maxBytes INTEGER NOT NULL DEFAULT -1)
+ in following column name of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_historyvisits', 'indexmoz_historyvisits_fromindexmoz_historyvisits']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_places (favicon_id)', 'A']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE moz_downloads (id INTEGER PRIMARY KEY, name TEXT, source TEXT, target TEXT,iconURL TEXT, startTime INTEGER, endTime INTEGER, state INTEGER)
+ in following column iconURL of table moz_downloads
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['moz_formhistory (lastUsed)', 'r']

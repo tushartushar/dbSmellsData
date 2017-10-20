@@ -1,0 +1,109 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'clubber_id']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.award ( id ${uuid} ${generate_uuid} PRIMARY KEY, clubber_id ${uuid} NOT NULL, section_id VARCHAR(100) NOT NULL, accomplishment VARCHAR(100), token VARCHAR(100), presented_at ${uuid}, FOREIGN KEY (clubber_id, section_id) REFERENCES ${schema}.record (clubber_id, section_id), FOREIGN KEY (presented_at) REFERENCES ${schema}.ceremony(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.clubber ( id uuid REFERENCES ${schema}.person NOT NULL PRIMARY KEY, family_id uuid REFERENCES ${schema}.family, club_id uuid REFERENCES ${schema}.club, age_group VARCHAR(20) NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', '}']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'input_field']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.login ( id ${uuid} REFERENCES ${schema}.person NOT NULL, provider_id VARCHAR(20) REFERENCES ${schema}.provider NOT NULL, unique_id VARCHAR(500) NOT NULL, auth INTEGER, PRIMARY KEY(id, provider_id, unique_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'family']
+Detected: Index Shotgun Variant: 1
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_field_value ( parent_input_field_id ${uuid} REFERENCES ${schema}.input_field, the_order integer NOT NULL, name VARCHAR(25) NOT NULL, the_value VARCHAR(10) NOT NULL, is_default CHAR(1) NOT NULL, PRIMARY KEY(parent_input_field_id, the_order))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.listener ( id ${uuid} REFERENCES ${schema}.person NOT NULL, club_id ${uuid} REFERENCES ${schema}.club NOT NULL, PRIMARY KEY(id, club_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'provider']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'club_id']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.record ( clubber_id uuid REFERENCES ${schema}.person NOT NULL, club_id uuid REFERENCES ${schema}.club, section_id VARCHAR(100) NOT NULL, signed_by uuid, sign_date DATE, note VARCHAR(1000), PRIMARY KEY(clubber_id, section_id), FOREIGN KEY(signed_by, club_id) REFERENCES ${schema}.listener (id, club_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.organization ( id ${uuid} ${generate_uuid} PRIMARY KEY, organizationName VARCHAR(50) NOT NULL, locale VARCHAR(10), club_id ${uuid}, FOREIGN KEY (club_id) REFERENCES ${schema}.club(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.listener ( id uuid REFERENCES ${schema}.person NOT NULL, club_id uuid REFERENCES ${schema}.club NOT NULL, PRIMARY KEY(id, club_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.award ( id uuid ${generate_uuid} PRIMARY KEY, clubber_id uuid NOT NULL, section_id VARCHAR(100) NOT NULL, accomplishment VARCHAR(100), token VARCHAR(100), presented_at uuid REFERENCES ${schema}.ceremony, FOREIGN KEY (clubber_id, section_id) REFERENCES ${schema}.record (clubber_id, section_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'section_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', '.']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.leader ( id ${uuid} NOT NULL, club_id ${uuid}, role VARCHAR(10) NOT NULL, PRIMARY KEY(id, club_id), FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (club_id) REFERENCES ${schema}.club(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.record ( clubber_id ${uuid} REFERENCES ${schema}.person NOT NULL, club_id ${uuid} REFERENCES ${schema}.club, section_id VARCHAR(100) NOT NULL, signed_by ${uuid}, sign_date DATE, note VARCHAR(1000), PRIMARY KEY(clubber_id, section_id), FOREIGN KEY(signed_by, club_id) REFERENCES ${schema}.listener (id, club_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'organization']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.leader ( id uuid REFERENCES ${schema}.person NOT NULL, club_id uuid REFERENCES ${schema}.club, role VARCHAR(10) NOT NULL, PRIMARY KEY(id, club_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.family_registration ( family_id ${uuid} REFERENCES ${schema}.family, input_field_id ${uuid} REFERENCES input_field, the_value VARCHAR(5000), PRIMARY KEY(family_id, input_field_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.family_registration ( family_id ${uuid}, input_field_id ${uuid}, the_value VARCHAR(5000), PRIMARY KEY(family_id, input_field_id), FOREIGN KEY (family_id) REFERENCES ${schema}.family(id), FOREIGN KEY (input_field_id) REFERENCES ${schema}.input_field(id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'provider_id']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.organization ( id ${uuid} ${generate_uuid} PRIMARY KEY, organizationName VARCHAR(50) NOT NULL, locale VARCHAR(10), club_id ${uuid} REFERENCES ${schema}.club)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.clubber ( id ${uuid} NOT NULL PRIMARY KEY, family_id ${uuid}, club_id ${uuid}, age_group VARCHAR(20) NOT NULL, FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (family_id) REFERENCES ${schema}.family(id), FOREIGN KEY (club_id) REFERENCES ${schema}.club(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.registration_form ( organization_id ${uuid}, type VARCHAR(10), input_group_id ${uuid}, PRIMARY KEY(organization_id, type), FOREIGN KEY (organization_id) REFERENCES ${schema}.organization(id), FOREIGN KEY (input_group_id) REFERENCES ${schema}.input_group(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.organization ( id uuid ${generate_uuid} PRIMARY KEY, organizationName VARCHAR(50) NOT NULL, locale VARCHAR(10), club_id uuid REFERENCES ${schema}.club)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'schema']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.invite ( id ${uuid} NOT NULL, auth INTEGER NOT NULL, sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, invited_by ${uuid} NOT NULL, completed TIMESTAMP, PRIMARY KEY(id, auth), FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (invited_by) REFERENCES ${schema}.person(id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'person']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.club ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_club_id ${uuid}, curriculum VARCHAR(20), FOREIGN KEY (parent_club_id) REFERENCES ${schema}.club(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.parent ( id uuid REFERENCES ${schema}.person NOT NULL PRIMARY KEY, family_id uuid REFERENCES ${schema}.family (id) NOT NULL)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_field ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_input_group_id ${uuid}, name VARCHAR(100) NOT NULL, type VARCHAR(10) NOT NULL, required CHAR(1) NOT NULL, the_order integer NOT NULL, FOREIGN KEY (parent_input_group_id) REFERENCES ${schema}.input_group(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.person_registration ( person_id ${uuid}, input_field_id ${uuid}, the_value VARCHAR(5000), PRIMARY KEY(person_id, input_field_id), FOREIGN KEY (person_id) REFERENCES ${schema}.person(id), FOREIGN KEY (input_field_id) REFERENCES ${schema}.input_field(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.registration_form ( organization_id ${uuid} REFERENCES ${schema}.organization, type VARCHAR(10), input_group_id ${uuid} REFERENCES ${schema}.input_group, PRIMARY KEY(organization_id, type))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.login ( id uuid REFERENCES ${schema}.person NOT NULL, provider_id VARCHAR(20) REFERENCES ${schema}.provider NOT NULL, unique_id VARCHAR(500) NOT NULL, auth INTEGER, PRIMARY KEY(id, provider_id, unique_id))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE ${schema}.address ( id ${uuid} ${generate_uuid} PRIMARY KEY, line1 VARCHAR(200), line2 VARCHAR(200), city VARCHAR(100), territory VARCHAR(100), postal_code VARCHAR(20), country VARCHAR(3))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'input_group']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.parent ( id ${uuid} NOT NULL PRIMARY KEY, family_id ${uuid} NOT NULL, FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (family_id) REFERENCES ${schema}.family(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.parent ( id ${uuid} REFERENCES ${schema}.person NOT NULL PRIMARY KEY, family_id ${uuid} REFERENCES ${schema}.family (id) NOT NULL)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_group ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_input_group_id ${uuid}, name VARCHAR(25), the_order integer NOT NULL, FOREIGN KEY (parent_input_group_id) REFERENCES ${schema}.input_group(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.person_registration ( person_id ${uuid} REFERENCES ${schema}.person, input_field_id ${uuid} REFERENCES input_field, the_value VARCHAR(5000), PRIMARY KEY(person_id, input_field_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'record']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.club ( id uuid ${generate_uuid} PRIMARY KEY, parent_club_id uuid REFERENCES ${schema}.club, curriculum VARCHAR(20))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'ceremony']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', '{']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.invite ( id ${uuid} REFERENCES ${schema}.person NOT NULL, auth INTEGER NOT NULL, sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, invited_by ${uuid} REFERENCES ${schema}.person NOT NULL, completed TIMESTAMP, PRIMARY KEY(id, auth))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.login ( id ${uuid} NOT NULL, provider_id VARCHAR(20) NOT NULL, unique_id VARCHAR(500) NOT NULL, auth INTEGER, PRIMARY KEY(id, provider_id, unique_id), FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (provider_id) REFERENCES ${schema}.provider(provider_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.leader ( id ${uuid} REFERENCES ${schema}.person NOT NULL, club_id ${uuid} REFERENCES ${schema}.club, role VARCHAR(10) NOT NULL, PRIMARY KEY(id, club_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.club ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_club_id ${uuid} REFERENCES ${schema}.club, curriculum VARCHAR(20))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_field_value ( parent_input_field_id ${uuid}, the_order integer NOT NULL, name VARCHAR(25) NOT NULL, the_value VARCHAR(10) NOT NULL, is_default CHAR(1) NOT NULL, PRIMARY KEY(parent_input_field_id, the_order), FOREIGN KEY (parent_input_field_id) REFERENCES ${schema}.input_field(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.family ( id ${uuid} ${generate_uuid} PRIMARY KEY, address_id ${uuid} REFERENCES ${schema}.address)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_field ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_input_group_id ${uuid} REFERENCES ${schema}.input_group, name VARCHAR(100) NOT NULL, type VARCHAR(10) NOT NULL, required CHAR(1) NOT NULL, the_order integer NOT NULL)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.record ( clubber_id ${uuid} NOT NULL, club_id ${uuid}, section_id VARCHAR(100) NOT NULL, signed_by ${uuid}, sign_date DATE, note VARCHAR(1000), PRIMARY KEY(clubber_id, section_id), FOREIGN KEY(signed_by, club_id) REFERENCES ${schema}.listener (id, club_id), FOREIGN KEY (clubber_id) REFERENCES ${schema}.person(id), FOREIGN KEY (club_id) REFERENCES ${schema}.club(id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.clubber ( id ${uuid} REFERENCES ${schema}.person NOT NULL PRIMARY KEY, family_id ${uuid} REFERENCES ${schema}.family, club_id ${uuid} REFERENCES ${schema}.club, age_group VARCHAR(20) NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'address']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.award ( id ${uuid} ${generate_uuid} PRIMARY KEY, clubber_id ${uuid} NOT NULL, section_id VARCHAR(100) NOT NULL, accomplishment VARCHAR(100), token VARCHAR(100), presented_at ${uuid} REFERENCES ${schema}.ceremony, FOREIGN KEY (clubber_id, section_id) REFERENCES ${schema}.record (clubber_id, section_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.listener ( id ${uuid} NOT NULL, club_id ${uuid} NOT NULL, PRIMARY KEY(id, club_id), FOREIGN KEY (id) REFERENCES ${schema}.person(id), FOREIGN KEY (club_id) REFERENCES ${schema}.club(id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'listener']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.input_group ( id ${uuid} ${generate_uuid} PRIMARY KEY, parent_input_group_id ${uuid} REFERENCES ${schema}.input_group, name VARCHAR(25), the_order integer NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['$', 'club']
+Detected: Adjacency List Found in following statement: CREATE TABLE ${schema}.family ( id ${uuid} ${generate_uuid} PRIMARY KEY, address_id ${uuid}, FOREIGN KEY (address_id) REFERENCES ${schema}.address(id))
+

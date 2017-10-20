@@ -1,0 +1,1 @@
+SELECT fizz FROM buzz;

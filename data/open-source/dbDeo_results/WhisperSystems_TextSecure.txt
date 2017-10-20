@@ -1,0 +1,73 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mvno_match_data of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+ in following column avatar_content_type of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mvno_type of table apns
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+ in following column members of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE identities (_id INTEGER PRIMARY KEY, key TEXT UNIQUE, name TEXT UNIQUE, mac TEXT)
+ in following column name of table identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column password of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mnc of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column roaming_protocol of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column apn of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drafts (_id INTEGER PRIMARY KEY, thread_id INTEGER, type TEXT, value TEXT)
+ in following column value of table drafts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, body TEXT, timestamp INTEGER, device_id INTEGER DEFAULT 1)
+ in following column source of table push
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, destinations TEXT, body TEXT, TIMESTAMP INTEGER)
+ in following column source of table push
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column protocol of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mcc of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mmsc of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mccmnc of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column carrier of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE identities (_id INTEGER PRIMARY KEY, key TEXT UNIQUE, name TEXT UNIQUE, mac TEXT)
+ in following column mac of table identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, destinations TEXT, body TEXT, TIMESTAMP INTEGER)
+ in following column destinations of table push
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+ in following column avatar_relay of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, body TEXT, timestamp INTEGER, device_id INTEGER DEFAULT 1)
+ in following column body of table push
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drafts (_id INTEGER PRIMARY KEY, thread_id INTEGER, type TEXT, value TEXT)
+ in following column type of table drafts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, destinations TEXT, body TEXT, TIMESTAMP INTEGER)
+ in following column body of table push
+Detected: God Table Found in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column mmsproxy of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+ in following column title of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE identities (_id INTEGER PRIMARY KEY, recipient INTEGER UNIQUE, key TEXT, mac TEXT)
+ in following column mac of table identities
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE push (_id INTEGER PRIMARY KEY, type INTEGER, source TEXT, body TEXT, timestamp INTEGER, device_id INTEGER DEFAULT 1)
+ in following column type and in column type of table apns
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE sms SET body = ?, type = ?  WHERE _id = ?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column server of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column type of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column user of table apns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE groups (_id INTEGER PRIMARY KEY, group_id TEXT, title TEXT, members TEXT, avatar BLOB, avatar_id INTEGER, avatar_key BLOB, avatar_content_type TEXT, avatar_relay TEXT, timestamp INTEGER, active INTEGER DEFAULT 1)
+ in following column group_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column proxy of table apns
+Detected: God Table Found in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE apns(_id INTEGER PRIMARY KEY, mccmnc TEXT, mcc TEXT, mnc TEXT, carrier TEXT, apn TEXT, mmsc TEXT, port INTEGER, type TEXT, protocol TEXT, bearer TEXT, roaming_protocol TEXT, carrier_enabled INTEGER, mmsproxy TEXT, mmsport INTEGER, proxy TEXT, mvno_match_data TEXT, mvno_type TEXT, authtype INTEGER, user TEXT, password TEXT, server TEXT)
+ in following column bearer of table apns

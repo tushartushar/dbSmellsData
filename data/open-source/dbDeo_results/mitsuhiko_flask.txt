@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: create table entries ( id integer primary key autoincrement, title text not null, 'text' text not null)
+ in following column 'text' of table entries
+Detected: Obsolete Column TypesFound in following statement: create table message ( message_id integer primary key autoincrement, author_id integer not null, text text not null, pub_date integer)
+ in following column text of table message
+Detected: Obsolete Column TypesFound in following statement: create table entries ( id integer primary key autoincrement, title text not null, 'text' text not null)
+ in following column title of table entries
+Detected: Obsolete Column TypesFound in following statement: create table entries ( id integer primary key autoincrement, title text not null, 'text' text not null )
+ in following column 'text' of table entries
+Detected: Obsolete Column TypesFound in following statement: create table entries ( id integer primary key autoincrement, title text not null, 'text' text not null )
+ in following column title of table entries
+Detected: Obsolete Column TypesFound in following statement: create table user ( user_id integer primary key autoincrement, username text not null, email text not null, pw_hash text not null)
+ in following column pw_hash of table (
+Detected: Obsolete Column TypesFound in following statement: create table user ( user_id integer primary key autoincrement, username text not null, email text not null, pw_hash text not null)
+ in following column email of table (
+Detected: Obsolete Column TypesFound in following statement: create table user ( user_id integer primary key autoincrement, username text not null, email text not null, pw_hash text not null)
+ in following column username of table (
+Detected: Index Shotgun Variant: 1

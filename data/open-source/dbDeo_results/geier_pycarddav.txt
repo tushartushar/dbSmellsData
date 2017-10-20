@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( href TEXT, etag TEXT, name TEXT, fname TEXT, vcard TEXT, status INT NOT NULL, PRIMARY KEY(href) )
+ in following column name of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS accounts ( account TEXT NOT NULL, resource TEXT NOT NULL, ctag TEXT )
+ in following column resource of table accounts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( href TEXT, etag TEXT, name TEXT, fname TEXT, vcard TEXT, status INT NOT NULL, PRIMARY KEY(href) )
+ in following column fname of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS accounts ( account TEXT NOT NULL, resource TEXT NOT NULL, ctag TEXT )
+ in following column account of table accounts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS accounts ( account TEXT NOT NULL, resource TEXT NOT NULL, ctag TEXT )
+ in following column ctag of table accounts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( href TEXT, etag TEXT, name TEXT, fname TEXT, vcard TEXT, status INT NOT NULL, PRIMARY KEY(href) )
+ in following column vcard of table {
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( href TEXT, etag TEXT, name TEXT, fname TEXT, vcard TEXT, status INT NOT NULL, PRIMARY KEY(href) )
+ in following column href of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0} ( href TEXT, etag TEXT, name TEXT, fname TEXT, vcard TEXT, status INT NOT NULL, PRIMARY KEY(href) )
+ in following column etag of table {

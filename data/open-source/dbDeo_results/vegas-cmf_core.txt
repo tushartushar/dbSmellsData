@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fake_table( id int not null primary key auto_increment, title varchar(250) null, content text null, category_id int null, created_at int null )
+ in following column content of table fake_table
+Detected: Metadata as Data Found in following statement: CREATE TABLE fake_table( id int not null primary key auto_increment, somedata varchar(250) null, somecamel varchar(250) null )
+
+Detected: Index Shotgun Variant: 1

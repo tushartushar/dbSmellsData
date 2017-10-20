@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['small', 'var3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['small', 'var1']
+Detected: Obsolete Column TypesFound in following statement: create table ints(i integer, j real)
+ in following column j of table ints
+Detected: Multicolumn Attribute Found in following statement: create table %s( col1 integer, col2 integer, col3 double precision, col4 double precision)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['small', 'var2']

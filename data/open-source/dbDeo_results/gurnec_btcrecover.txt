@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vanity_address (address text not null primary key , vanity_len integer )
+ in following column address of table vanity_address
+Detected: Index Shotgun Variant: 1

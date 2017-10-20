@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['orocrm_account', 'lower']
+Detected: Index Shotgun Variant: 3 Following index not used : ['orocrm_account', 'name']

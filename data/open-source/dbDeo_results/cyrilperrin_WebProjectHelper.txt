@@ -1,0 +1,46 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE f_issue2 (	idf_issue2 INT AUTO_INCREMENT NOT NULL,	fk_ida_issue2 INT NOT NULL,	fk_idc_issue2 INT NOT NULL,	fk_idd_issue2 INT NOT NULL,	PRIMARY KEY (idf_issue2),	FOREIGN KEY (fk_ida_issue2) REFERENCES b_issue2 (fk_ida_issue2),	FOREIGN KEY (fk_idc_issue2) REFERENCES e_issue2 (fk_idc_issue2),	FOREIGN KEY (fk_idd_issue2) REFERENCES e_issue2 (fk_idd_issue2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE d_issue2 (	idd_issue2 INT AUTO_INCREMENT NOT NULL,	PRIMARY KEY (idd_issue2))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE d_issue1 (	idd_issue1 INT AUTO_INCREMENT NOT NULL,	e VARCHAR(250) NOT NULL,	fk_ida_issue1 INT NOT NULL,	fk_idb_issue1 INT NOT NULL,	PRIMARY KEY (idd_issue1),	FOREIGN KEY (fk_ida_issue1) REFERENCES c_issue1 (fk_ida_issue1),	FOREIGN KEY (fk_idb_issue1) REFERENCES c_issue1 (fk_idb_issue1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE c_issue2 (	idc_issue2 INT AUTO_INCREMENT NOT NULL,	PRIMARY KEY (idc_issue2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE d_issue1 (	idd_issue1 INT AUTO_INCREMENT NOT NULL,	e VARCHAR(250) NOT NULL,	fk_ida_issue1 INT NOT NULL,	fk_idb_issue1 INT NOT NULL,	PRIMARY KEY (idd_issue1),	FOREIGN KEY (fk_ida_issue1) REFERENCES c_issue1 (fk_ida_issue1),	FOREIGN KEY (fk_idb_issue1) REFERENCES c_issue1 (fk_idb_issue1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE b_issue2 (	fk_ida_issue2 INT NOT NULL,	PRIMARY KEY (fk_ida_issue2),	FOREIGN KEY (fk_ida_issue2) REFERENCES a_issue2 (ida_issue2))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['question', 'parent_idpost']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['member', 'idmember']
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE car (	idcar INT AUTO_INCREMENT NOT NULL,	model VARCHAR(250) NOT NULL,	brand VARCHAR(250) NOT NULL,	PRIMARY KEY (idcar))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE person (	idperson INT AUTO_INCREMENT NOT NULL,	firstname VARCHAR(250) NOT NULL,	lastname VARCHAR(250) NOT NULL,	PRIMARY KEY (idperson))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['a_issue1', 'ida_issue1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE c_issue1 (	fk_ida_issue1 INT NOT NULL,	fk_idb_issue1 INT NOT NULL,	PRIMARY KEY (fk_ida_issue1,fk_idb_issue1),	FOREIGN KEY (fk_ida_issue1) REFERENCES a_issue1 (ida_issue1),	FOREIGN KEY (fk_idb_issue1) REFERENCES b_issue1 (idb_issue1))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['c_issue1', 'fk_idb_issue1']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['post', 'idpost']
+Detected: Clone Tables Found in following statement: CREATE TABLE a_issue1 (	ida_issue1 INT AUTO_INCREMENT NOT NULL,	PRIMARY KEY (ida_issue1))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['e_issue2', 'fk_idc_issue2']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['c_issue1', 'fk_ida_issue1']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['e_issue2', 'fk_idd_issue2']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['b_issue1', 'idb_issue1']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['car', 'idcar']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['b_issue2', 'fk_ida_issue2']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE e_issue2 (	fk_idc_issue2 INT NOT NULL,	fk_idd_issue2 INT NOT NULL,	PRIMARY KEY (fk_idc_issue2,fk_idd_issue2),	FOREIGN KEY (fk_idc_issue2) REFERENCES c_issue2 (idc_issue2),	FOREIGN KEY (fk_idd_issue2) REFERENCES d_issue2 (idd_issue2))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['a_issue2', 'ida_issue2']
+Detected: Clone Tables Found in following statement: CREATE TABLE a_issue2 (	ida_issue2 INT AUTO_INCREMENT NOT NULL,	PRIMARY KEY (ida_issue2))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['d_issue2', 'idd_issue2']
+Detected: Clone Tables Found in following statement: CREATE TABLE b_issue1 (	idb_issue1 INT AUTO_INCREMENT NOT NULL,	PRIMARY KEY (idb_issue1))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE c_issue1 (	fk_ida_issue1 INT NOT NULL,	fk_idb_issue1 INT NOT NULL,	PRIMARY KEY (fk_ida_issue1,fk_idb_issue1),	FOREIGN KEY (fk_ida_issue1) REFERENCES a_issue1 (ida_issue1),	FOREIGN KEY (fk_idb_issue1) REFERENCES b_issue1 (idb_issue1))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['person', 'idperson']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE b_issue2 (	fk_ida_issue2 INT NOT NULL,	PRIMARY KEY (fk_ida_issue2),	FOREIGN KEY (fk_ida_issue2) REFERENCES a_issue2 (ida_issue2))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['c_issue2', 'idc_issue2']

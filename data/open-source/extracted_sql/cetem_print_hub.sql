@@ -1,0 +1,5 @@
+CREATE INDEX index_articles_on_code_and_name_ts ON articles 
+CREATE INDEX index_documents_on_name_ts ON documents 
+CREATE INDEX index_documents_on_name_and_tag_ts ON documents 
+CREATE INDEX index_tags_on_name_ts ON tags 
+CREATE INDEX index_customers_on_identification_name_and_lastname_ts ON customers 

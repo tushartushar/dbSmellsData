@@ -1,0 +1,31 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE referervolatile ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, count INTEGER NOT NULL, ref TEXT NOT NULL, CONSTRAINT referervolatile_pkey PRIMARY KEY (author, diary_id, no))
+ in following column ref of table referervolatile
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE commentdata SET name=?, mail=?, last_modified=?, visible=?, comment=?  WHERE author=? AND diary_id=? AND no=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diarydata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, year VARCHAR(4) NOT NULL, month VARCHAR(2) NOT NULL, day VARCHAR(2) NOT NULL, title TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, body TEXT NOT NULL, style TEXT NULL, CONSTRAINT diarydata_pkey PRIMARY KEY (author, diary_id))
+ in following column title of table diarydata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commentdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, name TEXT NULL, mail TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, comment TEXT NULL, CONSTRAINT commentdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column author of table commentdata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diarydata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, year VARCHAR(4) NOT NULL, month VARCHAR(2) NOT NULL, day VARCHAR(2) NOT NULL, title TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, body TEXT NOT NULL, style TEXT NULL, CONSTRAINT diarydata_pkey PRIMARY KEY (author, diary_id))
+ in following column body of table diarydata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commentdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, name TEXT NULL, mail TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, comment TEXT NULL, CONSTRAINT commentdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column comment of table commentdata
+Detected: God Table Found in following statement: CREATE TABLE diarydata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, year VARCHAR(4) NOT NULL, month VARCHAR(2) NOT NULL, day VARCHAR(2) NOT NULL, title TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, body TEXT NOT NULL, style TEXT NULL, CONSTRAINT diarydata_pkey PRIMARY KEY (author, diary_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE refererdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, count INTEGER NOT NULL, ref TEXT NOT NULL, CONSTRAINT refererdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column ref of table refererdata
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE diarydata SET year=?, month=?, day=?, title=?, last_modified=?, visible=?, body=?, style=?  WHERE author=? AND diary_id=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diarydata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, year VARCHAR(4) NOT NULL, month VARCHAR(2) NOT NULL, day VARCHAR(2) NOT NULL, title TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, body TEXT NOT NULL, style TEXT NULL, CONSTRAINT diarydata_pkey PRIMARY KEY (author, diary_id))
+ in following column style of table diarydata
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commentdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, name TEXT NULL, mail TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, comment TEXT NULL, CONSTRAINT commentdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column mail of table commentdata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE referervolatile ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, count INTEGER NOT NULL, ref TEXT NOT NULL, CONSTRAINT referervolatile_pkey PRIMARY KEY (author, diary_id, no))
+ in following column author of table referervolatile
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE commentdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, name TEXT NULL, mail TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, comment TEXT NULL, CONSTRAINT commentdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column name of table commentdata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE diarydata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, year VARCHAR(4) NOT NULL, month VARCHAR(2) NOT NULL, day VARCHAR(2) NOT NULL, title TEXT NULL, last_modified INTEGER NOT NULL, visible BOOLEAN NOT NULL, body TEXT NOT NULL, style TEXT NULL, CONSTRAINT diarydata_pkey PRIMARY KEY (author, diary_id))
+ in following column author of table diarydata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE refererdata ( author TEXT NOT NULL, diary_id VARCHAR(8) NOT NULL, no INTEGER NOT NULL, count INTEGER NOT NULL, ref TEXT NOT NULL, CONSTRAINT refererdata_pkey PRIMARY KEY (author, diary_id, no))
+ in following column author of table refererdata

@@ -1,0 +1,43 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column country of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column email of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column firstname of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node ( context_id integer NOT NULL, uuid text NOT NULL, certificate text NOT NULL, privatekey text NOT NULL, status integer DEFAULT 0, provcode text)
+ in following column privatekey of table node
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column postal_code of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column city of table client
+Detected: God Table Found in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column lastname of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node ( context_id integer NOT NULL, uuid text NOT NULL, certificate text NOT NULL, privatekey text NOT NULL, status integer DEFAULT 0, provcode text)
+ in following column certificate of table node
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE context ( id integer DEFAULT nextval('context_id_seq'::regclass) NOT NULL, topology_id integer NOT NULL, description text NOT NULL, client_id integer NOT NULL, network cidr NOT NULL, embassy_certificate text NOT NULL, embassy_privatekey text NOT NULL, embassy_serial integer NOT NULL, passport_certificate text NOT NULL, passport_privatekey text NOT NULL)
+ in following column description of table context
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column company of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column password of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE context ( id integer DEFAULT nextval('context_id_seq'::regclass) NOT NULL, topology_id integer NOT NULL, description text NOT NULL, client_id integer NOT NULL, network cidr NOT NULL, embassy_certificate text NOT NULL, embassy_privatekey text NOT NULL, embassy_serial integer NOT NULL, passport_certificate text NOT NULL, passport_privatekey text NOT NULL)
+ in following column passport_privatekey of table context
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE context ( id integer DEFAULT nextval('context_id_seq'::regclass) NOT NULL, topology_id integer NOT NULL, description text NOT NULL, client_id integer NOT NULL, network cidr NOT NULL, embassy_certificate text NOT NULL, embassy_privatekey text NOT NULL, embassy_serial integer NOT NULL, passport_certificate text NOT NULL, passport_privatekey text NOT NULL)
+ in following column passport_certificate of table context
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column state_province of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node ( context_id integer NOT NULL, uuid text NOT NULL, certificate text NOT NULL, privatekey text NOT NULL, status integer DEFAULT 0, provcode text)
+ in following column provcode of table node
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE context ( id integer DEFAULT nextval('context_id_seq'::regclass) NOT NULL, topology_id integer NOT NULL, description text NOT NULL, client_id integer NOT NULL, network cidr NOT NULL, embassy_certificate text NOT NULL, embassy_privatekey text NOT NULL, embassy_serial integer NOT NULL, passport_certificate text NOT NULL, passport_privatekey text NOT NULL)
+ in following column embassy_privatekey of table context
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE context ( id integer DEFAULT nextval('context_id_seq'::regclass) NOT NULL, topology_id integer NOT NULL, description text NOT NULL, client_id integer NOT NULL, network cidr NOT NULL, embassy_certificate text NOT NULL, embassy_privatekey text NOT NULL, embassy_serial integer NOT NULL, passport_certificate text NOT NULL, passport_privatekey text NOT NULL)
+ in following column embassy_certificate of table context
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE node ( context_id integer NOT NULL, uuid text NOT NULL, certificate text NOT NULL, privatekey text NOT NULL, status integer DEFAULT 0, provcode text)
+ in following column uuid of table node
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE client ( id integer DEFAULT nextval('client_id_seq'::regclass) NOT NULL, firstname text NOT NULL, lastname text NOT NULL, email text NOT NULL, company text, phone text NOT NULL, country text NOT NULL, state_province text NOT NULL, city text NOT NULL, postal_code text NOT NULL, status integer DEFAULT 0 NOT NULL, password text NOT NULL)
+ in following column phone of table client
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE topology ( id integer DEFAULT nextval('topology_id_seq'::regclass) NOT NULL, name text NOT NULL)
+ in following column name of table topology

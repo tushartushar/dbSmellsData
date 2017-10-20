@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS %(name)s ( id VARCHAR(255) PRIMARY KEY, lock_hash BINARY(32), owner VARCHAR(1024), last_contact DATETIME, expiry INT)
+ in following column id and in column id of table sql_utility
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE x (id BIGINT AUTO_INCREMENT PRIMARY KEY, value INT, col1 VARCHAR(255), col2 VARCHAR(255), colb VARBINARY(32))
+

@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['crawl_page_relations', 'parent_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['crawl_pages', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['crawl_page_relations', 'M5']
+Detected: Index Shotgun Variant: 3 Following index not used : ['crawl_page_relations', 'indexix_crawl_page_relations_child_idcrawl_page_relations']

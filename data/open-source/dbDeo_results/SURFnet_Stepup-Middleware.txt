@@ -1,0 +1,57 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['unverified_second_factor', 'identity_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra (id INT AUTO_INCREMENT NOT NULL, institution VARCHAR(150) NOT NULL, name_id VARCHAR(150) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_ra_institution (institution), INDEX idx_ra_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column location of table ra
+Detected: Index Shotgun Variant: 3 Following index not used : ['vetted_second_factor', 'identity_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_stream ( uuid varchar(36) NOT NULL, playhead int(11) NOT NULL, metadata text NOT NULL, payload text NOT NULL, recorded_on varchar(32) NOT NULL, type varchar(150) NOT NULL, PRIMARY KEY (uuid), UNIQUE KEY unique_playhead (playhead) )
+ in following column payload of table event_stream
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.saml_entity (entity_id VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, configuration LONGTEXT NOT NULL, PRIMARY KEY(entity_id))
+ in following column configuration of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra_listing (identity_id VARCHAR(36) NOT NULL, institution VARCHAR(255) NOT NULL, common_name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, role VARCHAR(20) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_ra_listing_institution (institution), PRIMARY KEY(identity_id))
+ in following column location of table ra_listing
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra_location (ra_location_id VARCHAR(36) NOT NULL, institution VARCHAR(255) NOT NULL, ra_location_name VARCHAR(255) NOT NULL, location LONGTEXT NOT NULL, contact_information LONGTEXT NOT NULL, INDEX idx_ra_location_institution (institution), PRIMARY KEY(ra_location_id))
+ in following column contact_information of table ra_location
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raa (id INT AUTO_INCREMENT NOT NULL, institution VARCHAR(150) NOT NULL, name_id VARCHAR(150) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_raa_institution (institution), INDEX idx_raa_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column contact_information of table raa
+Detected: Index Shotgun Variant: 3 Following index not used : ['verified_second_factor', 'identity_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra (id INT AUTO_INCREMENT NOT NULL, institution VARCHAR(150) NOT NULL, name_id VARCHAR(150) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_ra_institution (institution), INDEX idx_ra_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column contact_information of table ra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra_listing (identity_id VARCHAR(36) NOT NULL, institution VARCHAR(255) NOT NULL, common_name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, role VARCHAR(20) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_ra_listing_institution (institution), PRIMARY KEY(identity_id))
+ in following column contact_information of table ra_listing
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sensitive_data_stream ( id VARCHAR(36) NOT NULL, identity_id VARCHAR(36) NOT NULL, playhead INT NOT NULL, sensitive_data LONGTEXT DEFAULT NULL, PRIMARY KEY (id) )
+ in following column sensitive_data of table sensitive_data_stream
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE audit_log (id INT AUTO_INCREMENT NOT NULL, actor_id VARCHAR(36) DEFAULT NULL, actor_institution VARCHAR(255) DEFAULT NULL, identity_id VARCHAR(36) NOT NULL, identity_institution VARCHAR(255) NOT NULL, second_factor_id VARCHAR(36) DEFAULT NULL, second_factor_type VARCHAR(36) DEFAULT NULL, action VARCHAR(255) NOT NULL, recorded_on DATETIME NOT NULL, INDEX idx_auditlog_actorid (actor_id), INDEX idx_auditlog_identityid (identity_id), INDEX idx_auditlog_identityinstitution (identity_institution), INDEX idx_auditlog_secondfactorid (second_factor_id), PRIMARY KEY(id))
+ in following column INDEX and in column INDEX of table ra_candidate
+Detected: Index Shotgun Variant: 3 Following index not used : ['ra_second_factor', 'name']
+Detected: God Table Found in following statement: CREATE TABLE audit_log (id INT AUTO_INCREMENT NOT NULL, actor_id VARCHAR(36) DEFAULT NULL, actor_institution VARCHAR(255) DEFAULT NULL, identity_id VARCHAR(36) NOT NULL, identity_institution VARCHAR(255) NOT NULL, second_factor_id VARCHAR(36) DEFAULT NULL, second_factor_type VARCHAR(36) DEFAULT NULL, action VARCHAR(255) NOT NULL, recorded_on DATETIME NOT NULL, INDEX idx_auditlog_actorid (actor_id), INDEX idx_auditlog_identityid (identity_id), INDEX idx_auditlog_identityinstitution (identity_institution), INDEX idx_auditlog_secondfactorid (second_factor_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ra_second_factor', 'status']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_stream ( uuid varchar(36) NOT NULL, playhead int(11) NOT NULL, metadata text NOT NULL, payload text NOT NULL, recorded_on varchar(32) NOT NULL, type varchar(150) NOT NULL, PRIMARY KEY (uuid), UNIQUE KEY unique_playhead (playhead) )
+ in following column metadata of table event_stream
+Detected: Metadata as Data Found in following statement: CREATE TABLE %s.saml_entity (entity_id VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, configuration LONGTEXT NOT NULL, PRIMARY KEY(entity_id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE identity_identifying_data (id VARCHAR(36) NOT NULL, common_name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raa (id INT AUTO_INCREMENT NOT NULL, institution VARCHAR(150) NOT NULL, name_id VARCHAR(150) NOT NULL, location LONGTEXT DEFAULT NULL, contact_information LONGTEXT DEFAULT NULL, INDEX idx_raa_institution (institution), INDEX idx_raa_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column location of table raa
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE audit_log (id INT AUTO_INCREMENT NOT NULL, actor_id VARCHAR(36) DEFAULT NULL, actor_institution VARCHAR(255) DEFAULT NULL, identity_id VARCHAR(36) NOT NULL, identity_institution VARCHAR(255) NOT NULL, second_factor_id VARCHAR(36) DEFAULT NULL, second_factor_type VARCHAR(36) DEFAULT NULL, action VARCHAR(255) NOT NULL, recorded_on DATETIME NOT NULL, INDEX idx_auditlog_actorid (actor_id), INDEX idx_auditlog_identityid (identity_id), INDEX idx_auditlog_identityinstitution (identity_institution), INDEX idx_auditlog_secondfactorid (second_factor_id), PRIMARY KEY(id))
+ in following column id and in column id of table identity_identifying_data
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE email_templates (id VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, locale VARCHAR(255) NOT NULL, html_content LONGTEXT NOT NULL, PRIMARY KEY(id))
+ in following column html_content of table email_templates
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE audit_log (id INT AUTO_INCREMENT NOT NULL, actor_id VARCHAR(36) DEFAULT NULL, actor_institution VARCHAR(255) DEFAULT NULL, identity_id VARCHAR(36) NOT NULL, identity_institution VARCHAR(255) NOT NULL, second_factor_id VARCHAR(36) DEFAULT NULL, second_factor_type VARCHAR(36) DEFAULT NULL, action VARCHAR(255) NOT NULL, recorded_on DATETIME NOT NULL, INDEX idx_auditlog_actorid (actor_id), INDEX idx_auditlog_identityid (identity_id), INDEX idx_auditlog_identityinstitution (identity_institution), INDEX idx_auditlog_secondfactorid (second_factor_id), PRIMARY KEY(id))
+ in following column recorded_on and in column recorded_on of table event_stream
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sensitive_data_stream ( id VARCHAR(36) NOT NULL, identity_id VARCHAR(36) NOT NULL, playhead INT NOT NULL, sensitive_data LONGTEXT DEFAULT NULL, PRIMARY KEY(id) )
+ in following column sensitive_data of table sensitive_data_stream
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raa (id VARCHAR(36) NOT NULL COLLATE utf8_unicode_ci, institution VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, name_id VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, location LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, contact_information LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, INDEX idx_raa_institution (institution), INDEX idx_raa_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column contact_information of table raa
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_stream_sensitive_data ( identity_id VARCHAR(36) NOT NULL, playhead INT NOT NULL, sensitive_data LONGTEXT NOT NULL, PRIMARY KEY (identity_id, playhead) )
+ in following column sensitive_data of table event_stream_sensitive_data
+Detected: Index Shotgun Variant: 3 Following index not used : ['ra_candidate', 'name_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra_location (ra_location_id VARCHAR(36) NOT NULL, institution VARCHAR(255) NOT NULL, ra_location_name VARCHAR(255) NOT NULL, location LONGTEXT NOT NULL, contact_information LONGTEXT NOT NULL, INDEX idx_ra_location_institution (institution), PRIMARY KEY(ra_location_id))
+ in following column location of table ra_location
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra (id VARCHAR(36) NOT NULL COLLATE utf8_unicode_ci, institution VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, name_id VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, location LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, contact_information LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, INDEX idx_ra_institution (institution), INDEX idx_ra_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column contact_information of table ra
+Detected: Index Shotgun Variant: 3 Following index not used : ['ra_second_factor', 'email']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ra (id VARCHAR(36) NOT NULL COLLATE utf8_unicode_ci, institution VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, name_id VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, location LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, contact_information LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, INDEX idx_ra_institution (institution), INDEX idx_ra_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column location of table ra
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE raa (id VARCHAR(36) NOT NULL COLLATE utf8_unicode_ci, institution VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, name_id VARCHAR(255) NOT NULL COLLATE utf8_unicode_ci, location LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, contact_information LONGTEXT DEFAULT NULL COLLATE utf8_unicode_ci, INDEX idx_raa_institution (institution), INDEX idx_raa_institution_nameid (institution, name_id), PRIMARY KEY(id))
+ in following column location of table raa

@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cube (_id text primary key, data blob)
+ in following column _id of table (

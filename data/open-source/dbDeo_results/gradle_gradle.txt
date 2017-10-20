@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['testExecution', 'id']
+Detected: God Table Found in following statement: create table if not exists testOperation (testExecution bigint not null, testProject varchar not null, displayName varchar not null, tasks array not null, args array not null, executionTimeMs decimal not null, heapUsageBytes decimal not null, totalHeapUsageBytes decimal, maxHeapUsageBytes decimal, maxUncollectedHeapBytes decimal, maxCommittedHeapBytes decimal, foreign key(testExecution) references testExecution(id))
+
+Detected: Index Shotgun Variant: 1

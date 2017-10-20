@@ -1,0 +1,39 @@
+Detected: Clone Tables Found in following statement: create table issue5table(id int identity primary key, val integer)
+
+Detected: Clone Tables Found in following statement: create table get_keys_test(id integer identity primary key, value varchar(20))
+
+Detected: Multicolumn Attribute Found in following statement: create table testjoda(id int primary key, joda1 datetime, joda2 datetime)
+
+Detected: Multicolumn Attribute Found in following statement: create table EnumTest(id int identity primary key, enum_val varchar(10), enum_val2 int)
+
+Detected: Clone Tables Found in following statement: create table issue4table(id integer identity primary key, val varchar(20))
+
+Detected: Clone Tables Found in following statement: create table blobtbl(id int identity primary key, data blob)
+
+Detected: Clone Tables Found in following statement: create table issue11test (id integer identity primary key, val varchar(50), adate datetime)
+
+Detected: Clone Tables Found in following statement: create table issue9test (id integer identity primary key, val varchar(50))
+
+Detected: Duplicate Column Names Found in following statement: create table runinsidetransactiontable(id integer identity primary key, value varchar(50))
+ in following column value and in column value of table testUpdateWithNulls_2
+Detected: Multicolumn Attribute Found in following statement: create table bigdectesttable (id integer identity primary key, val1 numeric(5,3), val2 integer)
+
+Detected: Duplicate Column Names Found in following statement: create table issue4table(id integer identity primary key, val varchar(20))
+ in following column val and in column val of table testClob
+Detected: Duplicate Column Names Found in following statement: create table runinsidetransactiontable(id integer identity primary key, value varchar(50))
+ in following column id and in column id of table testutildate
+Detected: Multicolumn Attribute Found in following statement: create table bindtbl(id int identity primary key, data1 varchar(10), data2 timestamp, data3 bigint)
+
+Detected: Duplicate Column Names Found in following statement: create table uuidtable(id serial primary key, data uuid)
+ in following column data and in column data of table blobtbl
+Detected: Duplicate Column Names Found in following statement: create table multi2(id integer identity primary key, value2 varchar(20))
+ in following column value2 and in column value2 of table tabletest
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table testutildate(id int primary key, d1 datetime, d2 timestamp, d3 date)
+
+Detected: Clone Tables Found in following statement: create table multi1(id integer identity primary key, value varchar(20))
+
+Detected: Clone Tables Found in following statement: create table multi2(id integer identity primary key, value2 varchar(20))
+
+Detected: Multicolumn Attribute Found in following statement: create table tabletest(id integer identity primary key, value varchar(20), value2 decimal(5,1))
+

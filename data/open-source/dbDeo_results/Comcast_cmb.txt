@@ -1,0 +1,52 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSWorkers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSWorkers"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "CQSPartitionedQueueMessages" ( key text, column1 bigint, column2 bigint, value text, PRIMARY KEY ((key), column1, column2))
+ in following column column2 and in column column2 of table "CNSTopicSubscriptions"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSWorkers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSWorkers"
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "CNSAPIServers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 and in column column1 of table "CQSPartitionedQueueMessages"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CQSAPIServers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CQSAPIServers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CQSAPIServers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CQSAPIServers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CQSQueuesByUserId" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CQSQueuesByUserId"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsTokenIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSTopicSubscriptionsTokenIndex"
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE "CNSTopicSubscriptions" ( key text, column1 text, column2 text, value text, PRIMARY KEY ((key), column1, column2))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'CQSQueues']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'Users']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicsByUserId" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSTopicsByUserId"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSTopicSubscriptionsIndex"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CQSQueuesByUserId" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CQSQueuesByUserId"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicStats" ( key text, column1 text, value counter, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSTopicStats"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSTopicSubscriptionsIndex"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicsByUserId" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSTopicsByUserId"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSAPIServers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSAPIServers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsTokenIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSTopicSubscriptionsTokenIndex"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsUserIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSTopicSubscriptionsUserIndex"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptions" ( key text, column1 text, column2 text, value text, PRIMARY KEY ((key), column1, column2))
+ in following column column1 of table "CNSTopicSubscriptions"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptions" ( key text, column1 text, column2 text, value text, PRIMARY KEY ((key), column1, column2))
+ in following column column2 of table "CNSTopicSubscriptions"
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE "CQSPartitionedQueueMessages" ( key text, column1 bigint, column2 bigint, value text, PRIMARY KEY ((key), column1, column2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSAPIServers" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column column1 of table "CNSAPIServers"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CQSPartitionedQueueMessages" ( key text, column1 bigint, column2 bigint, value text, PRIMARY KEY ((key), column1, column2))
+ in following column value of table "CQSPartitionedQueueMessages"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptions" ( key text, column1 text, column2 text, value text, PRIMARY KEY ((key), column1, column2))
+ in following column value of table "CNSTopicSubscriptions"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "CNSTopicSubscriptionsUserIndex" ( key text, column1 text, value text, PRIMARY KEY ((key), column1))
+ in following column value of table "CNSTopicSubscriptionsUserIndex"

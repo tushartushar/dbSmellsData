@@ -1,0 +1,11 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table1` ( `column1` INTEGER(11) NOT NULL AUTO_INCREMENT, `column2` VARCHAR(255) NOT NULL, PRIMARY KEY (`column1`) )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `table1` (`column1` VARCHAR(255) CHARACTER SET utf8)
+ in following column `column1` and in column `column1` of table `table2`
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table1` ( `column1` INTEGER(11) PRIMARY KEY NOT NULL AUTO_INCREMENT, `column2` DATETIME DEFAULT NOW())
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table1` ( `column1` INTEGER(11) PRIMARY KEY NOT NULL AUTO_INCREMENT, `column2` DATETIME DEFAULT NOW() )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table1` ( `column1` INTEGER(11) PRIMARY KEY NOT NULL AUTO INCREMENT, `column2` DATETIME DEFAULT NOW())
+

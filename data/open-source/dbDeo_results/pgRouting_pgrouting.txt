@@ -1,0 +1,253 @@
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column reverse_cost of table ways
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE qa194 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column x of table qa194
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE parallel ( id serial, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dj38 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column x of table dj38
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column x1 and in column x1 of table (
+Detected: Obsolete Column TypesFound in following statement: create table vrp100_orders ( id integer not null primary key, order_unit integer, open_time integer, close_time integer, service_time integer, x float, y float)
+ in following column x of table vrp100_orders
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column reverse_cost of table bdaways
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column y2 and in column y2 of table (
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column source and in column source of table streets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vertex_table ( id SERIAL, x FLOAT, y FLOAT)
+ in following column x of table vertex_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE dj38 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column y of table dj38
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column y1 of table bdaways
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE edge_table_i244 ( id serial, dir character varying, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wi29 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column x of table wi29
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pointsOfInterest( pid BIGSERIAL, x FLOAT, y FLOAT, edge_id BIGINT, side CHAR, fraction FLOAT, the_geom geometry, newPoint geometry)
+ in following column y and in column y of table customer
+Detected: God Table Found in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column target and in column target of table streets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "Streets" (GID bigSERIAL PRIMARY KEY, SOURCE TEXT, TARGET INTEGER)
+ in following column SOURCE of table "Streets"
+Detected: Obsolete Column TypesFound in following statement: create table kdgrid ( gid serial not null primary key, source integer, target integer, cost float8)
+ in following column cost of table kdgrid
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column cost of table ways
+Detected: Obsolete Column TypesFound in following statement: create table vrp100_orders ( id integer not null primary key, order_unit integer, open_time integer, close_time integer, service_time integer, x float, y float)
+ in following column y of table vrp100_orders
+Detected: Obsolete Column TypesFound in following statement: create TABLE noded ( gid serial NOT NULL primary key, id INTEGER, dir text, source INTEGER, target INTEGER, cost FLOAT, reverse_cost FLOAT )
+ in following column cost of table noded
+Detected: Multicolumn Attribute Found in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column cost of table $tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE restrictions2 ( rid integer NOT NULL, to_cost double precision, teid integer, feid integer, via text)
+ in following column via of table restrictions2
+Detected: Clone Tables Found in following statement: CREATE TABLE s3."StrEets" (id SERIAL ,source INTEGER,target INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column cost of table edge_table
+Detected: Clone Tables Found in following statement: CREATE TABLE s3."Streets" (id SERIAL ,source INTEGER,target INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE original ( id serial NOT NULL primary key, dir text)
+ in following column dir of table original
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y2 of table ways
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column reverse_cost of table $tab
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y1 of table ways
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column t_y of table $tab
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE edge_table ( id serial, dir character varying, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pointsOfInterest( pid BIGSERIAL, x FLOAT, y FLOAT, edge_id BIGINT, side CHAR, fraction FLOAT, the_geom geometry, newPoint geometry)
+ in following column x of table pointsOfInterest
+Detected: Obsolete Column TypesFound in following statement: create table bdd_ways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8)
+ in following column cost of table bdd_ways
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column reverse_cost of table edge_table
+Detected: Obsolete Column TypesFound in following statement: create TABLE noded ( gid serial NOT NULL primary key, id INTEGER, dir text, source INTEGER, target INTEGER, cost FLOAT, reverse_cost FLOAT )
+ in following column reverse_cost of table noded
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x2 of table ways
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column t_x of table $tab
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y1 of table e03
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id SERIAL, source INTEGER, target INTEGER, cost FLOAT)
+ in following column cost of table edge_table
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column cost of table bdaways
+Detected: Clone Tables Found in following statement: create table s3."Streets" (id serial ,source integer,target integer)
+
+Detected: God Table Found in following statement: CREATE TABLE edge_table_i244 ( id serial, dir character varying, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nodes (id integer,x float8,y float8)
+ in following column x of table nodes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE restrictions2 ( rid integer NOT NULL, to_cost double precision, teid integer, feid integer, via text)
+ in following column rid and in column rid of table restrictions
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE edge_table ( id serial, dir character varying, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+ in following column dir and in column dir of table noded
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column y2 of table bdaways
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column id and in column id of table streets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gr9882 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column x of table gr9882
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column x1 of table bdaways
+Detected: Clone Tables Found in following statement: CREATE TABLE table1_vertices ( vid SERIAL, name TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: create table vrp_distance ( src_id integer, dest_id integer, cost Float8, distance Float8, traveltime Float8)
+ in following column cost of table vrp_distance
+Detected: Clone Tables Found in following statement: CREATE TABLE s3."sTreets" (id SERIAL ,source INTEGER,target INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: create table vrp_orders ( id integer not null primary key, order_unit integer, open_time integer, close_time integer, service_time integer, x float8, y float8 )
+ in following column y of table vrp_orders
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y2 of table edge_table
+Detected: God Table Found in following statement: CREATE TABLE edge_table ( id serial, dir character varying, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id SERIAL, source INTEGER, target INTEGER, cost FLOAT)
+ in following column cost of table table1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE parallel ( id serial, source integer, target integer, cost double precision, reverse_cost double precision, x1 double precision, y1 double precision, x2 double precision, y2 double precision, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE categories ( category_id INTEGER, category text, capacity BIGINT)
+ in following column category of table categories
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pointsOfInterest( pid BIGSERIAL, x FLOAT, y FLOAT, edge_id BIGINT, side CHAR, fraction FLOAT, the_geom geometry, newPoint geometry)
+ in following column x and in column x of table customer
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x2 of table e03
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y2 of table e03
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE restrictions2 ( rid integer NOT NULL, to_cost double precision, teid integer, feid integer, via text)
+ in following column to_cost and in column to_cost of table restrictions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE vertex_table ( id SERIAL, x FLOAT, y FLOAT)
+ in following column y of table vertex_table
+Detected: Clone Tables Found in following statement: CREATE TABLE s2."Streets" (id SERIAL ,source INTEGER,target INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id SERIAL, source INTEGER REFERENCES table1_vertices(vid), target INTEGER REFERENCES table1_vertices(vid), cost FLOAT)
+ in following column cost of table table1
+Detected: Multicolumn Attribute Found in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x1 of table edge_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE wi29 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column y of table wi29
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x1 of table e03
+Detected: Obsolete Column TypesFound in following statement: CREATE table tsp_00 ( source_id serial not null primary key, x float, y float)
+ in following column x of table tsp_00
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE flow_example (	id SERIAL,	source INTEGER,	target INTEGER,	capacity INTEGER	)
+ in following column capacity and in column capacity of table categories
+Detected: Obsolete Column TypesFound in following statement: create table vrp_orders ( id integer not null primary key, order_unit integer, open_time integer, close_time integer, service_time integer, x float8, y float8 )
+ in following column x of table vrp_orders
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column reverse_cost of table e03
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x2 of table e03
+Detected: Obsolete Column TypesFound in following statement: create table ddnoded2 ( gid serial not null primary key, id integer, source integer, target integer, cost float8 )
+ in following column cost of table ddnoded2
+Detected: Obsolete Column TypesFound in following statement: CREATE table tsp_00 ( source_id serial not null primary key, x float, y float)
+ in following column y of table tsp_00
+Detected: God Table Found in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y1 of table e03
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nodes (id integer,x float8,y float8)
+ in following column y of table nodes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE restrictions ( rid BIGINT NOT NULL, to_cost FLOAT, target_id BIGINT, from_edge BIGINT, via_path TEXT)
+ in following column to_cost of table restrictions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gr9882 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column y of table gr9882
+Detected: Clone Tables Found in following statement: CREATE TABLE table1_vertices ( vid SERIAL PRIMARY KEY, name TEXT)
+
+Detected: Multicolumn Attribute Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT)
+ in following column reverse_cost of table edge_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x2 of table edge_table
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column reverse_cost and in column reverse_cost of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pointsOfInterest( pid BIGSERIAL, x FLOAT, y FLOAT, edge_id BIGINT, side CHAR, fraction FLOAT, the_geom geometry, newPoint geometry)
+ in following column y of table pointsOfInterest
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y2 of table e03
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, category_id INTEGER, reverse_category_id INTEGER, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column y1 of table edge_table
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column y1 and in column y1 of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edge_table ( id BIGSERIAL, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT)
+ in following column cost of table edge_table
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column s_x of table $tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id SERIAL, source INTEGER, target INTEGER, source_name TEXT, target_name TEXT, cost FLOAT)
+ in following column target_name of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id SERIAL, source INTEGER, target INTEGER, source_name TEXT, target_name TEXT, cost FLOAT)
+ in following column source_name of table table1
+Detected: God Table Found in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column cost of table e03
+Detected: God Table Found in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column cost and in column cost of table (
+Detected: Obsolete Column TypesFound in following statement: create table bdd_ways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8)
+ in following column reverse_cost of table bdd_ways
+Detected: Clone Tables Found in following statement: create table s3."sTreets" (id serial ,source integer,target integer)
+
+Detected: Clone Tables Found in following statement: create table s3."StrEets" (id serial ,source integer,target integer)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE qa194 (id BIGINT, x FLOAT, y FLOAT, the_geom geometry)
+ in following column y of table qa194
+Detected: Clone Tables Found in following statement: CREATE TABLE restrictions ( rid BIGINT NOT NULL, to_cost FLOAT, target_id BIGINT, from_edge BIGINT, via_path TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE table nodes ( id serial NOT NULL, vertex INTEGER NOT NULL, name text not NULL)
+ in following column name of table nodes
+Detected: Clone Tables Found in following statement: create table s2."Streets" (id serial ,source integer,target integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['inter_loc', 'l1id']
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column reverse_cost of table e03
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pointsOfInterest( pid BIGSERIAL, x FLOAT, y FLOAT, edge_id BIGINT, side CHAR, fraction FLOAT, the_geom geometry, newPoint geometry)
+ in following column fraction of table pointsOfInterest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1_vertices ( vid SERIAL, name TEXT)
+ in following column name of table table1_vertices
+Detected: Obsolete Column TypesFound in following statement: create table $tab ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, s_x float8, s_y float8, t_x float8, t_y float8)
+ in following column s_y of table $tab
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE restrictions ( rid BIGINT NOT NULL, to_cost FLOAT, target_id BIGINT, from_edge BIGINT, via_path TEXT)
+ in following column via_path of table restrictions
+Detected: Obsolete Column TypesFound in following statement: create table vrp_distance ( src_id integer, dest_id integer, cost Float8, distance Float8, traveltime Float8)
+ in following column distance of table vrp_distance
+Detected: Obsolete Column TypesFound in following statement: create table ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x1 of table ways
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE streets (id SERIAL PRIMARY KEY, source DOUBLE PRECISION, target REAL)
+ in following column target of table streets
+Detected: Multicolumn Attribute Found in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+
+Detected: Duplicate Column Names Found in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column x2 and in column x2 of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1_vertices ( vid SERIAL PRIMARY KEY, name TEXT)
+ in following column name of table table1_vertices
+Detected: Obsolete Column TypesFound in following statement: create table e03.ways(	id BIGSERIAL, dir character varying, source BIGINT, target BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column x1 of table e03
+Detected: Obsolete Column TypesFound in following statement: create table bdaways ( id integer not null primary key, source integer, target integer, cost float8, reverse_cost float8, x1 float8, y1 float8, x2 float8, y2 float8)
+ in following column x2 of table bdaways
+Detected: Obsolete Column TypesFound in following statement: create table e03.calles(	gido BIGSERIAL,	dir character varying,	salida BIGINT,	destino BIGINT, cost FLOAT, reverse_cost FLOAT, x1 FLOAT, y1 FLOAT, x2 FLOAT, y2 FLOAT, the_geom geometry)
+ in following column cost of table e03
+Detected: Obsolete Column TypesFound in following statement: create table vrp_distance ( src_id integer, dest_id integer, cost Float8, distance Float8, traveltime Float8)
+ in following column traveltime of table vrp_distance
+Detected: Obsolete Column TypesFound in following statement: create TABLE noded ( gid serial NOT NULL primary key, id INTEGER, dir text, source INTEGER, target INTEGER, cost FLOAT, reverse_cost FLOAT )
+ in following column dir of table noded
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id SERIAL, source INTEGER, target INTEGER, source_name TEXT, target_name TEXT, cost FLOAT)
+ in following column cost of table table1

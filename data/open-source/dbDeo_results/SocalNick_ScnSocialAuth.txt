@@ -1,0 +1,8 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `user_provider` ( `user_id` INT NOT NULL, `provider_id` varchar(50) NOT NULL, `provider` varchar(255) NOT NULL, PRIMARY KEY (`user_id`,`provider_id`), UNIQUE KEY (`provider_id`,`provider`), FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE public.user_provider( user_id integer REFERENCES public.user (user_id), provider_id character varying(50) NOT NULL, provider character varying(255) NOT NULL,PRIMARY KEY (user_id, provider_id),UNIQUE (provider_id, provider))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `user_provider` ( `user_id` INT UNSIGNED NOT NULL, `provider_id` varchar(50) NOT NULL, `provider` varchar(255) NOT NULL, PRIMARY KEY (`user_id`,`provider_id`), UNIQUE KEY (`provider_id`,`provider`), FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`))
+
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`user`', '`user_id`']

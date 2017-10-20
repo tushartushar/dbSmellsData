@@ -1,0 +1,27 @@
+Detected: Multicolumn Attribute Found in following statement: create table definstance (id int, definstance int, definstance1 int)
+
+Detected: God Table Found in following statement: create table employee( id INT, firstname VARCHAR(50), lastname VARCHAR(50), salary DECIMAL(10, 2), datefield DATE, timefield TIME, superior_id int, survey_id int, survey_name varchar(30), CONSTRAINT PK_employee PRIMARY KEY (id), CONSTRAINT FK_superior FOREIGN KEY (superior_id) REFERENCES employee(id))
+
+Detected: Metadata as Data Found in following statement: create table if not exists " + "newschema.SURVEY2(ID2 int auto_increment, NAME2 varchar(30), NAME3 varchar(30))
+
+Detected: Adjacency List Found in following statement: create table employee( id INT, firstname VARCHAR(50), lastname VARCHAR(50), salary DECIMAL(10, 2), datefield DATE, timefield TIME, superior_id int, survey_id int, survey_name varchar(30), CONSTRAINT PK_employee PRIMARY KEY (id), CONSTRAINT FK_superior FOREIGN KEY (superior_id) REFERENCES employee(id))
+
+Detected: Adjacency List Found in following statement: create table employee( id INT identity, firstname VARCHAR(50), lastname VARCHAR(50), superior_id int, CONSTRAINT PK_employee PRIMARY KEY (id), CONSTRAINT FK_superior FOREIGN KEY (superior_id) REFERENCES employee(id))
+
+Detected: Multicolumn Attribute Found in following statement: create table SURVEY(ID int auto_increment, NAME varchar(30), NAME2 varchar(30))
+
+Detected: Duplicate Column Names Found in following statement: create table person ( id serial primary key, first_name varchar(64), last_name varchar(64), phone varchar(64), email varchar(64))
+ in following column id and in column id of table survey
+Detected: Multicolumn Attribute Found in following statement: create table multikey(id INT, id2 VARCHAR, id3 INT, CONSTRAINT pk_multikey PRIMARY KEY (id, id2, id3) )
+
+Detected: Metadata as Data Found in following statement: create table SURVEY(ID int, NAME varchar(30), NAME2 varchar(30))
+
+Detected: Metadata as Data Found in following statement: create table SURVEY(ID int auto_increment, NAME varchar(30), NAME2 varchar(30))
+
+Detected: Multicolumn Attribute Found in following statement: create table SURVEY(ID int, NAME varchar(30), NAME2 varchar(30))
+
+Detected: Multicolumn Attribute Found in following statement: create table if not exists " + "newschema.SURVEY2(ID2 int auto_increment, NAME2 varchar(30), NAME3 varchar(30))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'name']
+Detected: Metadata as Data Found in following statement: create table supplier ( id serial primary key, code varchar(255), name varchar(255))
+

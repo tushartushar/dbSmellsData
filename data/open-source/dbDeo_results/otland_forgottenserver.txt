@@ -1,0 +1,39 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`players`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`players`', '`id`']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`houses`', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `house_lists` ( `house_id` int(11) NOT NULL, `listid` int(11) NOT NULL, `list` text NOT NULL, FOREIGN KEY (`house_id`) REFERENCES `houses` (`id`) ON DELETE CASCADE)
+ in following column `list` of table `house_lists`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_ranks`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_ranks`', 'DELETE']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`accounts`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`houses`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guilds`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`accounts`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`accounts`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_ranks`', '`id`']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_ranks`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_wars`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guilds`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guilds`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`houses`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guilds`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`players`', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`houses`', '`id`']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_wars`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_ranks`', 'UPDATE']
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `houses` ( `id` int(11) NOT NULL AUTO_INCREMENT, `owner` int(11) NOT NULL, `paid` int(10) unsigned NOT NULL DEFAULT '0', `warnings` int(11) NOT NULL DEFAULT '0', `name` varchar(255) NOT NULL, `rent` int(11) NOT NULL DEFAULT '0', `town_id` int(11) NOT NULL DEFAULT '0', `bid` int(11) NOT NULL DEFAULT '0', `bid_end` int(11) NOT NULL DEFAULT '0', `last_bid` int(11) NOT NULL DEFAULT '0', `highest_bidder` int(11) NOT NULL DEFAULT '0', `size` int(11) NOT NULL DEFAULT '0', `beds` int(11) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `owner` (`owner`), KEY `town_id` (`town_id`))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`accounts`', '`id`']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `guild_wars` ( `id` int(11) NOT NULL AUTO_INCREMENT, `guild1` int(11) NOT NULL DEFAULT '0', `guild2` int(11) NOT NULL DEFAULT '0', `name1` varchar(255) NOT NULL, `name2` varchar(255) NOT NULL, `status` tinyint(2) NOT NULL DEFAULT '0', `started` bigint(15) NOT NULL DEFAULT '0', `ended` bigint(15) NOT NULL DEFAULT '0', PRIMARY KEY (`id`), KEY `guild1` (`guild1`), KEY `guild2` (`guild2`))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `player_inboxitems` (`player_id` int(11) NOT NULL, `sid` int(11) NOT NULL, `pid` int(11) NOT NULL DEFAULT '0', `itemtype` smallint(6) NOT NULL, `count` smallint(5) NOT NULL DEFAULT '0', `attributes` blob NOT NULL, UNIQUE KEY `player_id_2` (`player_id`,`sid`), KEY `player_id` (`player_id`), FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE)
+ in following column `itemtype` and in column `itemtype` of table `market_offers`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`players`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`accounts`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_wars`', '`id`']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`players`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guild_wars`', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `server_config` ( `config` varchar(50) NOT NULL, `value` varchar(256) NOT NULL DEFAULT '', PRIMARY KEY `config` (`config`))
+ in following column `value` and in column `value` of table `player_storage`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`guilds`', '`id`']

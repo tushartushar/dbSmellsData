@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "#__categories" (	id serial NOT NULL,	title varchar(255) NOT NULL,	ordering int NOT NULL,	params text NOT NULL,	PRIMARY KEY (id))
+ in following column params of table "#__categories"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "#__flower" (	id serial NOT NULL,	catid int NOT NULL,	title varchar(255) NOT NULL,	meaning text,	ordering int,	state int,	params text,	PRIMARY KEY (id))
+ in following column params of table "#__flower"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_flower` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`catid` int(11) NOT NULL DEFAULT 0,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',	`meaning` text COLLATE utf8_unicode_ci NOT NULL,	`ordering` int(11) NOT NULL DEFAULT 0,	`state` tinyint(1) NOT NULL DEFAULT 0,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `meaning` of table `ww_flower`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_flower` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`catid` int(11) NOT NULL DEFAULT 0,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',	`meaning` text COLLATE utf8_unicode_ci NOT NULL,	`ordering` int(11) NOT NULL DEFAULT 0,	`state` tinyint(1) NOT NULL DEFAULT 0,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `params` of table `ww_flower`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_flower` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`catid` int(11) NOT NULL,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,	`meaning` text COLLATE utf8_unicode_ci NOT NULL,	`ordering` int(11) NOT NULL,	`state` tinyint(1) NOT NULL,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `params` of table `ww_flower`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_categories` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,	`ordering` int(11) NOT NULL,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `params` of table `ww_categories`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "#__flower" (	id serial NOT NULL,	catid int NOT NULL,	title varchar(255) NOT NULL,	meaning text,	ordering int,	state int,	params text,	PRIMARY KEY (id))
+ in following column meaning of table "#__flower"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_categories` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',	`ordering` int(11) NOT NULL DEFAULT 0,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `params` of table `ww_categories`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ww_flower` (	`id` int(11) NOT NULL AUTO_INCREMENT,	`catid` int(11) NOT NULL,	`title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,	`meaning` text COLLATE utf8_unicode_ci NOT NULL,	`ordering` int(11) NOT NULL,	`state` tinyint(1) NOT NULL,	`params` text COLLATE utf8_unicode_ci NOT NULL,	PRIMARY KEY (`id`))
+ in following column `meaning` of table `ww_flower`

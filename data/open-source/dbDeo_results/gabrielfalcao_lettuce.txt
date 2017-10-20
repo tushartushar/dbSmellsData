@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE django_ixn_real_test_table (number REAL)
+ in following column number of table django_ixn_real_test_table
+Detected: Index Shotgun Variant: 1

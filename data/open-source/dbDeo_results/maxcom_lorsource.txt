@@ -1,0 +1,52 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE vote_users ( vote integer NOT NULL, userid integer NOT NULL)
+ in following column vote and in column vote of table sections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_events ( userid integer NOT NULL, type event_type NOT NULL, private boolean NOT NULL, event_date timestamp without time zone DEFAULT now() NOT NULL, message_id integer, comment_id integer, message text, unread boolean DEFAULT true NOT NULL, id integer NOT NULL)
+ in following column message of table user_events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE msgbase ( id bigint NOT NULL, message text NOT NULL, bbcode boolean)
+ in following column message of table msgbase
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE votes ( id integer NOT NULL, vote integer NOT NULL, label text NOT NULL, votes integer DEFAULT 0 NOT NULL)
+ in following column label of table votes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ban_info ( userid integer NOT NULL, bandate timestamp without time zone DEFAULT now() NOT NULL, reason text NOT NULL, ban_by integer NOT NULL)
+ in following column reason of table ban_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edit_info ( id integer NOT NULL, msgid integer NOT NULL, editor integer NOT NULL, oldmessage text, editdate timestamp without time zone DEFAULT now() NOT NULL, oldtitle text, oldtags text, oldlinktext text, oldurl text)
+ in following column oldurl of table edit_info
+Detected: God Table Found in following statement: CREATE TABLE jam_recent_change ( topic_version_id integer, previous_topic_version_id integer, topic_id integer, topic_name character varying(200), change_date timestamp without time zone DEFAULT now() NOT NULL, change_comment character varying(200), wiki_user_id integer, display_name character varying(200) NOT NULL, edit_type integer, virtual_wiki_id integer, virtual_wiki_name character varying(100), characters_changed integer, log_type integer, log_params character varying(500), log_sub_type integer)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE topics ( id integer NOT NULL, groupid integer NOT NULL, userid integer NOT NULL, title character varying(255) NOT NULL, url character varying(255), moderate boolean DEFAULT false NOT NULL, postdate timestamp with time zone NOT NULL, linktext character varying(255), deleted boolean DEFAULT false NOT NULL, stat1 integer DEFAULT 0 NOT NULL, stat2 integer DEFAULT 0 NOT NULL, stat3 integer DEFAULT 0 NOT NULL, stat4 integer DEFAULT 0 NOT NULL, lastmod timestamp with time zone, commitby integer, notop boolean, commitdate timestamp without time zone, postscore integer, postip inet, sticky boolean DEFAULT false NOT NULL, ua_id integer, resolved boolean, minor boolean DEFAULT false NOT NULL)
+
+Detected: God Table Found in following statement: CREATE TABLE jam_topic ( topic_id integer NOT NULL, virtual_wiki_id integer NOT NULL, topic_name character varying(200) NOT NULL, delete_date timestamp without time zone, topic_read_only integer DEFAULT 0 NOT NULL, topic_admin_only integer DEFAULT 0 NOT NULL, current_version_id integer, topic_type integer NOT NULL, redirect_to character varying(200), namespace_id integer DEFAULT 0 NOT NULL, page_name character varying(200), page_name_lower character varying(200))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edit_info ( id integer NOT NULL, msgid integer NOT NULL, editor integer NOT NULL, oldmessage text, editdate timestamp without time zone DEFAULT now() NOT NULL, oldtitle text, oldtags text, oldlinktext text, oldurl text)
+ in following column oldmessage of table edit_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edit_info ( id integer NOT NULL, msgid integer NOT NULL, editor integer NOT NULL, oldmessage text, editdate timestamp without time zone DEFAULT now() NOT NULL, oldtitle text, oldtags text, oldlinktext text, oldurl text)
+ in following column oldlinktext of table edit_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id integer NOT NULL, name character varying(255), nick character varying(80) NOT NULL, passwd character varying(40), url character varying(255), email character varying(255), canmod boolean DEFAULT false NOT NULL, photo character varying(100), town character varying(100), candel boolean DEFAULT false NOT NULL, lostpwd timestamp with time zone DEFAULT '1970-01-01 03:00:00+03'::timestamp with time zone NOT NULL, blocked boolean, score integer, max_score integer, lastlogin timestamp without time zone, regdate timestamp without time zone, activated boolean DEFAULT false NOT NULL, corrector boolean DEFAULT false NOT NULL, userinfo text, unread_events integer DEFAULT 0 NOT NULL, new_email character varying(255), style character varying(15) DEFAULT 'tango'::character varying NOT NULL)
+ in following column userinfo of table users
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags_values', 'lower']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE del_info ( msgid integer NOT NULL, delby integer NOT NULL, reason text, deldate timestamp without time zone)
+ in following column reason of table del_info
+Detected: God Table Found in following statement: CREATE TABLE topics ( id integer NOT NULL, groupid integer NOT NULL, userid integer NOT NULL, title character varying(255) NOT NULL, url character varying(255), moderate boolean DEFAULT false NOT NULL, postdate timestamp with time zone NOT NULL, linktext character varying(255), deleted boolean DEFAULT false NOT NULL, stat1 integer DEFAULT 0 NOT NULL, stat2 integer DEFAULT 0 NOT NULL, stat3 integer DEFAULT 0 NOT NULL, stat4 integer DEFAULT 0 NOT NULL, lastmod timestamp with time zone, commitby integer, notop boolean, commitdate timestamp without time zone, postscore integer, postip inet, sticky boolean DEFAULT false NOT NULL, ua_id integer, resolved boolean, minor boolean DEFAULT false NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sections ( id integer NOT NULL, name character varying(255) NOT NULL, moderate boolean NOT NULL, imagepost boolean NOT NULL, preformat boolean NOT NULL, linktext character varying(255), havelink boolean NOT NULL, expire interval NOT NULL, vote boolean DEFAULT false, add_info text)
+ in following column add_info of table sections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edit_info ( id integer NOT NULL, msgid integer NOT NULL, editor integer NOT NULL, oldmessage text, editdate timestamp without time zone DEFAULT now() NOT NULL, oldtitle text, oldtags text, oldlinktext text, oldurl text)
+ in following column oldtitle of table edit_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE user_settings ( id int primary key references users(id), settings hstore not null, main text[] )
+ in following column main of table user_settings
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags_values', 'text_pattern_ops']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE votenames ( id integer NOT NULL, topic integer DEFAULT 0 NOT NULL, multiselect boolean DEFAULT false NOT NULL)
+ in following column id and in column id of table user_settings
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags_values', '1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ignore_list ( userid integer NOT NULL, ignored integer NOT NULL)
+ in following column userid and in column userid of table user_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE edit_info ( id integer NOT NULL, msgid integer NOT NULL, editor integer NOT NULL, oldmessage text, editdate timestamp without time zone DEFAULT now() NOT NULL, oldtitle text, oldtags text, oldlinktext text, oldurl text)
+ in following column oldtags of table edit_info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jam_topic_version ( topic_version_id integer NOT NULL, topic_id integer NOT NULL, edit_comment character varying(200), version_content text, wiki_user_id integer, edit_date timestamp without time zone DEFAULT now() NOT NULL, edit_type integer NOT NULL, previous_topic_version_id integer, characters_changed integer, version_params character varying(500), wiki_user_display character varying(100))
+ in following column version_content of table jam_topic_version
+Detected: God Table Found in following statement: CREATE TABLE jam_topic_version ( topic_version_id integer NOT NULL, topic_id integer NOT NULL, edit_comment character varying(200), version_content text, wiki_user_id integer, edit_date timestamp without time zone DEFAULT now() NOT NULL, edit_type integer NOT NULL, previous_topic_version_id integer, characters_changed integer, version_params character varying(500), wiki_user_display character varying(100))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['tags_values', 'substr']
+Detected: God Table Found in following statement: CREATE TABLE users ( id integer NOT NULL, name character varying(255), nick character varying(80) NOT NULL, passwd character varying(40), url character varying(255), email character varying(255), canmod boolean DEFAULT false NOT NULL, photo character varying(100), town character varying(100), candel boolean DEFAULT false NOT NULL, lostpwd timestamp with time zone DEFAULT '1970-01-01 03:00:00+03'::timestamp with time zone NOT NULL, blocked boolean, score integer, max_score integer, lastlogin timestamp without time zone, regdate timestamp without time zone, activated boolean DEFAULT false NOT NULL, corrector boolean DEFAULT false NOT NULL, userinfo text, unread_events integer DEFAULT 0 NOT NULL, new_email character varying(255), style character varying(15) DEFAULT 'tango'::character varying NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ban_info ( userid integer NOT NULL, bandate timestamp without time zone DEFAULT now() NOT NULL, reason text NOT NULL, ban_by integer NOT NULL)
+ in following column reason and in column reason of table b_ips

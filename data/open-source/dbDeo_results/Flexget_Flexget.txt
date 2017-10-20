@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE imdb_movies (	id INTEGER NOT NULL, 	title VARCHAR, 	url VARCHAR, 	score FLOAT, 	votes INTEGER, 	year INTEGER, 	plot_outline VARCHAR, 	PRIMARY KEY (id))
+ in following column score of table imdb_movies
+Detected: Index Shotgun Variant: 1

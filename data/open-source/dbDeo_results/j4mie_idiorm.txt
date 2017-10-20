@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS contact ( id INTEGER PRIMARY KEY, name TEXT, email TEXT )
+ in following column name of table contact
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS contact ( id INTEGER PRIMARY KEY, name TEXT, email TEXT )
+ in following column email of table contact
+Detected: Index Shotgun Variant: 1

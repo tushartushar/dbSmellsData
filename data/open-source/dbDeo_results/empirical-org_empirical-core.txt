@@ -1,0 +1,12 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (23, '2.2a. Capitalize Holidays, Product Names, and Geographic Names', 8, '2013-09-17 01:04:33.233233', '2014-04-18 22:33:26.111283', 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (7, '1.1b. Use Common, Proper, and Possessive Nouns', 7, '2013-09-16 02:15:51.34529', '2014-04-18 22:30:01.450188', 7)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (17, '1.1h. Use Determiners: Articles, Demonstratives', 7, '2013-09-16 20:13:44.623135', '2014-04-18 21:24:28.266849', 6)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (12, '1.1e. Use Verbs to Convey a Sense of Past, Present, and Future', 7, '2013-09-16 17:35:19.88059', '2014-04-18 22:52:19.373984', 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (14, '1.1g. Conjunctions: And, But, Or, So', 7, '2013-09-16 19:38:22.867581', '2014-04-18 23:21:51.045773', 5)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO topics VALUES (32, '6.1a. Subjective, Objective, and Possessive Pronouns', 12, '2013-09-24 02:02:28.091318', '2014-04-18 17:11:44.635185', 7)
+

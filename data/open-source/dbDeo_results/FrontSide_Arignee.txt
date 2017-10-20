@@ -1,0 +1,8 @@
+Detected: Duplicate Column Names Found in following statement: create table web_page ( id integer not null, url varchar(255), constraint uq_web_page_url unique (url), constraint pk_web_page primary key (id))
+ in following column id and in column id of table evaluation_result
+Detected: Duplicate Column Names Found in following statement: create table web_page ( id integer not null, url varchar(255), constraint uq_web_page_url unique (url), constraint pk_web_page primary key (id))
+ in following column constraint and in column constraint of table evaluation_result
+Detected: Index Shotgun Variant: 3 Following index not used : ['evaluation_result', 'web_page_id']
+Detected: Obsolete Column TypesFound in following statement: create table evaluation_result ( id bigint not null, web_page_id integer not null, cre_date timestamp, ticket_number varchar(255), result text, constraint uq_evaluation_result_ticket_numb unique (ticket_number), constraint pk_evaluation_result primary key (id))
+ in following column result of table evaluation_result
+Detected: Index Shotgun Variant: 3 Following index not used : ['hyperlink', 'parent_page_id']

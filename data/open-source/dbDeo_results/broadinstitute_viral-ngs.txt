@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['annot', 'pos']
+Detected: Index Shotgun Variant: 3 Following index not used : ['annot', 'chr']

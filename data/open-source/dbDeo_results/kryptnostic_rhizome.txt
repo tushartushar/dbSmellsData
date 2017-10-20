@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s.%s (%s text, %s %s, PRIMARY KEY( %s, %s ) )
+ in following column %s of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s.%s (id text PRIMARY KEY, data blob)
+ in following column id of table %s
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,18 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_rolls ( id serial NOT NULL, title text NOT NULL, author text NOT NULL, blog_uri text NOT NULL, feed_uri text NOT NULL, feed_type text NOT NULL, active_flag boolean NOT NULL DEFAULT true, CONSTRAINT blogroll_pkey PRIMARY KEY (id) )
+ in following column title of table blog_rolls
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_entries ( id serial NOT NULL, blog_roll_id integer NOT NULL, title text NOT NULL, entry_uri text NOT NULL, posted_date date NOT NULL, CONSTRAINT blogentries_pkey PRIMARY KEY (id), CONSTRAINT unique_entry_uri UNIQUE (entry_uri), FOREIGN KEY (blog_roll_id) REFERENCES public.blog_rolls(id) )
+ in following column entry_uri of table blog_entries
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_rolls ( id serial NOT NULL, title text NOT NULL, author text NOT NULL, blog_uri text NOT NULL, feed_uri text NOT NULL, feed_type text NOT NULL, active_flag boolean NOT NULL DEFAULT true, CONSTRAINT blogroll_pkey PRIMARY KEY (id) )
+ in following column author of table blog_rolls
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_rolls ( id serial NOT NULL, title text NOT NULL, author text NOT NULL, blog_uri text NOT NULL, feed_uri text NOT NULL, feed_type text NOT NULL, active_flag boolean NOT NULL DEFAULT true, CONSTRAINT blogroll_pkey PRIMARY KEY (id) )
+ in following column feed_type of table blog_rolls
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_entries ( id serial NOT NULL, blog_roll_id integer NOT NULL, title text NOT NULL, entry_uri text NOT NULL, posted_date date NOT NULL, CONSTRAINT blogentries_pkey PRIMARY KEY (id), CONSTRAINT unique_entry_uri UNIQUE (entry_uri), FOREIGN KEY (blog_roll_id) REFERENCES public.blog_rolls(id) )
+ in following column title of table blog_entries
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_rolls ( id serial NOT NULL, title text NOT NULL, author text NOT NULL, blog_uri text NOT NULL, feed_uri text NOT NULL, feed_type text NOT NULL, active_flag boolean NOT NULL DEFAULT true, CONSTRAINT blogroll_pkey PRIMARY KEY (id) )
+ in following column feed_uri of table blog_rolls
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['public', 'blog_rolls']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE blog_rolls ( id serial NOT NULL, title text NOT NULL, author text NOT NULL, blog_uri text NOT NULL, feed_uri text NOT NULL, feed_type text NOT NULL, active_flag boolean NOT NULL DEFAULT true, CONSTRAINT blogroll_pkey PRIMARY KEY (id) )
+ in following column blog_uri of table blog_rolls

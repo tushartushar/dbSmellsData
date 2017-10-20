@@ -1,0 +1,264 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE simplex.test (k text, v int, PRIMARY KEY (k, v))
+ in following column v and in column v of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test (k text, v int, PRIMARY KEY (k, v))
+ in following column . of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (user_id INT PRIMARY KEY, first VARCHAR, last VARCHAR, age INT)
+ in following column last and in column last of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.compaction_history ( id uuid PRIMARY KEY, bytes_in bigint, bytes_out bigint, columnfamily_name text, compacted_at timestamp, keyspace_name text, rows_merged map<int, bigint>)
+ in following column columnfamily_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column validator of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.collection_test (a int PRIMARY KEY, b map<text, text>)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.cas_batch (k text, v int, PRIMARY KEY (k, v))
+ in following column . of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.scores2( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column . of table simplex
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE simplex.dense (f1 int, f2 int, f3 int, PRIMARY KEY (f1, f2))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column tokens of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.compactions_in_progress ( id uuid PRIMARY KEY, columnfamily_name text, inputs set<int>, keyspace_name text)
+ in following column columnfamily_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text>, data blob )
+ in following column album of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column successful_ranges of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (k int, v text, PRIMARY KEY (k, v))
+ in following column v of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_triggers ( keyspace_name text, columnfamily_name text, trigger_name text, trigger_options map<text, text>, PRIMARY KEY (keyspace_name, columnfamily_name, trigger_name))
+ in following column trigger_options of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column range_end of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column status of table system_distributed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (k text, v int, PRIMARY KEY (k, v))
+ in following column k and in column k of table test_unset_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.size_estimates ( keyspace_name text, table_name text, range_start text, range_end text, mean_partition_size bigint, partitions_count bigint, PRIMARY KEY (keyspace_name, table_name, range_start, range_end))
+ in following column range_start of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column columnfamily_name of table system
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'test_table']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_usertypes ( keyspace_name text, type_name text, field_names list<text>, field_types list<text>, PRIMARY KEY (keyspace_name, type_name))
+ in following column field_types of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY ((id, title), album, artist) )
+ in following column album of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.size_estimates ( keyspace_name text, table_name text, range_start text, range_end text, mean_partition_size bigint, partitions_count bigint, PRIMARY KEY (keyspace_name, table_name, range_start, range_end))
+ in following column table_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.scores2( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column game of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.mytable ( a int PRIMARY KEY, b bigint, c decimal, d double, e float, f int, g varint )
+ in following column e of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.audit (key timeuuid, keyspace_name text, table_name text, primary_key text, PRIMARY KEY(key))
+ in following column keyspace_name of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text>, data blob )
+ in following column artist of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.sessions ( session_id uuid PRIMARY KEY, coordinator inet, duration int, parameters map<text, text>, request text, started_at timestamp)
+ in following column parameters of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rb264(inclusion_r_t text, inclusion_r_id text, inclusion_uaid timeuuid, own_t text, own_id text, PRIMARY KEY (inclusion_r_t, inclusion_r_id, inclusion_uaid, own_t, own_id) )
+ in following column own_id of table rb264
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY ((id, title), album, artist) )
+ in following column title of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column release_version of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.users (user_id bigint, first text, last text, age int, PRIMARY KEY (user_id, last))
+ in following column first of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_keyspaces ( keyspace_name text PRIMARY KEY, durable_writes boolean, strategy_class text, strategy_options text)
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.size_estimates ( keyspace_name text, table_name text, range_start text, range_end text, mean_partition_size bigint, partitions_count bigint, PRIMARY KEY (keyspace_name, table_name, range_start, range_end))
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text> )
+ in following column artist of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.scores( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column game of table simplex
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE simplex.test (k int, v0 int, v1 int, PRIMARY KEY (k, v0))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column exception_stacktrace of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system."IndexInfo" ( table_name text, index_name text, PRIMARY KEY (table_name, index_name))
+ in following column index_name of table system
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE simplex.blobby (key blob PRIMARY KEY, f1 blob, f2 blob)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.compaction_history ( id uuid PRIMARY KEY, bytes_in bigint, bytes_out bigint, columnfamily_name text, compacted_at timestamp, keyspace_name text, rows_merged map<int, bigint>)
+ in following column keyspace_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_triggers ( keyspace_name text, columnfamily_name text, trigger_name text, trigger_options map<text, text>, PRIMARY KEY (keyspace_name, columnfamily_name, trigger_name))
+ in following column columnfamily_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, preferred_ip inet, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column data_center of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_triggers ( keyspace_name text, columnfamily_name text, trigger_name text, trigger_options map<text, text>, PRIMARY KEY (keyspace_name, columnfamily_name, trigger_name))
+ in following column trigger_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column columnfamily_name of table system_distributed
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'test']
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'full']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_triggers ( keyspace_name text, columnfamily_name text, trigger_name text, trigger_options map<text, text>, PRIMARY KEY (keyspace_name, columnfamily_name, trigger_name))
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column last of table people
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test (a text PRIMARY KEY, b text)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text> )
+ in following column tags of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE simplex.users (user_id bigint, first text, last text, age int, PRIMARY KEY (user_id, last))
+ in following column age and in column age of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_usertypes ( keyspace_name text, type_name text, field_names list<text>, field_types list<text>, PRIMARY KEY (keyspace_name, type_name))
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test_table (a int PRIMARY KEY, b frozen<map<text, text>>)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mytable (a int PRIMARY KEY, b text)
+ in following column b of table mytable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.sessions ( session_id uuid PRIMARY KEY, coordinator inet, duration int, parameters map<text, text>, request text, started_at timestamp)
+ in following column request of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.collection_test (a int PRIMARY KEY, b frozen<map<text, text>>)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column exception_message of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY (id, title, album, artist) )
+ in following column album of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (user_id INT PRIMARY KEY, first VARCHAR, last VARCHAR, age INT)
+ in following column first and in column first of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column index_options of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_usertypes ( keyspace_name text, type_name text, field_names list<text>, field_types list<text>, PRIMARY KEY (keyspace_name, type_name))
+ in following column type_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column id of table people
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test2 (key text, value text, PRIMARY KEY(key))
+ in following column value of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test1 (key text, value text, PRIMARY KEY(key))
+ in following column value of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mytable (a int PRIMARY KEY, b text)
+ in following column b and in column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column exception_message of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.sessions ( session_id uuid PRIMARY KEY, client inet, command text, coordinator inet, duration int, parameters map<text, text>, request text, started_at timestamp)
+ in following column command of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid PRIMARY KEY, title text, album text, artist text, song_id uuid )
+ in following column album of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.scores( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column . of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text>, data blob )
+ in following column title of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE users (user_id INT PRIMARY KEY, first VARCHAR, last VARCHAR, age INT)
+ in following column age and in column age of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, preferred_ip inet, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column release_version of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column . of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column columnfamily_names of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test (a text PRIMARY KEY, b text)
+ in following column . of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rb264(inclusion_r_t text, inclusion_r_id text, inclusion_uaid timeuuid, own_t text, own_id text, PRIMARY KEY (inclusion_r_t, inclusion_r_id, inclusion_uaid, own_t, own_id) )
+ in following column own_t of table rb264
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'multi_index_test']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.events ( session_id uuid, event_id timeuuid, activity text, source inet, source_elapsed int, thread text, PRIMARY KEY (session_id, event_id))
+ in following column thread of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY (id, title, album, artist) )
+ in following column artist of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text>, data blob )
+ in following column tags of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column requested_ranges of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_usertypes ( keyspace_name text, type_name text, field_names list<text>, field_types list<text>, PRIMARY KEY (keyspace_name, type_name))
+ in following column field_names of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid PRIMARY KEY, title text, album text, artist text, song_id uuid )
+ in following column artist of table simplex
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'b']
+Detected: God Table Found in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rb264(inclusion_r_t text, inclusion_r_id text, inclusion_uaid timeuuid, own_t text, own_id text, PRIMARY KEY (inclusion_r_t, inclusion_r_id, inclusion_uaid, own_t, own_id) )
+ in following column inclusion_r_t of table rb264
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column index_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rb264(inclusion_r_t text, inclusion_r_id text, inclusion_uaid timeuuid, own_t text, own_id text, PRIMARY KEY (inclusion_r_t, inclusion_r_id, inclusion_uaid, own_t, own_id) )
+ in following column inclusion_r_id of table rb264
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid PRIMARY KEY, title text, album text, artist text, song_id uuid )
+ in following column title of table simplex
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE simplex.test_table (f1 int PRIMARY KEY, f2 int, f3 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.multi_index_test (a int PRIMARY KEY, b map<text, text>)
+ in following column b of table simplex
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column first of table people
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test1 (key text, value text, PRIMARY KEY(key))
+ in following column . of table simplex
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS testreadfail.test2 (k int, v0 int, v1 int, PRIMARY KEY (k, v0))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS test_unset_values (k int PRIMARY KEY, v0 int, v1 int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, preferred_ip inet, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column rack of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.sessions ( session_id uuid PRIMARY KEY, client inet, command text, coordinator inet, duration int, parameters map<text, text>, request text, started_at timestamp)
+ in following column parameters of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.audit (key timeuuid, keyspace_name text, table_name text, primary_key text, PRIMARY KEY(key))
+ in following column primary_key of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text> )
+ in following column title of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex."users" ( user_id bigint, last text, age int, first text, PRIMARY KEY (user_id, last) )
+ in following column last of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test_table (a text primary key, b text)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column data_center of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_keyspaces ( keyspace_name text PRIMARY KEY, durable_writes boolean, strategy_class text, strategy_options text)
+ in following column strategy_options of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.users (user_id bigint, first text, last text, age int, PRIMARY KEY (user_id, last))
+ in following column last of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE registration (id int PRIMARY KEY, info frozen<check_in>)
+ in following column id and in column id of table people
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE users SET first = Joss, last = Fillion, age = 41  WHERE user_id = 0
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column index_type of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY ((id, title), album, artist) )
+ in following column artist of table simplex
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS testfunctionfail.d (k int PRIMARY KEY , d double)
+ in following column d and in column d of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, preferred_ip inet, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column tokens of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column exception_stacktrace of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.available_ranges ( keyspace_name text PRIMARY KEY, ranges set<blob>)
+ in following column . of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.events ( session_id uuid, event_id timeuuid, activity text, source inet, source_elapsed int, thread text, PRIMARY KEY (session_id, event_id))
+ in following column activity of table system_traces
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE system.schema_triggers ( keyspace_name text, columnfamily_name text, trigger_name text, trigger_options map<text, text>, PRIMARY KEY (keyspace_name, columnfamily_name, trigger_name))
+ in following column . and in column . of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (k text, v int, PRIMARY KEY (k, v))
+ in following column k of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'keys']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.peers ( peer inet PRIMARY KEY, data_center text, host_id uuid, rack text, release_version text, rpc_address inet, schema_version uuid, tokens set<text>)
+ in following column rack of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex."users" ( user_id bigint, last text, age int, first text, PRIMARY KEY (user_id, last) )
+ in following column first of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_columns ( keyspace_name text, columnfamily_name text, column_name text, component_index int, index_name text, index_options text, index_type text, validator text, PRIMARY KEY (keyspace_name, columnfamily_name, column_name))
+ in following column column_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.audit (key timeuuid, keyspace_name text, table_name text, primary_key text, PRIMARY KEY(key))
+ in following column table_name of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_traces.sessions ( session_id uuid PRIMARY KEY, client inet, command text, coordinator inet, duration int, parameters map<text, text>, request text, started_at timestamp)
+ in following column request of table system_traces
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.mytable ( a int PRIMARY KEY, b ascii, c blob, d text, e varchar, )
+ in following column d of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.compactions_in_progress ( id uuid PRIMARY KEY, columnfamily_name text, inputs set<int>, keyspace_name text)
+ in following column keyspace_name of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test2 (key text, value text, PRIMARY KEY(key))
+ in following column . of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.songs ( id uuid PRIMARY KEY, title text, album text, artist text, tags set<text> )
+ in following column album of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.schema_keyspaces ( keyspace_name text PRIMARY KEY, durable_writes boolean, strategy_class text, strategy_options text)
+ in following column strategy_class of table system
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.test_table (a int PRIMARY KEY, b map<text, text>)
+ in following column b of table simplex
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.parent_repair_history ( parent_id timeuuid PRIMARY KEY, columnfamily_names set<text>, exception_message text, exception_stacktrace text, finished_at timestamp, keyspace_name text, requested_ranges set<text>, started_at timestamp, successful_ranges set<text>)
+ in following column keyspace_name of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system.size_estimates ( keyspace_name text, table_name text, range_start text, range_end text, mean_partition_size bigint, partitions_count bigint, PRIMARY KEY (keyspace_name, table_name, range_start, range_end))
+ in following column range_end of table system
+Detected: Index Shotgun Variant: 3 Following index not used : ['simplex', 'collection_test']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_distributed.repair_history ( keyspace_name text, columnfamily_name text, id timeuuid, coordinator inet, exception_message text, exception_stacktrace text, finished_at timestamp, parent_id timeuuid, participants set<inet>, range_begin text, range_end text, started_at timestamp, status text, PRIMARY KEY ((keyspace_name, columnfamily_name), id))
+ in following column range_begin of table system_distributed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE simplex.playlists ( id uuid, title text, album text, artist text, song_id uuid, PRIMARY KEY (id, title, album, artist) )
+ in following column title of table simplex

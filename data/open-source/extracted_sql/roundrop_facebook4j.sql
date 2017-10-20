@@ -1,0 +1,5 @@
+SELECT uid2 FROM friend WHERE uid1=me()
+SELECT uid,name FROM user WHERE uid = me()
+SELECT name FROM user WHERE uid=me()
+SELECT uid FROM user WHERE uid = me()
+SELECT name FROM user WHERE uid = me()

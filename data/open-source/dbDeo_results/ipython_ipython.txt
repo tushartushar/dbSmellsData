@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS output_history (session integer, line integer, output text, PRIMARY KEY (session, line))
+ in following column output of table output_history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history (session integer, line integer, source text, source_raw text, PRIMARY KEY (session, line))
+ in following column source of table history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history (session integer, line integer, source text, source_raw text, PRIMARY KEY (session, line))
+ in following column source_raw of table history
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS sessions (session integer primary key autoincrement, start timestamp, end timestamp, num_cmds integer, remark text)
+ in following column remark of table sessions

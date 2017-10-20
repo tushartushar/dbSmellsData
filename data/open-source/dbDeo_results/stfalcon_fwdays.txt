@@ -1,0 +1,33 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ext_translations (id INT AUTO_INCREMENT NOT NULL, locale VARCHAR(8) NOT NULL, object_class VARCHAR(255) NOT NULL, field VARCHAR(32) NOT NULL, foreign_key VARCHAR(64) NOT NULL, content LONGTEXT DEFAULT NULL, UNIQUE INDEX lookup_unique_idx (locale, object_class, foreign_key, field), INDEX translations_lookup_idx (locale, object_class, foreign_key), PRIMARY KEY(id))
+ in following column content of table ext_translations
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__tickets', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__events_sponsors', 'category_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__tickets', 'payment_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__reviews (id INT AUTO_INCREMENT NOT NULL, event_id INT DEFAULT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, text LONGTEXT NOT NULL, INDEX IDX_5BD4E3A271F7E88B (event_id), PRIMARY KEY(id))
+ in following column text of table event__reviews
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__mails (id INT AUTO_INCREMENT NOT NULL, title VARCHAR(255) NOT NULL, text LONGTEXT NOT NULL, start TINYINT(1) DEFAULT NULL, complete TINYINT(1) DEFAULT NULL, PRIMARY KEY(id))
+ in following column text of table event__mails
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE news (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, preview LONGTEXT NOT NULL, text LONGTEXT NOT NULL, created_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column preview of table news
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pages (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, text LONGTEXT NOT NULL, PRIMARY KEY(id))
+ in following column text of table pages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__news (id INT AUTO_INCREMENT NOT NULL, event_id INT DEFAULT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, preview LONGTEXT NOT NULL, text LONGTEXT NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_1ED586771F7E88B (event_id), PRIMARY KEY(id))
+ in following column text of table event__news
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__events (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, description LONGTEXT NOT NULL, about LONGTEXT NOT NULL, logo VARCHAR(255) NOT NULL, active TINYINT(1) NOT NULL, PRIMARY KEY(id))
+ in following column about of table event__events
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__tickets', 'promo_code_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__news (id INT AUTO_INCREMENT NOT NULL, event_id INT DEFAULT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, preview LONGTEXT NOT NULL, text LONGTEXT NOT NULL, created_at DATETIME NOT NULL, INDEX IDX_1ED586771F7E88B (event_id), PRIMARY KEY(id))
+ in following column preview of table event__news
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__events (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, description LONGTEXT NOT NULL, about LONGTEXT NOT NULL, logo VARCHAR(255) NOT NULL, active TINYINT(1) NOT NULL, PRIMARY KEY(id))
+ in following column description of table event__events
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sponsors (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, site VARCHAR(255) DEFAULT NULL, logo VARCHAR(255) DEFAULT NULL, about LONGTEXT DEFAULT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column about of table sponsors
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__mails', 'event_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE news (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, preview LONGTEXT NOT NULL, text LONGTEXT NOT NULL, created_at DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column text of table news
+Detected: Index Shotgun Variant: 3 Following index not used : ['event__tickets', 'event_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__pages (id INT AUTO_INCREMENT NOT NULL, event_id INT DEFAULT NULL, slug VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, text LONGTEXT NOT NULL, INDEX IDX_98D57EBB71F7E88B (event_id), PRIMARY KEY(id))
+ in following column text of table event__pages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event__speakers (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, company VARCHAR(255) NOT NULL, about LONGTEXT NOT NULL, photo VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+ in following column about of table event__speakers

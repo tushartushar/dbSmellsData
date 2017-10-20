@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `sessions` (	 `id` VARCHAR(40) NOT NULL,	 `last_activity` INT(10) NOT NULL,	 `data` TEXT NOT NULL,	 PRIMARY KEY (`id`)	)
+ in following column `data` of table `sessions`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sessions (sess_id VARCHAR(128) PRIMARY KEY, sess_data TEXT, sess_time INTEGER)
+ in following column sess_data of table sessions
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,8 @@
+insert into test values (default, 'tomorrow', 1, 1.1, 'tomorrow', '{1,2,3}')
+insert into test values (default, 'today', 0, 0, 'today', '{0,1,2}')
+insert into reftest values (3,1)
+create table reftest (		test_id integer not null references test on delete cascade,		another_test_id integer not null references test on delete cascade	)
+create table test (		id serial primary key, 		created timestamp, 		counter int, 		number decimal, 		data text,		list int[],		prop hstore	)
+insert into test values (default, 'yesterday', -1, -1.1, 'yesterday', '{-1,0,1}')
+insert into reftest values (1,3)
+insert into reftest values (2,2)

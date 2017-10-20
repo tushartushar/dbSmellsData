@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `posts` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `title` varchar(255) DEFAULT NULL, `page_id` int(11) DEFAULT NULL, `content` text, PRIMARY KEY (`id`))
+ in following column `content` of table `posts`
+Detected: Index Shotgun Variant: 1

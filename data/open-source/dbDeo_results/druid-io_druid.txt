@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE index_storage(key text, chunk text, value blob, PRIMARY KEY (key, chunk))
+ in following column chunk of table index_storage
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE index_storage ( key text, chunk text, value blob, PRIMARY KEY (key, chunk))
+ in following column chunk of table index_storage

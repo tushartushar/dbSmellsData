@@ -1,0 +1,21 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE ws_exception (	id_exception BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	ds_exception TEXT NOT NULL,	ds_cause TEXT,	ds_cause2 TEXT,	ds_cause3 TEXT,	dt_inc BIGINT NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_exception (	id_exception BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	ds_exception TEXT NOT NULL,	ds_cause TEXT,	ds_cause2 TEXT,	ds_cause3 TEXT,	dt_inc BIGINT NOT NULL)
+ in following column ds_cause3 of table ws_exception
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_section (	id_section BIGINT NOT NULL PRIMARY KEY,	ds_text TEXT NOT NULL,	no_position INTEGER NOT NULL,	id_chapter BIGINT NOT NULL REFERENCES ws_chapter)
+ in following column ds_text of table ws_section
+Detected: Metadata as Data Found in following statement: CREATE TABLE ws_invite (	id_invite BIGINT NOT NULL PRIMARY KEY,	ds_email VARCHAR( 255 ) NOT NULL UNIQUE,	cod_invite VARCHAR( 255 ) NOT NULL UNIQUE)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_exception (	id_exception BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	ds_exception TEXT NOT NULL,	ds_cause TEXT,	ds_cause2 TEXT,	ds_cause3 TEXT,	dt_inc BIGINT NOT NULL)
+ in following column ds_cause2 of table ws_exception
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_meta (	id_story BIGINT NOT NULL PRIMARY KEY REFERENCES ws_story,	ds_title VARCHAR( 255 ) NOT NULL,	ds_summary VARCHAR( 255 ) NOT NULL,	ds_synopsis TEXT NOT NULL)
+ in following column ds_synopsis of table ws_meta
+Detected: Metadata as Data Found in following statement: CREATE TABLE ws_user (	id_user BIGINT NOT NULL PRIMARY KEY,	ds_username VARCHAR( 255 ) NOT NULL,	ds_password VARCHAR( 255 ) NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_exception (	id_exception BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	ds_exception TEXT NOT NULL,	ds_cause TEXT,	ds_cause2 TEXT,	ds_cause3 TEXT,	dt_inc BIGINT NOT NULL)
+ in following column ds_exception of table ws_exception
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_access (	id_access BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	id_user BIGINT REFERENCES ws_user,	ds_ip VARCHAR( 255 ) NOT NULL,	ds_data TEXT NOT NULL)
+ in following column ds_data of table ws_access
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ws_exception (	id_exception BIGINT NOT NULL PRIMARY KEY,	id_log BIGINT NOT NULL REFERENCES ws_log,	ds_exception TEXT NOT NULL,	ds_cause TEXT,	ds_cause2 TEXT,	ds_cause3 TEXT,	dt_inc BIGINT NOT NULL)
+ in following column ds_cause of table ws_exception

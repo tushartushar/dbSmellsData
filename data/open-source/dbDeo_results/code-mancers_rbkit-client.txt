@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_object_references_', '%']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_object_references_', '0']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_objects_', '%']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_objects_', 'class_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_object_references_', 'child_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rbkit_objects_', '0']

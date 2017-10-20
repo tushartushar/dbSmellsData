@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}wslwatchdog` ( 			 `id` int(11) NOT NULL AUTO_INCREMENT,			 `session_id` varchar(50) NOT NULL,			 `user_id` int(11) NOT NULL,			 `user_ip` varchar(50) NOT NULL,			 `url` varchar(450) NOT NULL,			 `provider` varchar(50) NOT NULL,			 `action_name` varchar(255) NOT NULL,			 `action_args` text NOT NULL,			 `is_connected` int(11) NOT NULL,			 `created_at` varchar(50) NOT NULL,			 PRIMARY KEY (`id`) 			)
+ in following column `action_args` of table `{$wpdb->prefix}wslwatchdog`
+Detected: Index Shotgun Variant: 1

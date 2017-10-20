@@ -1,0 +1,44 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'UPDATE']
+Detected: Metadata as Data Found in following statement: CREATE TABLE messages_people ( type_of_recipient ENUM('From','To','Cc') NOT NULL DEFAULT 'From', message_id VARCHAR(255) CHARACTER SET utf8 NOT NULL, mailing_list_url VARCHAR(255) CHARACTER SET utf8 NOT NULL, email_address VARCHAR(255) CHARACTER SET utf8 NOT NULL, PRIMARY KEY(type_of_recipient, message_id, mailing_list_url, email_address), INDEX message_id(message_id, mailing_list_url), FOREIGN KEY(message_id, mailing_list_url) REFERENCES messages(message_id, mailing_list_url) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY(email_address) REFERENCES people(email_address) ON DELETE CASCADE ON UPDATE CASCADE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['mailing_lists', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['messages', 'is_response_of']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['people', 'email_address']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['people', 'CASCADE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['mailing_lists', 'mailing_list_url']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'message_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE compressed_files ( url VARCHAR(255) NOT NULL, mailing_list_url VARCHAR(255) NOT NULL, status VARCHAR(25) CHECK (status IN ('new', 'visited', 'failed')), last_analysis TIMESTAMP, PRIMARY KEY(url) )
+ in following column last_analysis and in column last_analysis of table mailing_lists
+Detected: Metadata as Data Found in following statement: CREATE TABLE compressed_files ( url varchar(255) CHARACTER SET utf8 NOT NULL, mailing_list_url varchar(255) CHARACTER SET utf8 not null, status enum('new','visited','failed') null, last_analysis datetime null, primary key(url), foreign key(mailing_list_url) references mailing_lists(mailing_list_url))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'ON']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE messages_people ( type_of_recipient VARCHAR(25) NOT NULL DEFAULT 'From' CHECK (type_of_recipient IN ('From', 'To', 'Cc')), mailing_list_url VARCHAR(255) NOT NULL, message_id VARCHAR(255) NOT NULL, email_address VARCHAR(255) NOT NULL, PRIMARY KEY(type_of_recipient, message_id, email_address) )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'mailing_list_url']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['messages', 'DELETE']
+Detected: God Table Found in following statement: CREATE TABLE messages ( message_ID VARCHAR(255) NOT NULL, mailing_list_url VARCHAR(255) NOT NULL, mailing_list VARCHAR(255), first_date TIMESTAMP, first_date_tz NUMERIC(11), arrival_date TIMESTAMP, arrival_date_tz NUMERIC(11), subject VARCHAR(255), message_body TEXT, is_response_of VARCHAR(255), mail_path TEXT, PRIMARY KEY(message_ID) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( message_ID VARCHAR(255) NOT NULL, mailing_list_url VARCHAR(255) NOT NULL, mailing_list VARCHAR(255), first_date TIMESTAMP, first_date_tz NUMERIC(11), arrival_date TIMESTAMP, arrival_date_tz NUMERIC(11), subject VARCHAR(255), message_body TEXT, is_response_of VARCHAR(255), mail_path TEXT, PRIMARY KEY(message_ID) )
+ in following column message_body of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mailing_lists_people ( email_address VARCHAR(255) CHARACTER SET utf8 NOT NULL, mailing_list_url VARCHAR(255) CHARACTER SET utf8 NOT NULL, PRIMARY KEY(email_address, mailing_list_url), FOREIGN KEY(mailing_list_url) REFERENCES mailing_lists(mailing_list_url) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY(email_address) REFERENCES people(email_address) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column mailing_list_url and in column mailing_list_url of table messages
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['mailing_lists', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['people', 'UPDATE']
+Detected: God Table Found in following statement: CREATE TABLE messages ( message_id VARCHAR(255) CHARACTER SET utf8 NOT NULL, mailing_list_url VARCHAR(255) CHARACTER SET utf8 NOT NULL, mailing_list VARCHAR(255) CHARACTER SET utf8 NULL, first_date DATETIME NULL, first_date_tz INTEGER(11) NULL, arrival_date DATETIME NULL, arrival_date_tz INTEGER(11) NULL, subject VARCHAR(1024) CHARACTER SET utf8 NULL, message_body MEDIUMTEXT CHARACTER SET utf8 NULL, is_response_of VARCHAR(255) CHARACTER SET utf8 NULL, mail_path TEXT CHARACTER SET utf8 NULL, PRIMARY KEY(message_id, mailing_list_url), INDEX response(is_response_of), FOREIGN KEY(mailing_list_url) REFERENCES mailing_lists(mailing_list_url) ON DELETE CASCADE ON UPDATE CASCADE)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mailing_lists ( mailing_list_url VARCHAR(255) NOT NULL, mailing_list_name VARCHAR(255), project_name VARCHAR(255), last_analysis TIMESTAMP, PRIMARY KEY(mailing_list_url) )
+ in following column last_analysis and in column last_analysis of table compressed_files
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['people', 'ON']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE compressed_files ( url VARCHAR(255) NOT NULL, mailing_list_url VARCHAR(255) NOT NULL, status VARCHAR(25) CHECK (status IN ('new', 'visited', 'failed')), last_analysis TIMESTAMP, PRIMARY KEY(url) )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['mailing_lists', 'UPDATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( message_ID VARCHAR(255) NOT NULL, mailing_list_url VARCHAR(255) NOT NULL, mailing_list VARCHAR(255), first_date TIMESTAMP, first_date_tz NUMERIC(11), arrival_date TIMESTAMP, arrival_date_tz NUMERIC(11), subject VARCHAR(255), message_body TEXT, is_response_of VARCHAR(255), mail_path TEXT, PRIMARY KEY(message_ID) )
+ in following column mail_path of table messages
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['mailing_lists', 'DELETE']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE messages_people ( type_of_recipient VARCHAR(25) NOT NULL DEFAULT 'From' CHECK (type_of_recipient IN ('From', 'To', 'Cc')), mailing_list_url VARCHAR(255) NOT NULL, message_id VARCHAR(255) NOT NULL, email_address VARCHAR(255) NOT NULL, PRIMARY KEY(type_of_recipient, message_id, email_address) )
+ in following column message_id and in column message_id of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mailing_lists_people ( email_address VARCHAR(255) CHARACTER SET utf8 NOT NULL, mailing_list_url VARCHAR(255) CHARACTER SET utf8 NOT NULL, PRIMARY KEY(email_address, mailing_list_url), FOREIGN KEY(mailing_list_url) REFERENCES mailing_lists(mailing_list_url) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY(email_address) REFERENCES people(email_address) ON DELETE CASCADE ON UPDATE CASCADE)
+ in following column email_address and in column email_address of table messages_people
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['people', 'DELETE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['messages_people', 'message_id']

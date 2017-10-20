@@ -1,0 +1,72 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT)
+ in following column name of table metadata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE geometry_columns (f_table_name VARCHAR(256) NOT NULL,f_geometry_column VARCHAR(256) NOT NULL,type VARCHAR(30) NOT NULL,coord_dimension INTEGER NOT NULL,srid INTEGER,spatial_index_enabled INTEGER NOT NULL)
+ in following column f_geometry_column and in column f_geometry_column of table geometry_columns_time
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT)
+ in following column value of table metadata
+Detected: Clone Tables Found in following statement: CREATE TABLE ogr_pg_56 ( bar varchar, baz varchar )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column ref_sys_name of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE geometry_columns_time (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,last_insert TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_update TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_delete TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',CONSTRAINT pk_gc_time PRIMARY KEY (f_table_name, f_geometry_column),CONSTRAINT fk_gc_time FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_geometry_column of table geometry_columns_time
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column table_name of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column constraint_name of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['poly', 'EAS_ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'test_metadata']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column title of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (key text, value text)
+ in following column value of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column auth_name of table spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['geometry_columns', 'indexidx_virtssridvirts_geometry_columns4CREATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT,proj4text TEXT NOT NULL,srs_wkt TEXT)
+ in following column ref_sys_name of table spatial_ref_sys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE geometry_columns (f_table_name VARCHAR(256) NOT NULL,f_geometry_column VARCHAR(256) NOT NULL,type VARCHAR(30) NOT NULL,coord_dimension INTEGER NOT NULL,srid INTEGER,spatial_index_enabled INTEGER NOT NULL)
+ in following column f_table_name and in column f_table_name of table geometry_columns_time
+Detected: Index Shotgun Variant: 3 Following index not used : ['geometry_columns', 'indexidx_virtssridvirts_geometry_columns']
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'bar']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT,proj4text TEXT NOT NULL,srs_wkt TEXT)
+ in following column auth_name of table spatial_ref_sys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ways (id INTEGER PRIMARY KEY, data BLOB)
+ in following column id and in column id of table ogr_pg_81_1
+Detected: Clone Tables Found in following statement: CREATE TABLE ogr_pg_61 ( id integer NOT NULL PRIMARY KEY, bar varchar )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column srtext of table spatial_ref_sys
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT,proj4text TEXT NOT NULL,srs_wkt TEXT)
+ in following column proj4text of table spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['tbl_linestring', 'fld_integer']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column name of table gpkg_data_columns
+Detected: Clone Tables Found in following statement: create table ogr_pg_81_2(id varchar unique, foo varchar)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'str']
+Detected: Index Shotgun Variant: 3 Following index not used : ['none', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE "AutoTest-schema"."table36_inherited2" ( col4 CHAR(1) )
+ in following column . and in column . of table TEST
+Detected: Index Shotgun Variant: 3 Following index not used : ['ogr_fgdb_20', 'MAP_OGR_FID_TO_FGDB_FID']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT NOT NULL DEFAULT 'Unknown',proj4text TEXT NOT NULL,srtext TEXT NOT NULL DEFAULT 'Undefined')
+ in following column proj4text of table spatial_ref_sys
+Detected: Clone Tables Found in following statement: CREATE TABLE ogr_pg_78 (ID INTEGER PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column column_name of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatial_ref_sys (srid INTEGER NOT NULL PRIMARY KEY,auth_name TEXT NOT NULL,auth_srid INTEGER NOT NULL,ref_sys_name TEXT,proj4text TEXT NOT NULL,srs_wkt TEXT)
+ in following column srs_wkt of table spatial_ref_sys
+Detected: Index Shotgun Variant: 3 Following index not used : ['ogr_fgdb_20', 'fail']
+Detected: Clone Tables Found in following statement: create table ogr_pg_81_1(id varchar unique, foo varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column description of table gpkg_data_columns
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gpkg_data_columns ( table_name TEXT NOT NULL, column_name TEXT NOT NULL, name TEXT UNIQUE, title TEXT, description TEXT, mime_type TEXT, constraint_name TEXT, CONSTRAINT pk_gdc PRIMARY KEY (table_name, column_name), CONSTRAINT fk_gdc_tn FOREIGN KEY (table_name) REFERENCES gpkg_contents(table_name))
+ in following column mime_type of table gpkg_data_columns
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'foo']
+Detected: Clone Tables Found in following statement: CREATE TABLE ogr_pg_78_2 (ID INTEGER PRIMARY KEY)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ogr_fgdb_20', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE geometry_columns_time (f_table_name TEXT NOT NULL,f_geometry_column TEXT NOT NULL,last_insert TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_update TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',last_delete TIMESTAMP NOT NULL DEFAULT '0000-01-01T00:00:00.000Z',CONSTRAINT pk_gc_time PRIMARY KEY (f_table_name, f_geometry_column),CONSTRAINT fk_gc_time FOREIGN KEY (f_table_name, f_geometry_column) REFERENCES geometry_columns (f_table_name, f_geometry_column) ON DELETE CASCADE)
+ in following column f_table_name of table geometry_columns_time

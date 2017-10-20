@@ -1,0 +1,3 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM saxo_unicode WHERE name REGEXP ?
+
+Detected: Index Shotgun Variant: 1

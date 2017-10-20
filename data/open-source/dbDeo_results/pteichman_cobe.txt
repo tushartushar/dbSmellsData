@@ -1,0 +1,9 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['token_stems', 'token_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE info ( attribute TEXT NOT NULL PRIMARY KEY, text TEXT NOT NULL)
+ in following column text of table info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE info ( attribute TEXT NOT NULL PRIMARY KEY, text TEXT NOT NULL)
+ in following column attribute of table info
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE token_stems ( token_id INTEGER, stem TEXT NOT NULL)
+ in following column stem of table token_stems
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, text TEXT UNIQUE NOT NULL, is_word INTEGER NOT NULL)
+ in following column text of table tokens

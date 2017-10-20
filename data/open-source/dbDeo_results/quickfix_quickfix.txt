@@ -1,0 +1,31 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages_log( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table messages_log
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE messages_backup_log( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text and in column text of table event_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_backup_log ( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table event_backup_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_log ( id INTEGER DEFAULT NEXTVAL('event_log_sequence'), time TIMESTAMP NOT NULL, beginstring CHAR(8), sendercompid VARCHAR(64), targetcompid VARCHAR(64), session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table event_log
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_log ( id INTEGER DEFAULT NEXTVAL('event_log_sequence'), time TIMESTAMP NOT NULL, beginstring CHAR(8), sendercompid VARCHAR(64), targetcompid VARCHAR(64), session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column id and in column id of table messages_backup_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_log ( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table event_log
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_log ( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column time and in column time of table messages_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages_backup_log( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table messages_backup_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages_log ( id INTEGER DEFAULT NEXTVAL('messages_log_sequence'), time TIMESTAMP NOT NULL, beginstring CHAR(8), sendercompid VARCHAR(64), targetcompid VARCHAR(64), session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table messages_log
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64) NOT NULL, msgseqnum INT NOT NULL, message TEXT NOT NULL, PRIMARY KEY (beginstring, sendercompid, targetcompid, session_qualifier, msgseqnum))
+ in following column message of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages ( beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64) NOT NULL, msgseqnum INTEGER NOT NULL, message TEXT NOT NULL, PRIMARY KEY (beginstring, sendercompid, targetcompid, session_qualifier, msgseqnum))
+ in following column message of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_log ( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text and in column text of table messages_log
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE event_backup_log ( id INTEGER DEFAULT NEXTVAL('event_backup_log_sequence'), time TIMESTAMP NOT NULL, beginstring CHAR(8), sendercompid VARCHAR(64), targetcompid VARCHAR(64), session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column text of table event_backup_log
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_log ( id INT NOT NULL IDENTITY, time DATETIME NOT NULL, beginstring CHAR(8) NOT NULL, sendercompid VARCHAR(64) NOT NULL, targetcompid VARCHAR(64) NOT NULL, session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column id and in column id of table messages_log
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE event_log ( id INTEGER DEFAULT NEXTVAL('event_log_sequence'), time TIMESTAMP NOT NULL, beginstring CHAR(8), sendercompid VARCHAR(64), targetcompid VARCHAR(64), session_qualifier VARCHAR(64), text TEXT NOT NULL, PRIMARY KEY (id))
+ in following column time and in column time of table messages_backup_log

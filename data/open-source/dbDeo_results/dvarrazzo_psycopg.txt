@@ -1,0 +1,53 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_threads ( name text, value1 int4, value2 float)
+ in following column value2 of table test_threads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_tpc (data text)
+ in following column data of table test_tpc
+Detected: Obsolete Column TypesFound in following statement: create table na ( texta text[], inta int[], boola boolean[], textaa text[][], intaa int[][], boolaa boolean[][] )
+ in following column textaa of table na
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_threads ( name text, value1 int4, value2 float)
+ in following column name of table test_threads
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_threads ( name text, value1 int4, value2 float)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_copy (fld1 text, fld2 text, fld3 int4)
+
+Detected: Clone Tables Found in following statement: create table ctest2 ( id serial primary key, label varchar, test_id integer references ctest1(id) )
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE table1 ( id int PRIMARY KEY, name text)
+
+Detected: Obsolete Column TypesFound in following statement: create table rangetest ( id integer primary key, range textrange)
+ in following column range of table rangetest
+Detected: Clone Tables Found in following statement: CREATE TABLE table2 (id int PRIMARY KEY)
+
+Detected: Duplicate Column Names Found in following statement: create table scrollable (data int)
+ in following column data and in column data of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (id serial PRIMARY KEY)
+ in following column id and in column id of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_copy (fld1 text, fld2 text, fld3 int4)
+ in following column fld2 of table test_copy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t (foo TEXT PRIMARY KEY)
+ in following column foo of table t
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_dt ( k int4, d date, t time, dt timestamp, z interval)
+ in following column t and in column t of table test_tz
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_oid (name text, surname text)
+ in following column name of table test_oid
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table1 ( id int PRIMARY KEY, name text)
+ in following column name of table table1
+Detected: Clone Tables Found in following statement: create table ctest1 ( id integer primary key, temp int, label varchar )
+
+Detected: Obsolete Column TypesFound in following statement: create table na ( texta text[], inta int[], boola boolean[], textaa text[][], intaa int[][], boolaa boolean[][] )
+ in following column texta of table na
+Detected: Clone Tables Found in following statement: create table table1 (id int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_cast (p1 point, p2 point, b box)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_copy (fld1 text, fld2 text, fld3 int4)
+ in following column fld1 of table test_copy
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_oid (name text, surname text)
+ in following column name and in column name of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_oid (name text, surname text)
+ in following column surname of table test_oid
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_binary (id int4, name text, img bytea)
+ in following column name of table test_binary
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (id SERIAL PRIMARY KEY, num INT, data TEXT)
+ in following column data of table test

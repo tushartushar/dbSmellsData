@@ -1,0 +1,3 @@
+UPDATE accounts SET user_count = user_count + 1 WHERE id = NEW
+UPDATE users SET item_count = item_count + 1 WHERE id IN (SELECT user_id FROM buckets WHERE id = NEW.bucket_id) DEFAULT_SQL UPDATE users, buckets SET item_count = item_count + 1 WHERE users.id = user_id AND buckets.id = NEW.bucket_id MYSQLend```### Manual MigrationsYou can also manage triggers manually in your migrations via `create_trigger` and`drop_trigger`. They are a little more verbose than model triggers, and they canbe more work since you need to figure out the up/down create/drop logic whenyou change things. A sample trigger:```rubycreate_trigger(:compatibility => 1).on(:users).after(:insert)
+SELECT name, sql FROM sqlite_master WHERE type = 'trigger' #{name_clause ? " AND name " + name_clause : ""}

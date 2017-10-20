@@ -1,0 +1,10 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE changelogs ( id integer NOT NULL, user_id integer, action character varying(255), target_id integer, target_type character varying(255), changelog text, notified boolean DEFAULT false, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, original text, committed text, year integer)
+ in following column changelog of table changelogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE changelogs ( id integer NOT NULL, user_id integer, action character varying(255), target_id integer, target_type character varying(255), changelog text, notified boolean DEFAULT false, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, original text, committed text, year integer)
+ in following column original of table changelogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE versions ( id integer NOT NULL, item_type character varying(255) NOT NULL, item_id integer NOT NULL, event character varying(255) NOT NULL, whodunnit character varying(255), object text, created_at timestamp without time zone)
+ in following column object of table versions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE changelogs ( id integer NOT NULL, user_id integer, action character varying(255), target_id integer, target_type character varying(255), changelog text, notified boolean DEFAULT false, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, original text, committed text, year integer)
+ in following column committed of table changelogs
+Detected: God Table Found in following statement: CREATE TABLE changelogs ( id integer NOT NULL, user_id integer, action character varying(255), target_id integer, target_type character varying(255), changelog text, notified boolean DEFAULT false, created_at timestamp without time zone NOT NULL, updated_at timestamp without time zone NOT NULL, original text, committed text, year integer)
+

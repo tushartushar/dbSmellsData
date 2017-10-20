@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %RANDSTR1%(%RANDSTR2% text)
+ in following column % of table %
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS storage (id INTEGER PRIMARY KEY, value TEXT)
+ in following column value of table (
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS storage (id INTEGER PRIMARY KEY, value TEXT)
+ in following column id and in column id of table %s

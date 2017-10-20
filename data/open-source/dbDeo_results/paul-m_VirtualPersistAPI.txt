@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `Record` ( `id` int(11) NOT NULL AUTO_INCREMENT, `owner_id` int(11) NOT NULL, `category` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `aKey` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `data` longtext COLLATE utf8_unicode_ci NOT NULL, `timestamp` datetime NOT NULL, PRIMARY KEY (`id`))
+ in following column `data` of table `Record`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Record (id INT AUTO_INCREMENT NOT NULL, owner_id INT NOT NULL, owner_uuid VARCHAR(36) NOT NULL, category VARCHAR(255) NOT NULL, aKey VARCHAR(255) NOT NULL, data LONGTEXT NOT NULL, timestamp DATETIME NOT NULL, PRIMARY KEY(id))
+ in following column data of table Record
+Detected: Metadata as Data Found in following statement: CREATE TABLE `Group` (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(30) NOT NULL, role VARCHAR(20) NOT NULL, UNIQUE INDEX UNIQ_AC016BC157698A6A (role), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `Record` ( `id` int(11) NOT NULL AUTO_INCREMENT, `owner` int(11) NOT NULL, `category` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `aKey` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `data` longtext COLLATE utf8_unicode_ci NOT NULL, `timestamp` datetime NOT NULL, PRIMARY KEY (`id`), KEY `IDX_9C989AA7CF60E67C` (`owner`), CONSTRAINT `FK_9C989AA7CF60E67C` FOREIGN KEY (`owner`) REFERENCES `User` (`id`))
+ in following column `data` of table `Record`

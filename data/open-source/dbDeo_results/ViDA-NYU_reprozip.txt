@@ -1,0 +1,26 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, run_id INTEGER NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column envp of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column argv of table executed_files
+Detected: Index Shotgun Variant: 3 Following index not used : ['connections', 'process']
+Detected: Index Shotgun Variant: 3 Following index not used : ['processes', 'parent']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column workingdir of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column name of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE opened_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, timestamp INTEGER NOT NULL, mode INTEGER NOT NULL, is_directory BOOLEAN NOT NULL, process INTEGER NOT NULL )
+ in following column name of table opened_files
+Detected: Index Shotgun Variant: 3 Following index not used : ['opened_files', 'process']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test(data TEXT)
+ in following column data of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['executed_files', 'process']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE opened_files( id INTEGER NOT NULL PRIMARY KEY, run_id INTEGER NOT NULL, name TEXT NOT NULL, timestamp INTEGER NOT NULL, mode INTEGER NOT NULL, is_directory BOOLEAN NOT NULL, process INTEGER NOT NULL )
+ in following column name of table opened_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, run_id INTEGER NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column workingdir of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column envp of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, run_id INTEGER NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column name of table executed_files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE executed_files( id INTEGER NOT NULL PRIMARY KEY, name TEXT NOT NULL, run_id INTEGER NOT NULL, timestamp INTEGER NOT NULL, process INTEGER NOT NULL, argv TEXT NOT NULL, envp TEXT NOT NULL, workingdir TEXT NOT NULL )
+ in following column argv of table executed_files

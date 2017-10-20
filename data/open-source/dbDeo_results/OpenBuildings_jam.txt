@@ -1,0 +1,39 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `test_uploads` ( `id` int(11) NOT NULL AUTO_INCREMENT, `file` varchar(255) NOT NULL, `file2` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_positions ( id INTEGER PRIMARY KEY, name TEXT NOT NULL)
+ in following column name of table test_positions
+Detected: Metadata as Data Found in following statement: CREATE TABLE `test_uploads` ( `id` int(11) NOT NULL AUTO_INCREMENT, `file` varchar(255) NOT NULL, `file2` varchar(255) NOT NULL, PRIMARY KEY (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_posts ( id INTEGER PRIMARY KEY, name TEXT NULL, slug TEXT NULL, status TEXT NULL, created INTEGER NULL, updated INTEGER NULL, published INTEGER NULL, test_author_id INTEGER NULL, test_blog_id INTEGER NULL, approved_by INTEGER NULL)
+ in following column name of table test_posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_posts ( id INTEGER PRIMARY KEY, name TEXT NULL, slug TEXT NULL, status TEXT NULL, created INTEGER NULL, updated INTEGER NULL, published INTEGER NULL, test_author_id INTEGER NULL, test_blog_id INTEGER NULL, approved_by INTEGER NULL)
+ in following column status of table test_posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, test_owner_id INTEGER NOT NULL, test_posts_count INTEGER NOT NULL)
+ in following column url of table test_blogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, test_owner_id INTEGER NOT NULL, test_posts_count INTEGER NOT NULL)
+ in following column name of table test_blogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_posts ( id INTEGER PRIMARY KEY, name TEXT NULL, slug TEXT NULL, status TEXT NULL, created INTEGER NULL, updated INTEGER NULL, published INTEGER NULL, test_author_id INTEGER NULL, test_blog_id INTEGER NULL, approved_by INTEGER NULL)
+ in following column slug of table test_posts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_authors ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL, password TEXT DEFAULT '', test_position_id INTEGER NOT NULL)
+ in following column name of table test_authors
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, email TEXT NOT NULL, description TEXT NOT NULL, amount INTEGER NOT NULL, test_author_id INTEGER NOT NULL,)
+ in following column name of table test_blogs
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test_uploads ( id INTEGER PRIMARY KEY, file TEXT NULL, file2 TEXT NULL,)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_authors ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL, password TEXT DEFAULT '', test_position_id INTEGER NOT NULL)
+ in following column email of table test_authors
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_authors ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, email TEXT NOT NULL, password TEXT DEFAULT '', test_position_id INTEGER NOT NULL)
+ in following column password of table test_authors
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, email TEXT NOT NULL, description TEXT NOT NULL, amount INTEGER NOT NULL, test_author_id INTEGER NOT NULL,)
+ in following column url of table test_blogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_uploads ( id INTEGER PRIMARY KEY, file TEXT NULL, file2 TEXT NULL,)
+ in following column file of table test_uploads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_categories ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, parent_id INTEGER NOT NULL, test_author_id INTEGER NOT NULL, test_blog_id INTEGER NOT NULL)
+ in following column name of table test_categories
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, email TEXT NOT NULL, description TEXT NOT NULL, amount INTEGER NOT NULL, test_author_id INTEGER NOT NULL,)
+ in following column email of table test_blogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_blogs ( id INTEGER PRIMARY KEY, name TEXT NOT NULL, url TEXT NOT NULL, email TEXT NOT NULL, description TEXT NOT NULL, amount INTEGER NOT NULL, test_author_id INTEGER NOT NULL,)
+ in following column description of table test_blogs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test_uploads ( id INTEGER PRIMARY KEY, file TEXT NULL, file2 TEXT NULL,)
+ in following column file2 of table test_uploads

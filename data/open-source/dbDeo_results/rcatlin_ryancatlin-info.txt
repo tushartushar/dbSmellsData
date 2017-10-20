@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Article (id INT AUTO_INCREMENT NOT NULL, slug VARCHAR(100) NOT NULL, title VARCHAR(255) NOT NULL, createdAt DATETIME NOT NULL, updatedAt DATETIME NOT NULL, content LONGTEXT NOT NULL, active TINYINT(1) NOT NULL, UNIQUE INDEX UNIQ_CD8737FA989D9B62 (slug), INDEX active_idx (active), PRIMARY KEY(id))
+ in following column content of table Article
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `Article` ( `id` int(11) NOT NULL AUTO_INCREMENT, `slug` varchar(100) COLLATE utf8_unicode_ci NOT NULL, `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL, `createdAt` datetime NOT NULL, `updatedAt` datetime NOT NULL, `content` longtext COLLATE utf8_unicode_ci NOT NULL, `active` tinyint(1) NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `UNIQ_CD8737FA989D9B62` (`slug`), KEY `active_idx` (`active`))
+ in following column `content` of table `Article`

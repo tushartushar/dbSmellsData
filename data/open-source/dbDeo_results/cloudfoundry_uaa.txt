@@ -1,0 +1,58 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE expiring_code_store ( code VARCHAR(255) NOT NULL PRIMARY KEY, expiresat BIGINT NOT NULL, data MEDIUMTEXT NOT NULL)
+ in following column data of table expiring_code_store
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_membership', 'identity_provider_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `identity_provider` ( `id` varchar(36) NOT NULL, `created` TIMESTAMP default current_timestamp not null, `lastModified` TIMESTAMP null, `version` BIGINT default 0 not null, `identity_zone_id` varchar(36) NOT NULL, `name` varchar(255) NOT NULL, `origin_key` varchar(255) NOT NULL, `type` varchar(255) NOT NULL, `config` longtext, PRIMARY KEY (`id`), UNIQUE KEY `key_in_zone` (`identity_zone_id`,`origin_key`))
+ in following column `config` of table `identity_provider`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE expiring_code_store ( code VARCHAR(255) NOT NULL PRIMARY KEY, expiresat BIGINT NOT NULL, data LONGVARCHAR NOT NULL)
+ in following column data and in column data of table revocable_tokens
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE authz_approvals ( username VARCHAR(36) NOT NULL, clientid VARCHAR(36) NOT NULL, scope VARCHAR(255) NOT NULL, expiresat TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, status VARCHAR(50) DEFAULT 'APPROVED' NOT NULL, lastmodifiedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, primary key (username, clientid, scope))
+ in following column lastmodifiedat and in column lastmodifiedat of table new_authz_approvals
+Detected: Index Shotgun Variant: 3 Following index not used : ['revocable_tokens', 'user_id']
+Detected: God Table Found in following statement: CREATE TABLE users ( id char(36) not null primary key, created TIMESTAMP default current_timestamp not null, lastModified TIMESTAMP null, version BIGINT default 0 not null, username VARCHAR(255) not null, password VARCHAR(255) not null, email VARCHAR(255) not null, authorities VARCHAR(1024) default 'uaa.user' not null, givenName VARCHAR(255), familyName VARCHAR(255), active BOOLEAN default true not null, phoneNumber VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE USERS ( id char(36) not null primary key, created TIMESTAMP default current_timestamp, lastModified TIMESTAMP default current_timestamp, version BIGINT default 0, username VARCHAR(255) not null, password VARCHAR(255) not null, email VARCHAR(255) not null, authority BIGINT default 0, givenName VARCHAR(255) not null, familyName VARCHAR(255) not null)
+ in following column id and in column id of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['users', 'LOWER']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `identity_zone` ( `id` varchar(36) NOT NULL, `created` TIMESTAMP default current_timestamp not null, `lastModified` TIMESTAMP null, `version` BIGINT default 0 not null, `subdomain` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `description` longtext, PRIMARY KEY (`id`), UNIQUE KEY `subdomain` (`subdomain`))
+ in following column `description` of table `identity_zone`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE identity_provider ( id VARCHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP default current_timestamp, lastModified TIMESTAMP default current_timestamp, version BIGINT default 0, identity_zone_id VARCHAR(36) NOT NULL, name VARCHAR(255) NOT NULL, origin_key VARCHAR(255) NOT NULL, type VARCHAR(255) NOT NULL, config TEXT)
+ in following column config of table identity_provider
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE service_provider ( id VARCHAR(36) NOT NULL, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, lastmodified TIMESTAMP NULL, version BIGINT DEFAULT 0 NOT NULL, identity_zone_id VARCHAR(36) NOT NULL, name VARCHAR(255) NOT NULL, entity_id VARCHAR(255) NOT NULL, config LONGTEXT, active BOOLEAN DEFAULT TRUE NOT NULL, PRIMARY KEY (id), UNIQUE KEY entity_in_zone (identity_zone_id, entity_id))
+ in following column config of table service_provider
+Detected: God Table Found in following statement: CREATE TABLE users ( id CHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, lastmodified TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, version BIGINT DEFAULT 0 NOT NULL, username VARCHAR_IGNORECASE(255) NOT NULL, password VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, authorities VARCHAR(1024) DEFAULT 'uaa.user' NOT NULL, givenname VARCHAR(255), familyname VARCHAR(255), active BOOLEAN DEFAULT TRUE NOT NULL, phonenumber VARCHAR(255), verified BOOLEAN DEFAULT FALSE NOT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE identity_provider ( id CHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, lastmodified TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, version BIGINT DEFAULT 0 NOT NULL, identity_zone_id varchar(36) NOT NULL, name varchar(255) NOT NULL, origin_key varchar(255) NOT NULL, type varchar(255) NOT NULL, config LONGVARCHAR)
+ in following column config and in column config of table service_provider
+Detected: Index Shotgun Variant: 3 Following index not used : ['SEC_AUDIT', 'principal_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE expiring_code_store ( code VARCHAR(255) NOT NULL PRIMARY KEY, expiresat BIGINT NOT NULL, data LONGVARCHAR NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE revocable_tokens ( token_id VARCHAR(36) NOT NULL PRIMARY KEY, client_id VARCHAR(255) NOT NULL, user_id VARCHAR(36), format VARCHAR(255), response_type VARCHAR(25) NOT NULL, issued_at BIGINT NOT NULL, expires_at BIGINT NOT NULL, scope VARCHAR(1000), data TEXT NOT NULL)
+ in following column data of table revocable_tokens
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE service_provider ( id CHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, lastmodified TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, version BIGINT DEFAULT 0 NOT NULL, identity_zone_id varchar(36) NOT NULL, name varchar(255) NOT NULL, entity_id varchar(255) NOT NULL, config LONGVARCHAR, active BOOLEAN DEFAULT TRUE NOT NULL)
+ in following column config and in column config of table identity_provider
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE service_provider ( id VARCHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, lastmodified TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, version BIGINT DEFAULT 0, identity_zone_id VARCHAR(36) NOT NULL, name VARCHAR(255) NOT NULL, entity_id VARCHAR(255) NOT NULL, config TEXT, active BOOLEAN DEFAULT TRUE NOT NULL)
+ in following column config of table service_provider
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE identity_provider SET name = uaa, type = uaa  WHERE origin_key = uaa
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE authz_approvals ( username VARCHAR(36) NOT NULL, clientid VARCHAR(36) NOT NULL, scope VARCHAR(255) NOT NULL, expiresat TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, status VARCHAR(50) DEFAULT 'APPROVED' NOT NULL, lastmodifiedat TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, primary key (username, clientid, scope))
+ in following column expiresat and in column expiresat of table expiring_code_store
+Detected: Compound Attribute Variant: 3 Found in following statement: update users set version=?, lastModified=?, userName=?, email=?, givenName=?, familyName=?, active=?, phoneNumber=?, verified=?, origin=?, external_id=?, salt=?  where id=? and version=? and identity_zone_id=?
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE external_group_mapping ( group_id VARCHAR(36) not null, external_group VARCHAR(255) not null, added TIMESTAMP default current_timestamp not null, primary key (group_id, external_group))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['revocable_tokens', 'client_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE AUTHZ_APPROVALS ( userName VARCHAR(36) not null, clientId VARCHAR(36) not null, scope VARCHAR(255) not null, expiresAt TIMESTAMP default current_timestamp not null, status VARCHAR(50) default 'APPROVED' not null, lastModifiedAt TIMESTAMP default current_timestamp not null, primary key (userName, clientId, scope))
+ in following column lastModifiedAt and in column lastModifiedAt of table authz_approvals
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE expiring_code_store ( code VARCHAR(255) NOT NULL PRIMARY KEY, expiresat BIGINT NOT NULL, data TEXT NOT NULL)
+ in following column data of table expiring_code_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE revocable_tokens ( token_id VARCHAR(36) NOT NULL PRIMARY KEY, client_id VARCHAR(255) NOT NULL, user_id VARCHAR(36), format VARCHAR(255), response_type VARCHAR(25) NOT NULL, issued_at BIGINT NOT NULL, expires_at BIGINT NOT NULL, scope VARCHAR(1000), data MEDIUMTEXT NOT NULL)
+ in following column data of table revocable_tokens
+Detected: Index Shotgun Variant: 3 Following index not used : ['SEC_AUDIT', 'created']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE identity_zone ( id VARCHAR(36) NOT NULL PRIMARY KEY, created TIMESTAMP DEFAULT current_timestamp, lastmodified TIMESTAMP DEFAULT current_timestamp, version BIGINT DEFAULT 0, subdomain VARCHAR(255) NOT NULL, name VARCHAR(255) NOT NULL, description TEXT)
+ in following column description of table identity_zone
+Detected: Index Shotgun Variant: 3 Following index not used : ['group_membership', 'LOWER']
+Detected: Index Shotgun Variant: 3 Following index not used : ['revocable_tokens', 'expires_at']
+Detected: Metadata as Data Found in following statement: CREATE TABLE external_group_mapping ( group_id VARCHAR(36) NOT NULL, external_group VARCHAR(255) NOT NULL, added TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL, PRIMARY KEY (group_id, external_group))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE expiring_code_store ( code VARCHAR(255) NOT NULL PRIMARY KEY, expiresat BIGINT NOT NULL, data MEDIUMTEXT NOT NULL)
+ in following column data and in column data of table revocable_tokens

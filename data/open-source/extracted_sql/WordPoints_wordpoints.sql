@@ -1,0 +1,13 @@
+CREATE TABLE {$wpdb->prefix}test (				id BIGINT(20) NOT NULL			)
+CREATE TABLE {$prefix}{$table_name} (				{$table_schema}			)
+CREATE TABLE {$wpdb->wordpoints_user_ranks} (			id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,			user_id BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,			rank_id BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,			PRIMARY KEY (id)		)
+CREATE TABLE {$wpdb->prefix}wordpoints_db_query_test (					id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,					int_col BIGINT(20) NOT NULL,					text_col TEXT,					date_col DATETIME,					PRIMARY KEY (id)				)
+CREATE TABLE `{$wpdb->prefix}test` ( `id` BIGINT )
+CREATE TABLE {$wpdb->base_prefix}test (				id BIGINT(20) NOT NULL			)
+CREATE TABLE {$wpdb->wordpoints_points_logs} (			id BIGINT(20) NOT NULL AUTO_INCREMENT,			user_id BIGINT(20) NOT NULL,			log_type VARCHAR(255) NOT NULL,			points BIGINT(20) NOT NULL,			points_type VARCHAR(255) NOT NULL,			text LONGTEXT,			blog_id SMALLINT(5) UNSIGNED NOT NULL,			site_id SMALLINT(5) UNSIGNED NOT NULL,			date DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',			PRIMARY KEY (id),			KEY user_id (user_id),			KEY points_type (points_type(191)),			KEY log_type (log_type(191))		)
+CREATE TABLE {$wpdb->wordpoints_rankmeta} (			meta_id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,			wordpoints_rank_id BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,			meta_key VARCHAR(255) DEFAULT NULL,			meta_value LONGTEXT,			PRIMARY KEY (meta_id),			KEY wordpoints_rank_id (wordpoints_rank_id)		)
+CREATE TABLE `{$wpdb->base_prefix}test` ( `id` BIGINT )
+CREATE TABLE {$wpdb->wordpoints_ranks} (			id BIGINT(20) NOT NULL AUTO_INCREMENT,			name VARCHAR(255) NOT NULL,			type VARCHAR(255) NOT NULL,			rank_group VARCHAR(255) NOT NULL,			blog_id SMALLINT(5) UNSIGNED NOT NULL,			site_id SMALLINT(5) UNSIGNED NOT NULL,			PRIMARY KEY (id),			KEY type (type(191)),			KEY site (blog_id,site_id)		)
+SELECT * FROM {$wpdb->prefix}test
+CREATE TABLE {$wpdb->wordpoints_points_log_meta} (			meta_id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,			log_id BIGINT(20) UNSIGNED NOT NULL DEFAULT 0,			meta_key VARCHAR(255) DEFAULT NULL,			meta_value LONGTEXT,			PRIMARY KEY (meta_id),			KEY log_id (log_id),			KEY meta_key (meta_key(191))		)
+CREATE TABLE {$wpdb->prefix}wordpoints_db_query_testmeta (					meta_id BIGINT(20) UNSIGNED NOT NULL AUTO_INCREMENT,					wordpoints_db_query_test_id BIGINT(20) UNSIGNED NOT NULL,					meta_key VARCHAR(255) NOT NULL,					meta_value LONGTEXT,					PRIMARY KEY (meta_id)				 )

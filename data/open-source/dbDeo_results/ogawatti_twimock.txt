@@ -1,0 +1,25 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE request_tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, string TEXT NOT NULL, secret TEXT NOT NULL, verifier TEXT NOT NULL, application_id INTEGER NOT NULL, user_id INTEGER, created_at DATETIME NOT NULL, UNIQUE(string, secret, verifier))
+ in following column secret of table request_tokens
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE applications ( id INTEGER PRIMARY KEY AUTOINCREMENT, api_key TEXT NOT NULL, api_secret TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(api_secret) )
+ in following column api_key of table applications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE TABLES ( id INTEGER PRIMARY KEY AUTOINCREMENT, text TEXT NOT NULL, active BOOLEAN, number INTEGER NOT NULL, created_at DATETIME NOT NULL )
+ in following column text of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE access_tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, string TEXT NOT NULL, secret TEXT NOT NULL, application_id INTEGER, user_id INTEGER NOT NULL, created_at DATETIME NOT NULL, UNIQUE(string, secret))
+ in following column secret of table access_tokens
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE request_tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, string TEXT NOT NULL, secret TEXT NOT NULL, verifier TEXT NOT NULL, application_id INTEGER NOT NULL, user_id INTEGER, created_at DATETIME NOT NULL, UNIQUE(string, secret, verifier))
+ in following column verifier of table request_tokens
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE access_tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, string TEXT NOT NULL, secret TEXT NOT NULL, application_id INTEGER, user_id INTEGER NOT NULL, created_at DATETIME NOT NULL, UNIQUE(string, secret))
+ in following column string of table access_tokens
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, twitter_id TEXT NOT NULL, email TEXT NOT NULL, password TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(twitter_id, email))
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, twitter_id TEXT NOT NULL, email TEXT NOT NULL, password TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(twitter_id, email))
+ in following column name of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE applications ( id INTEGER PRIMARY KEY AUTOINCREMENT, api_key TEXT NOT NULL, api_secret TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(api_secret) )
+ in following column api_secret of table applications
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE request_tokens ( id INTEGER PRIMARY KEY AUTOINCREMENT, string TEXT NOT NULL, secret TEXT NOT NULL, verifier TEXT NOT NULL, application_id INTEGER NOT NULL, user_id INTEGER, created_at DATETIME NOT NULL, UNIQUE(string, secret, verifier))
+ in following column string of table request_tokens
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, twitter_id TEXT NOT NULL, email TEXT NOT NULL, password TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(twitter_id, email))
+ in following column twitter_id of table users
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT NOT NULL, twitter_id TEXT NOT NULL, email TEXT NOT NULL, password TEXT NOT NULL, created_at DATETIME NOT NULL, UNIQUE(twitter_id, email))
+ in following column password of table users

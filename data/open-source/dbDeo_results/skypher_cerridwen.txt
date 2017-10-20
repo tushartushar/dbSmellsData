@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS events (jd float, type text, subtype text, planet text, data text)
+ in following column type of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS events (jd float, type text, subtype text, planet text, data text)
+ in following column planet of table (
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS events (jd float, type text, subtype text, planet text, data text)
+ in following column jd of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS events (jd float, type text, subtype text, planet text, data text)
+ in following column data of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS events (jd float, type text, subtype text, planet text, data text)
+ in following column subtype of table (

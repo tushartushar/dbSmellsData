@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE scans ( scans_id INTEGER PRIMARY KEY AUTOINCREMENT, scan_name TEXT, nmap_xml_output TEXT, digest TEXT, date INTEGER)
+ in following column nmap_xml_output of table scans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE scans ( scans_id INTEGER PRIMARY KEY AUTOINCREMENT, scan_name TEXT, nmap_xml_output TEXT, digest TEXT, date INTEGER)
+ in following column scan_name of table scans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE scans ( scans_id INTEGER PRIMARY KEY AUTOINCREMENT, scan_name TEXT, nmap_xml_output TEXT, digest TEXT, date INTEGER)
+ in following column digest of table scans
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE table #hasaccess(dbname varchar(255), owner varchar(255), DboOnly bit, ReadOnly bit, SingelUser bit, Detached bit, Suspect bit, Offline bit, InLoad bit, EmergencyMode bit, StandBy bit, [ShutDown] bit, InRecovery bit, NotRecovered bit )
+

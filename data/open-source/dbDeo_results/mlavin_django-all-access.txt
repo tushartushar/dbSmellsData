@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'allaccess_accountaccess']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'auth_user_user_permissions']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'auth_group_permissions']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'django_session']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'auth_user_groups']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'django_admin_log']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'auth_permission']

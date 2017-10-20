@@ -1,0 +1,2 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS entries( \ `ip` VARCHAR(46), \ `helo` VARCHAR(1024), \ `from` VARCHAR(1024), \ `to` VARCHAR(1024), \ `first` UNSIGNED BIGINT, \ `pass` UNSIGNED BIGINT, \ `expire` UNSIGNED BIGINT, \ `bcount` INTEGER, \ `pcount` INTEGER, \ PRIMARY KEY (`ip`, `helo`, `from`, `to`) \ )
+ in following column \ and in column \ of table domains

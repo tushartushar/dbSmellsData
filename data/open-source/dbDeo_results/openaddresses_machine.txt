@@ -1,0 +1,24 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column render_world of table sets
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE runs SET source_path = %s, source_data = %s, source_id = %s, state = %s WHERE id = %s
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs( id VARCHAR(40) PRIMARY KEY, status BOOLEAN, task_files JSON, file_states JSON, file_results JSON, github_owner TEXT, github_repository TEXT, github_status_url TEXT, github_comments_url TEXT, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, sequence INTEGER NULL DEFAULT NEXTVAL('ints'))
+ in following column github_owner of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs( id VARCHAR(40) PRIMARY KEY, status BOOLEAN, task_files JSON, file_states JSON, file_results JSON, github_owner TEXT, github_repository TEXT, github_status_url TEXT, github_comments_url TEXT, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, sequence INTEGER NULL DEFAULT NEXTVAL('ints'))
+ in following column github_status_url of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column owner of table sets
+Detected: Index Shotgun Variant: 3 Following index not used : ['runs', 'source_path']
+Detected: Index Shotgun Variant: 3 Following index not used : ['runs', 'set_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column render_europe of table sets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs( id VARCHAR(40) PRIMARY KEY, status BOOLEAN, task_files JSON, file_states JSON, file_results JSON, github_owner TEXT, github_repository TEXT, github_status_url TEXT, github_comments_url TEXT, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, sequence INTEGER NULL DEFAULT NEXTVAL('ints'))
+ in following column github_repository of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs( id VARCHAR(40) PRIMARY KEY, status BOOLEAN, task_files JSON, file_states JSON, file_results JSON, github_owner TEXT, github_repository TEXT, github_status_url TEXT, github_comments_url TEXT, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, sequence INTEGER NULL DEFAULT NEXTVAL('ints'))
+ in following column github_comments_url of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column repository of table sets
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column render_usa of table sets
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sets( id INTEGER NOT NULL DEFAULT NEXTVAL('ints') PRIMARY KEY, owner TEXT, repository TEXT, commit_sha VARCHAR(40) NULL, datetime_start TIMESTAMP WITH TIME ZONE, datetime_end TIMESTAMP WITH TIME ZONE, render_world TEXT, render_europe TEXT, render_usa TEXT)
+ in following column id and in column id of table jobs

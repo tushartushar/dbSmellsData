@@ -1,0 +1,13 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS gauged_metadata ( `key` VARCHAR NOT NULL PRIMARY KEY, value VARCHAR NOT NULL)
+ in following column `key` and in column `key` of table gauged_data
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS gauged_metadata ( `key` VARCHAR NOT NULL PRIMARY KEY, value VARCHAR NOT NULL)
+ in following column value and in column value of table gauged_cache
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE gauged_cache ( namespace INT(11) UNSIGNED NOT NULL, `key` BIGINT(15) UNSIGNED NOT NULL, hash BINARY(20) NOT NULL, length BIGINT(15) UNSIGNED NOT NULL, start BIGINT(15) UNSIGNED NOT NULL, value FLOAT(11), PRIMARY KEY (namespace, hash, length, start))
+ in following column value of table gauged_cache
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS gauged_cache ( namespace UNSIGNED INT NOT NULL, `key` INTEGER NOT NULL, hash CHAR(20) NOT NULL, length UNSIGNED BIGINT NOT NULL, start UNSIGNED BIGINT NOT NULL, value FLOAT, PRIMARY KEY (namespace, hash, length, start))
+ in following column value of table gauged_cache
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gauged_data ( namespace INT(11) UNSIGNED NOT NULL, offset INT(11) UNSIGNED NOT NULL, `key` BIGINT(15) UNSIGNED NOT NULL, data MEDIUMBLOB NOT NULL, flags INT(11) UNSIGNED NOT NULL, PRIMARY KEY (offset, namespace, `key`))
+ in following column namespace and in column namespace of table gauged_keys
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE gauged_writer_history ( id VARCHAR(255) NOT NULL PRIMARY KEY, timestamp BIGINT(15) UNSIGNED NOT NULL)
+ in following column id and in column id of table gauged_keys

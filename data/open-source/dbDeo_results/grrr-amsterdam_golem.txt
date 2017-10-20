@@ -1,0 +1,44 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'UPDATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `_tests_thing` (			`id` int UNSIGNED NOT NULL AUTO_INCREMENT,			`name` varchar(20) NOT NULL,			`intro` text NOT NULL,			PRIMARY KEY (`id`)		)
+ in following column `intro` of table `_tests_thing`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queue( queue_id serial NOT NULL, queue_name character varying(100) NOT NULL, timeout smallint NOT NULL DEFAULT 30, CONSTRAINT queue_pk PRIMARY KEY (queue_id))
+ in following column timeout and in column timeout of table message
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `_pkExtractorTestMulti`(			`id1` int UNSIGNED NOT NULL,			`id2` int UNSIGNED NOT NULL,			PRIMARY KEY (`id1`,`id2`)		)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE kvp_'.$tableName.' (id VARCHAR(12) PRIMARY KEY, value BLOB)
+ in following column id and in column id of table tag
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', '`id`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `wp_blc_filters` (		`id` int(10) unsigned NOT NULL AUTO_INCREMENT,		`name` varchar(100) NOT NULL,		`params` text NOT NULL,				PRIMARY KEY (`id`)	)
+ in following column `params` of table `wp_blc_filters`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_FooBar`', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache (id TEXT PRIMARY KEY, content BLOB, lastModified INTEGER, expire INTEGER)
+ in following column id of table (
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_FooBar`', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_FooBar`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'expire']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_FooBar`', 'UPDATE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'NULL']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `_tests_relation_manager_UserUser` (			`user1_id` int UNSIGNED NOT NULL,			`user2_id` int UNSIGNED NOT NULL,			PRIMARY KEY (`user1_id`, `user2_id`),			CONSTRAINT `user1_id` FOREIGN KEY (`user1_id`) REFERENCES `_tests_relation_manager_User` (`id`) ON UPDATE CASCADE ON DELETE CASCADE,			CONSTRAINT `user2_id` FOREIGN KEY (`user2_id`) REFERENCES `_tests_relation_manager_User` (`id`) ON UPDATE CASCADE ON DELETE CASCADE		)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `_sluggable_test`(			`id` int UNSIGNED NOT NULL AUTO_INCREMENT,			`name` varchar(124) NULL,			`address` VARCHAR(124) NULL,			`slug` varchar(124) NULL,			`slug2` varchar(124) NULL,			`d` date NULL,			PRIMARY KEY (`id`)		)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `queue` ( `queue_id` int(10) unsigned NOT NULL auto_increment, `queue_name` varchar(100) NOT NULL, `timeout` smallint(5) unsigned NOT NULL default '30', PRIMARY KEY (`queue_id`))
+ in following column `timeout` and in column `timeout` of table `message`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['queue', 'queue_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queue( queue_id serial NOT NULL, queue_name character varying(100) NOT NULL, timeout smallint NOT NULL DEFAULT 30, CONSTRAINT queue_pk PRIMARY KEY (queue_id))
+ in following column queue_id and in column queue_id of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column name of table tag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column id of table tag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE message( message_id INTEGER PRIMARY KEY AUTOINCREMENT, queue_id INTEGER PRIMARY KEY, handle CHAR(32), body VARCHAR(8192) NOT NULL, md5 CHAR(32) NOT NULL, timeout REAL, created INTEGER, FOREIGN KEY (queue_id) REFERENCES queue(queue_id))
+ in following column timeout of table message
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `wp_blc_instances` (		`instance_id` int(10) unsigned NOT NULL AUTO_INCREMENT,		`link_id` int(10) unsigned NOT NULL,		`container_id` int(10) unsigned NOT NULL,		`container_type` varchar(40) NOT NULL DEFAULT \'post\',		`link_text` varchar(250) NOT NULL DEFAULT \'\',		`parser_type` varchar(40) NOT NULL DEFAULT \'link\',		`container_field` varchar(250) NOT NULL DEFAULT \'\',		`link_context` varchar(250) NOT NULL DEFAULT \'\',		`raw_url` text NOT NULL,		 		PRIMARY KEY (`instance_id`),		KEY `link_id` (`link_id`),		KEY `source_id` (`container_type`, `container_id`),		KEY `parser_type` (`parser_type`)	)
+ in following column `raw_url` of table `wp_blc_instances`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_FooBar`', '`id`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag', 'name']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`_tests_cache_manager_Thing`', 'SET']

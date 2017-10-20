@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {MW_TABLE_PREFIX}countries ( id int(11) NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, continent LONGTEXT NOT NULL, surfacearea float NOT NULL, population int(11) NOT NULL, localname TEXT NOT NULL ,PRIMARY KEY (id) )
+ in following column surfacearea of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {MW_TABLE_PREFIX}countries ( id int(11) NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, continent LONGTEXT NOT NULL, surfacearea float NOT NULL, population int(11) NOT NULL, localname TEXT NOT NULL ,PRIMARY KEY (id) )
+ in following column localname of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {MW_TABLE_PREFIX}countries ( id int(11) NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, continent LONGTEXT NOT NULL, surfacearea float NOT NULL, population int(11) NOT NULL, localname TEXT NOT NULL ,PRIMARY KEY (id) )
+ in following column code of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'localhost_jobs']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {MW_TABLE_PREFIX}countries ( id int(11) NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, continent LONGTEXT NOT NULL, surfacearea float NOT NULL, population int(11) NOT NULL, localname TEXT NOT NULL ,PRIMARY KEY (id) )
+ in following column name of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {MW_TABLE_PREFIX}countries ( id int(11) NOT NULL, code TEXT NOT NULL, name TEXT NOT NULL, continent LONGTEXT NOT NULL, surfacearea float NOT NULL, population int(11) NOT NULL, localname TEXT NOT NULL ,PRIMARY KEY (id) )
+ in following column continent of table {

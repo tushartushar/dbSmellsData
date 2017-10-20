@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	user_id int PRIMARY KEY,	fname text,	lname text)
+ in following column fname of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users (	user_id int PRIMARY KEY,	fname text,	lname text)
+ in following column lname of table users
+Detected: Index Shotgun Variant: 1

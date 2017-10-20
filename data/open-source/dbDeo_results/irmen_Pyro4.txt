@@ -1,0 +1,9 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Topic', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['pyro_names', 'id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE pyro_names ( id integer PRIMARY KEY, name nvarchar NOT NULL UNIQUE, uri nvarchar NOT NULL )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS Subscription( id INTEGER PRIMARY KEY, topic INTEGER NOT NULL, subscriber NVARCHAR(500) NOT NULL, FOREIGN KEY(topic) REFERENCES Topic(id))
+ in following column id and in column id of table Message
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS Subscription( id INTEGER PRIMARY KEY, topic INTEGER NOT NULL, subscriber NVARCHAR(500) NOT NULL, FOREIGN KEY(topic) REFERENCES Topic(id))
+ in following column topic and in column topic of table Topic

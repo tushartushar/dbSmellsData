@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parcels (id INTEGER)
+ in following column id and in column id of table cities

@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE member (id CHAR(36) NOT NULL COMMENT \'(DC2Type:organization_member_id)\', organization_id CHAR(36) DEFAULT NULL COMMENT \'(DC2Type:organization_id)\', created_on DATETIME NOT NULL, updated_on DATETIME NOT NULL, user_id CHAR(36) NOT NULL COMMENT \'(DC2Type:user_id)\', INDEX IDX_70E4FA7832C8A3DE (organization_id), UNIQUE INDEX organization_user_index (organization_id, user_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column id and in column id of table (

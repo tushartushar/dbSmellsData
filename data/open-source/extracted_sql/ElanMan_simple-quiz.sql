@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `quizzes` ( `id` int(11) unsigned NOT NULL, `name` varchar(50) NOT NULL, `description` varchar(255) NOT NULL, `category` int(11) NOT NULL, `active` tinyint(1) NOT NULL DEFAULT '1', `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `updated` datetime NOT NULL)
+CREATE TABLE IF NOT EXISTS `answers` ( `id` int(11) NOT NULL, `question_num` int(11) unsigned NOT NULL, `quiz_id` int(11) unsigned NOT NULL, `text` varchar(255) NOT NULL, `correct` tinyint(1) NOT NULL DEFAULT '0')
+CREATE TABLE IF NOT EXISTS `categories` ( `id` int(11) NOT NULL, `name` varchar(50) NOT NULL, `description` text NOT NULL)
+CREATE TABLE IF NOT EXISTS `users` ( `id` int(10) unsigned NOT NULL, `name` varchar(60) NOT NULL, `pass` varchar(255) NOT NULL, `email` varchar(40) NOT NULL, `level` int(1) NOT NULL DEFAULT '0', `confirmed` tinyint(4) NOT NULL DEFAULT '0', `confirmhash` varchar(40) DEFAULT NULL, `hashstamp` timestamp NULL DEFAULT NULL)
+CREATE TABLE IF NOT EXISTS `sessions` ( `id` varchar(32) NOT NULL, `access` int(10) unsigned DEFAULT NULL, `data` text)
+CREATE TABLE IF NOT EXISTS `questions` ( `id` int(10) unsigned NOT NULL, `num` int(11) unsigned NOT NULL, `quiz_id` int(11) unsigned NOT NULL, `text` varchar(255) NOT NULL)
+CREATE TABLE IF NOT EXISTS `quiz_users` ( `id` int(10) unsigned NOT NULL, `quiz_id` int(11) unsigned NOT NULL, `user_id` int(11) unsigned NOT NULL, `score` int(11) NOT NULL, `start_time` datetime NOT NULL, `date_submitted` datetime NOT NULL, `time_taken` varchar(10) NOT NULL)

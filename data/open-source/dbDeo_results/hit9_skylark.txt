@@ -1,0 +1,10 @@
+Detected: Duplicate Column Names Found in following statement: create table t_user( id integer primary key autoincrement, name varchar(33), email varchar(33))
+ in following column id and in column id of table message
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['t_user', 'id']
+Detected: Metadata as Data Found in following statement: create table user(id integer primary key autoincrement, name varchar(33), email varchar(33))
+
+Detected: Obsolete Column TypesFound in following statement: create table if not exists message ( id int primary key auto_increment, title varchar(100) default '', content text, create_at datetime)
+ in following column content of table message
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: create table t_user( id integer primary key autoincrement, name varchar(33), email varchar(33))
+

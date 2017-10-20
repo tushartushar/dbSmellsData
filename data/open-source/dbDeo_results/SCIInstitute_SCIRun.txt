@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE modules (ModuleName TEXT PRIMARY KEY, Enabled INTEGER, RegressionNetwork INTEGER, OtherNetworks INTEGER, GuiTested INTEGER, ModuleUnitTest INTEGER, ModuleFunctionalTest INTEGER, AlgorithmUnitTest INTEGER, ParameterizedAlgorithmUnitTest INTEGER, Documentation INTEGER, FeatureComplete INTEGER)
+ in following column ModuleName of table modules
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS Trace (SessionStatement TEXT)
+ in following column SessionStatement of table Trace
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE modules (ModuleName TEXT PRIMARY KEY, Enabled INTEGER)
+ in following column ModuleName of table modules
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE modules (ModuleName TEXT PRIMARY KEY, Enabled INTEGER, RegressionNetwork INTEGER, OtherNetworks INTEGER, GuiTested INTEGER, ModuleUnitTest INTEGER, ModuleFunctionalTest INTEGER, AlgorithmUnitTest INTEGER, ParameterizedAlgorithmUnitTest INTEGER, Documentation INTEGER, FeatureComplete INTEGER)
+

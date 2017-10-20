@@ -1,0 +1,2 @@
+SELECT * FROM test
+CREATE TABLE names (id INTEGER,\n name VARCHAR (255))

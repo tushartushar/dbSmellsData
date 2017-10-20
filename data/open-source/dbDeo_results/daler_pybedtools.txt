@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column actual of table intersections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column fractionbelow of table intersections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column percentile of table intersections
+Detected: God Table Found in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column fractionabove of table intersections
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column filea of table intersections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column timestamp of table intersections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column median of table intersections
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE intersections ( filea TEXT, fileb TEXT, timestamp FLOAT, actual FLOAT, median FLOAT, iterations INT, self INT, other INT, fractionabove FLOAT, fractionbelow FLOAT, percentile FLOAT, PRIMARY KEY (filea, fileb, iterations))
+ in following column fileb of table intersections

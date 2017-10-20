@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['state', 'abbrev']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['city', 'name']
+Detected: Index Shotgun Variant: 1

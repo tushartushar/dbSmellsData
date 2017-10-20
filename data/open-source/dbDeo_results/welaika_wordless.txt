@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: create table coverage (name text, coverage text)
+ in following column name of table coverage
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table untouched (filename text)
+ in following column filename of table untouched
+Detected: Obsolete Column TypesFound in following statement: create table coverage (name text, coverage text)
+ in following column coverage of table coverage

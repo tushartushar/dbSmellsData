@@ -1,0 +1,5 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT * FROM " . $this->strTable . " WHERE " . \Input::post('tl_field', true) . " REGEXP ?
+
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT id FROM tl_iso_group WHERE CAST(name AS CHAR) REGEXP ?
+

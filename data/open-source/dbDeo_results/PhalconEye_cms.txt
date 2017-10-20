@@ -1,0 +1,188 @@
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo (	uuid VARCHAR(33) PRIMARY KEY,	parent_uuid VARCHAR(33) default NULL,	owner_user_id VARCHAR(50) default NULL,	child_user_id VARCHAR(50) default NULL,	path VARCHAR(255),	display VARCHAR(255),	accessType VARCHAR(20),	recycle VARCHAR(255),	bcreate BOOLEAN,	writeable BOOLEAN,	enabled BOOLEAN,	isTemplate BOOLEAN,	inferOptionsFromParent BOOLEAN,	slug VARCHAR(255),	groupPath VARCHAR(255))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ajxp_user_bookmarks ( rid INTEGER PRIMARY KEY, login VARCHAR(255), repo_uuid VARCHAR(33), path VARCHAR(255), title VARCHAR(255))
+ in following column rid and in column rid of table ajxp_user_rights
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ajxp_repo_options ( oid INTEGER PRIMARY KEY, uuid VARCHAR(33), name VARCHAR(50), val VARCHAR(255) )
+ in following column val and in column val of table ajxp_user_prefs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id int(11) NOT NULL AUTO_INCREMENT, edate int(11) NOT NULL, etype varchar(12) NOT NULL, htype varchar(32) NOT NULL, index_path mediumtext NULL, user_id varchar(255) NOT NULL, repository_id varchar(33) NOT NULL, user_group varchar(500), repository_scope varchar(50), repository_owner varchar(255), content longblob NOT NULL, PRIMARY KEY (id), KEY edate (edate,etype,htype,user_id,repository_id), INDEX (index_path(40)))
+ in following column index_path of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_changes ( seq INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_id NUMERIC, type TEXT, source TEXT, target TEXT)
+ in following column repository_identifier of table ajxp_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data longtext, binary_data blob, related_object_id text DEFAULT NULL, insertion_date DATETIME DEFAULT CURRENT_TIMESTAMP)
+ in following column object_id of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_changes ( seq INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_id NUMERIC, type TEXT, source TEXT, target TEXT)
+ in following column type of table ajxp_changes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights (	rid INTEGER PRIMARY KEY AUTO_INCREMENT,	login VARCHAR(255) NOT NULL,	repo_uuid VARCHAR(33) NOT NULL,	rights MEDIUMTEXT NOT NULL)
+ in following column rid and in column rid of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data blob, binary_data blob, related_object_id text DEFAULT NULL)
+ in following column store_id of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_user_rights ( rid serial PRIMARY KEY, login varchar(255) NOT NULL, repo_uuid varchar(33) NOT NULL, rights text NOT NULL)
+ in following column rights of table ajxp_user_rights
+Detected: Metadata as Data Found in following statement: CREATE TABLE ajxp_repo_options ( oid serial PRIMARY KEY, uuid varchar(33) NOT NULL, name varchar(50) NOT NULL, val bytea)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column slug of table ajxp_repo
+Detected: Metadata as Data Found in following statement: CREATE TABLE codes (iphash VARCHAR(32) PRIMARY KEY, code VARCHAR(32) NOT NULL, created INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_index` ( `node_id` int(20) NOT NULL AUTO_INCREMENT, `node_path` text NOT NULL, `bytesize` bigint(20) NOT NULL, `md5` varchar(32) NOT NULL, `mtime` int(11) NOT NULL, `repository_identifier` text NOT NULL, PRIMARY KEY (`node_id`))
+ in following column `node_path` of table `ajxp_index`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_log` (	`id`		INT	PRIMARY KEY	AUTO_INCREMENT,	`logdate`	DATETIME,	`remote_ip`	VARCHAR(45),	`severity`	ENUM('DEBUG', 'INFO', 'NOTICE', 'WARNING', 'ERROR'),	`user`		VARCHAR(255),	`message`	TEXT,	`params`	TEXT)
+ in following column `params` of table `ajxp_log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_groups ( groupPath text NOT NULL, groupLabel text NOT NULL)
+ in following column groupPath of table ajxp_groups
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo_options (	oid INTEGER PRIMARY KEY AUTO_INCREMENT,	uuid VARCHAR(33) NOT NULL,	name VARCHAR(50) NOT NULL,	val BLOB,	INDEX (uuid))
+ in following column uuid and in column uuid of table ajxp_repo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights (	rid INTEGER PRIMARY KEY AUTO_INCREMENT,	login VARCHAR(255) NOT NULL,	repo_uuid VARCHAR(33) NOT NULL,	rights MEDIUMTEXT NOT NULL)
+ in following column login and in column login of table ajxp_user_bookmarks
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id int(11) NOT NULL AUTO_INCREMENT, edate int(11) NOT NULL, etype varchar(12) NOT NULL, htype varchar(32) NOT NULL, index_path mediumtext NULL, user_id varchar(255) NOT NULL, repository_id varchar(33) NOT NULL, user_group varchar(500), repository_scope varchar(50), repository_owner varchar(255), content longblob NOT NULL, PRIMARY KEY (id), KEY edate (edate,etype,htype,user_id,repository_id), INDEX (index_path(40)))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id VARCHAR(255) NOT NULL, store_id VARCHAR(50) NOT NULL, serialized_data LONGTEXT NULL, binary_data LONGBLOB NULL, related_object_id VARCHAR(255) NULL, insertion_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(object_id, store_id))
+ in following column serialized_data of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column uuid of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, rights text NOT NULL)
+ in following column login of table ajxp_user_rights
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column groupPath of table ajxp_repo
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS `ajxp_users` ( `login` varchar(255) NOT NULL, `password` varchar(255) NOT NULL, `groupPath` varchar(255) NULL, PRIMARY KEY (`login`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column index_path of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_bookmarks ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, path text DEFAULT NULL, title text DEFAULT NULL)
+ in following column repo_uuid of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_bookmarks ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, path text DEFAULT NULL, title text DEFAULT NULL)
+ in following column path of table ajxp_user_bookmarks
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo (	uuid VARCHAR(33) PRIMARY KEY,	parent_uuid VARCHAR(33) default NULL,	owner_user_id VARCHAR(50) default NULL,	child_user_id VARCHAR(50) default NULL,	path VARCHAR(255),	display VARCHAR(255),	accessType VARCHAR(20),	recycle VARCHAR(255),	bcreate BOOLEAN,	writeable BOOLEAN,	enabled BOOLEAN,	isTemplate BOOLEAN,	inferOptionsFromParent BOOLEAN,	slug VARCHAR(255),	groupPath VARCHAR(255))
+ in following column groupPath and in column groupPath of table ajxp_groups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_roles ( role_id varchar(255) PRIMARY KEY, serial_role bytea NOT NULL, searchable_repositories text)
+ in following column searchable_repositories of table ajxp_roles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_teams ( team_id text NOT NULL, user_id text NOT NULL, team_label text NOT NULL, owner_id text NOT NULL)
+ in following column team_label of table ajxp_user_teams
+Detected: Index Shotgun Variant: 3 Following index not used : ['ajxp_repo_options', 'uuid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column user_id of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_changes` ( `seq` int(20) NOT NULL AUTO_INCREMENT, `repository_identifier` TEXT NOT NULL, `node_id` bigint(20) NOT NULL, `type` enum('create','delete','path','content') NOT NULL, `source` text NOT NULL, `target` text NOT NULL, PRIMARY KEY (`seq`), KEY `node_id` (`node_id`,`type`))
+ in following column `target` of table `ajxp_changes`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column owner_user_id of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_roles (	role_id VARCHAR(50) PRIMARY KEY, 	serial_role TEXT(500) NOT NULL)
+ in following column serial_role of table ajxp_roles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_feed ( id serial PRIMARY KEY, edate integer NOT NULL, etype varchar(12) NOT NULL, htype varchar(32) NOT NULL, index_path text, user_id varchar(255) NOT NULL, repository_id varchar(33) NOT NULL, user_group varchar(500), repository_scope varchar(50), repository_owner varchar(255), content bytea NOT NULL)
+ in following column index_path of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column display of table ajxp_repo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo_options (	oid INTEGER PRIMARY KEY AUTO_INCREMENT,	uuid VARCHAR(33) NOT NULL,	name VARCHAR(50) NOT NULL,	val BLOB,	INDEX (uuid))
+ in following column val and in column val of table ajxp_user_prefs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_changes` ( `seq` int(20) NOT NULL AUTO_INCREMENT, `repository_identifier` TEXT NOT NULL, `node_id` bigint(20) NOT NULL, `type` enum('create','delete','path','content') NOT NULL, `source` text NOT NULL, `target` text NOT NULL, PRIMARY KEY (`seq`), KEY `node_id` (`node_id`,`type`))
+ in following column `repository_identifier` of table `ajxp_changes`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, rights text NOT NULL)
+ in following column repo_uuid and in column repo_uuid of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column user_group of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_simple_store ( object_id varchar(255) NOT NULL, store_id varchar(50) NOT NULL, serialized_data text, binary_data bytea, related_object_id varchar(255), insertion_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(object_id, store_id))
+ in following column serialized_data of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_roles ( role_id text NOT NULL, serial_role blob NOT NULL, searchable_repositories text)
+ in following column role_id of table ajxp_roles
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data blob, binary_data blob, related_object_id text DEFAULT NULL)
+ in following column related_object_id of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_index ( node_id INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_path TEXT, bytesize NUMERIC, md5 TEXT, mtime NUMERIC)
+ in following column repository_identifier of table ajxp_index
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_groups ( groupPath text NOT NULL, groupLabel text NOT NULL)
+ in following column groupLabel of table ajxp_groups
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_changes ( seq INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_id NUMERIC, type TEXT, source TEXT, target TEXT)
+ in following column source of table ajxp_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column etype of table ajxp_feed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo (	uuid VARCHAR(33) PRIMARY KEY,	parent_uuid VARCHAR(33) default NULL,	owner_user_id VARCHAR(50) default NULL,	child_user_id VARCHAR(50) default NULL,	path VARCHAR(255),	display VARCHAR(255),	accessType VARCHAR(20),	recycle VARCHAR(255),	bcreate BOOLEAN,	writeable BOOLEAN,	enabled BOOLEAN,	isTemplate BOOLEAN,	inferOptionsFromParent BOOLEAN,	slug VARCHAR(255),	groupPath VARCHAR(255))
+ in following column path and in column path of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column accessType of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column recycle of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_bookmarks ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, path text DEFAULT NULL, title text DEFAULT NULL)
+ in following column login of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data longtext, binary_data blob, related_object_id text DEFAULT NULL, insertion_date DATETIME DEFAULT CURRENT_TIMESTAMP)
+ in following column serialized_data of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_index ( node_id INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_path TEXT, bytesize NUMERIC, md5 TEXT, mtime NUMERIC)
+ in following column md5 of table ajxp_index
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column id and in column id of table ajxp_plugin_configs
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_users ( login varchar(255) NOT NULL, password varchar(255) NOT NULL, groupPath varchar(255) NULL, PRIMARY KEY (login))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights (	rid INTEGER PRIMARY KEY AUTO_INCREMENT,	login VARCHAR(255) NOT NULL,	repo_uuid VARCHAR(33) NOT NULL,	rights MEDIUMTEXT NOT NULL)
+ in following column repo_uuid and in column repo_uuid of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_roles (	role_id VARCHAR(255) PRIMARY KEY,	serial_role TEXT(500) NOT NULL)
+ in following column serial_role of table ajxp_roles
+Detected: Metadata as Data Found in following statement: CREATE TABLE ajxp_user_prefs ( rid serial PRIMARY KEY, login varchar(255) NOT NULL, name varchar(255) NOT NULL, val bytea)
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column path and in column path of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_teams ( team_id text NOT NULL, user_id text NOT NULL, team_label text NOT NULL, owner_id text NOT NULL)
+ in following column owner_id of table ajxp_user_teams
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, rights text NOT NULL)
+ in following column login and in column login of table ajxp_user_bookmarks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column child_user_id of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data blob, binary_data blob, related_object_id text DEFAULT NULL)
+ in following column object_id of table ajxp_simple_store
+Detected: Index Shotgun Variant: 3 Following index not used : ['ajxp_feed', 'index_path']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id VARCHAR(255) NOT NULL, store_id VARCHAR(50) NOT NULL, serialized_data LONGTEXT NULL, binary_data LONGBLOB NULL, related_object_id VARCHAR(255) NULL, PRIMARY KEY(object_id, store_id))
+ in following column serialized_data of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, rights text NOT NULL)
+ in following column rights of table ajxp_user_rights
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_teams ( team_id text NOT NULL, user_id text NOT NULL, team_label text NOT NULL, owner_id text NOT NULL)
+ in following column user_id of table ajxp_user_teams
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column repository_owner of table ajxp_feed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `ajxp_index` ( `node_id` int(20) NOT NULL AUTO_INCREMENT, `node_path` text NOT NULL, `bytesize` bigint(20) NOT NULL, `md5` varchar(32) NOT NULL, `mtime` int(11) NOT NULL, `repository_identifier` text NOT NULL, PRIMARY KEY (`node_id`))
+ in following column `node_id` and in column `node_id` of table `ajxp_changes`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_changes ( seq INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_id NUMERIC, type TEXT, source TEXT, target TEXT)
+ in following column target of table ajxp_changes
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column htype of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_index` ( `node_id` int(20) NOT NULL AUTO_INCREMENT, `node_path` text NOT NULL, `bytesize` bigint(20) NOT NULL, `md5` varchar(32) NOT NULL, `mtime` int(11) NOT NULL, `repository_identifier` text NOT NULL, PRIMARY KEY (`node_id`))
+ in following column `repository_identifier` of table `ajxp_index`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_teams ( team_id text NOT NULL, user_id text NOT NULL, team_label text NOT NULL, owner_id text NOT NULL)
+ in following column team_id of table ajxp_user_teams
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column repository_scope of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_roles ( role_id text NOT NULL, serial_role blob NOT NULL, searchable_repositories text)
+ in following column searchable_repositories of table ajxp_roles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_bookmarks ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, path text DEFAULT NULL, title text DEFAULT NULL)
+ in following column title of table ajxp_user_bookmarks
+Detected: Metadata as Data Found in following statement: CREATE TABLE ajxp_simple_store ( object_id varchar(255) NOT NULL, store_id varchar(50) NOT NULL, serialized_data bytea, binary_data bytea, related_object_id varchar(255), PRIMARY KEY(object_id, store_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_log` (	`id`		INT	PRIMARY KEY	AUTO_INCREMENT,	`logdate`	DATETIME,	`remote_ip`	VARCHAR(45),	`severity`	ENUM('DEBUG', 'INFO', 'NOTICE', 'WARNING', 'ERROR'),	`user`		VARCHAR(255),	`message`	TEXT,	`params`	TEXT)
+ in following column `message` of table `ajxp_log`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column path of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column repository_id of table ajxp_feed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_repo ( uuid text NOT NULL, parent_uuid text DEFAULT NULL, owner_user_id text DEFAULT NULL, child_user_id text DEFAULT NULL, path text DEFAULT NULL, display text DEFAULT NULL, accessType text DEFAULT NULL, recycle text DEFAULT NULL, bcreate integer DEFAULT NULL, writeable integer DEFAULT NULL, enabled integer DEFAULT NULL, isTemplate integer DEFAULT NULL, inferOptionsFromParent integer DEFAULT NULL, slug text DEFAULT NULL, groupPath text DEFAULT NULL)
+ in following column parent_uuid of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data longtext, binary_data blob, related_object_id text DEFAULT NULL, insertion_date DATETIME DEFAULT CURRENT_TIMESTAMP)
+ in following column store_id of table ajxp_simple_store
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ajxp_index ( node_id INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_path TEXT, bytesize NUMERIC, md5 TEXT, mtime NUMERIC)
+ in following column node_id and in column node_id of table ajxp_changes
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id int(11) NOT NULL AUTO_INCREMENT, edate int(11) NOT NULL, etype varchar(12) NOT NULL, htype varchar(32) NOT NULL, index_path mediumtext NULL, user_id varchar(255) NOT NULL, repository_id varchar(33) NOT NULL, user_group varchar(500), repository_scope varchar(50), repository_owner varchar(255), content longblob NOT NULL, PRIMARY KEY (id), KEY edate (edate,etype,htype,user_id,repository_id), INDEX (index_path(40)))
+ in following column user_id and in column user_id of table ajxp_user_teams
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_plugin_configs ( id text NOT NULL, configs longblob NOT NULL)
+ in following column id of table ajxp_plugin_configs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights ( rid integer NOT NULL primary key autoincrement, login text NOT NULL, repo_uuid text NOT NULL, rights text NOT NULL)
+ in following column repo_uuid of table ajxp_user_rights
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `ajxp_changes` ( `seq` int(20) NOT NULL AUTO_INCREMENT, `repository_identifier` TEXT NOT NULL, `node_id` bigint(20) NOT NULL, `type` enum('create','delete','path','content') NOT NULL, `source` text NOT NULL, `target` text NOT NULL, PRIMARY KEY (`seq`), KEY `node_id` (`node_id`,`type`))
+ in following column `source` of table `ajxp_changes`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_feed ( id integer NOT NULL primary key autoincrement, edate integer NOT NULL, etype text NOT NULL, htype text NOT NULL, index_path text, user_id text NOT NULL, repository_id text NOT NULL, user_group text, repository_scope text, repository_owner text, content blob NOT NULL, UNIQUE (edate,htype,user_id,repository_id))
+ in following column user_id and in column user_id of table ajxp_user_teams
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_simple_store ( object_id text NOT NULL, store_id text NOT NULL, serialized_data longtext, binary_data blob, related_object_id text DEFAULT NULL, insertion_date DATETIME DEFAULT CURRENT_TIMESTAMP)
+ in following column related_object_id of table ajxp_simple_store
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ajxp_index ( node_id INTEGER PRIMARY KEY AUTOINCREMENT, repository_identifier TEXT, node_path TEXT, bytesize NUMERIC, md5 TEXT, mtime NUMERIC)
+ in following column node_path of table ajxp_index
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS ajxp_groups ( groupPath VARCHAR(255) PRIMARY KEY, groupLabel VARCHAR(255) NOT NULL)
+ in following column groupPath and in column groupPath of table ajxp_repo
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ajxp_user_rights (	rid INTEGER PRIMARY KEY AUTO_INCREMENT,	login VARCHAR(255) NOT NULL,	repo_uuid VARCHAR(33) NOT NULL,	rights MEDIUMTEXT NOT NULL)
+ in following column rights of table ajxp_user_rights

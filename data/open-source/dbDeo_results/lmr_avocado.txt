@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE job_info (unique_id TEXT UNIQUE)
+ in following column unique_id of table job_info

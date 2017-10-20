@@ -1,0 +1,37 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column patient_sex of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE file (directory TEXT NOT NULL REFERENCES directory, name TEXT NOT NULL, mtime INTEGER NOT NULL, storage_instance TEXT DEFAULT NULL REFERENCES storage_instance, PRIMARY KEY (directory, name))
+ in following column directory of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column comments of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column time of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column date of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series (uid TEXT NOT NULL PRIMARY KEY, study TEXT NOT NULL REFERENCES study, number TEXT NOT NULL, description TEXT NOT NULL, rows INTEGER NOT NULL, columns INTEGER NOT NULL, bits_allocated INTEGER NOT NULL, bits_stored INTEGER NOT NULL)
+ in following column number of table series
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE storage_instance (uid TEXT NOT NULL PRIMARY KEY, instance_number INTEGER NOT NULL, series TEXT NOT NULL references series)
+ in following column uid of table storage_instance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE file (directory TEXT NOT NULL REFERENCES directory, name TEXT NOT NULL, mtime INTEGER NOT NULL, storage_instance TEXT DEFAULT NULL REFERENCES storage_instance, PRIMARY KEY (directory, name))
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series (uid TEXT NOT NULL PRIMARY KEY, study TEXT NOT NULL REFERENCES study, number TEXT NOT NULL, description TEXT NOT NULL, rows INTEGER NOT NULL, columns INTEGER NOT NULL, bits_allocated INTEGER NOT NULL, bits_stored INTEGER NOT NULL)
+ in following column study of table series
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series (uid TEXT NOT NULL PRIMARY KEY, study TEXT NOT NULL REFERENCES study, number TEXT NOT NULL, description TEXT NOT NULL, rows INTEGER NOT NULL, columns INTEGER NOT NULL, bits_allocated INTEGER NOT NULL, bits_stored INTEGER NOT NULL)
+ in following column uid of table series
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column patient_birth_date of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column patient_name of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE storage_instance (uid TEXT NOT NULL PRIMARY KEY, instance_number INTEGER NOT NULL, series TEXT NOT NULL references series)
+ in following column series of table storage_instance
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column patient_id of table study
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE study (uid TEXT NOT NULL PRIMARY KEY, date TEXT NOT NULL, time TEXT NOT NULL, comments TEXT NOT NULL, patient_name TEXT NOT NULL, patient_id TEXT NOT NULL, patient_birth_date TEXT NOT NULL, patient_sex TEXT NOT NULL)
+ in following column uid of table study
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE file (directory TEXT NOT NULL REFERENCES directory, name TEXT NOT NULL, mtime INTEGER NOT NULL, storage_instance TEXT DEFAULT NULL REFERENCES storage_instance, PRIMARY KEY (directory, name))
+ in following column storage_instance of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE series (uid TEXT NOT NULL PRIMARY KEY, study TEXT NOT NULL REFERENCES study, number TEXT NOT NULL, description TEXT NOT NULL, rows INTEGER NOT NULL, columns INTEGER NOT NULL, bits_allocated INTEGER NOT NULL, bits_stored INTEGER NOT NULL)
+ in following column description of table series
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE directory (path TEXT NOT NULL PRIMARY KEY, mtime INTEGER NOT NULL)
+ in following column path of table directory

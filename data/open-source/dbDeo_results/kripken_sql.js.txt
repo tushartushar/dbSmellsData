@@ -1,0 +1,123 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE \"%w\".\"%w_node\"(nodeno INTEGER PRIMARY KEY, data BLOB)
+ in following column data and in column data of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 and in column c2 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x2 of table calibration
+Detected: Clone Tables Found in following statement: CREATE TABLE test (id int primary key, content varchar)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x1 of table calibration
+Detected: Clone Tables Found in following statement: CREATE TABLE x(a, b, c, d, PRIMARY KEY(a, c))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE x(input, token, start, end, position)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 of table rbu_imposter2
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a, b, c, d, e)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x7 of table calibration
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+ in following column x and in column x of table networklocation
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (num, str, hex)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (data TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'c'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x0 of table calibration
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x3 of table calibration
+Detected: Clone Tables Found in following statement: CREATE TABLE x(")
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test3 (data)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_count(tbl TEXT PRIMARY KEY, cnt INTEGER)
+ in following column tbl of table rbu_count
+Detected: Clone Tables Found in following statement: CREATE TABLE test (col1, col2)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (str_data, data)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x4 of table calibration
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (int1, int2)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x8 of table calibration
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a,b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (data)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (a INTEGER PRIMARY KEY, b, c, d, e)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b of table data_t1
+Detected: God Table Found in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a and in column a of table data_t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'x']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c1 and in column c1 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE building (id integer, description varchar, latorigin integer, lonorigin integer, name varchar not null, rotation float, primary key (id))
+ in following column rotation of table building
+Detected: Index Shotgun Variant: 3 Following index not used : ['xyz', "'d'"]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE x(term, col, documents, occurrences, languageid HIDDEN)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b and in column b of table hello
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a INTEGER PRIMARY KEY, b TEXT, c UNIQUE)
+ in following column b of table t1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE measurementsessionmetadata (id integer PRIMARY KEY, name varchar, value varchar, session_id integer CONSTRAINT fk_session REFERENCES measurementsession(id), unique(session_id, name))
+ in following column value and in column value of table %
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x6 of table calibration
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (data TEXT)
+ in following column data of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column b of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a, b TEXT, c REAL, PRIMARY KEY(b, c))
+ in following column c of table t1
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'Y']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE networklocation (id integer, x integer not null, y integer not null, network_id integer REFERENCES network(id), floor_id REFERENCES floor(id), primary key (id))
+ in following column id and in column id of table test
+Detected: Clone Tables Found in following statement: CREATE TABLE test (this,wont,work)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data_t1(a INTEGER, b TEXT, c, rbu_control)
+ in following column b and in column b of table t1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+ in following column x5 of table calibration
+Detected: Clone Tables Found in following statement: CREATE TABLE x(%s %Q HIDDEN, docid HIDDEN, %Q HIDDEN)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rbu_imposter2(c1 TEXT, c2 REAL, id INTEGER)
+ in following column c2 of table rbu_imposter2
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE calibration (id integer, x0 float not null, x1 float not null, x2 float not null, x3 float not null, x4 float not null, x5 float not null, x6 float not null, x7 float not null, x8 float not null, device_id integer, lambda double, from_device_id integer REFERENCES device(id), expected_error double, primary key (id))
+

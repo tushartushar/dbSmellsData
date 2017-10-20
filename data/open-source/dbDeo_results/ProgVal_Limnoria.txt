@@ -1,0 +1,43 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE triggers ( id INTEGER PRIMARY KEY, regexp TEXT UNIQUE ON CONFLICT REPLACE, added_by TEXT, added_at TIMESTAMP, usage_count INTEGER, action TEXT, locked BOOLEAN )
+ in following column regexp of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE triggers ( id INTEGER PRIMARY KEY, regexp TEXT UNIQUE ON CONFLICT REPLACE, added_by TEXT, added_at TIMESTAMP, usage_count INTEGER, action TEXT, locked BOOLEAN )
+ in following column added_by of table (
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT id FROM triggers WHERE regexp=?
+
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE aliases ( id INTEGER NOT NULL, name VARCHAR NOT NULL, alias VARCHAR NOT NULL, locked BOOLEAN NOT NULL, locked_by VARCHAR, locked_at DATETIME, PRIMARY KEY (id), UNIQUE (name))
+ in following column locked_by and in column locked_by of table factoids
+Detected: God Table Found in following statement: CREATE TABLE factoids ( key TEXT PRIMARY KEY, created_by INTEGER, created_at TIMESTAMP, modified_by INTEGER, modified_at TIMESTAMP, locked_at TIMESTAMP, locked_by INTEGER, last_requested_by TEXT, last_requested_at TIMESTAMP, fact TEXT, requested_count INTEGER )
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE aliases ( id INTEGER NOT NULL, name VARCHAR NOT NULL, alias VARCHAR NOT NULL, locked BOOLEAN NOT NULL, locked_by VARCHAR, locked_at DATETIME, PRIMARY KEY (id), UNIQUE (name))
+ in following column locked_at and in column locked_at of table factoids
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE nick_seen (	 name TEXT UNIQUE ON CONFLICT REPLACE,	 last_seen TIMESTAMP,	 last_msg TEXT	 )
+ in following column name and in column name of table aliases
+Detected: Compound Attribute Variant: 1 Found in following statement: SELECT id, usage_count, locked FROM triggers WHERE regexp=?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE karma ( id INTEGER PRIMARY KEY, name TEXT, normalized TEXT UNIQUE ON CONFLICT IGNORE, added INTEGER, subtracted INTEGER )
+ in following column name of table karma
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nick_seen (	 name TEXT UNIQUE ON CONFLICT REPLACE,	 last_seen TIMESTAMP,	 last_msg TEXT	 )
+ in following column last_msg of table nick_seen
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE factoids ( id INTEGER PRIMARY KEY, added_by TEXT, added_at TIMESTAMP, fact TEXT UNIQUE ON CONFLICT REPLACE, locked BOOLEAN )
+ in following column added_by of table factoids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quotegrabs ( id INTEGER PRIMARY KEY, nick BLOB, hostmask TEXT, added_by TEXT, added_at TIMESTAMP, quote TEXT )
+ in following column quote of table quotegrabs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE triggers ( id INTEGER PRIMARY KEY, regexp TEXT UNIQUE ON CONFLICT REPLACE, added_by TEXT, added_at TIMESTAMP, usage_count INTEGER, action TEXT, locked BOOLEAN )
+ in following column action of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quotegrabs ( id INTEGER PRIMARY KEY, nick BLOB, hostmask TEXT, added_by TEXT, added_at TIMESTAMP, quote TEXT )
+ in following column hostmask of table quotegrabs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE karma ( id INTEGER PRIMARY KEY, name TEXT, normalized TEXT UNIQUE ON CONFLICT IGNORE, added INTEGER, subtracted INTEGER )
+ in following column normalized of table karma
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE factoids SET last_requested_by = ?, last_requested_at = ?, requested_count = requested_count + 1 WHERE key = ?
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quotegrabs ( id INTEGER PRIMARY KEY, nick BLOB, hostmask TEXT, added_by TEXT, added_at TIMESTAMP, quote TEXT )
+ in following column added_by of table quotegrabs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE factoids ( key TEXT PRIMARY KEY, created_by INTEGER, created_at TIMESTAMP, modified_by INTEGER, modified_at TIMESTAMP, locked_at TIMESTAMP, locked_by INTEGER, last_requested_by TEXT, last_requested_at TIMESTAMP, fact TEXT, requested_count INTEGER )
+ in following column fact of table factoids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE factoids ( key TEXT PRIMARY KEY, created_by INTEGER, created_at TIMESTAMP, modified_by INTEGER, modified_at TIMESTAMP, locked_at TIMESTAMP, locked_by INTEGER, last_requested_by TEXT, last_requested_at TIMESTAMP, fact TEXT, requested_count INTEGER )
+ in following column last_requested_by of table factoids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE factoids ( id INTEGER PRIMARY KEY, added_by TEXT, added_at TIMESTAMP, fact TEXT UNIQUE ON CONFLICT REPLACE, locked BOOLEAN )
+ in following column fact of table factoids
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nick_seen (	 name TEXT UNIQUE ON CONFLICT REPLACE,	 last_seen TIMESTAMP,	 last_msg TEXT	 )
+ in following column name of table nick_seen

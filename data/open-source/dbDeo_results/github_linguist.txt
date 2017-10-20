@@ -1,0 +1,27 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `challenges` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) DEFAULT NULL, `pkg_name` varchar(255) NOT NULL, `description` text, `author` varchar(255) NOT NULL, `category` varchar(255) NOT NULL, `date_posted` datetime NOT NULL, `visibility` varchar(255) DEFAULT 'private', `publish` int(10) DEFAULT '0', `abstract` varchar(255) DEFAULT NULL, `level` varchar(255) DEFAULT NULL, `duration` int(11) DEFAULT NULL, `goal` varchar(255) DEFAULT NULL, `solution` varchar(255) DEFAULT NULL, `availability` varchar(255) DEFAULT 'private', `default_points` int(11) DEFAULT NULL, `default_duration` int(11) DEFAULT NULL, PRIMARY KEY (`id`))
+ in following column `description` of table `challenges`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `user_has_challenge_token` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` varchar(512) NOT NULL, `challenge_id` varchar(512) NOT NULL, `token` varchar(256) NOT NULL, PRIMARY KEY (`id`))
+ in following column `token` and in column `token` of table `users`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column Referrer of table Logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column Request of table Logs
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS `challenges` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) DEFAULT NULL, `pkg_name` varchar(255) NOT NULL, `description` text, `author` varchar(255) NOT NULL, `category` varchar(255) NOT NULL, `date_posted` datetime NOT NULL, `visibility` varchar(255) DEFAULT 'private', `publish` int(10) DEFAULT '0', `abstract` varchar(255) DEFAULT NULL, `level` varchar(255) DEFAULT NULL, `duration` int(11) DEFAULT NULL, `goal` varchar(255) DEFAULT NULL, `solution` varchar(255) DEFAULT NULL, `availability` varchar(255) DEFAULT 'private', `default_points` int(11) DEFAULT NULL, `default_duration` int(11) DEFAULT NULL, PRIMARY KEY (`id`))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `articles` ( `id` int(11) NOT NULL AUTO_INCREMENT, `title` varchar(255) DEFAULT NULL, `content` longtext, `date_posted` datetime NOT NULL, `created_by` varchar(255) NOT NULL, `last_modified` datetime DEFAULT NULL, `last_modified_by` varchar(255) DEFAULT NULL, `ordering` int(10) DEFAULT '0', `is_published` int(1) DEFAULT '1', PRIMARY KEY (`id`))
+ in following column `content` of table `articles`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column UserId of table Logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column UserAgent of table Logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column UserName of table Logs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column IP of table Logs
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `user_has_challenge_token` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` varchar(512) NOT NULL, `challenge_id` varchar(512) NOT NULL, `token` varchar(256) NOT NULL, PRIMARY KEY (`id`))
+ in following column `challenge_id` and in column `challenge_id` of table `challenge_attempts`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Logs (Id INTEGER PRIMARY KEY, IP TEXT, UserId TEXT, UserName TEXT, Date DATE, Request TEXT, Result TEXT, Size INTEGER, Referrer TEXT, UserAgent TEXT)
+ in following column Result of table Logs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `class_memberships` ( `id` int(11) NOT NULL AUTO_INCREMENT, `user_id` int(11) NOT NULL, `class_id` int(11) NOT NULL, `date_created` datetime NOT NULL, PRIMARY KEY (`user_id`,`class_id`), UNIQUE KEY `id` (`id`))
+ in following column `user_id` and in column `user_id` of table `user_has_challenge_token`

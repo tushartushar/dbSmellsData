@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $this->urlinfo (				object_id BIGINT NOT NULL ,				url_date DATE NULL ,				title text NULL ,				description text NULL ,				author_name text NULL ,				author_url text NULL ,				image_url text NULL ,				PRIMARY KEY (object_id)			)
+ in following column image_url of table $this
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $this->urlinfo (				object_id BIGINT NOT NULL ,				url_date DATE NULL ,				title text NULL ,				description text NULL ,				author_name text NULL ,				author_url text NULL ,				image_url text NULL ,				PRIMARY KEY (object_id)			)
+ in following column author_name of table $this
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $this->urlinfo (				object_id BIGINT NOT NULL ,				url_date DATE NULL ,				title text NULL ,				description text NULL ,				author_name text NULL ,				author_url text NULL ,				image_url text NULL ,				PRIMARY KEY (object_id)			)
+ in following column title of table $this
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $this->urlinfo (				object_id BIGINT NOT NULL ,				url_date DATE NULL ,				title text NULL ,				description text NULL ,				author_name text NULL ,				author_url text NULL ,				image_url text NULL ,				PRIMARY KEY (object_id)			)
+ in following column author_url of table $this
+Detected: Metadata as Data Found in following statement: CREATE TABLE $this->terms (				term_id bigint(20) NOT NULL auto_increment,				name varchar(255) NOT NULL default '',				status varchar(40) NOT NULL,				PRIMARY KEY (term_id),				UNIQUE KEY name_uniq (name),				KEY name (name(8)),				KEY status (status(1))			)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE $this->urlinfo (				object_id BIGINT NOT NULL ,				url_date DATE NULL ,				title text NULL ,				description text NULL ,				author_name text NULL ,				author_url text NULL ,				image_url text NULL ,				PRIMARY KEY (object_id)			)
+ in following column description of table $this

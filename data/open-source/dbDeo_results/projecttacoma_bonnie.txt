@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE payload (name text, value blob)
+ in following column name of table payload
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payload (name text, value blob)
+ in following column name and in column name of table cities

@@ -1,0 +1,13 @@
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS Orders ( id bigint(20) NOT NULL AUTO_INCREMENT, user_id bigint(20) NOT NULL, transactionId VARCHAR(255) NULL, deliveryAddress_id bigint(20) NULL, billingAddress_id bigint(20) NULL, status varchar(30) NOT NULL, creationDate datetime NOT NULL, updateDate datetime NULL, paymentDate datetime NULL, deliveryDate datetime NULL, parcelTrackingKey VARCHAR(50) NULL, price double NULL, PRIMARY KEY (id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS Presentation_Feature ( presentationId bigint(20) NOT NULL, name varchar(255) NOT NULL, value varchar(255) NULL, PRIMARY KEY (presentationId,name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS MailTemplate ( id bigint(20) NOT NULL AUTO_INCREMENT, name varchar(100) NOT NULL, locale varchar(25) NULL, content TEXT NOT NULL, subject varchar (255) NOT NULL, creationDate datetime NOT NULL, updateDate datetime NULL, PRIMARY KEY (id), UNIQUE KEY UK_MailTemplate_name (name,locale))
+ in following column content of table MailTemplate
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS SKU ( id bigint(20) NOT NULL AUTO_INCREMENT, description varchar(255) NULL, disabled bit(1) NULL, endDate datetime NULL, name varchar(50) NOT NULL, startDate datetime NULL, currency varchar(3) NULL, price double NULL, quantity int(11) NULL, reference varchar(50) NULL, threshold int(11) NULL, PRIMARY KEY (id))
+
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS Discount ( id bigint(20) NOT NULL AUTO_INCREMENT, description varchar(255) NULL, disabled bit(1) NULL, endDate datetime NULL, name varchar(50) NOT NULL, startDate datetime NULL, discountValue double NULL, triggerValue double NULL, triggerRule varchar(50) NULL, type varchar(50) NULL, applicableTo varchar(10) NOT NULL , uniqueUse bit(1) NULL, usesPerCustomer int(11) NULL, voucherCode varchar(100) NULL, PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 1
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS Presentation ( id bigint(20) NOT NULL AUTO_INCREMENT, displayName varchar(255) NULL, promotion varchar(255) NULL, features tinyblob, locale varchar(25) NOT NULL, shortDescription varchar(1000) NULL, mediumDescription varchar(2000) NULL, longDescription varchar(5000) NULL, largeImage_id bigint(20) NULL, smallImage_id bigint(20) NULL, thumbnail_id bigint(20) NULL, video_id bigint(20) NULL, PRIMARY KEY (id))
+

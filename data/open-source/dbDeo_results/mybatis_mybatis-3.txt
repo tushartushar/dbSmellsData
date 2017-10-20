@@ -1,0 +1,146 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into groups values(1, 'Pocoyo', 'User1,User2,User3')
+
+Detected: Duplicate Column Names Found in following statement: create table table1 ( id int, a varchar(20), col_a varchar(20), col_b varchar(20), col_c varchar(20))
+ in following column col_a and in column col_a of table key_cols
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE FOO(field1 integer,field2 integer,field3 integer,field4 integer)
+
+Detected: Obsolete Column TypesFound in following statement: create table ibtest.numerics ( id int, tinynumber tinyint, smallnumber smallint, longinteger bigint, biginteger bigint, numericnumber numeric(10,2), decimalnumber decimal(10,2), realnumber real, floatnumber float, doublenumber double)
+ in following column floatnumber of table ibtest
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into groups values(2, 'Valentina', 'User1,User2,User3')
+
+Detected: Multicolumn Attribute Found in following statement: create table SomeTable ( id int, field1 varchar(20), field2 varchar(20), field3 varchar(20))
+
+Detected: Multicolumn Attribute Found in following statement: create table supplier (suppid int not null,name varchar(80) null,status varchar(2) not null,addr1 varchar(80) null,addr2 varchar(80) null,city varchar(80) null,state varchar(80) null,zip varchar(5) null,phone varchar(80) null,constraint pk_supplier primary key (suppid))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20))
+
+Detected: Duplicate Column Names Found in following statement: create table account (userid varchar(80) not null,email varchar(80) not null,firstname varchar(80) not null,lastname varchar(80) not null,status varchar(2) null,addr1 varchar(80) not null,addr2 varchar(40) null,city varchar(80) not null,state varchar(80) not null,zip varchar(20) not null,country varchar(20) not null,phone varchar(80) not null,constraint pk_account primary key (userid))
+ in following column state and in column state of table users
+Detected: Duplicate Column Names Found in following statement: create table table1 ( id int, a varchar(20), col_a varchar(20), col_b varchar(20), col_c varchar(20))
+ in following column col_b and in column col_b of table key_cols
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE FOO(field1 integer,field2 integer,field3 integer,field4 integer)
+ in following column field1 and in column field1 of table SomeTable
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mbtest.order_detail ( order_id integer NOT NULL, line_number integer NOT NULL, quantity integer NOT NULL, item_description character varying(50) NOT NULL, CONSTRAINT order_detail_pkey PRIMARY KEY (order_id, line_number) )
+ in following column quantity and in column quantity of table lineitem
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE BLAH(ID INTEGER)
+ in following column ID and in column ID of table (
+Detected: Clone Tables Found in following statement: create table users ( id varchar(36), name varchar(20))
+
+Detected: Metadata as Data Found in following statement: create table ibtest.names (id int,firstName varchar(20),lastName varchar(20))
+
+Detected: Clone Tables Found in following statement: create table users ( uid int, name varchar(20))
+
+Detected: Metadata as Data Found in following statement: create table sptest.names ( id integer, first_name varchar(20), last_name varchar(20), primary key(id))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), group_id int, rol_id int)
+
+Detected: Duplicate Column Names Found in following statement: create table child(	id integer, 	value varchar(20))
+ in following column value and in column value of table int_bool
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['blog', 'id']
+Detected: Multicolumn Attribute Found in following statement: create table account (userid varchar(80) not null,email varchar(80) not null,firstname varchar(80) not null,lastname varchar(80) not null,status varchar(2) null,addr1 varchar(80) not null,addr2 varchar(40) null,city varchar(80) not null,state varchar(80) not null,zip varchar(20) not null,country varchar(20) not null,phone varchar(80) not null,constraint pk_account primary key (userid))
+
+Detected: Metadata as Data Found in following statement: create table Parent ( id int, Name varchar(20), SurName varchar(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_blob ( id INT PRIMARY KEY, content BLOB)
+ in following column content and in column content of table test_clob
+Detected: Duplicate Column Names Found in following statement: create table sptest.names ( id integer, first_name varchar(20), last_name varchar(20), primary key(id))
+ in following column last_name and in column last_name of table mbtest
+Detected: Metadata as Data Found in following statement: create table permissions ( resourceName varchar(20), principalName varchar(20), permission varchar(20))
+
+Detected: Metadata as Data Found in following statement: create table parent (id int,col1 varchar(20),col2 varchar(20))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(128))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), unknownObject varchar(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE FOO(field1 integer,field2 integer,field3 integer,field4 integer)
+ in following column field2 and in column field2 of table SomeTable
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20) , dept_id int)
+
+Detected: Clone Tables Found in following statement: create table table1 (id int generated by default as identity (start with 11) not null,name varchar(20))
+
+Detected: Multicolumn Attribute Found in following statement: create table parent (id int,col1 varchar(20),col2 varchar(20))
+
+Detected: Clone Tables Found in following statement: create table table1 ( id int, a varchar(20), col_a varchar(20), col_b varchar(20), col_c varchar(20))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['person', 'id']
+Detected: Clone Tables Found in following statement: create table table2 (id int generated by default as identity (start with 22) not null,name varchar(20),name_fred varchar(25) generated always as (name || '_fred'))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE FOO(field1 integer,field2 integer,field3 integer,field4 integer)
+ in following column field3 and in column field3 of table SomeTable
+Detected: Clone Tables Found in following statement: create table users (id int,name varchar(16))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE order_header ( order_id integer NOT NULL, cust_name varchar(50) NOT NULL, PRIMARY KEY (order_id) )
+ in following column cust_name and in column cust_name of table mbtest
+Detected: God Table Found in following statement: create table account (userid varchar(80) not null,email varchar(80) not null,firstname varchar(80) not null,lastname varchar(80) not null,status varchar(2) null,addr1 varchar(80) not null,addr2 varchar(40) null,city varchar(80) not null,state varchar(80) not null,zip varchar(20) not null,country varchar(20) not null,phone varchar(80) not null,constraint pk_account primary key (userid))
+
+Detected: Duplicate Column Names Found in following statement: create table items ( id int, owner int, name varchar(20))
+ in following column owner and in column owner of table (
+Detected: Multicolumn Attribute Found in following statement: create table orders (orderid int not null,userid varchar(80) not null,orderdate date not null,shipaddr1 varchar(80) not null,shipaddr2 varchar(80) null,shipcity varchar(80) not null,shipstate varchar(80) not null,shipzip varchar(20) not null,shipcountry varchar(20) not null,billaddr1 varchar(80) not null,billaddr2 varchar(80) null,billcity varchar(80) not null,billstate varchar(80) not null,billzip varchar(20) not null,billcountry varchar(20) not null,courier varchar(80) not null,totalprice decimal(10,2) not null,billtofirstname varchar(80) not null,billtolastname varchar(80) not null,shiptofirstname varchar(80) not null,shiptolastname varchar(80) not null,creditcard varchar(80) not null,exprdate varchar(7) not null,cardtype varchar(80) not null,locale varchar(80) not null,constraint pk_orders primary key (orderid))
+
+Detected: Metadata as Data Found in following statement: create table users ( id int, name varchar(20), unknownObject varchar(20))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), funkyNumber decimal(38), roundingMode int)
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), first_attr_1 varchar(3), first_attr_2 varchar(3), second_attr_1 varchar(3), second_attr_2 varchar(3),)
+
+Detected: Metadata as Data Found in following statement: create table phone (id int,phone varchar(32),area_code varchar(2))
+
+Detected: Metadata as Data Found in following statement: create table signon (username varchar(25) not null,password varchar(25) not null,constraint pk_signon primary key (username))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), state int)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE country ( Id int IDENTITY, countryname varchar(255) DEFAULT NULL, countrycode varchar(255) DEFAULT NULL,)
+
+Detected: God Table Found in following statement: create table item (itemid varchar(10) not null,productid varchar(10) not null,listprice decimal(10,2) null,unitcost decimal(10,2) null,supplier int null,status varchar(2) null,attr1 varchar(80) null,attr2 varchar(80) null,attr3 varchar(80) null,attr4 varchar(80) null,attr5 varchar(80) null,constraint pk_item primary key (itemid),constraint fk_item_1 foreign key (productid)references product (productid),constraint fk_item_2 foreign key (supplier)references supplier (suppid))
+
+Detected: Duplicate Column Names Found in following statement: create table zip (state varchar(32),city varchar(32),zip_code int)
+ in following column zip_code and in column zip_code of table t_account_address
+Detected: Multicolumn Attribute Found in following statement: create table users ( id int identity, name varchar(20), fld1 int, fld2 int)
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), city varchar(20), state char(20))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['product', 'category']
+Detected: Obsolete Column TypesFound in following statement: create table ibtest.numerics ( id int, tinynumber tinyint, smallnumber smallint, longinteger bigint, biginteger bigint, numericnumber numeric(10,2), decimalnumber decimal(10,2), realnumber real, floatnumber float, doublenumber double)
+ in following column realnumber of table ibtest
+Detected: Metadata as Data Found in following statement: CREATE TABLE person ( id int, firstName varchar(100), lastName varchar(100))
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), group_id int, state varchar(20))
+
+Detected: Multicolumn Attribute Found in following statement: create table item (itemid varchar(10) not null,productid varchar(10) not null,listprice decimal(10,2) null,unitcost decimal(10,2) null,supplier int null,status varchar(2) null,attr1 varchar(80) null,attr2 varchar(80) null,attr3 varchar(80) null,attr4 varchar(80) null,attr5 varchar(80) null,constraint pk_item primary key (itemid),constraint fk_item_1 foreign key (productid)references product (productid),constraint fk_item_2 foreign key (supplier)references supplier (suppid))
+
+Detected: God Table Found in following statement: create table orders (orderid int not null,userid varchar(80) not null,orderdate date not null,shipaddr1 varchar(80) not null,shipaddr2 varchar(80) null,shipcity varchar(80) not null,shipstate varchar(80) not null,shipzip varchar(20) not null,shipcountry varchar(20) not null,billaddr1 varchar(80) not null,billaddr2 varchar(80) null,billcity varchar(80) not null,billstate varchar(80) not null,billzip varchar(20) not null,billcountry varchar(20) not null,courier varchar(80) not null,totalprice decimal(10,2) not null,billtofirstname varchar(80) not null,billtolastname varchar(80) not null,shiptofirstname varchar(80) not null,shiptolastname varchar(80) not null,creditcard varchar(80) not null,exprdate varchar(7) not null,cardtype varchar(80) not null,locale varchar(80) not null,constraint pk_orders primary key (orderid))
+
+Detected: Duplicate Column Names Found in following statement: create table person ( id int, firstName varchar(100), lastName varchar(100), jobTitle varchar(100), department varchar(100), personType varchar(100) DEFAULT NULL, employeeType varchar(100) DEFAULT NULL)
+ in following column id and in column id of table child
+Detected: Clone Tables Found in following statement: create table users ( id int identity, name varchar(20), fld1 int, fld2 int)
+
+Detected: Metadata as Data Found in following statement: create table bannerdata (favcategory varchar(80) not null,bannername varchar(255) null,constraint pk_bannerdata primary key (favcategory))
+
+Detected: Multicolumn Attribute Found in following statement: create table users ( id int, name varchar(20), first_attr_1 varchar(3), first_attr_2 varchar(3), second_attr_1 varchar(3), second_attr_2 varchar(3),)
+
+Detected: Clone Tables Found in following statement: create table users ( id int, name varchar(20), owner_id int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mbtest.order_detail ( order_id integer NOT NULL, line_number integer NOT NULL, quantity integer NOT NULL, item_description character varying(50) NOT NULL, CONSTRAINT order_detail_pkey PRIMARY KEY (order_id, line_number) )
+ in following column . and in column . of table ibtest
+Detected: Duplicate Column Names Found in following statement: create table users ( id int, name varchar(20), funkyNumber decimal(38), roundingMode int)
+ in following column roundingMode and in column roundingMode of table users2
+Detected: Metadata as Data Found in following statement: create table zip (state varchar(32),city varchar(32),zip_code int)
+
+Detected: Metadata as Data Found in following statement: create table table2 (id int generated by default as identity (start with 22) not null,name varchar(20),name_fred varchar(25) generated always as (name || '_fred'))
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE FOO (F_FIELD1 BIGINT NOT NULL,F_FIELD2_FIELD1 BIGINT,F_FIELD2_FIELD2 BIGINT,F_FIELD2_FIELD3 BIGINT,F_FIELD3 BOOLEAN NOT NULL)
+
+Detected: Clone Tables Found in following statement: create table table3 (id int not null,name varchar(20))
+
+Detected: Metadata as Data Found in following statement: create table person(	id int,	firstname varchar(20),	lastname varchar(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mbtest.order_detail ( order_id integer NOT NULL, line_number integer NOT NULL, quantity integer NOT NULL, item_description character varying(50) NOT NULL, CONSTRAINT order_detail_pkey PRIMARY KEY (order_id, line_number) )
+ in following column item_description and in column item_description of table order_detail
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE address( id int NOT NULL, CONSTRAINT pk_address PRIMARY KEY (id),)
+ in following column CONSTRAINT and in column CONSTRAINT of table mbtest
+Detected: Multicolumn Attribute Found in following statement: create table address (id int,state varchar(32),city varchar(32),phone1_id int,phone2_id int,addr_type int,caution varchar(64))
+
+Detected: Metadata as Data Found in following statement: create table person ( id int, firstName varchar(100), lastName varchar(100))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['item', 'productid']

@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: create table SALE ( id_sale INT, id_people INT, value DECIMAL(7,2), paid INT, sale_at DATE)
+ in following column id_people and in column id_people of table PEOPLE
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,5 @@
+CREATE TABLE Proteins (	 ID INT,	 ProteinGroupID INT,	 Probability REAL,	 Name TEXT,	 Description TEXT,	 Coverage REAL,	 NumPeptides INT,	 Indistinguishables TEXT,	 Sequence TEXT	 )
+CREATE TABLE Spectra (			ID INTEGER PRIMARY KEY,			MZData TEXT,			IntensityData TEXT,			PrecursorMass REAL,			PrecursorCharge INT,			SpectrumType INT,			SpectrumTitle TEXT		)
+CREATE TABLE ProteinGroups (	 ID INT, 	 Probability REAL	 )
+CREATE TABLE Peptides (	 ID INT,	 ProteinID INT,	 Probability REAL,	 Sequence TEXT,	 Start INT,	 End INT,	 ModifiedSequence TEXT	 )
+CREATE TABLE PeptideSpectrumMatches (	 PeptideSequence TEXT,	 PeptideModifiedSequence TEXT,	 SpectrumID INT,	 ScanNum INT,	 RetentionTime REAL,	 PrecursorNeutralMass REAL,	 MassDeviation REAL,	 PrevAA TEXT,	 NextAA TEXT	 )

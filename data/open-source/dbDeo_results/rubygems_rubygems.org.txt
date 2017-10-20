@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['rubygems', 'upper']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rubygems', 'varchar_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['rubygems', 'name']

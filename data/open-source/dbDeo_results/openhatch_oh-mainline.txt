@@ -1,0 +1,43 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE paste (paste_id integer, code text, parsed_code text, pub_datevarchar(24), language varchar(64), parent_id integer, url varchar(128))
+ in following column parsed_code of table paste
+Detected: Obsolete Column TypesFound in following statement: create table items (item text primary key)
+ in following column item of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( article_id SERIAL, message_id TEXT, header TEXT, body TEXT )
+ in following column body of table articles
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE testrooms( roomId int PRIMARY KEY, town_id int, name varchar(64), owner varchar(64), posx int, posy int, width int, height int)
+ in following column name and in column name of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( article_id SERIAL, message_id TEXT, header TEXT, body TEXT )
+ in following column header of table articles
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE groups ( group_id SERIAL, name VARCHAR(80) NOT NULL, flags INTEGER DEFAULT 0 NOT NULL )
+ in following column group_id and in column group_id of table postings
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE django_ixn_real_test_table (number REAL)
+ in following column number of table django_ixn_real_test_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column value of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column host of table moz_cookies
+Detected: Duplicate Column Names Found in following statement: create table asdf (foo serial primary key)
+ in following column foo and in column foo of table childTable
+Detected: Index Shotgun Variant: 3 Following index not used : ['postings', 'docnum']
+Detected: Index Shotgun Variant: 3 Following index not used : ['postings', 'token']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %(associations)s ( server_url VARCHAR(2047) NOT NULL, handle VARCHAR(255) NOT NULL, secret BYTEA NOT NULL, issued INTEGER NOT NULL, lifetime INTEGER NOT NULL, assoc_type VARCHAR(64) NOT NULL, PRIMARY KEY (server_url, handle), CONSTRAINT secret_length_constraint CHECK (LENGTH(secret) <= 128) )
+ in following column server_url and in column server_url of table %(nonces)s
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE vars (key varchar(24), value varchar(128))
+ in following column value and in column value of table %s
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %(nonces)s ( server_url VARCHAR(2047) NOT NULL, timestamp INTEGER NOT NULL, salt CHAR(40) NOT NULL, PRIMARY KEY (server_url, timestamp, salt) )
+ in following column server_url and in column server_url of table %(associations)s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE my_table (first integer not null default 0,second text)
+ in following column second of table my_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE overview ( header TEXT )
+ in following column header of table overview
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE articles ( article_id SERIAL, message_id TEXT, header TEXT, body TEXT )
+ in following column article_id and in column article_id of table postings
+Detected: Index Shotgun Variant: 3 Following index not used : ['tastypie_apikey', '`key`']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column name of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE paste (paste_id integer, code text, parsed_code text, pub_datevarchar(24), language varchar(64), parent_id integer, url varchar(128))
+ in following column code of table paste
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE articles ( article_id SERIAL, message_id TEXT, header TEXT, body TEXT )
+ in following column message_id of table articles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column path of table moz_cookies

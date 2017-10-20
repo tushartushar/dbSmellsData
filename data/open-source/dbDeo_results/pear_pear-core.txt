@@ -1,0 +1,15 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE two(c VARCHAR(5), d FLOAT)
+ in following column d of table two
+Detected: Duplicate Column Names Found in following statement: create table foo (a INTEGER PRIMARY KEY, b INTEGER )
+ in following column b and in column b of table one
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE one(a INTEGER, b TEXT)
+ in following column b of table one
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']

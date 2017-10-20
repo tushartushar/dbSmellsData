@@ -1,0 +1,22 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS SmileyCount ( id INTEGER PRIMARY KEY AUTOINCREMENT, speaker TEXT NOT NULL, smiley INTEGER NOT NULL, count INTEGER NOT NULL DEFAULT 0, FOREIGN KEY(smiley) REFERENCES Smilies(id), UNIQUE (speaker, smiley) ON CONFLICT IGNORE )
+ in following column speaker of table SmileyCount
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS flood ( id INTEGER PRIMARY KEY AUTOINCREMENT, player TEXT NOT NULL, threatIndex INTEGER NOT NULL, time TEXT NOT NULL )
+ in following column player of table flood
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS timeout ( id INTEGER PRIMARY KEY, player TEXT UNIQUE ON CONFLICT IGNORE, dateadded TEXT )
+ in following column dateadded of table timeout
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS timeout ( id INTEGER PRIMARY KEY, player TEXT UNIQUE ON CONFLICT IGNORE, dateadded TEXT )
+ in following column player of table timeout
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS karma ( id INTEGER PRIMARY KEY, item TEXT, itemNormalized TEXT UNIQUE ON CONFLICT IGNORE, added INTEGER, subtracted INTEGER )
+ in following column itemNormalized of table karma
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS karma ( id INTEGER PRIMARY KEY, item TEXT, itemNormalized TEXT UNIQUE ON CONFLICT IGNORE, added INTEGER, subtracted INTEGER )
+ in following column item of table karma
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, player TEXT, target TEXT, change INTEGER, changetime TEXT )
+ in following column player of table history
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['Smilies', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, player TEXT, target TEXT, change INTEGER, changetime TEXT )
+ in following column target of table history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS flood ( id INTEGER PRIMARY KEY AUTOINCREMENT, player TEXT NOT NULL, threatIndex INTEGER NOT NULL, time TEXT NOT NULL )
+ in following column time of table flood
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history ( id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, player TEXT, target TEXT, change INTEGER, changetime TEXT )
+ in following column changetime of table history

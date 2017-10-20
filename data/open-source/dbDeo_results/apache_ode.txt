@@ -1,0 +1,81 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_PLINK_VAL', 'MODELID']
+Detected: God Table Found in following statement: create table BPEL_ACTIVITY_RECOVERY (ID bigint not null auto_increment, PIID bigint, AID bigint, CHANNEL varchar(255), REASON varchar(255), DATE_TIME timestamp, DETAILS blob(2G), ACTIONS varchar(255), RETRIES integer, INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_PROCESS', 'type_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SELECTORS', 'CORRELATION_KEY']
+Detected: Duplicate Column Names Found in following statement: create table STORE_VERSIONS (ID integer not null, VERSION bigint, primary key (ID))
+ in following column ID and in column ID of table BPEL_CORRELATOR_MESSAGE_CKEY
+Detected: God Table Found in following statement: create table BPEL_MESSAGE_EXCHANGE (ID bigint not null auto_increment, PORT_TYPE varchar(255), CHANNEL_NAME varchar(255), CLIENTKEY varchar(255), ENDPOINT blob(2G), CALLBACK_ENDPOINT blob(2G), REQUEST bigint, RESPONSE bigint, INSERT_DT timestamp, OPERATION varchar(255), STATE varchar(255), PROCESS bigint, PIID bigint, DIR char(255), PLINK_MODELID integer, PATTERN varchar(255), CORR_STATUS varchar(255), FAULT_TYPE varchar(255), FAULT_EXPL varchar(255), CALLEE varchar(255), PARTNERLINK bigint, PIPED_ID varchar(255), SUBSCRIBER_COUNT integer, INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ode_job', 'nodeid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_PLINK_VAL', 'PROCESS']
+Detected: Metadata as Data Found in following statement: create table BPEL_MEX_PROPS (MEX bigint not null, VALUE varchar(8000), NAME varchar(255) not null, primary key (MEX, NAME))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SELECTORS', 'CORRELATOR']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+ in following column nodeid and in column nodeid of table ode_job
+Detected: God Table Found in following statement: create table BPEL_INSTANCE (ID bigint not null auto_increment, INSTANTIATING_CORRELATOR bigint, FAULT bigint, JACOB_STATE_DATA blob(2G), PREVIOUS_STATE smallint, PROCESS_ID bigint, STATE smallint, LAST_ACTIVE_DT timestamp, SEQUENCE bigint, FAILURE_COUNT integer, FAILURE_DT timestamp, INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_INSTANCE', 'PROCESS_ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_MESSAGE', 'MEX']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+ in following column instanceId and in column instanceId of table ode_job
+Detected: Duplicate Column Names Found in following statement: create table BPEL_MESSAGE_EXCHANGE (ID bigint not null auto_increment, PORT_TYPE varchar(255), CHANNEL_NAME varchar(255), CLIENTKEY varchar(255), ENDPOINT blob(2G), CALLBACK_ENDPOINT blob(2G), REQUEST bigint, RESPONSE bigint, INSERT_DT timestamp, OPERATION varchar(255), STATE varchar(255), PROCESS bigint, PIID bigint, DIR char(255), PLINK_MODELID integer, PATTERN varchar(255), CORR_STATUS varchar(255), FAULT_TYPE varchar(255), FAULT_EXPL varchar(255), CALLEE varchar(255), PARTNERLINK bigint, PIPED_ID varchar(255), SUBSCRIBER_COUNT integer, INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+ in following column DIR and in column DIR of table STORE_DU
+Detected: Index Shotgun Variant: 3 Following index not used : ['VAR_PROPERTY', 'PROP_VALUE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ode_job', 'ts']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_PROCESS', 'type_ns']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SCOPE', 'PIID']
+Detected: God Table Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+
+Detected: God Table Found in following statement: create table BPEL_PROCESS (ID bigint not null auto_increment, PROCID varchar(255) not null unique, deployer varchar(255), deploydate timestamp, type_name varchar(255), type_ns varchar(255), version bigint, ACTIVE_ bit, guid varchar(255), INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_UNMATCHED', 'CORRELATION_KEY']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SELECTORS', 'PIID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_UNMATCHED', 'CORRELATOR']
+Detected: God Table Found in following statement: CREATE TABLE ode_job ( jobid varchar(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL, nodeid varchar(64), scheduled int NOT NULL, transacted int NOT NULL, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+
+Detected: God Table Found in following statement: create table BPEL_PLINK_VAL (ID bigint not null auto_increment, PARTNER_LINK varchar(100) not null, PARTNERROLE varchar(100), MYROLE_EPR_DATA blob(2G), PARTNERROLE_EPR_DATA blob(2G), PROCESS bigint, SCOPE bigint, SVCNAME varchar(255), MYROLE varchar(100), MODELID integer, MYSESSIONID varchar(255), PARTNERSESSIONID varchar(255), INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+
+Detected: God Table Found in following statement: CREATE TABLE ode_job ( jobid varchar(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid varchar(64), scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SELECTORS', 'SELGRPID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_CORRELATOR', 'CID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_MESSAGE_EXCHANGE', 'PIID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_EVENT', 'IID']
+Detected: Duplicate Column Names Found in following statement: create table STORE_VERSIONS (ID integer not null, VERSION bigint, primary key (ID))
+ in following column VERSION and in column VERSION of table ODE_SCHEMA_VERSION
+Detected: God Table Found in following statement: CREATE TABLE ode_job ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64), scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt oid, PRIMARY KEY(jobid))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+ in following column jobid and in column jobid of table ode_job
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+ in following column ts and in column ts of table ode_job
+Detected: God Table Found in following statement: CREATE TABLE ode_job ( jobid VARCHAR(64) NOT NULL, ts number(37) NOT NULL, nodeid varchar(64), scheduled int NOT NULL, transacted int NOT NULL, instanceId number(37), mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob, PRIMARY KEY(jobid))
+
+Detected: Duplicate Column Names Found in following statement: create table BPEL_FAULT (ID bigint not null auto_increment, FAULTNAME varchar(255), DATA blob(2G), EXPLANATION varchar(4000), LINE_NUM integer, AID integer, INSERT_TIME timestamp, MLOCK integer not null, primary key (ID))
+ in following column AID and in column AID of table BPEL_ACTIVITY_RECOVERY
+Detected: Metadata as Data Found in following statement: create table STORE_PROCESS_PROP (propId varchar(255) not null, value varchar(255), name varchar(255) not null, primary key (propId, name))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_CORRELATION_SET', 'SCOPE_ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_CORRELATOR_MESSAGE_CKEY', 'CKEY']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_XML_DATA', 'SCOPE_ID']
+Detected: God Table Found in following statement: CREATE TABLE ODE_JOB ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64) NULL, scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid), INDEX IDX_ODE_JOB_TS(ts), INDEX IDX_ODE_JOB_NODEID(nodeid))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ODE_JOB', 'nodeid']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VAR_PROPERTY', 'PROP_NAME']
+Detected: God Table Found in following statement: CREATE TABLE ode_job ( jobid CHAR(64) NOT NULL DEFAULT '', ts BIGINT NOT NULL DEFAULT 0, nodeid char(64), scheduled int NOT NULL DEFAULT 0, transacted int NOT NULL DEFAULT 0, instanceId BIGINT, mexId varchar(255), processId varchar(255), type varchar(255), channel varchar(255), correlatorId varchar(255), correlationKeySet varchar(255), retryCount int, inMem int, detailsExt blob(4096), PRIMARY KEY(jobid))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_SELECTORS', 'PROC_TYPE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_EVENT', 'PID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_UNMATCHED', 'MEX']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_XML_DATA', 'NAME']
+Detected: Duplicate Column Names Found in following statement: create table STORE_PROCESS (PID varchar(255) not null, DU varchar(255), TYPE varchar(255), version bigint, STATE varchar(255), primary key (PID))
+ in following column STATE and in column STATE of table BPEL_INSTANCE
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_CORRELATION_SET', 'CORR_SET_NAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_XML_DATA', 'PIID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['VAR_PROPERTY', 'XML_DATA_ID']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ODE_JOB', 'ts']
+Detected: Index Shotgun Variant: 3 Following index not used : ['BPEL_CORRELATOR', 'PROCESS_ID']
+Detected: Duplicate Column Names Found in following statement: create table STORE_PROCESS (PID varchar(255) not null, DU varchar(255), TYPE varchar(255), version bigint, STATE varchar(255), primary key (PID))
+ in following column PID and in column PID of table BPEL_EVENT

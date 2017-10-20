@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (`col4` text DEFAULT \'123\\\'\'\')')
+ in following column `col4` of table foo
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE song( * songid INTEGER, * songartist TEXT, * songalbum TEXT, * songname TEXT, * FOREIGN KEY(songartist, songalbum) REFERENCES album(albumartist, albumname) * )
+ in following column * of table song
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE song( * songid INTEGER, * songartist TEXT, * songalbum TEXT, * songname TEXT, * FOREIGN KEY(songartist, songalbum) REFERENCES album(albumartist, albumname) * )
+ in following column * and in column * of table track
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo ( id integer primary key autoincrement, name varchar(12), phone varchar(32) unique , address text not null )
+ in following column address of table foo

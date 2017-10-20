@@ -1,0 +1,13 @@
+Detected: Clone Tables Found in following statement: create table prepstmt_test2 (col1 varchar(255), col2 integer)
+
+Detected: Duplicate Column Names Found in following statement: create table prepstmt_test (col1 varchar(255), col2 integer)
+ in following column col1 and in column col1 of table prepstmt_test3
+Detected: Multicolumn Attribute Found in following statement: create table prepstmt_test (col1 varchar(255), col2 integer)
+
+Detected: Clone Tables Found in following statement: create table prepstmt_test3 (col1 timestamp)
+
+Detected: Multicolumn Attribute Found in following statement: create table prepstmt_test2 (col1 varchar(255), col2 integer)
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: create table prepstmt_test (col1 varchar(255), col2 integer)
+

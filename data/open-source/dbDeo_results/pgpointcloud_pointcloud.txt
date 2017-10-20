@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE pc2(p pcpoint)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE pc1(p pcpoint)
+

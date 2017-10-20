@@ -1,0 +1,2 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['articles', 'text_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['articles', 'slug']

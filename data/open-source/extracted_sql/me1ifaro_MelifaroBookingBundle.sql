@@ -1,0 +1,2 @@
+SELECT i FROM Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\BookableItem i LEFT JOIN bookings b WHERE (b.start >= :start AND b.end <= :end) OR (b.start <= :start AND b.end >= :end) OR (b.start <= :start AND b.end >= :end AND b.start <= :end) OR (b.start >= :start AND b.end <= :end AND b.end >= :start)', $dql);
+SELECT i FROM Melifaro\BookingBundle\Tests\Fixtures\ORM\Entity\BookableItem i LEFT JOIN bookings b WHERE b.start >= :date AND b.end <= :date', $dql);

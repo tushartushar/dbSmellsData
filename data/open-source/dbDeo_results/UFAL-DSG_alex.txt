@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (exp text, dataset text, lm text, lm_w int, wer float, ser float)
+ in following column exp of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (exp text, dataset text, lm text, lm_w int, wer float, ser float)
+ in following column lm of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (exp text, dataset text, lm text, lm_w int, wer float, ser float)
+ in following column ser of table results
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (exp text, dataset text, lm text, lm_w int, wer float, ser float)
+ in following column wer of table results
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE results (exp text, dataset text, lm text, lm_w int, wer float, ser float)
+ in following column dataset of table results

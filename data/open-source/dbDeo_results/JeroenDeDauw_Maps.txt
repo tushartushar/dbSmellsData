@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+this.tableName+" (fid TEXT UNIQUE, geometry TEXT, properties TEXT, state TEXT)
+ in following column state of table "+this.tableName+"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+this.tableName+" (fid TEXT UNIQUE, geometry TEXT, properties TEXT, state TEXT)
+ in following column geometry of table "+this.tableName+"
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+this.tableName+" (fid TEXT UNIQUE, geometry TEXT, properties TEXT, state TEXT)
+ in following column fid of table "+this.tableName+"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS "+this.tableName+" (fid TEXT UNIQUE, geometry TEXT, properties TEXT, state TEXT)
+ in following column properties of table "+this.tableName+"

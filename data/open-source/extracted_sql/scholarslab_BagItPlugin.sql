@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS `$db->BagitFileCollection` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT primary key, `name` tinytext COLLATE utf8_unicode_ci NOT NULL, `updated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, INDEX(name(60)) )
+CREATE TABLE IF NOT EXISTS `$db->BagitFileCollectionAssociation` ( `id` int(10) unsigned NOT NULL AUTO_INCREMENT primary key, `file_id` int(10) unsigned NOT NULL, `collection_id` int(10) unsigned NOT NULL )

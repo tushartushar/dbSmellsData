@@ -1,0 +1,15 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE ref_seqs ( ref_id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR UNIQUE, cluster_name VARCHAR)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ref_seqs', 'cluster_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['best_hits', 'ref_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE best_hits ( hit_id INTEGER PRIMARY KEY AUTOINCREMENT, ref_id INTEGER REFERENCES ref_seqs(ref_id) ON DELETE CASCADE, sequence_id INTEGER REFERENCES sequences(sequence_id) ON DELETE CASCADE, hit_idx INT, pct_id FLOAT)
+ in following column sequence_id and in column sequence_id of table sequences_samples
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE best_hits ( hit_id INTEGER PRIMARY KEY AUTOINCREMENT, ref_id INTEGER REFERENCES ref_seqs(ref_id) ON DELETE CASCADE, sequence_id INTEGER REFERENCES sequences(sequence_id) ON DELETE CASCADE, hit_idx INT, pct_id FLOAT)
+ in following column pct_id of table best_hits
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE samples ( sample_id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR UNIQUE)
+ in following column sample_id and in column sample_id of table sequences_samples
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequences_samples', 'sample_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['best_hits', 'sequence_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['sequences_samples', 'sequence_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sequences_samples ( id INTEGER PRIMARY KEY AUTOINCREMENT, sequence_id INT REFERENCES sequences(sequence_id) ON DELETE CASCADE, sample_id INT REFERENCES samples(sample_id) ON DELETE CASCADE, weight FLOAT)
+ in following column weight of table sequences_samples

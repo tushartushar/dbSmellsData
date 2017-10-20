@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column last of table people
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column first and in column first of table users
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column last and in column last of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column first of table people
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE users (user_name VARCHAR, password VARCHAR, email VARCHAR, PRIMARY KEY (user_name))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS people (id TEXT PRIMARY KEY, first TEXT, last TEXT)
+ in following column id of table people
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE events ( id INT, date DATE, comment VARCHAR, PRIMARY KEY (id) )
+ in following column id and in column id of table people

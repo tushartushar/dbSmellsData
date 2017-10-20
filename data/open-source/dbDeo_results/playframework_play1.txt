@@ -1,0 +1,26 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Post ( id bigint(20) NOT NULL AUTO_INCREMENT, title varchar(255) NOT NULL, content text NOT NULL, postedAt date NOT NULL, author_id bigint(20) NOT NULL, FOREIGN KEY (author_id) REFERENCES User(id), PRIMARY KEY (id))
+ in following column content of table Post
+Detected: Clone Tables Found in following statement: CREATE TABLE test3(	name varchar,	quant int,	cost real)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['User', 'id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Post ( id bigint(20) NOT NULL AUTO_INCREMENT, title varchar(255) NOT NULL, content text NOT NULL, postedAt date NOT NULL, author_id bigint(20) NOT NULL, FOREIGN KEY (author_id) REFERENCES User(id), PRIMARY KEY (id))
+ in following column id and in column id of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column host of table moz_cookies
+Detected: Clone Tables Found in following statement: CREATE TABLE test9(name varchar)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column name of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test3(	name varchar,	quant int,	cost real)
+ in following column cost of table test3
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: CREATE TABLE test2(name varchar)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test(name varchar)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test2(name varchar)
+ in following column name and in column name of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column path of table moz_cookies
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS moz_cookies (id INTEGER PRIMARY KEY, name TEXT, value TEXT, host TEXT, path TEXT,expiry INTEGER, lastAccessed INTEGER, isSecure INTEGER, isHttpOnly INTEGER)
+ in following column value of table moz_cookies

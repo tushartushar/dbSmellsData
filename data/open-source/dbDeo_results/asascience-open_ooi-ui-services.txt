@@ -1,0 +1,76 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (697, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (74, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO vocabnames VALUES (1233, 'RS03AXBS-LJ03A-05-HPIESA301', 'Cabled', 'Axial Base', 'Low-Power Jbox', 'Horizontal Electric Field, Pressure and Inverted Echo Sounder')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (57, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (819, 'FLOBN', 'flow_benthic', 'Bottom mounted, uplooking 600m', 'A', NULL, 'Benthic Fluid Flow', 102, 1, 811, 23)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (226, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (23, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (607, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (311, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (500, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (786, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (63, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (50, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (704, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO vocabnames VALUES (1202, 'RS01SLBS-LJ01A-05-HPIESA101', 'Cabled', 'Slope Base ', 'Low-Power Jbox', 'Horizontal Electric Field, Pressure and Inverted Echo Sounder')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (92, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (122, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (420, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (42, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (379, 'MOPAK', 'Motion pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (163, 'PHSEN', 'pH_stable', 'mid-water platform, upward-looking', 'A', NULL, 'Seawater pH', 68, 1, 200, 18)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (647, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO manufacturers VALUES (19, 'TLR, Inc.', '831-236-7121', '', 'http://www.tlrinc.biz/index.html')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (15, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO arrays VALUES (1, 'CE', 'Coastal-Scale Node Surface buoys, profilers, benthic nodes and gliders will provide near real time data from the air-sea interface to the sea floor.', 'Endurance', 'Coastal Endurance', '0103000020E610000001000000050000008FC2F5285C2F4640CDCCCCCCCC3C5FC08FC2F5285C2F4640CDCCCCCCCC3C5FC08FC2F5285C2F4640CDCCCCCCCC3C5FC08FC2F5285C2F4640CDCCCCCCCC3C5FC08FC2F5285C2F4640CDCCCCCCCC3C5FC0')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (331, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (534, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (456, 'MOPAK', 'Motion pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (217, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (319, 'MOPAK', 'Motion pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (126, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (359, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (12, 'WAVSS', 'wave_spectra_surface', 'Buoy Well, center of Mass', 'A', NULL, 'Surface Wave Spectra', 5, 1, 0, 2)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (467, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instrumentnames VALUES (20, 'HPIES', 'Horizontal Electric Field, Pressure and Inverted Echo Sounder')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (682, 'MOPAK', 'Motion Pack', 'Buoy Well, center of Mass', '0', NULL, '3-Axis Motion Pack', 107, 1, 0, 24)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO arrays VALUES (5, 'GI', 'The Global Irminger sensor network, located in the Argentine Basin in the South Atlantic, supports sensors for measurement of air-sea fluxes of heat, moisture and momentum, and physical, biological and chemical properties throughout the water column.', 'Irminger Sea', 'Global Irminger Sea', '0103000020E610000001000000050000007B832F4CA63A4E4071AC8BDB683843C07B832F4CA63A4E4071AC8BDB683843C07B832F4CA63A4E4071AC8BDB683843C07B832F4CA63A4E4071AC8BDB683843C07B832F4CA63A4E4071AC8BDB683843C0')
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO instruments VALUES (171, 'PCO2A', 'pCO2_air-sea', 'Instrument in well, probe in air and one in water', 'A', NULL, 'pCO2 Air-Sea', 29, 1, 0, 12)
+

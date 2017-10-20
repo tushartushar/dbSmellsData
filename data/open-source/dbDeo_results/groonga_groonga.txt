@@ -1,0 +1,25 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING NGRAM (text) )
+ in following column text of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING NO SENNA (text) )
+ in following column FULLTEXT of table test
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING NO SENNA (text) )
+ in following column id and in column id of table table01
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING NO SENNA (text) )
+ in following column text of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE table01 ( id INT UNSIGNED AUTO_INCREMENT NOT NULL, PRIMARY KEY(id), title VARCHAR(255), body TEXT, FULLTEXT(body) )
+ in following column body of table table01
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING SENNA, 2048 (text) )
+ in following column 2048 of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING SENNA, NO NORMALIZE, NGRAM (text) )
+ in following column NGRAM of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING DELIMITED (text) )
+ in following column FULLTEXT of table test
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING SENNA, 2048 (text) )
+ in following column text of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING DELIMITED (text) )
+ in following column text of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING SENNA, NO NORMALIZE, NGRAM (text) )
+ in following column text of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test ( id INTEGER AUTO_INCREMENT, PRIMARY KEY (id), text TEXT NOT NULL, FULLTEXT INDEX USING NGRAM (text) )
+ in following column FULLTEXT of table test

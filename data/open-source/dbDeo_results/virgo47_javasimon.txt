@@ -1,0 +1,7 @@
+Detected: Duplicate Column Names Found in following statement: create table foo (id number(6), dsc varchar2(256))
+ in following column id and in column id of table toDoItem
+Detected: Compound Attribute Variant: 3 Found in following statement: update trn set amount = ?, type = ?  where id = ?
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table	foo(a1 varchar2(30) not null, a2 numeric(12,4))
+

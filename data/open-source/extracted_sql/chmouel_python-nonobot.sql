@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS NONOGERRIT_CHANGES ( REVIEW_ID char(50) not null, UPDATED char(50) not null)
+CREATE TABLE IF NOT EXISTS NONOGERRIT_CONFIG ( PROPERTY char(50) not null, VALUE char(50) not null)
+INSERT INTO nonogerrit_changes VALUES(?, ?)

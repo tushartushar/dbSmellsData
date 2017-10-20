@@ -1,0 +1,2 @@
+Detected: God Table Found in following statement: CREATE TABLE surgeries ( id integer NOT NULL, date date, hospital_id integer, patient_id integer, created_at timestamp without time zone, updated_at timestamp without time zone, category character varying(255), side character varying(255), region character varying(255), surgeon character varying(255), diagnosis character varying(255), procedure character varying(255))
+

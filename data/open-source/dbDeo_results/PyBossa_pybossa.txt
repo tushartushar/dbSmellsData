@@ -1,0 +1,2 @@
+Detected: Compound Attribute Variant: 3 Found in following statement: UPDATE task SET n_answers=:n_answers, state=ongoing  WHERE project_id=:project_id
+

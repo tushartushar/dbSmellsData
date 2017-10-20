@@ -1,0 +1,43 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE templates( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, en_txt TEXT NOT NULL DEFAULT '', fr_txt TEXT NOT NULL DEFAULT '', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column en_txt of table templates
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages( id BIGSERIAL NOT NULL PRIMARY KEY, backend_id INTEGER NOT NULL REFERENCES backends ON DELETE CASCADE ON UPDATE CASCADE, msg_out TEXT NOT NULL DEFAULT '', msg_in TEXT NOT NULL DEFAULT '', destination TEXT NOT NULL DEFAULT '', status_out TEXT NOT NULL, cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP, ldate TIMESTAMPTZ)
+ in following column msg_in of table messages
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE statistics( id BIGSERIAL PRIMARY KEY, idate DATE NOT NULL, backend_id INTEGER NOT NULL REFERENCES backends, destination TEXT NOT NULL, sent_count NUMERIC NOT NULL DEFAULT 1, receive_count NUMERIC NOT NULL DEFAULT 0, delay_matrix NUMERIC[] NOT NULL DEFAULT ARRAY[]::NUMERIC[], cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP, UNIQUE(idate, backend_id, destination))
+ in following column destination of table statistics
+Detected: Index Shotgun Variant: 3 Following index not used : ['statistics', 'destination']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE templates( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, en_txt TEXT NOT NULL DEFAULT '', fr_txt TEXT NOT NULL DEFAULT '', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column fr_txt of table templates
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users( id SERIAL NOT NULL PRIMARY KEY, firstname TEXT NOT NULL DEFAULT '', lastname TEXT NOT NULL DEFAULT '', email TEXT NOT NULL, utype TEXT NOT NULL DEFAULT 'admin', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column email of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users( id SERIAL NOT NULL PRIMARY KEY, firstname TEXT NOT NULL DEFAULT '', lastname TEXT NOT NULL DEFAULT '', email TEXT NOT NULL, utype TEXT NOT NULL DEFAULT 'admin', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column lastname of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE misc( id SERIAL NOT NULL PRIMARY KEY, item TEXT NOT NULL, val TEXT DEFAULT '', detail TEXT DEFAULT '')
+ in following column detail of table misc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE backends( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, smsc_name TEXT NOT NULL, identity TEXT NOT NULL, btype TEXT NOT NULL DEFAULT 'm', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column identity of table backends
+Detected: Index Shotgun Variant: 3 Following index not used : ['statistics', 'idate']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE backends( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, smsc_name TEXT NOT NULL, identity TEXT NOT NULL, btype TEXT NOT NULL DEFAULT 'm', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column name of table backends
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE misc( id SERIAL NOT NULL PRIMARY KEY, item TEXT NOT NULL, val TEXT DEFAULT '', detail TEXT DEFAULT '')
+ in following column item of table misc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE misc( id SERIAL NOT NULL PRIMARY KEY, item TEXT NOT NULL, val TEXT DEFAULT '', detail TEXT DEFAULT '')
+ in following column val of table misc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE backends( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, smsc_name TEXT NOT NULL, identity TEXT NOT NULL, btype TEXT NOT NULL DEFAULT 'm', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column smsc_name of table backends
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE backends( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, smsc_name TEXT NOT NULL, identity TEXT NOT NULL, btype TEXT NOT NULL DEFAULT 'm', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column btype of table backends
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages( id BIGSERIAL NOT NULL PRIMARY KEY, backend_id INTEGER NOT NULL REFERENCES backends ON DELETE CASCADE ON UPDATE CASCADE, msg_out TEXT NOT NULL DEFAULT '', msg_in TEXT NOT NULL DEFAULT '', destination TEXT NOT NULL DEFAULT '', status_out TEXT NOT NULL, cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP, ldate TIMESTAMPTZ)
+ in following column msg_out of table messages
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE backends( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, smsc_name TEXT NOT NULL, identity TEXT NOT NULL, btype TEXT NOT NULL DEFAULT 'm', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column id and in column id of table district
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users( id SERIAL NOT NULL PRIMARY KEY, firstname TEXT NOT NULL DEFAULT '', lastname TEXT NOT NULL DEFAULT '', email TEXT NOT NULL, utype TEXT NOT NULL DEFAULT 'admin', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column firstname of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE users( id SERIAL NOT NULL PRIMARY KEY, firstname TEXT NOT NULL DEFAULT '', lastname TEXT NOT NULL DEFAULT '', email TEXT NOT NULL, utype TEXT NOT NULL DEFAULT 'admin', active BOOLEAN DEFAULT 't', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column utype of table users
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages( id BIGSERIAL NOT NULL PRIMARY KEY, backend_id INTEGER NOT NULL REFERENCES backends ON DELETE CASCADE ON UPDATE CASCADE, msg_out TEXT NOT NULL DEFAULT '', msg_in TEXT NOT NULL DEFAULT '', destination TEXT NOT NULL DEFAULT '', status_out TEXT NOT NULL, cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP, ldate TIMESTAMPTZ)
+ in following column status_out of table messages
+Detected: Index Shotgun Variant: 3 Following index not used : ['statistics', 'backend_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE templates( id SERIAL NOT NULL PRIMARY KEY, name TEXT NOT NULL, en_txt TEXT NOT NULL DEFAULT '', fr_txt TEXT NOT NULL DEFAULT '', cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP)
+ in following column name of table templates
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE messages( id BIGSERIAL NOT NULL PRIMARY KEY, backend_id INTEGER NOT NULL REFERENCES backends ON DELETE CASCADE ON UPDATE CASCADE, msg_out TEXT NOT NULL DEFAULT '', msg_in TEXT NOT NULL DEFAULT '', destination TEXT NOT NULL DEFAULT '', status_out TEXT NOT NULL, cdate TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP, ldate TIMESTAMPTZ)
+ in following column destination of table messages

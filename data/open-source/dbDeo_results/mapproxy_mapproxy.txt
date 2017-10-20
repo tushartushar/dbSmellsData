@@ -1,0 +1,33 @@
+Detected: God Table Found in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name text, value text)
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cache_locks ( cache_name TEXT NOT NULL, created REAL NOT NULL, pid INTEGER NUT NULL )
+ in following column created of table cache_locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS metadata (name text, value text)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column table_name of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column srs of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( x INTEGER, y INTEGER, data BLOB, date_added INTEGER, unique_tile TEXT )
+ in following column unique_tile of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( id TEXT PRIMARY KEY, data BLOB )
+ in following column id of table %s
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name text, value text)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column matrix_id of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cache_locks ( cache_name TEXT NOT NULL, created REAL NOT NULL, pid INTEGER NUT NULL )
+ in following column cache_name of table cache_locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column bbox of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS metadata (name text, value text)
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column matrix_set_id of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column layer_id of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS %s ( layer_id TEXT NOT NULL, matrix_id TEXT NOT NULL, matrix_set_id TEXT NOT NULL, table_name TEXT NOT NULL, bbox TEXT, srs TEXT, format TEXT, min_tile_col INTEGER, max_tile_col INTEGER, min_tile_row INTEGER, max_tile_row INTEGER, tile_width INTEGER, tile_height INTEGER, matrix_width INTEGER, matrix_height INTEGER, CONSTRAINT unique_rows UNIQUE (layer_id, matrix_id, matrix_set_id, table_name) )
+ in following column format of table %s

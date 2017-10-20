@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS history (url TEXT primary key, start BIGINT, duration BIGINT)
+ in following column url of table history

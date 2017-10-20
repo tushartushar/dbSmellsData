@@ -1,0 +1,11 @@
+Detected: God Table Found in following statement: CREATE TABLE WorkHistory (id INT AUTO_INCREMENT NOT NULL, employer_name VARCHAR(255) NOT NULL, employer_address VARCHAR(255) NOT NULL, start_date DATE NOT NULL, duration NUMERIC(10, 0) NOT NULL, role VARCHAR(255) NOT NULL, duties VARCHAR(255) NOT NULL, feedback_received VARCHAR(255) NOT NULL, reflection VARCHAR(255) NOT NULL, employer_phone_number VARCHAR(255) NOT NULL, meta_title VARCHAR(255) NOT NULL, meta_description VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE ProjectHistory (id INT AUTO_INCREMENT NOT NULL, project_name VARCHAR(255) NOT NULL, project_description VARCHAR(2000) NOT NULL, role VARCHAR(255) NOT NULL, process VARCHAR(3000) NOT NULL, feedback_received VARCHAR(500) NOT NULL, reflection VARCHAR(2000) NOT NULL, url VARCHAR(255) DEFAULT NULL, updated DATETIME NOT NULL, meta_title VARCHAR(255) NOT NULL, meta_description VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE About (id INT AUTO_INCREMENT NOT NULL, firstname VARCHAR(255) NOT NULL, lastname VARCHAR(255) NOT NULL, age INT NOT NULL, bio VARCHAR(255) NOT NULL, address VARCHAR(255) NOT NULL, location VARCHAR(255) NOT NULL, interests_hobbies VARCHAR(255) DEFAULT NULL, email_address VARCHAR(255) NOT NULL, twitter VARCHAR(255) DEFAULT NULL, facebook VARCHAR(255) DEFAULT NULL, PRIMARY KEY(id))
+
+Detected: God Table Found in following statement: CREATE TABLE GeneralSettings (id INT AUTO_INCREMENT NOT NULL, portfolio_title VARCHAR(255) NOT NULL, display_subtitle TINYINT(1) NOT NULL, portfolio_subtitle VARCHAR(255) NOT NULL, display_logo TINYINT(1) NOT NULL, path VARCHAR(255) DEFAULT NULL, global_general_meta_title VARCHAR(255) NOT NULL, about_meta_title VARCHAR(255) NOT NULL, education_meta_title VARCHAR(255) NOT NULL, work_history_meta_title VARCHAR(255) NOT NULL, project_history_meta_title VARCHAR(255) NOT NULL, global_work_history_meta_title VARCHAR(255) NOT NULL, global_project_history_meta_title VARCHAR(255) NOT NULL, PRIMARY KEY(id))
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE Theme (id INT AUTO_INCREMENT NOT NULL, template_choice VARCHAR(255) DEFAULT 'Bootstrap' NOT NULL, theme_choice VARCHAR(255) DEFAULT 'Bootstrap' NOT NULL, PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 1

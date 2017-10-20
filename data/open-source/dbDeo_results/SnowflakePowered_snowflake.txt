@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shiragame(shiragame TEXT PRIMARY KEY,stoneversion TEXT,generated TEXT,version TEXT,uuid TEXT)
+ in following column version of table shiragame
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE serial(platformId TEXT,serial TEXT,title TEXT,region TEXT)
+ in following column title of table serial
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shiragame(shiragame TEXT PRIMARY KEY,stoneversion TEXT,generated TEXT,version TEXT,uuid TEXT)
+ in following column shiragame of table shiragame
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE serial(platformId TEXT,serial TEXT,title TEXT,region TEXT)
+ in following column serial of table serial
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shiragame(shiragame TEXT PRIMARY KEY,stoneversion TEXT,generated TEXT,version TEXT,uuid TEXT)
+ in following column generated of table shiragame
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shiragame(shiragame TEXT PRIMARY KEY,stoneversion TEXT,generated TEXT,version TEXT,uuid TEXT)
+ in following column stoneversion of table shiragame
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE serial(platformId TEXT,serial TEXT,title TEXT,region TEXT)
+ in following column platformId of table serial
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE shiragame(shiragame TEXT PRIMARY KEY,stoneversion TEXT,generated TEXT,version TEXT,uuid TEXT)
+ in following column uuid of table shiragame
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE serial(platformId TEXT,serial TEXT,title TEXT,region TEXT)
+ in following column region of table serial

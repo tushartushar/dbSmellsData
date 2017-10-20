@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS quads (`subject` varchar(255), `predicate` varchar(255), `object` varchar(255), `context` varchar(255), UNIQUE (`subject`, `predicate`, `object`, `context`))
+ in following column UNIQUE of table quads
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quads (subject varchar(255), predicate varchar(255), object varchar(255), context varchar(255), UNIQUE (subject, predicate, object, context))
+ in following column UNIQUE of table quads
+Detected: Index Shotgun Variant: 3 Following index not used : ['quads', 'span']
+Detected: Index Shotgun Variant: 3 Following index not used : ['quads', '><']
+Detected: Index Shotgun Variant: 3 Following index not used : ['quads', 'context']

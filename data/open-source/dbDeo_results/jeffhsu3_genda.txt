@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: create table transcripts\	 (tcons text,class text, region text, start int, end int)
+ in following column tcons of table transcripts
+Detected: Obsolete Column TypesFound in following statement: create table transcripts\	 (tcons text,class text, region text, start int, end int)
+ in following column class of table transcripts
+Detected: Obsolete Column TypesFound in following statement: create table transcripts\	 (tcons text,class text, region text, start int, end int)
+ in following column region of table transcripts
+Detected: Index Shotgun Variant: 1

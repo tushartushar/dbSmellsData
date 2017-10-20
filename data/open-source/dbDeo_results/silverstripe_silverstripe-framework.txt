@@ -1,0 +1,11 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `Player` (		`ID` int(11) NOT NULL AUTO_INCREMENT,		`ClassName` enum('Player') DEFAULT 'Player',		`LastEdited` datetime DEFAULT NULL,		`Created` datetime DEFAULT NULL, 		`PlayerNumber` int(11) NOT NULL DEFAULT '0',		`FirstName` varchar(255) DEFAULT NULL, 		`LastName` mediumtext, 		`Birthday` datetime DEFAULT NULL, 		 		PRIMARY KEY (`ID`),		KEY `ClassName` (`ClassName`)	)
+ in following column `LastName` of table `Player`
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cache (id TEXT PRIMARY KEY, content BLOB, lastModified INTEGER, expire INTEGER)
+ in following column id of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['tag', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column name of table tag
+Detected: Index Shotgun Variant: 3 Following index not used : ['cache', 'expire']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tag (name TEXT, id TEXT)
+ in following column id of table tag

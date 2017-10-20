@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tblrelationship (URL TEXT, DOI TEXT, PMID TEXT, EnID1 , EnID2 , Relation , Weight , Citations )
+ in following column DOI of table tblrelationship
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tblrelationship (URL TEXT, DOI TEXT, PMID TEXT, EnID1 , EnID2 , Relation , Weight , Citations )
+ in following column PMID of table tblrelationship
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tblrelationship (URL TEXT, DOI TEXT, PMID TEXT, EnID1 , EnID2 , Relation , Weight , Citations )
+ in following column URL of table tblrelationship
+Detected: Index Shotgun Variant: 1

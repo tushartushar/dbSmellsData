@@ -1,0 +1,5 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table_name` (`column_name2` INT(11) NOT NULL AUTO_INCREMENT, `column_name` VARCHAR(255) NOT NULL, `column_name2` INT(11) NOT NULL, PRIMARY KEY (`column_name2`))
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `table_name` (`id` INT(11) NOT NULL AUTO_INCREMENT, `column_name` VARCHAR(255) NOT NULL, `column_name2` INT(11) NOT NULL, PRIMARY KEY (`id`))
+

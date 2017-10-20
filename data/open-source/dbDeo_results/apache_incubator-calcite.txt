@@ -1,0 +1,19 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo.baz(i INTEGER, j VARCHAR(10) NOT NULL)
+ in following column j and in column j of table table1
+Detected: Clone Tables Found in following statement: create table table1(i int, j int)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE " + table + " (id BIGINT)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE emps (empno INTEGER, gender VARCHAR(1), deptno INTEGER)
+ in following column deptno and in column deptno of table dept
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE " + tableName + " (id varchar(1) not null, col1 varchar(1) not null)
+ in following column id and in column id of table %s
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ARR_TABLE VALUES (1, ARRAY[1,2,3])
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ARR_TABLE2 VALUES (1, ARRAY[1,2,3], ARRAY['x','y'])
+
+Detected: Index Shotgun Variant: 1
+Detected: Clone Tables Found in following statement: create table table2(i int, j int)
+
+Detected: Metadata as Data Found in following statement: create table emp(ename varchar(10), deptno int, gender varchar(1))
+

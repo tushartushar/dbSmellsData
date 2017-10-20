@@ -1,0 +1,394 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_global_seq ( group_id integer NOT NULL, global_seq_id integer NOT NULL, label text, notes text, date_added timestamp )
+ in following column notes of table group_global_seq
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column label and in column label of table global_collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column verification_key of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "group" ( group_id integer NOT NULL, name text, description text)
+ in following column name of table "group"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE collection ( person_id integer NOT NULL, seq_id integer NOT NULL, name text, notes text, date_added timestamp without time zone)
+ in following column name of table collection
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column four and in column four of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column description of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_history ( global_history_id integer NOT NULL, global_seq_frag integer NOT NULL, person_id integer NOT NULL, params text, notes text, last_viewed timestamp without time zone)
+ in following column notes of table global_history
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE submission ( submission_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, seq_id integer NOT NULL, frag_length integer, date_requested timestamp , primary key(submission_id))
+ in following column frag_length and in column frag_length of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_accession of table search_result_optimal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.audit ( audit_id INT NOT NULL , event_type TEXT , description TEXT , time_recorded TIMESTAMP , PRIMARY KEY (audit_id))
+ in following column event_type of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column guid of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.history ( history_id INT NOT NULL , person_id INT NOT NULL , seq_frag_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (history_id) , CONSTRAINT FK_history_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_history_2 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+ in following column params of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp without time zone)
+ in following column sequence of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE site_content ( site_content_id integer NOT NULL, content text, label character varying(100), page text)
+ in following column content of table site_content
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column industry of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.person ( person_id INT NOT NULL , first_name TEXT , last_name TEXT , dob DATE , PRIMARY KEY (person_id))
+ in following column last_name of table schemaname
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_seq ( group_id integer NOT NULL, seq_id integer NOT NULL, name text, notes text, date_added timestamp without time zone)
+ in following column notes of table group_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE audit ( audit_id integer NOT NULL AUTO_INCREMENT , event_type text, description text, time_recorded timestamp , primary key(audit_id))
+ in following column description of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column result_accession of table search_result_optimal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column locus of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column global_seq_id and in column global_seq_id of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column description of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column name2 of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE submission ( submission_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, seq_id integer NOT NULL, frag_length integer, date_requested timestamp , primary key(submission_id))
+ in following column seq_id and in column seq_id of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column . and in column . of table schemaname
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_global_seq ( group_id integer NOT NULL, global_seq_id integer NOT NULL, label text, notes text, date_added timestamp )
+ in following column label of table group_global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_global_seq ( group_id integer NOT NULL, global_seq_id integer NOT NULL, label text, notes text, date_added timestamp without time zone)
+ in following column notes of table group_global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column organization of table person
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column three_plus_four and in column three_plus_four of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person_group ( person_id integer NOT NULL, group_id integer NOT NULL, role text)
+ in following column role of table person_group
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.search_result ( search_result_id INT NOT NULL , search_seq VARCHAR(50) , search_seq_rc TEXT , result_seq TEXT , result_accession TEXT , result_accession_offset INT , result_offset INT , time_stamp TIMESTAMP , PRIMARY KEY (search_result_id) , CONSTRAINT FK_search_result_1 FOREIGN KEY (search_seq) REFERENCES safeseed.search_status (search_seq))
+ in following column result_accession of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE schemaname.showing ( theater VARCHAR(50) NOT NULL , day VARCHAR(50) NOT NULL , movie_id INT NOT NULL , PRIMARY KEY (theater, day, movie_id) , CONSTRAINT FK_showing_1 FOREIGN KEY (movie_id) REFERENCES schemaname.movie (movie_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.person ( person_id INT NOT NULL , first_name TEXT , last_name TEXT , dob DATE , PRIMARY KEY (person_id))
+ in following column first_name of table schemaname
+Detected: Index Shotgun Variant: 3 Following index not used : ['search_status', 'search_seq']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frag ( frag_id integer NOT NULL, seq_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text)
+ in following column pots_nt of table frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE history ( history_id integer NOT NULL, person_id integer NOT NULL, seq_frag_id integer NOT NULL, params text, notes text, last_viewed timestamp without time zone)
+ in following column params of table history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.frag ( frag_id INT NOT NULL , seq_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , PRIMARY KEY (frag_id) , CONSTRAINT FK_frag_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+ in following column pots_nt of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column sequence of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq_relationship ( seq_id integer NOT NULL, global_seq_id integer NOT NULL, note text, type text)
+ in following column note of table seq_relationship
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column organization of table person
+Detected: Index Shotgun Variant: 3 Following index not used : ['search_status', 'status']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_history ( global_history_id integer NOT NULL, global_seq_frag integer NOT NULL, person_id integer NOT NULL, params text, notes text, last_viewed timestamp without time zone)
+ in following column params of table global_history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group ( group_id INT NOT NULL , name TEXT , description TEXT , PRIMARY KEY (group_id))
+ in following column description of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL)
+ in following column pots_nt of table global_frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp , primary key(seq_id))
+ in following column name of table seq
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_accession_offset and in column result_accession_offset of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column email of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column name2 of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq_relationship ( seq_id integer NOT NULL, global_seq_id integer NOT NULL, note text, type text)
+ in following column type of table seq_relationship
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column result_seq of table search_result_optimal
+Detected: God Table Found in following statement: CREATE TABLE safeseed.frag ( frag_id INT NOT NULL , seq_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , PRIMARY KEY (frag_id) , CONSTRAINT FK_frag_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column password of table person
+Detected: Index Shotgun Variant: 3 Following index not used : ['safeseed', 'status']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column sequence of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frag ( frag_id integer NOT NULL, seq_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text)
+ in following column start_seq of table frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.studio ( studio_id INT NOT NULL , name TEXT , website TEXT , PRIMARY KEY (studio_id))
+ in following column name of table schemaname
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column username of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_global_seq ( group_id integer NOT NULL, global_seq_id integer NOT NULL, label text, notes text, date_added timestamp without time zone)
+ in following column label of table group_global_seq
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE search_status ( search_seq character varying(50) NOT NULL, search_seq_full text, status numeric(1,0) DEFAULT 0, entry_time timestamp without time zone, checkout_time timestamp without time zone, finish_time timestamp without time zone, read_count integer DEFAULT 0)
+ in following column search_seq and in column search_seq of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE history ( history_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, params text, notes text, last_viewed timestamp , primary key(history_id))
+ in following column params of table history
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.seq_relationship ( seq_id INT NOT NULL , global_seq_id INT NOT NULL , note TEXT , type TEXT , PRIMARY KEY (seq_id, global_seq_id) , CONSTRAINT FK_seq_relationship_1 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id) , CONSTRAINT FK_seq_relationship_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE submission ( submission_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, seq_id integer NOT NULL, frag_length integer, date_requested timestamp , primary key(submission_id))
+ in following column seq_frag_id and in column seq_frag_id of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column notes of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE audit ( audit_id integer NOT NULL, event_type text, description text, time_recorded timestamp without time zone)
+ in following column event_type of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column nineteen and in column nineteen of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_collection ( person_id integer NOT NULL, global_seq_id integer NOT NULL, label character(10), notes text, date_added timestamp )
+ in following column notes of table global_collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column name2 of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.collection ( person_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id, seq_id) , CONSTRAINT FK_TABLE_17_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_TABLE_17_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+ in following column name of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group ( group_id INT NOT NULL , name TEXT , description TEXT , PRIMARY KEY (group_id))
+ in following column name of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column search_seq_rc of table search_result_optimal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq ( seq_id INT NOT NULL , person_id INT NOT NULL , sequence TEXT , name TEXT , description TEXT , species TEXT , date_added TIMESTAMP , PRIMARY KEY (seq_id) , CONSTRAINT FK_seq_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id))
+ in following column description of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.movie ( movie_id INT NOT NULL , title TEXT , year INT , description TEXT , studio_id INT NOT NULL , PRIMARY KEY (movie_id) , CONSTRAINT FK_movie_1 FOREIGN KEY (studio_id) REFERENCES schemaname.studio (studio_id))
+ in following column description of table schemaname
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column name1 of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.search_result ( search_result_id INT NOT NULL , search_seq VARCHAR(50) , search_seq_rc TEXT , result_seq TEXT , result_accession TEXT , result_accession_offset INT , result_offset INT , time_stamp TIMESTAMP , PRIMARY KEY (search_result_id) , CONSTRAINT FK_search_result_1 FOREIGN KEY (search_seq) REFERENCES safeseed.search_status (search_seq))
+ in following column result_seq of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.frag ( frag_id INT NOT NULL , seq_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , PRIMARY KEY (frag_id) , CONSTRAINT FK_frag_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.group_global_seq ( group_id INT NOT NULL , global_seq_id INT NOT NULL , label TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, global_seq_id) , CONSTRAINT FK_group_global_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_global_seq_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.global_seq_frag ( global_seq_frag INT NOT NULL , global_seq_id INT NOT NULL , frag_length INT NOT NULL , completed BOOLEAN , date_completed TIMESTAMP , PRIMARY KEY (global_seq_frag) , CONSTRAINT FK_global_seq_frag_1 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq ( seq_id INT NOT NULL , person_id INT NOT NULL , sequence TEXT , name TEXT , description TEXT , species TEXT , date_added TIMESTAMP , PRIMARY KEY (seq_id) , CONSTRAINT FK_seq_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id))
+ in following column name of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.collection ( person_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id, seq_id) , CONSTRAINT FK_TABLE_17_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_TABLE_17_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE collection ( person_id integer NOT NULL , seq_id integer NOT NULL, name text, notes text, date_added timestamp )
+ in following column notes of table collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_frag ( global_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , global_seq_frag INT NOT NULL , PRIMARY KEY (global_frag_id) , CONSTRAINT FK_global_frag_1 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+ in following column start_seq of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_seq of table search_result
+Detected: Index Shotgun Variant: 3 Following index not used : ['safeseed', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_seq ( group_id integer NOT NULL, seq_id integer NOT NULL, name text, notes text, date_added timestamp without time zone)
+ in following column name of table group_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column pots_nt of table global_frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column search_seq_rc of table search_result
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq_relationship ( seq_id INT NOT NULL , global_seq_id INT NOT NULL , note TEXT , type TEXT , PRIMARY KEY (seq_id, global_seq_id) , CONSTRAINT FK_seq_relationship_1 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id) , CONSTRAINT FK_seq_relationship_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column note of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_accession of table search_result
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp , primary key(seq_id))
+ in following column species of table seq
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_offset and in column result_offset of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column name1 of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE audit ( audit_id integer NOT NULL, event_type text, description text, time_recorded timestamp without time zone)
+ in following column description of table (
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.global_frag ( global_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , global_seq_frag INT NOT NULL , PRIMARY KEY (global_frag_id) , CONSTRAINT FK_global_frag_1 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE site_content ( site_content_id integer NOT NULL, content text, label character varying(100), page text)
+ in following column page of table site_content
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp , primary key(seq_id))
+ in following column description of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column name1 of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column verification_key of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_seq ( group_id integer NOT NULL, seq_id integer NOT NULL , name text, notes text, date_added timestamp )
+ in following column notes of table group_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column from_field of table global_seq
+Detected: God Table Found in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp , primary key(seq_id))
+ in following column sequence of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE queue ( queue_id integer NOT NULL, seq_frag_id integer NOT NULL, complete boolean, date_completed timestamp without time zone, log_text text, priority_level integer NOT NULL)
+ in following column log_text of table queue
+Detected: God Table Found in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frag ( frag_id integer NOT NULL AUTO_INCREMENT, seq_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, primary key(frag_id))
+ in following column start_seq of table frag
+Detected: Adjacency List Found in following statement: CREATE TABLE schemaname.actors ( person_id INT NOT NULL , movie_id INT NOT NULL , PRIMARY KEY (person_id, movie_id) , CONSTRAINT FK_actors_1 FOREIGN KEY (person_id) REFERENCES schemaname.person (person_id) , CONSTRAINT FK_actors_2 FOREIGN KEY (movie_id) REFERENCES schemaname.movie (movie_id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['safeseed', 'search_seq']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE queue ( queue_id integer NOT NULL AUTO_INCREMENT, seq_frag_id integer NOT NULL, complete boolean, date_completed timestamp , log_text text, priority_level integer NOT NULL	, primary key(queue_id))
+ in following column log_text of table queue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_collection ( person_id integer NOT NULL, global_seq_id integer NOT NULL, label character(10), notes text, date_added timestamp without time zone)
+ in following column notes of table global_collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE collection ( person_id integer NOT NULL, seq_id integer NOT NULL, name text, notes text, date_added timestamp without time zone)
+ in following column notes of table collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq_relationship ( seq_id INT NOT NULL , global_seq_id INT NOT NULL , note TEXT , type TEXT , PRIMARY KEY (seq_id, global_seq_id) , CONSTRAINT FK_seq_relationship_1 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id) , CONSTRAINT FK_seq_relationship_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column type of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column domain of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column sequence of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.queue ( queue_id INT NOT NULL , seq_frag_id INT NOT NULL , complete BOOLEAN , date_completed TIMESTAMP , log_text TEXT , priority_level INT NOT NULL , PRIMARY KEY (queue_id) , CONSTRAINT FK_queue_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+ in following column log_text of table safeseed
+Detected: God Table Found in following statement: CREATE TABLE safeseed.global_frag ( global_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , global_seq_frag INT NOT NULL , PRIMARY KEY (global_frag_id) , CONSTRAINT FK_global_frag_1 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.person ( person_id INT NOT NULL , username TEXT , guid TEXT , domain TEXT , email TEXT , PRIMARY KEY (person_id))
+ in following column guid of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.movie ( movie_id INT NOT NULL , title TEXT , year INT , description TEXT , studio_id INT NOT NULL , PRIMARY KEY (movie_id) , CONSTRAINT FK_movie_1 FOREIGN KEY (studio_id) REFERENCES schemaname.studio (studio_id))
+ in following column title of table schemaname
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.audit ( audit_id INT NOT NULL , event_type TEXT , description TEXT , time_recorded TIMESTAMP , PRIMARY KEY (audit_id))
+ in following column description of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_history ( global_history_id integer NOT NULL AUTO_INCREMENT, global_seq_frag integer NOT NULL, person_id integer NOT NULL, params text, notes text, last_viewed timestamp , primary key(global_history_id))
+ in following column params of table global_history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column email of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp without time zone)
+ in following column name of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE site_content ( site_content_id integer NOT NULL AUTO_INCREMENT, content text, label character varying(100), page text, primary key(site_content_id))
+ in following column page of table site_content
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE frag ( frag_id integer NOT NULL AUTO_INCREMENT, seq_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, primary key(frag_id))
+ in following column pots_nt of table frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.person ( person_id INT NOT NULL , username TEXT , guid TEXT , domain TEXT , email TEXT , PRIMARY KEY (person_id))
+ in following column domain of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.seq_frag ( seq_frag_id INT NOT NULL , frag_length INT NOT NULL , seq_id INT NOT NULL , completed BOOLEAN , PRIMARY KEY (seq_frag_id) , CONSTRAINT FK_seq_frag_1 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.person ( person_id INT NOT NULL , username TEXT , guid TEXT , domain TEXT , email TEXT , PRIMARY KEY (person_id))
+ in following column username of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE safeseed.global_collection ( person_id INT NOT NULL , global_seq_id INT NOT NULL , label CHAR(10) , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id) , CONSTRAINT FK_TABLE_16_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_collection_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column CONSTRAINT and in column CONSTRAINT of table schemaname
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group_seq ( group_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, seq_id) , CONSTRAINT FK_group_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_seq_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+ in following column notes of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE submission ( submission_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, seq_id integer NOT NULL, frag_length integer, date_requested timestamp , primary key(submission_id))
+ in following column person_id and in column person_id of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column from_field of table global_seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group_global_seq ( group_id INT NOT NULL , global_seq_id INT NOT NULL , label TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, global_seq_id) , CONSTRAINT FK_group_global_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_global_seq_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column label of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL AUTO_INCREMENT, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp , primary key(person_id))
+ in following column guid of table person
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE queue ( queue_id integer NOT NULL, seq_frag_id integer NOT NULL, complete boolean, date_completed timestamp without time zone, log_text text, priority_level integer NOT NULL)
+ in following column priority_level and in column priority_level of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE safeseed.person_group ( person_id INT NOT NULL , group_id INT NOT NULL , role TEXT , PRIMARY KEY (person_id, group_id) , CONSTRAINT FK_person_group_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_person_group_2 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id))
+ in following column group_id and in column group_id of table person_group
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq ( seq_id INT NOT NULL , person_id INT NOT NULL , sequence TEXT , name TEXT , description TEXT , species TEXT , date_added TIMESTAMP , PRIMARY KEY (seq_id) , CONSTRAINT FK_seq_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id))
+ in following column sequence of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.system_setting ( system_setting VARCHAR(20) NOT NULL , value TEXT , enabled BOOLEAN , PRIMARY KEY (system_setting))
+ in following column value of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.person_group ( person_id INT NOT NULL , group_id INT NOT NULL , role TEXT , PRIMARY KEY (person_id, group_id) , CONSTRAINT FK_person_group_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_person_group_2 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id))
+ in following column role of table safeseed
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "group" ( group_id integer NOT NULL, name text, description text)
+ in following column description of table "group"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp without time zone)
+ in following column species of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column locus of table global_seq
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.group_seq ( group_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, seq_id) , CONSTRAINT FK_group_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_seq_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column industry of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column search_seq_rc of table search_result
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_status ( search_seq character varying(50) NOT NULL, search_seq_full text, status numeric(1,0) DEFAULT 0, entry_time timestamp , checkout_time timestamp , finish_time timestamp , read_count integer DEFAULT 0)
+ in following column search_seq_full of table search_status
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE history ( history_id integer NOT NULL AUTO_INCREMENT, person_id integer NOT NULL, seq_frag_id integer NOT NULL, params text, notes text, last_viewed timestamp , primary key(history_id))
+ in following column notes of table history
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column three and in column three of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.queue ( queue_id INT NOT NULL , seq_frag_id INT NOT NULL , complete BOOLEAN , date_completed TIMESTAMP , log_text TEXT , priority_level INT NOT NULL , PRIMARY KEY (queue_id) , CONSTRAINT FK_queue_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.search_result ( search_result_id INT NOT NULL , search_seq VARCHAR(50) , search_seq_rc TEXT , result_seq TEXT , result_accession TEXT , result_accession_offset INT , result_offset INT , time_stamp TIMESTAMP , PRIMARY KEY (search_result_id) , CONSTRAINT FK_search_result_1 FOREIGN KEY (search_seq) REFERENCES safeseed.search_status (search_seq))
+ in following column search_seq_rc of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE seq ( seq_id integer NOT NULL, person_id integer NOT NULL, sequence text, name text, description text, species text, date_added timestamp without time zone)
+ in following column description of table seq
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `group` ( group_id integer NOT NULL AUTO_INCREMENT, name text, description text , primary key(group_id))
+ in following column description of table `group`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL)
+ in following column start_seq of table global_frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column search_seq_rc of table search_result_optimal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.search_status ( search_seq VARCHAR(50) NOT NULL , search_seq_full TEXT , status NUMERIC(1) DEFAULT 0 , entry_time TIMESTAMP , checkout_time TIMESTAMP , finish_time TIMESTAMP , read_count INT DEFAULT 0 , PRIMARY KEY (search_seq))
+ in following column search_seq_full of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE schemaname.studio ( studio_id INT NOT NULL , name TEXT , website TEXT , PRIMARY KEY (studio_id))
+ in following column . and in column . of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.person_group ( person_id INT NOT NULL , group_id INT NOT NULL , role TEXT , PRIMARY KEY (person_id, group_id) , CONSTRAINT FK_person_group_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_person_group_2 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE site_content ( site_content_id integer NOT NULL AUTO_INCREMENT, content text, label character varying(100), page text, primary key(site_content_id))
+ in following column content of table site_content
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_history ( global_history_id INT NOT NULL , global_seq_frag INT NOT NULL , person_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (global_history_id) , CONSTRAINT FK_active_seqs_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_history_2 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+ in following column notes of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_status ( search_seq character varying(50) NOT NULL, search_seq_full text, status numeric(1,0) DEFAULT 0, entry_time timestamp without time zone, checkout_time timestamp without time zone, finish_time timestamp without time zone, read_count integer DEFAULT 0)
+ in following column search_seq_full of table search_status
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE schemaname.studio ( studio_id INT NOT NULL , name TEXT , website TEXT , PRIMARY KEY (studio_id))
+ in following column website of table schemaname
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column global_seq_frag and in column global_seq_frag of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_frag ( global_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , global_seq_frag INT NOT NULL , PRIMARY KEY (global_frag_id) , CONSTRAINT FK_global_frag_1 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+ in following column pots_nt of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column password of table person
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL, locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp without time zone)
+ in following column gi_number and in column gi_number of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE history ( history_id integer NOT NULL, person_id integer NOT NULL, seq_frag_id integer NOT NULL, params text, notes text, last_viewed timestamp without time zone)
+ in following column notes of table history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_seq ( global_seq_id integer NOT NULL , locus text, sequence text, gi_number integer, from_field text, name1 text, name2 text, description text, date_added timestamp )
+ in following column locus of table global_seq
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.search_result ( search_result_id INT NOT NULL , search_seq VARCHAR(50) , search_seq_rc TEXT , result_seq TEXT , result_accession TEXT , result_accession_offset INT , result_offset INT , time_stamp TIMESTAMP , PRIMARY KEY (search_result_id) , CONSTRAINT FK_search_result_1 FOREIGN KEY (search_seq) REFERENCES safeseed.search_status (search_seq))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE schemaname.movie ( movie_id INT NOT NULL , title TEXT , year INT , description TEXT , studio_id INT NOT NULL , PRIMARY KEY (movie_id) , CONSTRAINT FK_movie_1 FOREIGN KEY (studio_id) REFERENCES schemaname.studio (studio_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.history ( history_id INT NOT NULL , person_id INT NOT NULL , seq_frag_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (history_id) , CONSTRAINT FK_history_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_history_2 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result_optimal ( search_result_id integer NOT NULL AUTO_INCREMENT, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp , primary key(search_result_id))
+ in following column result_seq of table search_result_optimal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column description of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.seq ( seq_id INT NOT NULL , person_id INT NOT NULL , sequence TEXT , name TEXT , description TEXT , species TEXT , date_added TIMESTAMP , PRIMARY KEY (seq_id) , CONSTRAINT FK_seq_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id))
+ in following column species of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `group` ( group_id integer NOT NULL AUTO_INCREMENT, name text, description text , primary key(group_id))
+ in following column name of table `group`
+Detected: Index Shotgun Variant: 3 Following index not used : ['safeseed', 'search_status']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column twenty and in column twenty of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_history ( global_history_id integer NOT NULL AUTO_INCREMENT, global_seq_frag integer NOT NULL, person_id integer NOT NULL, params text, notes text, last_viewed timestamp , primary key(global_history_id))
+ in following column notes of table global_history
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.person ( person_id INT NOT NULL , username TEXT , guid TEXT , domain TEXT , email TEXT , PRIMARY KEY (person_id))
+ in following column email of table safeseed
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE search_status ( search_seq character varying(50) NOT NULL, search_seq_full text, status numeric(1,0) DEFAULT 0, entry_time timestamp without time zone, checkout_time timestamp without time zone, finish_time timestamp without time zone, read_count integer DEFAULT 0)
+ in following column read_count and in column read_count of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group_seq ( group_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, seq_id) , CONSTRAINT FK_group_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_seq_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+ in following column name of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.submission ( submission_id INT NOT NULL , person_id INT NOT NULL , seq_frag_id INT NOT NULL , seq_id INT NOT NULL , frag_length INT , date_requested TIMESTAMP , PRIMARY KEY (submission_id) , CONSTRAINT FK_submission_2 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_submission_3 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id) , CONSTRAINT FK_submission_4 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.global_history ( global_history_id INT NOT NULL , global_seq_frag INT NOT NULL , person_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (global_history_id) , CONSTRAINT FK_active_seqs_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_history_2 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.collection ( person_id INT NOT NULL , seq_id INT NOT NULL , name TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (person_id, seq_id) , CONSTRAINT FK_TABLE_17_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_TABLE_17_2 FOREIGN KEY (seq_id) REFERENCES safeseed.seq (seq_id))
+ in following column notes of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE global_frag ( global_frag_id integer NOT NULL, start_seq text, gc_content_percentage numeric, three character(1), four character(1), nineteen character(1), twenty character(1), three_plus_four integer, pots_nt text, global_seq_frag integer NOT NULL , primary key(global_frag_id))
+ in following column start_seq of table global_frag
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE audit ( audit_id integer NOT NULL AUTO_INCREMENT , event_type text, description text, time_recorded timestamp , primary key(audit_id))
+ in following column event_type of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE collection ( person_id integer NOT NULL , seq_id integer NOT NULL, name text, notes text, date_added timestamp )
+ in following column name of table collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column result_accession of table search_result
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_seq ( global_seq_id INT NOT NULL , locus TEXT , sequence TEXT , gi_number INT , from_field TEXT , name1 TEXT , name2 TEXT , description TEXT , date_added TIMESTAMP , PRIMARY KEY (global_seq_id))
+ in following column from_field of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.history ( history_id INT NOT NULL , person_id INT NOT NULL , seq_frag_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (history_id) , CONSTRAINT FK_history_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_history_2 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+ in following column notes of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column domain of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.group_global_seq ( group_id INT NOT NULL , global_seq_id INT NOT NULL , label TEXT , notes TEXT , date_added TIMESTAMP , PRIMARY KEY (group_id, global_seq_id) , CONSTRAINT FK_group_global_seq_1 FOREIGN KEY (group_id) REFERENCES safeseed.group (group_id) , CONSTRAINT FK_group_global_seq_2 FOREIGN KEY (global_seq_id) REFERENCES safeseed.global_seq (global_seq_id))
+ in following column notes of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.frag ( frag_id INT NOT NULL , seq_frag_id INT NOT NULL , start_seq TEXT , gc_content_percentage NUMERIC , three CHAR(1) , four CHAR(1) , nineteen CHAR(1) , twenty CHAR(1) , three_plus_four INT , pots_nt TEXT , PRIMARY KEY (frag_id) , CONSTRAINT FK_frag_1 FOREIGN KEY (seq_frag_id) REFERENCES safeseed.seq_frag (seq_frag_id))
+ in following column start_seq of table safeseed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE search_result ( search_result_id integer NOT NULL, search_seq character varying(50), search_seq_rc text, result_seq text, result_accession text, result_accession_offset integer, result_offset integer, time_stamp timestamp without time zone)
+ in following column result_seq of table search_result
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( person_id integer NOT NULL, username text, guid text, domain text, email text, organization text, password text, access_level integer DEFAULT 0, verification_key text, verified boolean, industry text, creation_date timestamp with time zone)
+ in following column username of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE safeseed.global_history ( global_history_id INT NOT NULL , global_seq_frag INT NOT NULL , person_id INT NOT NULL , params TEXT , notes TEXT , last_viewed TIMESTAMP , PRIMARY KEY (global_history_id) , CONSTRAINT FK_active_seqs_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id) , CONSTRAINT FK_global_history_2 FOREIGN KEY (global_seq_frag) REFERENCES safeseed.global_seq_frag (global_seq_frag))
+ in following column params of table safeseed
+Detected: Adjacency List Found in following statement: CREATE TABLE safeseed.seq ( seq_id INT NOT NULL , person_id INT NOT NULL , sequence TEXT , name TEXT , description TEXT , species TEXT , date_added TIMESTAMP , PRIMARY KEY (seq_id) , CONSTRAINT FK_seq_1 FOREIGN KEY (person_id) REFERENCES safeseed.person (person_id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE system_setting ( system_setting character varying(20) NOT NULL, value text, enabled boolean)
+ in following column value of table system_setting
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE group_seq ( group_id integer NOT NULL, seq_id integer NOT NULL , name text, notes text, date_added timestamp )
+ in following column name of table group_seq

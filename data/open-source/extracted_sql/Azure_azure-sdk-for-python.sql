@@ -1,0 +1,6 @@
+SELECT * FROM \n (\n VALUES(1,2),(2,4)\n ) \n AS \n T(a, b);\nEND;
+SELECT * FROM \n (\n VALUES(1,2),(2,4)\n ) \n AS \n T(a, b);\nEND;
+CREATE TABLE adladb485f1590.dbo.adlatable485f1590\n(\n //Define schema of table\n UserId int, \n Start DateTime, \n Region string, \n Query string, \n Duration int, \n Urls string, \n ClickedUrls string,\n INDEX idx1 \n CLUSTERED (Region ASC) \n PARTITIONED BY BUCKETS (UserId) HASH (Region)\n)
+CREATE TABLE adladb32e3152c.dbo.adlatable32e3152c\n(\n //Define schema of table\n UserId int, \n Start DateTime, \n Region string, \n Query string, \n Duration int, \n Urls string, \n ClickedUrls string,\n INDEX idx1 \n CLUSTERED (Region ASC) \n PARTITIONED BY BUCKETS (UserId) HASH (Region)\n)
+CREATE TABLE adladbb9d51798.dbo.adlatableb9d51798\n(\n //Define schema of table\n UserId int, \n Start DateTime, \n Region string, \n Query string, \n Duration int, \n Urls string, \n ClickedUrls string,\n INDEX idx1 \n CLUSTERED (Region ASC) \n PARTITIONED BY BUCKETS (UserId) HASH (Region)\n)
+CREATE TABLE {0}.dbo.{1}( //Define schema of table UserId int, Start DateTime, Region string, Query string, Duration int, Urls string, ClickedUrls string, INDEX idx1 CLUSTERED (Region ASC) PARTITIONED BY BUCKETS (UserId) HASH (Region))

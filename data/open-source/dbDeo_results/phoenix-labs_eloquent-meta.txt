@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta( id INTEGER PRIMARY KEY NOT NULL, metable_id INTEGER NOT NULL, metable_type TEXT NOT NULL, key TEXT NOT NULL, value TEXT NOT NULL)
+ in following column metable_type of table meta
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE meta( id INTEGER PRIMARY KEY NOT NULL, metable_id INTEGER NOT NULL, metable_type TEXT NOT NULL, key TEXT NOT NULL, value TEXT NOT NULL)
+ in following column value of table meta

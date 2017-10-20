@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `tst_time` (`id` integer NOT NULL PRIMARY KEY AUTO_INCREMENT, `value` time NOT NULL)
+ in following column `value` and in column `value` of table `tst_date`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tst_double` (`id` integer NOT NULL PRIMARY KEY AUTO_INCREMENT, `value` real NOT NULL)
+ in following column `value` of table `tst_double`
+Detected: Index Shotgun Variant: 1

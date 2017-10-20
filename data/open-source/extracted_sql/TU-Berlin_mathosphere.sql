@@ -1,0 +1,1 @@
+select points from one of the constellations and the other symbols select points from the other constellation. This also reduces the phase-shifts from a maximum of 180, but only to a maximum of 135 and so the amplitude fluctuations of &lt;math&gt;\pi/4&lt;/math&gt;&amp;ndash;

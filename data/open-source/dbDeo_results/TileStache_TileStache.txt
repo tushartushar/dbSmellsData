@@ -1,0 +1,19 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS tiles ( path TEXT PRIMARY KEY, used INTEGER, size INTEGER )
+ in following column path of table tiles
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT, PRIMARY KEY (name))
+ in following column name of table metadata
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column tile_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata ( name text, value text)
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata (name TEXT, value TEXT, PRIMARY KEY (name))
+ in following column value of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE map ( zoom_level INTEGER, tile_column INTEGER, tile_row INTEGER, tile_id TEXT, grid_id TEXT)
+ in following column grid_id of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE metadata ( name text, value text)
+ in following column name and in column name of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metadata ( name text, value text)
+ in following column name of table metadata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS locks ( row INTEGER, column INTEGER, zoom INTEGER, format TEXT, PRIMARY KEY (row, column, zoom, format) )
+ in following column format of table locks

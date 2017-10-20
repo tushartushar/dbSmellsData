@@ -1,0 +1,7 @@
+CREATE TABLE comments (id INTEGER PRIMARY KEY , post_id INTEGER, body VARCHAR(255))
+CREATE TABLE users (id INTEGER PRIMARY KEY , first_name VARCHAR(255), last_name VARCHAR(255), type VARCHAR(255), avatar VARCHAR(225))
+CREATE TABLE posts_tags (id INTEGER PRIMARY KEY, post_id INTEGER, tag_id INTEGER)
+CREATE TABLE tags (id INTEGER PRIMARY KEY, name VARCHAR(255))
+CREATE TABLE blog_activities (id INTEGER PRIMARY KEY, context_id INTEGER, context_type VARCHAR(255), created_at TIMESTAMP, activity_type VARCHAR(255))
+CREATE TABLE votes (id INTEGER PRIMARY KEY, votable_id INTEGER, votable_type VARCHAR(255))
+CREATE TABLE posts (id INTEGER PRIMARY KEY , title VARCHAR(255), content VARCHAR(255), published BOOLEAN , poster_id INTEGER)

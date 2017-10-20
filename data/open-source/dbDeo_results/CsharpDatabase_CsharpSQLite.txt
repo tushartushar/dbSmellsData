@@ -1,0 +1,82 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(col INTEGER)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE N_2(i INTEGER, t TEXT)
+ in following column t of table N_2
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'id']
+Detected: Obsolete Column TypesFound in following statement: create table tbl1(one text, two smallint)
+ in following column one of table tbl1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a, b INTEGER PRIMARY KEY, c)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [CustomerDemographics] 	([CustomerTypeID] [nchar] (10) NOT NULL ,	[CustomerDesc] [ntext] NULL ,	CONSTRAINT [PK_CustomerDemographics] PRIMARY KEY 	(		[CustomerTypeID]	))
+ in following column [CustomerDesc] of table [CustomerDemographics]
+Detected: Clone Tables Found in following statement: CREATE TABLE t2(c, d)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'CASCADE']
+Detected: Adjacency List Found in following statement: CREATE TABLE [Employees] ([EmployeeID] INTEGER NOT NULL,[LastName] nvarchar (20) NOT NULL,[FirstName] nvarchar (10) NOT NULL,[Title] nvarchar (30) NULL,[TitleOfCourtesy] nvarchar(25) NULL,[BirthDate] datetime NULL,[HireDate] datetime NULL ,[Address] nvarchar (60) NULL, [City] nvarchar (15) NULL, [Region] nvarchar (15) NULL, [PostalCode] nvarchar (10) NULL, [Country] nvarchar (15) NULL, [HomePhone] nvarchar (24) NULL, [Extension] nvarchar (4) NULL, [Notes] [ntext] NULL, [ReportsTo] INTEGER NULL, CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeID]), CONSTRAINT [FK_Employees_Employees] FOREIGN KEY ([ReportsTo]) REFERENCES [Employees] ([EmployeeID]))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tDB.TEST1 (I INTEGER, T TEXT)
+ in following column T of table tDB
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE TEST_TABLE ( COLA INTEGER, COLB TEXT )
+ in following column COLB of table TEST_TABLE
+Detected: Clone Tables Found in following statement: CREATE TABLE N_2(i INTEGER, t TEXT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Values in Column Definition Found in following statement: CREATE TABLE test (id INTEGER CHECK (id <> 2))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE N_1(i INTEGER, t TEXT)
+ in following column t of table N_1
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'NULL']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a PRIMARY KEY)
+
+Detected: Obsolete Column TypesFound in following statement: create table tbl1(one float, two smallint)
+ in following column one of table tbl1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'ON']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tDB.TIMER(TestNumber INTEGER, Description TEXT, StartTime REAL, EndTime REAL DEFAULT NULL, Rows INTEGER DEFAULT NULL)
+ in following column Description of table tDB
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(c1 VARIANT)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [Employees] ([EmployeeID] INTEGER NOT NULL,[LastName] nvarchar (20) NOT NULL,[FirstName] nvarchar (10) NOT NULL,[Title] nvarchar (30) NULL,[TitleOfCourtesy] nvarchar(25) NULL,[BirthDate] datetime NULL,[HireDate] datetime NULL ,[Address] nvarchar (60) NULL, [City] nvarchar (15) NULL, [Region] nvarchar (15) NULL, [PostalCode] nvarchar (10) NULL, [Country] nvarchar (15) NULL, [HomePhone] nvarchar (24) NULL, [Extension] nvarchar (4) NULL, [Notes] [ntext] NULL, [ReportsTo] INTEGER NULL, CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeID]), CONSTRAINT [FK_Employees_Employees] FOREIGN KEY ([ReportsTo]) REFERENCES [Employees] ([EmployeeID]))
+ in following column [Notes] of table [Employees]
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'DELETE']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a,b,c,d)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO TIMER VALUES(0, 'performance.txt,v 1.3', 0, 1, 0)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tDB.TIMER(TestNumber INTEGER, Description TEXT, StartTime REAL, EndTime REAL DEFAULT NULL, Rows INTEGER DEFAULT NULL)
+ in following column StartTime of table tDB
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: God Table Found in following statement: CREATE TABLE [Employees] ([EmployeeID] INTEGER NOT NULL,[LastName] nvarchar (20) NOT NULL,[FirstName] nvarchar (10) NOT NULL,[Title] nvarchar (30) NULL,[TitleOfCourtesy] nvarchar(25) NULL,[BirthDate] datetime NULL,[HireDate] datetime NULL ,[Address] nvarchar (60) NULL, [City] nvarchar (15) NULL, [Region] nvarchar (15) NULL, [PostalCode] nvarchar (10) NULL, [Country] nvarchar (15) NULL, [HomePhone] nvarchar (24) NULL, [Extension] nvarchar (4) NULL, [Notes] [ntext] NULL, [ReportsTo] INTEGER NULL, CONSTRAINT [PK_Employees] PRIMARY KEY ([EmployeeID]), CONSTRAINT [FK_Employees_Employees] FOREIGN KEY ([ReportsTo]) REFERENCES [Employees] ([EmployeeID]))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Clone Tables Found in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+
+Detected: Obsolete Column TypesFound in following statement: create table Test (val REAL NOT NULL)
+ in following column val of table Test
+Detected: Clone Tables Found in following statement: CREATE TABLE N_1(i INTEGER, t TEXT)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Root (intIndex INTEGER PRIMARY KEY, strIndex TEXT)
+ in following column strIndex of table Root
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Clone Tables Found in following statement: create table [t{0}] (id, name, amount)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tDB.TIMER(TestNumber INTEGER, Description TEXT, StartTime REAL, EndTime REAL DEFAULT NULL, Rows INTEGER DEFAULT NULL)
+ in following column EndTime of table tDB
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['People', 'SET']

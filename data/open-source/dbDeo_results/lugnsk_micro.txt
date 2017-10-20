@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `blogs` ( `id` INT(11) NOT NULL AUTO_INCREMENT, `name` VARCHAR(127) NOT NULL DEFAULT '', `content` TEXT NOT NULL, PRIMARY KEY (`id`))
+ in following column `content` of table `blogs`
+Detected: Index Shotgun Variant: 1

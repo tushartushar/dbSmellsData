@@ -1,0 +1,140 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE sm3333 (smc3 integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'e']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`items`', '`id`']
+Detected: Values in Column Definition Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) = 5)))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'y']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', '?']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'lower__name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `items` (`size` integer, `name` text)
+ in following column `name` of table `items`
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', 'dog_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'project_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE a (a integer)
+ in following column a and in column a of table cats
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'CASCADE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', ':table_exists']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'RESTRICT']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE items (name text)
+ in following column name of table items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `posts` (`title` text, `body` text)
+ in following column `title` of table `posts`
+Detected: Index Shotgun Variant: 3 Following index not used : ['f', 'dog_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'SET']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cats (o varchar(255) PRIMARY KEY AUTOINCREMENT, a varchar(255), b integer, c integer, d bigint, e double precision, f numeric, g date, h timestamp, i timestamp, j numeric, k blob, l boolean, m boolean, n integer, p date REFERENCES f)
+ in following column b and in column b of table t
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`items`', '`other_than_id`']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE cats (a varchar(50), a2 varchar(13), a3 char(50), a4 char(13), a5 text, a6 varchar(50), a7 varchar(13))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (a varchar(50), a2 varchar(13), a3 char(50), a4 char(13), a5 text, a6 varchar(50), a7 varchar(13))
+ in following column a5 of table cats
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE albums (id integer primary key, name varchar(255))
+ in following column id and in column id of table cats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `dolls` (`name` text)
+ in following column `name` of table `dolls`
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'two']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text NULL, name2 text NULL)
+ in following column name2 of table cats
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', 'meta_def']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text NOT NULL, name2 text NOT NULL)
+ in following column name of table cats
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'one']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'z']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE cats (id integer, name text NULL, name2 text NULL)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) >= 5)))
+ in following column name and in column name of table cats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer DEFAULT 123, name text DEFAULT 'abc''def')
+ in following column name of table cats
+Detected: Adjacency List Found in following statement: CREATE TABLE `items` (`id` integer PRIMARY KEY AUTO_INCREMENT, `p_id` integer NOT NULL, UNIQUE (`id`), FOREIGN KEY (`p_id`) REFERENCES `items`(`id`) ON DELETE CASCADE)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', '@db']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', 'a']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'NO']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', 'cat_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', '?']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text, UNIQUE (name) NOT DEFERRABLE)
+ in following column name of table cats
+Detected: Values in Column Definition Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) >= 3) AND (char_length(name) < 5)))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (name text, CHECK ((name IS NOT NULL) AND (name ~ '^foo.*')))
+ in following column name of table foo
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `items` (`size` integer, `name` text)
+ in following column `name` and in column `name` of table `dolls`
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'lower']
+Detected: Adjacency List Found in following statement: CREATE TABLE `items` (`id` integer PRIMARY KEY AUTO_INCREMENT, `other_than_id` integer, `p_id` integer NOT NULL, UNIQUE (`other_than_id`), FOREIGN KEY (`p_id`) REFERENCES `items`(`other_than_id`) ON DELETE CASCADE)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'NULL']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'x']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `items` (`active1` tinyint(1) DEFAULT 1, `active2` tinyint(1) DEFAULT 0)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'meta_def']
+Detected: Index Shotgun Variant: 3 Following index not used : ['test', 'endenddescribe']
+Detected: Clone Tables Found in following statement: CREATE TABLE sm2222 (smc2 integer)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'ACTION']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (name text, CHECK ((name IS NOT NULL) AND (name ~* '^foo.*')))
+ in following column name of table foo
+Detected: Values in Column Definition Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) >= 3) AND (char_length(name) <= 5)))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `items` (`id` varchar(255) NOT NULL DEFAULT 'blah')
+ in following column `id` and in column `id` of table `users`
+Detected: God Table Found in following statement: CREATE TABLE cats (o varchar(255) PRIMARY KEY AUTOINCREMENT, a varchar(255), b integer, c integer, d bigint, e double precision, f numeric, g date, h timestamp, i timestamp, j numeric, k blob, l boolean, m boolean, n integer, p date REFERENCES f)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text NULL, name2 text NULL)
+ in following column name of table cats
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE cats (id integer, name text NOT NULL, name2 text NOT NULL)
+
+Detected: Values in Column Definition Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) >= 5)))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE cats (id integer AUTOINCREMENT, cat_id integer, CONSTRAINT foo PRIMARY KEY (id), CONSTRAINT baz FOREIGN KEY (cat_id) REFERENCES cats(foo_id) ON DELETE CASCADE ON UPDATE RESTRICT DEFERRABLE INITIALLY DEFERRED, CONSTRAINT bar UNIQUE (cat_id))
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`items`', 'CASCADE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text, UNIQUE (name) DEFERRABLE INITIALLY IMMEDIATE)
+ in following column name of table cats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (name text, UNIQUE (name))
+ in following column name of table cats
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'id']
+Detected: Clone Tables Found in following statement: CREATE TABLE sm11111 (smc1 integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text, UNIQUE (name) DEFERRABLE INITIALLY DEFERRED)
+ in following column name of table cats
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text NOT NULL, name2 text NOT NULL)
+ in following column name2 of table cats
+Detected: Clone Tables Found in following statement: CREATE TABLE sm (smc1 integer)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', 'endend']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', '@db']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'real_b']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'ON']
+Detected: Index Shotgun Variant: 3 Following index not used : ['f', 'cat_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (id integer NOT NULL PRIMARY KEY AUTOINCREMENT, name text)
+ in following column name of table test
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`items`', 'ON']
+Detected: Index Shotgun Variant: 3 Following index not used : ['posts', '10']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text UNIQUE)
+ in following column name of table cats
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'DEFAULT']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cats_dogs', ':table_exists']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (id integer, name text)
+ in following column name of table cats
+Detected: Values in Column Definition Found in following statement: CREATE TABLE foo (name varchar(255), CHECK ((name IS NOT NULL) AND (char_length(name) <= 5)))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cats (a varchar(50), b text, c char(40), d time, e numeric(11, 2))
+ in following column b of table cats
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['`items`', 'DELETE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `posts` (`title` text, `body` text)
+ in following column `body` of table `posts`
+Detected: Obsolete Column TypesFound in following statement: create table t (a text, b text)
+ in following column a of table t
+Detected: Obsolete Column TypesFound in following statement: create table t (a text, b text)
+ in following column b of table t
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'UPDATE']
+Detected: Index Shotgun Variant: 3 Following index not used : ['posts', 'id']
+Detected: Clone Tables Found in following statement: CREATE TABLE sm1111 (smc1 integer)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['abc', 'real_a']

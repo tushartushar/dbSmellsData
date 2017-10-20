@@ -1,0 +1,50 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'client_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['app_config', 'section_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ext_log_entries', 'object_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ext_translations (id INT AUTO_INCREMENT NOT NULL, locale VARCHAR(8) NOT NULL, object_class VARCHAR(255) NOT NULL, field VARCHAR(32) NOT NULL, foreign_key VARCHAR(64) NOT NULL, content LONGTEXT DEFAULT NULL, INDEX translations_lookup_idx (locale, object_class, foreign_key), UNIQUE INDEX lookup_unique_idx (locale, object_class, field, foreign_key), PRIMARY KEY(id))
+ in following column content of table ext_translations
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'client']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payments', 'status_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['contacts', 'email']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE addresses (id INT AUTO_INCREMENT NOT NULL, client_id INT DEFAULT NULL, street1 VARCHAR(255) DEFAULT NULL, street2 VARCHAR(255) DEFAULT NULL, city VARCHAR(255) DEFAULT NULL, state VARCHAR(255) DEFAULT NULL, zip VARCHAR(255) DEFAULT NULL, country VARCHAR(255) DEFAULT NULL, created DATETIME NOT NULL, updated DATETIME NOT NULL, deleted DATETIME DEFAULT NULL, INDEX IDX_6FCA751619EB6921 (client_id), PRIMARY KEY(id))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['clients', 'status_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoice_items', 'tax_id']
+Detected: God Table Found in following statement: CREATE TABLE acl_entries (id INT UNSIGNED AUTO_INCREMENT NOT NULL, class_id INT UNSIGNED NOT NULL, object_identity_id INT UNSIGNED DEFAULT NULL, security_identity_id INT UNSIGNED NOT NULL, field_name VARCHAR(50) DEFAULT NULL, ace_order SMALLINT UNSIGNED NOT NULL, mask INT NOT NULL, granting TINYINT(1) NOT NULL, granting_strategy VARCHAR(30) NOT NULL, audit_success TINYINT(1) NOT NULL, audit_failure TINYINT(1) NOT NULL, UNIQUE INDEX UNIQ_46C8B806EA000B103D9AB4A64DEF17BCE4289BF4 (class_id, object_identity_id, field_name, ace_order), INDEX IDX_46C8B806EA000B103D9AB4A6DF9183C9 (class_id, object_identity_id, security_identity_id), INDEX IDX_46C8B806EA000B10 (class_id), INDEX IDX_46C8B8063D9AB4A6 (object_identity_id), INDEX IDX_46C8B806DF9183C9 (security_identity_id), PRIMARY KEY(id))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ext_log_entries (id INT AUTO_INCREMENT NOT NULL, action VARCHAR(8) NOT NULL, logged_at DATETIME NOT NULL, object_id VARCHAR(32) DEFAULT NULL, object_class VARCHAR(255) NOT NULL, version INT NOT NULL, data LONGTEXT DEFAULT NULL COMMENT '(DC2Type:array)', username VARCHAR(255) DEFAULT NULL, INDEX log_class_lookup_idx (object_class), INDEX log_date_lookup_idx (logged_at), INDEX log_user_lookup_idx (username), PRIMARY KEY(id))
+ in following column INDEX and in column INDEX of table acl_entries
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_details', 'method_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_methods', 'defaultStatus_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE security_token (hash VARCHAR(255) NOT NULL, details LONGTEXT DEFAULT NULL COMMENT '(DC2Type:object)', after_url LONGTEXT DEFAULT NULL, target_url LONGTEXT NOT NULL, payment_name VARCHAR(255) NOT NULL, PRIMARY KEY(hash))
+ in following column target_url of table security_token
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE payment_details (id INT AUTO_INCREMENT NOT NULL, details LONGTEXT NOT NULL COMMENT \'(DC2Type:json_array)\', PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE = InnoDB')
+ in following column details and in column details of table security_token
+Detected: God Table Found in following statement: CREATE TABLE addresses (id INT AUTO_INCREMENT NOT NULL, client_id INT DEFAULT NULL, street1 VARCHAR(255) DEFAULT NULL, street2 VARCHAR(255) DEFAULT NULL, city VARCHAR(255) DEFAULT NULL, state VARCHAR(255) DEFAULT NULL, zip VARCHAR(255) DEFAULT NULL, country VARCHAR(255) DEFAULT NULL, created DATETIME NOT NULL, updated DATETIME NOT NULL, deleted DATETIME DEFAULT NULL, INDEX IDX_6FCA751619EB6921 (client_id), PRIMARY KEY(id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE invoice_items (id INT AUTO_INCREMENT NOT NULL, invoice_id INT DEFAULT NULL, description LONGTEXT NOT NULL, price NUMERIC(10, 2) NOT NULL, qty DOUBLE PRECISION NOT NULL, created DATETIME NOT NULL, updated DATETIME NOT NULL, deleted DATETIME DEFAULT NULL, INDEX IDX_DCC4B9F82989F1FD (invoice_id), PRIMARY KEY(id))
+ in following column description of table invoice_items
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contact_details (id INT AUTO_INCREMENT NOT NULL, contact_id INT DEFAULT NULL, contact_type_id INT DEFAULT NULL, value LONGTEXT NOT NULL, is_primary TINYINT(1) DEFAULT NULL, INDEX IDX_E8092A0BE7A1254A (contact_id), INDEX IDX_E8092A0B5F63AD12 (contact_type_id), PRIMARY KEY(id))
+ in following column value of table contact_details
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_details', 'invoice_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE security_token (hash VARCHAR(255) NOT NULL, details LONGTEXT DEFAULT NULL COMMENT '(DC2Type:object)', after_url LONGTEXT DEFAULT NULL, target_url LONGTEXT NOT NULL, payment_name VARCHAR(255) NOT NULL, PRIMARY KEY(hash))
+ in following column details of table security_token
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE quote_items (id INT AUTO_INCREMENT NOT NULL, quote_id INT DEFAULT NULL, description LONGTEXT NOT NULL, price NUMERIC(10, 2) NOT NULL, qty DOUBLE PRECISION NOT NULL, created DATETIME NOT NULL, updated DATETIME NOT NULL, deleted DATETIME DEFAULT NULL, INDEX IDX_ECE1642CDB805178 (quote_id), PRIMARY KEY(id))
+ in following column description of table quote_items
+Detected: Index Shotgun Variant: 3 Following index not used : ['quotes', 'status_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE app_config (id INT AUTO_INCREMENT NOT NULL, `key` VARCHAR(125) NOT NULL, `value` LONGTEXT DEFAULT NULL, description LONGTEXT DEFAULT NULL, section VARCHAR(125) NOT NULL, PRIMARY KEY(id))
+ in following column `value` of table app_config
+Detected: Index Shotgun Variant: 3 Following index not used : ['quote_items', 'tax_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['invoices', 'status_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE contact_details (id INT AUTO_INCREMENT NOT NULL, contact_id INT DEFAULT NULL, contact_type_id INT DEFAULT NULL, value LONGTEXT NOT NULL, is_primary TINYINT(1) DEFAULT NULL, INDEX IDX_E8092A0BE7A1254A (contact_id), INDEX IDX_E8092A0B5F63AD12 (contact_type_id), PRIMARY KEY(id))
+ in following column value and in column value of table client_credit
+Detected: Index Shotgun Variant: 3 Following index not used : ['payment_details', 'status_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ext_log_entries (id INT AUTO_INCREMENT NOT NULL, action VARCHAR(8) NOT NULL, logged_at DATETIME NOT NULL, object_id VARCHAR(32) DEFAULT NULL, object_class VARCHAR(255) NOT NULL, version INT NOT NULL, data LONGTEXT DEFAULT NULL COMMENT '(DC2Type:array)', username VARCHAR(255) DEFAULT NULL, INDEX log_class_lookup_idx (object_class), INDEX log_date_lookup_idx (logged_at), INDEX log_user_lookup_idx (username), PRIMARY KEY(id))
+ in following column username and in column username of table acl_security_identities
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE app_config (id INT AUTO_INCREMENT NOT NULL, `key` VARCHAR(125) NOT NULL, `value` LONGTEXT DEFAULT NULL, description LONGTEXT DEFAULT NULL, section VARCHAR(125) NOT NULL, PRIMARY KEY(id))
+ in following column description of table app_config
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ext_log_entries (id INT AUTO_INCREMENT NOT NULL, action VARCHAR(8) NOT NULL, logged_at DATETIME NOT NULL, object_id VARCHAR(32) DEFAULT NULL, object_class VARCHAR(255) NOT NULL, version INT NOT NULL, data LONGTEXT DEFAULT NULL COMMENT '(DC2Type:array)', username VARCHAR(255) DEFAULT NULL, INDEX log_class_lookup_idx (object_class), INDEX log_date_lookup_idx (logged_at), INDEX log_user_lookup_idx (username), PRIMARY KEY(id))
+ in following column version and in column version of table (
+Detected: Index Shotgun Variant: 3 Following index not used : ['ext_log_entries', 'object_class']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE security_token (hash VARCHAR(255) NOT NULL, details LONGTEXT DEFAULT NULL COMMENT '(DC2Type:object)', after_url LONGTEXT DEFAULT NULL, target_url LONGTEXT NOT NULL, payment_name VARCHAR(255) NOT NULL, PRIMARY KEY(hash))
+ in following column after_url of table security_token

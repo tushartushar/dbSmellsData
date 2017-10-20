@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE experiments ( | id INT AUTO_INCREMENT, | experiment MEDIUMTEXT, | last_update_date BIGINT, | orig_id INT, | start_date BIGINT DEFAULT 0, | end_date BIGINT DEFAULT 4102444800000, | PRIMARY KEY(id, last_update_date) |)
+ in following column | of table experiments
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE specs ( | id INT PRIMARY KEY AUTO_INCREMENT, | fqn VARCHAR (255) NOT NULL, | spec MEDIUMTEXT, | UNIQUE KEY (fqn) |)
+ in following column | of table specs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE experiments ( | id INT AUTO_INCREMENT, | experiment MEDIUMTEXT, | last_update_date BIGINT, | orig_id INT, | start_date BIGINT DEFAULT 0, | end_date BIGINT DEFAULT 4102444800000, | PRIMARY KEY(id, last_update_date) |)
+ in following column | and in column | of table specs

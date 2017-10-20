@@ -1,0 +1,1401 @@
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2740, 21, 'KILOMETRO 394 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1986, 2, 'DE LAS CASAS, BARTOLOME', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3581, 8, 'KILOMETRO 36 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3204, 21, 'WATT ,EST.MELIDEO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2121, 3, 'KILOMETRO 546 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3470, 8, 'AGUA DULCE ,EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1436, 9, 'PETION, ALEJANDRO ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2420, 20, 'TALITAS ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2584, 21, 'COLONIA MALBERTINA ,EMB.KILOMETRO 531', '0', 0)
+
+Detected: Index Shotgun Variant: 1
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1925, 7, 'SIMBOL BAJO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3809, 23, 'MONTE RICO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1999, 2, 'ESTERO PATIO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (896, 9, 'CASANOVA, ISIDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1047, 9, 'EZEIZA, JOSE MARIA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (260, 5, 'KILOMETRO 392 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (620, 6, 'KILOMETRO 406 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3571, 8, 'KILOMETRO 102 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1369, 9, 'MURATURE, FRANCISCO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (232, 5, 'GUADALUPE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (229, 5, 'GRANEROS ,EST.', '0', 0)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE contabilidad_tipos_cuenta ( id_tipo_cuenta integer NOT NULL, nombre_tipo character varying(60) NOT NULL, descripcion_tipo character varying(255), version integer DEFAULT 0 NOT NULL)
+ in following column nombre_tipo and in column nombre_tipo of table productos_tipos_porcentajes
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1574, 9, 'SANTAMARINA, RAMON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1194, 9, 'KILOMETRO 34 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (323, 5, 'LUDUEA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (193, 5, 'ESCALADA, MIGUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3579, 8, 'KILOMETRO 1256 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (647, 6, 'LIBERTAD ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (261, 5, 'KILOMETRO 403 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2326, 20, 'KILOMETRO 361 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (118, 5, 'CARRIZALES ,EST.CLARKE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1087, 9, 'GENERAL LAS HERAS ,EST.LAS HERAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1212, 9, 'LA CONSTANCIA ,AP.KILOMETRO 360', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1864, 7, 'MIRAVAL, HERNAN M.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3358, 4, 'LOS PATOS ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2851, 21, 'LASPIUR, SATURNINO M.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE productos ( id_producto integer NOT NULL, codigo_propio character varying(100), descripcion character varying(200), fecha_alta timestamp without time zone NOT NULL, activo boolean DEFAULT true NOT NULL, id_tipo_proveeduria integer NOT NULL, id_tipo_unidad_compra integer NOT NULL, id_tipo_unidad_venta integer NOT NULL, costo_adquisicion_neto numeric(19,2) NOT NULL, id_alicuota_iva integer NOT NULL, utilidad numeric(19,2) NOT NULL, stock_total numeric(19,2) DEFAULT 0 NOT NULL, id_rubro integer NOT NULL, id_sub_rubro integer NOT NULL, annos_amortizacion integer DEFAULT 0 NOT NULL, ubicacion character varying(20), id_proveedor_habitual integer, version integer DEFAULT 0 NOT NULL, precio_venta numeric(19,4) DEFAULT 1 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3575, 8, 'KILOMETRO 1213 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (838, 9, 'BELLA VISTA ,EST.TTE.GRL.RICCHIERI', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1510, 9, 'ROMERO, ELIAS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (637, 6, 'KILOMETRO 516 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1325, 9, 'MARMOL, JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (628, 6, 'KILOMETRO 476 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (178, 5, 'ECHEVERRIA, VICENTE A.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (308, 5, 'LEIVA, LUCIANO', '0', 0)
+
+Detected: Duplicate Column Names Found in following statement: create table productos_porcentajes( id_producto_porcentaje serial primary key, id_producto integer not null references productos (id_producto) on delete cascade , id_tipo_porcentaje integer not null references productos_tipos_porcentajes (id_tipo_porcentaje), valor numeric(19,4) not null, fecha_modificacion timestamp not null DEFAULT current_timestamp)
+ in following column id_tipo_porcentaje and in column id_tipo_porcentaje of table productos_tipos_porcentajes
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (296, 5, 'LAS FLORES ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4014, 11, 'CHAMICAL ,EST.GOBERNADOR GORDILLO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4126, 11, 'TELLO, DESIDERIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (263, 5, 'KILOMETRO 408 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2761, 21, 'KILOMETRO 907 ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3036, 21, 'ROSALES, BLAS DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (474, 5, 'TARTAGAL ,EST.EL TAJAMAR', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (370, 5, 'PINI, ANTONIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1046, 9, 'ETCHEVERRY, ANGEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1386, 9, 'OCAMPO, MANUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1199, 9, 'KILOMETRO 48 ,AP.', '0', 0)
+
+Detected: Duplicate Column Names Found in following statement: create table fiscal_monedas( codigo_moneda char(3) primary key, nombre_moneda varchar(50) not null)
+ in following column nombre_moneda and in column nombre_moneda of table contabilidad_monedas
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2311, 20, 'HOLT ,EST', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3939, 10, 'KILOMETRO 199 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1505, 9, 'ROCA, AGUSTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1297, 9, 'LOS GAUCHOS ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1203, 9, 'KILOMETRO 641 ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1377, 9, 'NEILD, RAMON J.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (622, 6, 'KILOMETRO 416 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (588, 6, 'FERNANDEZ, PEDRO R.,EST.M.F.MANSILLA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (228, 5, 'GRANADEROS ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3099, 21, 'SANTA MAGDALENA ,EST.JOVITA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1183, 9, 'JOFRE, TOMAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2926, 21, 'MONTE REDONDO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1477, 9, 'QUERANDIES ,EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (338, 5, 'MOLINA, JUAN B.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2751, 21, 'KILOMETRO 651 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3923, 10, 'EL ZURDO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3678, 8, 'SAN MIGUEL DE TUCUMAN ,EST.TUCUMAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2853, 21, 'LEDESMA, ALEJO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2749, 21, 'KILOMETRO 618 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1865, 7, 'MISTOL PAMPA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1323, 9, 'MARIA IGNACIA ,EST.VEIA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2024, 2, 'LAPRIDA, FRANCISCO NARCISO DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1295, 9, 'LOPEZ, VICENTE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3023, 21, 'RIO DE LOS MOLINOS ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (270, 5, 'KILOMETRO 85 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (638, 6, 'KILOMETRO 517 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3692, 8, 'TACANAS ,EST.SUPERINTENDENTE LEDESMA', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE contabilidad_registro_contable ( id_registro integer NOT NULL, id_libro integer NOT NULL, fecha_proceso timestamp without time zone NOT NULL, usuario character varying(100), id_tipo_comprobante integer NOT NULL, letra_comprobante character varying(10), punto_venta_comprobante character varying(10), numero_comprobante character varying(100), cuit_emisor_comprobante character varying(11), cuit_receptor_comprobante character varying(11), fecha_comprobante timestamp without time zone, fecha_vencimiento timestamp without time zone, id_periodo_contable integer, id_periodo_fiscal integer, concepto_comprobante character varying(2000), id_tipo_operacion integer, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (339, 5, 'MOLINAS, NICANOR E.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1695, 9, 'VUCETICH, JUAN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2501, 21, 'BUCHARDO ,EST.HIPOLITO BOUCHARD', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1806, 7, 'KILOMETRO 390 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3576, 8, 'KILOMETRO 1235 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1293, 9, 'LOPEZ CAMELO ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (657, 6, 'MINUANES ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3118, 21, 'SUQUIA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1198, 9, 'KILOMETRO 45 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (613, 6, 'KILOMETRO 204 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3405, 4, 'QUEBRADA DEL AGUA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3379, 4, 'OSMA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2613, 21, 'CRAIK, JAMES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (608, 6, 'KILOMETRO 104 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (621, 6, 'KILOMETRO 410 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1189, 9, 'KILOMERO 8 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2747, 21, 'KILOMETRO 581 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3319, 4, 'KILOMETRO 1156 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (898, 9, 'CASARES, VICENTE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (607, 6, 'KILOMETR0 301 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (583, 6, 'EL SOMBRERO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2964, 21, 'PELLICO, SILVIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (359, 5, 'PALACIOS, LUIS ,EST.LA SALADA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1866, 7, 'MONTE ALTO ,AP.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE ventas_lineas ( id_linea_venta integer NOT NULL, id_venta integer NOT NULL, id_producto integer NOT NULL, precio_venta_unitario numeric(19,4) NOT NULL, cantidad numeric(19,2) NOT NULL, sub_total numeric(19,2) NOT NULL, costo_neto_unitario numeric(19,4) NOT NULL, costo_bruto_unitario numeric(19,4) NOT NULL, cantidad_entregada numeric(19,2) NOT NULL, id_linea_venta_referencia integer, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1187, 9, 'JUSTO VILLEGAS ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3030, 21, 'ROCA, ALEJANDRO ,EST.ALEJANDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1362, 9, 'MORRIS, WILIAM C.,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1950, 7, 'VILLA GENERAL MITRE ,EST.PINTO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1642, 9, 'VARELA, FLORENCIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3201, 21, 'VIVAS, PEDRO E. ,EMB.KILOMETRO 658', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (86, 5, 'ASCOCHINGAS ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1312, 9, 'MAGNANO, FRANCISCO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2792, 21, 'LA PAQUITA ,EST.PRESIDENTE F.ALCORTA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (256, 5, 'KILOMETRO 17 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3847, 23, 'SAN PEDRO ,EST.SAN PEDRO DE JUJUY', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2235, 20, 'BOCA DEL TIGRE ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3406, 4, 'QUIJARRO, ANTONIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1410, 9, 'PASCO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1340, 9, 'MIGUELETE ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3283, 4, 'EL GALPON ,EST.FOGUISTA JORGE.F.SUAREZ', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2231, 20, 'BENITO LEGEREN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1315, 9, 'MALAVER ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1139, 9, 'GUTIERREZ, JUAN M.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3949, 10, 'LAS HERAS ,EST.COLONIA LAS HERAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1128, 9, 'GRAVIA, RICARDO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1346, 9, 'MITRE, BARTOLOME ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3104, 21, 'SANTA ROSA DE RIO PRIMERO ,EST.V.S.ROSA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3769, 23, 'GALAN, JUAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3780, 23, 'KILOMETRO 1183 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (394, 5, 'RASTREADOR FOURNIER ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3932, 10, 'GOBERNADOR LISTA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3101, 21, 'SANTA MARIA DE PUNILLA ,EST.SANTA MARIA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (785, 9, 'ARISTOBULO DEL VALLE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1433, 9, 'PEREZ, ROQUE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1801, 7, 'KILOMETRO 1362 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (980, 9, 'DE LA RIESTRA, NORBERTO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2673, 21, 'EL ZAINO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (322, 5, 'LOS TABANOS ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1053, 9, 'FERNANDEZ, JUAN N.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1630, 9, 'TRONCONI, JUAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1202, 9, 'KILOMETRO 55 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (755, 9, 'ALFREDO DEMARCHI ,EST. QUIROGA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (198, 5, 'ESTRADA, JOSE M.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1414, 9, 'PASO, JUAN JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1498, 9, 'RIO SALADO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (78, 5, 'AROMOS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (266, 5, 'KILOMETRO 443 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3583, 8, 'KILOMETRO 5 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (863, 9, 'BRANDSEN ,EST.CNL.BRANDSEN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (610, 6, 'KILOMETRO 161 ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1329, 9, 'MASUREL ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (881, 9, 'CANAL SAN FERNANDO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1250, 9, 'LAMARCA, EMILIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3572, 8, 'KILOMETRO 1185 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3810, 23, 'OLACAPATO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3433, 4, 'SARAVIA, APOLINARIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1118, 9, 'GONZALEZ CHAVES, ADOLFO ,EST.G.CHAVES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1842, 7, 'LIBARONA, AGUSTINA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2120, 3, 'KILOMETRO 538 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3364, 4, 'MATORRAS, JERONIMO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (365, 5, 'PEREYRA, ZENON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3318, 4, 'KILOMETRO 1152 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (636, 6, 'KILOMETRO 512 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1582, 9, 'SEGUI, ARTURO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3552, 8, 'HUASA PAMPA NORTE ,EST.HUASA PAMPA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (250, 5, 'IRIGOYEN, BERNARDO DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2125, 3, 'LANUS, MIGUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3180, 21, 'VILLA GUTIERREZ ,EMB. KM. 807', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (208, 5, 'FRAY LUIS BELTRAN ,EST.TTE.CNL.L.BELTRAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1170, 9, 'INGENIERO SANTIAGO BRIAN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (617, 6, 'KILOMETRO 394 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (125, 5, 'CASTELLANOS, AARON ,EST.CASTELLANOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4044, 11, 'KILOMETRO 875 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3637, 8, 'MILLAN, DOMINGO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2757, 21, 'KILOMETRO 859 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (966, 9, 'COSTA, EDUARDO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1114, 9, 'GOMEZ, VALENTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1677, 9, 'VILLA LYNCH ,EST.CNL.FRANCISCO LYNCH', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1026, 9, 'ELIZALDE, RUFINO DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1808, 7, 'KILOMETRO 436 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3801, 23, 'LOS LAPACHOS ,EST.MAQUINISTA VERON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (265, 5, 'KILOMETRO 41 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (625, 6, 'KILOMETRO 451 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1197, 9, 'KILOMETRO 40 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1528, 9, 'SAN ANDRES DE GILES ,EST.GILES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3263, 4, 'CORONEL JUAN SOLA ,EST.MORILLO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3586, 8, 'KILOMETRO 781 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1110, 9, 'GOBERNADOR LUIS GARCIA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1079, 9, 'GENERAL ARENALES ,EST.ARENALES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2304, 20, 'GONZALEZ, LUCAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (516, 6, '9 DE JULIO ,EST.PUEBLO DE JULIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2323, 20, 'KILOMETRO 325 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1214, 9, 'LA CUMBRE ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (179, 5, 'EDISON, TOMAS A.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (910, 9, 'CENTRO AGRICOLA EL PATO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2013, 2, 'KILOMETRO 1895 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (739, 9, 'AGUARA ,EST.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE personas ( id_persona integer NOT NULL, razon_social character varying(200) NOT NULL, apellidos character varying(60), nombres character varying(60), nombre_fantasia character varying(200), id_tipo_personeria integer NOT NULL, id_pais integer NOT NULL, id_provincia integer NOT NULL, id_localidad integer NOT NULL, calle character varying(100), altura character varying(50), piso character varying(3), depto character varying(5), id_tipo_documento integer NOT NULL, documento character varying(13) NOT NULL, id_responsabilidad_iva integer NOT NULL, fecha_alta timestamp without time zone NOT NULL, activo boolean DEFAULT true NOT NULL, cliente boolean DEFAULT true NOT NULL, proveedor boolean DEFAULT false NOT NULL, id_genero integer NOT NULL, version integer DEFAULT 0 NOT NULL, email character varying(100) DEFAULT 'a@a.com'::character varying, id_sucursal integer DEFAULT 1 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2988, 21, 'POSSE, JUSTINIANO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1306, 9, 'LURO, PEDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (718, 6, 'YAPEYU ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (490, 5, 'VERA Y PINTADO ,EST.GUARANIES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (407, 5, 'SAAVEDRA, MARIANO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3455, 4, 'UNQUILLAL ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1831, 7, 'LA PALOMA ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3442, 4, 'TACA TACA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2755, 21, 'KILOMETRO 730 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2694, 21, 'GAVILAN ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1618, 9, 'TIMOTE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2319, 20, 'KILOMETRO 200 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3439, 4, 'SOCOMPA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3654, 8, 'PAZ, MARCOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1700, 9, 'ZAMUDIO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3497, 8, 'CACHI YACO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1476, 9, 'QUERANDI ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1077, 9, 'GASCON, ESTEBAN AGUSTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1819, 7, 'KILOMETRO 659 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2241, 20, 'CERRITO ,EST.COLONIA CERRITO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1962, 7, 'VILLA SAN MARTIN ,EST.LORETO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1213, 9, 'LA COPETA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2700, 21, 'GENERAL ORTIZ DE OCAMPO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1457, 9, 'PORTELA, IRINEO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (886, 9, 'CAPILLA DEL SEOR ,EST.CAPILLA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1508, 9, 'ROLDAN, MARIANO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (770, 9, 'ANCON ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2438, 20, 'VILLA SAN MARCIAL ,EST.GDR.URQUIZA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3819, 23, 'PALPALA ,EST.GRL.MANUEL N.SAVIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (538, 6, 'CAA GUAZU ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1522, 9, 'SALINERA ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3148, 21, 'VELEZ SARSFIELD, DALMACIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3496, 8, 'CACHI HUASI ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (269, 5, 'KILOMETRO 501 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (899, 9, 'CASAS, JOSE B.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1348, 9, 'MOLINA, CLAUDIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2617, 21, 'CRUZ DEL EJE ,EST.NORTE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1085, 9, 'GENERAL JUAN MADARIAGA ,EST.G.MADARIAGA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1338, 9, 'MERLO GOMEZ ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2201, 3, 'YRIGOYEN, HIPOLITO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3782, 23, 'KILOMETRO 1243 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (257, 5, 'KILOMETRO 187 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1193, 9, 'KILOMETRO 27 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1796, 7, 'INGENIERO CARLOS CHRISTIERNSON ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1249, 9, 'LAGUNA ALSINA ,EST.BONIFACIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (317, 5, 'LOS CHARABONES ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (580, 6, 'DIAZ COLODRERO,PEDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2357, 20, 'MAGNASCO, OSVALDO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2300, 20, 'GENERAL RAMIREZ ,EST.RAMIREZ', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1394, 9, 'OLMOS, LISANDRO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1269, 9, 'LASALLE, PEDRO P.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (213, 5, 'GALLARDO, ANGEL ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2738, 21, 'KILOMETRO 271 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1033, 9, 'EPUMER ,EST.YUTUYACO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3907, 10, 'CAPITAN EYROA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1805, 7, 'KILOMETRO 18 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1205, 9, 'KORN, ALEJANDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1817, 7, 'KILOMETRO 613 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2387, 20, 'PUEBLO ARRUA ,EST.ALCARAZ', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1069, 9, 'GAMBIER ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1404, 9, 'OTOO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2282, 20, 'EL PALENQUE ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1658, 9, 'VILLA BOSCH ,PDA.JUAN MARIA BOSCH', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (173, 5, 'DENIS, GREGORIA PEREZ DE ,EST.EL NOCHERO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3397, 4, 'PROFESOR SALVADOR MAZZA ,EST.POCITOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (71, 5, 'ANTARTIDA ARGENTINA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (858, 9, 'BORGES ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1162, 9, 'INGENIERO ANDRES VILLANUEVA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1418, 9, 'PAYRO, ROBERTO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1639, 9, 'URIBURU, TEDIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (609, 6, 'KILOMETRO 120 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1555, 9, 'SAN MIGUEL DEL MONTE ,EST.MONTE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (988, 9, 'DELTA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3304, 4, 'GONZALEZ, JOAQUIN V.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2027, 2, 'LOS PILAGAS ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3636, 8, 'MENDEZ, PEDRO G.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (627, 6, 'KILOMETRO 470 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4045, 11, 'KILOMETRO 891 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (140, 5, 'CLUCELLAS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2528, 21, 'CANTERAS EL SAUCE ,EST.EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3300, 4, 'GENERAL GUEMES ,EST.GUEMES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1416, 9, 'PATAGONES, CARMEN DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3669, 8, 'ROUGES, LEON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1419, 9, 'PAZ, JOSE C.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (119, 5, 'CASABLANCA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (677, 6, 'PUCHETA ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (158, 5, 'COLONIA SILVA ,EST.ABIPONES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2321, 20, 'KILOMETRO 213 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (795, 9, 'ARTURO VATTEONE ,EST', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3966, 10, 'PIEDRA CLAVADA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3978, 10, 'TEHUELCHES ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2280, 20, 'EL MOCHO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2252, 20, 'COLONIA CASEROS ,EST.CASEROS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1052, 9, 'FERNANDEZ, A.A.,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3316, 4, 'KILOMETRO 1125 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3012, 21, 'QUISQUIZACATE ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2739, 21, 'KILOMETRO 316 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (262, 5, 'KILOMETRO 405 ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (258, 5, 'KILOMETRO 213 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (624, 6, 'KILOMETRO 442 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (902, 9, 'CASCALLARES, MICAELA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (719, 6, 'YOFRE, FELIPE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1816, 7, 'KILOMETRO 606 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1109, 9, 'GOBERNADOR EDUARDO ARANA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2631, 21, 'DESPEADEROS ,EST.DR.LUCAS A.DE OLMOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3589, 8, 'KILOMETRO 808 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2291, 20, 'FERNANDEZ ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3587, 8, 'KILOMETRO 784 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1803, 7, 'KILOMETRO 1391 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2275, 20, 'DON GONZALO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3746, 23, 'CHAI ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2608, 21, 'CORTES, JERONIMO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1271, 9, 'LAVALLE, ENRIQUE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (510, 5, 'VILLE, MOISES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (878, 9, 'CAN, ROBERTO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (135, 5, 'CHATEAUBRIAND ,EST.MURPHY', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1814, 7, 'KILOMETRO 546 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (182, 5, 'EL CANTOR ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2399, 20, 'ROSARIO DE TALA ,EST.TALA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3208, 21, 'ZUMARAN, ANA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1818, 7, 'KILOMETRO 645 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1200, 9, 'KILOMETRO 53 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2322, 20, 'KILOMETRO 306 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1989, 2, 'DOCTOR E.RAMOS MEJIAS ,EST.CHIRIGUANOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1204, 9, 'KILOMETRO 9 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (932, 9, 'COBO, MANUEL J.,EST.LEZAMA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (581, 6, 'DOCTOR FELIX MARIA GOMEZ ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (635, 6, 'KILOMETRO 506 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2453, 21, 'ALCIRA ,EST.GIGENA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3385, 4, 'PATRON COSTAS, LUIS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3315, 4, 'KILOMETRO 1104 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3495, 8, 'BUSTAMANTE ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (606, 6, 'KILOMETR0 167 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3580, 8, 'KILOMETRO 29 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1877, 7, 'PAMPA MUYOJ ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2377, 20, 'PARERA, FAUSTINO M.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4101, 11, 'REAL DEL CADILLO ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1089, 9, 'GENERAL MANSILLA ,EST.BARTOLOME BAVIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4117, 11, 'SANTA CRUZ ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3573, 8, 'KILOMETRO 1194 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (740, 9, 'AGUSTIN FERRARI ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2893, 21, 'LUGONES, LEOPOLDO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1592, 9, 'SOSA, INOCENCIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1634, 9, 'UBALLES, EUFEMIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3652, 8, 'PAZ, BENJAMIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1719, 7, 'ANTONIO E. TALBOT ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2808, 21, 'LA TABLADA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3034, 21, 'ROJAS, DIEGO DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1116, 9, 'GONNET, MANUEL B.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1383, 9, 'NUEVA SUIZA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2097, 3, 'DEL VALLE, ARISTOBULO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1097, 9, 'GENERAL SAN MARTIN ,EST.SAN MARTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1036, 9, 'ESCOBAR, BELEN DE ,EST.ESCOBAR', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3929, 10, 'FUHR, CHARLES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1145, 9, 'HERNANDEZ, JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3347, 4, 'LAS MESITAS ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (364, 5, 'PELLEGRINI, CARLOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1148, 9, 'HIRSCH, MAURICIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1987, 2, 'DEL CAMPO, ESTANISLAO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3214, 4, 'AGUARAY ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1807, 7, 'KILOMETRO 433 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2205, 20, 'ALBERTO GERCHUNOF ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3777, 23, 'KILOMETRO 1129 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1136, 9, 'GUILLON, LUIS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1655, 9, 'VILLA ANGELICA ,EST,EL SOCORRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (897, 9, 'CASARES, CARLOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1035, 9, 'ESCALADA, REMEDIOS DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3787, 23, 'KILOMETRO 1373 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1190, 9, 'KILOMETRO 12 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (958, 9, 'CORONEL MARTINIANO CHILAVERT ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (393, 5, 'RAMS, ESTEBAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (753, 9, 'ALEJANDRO PETION ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3239, 4, 'CAIPE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2744, 21, 'KILOMETRO 563 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1691, 9, 'VIRREYES ,EST.FACUNDO QUIROGA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2593, 21, 'COLONIA TIROLESA ,EST.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE bancos ( id_banco integer NOT NULL, razon_social character varying(200) NOT NULL, id_pais integer NOT NULL, id_provincia integer NOT NULL, id_localidad integer NOT NULL, direccion character varying(500), telefono_fijo character varying(20), celular character varying(20), cuit character varying(11) NOT NULL, id_responsabilidad_iva integer NOT NULL, fecha_alta timestamp without time zone NOT NULL, activo boolean DEFAULT true NOT NULL, observaciones character varying(1024), version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3022, 21, 'RIO CUARTO NORTE ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (312, 5, 'LOPEZ ,EST.SAN MARTIN DE TOURS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (467, 5, 'STEPHENSON ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2741, 21, 'KILOMETRO 466 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2745, 21, 'KILOMETRO 57 ,EST.EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1624, 9, 'TRES ALGARROBOS ,EST.CUENCA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1405, 9, 'PADILLA, MIGUEL MANUEL ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (74, 5, 'ARIJON ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1799, 7, 'KILOMETR0699 ,EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (304, 5, 'LAS TROJAS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (594, 6, 'GUAVIRAVI ,EST.25 DE FEBRERO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (91, 5, 'AVELLANEDA ,EST.EWALD', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2225, 20, 'ARROYO PALMAR ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1554, 9, 'SAN MIGUEL ,EST.GENERAL SARMIENTO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3290, 4, 'EL TALA ,EST.RUIZ DE LOS LLANOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1130, 9, 'GRUNBEIN ,EST.EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1037, 9, 'ESCRIBANO, PEDRO N.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1556, 9, 'SAN NICOLAS DE LOS ARROYOS,EST.S.NICOLAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (381, 5, 'PUEBLO MUOZ ,EST.BERNARD', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1225, 9, 'LA MASCOTA ,EST.MASCOTA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3270, 4, 'DE ALMAGRO, DIEGO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3655, 8, 'PEDRAZA, MANUELA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3785, 23, 'KILOMETRO 1289 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3000, 21, 'PUESTO DE AFUERA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3060, 21, 'SAN BUENAVENTURA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1101, 9, 'GERMANIA ,EST.MAYOR ORELLANO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3742, 23, 'CASTRO TOLAY, ABDON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3257, 4, 'CHUCULAQUI ,EST.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE fiscal_libro_iva_ventas ( id_factura integer NOT NULL, fecha_factura timestamp without time zone NOT NULL, id_responsabilidad_iva integer NOT NULL, documento character varying(20) NOT NULL, letra_factura character varying(2) NOT NULL, punto_venta_factura character varying(4) NOT NULL, numero_factura character varying(8) NOT NULL, total_factura numeric(19,2), id_periodo_fiscal integer NOT NULL, id_persona integer NOT NULL, id_registro_contable integer, anulada boolean DEFAULT false NOT NULL, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (612, 6, 'KILOMETRO 182 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2325, 20, 'KILOMETRO 340 ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2350, 20, 'LEDESMA, CLODOMIRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1969, 7, 'ZANJON ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1595, 9, 'SPANO, GUIDO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2675, 21, 'ELCANO, SEBASTIAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1284, 9, 'LLORENTE, GALO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1365, 9, 'MOURAS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3786, 23, 'KILOMETRO 1321 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1160, 9, 'INDART, INES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3459, 4, 'VEGA DE ARZARO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2693, 21, 'GARCIA, RAFAEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1815, 7, 'KILOMETRO 55 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3254, 4, 'CHICOANA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (630, 6, 'KILOMETRO 485 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1460, 9, 'PRADERE, JUAN A.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1054, 9, 'FERRARI, AGUSTIN ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4079, 11, 'MAZAN ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3564, 8, 'INGENIO LULES ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3095, 21, 'SANTA CATALINA ,EST.HOLMBERG', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3314, 4, 'KILOMETRO 1088 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (313, 5, 'LOPEZ, LUCIO V.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3616, 8, 'LOPEZ DOMINGUEZ ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (488, 5, 'VERA ,EST.GOBERNADOR VERA', '0', 0)
+
+Detected: Duplicate Column Names Found in following statement: create table fiscal_puntos_venta( nro_punto_venta int primary key, activo boolean not null, tipo varchar(30) not null, descripcion varchar(100) not null, id_sucursal integer not null references sucursales(id_sucursal) on update no action on delete no action, version integer not null default 0)
+ in following column descripcion and in column descripcion of table productos_imagenes
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (964, 9, 'CORREAS, IGNACIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (993, 9, 'DOCTOR RICARDO LEVENE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1932, 7, 'SURIHUAYA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2729, 21, 'JUAREZ, MARCOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2742, 21, 'KILOMETRO 480 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (748, 9, 'ALBERTI ,EST. ANDRES VACCAREZZA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (471, 5, 'TACUARENDI ,EMB.KILOMETRO 421', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (373, 5, 'POMPEYA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2627, 21, 'DE LA QUINTANA, JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2385, 20, 'PRIMER CONGRESO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1435, 9, 'PESSAGNO, ATILIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2759, 21, 'KILOMETRO 881 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3570, 8, 'KILOMETRO 10 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2293, 20, 'GARAT, JUAN ,EST.GARAT', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (615, 6, 'KILOMETRO 382 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3043, 21, 'SALAS, MIGUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2281, 20, 'EL PAGO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3149, 21, 'VELEZ SARSFIELD, DALMACIO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3301, 4, 'GENERAL MOSCONI ,EST.VESPUCIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2454, 21, 'ALEJANDRO ROCA ,EST. ALEJANDRO.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3584, 8, 'KILOMETRO 55 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2746, 21, 'KILOMETRO 579 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (192, 5, 'ESCALADA, MARCELINO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1593, 9, 'SOURDEAUX, ADOLFO ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: insert into parametros values ('afip.wsaa.dn','cn=wsaahomo,o=afip,c=ar,serialNumber=CUIT 33693450239','El DN para acceder al servicio',0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1813, 7, 'KILOMETRO 546 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (634, 6, 'KILOMETRO 504 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2680, 21, 'ESCUELA PARACAIDISTAS ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (177, 5, 'DURHAM ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3614, 8, 'LILLO, MIGUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2253, 20, 'COLONIA CENTENARIO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3921, 10, 'EL TURBIO ,EST.GOBERNADOR MEYER', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (399, 5, 'RINCON DEL QUEBRACHO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1812, 7, 'KILOMETRO 499 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (618, 6, 'KILOMETRO 396 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (949, 9, 'CORONADO, MARTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1798, 7, 'KILOMETR0 80 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2239, 20, 'CARBO, ENRIQUE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1360, 9, 'MORENO, MARIANO ,EST.MORENO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (982, 9, 'DE VICTORIA, FRANCISCO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (935, 9, 'COLMAN, MARTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3252, 4, 'CHAAR MUYO ,EST.CNL.OLLEROS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1073, 9, 'GARCIA, MANUEL J.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (781, 9, 'ARENALES ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (990, 9, 'DESCALZI, NICOLAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2748, 21, 'KILOMETRO 608 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1967, 7, 'YOUNG, TOMAS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (976, 9, 'DE ELIA, AGUSTIN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (514, 5, 'WILDERMUTH ,EST.GRANADERO B.BUSTOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1195, 9, 'KILOMETRO 36 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (227, 5, 'GRANADERO BLAS BARGAS ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1276, 9, 'LEVALLE, NICOLAS', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE bancos_cuentas ( id_cuenta_banco integer NOT NULL, id_banco integer NOT NULL, descripcion_cuenta character varying(200), numero_cuenta character varying(60) NOT NULL, numero_sucursal character varying(10), cbu character varying(22), activo boolean NOT NULL, fecha_apertura timestamp without time zone, id_moneda integer NOT NULL, id_tipo_cuenta_banco integer NOT NULL, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1201, 9, 'KILOMETRO 54 ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2731, 21, 'KILOMETRO 136 ,EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (626, 6, 'KILOMETRO 459 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (371, 5, 'PINO DE SAN LORENZO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2734, 21, 'KILOMETRO 182 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1188, 9, 'JUSTO, JUAN B. ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (924, 9, 'CIRCUNVALACION ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1821, 7, 'LA ALOJA ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2316, 20, 'KILOMETRO 160 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2931, 21, 'NARVAJA, TRISTAN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (465, 5, 'SORRENTO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2460, 21, 'ALTA CORDOBA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1703, 9, 'ZEBALLOS, ESTANISLAO SEVERO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1470, 9, 'PUNTA ALTA ,EST.ALMIRANTE SOLIER', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (555, 6, 'COLONIA CAROLINA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3961, 10, 'PAMPA ALTA ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1191, 9, 'KILOMETRO 17 ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (225, 5, 'GOMEZ CELLO, PEDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1915, 7, 'SANTA MARIA ,EST.INGENIERO EZCURRA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (578, 6, 'DERQUI, MANUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1596, 9, 'SPEGAZZINI, CARLOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3656, 8, 'POLITO ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (729, 9, 'A.F.ORMA ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3588, 8, 'KILOMETRO 794 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (264, 5, 'KILOMETRO 41 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2766, 21, 'LA BUENA PARADA ,EST.COMECHINGONES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2758, 21, 'KILOMETRO 865 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3582, 8, 'KILOMETRO 46 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (363, 5, 'PAZ, MAXIMO ,EST.PAZ', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1392, 9, 'OLIVERA, NICANOR ,EST.LA DULCE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3951, 10, 'LISTA, RAMON ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2324, 20, 'KILOMETRO 33 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1611, 9, 'TEJEDOR, CARLOS ,EST.TEJEDOR', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2904, 21, 'MALVINAS ARGENTINAS ,EST.KILOMETRO 711', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1533, 9, 'SAN CARLOS DE BOLIVAR ,EST.BOLIVAR', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2679, 21, 'ESCALANTE, WENCESLAO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (762, 9, 'ALTIMPERGHER ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3913, 10, 'DE BIEDMA, ANTONIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2318, 20, 'KILOMETRO 183,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1802, 7, 'KILOMETRO 1380 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (632, 6, 'KILOMETRO 492 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1185, 9, 'JUAREZ, BENITO ,EST.JUAREZ', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3593, 8, 'KILOMETRO 99,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1590, 9, 'SOLA, FELIPE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (186, 5, 'EL SOMBRERITO ,EST.PAUL GROUSSAC', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1820, 7, 'KILOMETRO 969 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (110, 5, 'CAADA RICA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2965, 21, 'PETER, JAIME', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1542, 9, 'SAN FRANCISCO SOLANO ,PDA.KILOMETRO 26', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1082, 9, 'GENERAL DANIEL CERRI ,EST.GRL.CERRI', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2704, 21, 'GOULD, BENJAMIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2327, 20, 'KILOMETRO 389 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2317, 20, 'KILOMETRO 180 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3407, 4, 'RIO ANCHO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3544, 8, 'GALLO, DELFIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2378, 20, 'PARERA, RAMONA A. ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1519, 9, 'SALAS, CARLOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1594, 9, 'SOURIGUES, CARLOS ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2429, 20, 'VILLA DOMINGUEZ ,EST.DOMINGUEZ', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE ventas ( id_venta integer NOT NULL, fecha_venta timestamp without time zone NOT NULL, id_usuario integer NOT NULL, id_sucursal integer NOT NULL, total numeric(19,2) NOT NULL, id_condicion_venta integer NOT NULL, saldo numeric(19,2) NOT NULL, id_registro_iva integer, observaciones character varying(1024), anulada boolean DEFAULT false NOT NULL, id_persona integer NOT NULL, id_estado integer NOT NULL, version integer NOT NULL, remitente character varying(100), nroremito character varying(100))
+
+Detected: Duplicate Column Names Found in following statement: create table productos_tipos_porcentajes(id_tipo_porcentaje serial primary key,version integer DEFAULT 0 NOT NULL,nombre_tipo varchar(50) not null,porcentaje boolean DEFAULT true NOT NULL)
+ in following column porcentaje and in column porcentaje of table productos_porcentajes
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (821, 9, 'BANCALARI ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2232, 20, 'BERDUC ,EST.MARTINIANO LEGUIZAMON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (480, 5, 'TORRES, MIGUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1800, 7, 'KILOMETRO 101 ,PDA.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE proveedores_ordenes_compra ( id_orden_compra integer NOT NULL, fecha_orden_compra timestamp without time zone NOT NULL, fecha_estimada_recepcion timestamp without time zone NOT NULL, id_condicion_compra integer NOT NULL, id_sucursal integer NOT NULL, id_usuario integer NOT NULL, total numeric(19,2) NOT NULL, observaciones character varying(1024), anulada boolean DEFAULT false NOT NULL, id_proveedor integer NOT NULL, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3898, 10, 'BELLA VISTA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1431, 9, 'PEREDA, VICENTE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3778, 23, 'KILOMETRO 1137 ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2233, 20, 'BERISSO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (605, 6, 'KILOMETR 402 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (756, 9, 'ALMIRANTE BROWN ,EST. ADROGUE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1151, 9, 'HUDSON, GUILLERMO E.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2750, 21, 'KILOMETRO 636 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2907, 21, 'MANSILLA, LUCIO V.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1339, 9, 'MICHEO, JOSE M.', '0', 0)
+
+Detected: God Table Found in following statement: CREATE TABLE stock_movimientos ( id_movimiento_stock integer NOT NULL, fecha_movimiento timestamp without time zone NOT NULL, id_producto integer NOT NULL, cantidad_anterior numeric(19,2) NOT NULL, cantidad_movimiento numeric(19,2) NOT NULL, cantidad_actual numeric(19,2) NOT NULL, id_tipo_movimiento integer NOT NULL, observaciones_movimiento character varying(255), id_usuario integer NOT NULL, costo_total_movimiento numeric(19,2) NOT NULL, id_deposito_movimiento integer NOT NULL, version integer DEFAULT 0 NOT NULL)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2139, 3, 'PINDAPOY ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (271, 5, 'KILOMETRO 9 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (631, 6, 'KILOMETRO 489 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1637, 9, 'UNZUE, MARIANO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (879, 9, 'CAADA MARIANO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1776, 7, 'EL TOBIANO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2691, 21, 'FUNES, DOMINGO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (170, 5, 'CULLEN ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2753, 21, 'KILOMETRO 691 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2320, 20, 'KILOMETRO 208 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (986, 9, 'DEL VALLE,ARISTOBULO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3908, 10, 'CERRO BLANCO ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2421, 20, 'TENIENTE 1 BRIGIDO CAINZO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1255, 9, 'LARRE, SANTIAGO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (611, 6, 'KILOMETRO 173 ,EMB', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3076, 21, 'SAN JOSE DE LAS SALINAS ,EST.SAN JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3577, 8, 'KILOMETRO 1248 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1371, 9, 'NAON, CARLOS M.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (527, 6, 'ARROYO AMBROSIO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1055, 9, 'FERRARI, JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3368, 4, 'MINA CONCORDIA ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1497, 9, 'RIO LUJAN ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2656, 21, 'EL PAYADOR ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1514, 9, 'RUBEN DARIO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2743, 21, 'KILOMETRO 541 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3590, 8, 'KILOMETRO 810 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (651, 6, 'LOZA, MARIANO I. ,EST.JUSTINO SOLARI', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (979, 9, 'DE LA PLAZA, VICTORINO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2730, 21, 'KILOMETRO 1,5 AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2127, 3, 'LEIS ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1400, 9, 'ORMA, ADOLFO F. ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1070, 9, 'GAMEN, PEDRO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (277, 5, 'LA CRIOLLA ,EST.CAADITA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3259, 4, 'COCHABAMBA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (79, 5, 'ARRASCAETA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (267, 5, 'KILOMETRO 468 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1009, 9, 'DUSSAUD ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (4053, 11, 'LA ISLA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (633, 6, 'KILOMETRO 501 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (728, 9, 'A.A.FERNANDEZ ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3323, 4, 'KILOMETRO 1305 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (908, 9, 'CASTILLO, RAFAEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1385, 9, 'OBLIGADO, RAFAEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3248, 4, 'CASTAARES ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3833, 23, 'RIO BLANCO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3914, 10, 'DUFOUR, JULIA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3797, 23, 'LIBERTADOR GRL.SAN MARTIN, EST.LEDESMA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1158, 9, 'IBARRA,JUAN F.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1669, 9, 'VILLA GENERAL ARIAS ,EST.KILOMETRO 638', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1601, 9, 'SUAREZ, TRISTAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1288, 9, 'LOMA PARAGUAYA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2502, 21, 'BUEN RETIRO ,AP.EL VADO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (614, 6, 'KILOMETRO 374 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1809, 7, 'KILOMETRO 454 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2883, 21, 'LOS POZOS ,AP.KILOMETRO 827', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1660, 9, 'VILLA CASTELAR ,EST.ERIZE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3935, 10, 'GOBERNADOR MOYANO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1644, 9, 'VATTEONE, ARTURO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (268, 5, 'KILOMETRO 483 ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (724, 9, '20 DE JUNIO ,AP.', '0', 0)
+
+Detected: Values in Column Definition Found in following statement: create table negocio_tipos_comprobante( id_negocio_tipo_comprobante integer primary key, nombre_comprobante varchar(30) not null, signo numeric(1,0) not null check (signo = 1 OR signo =-1), activo boolean not null, version integer not null default 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (855, 9, 'BONNEMENT ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1810, 7, 'KILOMETRO 473 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3653, 8, 'PAZ, LEOCADIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (960, 9, 'CORONEL PRINGLES ,EST.PRINGLES', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3545, 8, 'GARCIA FERNANDEZ, MANUEL', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3447, 4, 'TEDIN, VIRGILIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3779, 23, 'KILOMETRO 1149 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3317, 4, 'KILOMETRO 1129 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3592, 8, 'KILOMETRO 847 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2536, 21, 'CARCANO, RAMON J.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1600, 9, 'SUAREZ, JOSE LEON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (476, 5, 'TEODELINA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (684, 6, 'PUJOL, JUAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1420, 9, 'PAZ, MARCOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1098, 9, 'GENERAL VIAMONTE ,EST.LOS TOLDOS', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1636, 9, 'UNION FERROVIARIA ,PDA.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2645, 21, 'EL DIQUECITO ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2340, 20, 'LA VIRGEN ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1597, 9, 'SPURR ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2328, 20, 'KILOMETRO 45 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3574, 8, 'KILOMETRO 1207 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (362, 5, 'PAZ, FRANCISCO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (255, 5, 'KILOMETR 465 ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3578, 8, 'KILOMETRO 1254 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (981, 9, 'DE LUCA, ESTEBAN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1511, 9, 'ROMERO, MELCHOR', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (569, 6, 'CONI, EMILIO R.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (616, 6, 'KILOMETRO 387 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2036, 2, 'PASO, JUAN JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2491, 21, 'BARRIO FLORES ,EMB.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2955, 21, 'PAN DE AZUCAR ,AP.KILOMETRO 592', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1651, 9, 'VIDELA DORNA, ZENON', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (832, 9, 'BARTOLOME MITRE ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1804, 7, 'KILOMETRO 153 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3005, 21, 'PUNILLA ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (891, 9, 'CARBONI, ANTONIO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1561, 9, 'SANDRINI ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3130, 21, 'TEMPLE, SANTIAGO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3321, 4, 'KILOMETRO 1291 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1704, 9, 'ZENTENA ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3585, 8, 'KILOMETRO 770 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3456, 4, 'URIZAR, ESTEBAN DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1061, 9, 'FORTABAT, ALFREDO ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3957, 10, 'MINERALES ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (80, 5, 'ARROYO AGUIAR ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1196, 9, 'KILOMETRO 40 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (352, 5, 'NUEVO ALBERDI ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (415, 5, 'SAN CARLOS ,EMP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (946, 9, 'CORACEROS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (582, 6, 'EJERCITO ARGENTINO ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1891, 7, 'PUNI TAJO ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2977, 21, 'PIZARRO, MODESTINO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (623, 6, 'KILOMETRO 431 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2279, 20, 'EL GUALEGUAY ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3781, 23, 'KILOMETRO 1210 ,DV.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1309, 9, 'MADERO, FRANCISCO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1682, 9, 'VILLA PRONSATO ,EST.CORONEL MALDONADO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3417, 4, 'SALAR DE POCITOS ,EST.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3848, 23, 'SAN SALVADOR DE JUJUY ,EST.JUJUY', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3123, 21, 'TALA NORTE ,EST.EL ALCALDE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1576, 9, 'SANTOS AREVALO, JOSE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2116, 3, 'IRIGOYEN, BERNARDO DE', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1421, 9, 'PAZ, MAXIMO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (243, 5, 'HUME ,EST.EL GAUCHO', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2692, 21, 'FUNES, PEDRO E.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1137, 9, 'GUISASOLA,JOSE A.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1152, 9, 'HUERGO,DELFIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1500, 9, 'RIVADAVIA ,EST.AMERICA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (629, 6, 'KILOMETRO 479 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (2376, 20, 'PARANACITO ,EST.LIB.GRL.SAN MARTIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1192, 9, 'KILOMETRO 19 ,AP.', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (280, 5, 'LA LUCILA ,EST.LUCILA', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (1121, 9, 'GORINA, JOAQUIN', '0', 0)
+
+Detected: Compound Attribute Variant: 2 Found in following statement: INSERT INTO ubicacion_localidades VALUES (3181, 21, 'VILLA HUIDOBRO ,EST.CAADA VERDE', '0', 0)
+

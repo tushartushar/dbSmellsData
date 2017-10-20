@@ -1,0 +1,65 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_tags_idx ( tenant_id text, tname text, tvalue text, type tinyint, metric text, PRIMARY KEY ((tenant_id, tname), tvalue, type, metric))
+ in following column metric of table metrics_tags_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE leases ( time_slice timestamp, shard int, owner text, finished boolean, PRIMARY KEY (time_slice, shard))
+ in following column owner of table leases
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tenants ( id text PRIMARY KEY, retentions map<text, int>)
+ in following column retentions of table tenants
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jobs ( id uuid PRIMARY KEY, type text, name text, params map<text, text>, trigger frozen <trigger_def>)
+ in following column id and in column id of table tenants
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE jobs ( id uuid PRIMARY KEY, type text, name text, params map<text, text>, trigger frozen <trigger_def>)
+ in following column type and in column type of table metrics_idx
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_compressed ( tenant_id text, type tinyint, metric text, dpart bigint, time timestamp, c_value blob, ts_value blob, tags blob, PRIMARY KEY ((tenant_id, type, metric, dpart), time))
+ in following column tenant_id of table data_compressed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id uuid, group_key text, name text, exec_order int, params map<text, text>, trigger frozen <trigger_def>, PRIMARY KEY (id))
+ in following column params of table tasks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sys_config ( config_id text, name text, value text, PRIMARY KEY (config_id, name))
+ in following column value of table sys_config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data_compressed ( tenant_id text, type tinyint, metric text, dpart bigint, time timestamp, c_value blob, ts_value blob, tags blob, PRIMARY KEY ((tenant_id, type, metric, dpart), time))
+ in following column metric of table data_compressed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id uuid, group_key text, name text, exec_order int, params map<text, text>, trigger frozen <trigger_def>, PRIMARY KEY (id))
+ in following column name of table tasks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data ( tenant_id text, type tinyint, metric text, dpart bigint, time timeuuid, data_retention int static, n_value double, availability blob, l_value bigint, aggregates set<frozen <aggregate_data>>, PRIMARY KEY ((tenant_id, type, metric, dpart), time))
+ in following column metric of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE metrics_idx ( tenant_id text, type tinyint, metric text, tags map<text, text>, data_retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column tags and in column tags of table data_compressed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE retentions_idx ( tenant_id text, type tinyint, metric text, retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column tenant_id of table retentions_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs ( id uuid PRIMARY KEY, type text, name text, params map<text, text>, trigger frozen <trigger_def>)
+ in following column type of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sys_config ( config_id text, name text, value text, PRIMARY KEY (config_id, name))
+ in following column name of table sys_config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE locks ( name text PRIMARY KEY, value text,)
+ in following column name of table locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE locks ( name text PRIMARY KEY, value text,)
+ in following column value of table locks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_idx ( tenant_id text, type tinyint, metric text, tags map<text, text>, data_retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column tenant_id of table metrics_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_idx ( tenant_id text, type tinyint, metric text, tags map<text, text>, data_retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column metric of table metrics_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tenants_by_time ( bucket timestamp, tenant text, PRIMARY KEY (bucket, tenant))
+ in following column tenant of table tenants_by_time
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE retentions_idx ( tenant_id text, type tinyint, metric text, retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column metric of table retentions_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE data ( tenant_id text, type tinyint, metric text, dpart bigint, time timeuuid, data_retention int static, n_value double, availability blob, l_value bigint, aggregates set<frozen <aggregate_data>>, PRIMARY KEY ((tenant_id, type, metric, dpart), time))
+ in following column tenant_id of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs ( id uuid PRIMARY KEY, type text, name text, params map<text, text>, trigger frozen <trigger_def>)
+ in following column params of table jobs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE data ( tenant_id text, type tinyint, metric text, dpart bigint, time timeuuid, data_retention int static, n_value double, availability blob, l_value bigint, aggregates set<frozen <aggregate_data>>, PRIMARY KEY ((tenant_id, type, metric, dpart), time))
+ in following column time and in column time of table data_compressed
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sys_config ( config_id text, name text, value text, PRIMARY KEY (config_id, name))
+ in following column config_id of table sys_config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tasks ( id uuid, group_key text, name text, exec_order int, params map<text, text>, trigger frozen <trigger_def>, PRIMARY KEY (id))
+ in following column group_key of table tasks
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_tags_idx ( tenant_id text, tname text, tvalue text, type tinyint, metric text, PRIMARY KEY ((tenant_id, tname), tvalue, type, metric))
+ in following column tenant_id of table metrics_tags_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tenants ( id text PRIMARY KEY, retentions map<text, int>)
+ in following column id of table tenants
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_tags_idx ( tenant_id text, tname text, tvalue text, type tinyint, metric text, PRIMARY KEY ((tenant_id, tname), tvalue, type, metric))
+ in following column tname of table metrics_tags_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE jobs ( id uuid PRIMARY KEY, type text, name text, params map<text, text>, trigger frozen <trigger_def>)
+ in following column name of table jobs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_idx ( tenant_id text, type tinyint, metric text, tags map<text, text>, data_retention int, PRIMARY KEY ((tenant_id, type), metric))
+ in following column tags of table metrics_idx
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE metrics_tags_idx ( tenant_id text, tname text, tvalue text, type tinyint, metric text, PRIMARY KEY ((tenant_id, tname), tvalue, type, metric))
+ in following column tvalue of table metrics_tags_idx

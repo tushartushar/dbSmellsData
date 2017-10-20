@@ -1,0 +1,26 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name of table sqlite_master
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column name and in column name of table testtable2
+Detected: Clone Tables Found in following statement: create table if not exists testtable1 (id int, name varchar(20))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS %Q.'%q_stat'(id INTEGER PRIMARY KEY, value BLOB)
+ in following column value and in column value of table testtable2
+Detected: Index Shotgun Variant: 3 Following index not used : ['stored_relations', 'n']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column tbl_name of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: create table foo(a bool, b int, c bigint, d real, e double precision, f text, g timestamp)
+ in following column d of table foo
+Detected: Obsolete Column TypesFound in following statement: create table foo(a bool, b int, c bigint, d real, e double precision, f text, g timestamp)
+ in following column f of table foo
+Detected: Clone Tables Found in following statement: CREATE TABLE testtable (value INTEGER, label VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE testtable2 (value VARCHAR(20))
+
+Detected: Clone Tables Found in following statement: create table if not exists testtable2 (id int, name varchar(20))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['relation_schema', 'n']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column type of table sqlite_master
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sqlite_master( type text, name text, tbl_name text, rootpage integer, sql text)
+ in following column sql of table sqlite_master

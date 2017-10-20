@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Waasmaier (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponents text)
+ in following column offset of table Waasmaier
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Version (id integer primary key, tag text, date text, notes text)
+ in following column notes of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Waasmaier (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponents text)
+ in following column element of table Waasmaier
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Waasmaier (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponents text)
+ in following column exponents of table Waasmaier
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Waasmaier (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponents text)
+ in following column ion of table Waasmaier
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Version (id integer primary key, tag text, date text, notes text)
+ in following column tag of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Waasmaier (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponents text)
+ in following column scale of table Waasmaier
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Version (id integer primary key, tag text, date text, notes text)
+ in following column date of table (

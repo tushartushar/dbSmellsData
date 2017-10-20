@@ -1,0 +1,5 @@
+Detected: Compound Attribute Variant: 1 Found in following statement: select * from ad_computers where c_operatingSystem REGEXP '(XP|200[03])';
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE #{name1} (id NUMBER PRIMARY KEY,path VARCHAR(255) UNIQUE,col_format VARCHAR(6))
+
+Detected: Index Shotgun Variant: 1

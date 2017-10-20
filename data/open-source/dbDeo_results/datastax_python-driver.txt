@@ -1,0 +1,134 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.composite_partition_no_col ( key uuid, key2 text, column1 text, value text, PRIMARY KEY ((key, key2), column1))
+ in following column key2 of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} ( k int PRIMARY KEY, v1 text, v2 text, v3 text)
+ in following column v2 of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'b']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %s.%s (k text PRIMARY KEY, v int)
+ in following column v and in column v of table test3rf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE empty_values (a text PRIMARY KEY, b int)
+ in following column b and in column b of table clustertests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1}( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column game of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clustertests.cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column c of table clustertests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.%s (k text PRIMARY KEY, v int)
+ in following column k of table %s
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS test1rf.test_unset_values (k int PRIMARY KEY, v0 int, v1 int)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyspace_name_here', 'index_options']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.composite_partition_with_col ( key uuid, key2 text, col_with_meta text, PRIMARY KEY ((key, key2)))
+ in following column key2 of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.scores( user TEXT, game TEXT, year INT, month INT, day INT, score TEXT, PRIMARY KEY (user, game, year, month, day) )
+ in following column score of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s (k int PRIMARY KEY, txt text)
+ in following column txt of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'e']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.%s (a int PRIMARY KEY, b frozen<map<text, text>>)
+ in following column b of table %s
+Detected: Index Shotgun Variant: 3 Following index not used : ['{', 'keys']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clustertests.cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column b of table clustertests
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE empty_values (a text PRIMARY KEY, b int)
+ in following column a of table empty_values
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.composite_partition_with_col ( key uuid, key2 text, col_with_meta text, PRIMARY KEY ((key, key2)))
+ in following column col_with_meta of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE %s.%s (a int PRIMARY KEY, b map<text, text>)
+ in following column b of table %s
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.simple_no_col ( key uuid, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column value of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE export_udts.users ( user text PRIMARY KEY, addresses map<text, frozen<address>>)
+ in following column . of table export_udts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mytable ( thekey text, col1 text, col2 text, PRIMARY KEY (thekey, col1) )
+ in following column col1 of table mytable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column b of table cf0
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test3rf.test_async_paging_verify ( k1 int, k2 int, v int, PRIMARY KEY(k1, k2) )
+ in following column v and in column v of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1}( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column user of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mytable ( thekey text, col1 text, col2 text, PRIMARY KEY (thekey, col1) )
+ in following column col2 of table mytable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.composite_partition_no_col ( key uuid, key2 text, column1 text, value text, PRIMARY KEY ((key, key2), column1))
+ in following column value of table legacy
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS mytable ( thekey text, col1 text, col2 text, PRIMARY KEY (thekey, col1) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE clustertests.cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column . of table clustertests
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test3rf.test2 ( k int, v0 int, v1 int, PRIMARY KEY (k,v0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'full']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'AnInterestingKeyspace']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE %s.%s (k text PRIMARY KEY, v int)
+ in following column k and in column k of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', '%s']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} ( k int PRIMARY KEY, v1 text, v2 text, v3 text)
+ in following column v3 of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'a']
+Detected: Clone Tables Found in following statement: CREATE TABLE blobbytes (a ascii PRIMARY KEY, b blob)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tuples_nulls (k int PRIMARY KEY, t frozen<tuple<text, int, uuid, blob>>)
+ in following column t of table tuples_nulls
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyspace_name_here', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.nested_composite_key ( key 'org.apache.cassandra.db.marshal.CompositeType(org.apache.cassandra.db.marshal.UUIDType, org.apache.cassandra.db.marshal.UTF8Type)', key2 bigint, full_name text, PRIMARY KEY ((key, key2)))
+ in following column full_name of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.scores( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column user of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.scores( user TEXT, game TEXT, year INT, month INT, day INT, score TEXT, PRIMARY KEY (user, game, year, month, day) )
+ in following column user of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE comment ( photo_id uuid, comment_id timeuuid, comment text, PRIMARY KEY (photo_id, comment_id) )
+ in following column comment of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE clustertests.cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column c and in column c of table {
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE legacy.nested_composite_key ( key 'org.apache.cassandra.db.marshal.CompositeType(org.apache.cassandra.db.marshal.UUIDType, org.apache.cassandra.db.marshal.UTF8Type)', key2 bigint, full_name text, PRIMARY KEY ((key, key2)))
+ in following column . and in column . of table test3rf
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyspace_name_here', 'table_name_here']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS test1rf.client_warning (k int, v0 int, v1 int, PRIMARY KEY (k, v0))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['keyspace_name_here', 'column_name_here']
+Detected: Index Shotgun Variant: 3 Following index not used : ['{', 'b']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column a of table cf0
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE float_cql_encoding ( f float PRIMARY KEY, d double )
+ in following column f of table float_cql_encoding
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.simple_no_col ( key uuid, column1 text, value text, PRIMARY KEY (key, column1))
+ in following column column1 of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mytable ( thekey text, col1 text, col2 text, PRIMARY KEY (thekey, col1) )
+ in following column thekey of table mytable
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test3rf.test2 ( k int, v0 int, v1 int, PRIMARY KEY (k,v0))
+ in following column v1 and in column v1 of table {
+Detected: Index Shotgun Variant: 3 Following index not used : ['legacy', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE export_udts.users ( user text PRIMARY KEY, addresses map<text, frozen<address>>)
+ in following column addresses of table export_udts
+Detected: Index Shotgun Variant: 3 Following index not used : ['legacy', 'composite_comp_with_col']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} ( k int PRIMARY KEY, v1 text, v2 text, v3 text)
+ in following column v1 of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} ( k int PRIMARY KEY, v text )
+ in following column v of table {
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE {0}.{1} ( k int PRIMARY KEY, v1 text, v2 text, v3 text)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test_{0}.cf (key int PRIMARY KEY, value int)
+ in following column value and in column value of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.simple_with_col ( key uuid PRIMARY KEY, col_with_meta text)
+ in following column col_with_meta of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cf0 ( a text, b text, c text, PRIMARY KEY (a, b) )
+ in following column c of table cf0
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'keys']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} (a int PRIMARY KEY, b text)
+ in following column b of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cqlengine.person ( id uuid, first_name text, last_name text, PRIMARY KEY (id) )
+ in following column last_name of table cqlengine
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', 'd']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test3rf.testtext ( k int PRIMARY KEY, v text )
+ in following column v of table test3rf
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE empty_values (a text PRIMARY KEY, b int)
+ in following column a and in column a of table composites
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.scores( user TEXT, game TEXT, year INT, month INT, day INT, score INT, PRIMARY KEY (user, game, year, month, day) )
+ in following column game of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.scores( user TEXT, game TEXT, year INT, month INT, day INT, score TEXT, PRIMARY KEY (user, game, year, month, day) )
+ in following column game of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE legacy.composite_partition_no_col ( key uuid, key2 text, column1 text, value text, PRIMARY KEY ((key, key2), column1))
+ in following column column1 of table legacy
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE {0}.{1} (a int PRIMARY KEY, b map<text, int>)
+ in following column b of table {
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cqlengine.person ( id uuid, first_name text, last_name text, PRIMARY KEY (id) )
+ in following column first_name of table cqlengine

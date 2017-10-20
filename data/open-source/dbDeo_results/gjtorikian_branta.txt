@@ -1,0 +1,49 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ftablecoltest ( foo text )
+ in following column foo of table ftablecoltest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE defaultinternaltest ( foo text )
+ in following column foo of table defaultinternaltest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS test ( message text )
+ in following column message of table test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ftabletest ( foo text )
+ in following column foo of table ftabletest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pie ( flavor TEXT )
+ in following column flavor of table pie
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ftablecoltest ( foo text, bar numeric )
+ in following column foo of table ftablecoltest
+Detected: Obsolete Column TypesFound in following statement: create table my_table (a text,b text,c text,d text,e text)
+ in following column b of table my_table
+Detected: Obsolete Column TypesFound in following statement: create table my_table (a text,b text,c text,d text,e text)
+ in following column c of table my_table
+Detected: Obsolete Column TypesFound in following statement: create table my_table (a text,b text,c text,d text,e text)
+ in following column d of table my_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE students ( name TEXT, age INTEGER )
+ in following column name of table students
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ftabletest ( foo text )
+ in following column foo and in column foo of table fmodtest
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{table_name} ( id SERIAL, name TEXT, body_weight REAL, brain_weight REAL )
+ in following column name of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs (	client_ip inet,	username text,	ts timestamp,	request text,	status smallint,	bytes int)
+ in following column request of table logs
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #{table_name} ( id SERIAL, name TEXT, body_weight REAL, brain_weight REAL )
+ in following column name and in column name of table products
+Detected: Obsolete Column TypesFound in following statement: create table my_table (a text,b text,c text,d text,e text)
+ in following column e of table my_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE fmodtest ( foo text )
+ in following column foo of table fmodtest
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE #{table_name} ( id SERIAL, name TEXT, body_weight REAL, brain_weight REAL )
+ in following column id and in column id of table products
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE foo (bar TEXT)
+ in following column bar and in column bar of table ftablecoltest
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE test (a INTEGER, b BYTEA)
+ in following column a and in column a of table my_table
+Detected: Obsolete Column TypesFound in following statement: create table my_table (a text,b text,c text,d text,e text)
+ in following column a of table my_table
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{table_name} ( id SERIAL, name TEXT, body_weight REAL, brain_weight REAL )
+ in following column brain_weight of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE #{table_name} ( id SERIAL, name TEXT, body_weight REAL, brain_weight REAL )
+ in following column body_weight of table #
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE foo (bar TEXT)
+ in following column bar of table foo
+Detected: Index Shotgun Variant: 3 Following index not used : ['suppliers', 'name']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE logs (	client_ip inet,	username text,	ts timestamp,	request text,	status smallint,	bytes int)
+ in following column username of table logs

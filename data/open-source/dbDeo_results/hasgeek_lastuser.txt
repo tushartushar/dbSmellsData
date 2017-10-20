@@ -1,0 +1,6 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['userexternalid', 'username']
+Detected: Index Shotgun Variant: 3 Following index not used : ['useremail', 'lower']
+Detected: Index Shotgun Variant: 3 Following index not used : ['useremail', 'email']
+Detected: Index Shotgun Variant: 3 Following index not used : ['useremail', 'varchar_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['userexternalid', 'varchar_pattern_ops']
+Detected: Index Shotgun Variant: 3 Following index not used : ['userexternalid', 'lower']

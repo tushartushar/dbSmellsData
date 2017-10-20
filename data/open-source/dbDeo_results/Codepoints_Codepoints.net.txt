@@ -1,0 +1,25 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column `id` of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS script_abstract ( sc TEXT(4), abstract TEXT, src TEXT(255) )
+ in following column sc of table script_abstract
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column author of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column copyright of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS script_abstract ( sc VARCHAR(4), abstract MEDIUMTEXT, src VARCHAR(255) )
+ in following column abstract of table script_abstract
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column license of table fonts
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column publisher of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS script_abstract ( sc TEXT(4), abstract TEXT, src TEXT(255) )
+ in following column src of table script_abstract
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column url of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fonts ( `id` TEXT PRIMARY KEY, name TEXT, author TEXT, publisher TEXT, url TEXT, copyright TEXT, license TEXT)
+ in following column name of table fonts
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS script_abstract ( sc TEXT(4), abstract TEXT, src TEXT(255) )
+ in following column abstract of table script_abstract
+Detected: Metadata as Data Found in following statement: CREATE TABLE IF NOT EXISTS script_abstract ( sc VARCHAR(4), abstract MEDIUMTEXT, src VARCHAR(255) )
+

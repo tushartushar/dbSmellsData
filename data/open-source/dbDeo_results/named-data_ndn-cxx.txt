@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['Key', 'identity_name']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE test (t1 int, t2 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE test (t1 int, t2 text)
+ in following column t2 of table test
+Detected: Index Shotgun Variant: 3 Following index not used : ['Identity', 'identity_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Certificate', 'identity_name']

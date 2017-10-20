@@ -1,0 +1,3 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS {0:s} (interface CHAR(16) NOT NULL'.format(table_name) for columnName in counter_list: if columnName in ['intervalStart', 'intervalEnd']: command_str += ', ' + columnName.lower() + ' TIMESTAMP' elif 'rate' in columnName.lower(): command_str += ', ' + columnName.lower() + ' FLOAT UNSIGNED' elif 'cum' in columnName.lower(): command_str += ', ' + columnName.lower() + ' BIGINT UNSIGNED' elif 'bytes' in columnName.lower(): command_str += ', ' + columnName.lower() + ' BIGINT UNSIGNED' else: command_str += ', ' + columnName.lower() + ' INT UNSIGNED' command_str += ')
+ in following column ' + columnName.lower() + ' of table {
+Detected: Index Shotgun Variant: 1

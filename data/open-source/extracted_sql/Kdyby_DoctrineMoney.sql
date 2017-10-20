@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS $tableName ( `code` VARCHAR(15) NOT NULL, `name` VARCHAR(100) NOT NULL, `number` CHAR(5) NOT NULL, `subunits_in_unit` INT NOT NULL, `countries` LONGTEXT NOT NULL COMMENT '(DC2Type:json_array)', PRIMARY KEY (`code`))
+CREATE TABLE IF NOT EXISTS `currencies` ( `code` VARCHAR(15) NOT NULL, `name` VARCHAR(100) NOT NULL, `number` CHAR(5) NOT NULL, `subunits_in_unit` INT NOT NULL, `countries` LONGTEXT NOT NULL COMMENT '(DC2Type:json_array)', PRIMARY KEY (`code`))

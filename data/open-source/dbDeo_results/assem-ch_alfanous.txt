@@ -1,0 +1,7 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE synonymes(id int primary key,word varchar(15) unique,synonymes varchar(120))
+
+Detected: Metadata as Data Found in following statement: create table synonymes(id int primary key,word varchar(15) unique,synonymes varchar(120))
+
+Detected: God Table Found in following statement: create table if not exists wordQC( gid int unique, word_gid int, word_id int, aya_id int, sura_id int, word varchar(25), normalised varchar(25), spelled varchar(25), 'order' int, token varchar(25), arabictoken varchar(25), prefixes varchar(25), suffixes varchar(25), pos varchar(25), type varchar(25), arabicpos varchar(25), mood varchar(25), arabicmood varchar(25), 'case' varchar(25), arabiccase varchar(25), root varchar(25), arabicroot varchar(25), lemma varchar(25), arabiclemma varchar(25), special varchar(25), arabicspecial varchar(25), derivation varchar(25), form varchar(25), gender varchar(25), person varchar(25), number varchar(25), voice varchar(25), state varchar(25), aspect varchar(25), primary key(gid) )
+
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,79 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard05 (brightness real, chromaticAdaptation real, lightAdaptation real, pregamma real, comment varchar(150))
+ in following column pregamma of table reinhard05
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pattanaik (autolum boolean NOT NULL, local boolean NOT NULL, cone real, rod real, multiplier real, pregamma real, comment varchar(150))
+ in following column multiplier of table pattanaik
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS reinhard05 (brightness real, chromaticAdaptation real, lightAdaptation real, pregamma real, comment varchar(150))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard02 (scales boolean NOT NULL, key real, phi real, range int, lower int, upper int, pregamma real, comment varchar(150))
+ in following column phi of table reinhard02
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk06 (contrastEqualization boolean NOT NULL, contrastFactor real, saturationFactor real, detailFactor real, pregamma real, comment varchar(150))
+ in following column pregamma of table mantiuk06
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard05 (brightness real, chromaticAdaptation real, lightAdaptation real, pregamma real, comment varchar(150))
+ in following column chromaticAdaptation of table reinhard05
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pattanaik (autolum boolean NOT NULL, local boolean NOT NULL, cone real, rod real, multiplier real, pregamma real, comment varchar(150))
+ in following column pregamma of table pattanaik
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk06 (contrastEqualization boolean NOT NULL, contrastFactor real, saturationFactor real, detailFactor real, pregamma real, comment varchar(150))
+ in following column detailFactor of table mantiuk06
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk06 (contrastEqualization boolean NOT NULL, contrastFactor real, saturationFactor real, detailFactor real, pregamma real, comment varchar(150))
+ in following column saturationFactor of table mantiuk06
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS durand (spatial real, range real, base real, pregamma real, comment varchar(150))
+ in following column range of table durand
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fattal (alpha real, beta real, colorSaturation real, noiseReduction real, oldFattal boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column colorSaturation of table fattal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS drago (bias real, pregamma real, comment varchar(150))
+ in following column pregamma of table drago
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk08 (colorSaturation real, contrastEnhancement real, luminanceLevel real, manualLuminanceLevel boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column luminanceLevel of table mantiuk08
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pattanaik (autolum boolean NOT NULL, local boolean NOT NULL, cone real, rod real, multiplier real, pregamma real, comment varchar(150))
+ in following column rod of table pattanaik
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fattal (alpha real, beta real, colorSaturation real, noiseReduction real, oldFattal boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column alpha of table fattal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fattal (alpha real, beta real, colorSaturation real, noiseReduction real, oldFattal boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column beta of table fattal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ferradans (rho real, inv_alpha real, pregamma real, comment varchar(150))
+ in following column pregamma of table ferradans
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS mantiuk06 (contrastEqualization boolean NOT NULL, contrastFactor real, saturationFactor real, detailFactor real, pregamma real, comment varchar(150))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS durand (spatial real, range real, base real, pregamma real, comment varchar(150))
+ in following column range and in column range of table reinhard02
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fattal (alpha real, beta real, colorSaturation real, noiseReduction real, oldFattal boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column noiseReduction of table fattal
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS drago (bias real, pregamma real, comment varchar(150))
+ in following column bias of table drago
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk06 (contrastEqualization boolean NOT NULL, contrastFactor real, saturationFactor real, detailFactor real, pregamma real, comment varchar(150))
+ in following column contrastFactor of table mantiuk06
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS mantiuk08 (colorSaturation real, contrastEnhancement real, luminanceLevel real, manualLuminanceLevel boolean NOT NULL, pregamma real, comment varchar(150))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ashikhmin (simple boolean NOT NULL, eq2 boolean NOT NULL, lct real, pregamma real, comment varchar(150))
+ in following column pregamma of table ashikhmin
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard05 (brightness real, chromaticAdaptation real, lightAdaptation real, pregamma real, comment varchar(150))
+ in following column brightness of table reinhard05
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ferradans (rho real, inv_alpha real, pregamma real, comment varchar(150))
+ in following column rho of table ferradans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard02 (scales boolean NOT NULL, key real, phi real, range int, lower int, upper int, pregamma real, comment varchar(150))
+ in following column pregamma of table reinhard02
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk08 (colorSaturation real, contrastEnhancement real, luminanceLevel real, manualLuminanceLevel boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column colorSaturation of table mantiuk08
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ashikhmin (simple boolean NOT NULL, eq2 boolean NOT NULL, lct real, pregamma real, comment varchar(150))
+ in following column lct of table ashikhmin
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS pattanaik (autolum boolean NOT NULL, local boolean NOT NULL, cone real, rod real, multiplier real, pregamma real, comment varchar(150))
+ in following column cone of table pattanaik
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS ferradans (rho real, inv_alpha real, pregamma real, comment varchar(150))
+ in following column inv_alpha of table ferradans
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk08 (colorSaturation real, contrastEnhancement real, luminanceLevel real, manualLuminanceLevel boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column pregamma of table mantiuk08
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS durand (spatial real, range real, base real, pregamma real, comment varchar(150))
+ in following column base of table durand
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS fattal (alpha real, beta real, colorSaturation real, noiseReduction real, oldFattal boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column pregamma of table fattal
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS reinhard02 (scales boolean NOT NULL, key real, phi real, range int, lower int, upper int, pregamma real, comment varchar(150))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS mantiuk08 (colorSaturation real, contrastEnhancement real, luminanceLevel real, manualLuminanceLevel boolean NOT NULL, pregamma real, comment varchar(150))
+ in following column contrastEnhancement of table mantiuk08
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS durand (spatial real, range real, base real, pregamma real, comment varchar(150))
+ in following column pregamma of table durand
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS durand (spatial real, range real, base real, pregamma real, comment varchar(150))
+ in following column spatial of table durand
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS reinhard05 (brightness real, chromaticAdaptation real, lightAdaptation real, pregamma real, comment varchar(150))
+ in following column lightAdaptation of table reinhard05

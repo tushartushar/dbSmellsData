@@ -1,0 +1,3 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `country` ( `id_country` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT, `iso2_code` VARCHAR(2) NOT NULL, `iso3_code` VARCHAR(3) NOT NULL, `name` VARCHAR(255) NOT NULL, PRIMARY KEY (`id_country`))
+
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `metadata` ( `id` int(11) NOT NULL AUTO_INCREMENT, `blob` blob, `number` int(11) unsigned zerofill NOT NULL, `text` varchar(255) NOT NULL, `enum` enum('foo') NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (`id`), UNIQUE KEY `number` (`number`), KEY `text` (`text`))
+ in following column `text` of table `metadata`
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `insert_without_ai` ( `id` int(11) NOT NULL, `text` int(11) NOT NULL, PRIMARY KEY (`id`))
+ in following column `text` and in column `text` of table `select`

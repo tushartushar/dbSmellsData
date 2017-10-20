@@ -1,0 +1,19 @@
+Detected: Duplicate Column Names Found in following statement: create table %s (test1 INT, test3 INT)
+ in following column test3 and in column test3 of table " + cool_table + "
+Detected: Multicolumn Attribute Found in following statement: create table " + cool_table + "(test1 INT, test2 DOUBLE, test3 VARCHAR(200))
+
+Detected: Duplicate Column Names Found in following statement: create table %s (test1 VARCHAR(200), test2 INT)
+ in following column test1 and in column test1 of table " + cool_table + "
+Detected: Multicolumn Attribute Found in following statement: create table %s (test1 INT, test3 INT)
+
+Detected: Duplicate Column Names Found in following statement: create table %s (test1 VARCHAR(200), test2 INT)
+ in following column test2 and in column test2 of table " + cool_table + "
+Detected: Multicolumn Attribute Found in following statement: create table %s (test1 VARCHAR(200), test2 INT)
+
+Detected: Multicolumn Attribute Found in following statement: create table %s (test1 INT, test2 INT)
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: create table %s (test1 INT, test2 VARCHAR(500))
+
+Detected: Multicolumn Attribute Found in following statement: create table %s (test2 INT, test4 INT)
+

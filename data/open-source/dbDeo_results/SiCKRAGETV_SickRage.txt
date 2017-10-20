@@ -1,0 +1,13 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [" + providerName + "] (name TEXT, season NUMERIC, episodes TEXT, indexerid NUMERIC, url TEXT, time NUMERIC, quality TEXT, release_group TEXT)
+ in following column url of table [" + providerName + "]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [" + providerName + "] (name TEXT, season NUMERIC, episodes TEXT, indexerid NUMERIC, url TEXT, time NUMERIC, quality TEXT, release_group TEXT)
+ in following column release_group of table [" + providerName + "]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE lastUpdate (provider TEXT, time NUMERIC)
+ in following column provider of table lastUpdate
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [" + providerName + "] (name TEXT, season NUMERIC, episodes TEXT, indexerid NUMERIC, url TEXT, time NUMERIC, quality TEXT, release_group TEXT)
+ in following column episodes of table [" + providerName + "]
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [" + providerName + "] (name TEXT, season NUMERIC, episodes TEXT, indexerid NUMERIC, url TEXT, time NUMERIC, quality TEXT, release_group TEXT)
+ in following column name of table [" + providerName + "]
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE [" + providerName + "] (name TEXT, season NUMERIC, episodes TEXT, indexerid NUMERIC, url TEXT, time NUMERIC, quality TEXT, release_group TEXT)
+ in following column quality of table [" + providerName + "]

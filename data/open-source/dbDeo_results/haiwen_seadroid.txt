@@ -1,0 +1,4 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['%s', '%s']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'FILECACHE_TABLE_NAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'AVATAR_TABLE_NAME']
+Detected: Index Shotgun Variant: 3 Following index not used : ['"', 'PHOTOCACHE_TABLE_NAME']

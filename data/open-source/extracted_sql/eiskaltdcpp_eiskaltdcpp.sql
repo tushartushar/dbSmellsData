@@ -1,0 +1,2 @@
+SELECT * FROM users LIMIT 0, 500;
+SELECT * FROM files LIMIT 0, 500;

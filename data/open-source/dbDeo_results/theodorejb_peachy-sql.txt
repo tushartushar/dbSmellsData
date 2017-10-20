@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users ( user_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, name VARCHAR(50) NOT NULL, dob DATE NOT NULL, weight FLOAT NOT NULL, isDisabled BOOLEAN NOT NULL, uuid BINARY(16) NOT NULL )
+ in following column weight of table Users
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Users ( user_id INT PRIMARY KEY IDENTITY(1,1) NOT NULL, name VARCHAR(50) NOT NULL, dob DATE NOT NULL, weight FLOAT NOT NULL, isDisabled BIT NOT NULL, uuid BINARY(16) NOT NULL )
+ in following column weight of table Users

@@ -1,0 +1,138 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE timeknowledge ( temporal text NOT NULL, CONSTRAINT timeknowledge_pkey PRIMARY KEY (temporal) )
+ in following column temporal of table timeknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE main(idActivity serial NOT NULL, time timestamp without time zone NOT NULL,activityname text, activitytype text, instance integer NOT NULL UNIQUE, opcname text DEFAULT 'OPC'::text, begin boolean NOT NULL,CONSTRAINT main_pkey PRIMARY KEY (time))
+ in following column opcname of table main
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplanarg ( instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT sharedplanarg_pkey PRIMARY KEY (instance, role, argument), CONSTRAINT sharedplanarg_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column argument of table sharedplanarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextdata ( presencebegin boolean, presenceend boolean, instance integer NOT NULL, id serial NOT NULL, CONSTRAINT contextdata_instance_fkey FOREIGN KEY (instance) REFERENCES contextknowledge (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column CONSTRAINT of table contextdata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column dependance of table spatialknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE object( presence boolean NOT NULL, position real [], orientation real[], dimension real[], color int[], saliency real, CONSTRAINT object_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance, opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column orientation of table object
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentarg( instance integer NOT NULL, argument text, type text, subtype text, role text, UNIQUE (instance, role, argument), CONSTRAINT contentarg_pkey PRIMARY KEY (instance, role, argument), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column type of table contentarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE action( argument text, CONSTRAINT action_pkey PRIMARY KEY (instance, opcid), UNIQUE (opcid, instance), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column argument of table action
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column argument of table spatialknowledge
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE timedata ( temporal text NOT NULL, timearg1 timestamp without time zone NOT NULL, timearg2 timestamp without time zone NOT NULL, CONSTRAINT timedata_temporal_fkey FOREIGN KEY (temporal) REFERENCES timeknowledge (temporal) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplandata ( activitytype text NOT NULL, activityname text NOT NULL, instance integer NOT NULL, id integer NOT NULL, CONSTRAINT sharedplandata_pkey PRIMARY KEY (instance, id ) , CONSTRAINT sharedplandata_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column activitytype of table sharedplandata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Node (	id INTEGER NOT NULL,	map_id INTEGER NOT NULL,	weight INTEGER,	stamp FLOAT,	pose BLOB,	label TEXT,	time_enter DATE,	PRIMARY KEY (id))
+ in following column stamp of table Node
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT contextknowledge_pkey PRIMARY KEY (instance), CONSTRAINT contextknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column dependance of table contextknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE adjective( quality text, CONSTRAINT adjective_pkey PRIMARY KEY (instance, opcid), UNIQUE (opcid, instance), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column quality of table adjective
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column subject of table relation
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE sharedplanarg ( instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT sharedplanarg_pkey PRIMARY KEY (instance, role, argument), CONSTRAINT sharedplanarg_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column instance and in column instance of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE timedata ( temporal text NOT NULL, timearg1 timestamp without time zone NOT NULL, timearg2 timestamp without time zone NOT NULL, CONSTRAINT timedata_temporal_fkey FOREIGN KEY (temporal) REFERENCES timeknowledge (temporal) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column temporal of table timedata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column object of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE drives ( instance integer NOT NULL, name text NOT NULL, value double precision NOT NULL, homeomax double precision NOT NULL, homeomin double precision NOT NULL, UNIQUE (instance, name ) , CONSTRAINT drives_pkey PRIMARY KEY (instance, name), FOREIGN KEY (instance) REFERENCES main (instance), UNIQUE (name, instance) )
+ in following column name of table drives
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE main(idActivity serial NOT NULL, time timestamp without time zone NOT NULL,activityname text, activitytype text, instance integer NOT NULL UNIQUE, opcname text DEFAULT 'OPC'::text, begin boolean NOT NULL,CONSTRAINT main_pkey PRIMARY KEY (time))
+ in following column activitytype of table main
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interactionknowledge (subject text NOT NULL, argument text NOT NULL, number integer NOT NULL, type text NOT NULL DEFAULT 'none'::text, role text NOT NULL DEFAULT 'none'::text, CONSTRAINT interactionknowledge_pkey PRIMARY KEY (subject, argument, type, role) )
+ in following column subject of table interactionknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE behaviordata ( drive text, effect double precision, instance integer NOT NULL, occurence integer NOT NULL, CONSTRAINT behaviordata_pkey PRIMARY KEY (occurence, instance, drive), CONSTRAINT behaviordata_instance_fkey FOREIGN KEY (instance) REFERENCES behavior (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column drive of table behaviordata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE spdataarg ( id integer NOT NULL, instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT spdataarg_pkey PRIMARY KEY (id, instance, role, argument) )
+ in following column id and in column id of table contextdata
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE main(idActivity serial NOT NULL, time timestamp without time zone NOT NULL,activityname text, activitytype text, instance integer NOT NULL UNIQUE, opcname text DEFAULT 'OPC'::text, begin boolean NOT NULL,CONSTRAINT main_pkey PRIMARY KEY (time))
+ in following column time and in column time of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spdataarg ( id integer NOT NULL, instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT spdataarg_pkey PRIMARY KEY (id, instance, role, argument) )
+ in following column argument of table spdataarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column name of table spatialknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE agent( emotion text[], CONSTRAINT agent_pkey PRIMARY KEY (instance, opcid), UNIQUE (opcid, instance), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column emotion of table agent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE object( presence boolean NOT NULL, position real [], orientation real[], dimension real[], color int[], saliency real, CONSTRAINT object_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance, opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column saliency of table object
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT contextknowledge_pkey PRIMARY KEY (instance), CONSTRAINT contextknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column argument of table contextknowledge
+Detected: Index Shotgun Variant: 3 Following index not used : ['Map_Node_Word (node_id)', 'node_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplandata ( activitytype text NOT NULL, activityname text NOT NULL, instance integer NOT NULL, id integer NOT NULL, CONSTRAINT sharedplandata_pkey PRIMARY KEY (instance, id ) , CONSTRAINT sharedplandata_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column activityname of table sharedplandata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE behavior ( name text NOT NULL, argument text NOT NULL, instance integer NOT NULL, CONSTRAINT behavior_pkey PRIMARY KEY (instance), CONSTRAINT behavior_name_key UNIQUE (name, argument) )
+ in following column argument of table behavior
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextagent ( instance integer NOT NULL, agent text NOT NULL, number integer, CONSTRAINT contextagent_pkey PRIMARY KEY (instance, agent), CONSTRAINT contextagent_instance_fkey FOREIGN KEY (instance) REFERENCES contextknowledge (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION)
+ in following column agent of table contextagent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE object( presence boolean NOT NULL, position real [], orientation real[], dimension real[], color int[], saliency real, CONSTRAINT object_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance, opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column dimension of table object
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column time of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT contextknowledge_pkey PRIMARY KEY (instance), CONSTRAINT contextknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column name of table contextknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column verb of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplan ( name text NOT NULL, manner text NOT NULL, instance integer NOT NULL, CONSTRAINT sharedplan_pkey PRIMARY KEY (instance), CONSTRAINT haredplan_name_key UNIQUE (name, manner) )
+ in following column manner of table sharedplan
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Node (	id INTEGER NOT NULL,	map_id INTEGER NOT NULL,	weight INTEGER,	stamp FLOAT,	pose BLOB,	label TEXT,	time_enter DATE,	PRIMARY KEY (id))
+ in following column label of table Node
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE behavior ( name text NOT NULL, argument text NOT NULL, instance integer NOT NULL, CONSTRAINT behavior_pkey PRIMARY KEY (instance), CONSTRAINT behavior_name_key UNIQUE (name, argument) )
+ in following column name of table behavior
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplan ( name text NOT NULL, manner text NOT NULL, instance integer NOT NULL, CONSTRAINT sharedplan_pkey PRIMARY KEY (instance), CONSTRAINT haredplan_name_key UNIQUE (name, manner) )
+ in following column name of table sharedplan
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL , instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column dependance of table spatialknowledge
+Detected: Index Shotgun Variant: 3 Following index not used : ['Map_Node_Word (node_id)', 'kindexIDX_Link_from_idLinkCREATE']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE object( presence boolean NOT NULL, position real [], orientation real[], dimension real[], color int[], saliency real, CONSTRAINT object_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance, opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column position of table object
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['contentopc', 'instance']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplanarg ( instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT sharedplanarg_pkey PRIMARY KEY (instance, role, argument), CONSTRAINT sharedplanarg_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION )
+ in following column role of table sharedplanarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL , instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column name of table spatialknowledge
+Detected: Index Shotgun Variant: 3 Following index not used : ['Map_Node_Word (node_id)', 'O']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentarg( instance integer NOT NULL, argument text, type text, subtype text, role text, UNIQUE (instance, role, argument), CONSTRAINT contentarg_pkey PRIMARY KEY (instance, role, argument), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column role of table contentarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE entity( instance int NOT NULL, opcid integer NOT NULL, name text NOT NULL, CONSTRAINT entity_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance, opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column name of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column manner of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplandata ( activitytype text NOT NULL, activityname text NOT NULL, instance integer NOT NULL, id integer NOT NULL, CONSTRAINT sharedplandata_pkey PRIMARY KEY (instance, id), CONSTRAINT sharedplandata_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION)
+ in following column activityname of table sharedplandata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE rtobject( rtposition real[], CONSTRAINT rtobject_pkey PRIMARY KEY (instance, opcid), UNIQUE (opcid, instance), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid))
+ in following column rtposition of table rtobject
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL, instance integer NOT NULL, CONSTRAINT contextknowledge_pkey PRIMARY KEY (instance), CONSTRAINT contextknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column CONSTRAINT of table contextknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contextagent ( instance integer NOT NULL, agent text NOT NULL, number integer, CONSTRAINT contextagent_pkey PRIMARY KEY (instance, agent), CONSTRAINT contextagent_instance_fkey FOREIGN KEY (instance) REFERENCES contextknowledge (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION)
+ in following column CONSTRAINT of table contextagent
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE emotions ( instance integer NOT NULL, name text NOT NULL, value double precision NOT NULL, UNIQUE (name, instance ) , CONSTRAINT emotion_pkey PRIMARY KEY (instance, name), FOREIGN KEY (instance) REFERENCES main (instance), UNIQUE (instance, name) )
+ in following column name of table emotions
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE behaviordata( drive text NOT NULL, effect double precision, instance integer NOT NULL, occurence integer NOT NULL, CONSTRAINT behaviordata_pkey PRIMARY KEY (occurence, instance, drive), CONSTRAINT behaviordata_instance_fkey FOREIGN KEY (instance) REFERENCES behavior (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION)
+ in following column drive of table behaviordata
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentarg( instance integer NOT NULL, argument text, type text, subtype text, role text, UNIQUE (instance, role, argument), CONSTRAINT contentarg_pkey PRIMARY KEY (instance, role, argument), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column subtype of table contentarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentopc( instance integer NOT NULL, opcid integer, type text, subtype text, UNIQUE (instance, opcid), CONSTRAINT contentopc_pkey PRIMARY KEY (instance, opcid), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column subtype of table contentopc
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['contentopc', 'opcid']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spdataarg ( id integer NOT NULL, instance integer NOT NULL, argument text NOT NULL, role text NOT NULL, CONSTRAINT spdataarg_pkey PRIMARY KEY (id, instance, role, argument) )
+ in following column role of table spdataarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interactionknowledge (subject text NOT NULL, argument text NOT NULL, number integer NOT NULL, type text NOT NULL DEFAULT 'none'::text, role text NOT NULL DEFAULT 'none'::text, CONSTRAINT interactionknowledge_pkey PRIMARY KEY (subject, argument, type, role) )
+ in following column argument of table interactionknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentopc( instance integer NOT NULL, opcid integer, type text, subtype text, UNIQUE (instance, opcid), CONSTRAINT contentopc_pkey PRIMARY KEY (instance, opcid), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column type of table contentopc
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interactionknowledge (subject text NOT NULL, argument text NOT NULL, number integer NOT NULL, type text NOT NULL DEFAULT 'none'::text, role text NOT NULL DEFAULT 'none'::text, CONSTRAINT interactionknowledge_pkey PRIMARY KEY (subject, argument, type, role) )
+ in following column type of table interactionknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE interactionknowledge (subject text NOT NULL, argument text NOT NULL, number integer NOT NULL, type text NOT NULL DEFAULT 'none'::text, role text NOT NULL DEFAULT 'none'::text, CONSTRAINT interactionknowledge_pkey PRIMARY KEY (subject, argument, type, role) )
+ in following column role of table interactionknowledge
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE spatialknowledge ( name text NOT NULL, argument text NOT NULL, dependance text NOT NULL , instance integer NOT NULL, CONSTRAINT spatialknowledge_pkey PRIMARY KEY (instance), CONSTRAINT spatialknowledge_name_key UNIQUE (name, argument, dependance) )
+ in following column argument of table spatialknowledge
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['main', 'instance']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE main(idActivity serial NOT NULL, time timestamp without time zone NOT NULL,activityname text, activitytype text, instance integer NOT NULL UNIQUE, opcname text DEFAULT 'OPC'::text, begin boolean NOT NULL,CONSTRAINT main_pkey PRIMARY KEY (time))
+ in following column activityname of table main
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE timeknowledge ( temporal text NOT NULL, CONSTRAINT timeknowledge_pkey PRIMARY KEY (temporal) )
+ in following column CONSTRAINT and in column CONSTRAINT of table rtobject
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE contentarg( instance integer NOT NULL, argument text, type text, subtype text, role text, UNIQUE (instance, role, argument), CONSTRAINT contentarg_pkey PRIMARY KEY (instance, role, argument), FOREIGN KEY (instance) REFERENCES main (instance))
+ in following column argument of table contentarg
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE relation( instance integer NOT NULL, opcid integer NOT NULL, subject text NOT NULL, verb text NOT NULL, object text, time text, place text, manner text, CONSTRAINT relation_pkey PRIMARY KEY (instance, opcid), UNIQUE (instance,opcid), FOREIGN KEY (instance, opcid) REFERENCES contentopc (instance, opcid) )
+ in following column place of table relation
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE sharedplandata ( activitytype text NOT NULL, activityname text NOT NULL, instance integer NOT NULL, id integer NOT NULL, CONSTRAINT sharedplandata_pkey PRIMARY KEY (instance, id), CONSTRAINT sharedplandata_instance_fkey FOREIGN KEY (instance) REFERENCES sharedplan (instance) MATCH SIMPLE ON UPDATE NO ACTION ON DELETE NO ACTION)
+ in following column activitytype of table sharedplandata

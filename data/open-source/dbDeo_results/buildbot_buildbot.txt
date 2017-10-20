@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS test_failure( test_run_id INT NOT NULL, test_name VARCHAR(100) NOT NULL, test_variant VARCHAR(16) NOT NULL, info_text VARCHAR(255), failure_text TEXT, PRIMARY KEY (test_run_id, test_name, test_variant))
+ in following column failure_text of table test_failure

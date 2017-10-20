@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE step_activity ( id INTEGER PRIMARY KEY AUTOINCREMENT, label TEXT)
+ in following column label of table step_activity
+Detected: Index Shotgun Variant: 3 Following index not used : ['stored_entity2sequence', 'stored_entity_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stored_entity', 'classname']
+Detected: Index Shotgun Variant: 3 Following index not used : ['step_concrete', 'step_variant_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE step_parameters ( id INTEGER PRIMARY KEY AUTOINCREMENT, json TEXT UNIQUE)
+ in following column json of table step_parameters
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['step_activity', 'id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['step_type', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stored_entity', 'entityname']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['step_paramters', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['stored_entity2sequence', 'stored_sequence_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE step_status ( id INTEGER PRIMARY KEY AUTOINCREMENT, label TEXT)
+ in following column label of table step_status
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['step_concrete', 'id']

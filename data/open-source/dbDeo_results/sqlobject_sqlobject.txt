@@ -1,0 +1,49 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY, first_name TEXT, last_name TEXT )
+ in following column first_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Person ( PersonID INT PRIMARY KEY, FirstName Text, LastName Text )
+ in following column LastName of table Person
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE so_string_id ( id VARCHAR(50) NOT NULL PRIMARY KEY, val BLOB SUB_TYPE TEXT )
+ in following column val of table so_string_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_test ( auto_id SERIAL PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created TIMESTAMP NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BOOL DEFAULT FALSE NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS so_string_id ( id VARCHAR(50) PRIMARY KEY, val TEXT )
+ in following column val of table so_string_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS auto_test ( auto_id INT AUTO_INCREMENT PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT NULL, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun TINYINT DEFAULT 0 NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY, child_name TEXT, first_name TEXT, last_name TEXT )
+ in following column child_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY, first_name TEXT, last_name TEXT )
+ in following column last_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee ( id INT PRIMARY KEY first_name TEXT, last_name TEXT, position TEXT )
+ in following column position of table employee
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_test ( auto_id integer, first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BIT default(0) NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_test ( auto_id INTEGER PRIMARY KEY AUTOINCREMENT , first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT NULL, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun INT DEFAULT 0 NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee ( id INT PRIMARY KEY, position TEXT )
+ in following column position of table employee
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE role ( id SERIAL, name VARCHAR(50) NOT NULL UNIQUE )
+ in following column id and in column id of table so_string_id
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE employee ( id INT PRIMARY KEY first_name TEXT, last_name TEXT, position TEXT )
+ in following column last_name of table employee
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_test ( auto_id SERIAL PRIMARY KEY, first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created VARCHAR(40) NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BOOL DEFAULT FALSE NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY, child_name TEXT, first_name TEXT, last_name TEXT )
+ in following column first_name of table person
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE auto_test ( auto_id int identity(1,1), first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BIT default(0) NOT NULL )
+ in following column first_name and in column first_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY AUTO_INCREMENT, first_name TEXT, middle_initial CHAR(1), last_name TEXT )
+ in following column first_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY, child_name TEXT, first_name TEXT, last_name TEXT )
+ in following column last_name of table person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Person ( PersonID INT PRIMARY KEY, FirstName Text, LastName Text )
+ in following column FirstName of table Person
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE auto_test ( auto_id int identity(1,1), first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BIT default(0) NOT NULL )
+ in following column long_field of table auto_test
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE person ( id INT PRIMARY KEY AUTO_INCREMENT, first_name TEXT, middle_initial CHAR(1), last_name TEXT )
+ in following column last_name of table person
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE auto_test ( auto_id int identity(1,1), first_name VARCHAR(100), last_name VARCHAR(200) NOT NULL, age INT DEFAULT 0, created DATETIME NOT NULL, happy char(1) DEFAULT 'Y' NOT NULL, long_field TEXT, wannahavefun BIT default(0) NOT NULL )
+ in following column last_name and in column last_name of table employee
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE so_string_id ( id VARCHAR(50) PRIMARY KEY, val TEXT )
+ in following column val of table so_string_id

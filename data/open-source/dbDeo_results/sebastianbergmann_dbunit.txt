@@ -1,0 +1,39 @@
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER PRIMARY KEY AUTOINCREMENT, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER AUTO_INCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT, PRIMARY KEY (table1_id) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER PRIMARY KEY AUTOINCREMENT, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER PRIMARY KEY AUTOINCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT )
+ in following column column4 of table table1
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER AUTO_INCREMENT, table2_id INTEGER, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT, PRIMARY KEY (table3_id), FOREIGN KEY (table2_id) REFERENCES table2(table2_id) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER AUTO_INCREMENT, table1_id INTEGER, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT, PRIMARY KEY (table2_id), FOREIGN KEY (table1_id) REFERENCES table1(table1_id) )
+ in following column column8 of table table2
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER AUTO_INCREMENT, table1_id INTEGER, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT, PRIMARY KEY (table2_id), FOREIGN KEY (table1_id) REFERENCES table1(table1_id) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER AUTO_INCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT, PRIMARY KEY (table1_id) )
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER AUTO_INCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT, PRIMARY KEY (table1_id) )
+ in following column column4 of table table1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER PRIMARY KEY AUTOINCREMENT, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT )
+ in following column column8 of table table2
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['table1', 'table1_id']
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER PRIMARY KEY AUTOINCREMENT, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT )
+
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER PRIMARY KEY AUTOINCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER AUTO_INCREMENT, table1_id INTEGER, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT, PRIMARY KEY (table2_id), FOREIGN KEY (table1_id) REFERENCES table1(table1_id) )
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table2 ( table2_id INTEGER PRIMARY KEY AUTOINCREMENT, column5 VARCHAR(20), column6 INT(10), column7 DECIMAL(6,2), column8 TEXT )
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['table2', 'table2_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER AUTO_INCREMENT, table2_id INTEGER, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT, PRIMARY KEY (table3_id), FOREIGN KEY (table2_id) REFERENCES table2(table2_id) )
+ in following column column12 of table table3
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER PRIMARY KEY AUTOINCREMENT, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT )
+ in following column column12 of table table3
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS table3 ( table3_id INTEGER AUTO_INCREMENT, table2_id INTEGER, column9 VARCHAR(20), column10 INT(10), column11 DECIMAL(6,2), column12 TEXT, PRIMARY KEY (table3_id), FOREIGN KEY (table2_id) REFERENCES table2(table2_id) )
+
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS table1 ( table1_id INTEGER PRIMARY KEY AUTOINCREMENT, column1 VARCHAR(20), column2 INT(10), column3 DECIMAL(6,2), column4 TEXT )
+

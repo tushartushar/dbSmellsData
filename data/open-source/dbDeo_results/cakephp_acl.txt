@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros_acos`', '`aco_id`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`alias`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`lft`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`lft`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`rght`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`aros`', '`rght`']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`acos`', '`alias`']

@@ -1,0 +1,7 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `object_names` ( `ObjectType` enum('None','Spell','Map','LFGDungeon','Battleground','Unit','GameObject','Item','Quest','Opcode','PageText','NpcText','Gossip','Zone','Area','Phase','Player','Achievement') NOT NULL DEFAULT 'None', `Id` int(10) NOT NULL DEFAULT '0', `Name` text NOT NULL, PRIMARY KEY (`ObjectType`,`Id`))
+ in following column `Name` of table `object_names`
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS `object_names` ( `ObjectType` enum('None','Spell','Map','LFGDungeon','Battleground','Unit','GameObject','Item','Quest','Opcode','PageText','NpcText','Gossip','Zone','Area','Phase','Player','Achievement') NOT NULL DEFAULT 'None', `Id` int(10) NOT NULL DEFAULT '0', `Name` text NOT NULL, PRIMARY KEY (`ObjectType`,`Id`))
+ in following column `ObjectType` of table `object_names`
+Detected: Values in Column Definition Found in following statement: CREATE TABLE IF NOT EXISTS `object_names` ( `ObjectType` enum('None','Spell','Map','LFGDungeon','Battleground','Unit','GameObject','Item','Quest','Opcode','PageText','NpcText','Gossip','Zone','Area','Phase','Player','Achievement') NOT NULL DEFAULT 'None', `Id` int(10) NOT NULL DEFAULT '0', `Name` text NOT NULL, PRIMARY KEY (`ObjectType`,`Id`))
+

@@ -1,0 +1,46 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title_gl` TEXT, `title_es` TEXT)
+ in following column `title_es` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT)
+ in following column `title` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `publishedAt` TEXT, `isActive` INTEGER)
+ in following column `title` of table "post"
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tag', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "comment" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `text` TEXT, `post_id` INTEGER)
+ in following column `text` of table "comment"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "file" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT, `file` TEXT)
+ in following column `file` of table "file"
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `body` TEXT)
+ in following column `body` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "file" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT, `file` TEXT)
+ in following column `name` of table "file"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `publishedAt` TEXT, `isActive` INTEGER, `hasContent` INTEGER, `imageFile` TEXT, `type` TEXT)
+ in following column `type` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `tag` ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT)
+ in following column `name` of table `tag`
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['category', 'id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "category" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT, `category_id` INTEGER)
+ in following column `name` of table "category"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `type` TEXT, FOREIGN KEY(`category_id`) REFERENCES category(id))
+ in following column `title` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE `category` ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT)
+ in following column `name` of table `category`
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `body` TEXT)
+ in following column `title` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "category" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `name` TEXT)
+ in following column `name` of table "category"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `publishedAt` TEXT, `isActive` INTEGER)
+ in following column `publishedAt` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `publishedAt` TEXT, `isActive` INTEGER, `hasContent` INTEGER, `imageFile` TEXT, `type` TEXT)
+ in following column `imageFile` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `publishedAt` TEXT, `isActive` INTEGER, `hasContent` INTEGER, `imageFile` TEXT, `type` TEXT)
+ in following column `title` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `type` TEXT, FOREIGN KEY(`category_id`) REFERENCES category(id))
+ in following column `type` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `isActive` INTEGER)
+ in following column `title` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title` TEXT, `category_id` INTEGER, `publishedAt` TEXT, `isActive` INTEGER, `hasContent` INTEGER, `imageFile` TEXT, `type` TEXT)
+ in following column `publishedAt` of table "post"
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE "post" ( `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE, `title_gl` TEXT, `title_es` TEXT)
+ in following column `title_gl` of table "post"
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['post', 'id']

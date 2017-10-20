@@ -1,0 +1,1 @@
+SELECT request_handling_start_time, request_handling_end_time, request_answers_json FROM requests;

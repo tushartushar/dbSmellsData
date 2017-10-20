@@ -1,0 +1,5 @@
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['device', 'ON']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['device', 'DELETE']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['device', 'RESTRICT']
+Detected: Index Shotgun Variant: 1
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['device', 'id']

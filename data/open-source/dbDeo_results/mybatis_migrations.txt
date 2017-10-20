@@ -1,0 +1,8 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE person (ID INT,NAME VARCHAR(64))
+ in following column ID and in column ID of table first_table
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE worklog ( id INT, str1 VARCHAR(64), str2 VARCHAR(64), str3 VARCHAR(64))
+
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE ${changelog} (ID NUMERIC(20,0) NOT NULL,APPLIED_AT VARCHAR(25) NOT NULL,DESCRIPTION VARCHAR(255) NOT NULL)
+
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['blog', 'id']

@@ -1,0 +1,15 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS dalmp_sessions (sid VARCHAR NOT null, expiry INTEGER NOT null, data TEXT, ref TEXT, PRIMARY KEY(sid))
+ in following column ref of table dalmp_sessions
+Detected: Clone Tables Found in following statement: CREATE TABLE IF NOT EXISTS t_test (id INT NOT NULL PRIMARY KEY)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE `tests` (id INT(11) unsigned NOT NULL AUTO_INCREMENT, col1 varchar(255), col2 varchar(255), col3 varchar(255), status iNT(1), PRIMARY KEY (id))
+ in following column id and in column id of table queues
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `tests` (id INT(11) unsigned NOT NULL AUTO_INCREMENT, col1 varchar(255), col2 varchar(255), col3 varchar(255), status iNT(1), PRIMARY KEY (id))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS queues (id INTEGER PRIMARY KEY, queue VARCHAR (64) NOT null, data TEXT, cdate DATE)
+ in following column data of table queues
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS dalmp_sessions (sid VARCHAR NOT null, expiry INTEGER NOT null, data TEXT, ref TEXT, PRIMARY KEY(sid))
+ in following column data of table dalmp_sessions
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE `tests` (id INT(11) unsigned NOT NULL AUTO_INCREMENT, col1 varchar(255), col2 varchar(255), col3 varchar(255), PRIMARY KEY (id))
+
+Detected: Index Shotgun Variant: 1

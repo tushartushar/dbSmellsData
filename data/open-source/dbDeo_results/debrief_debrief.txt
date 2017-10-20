@@ -1,0 +1,29 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE public.exercises ( exerciseid SERIAL NOT NULL , exercisename VARCHAR(255) NOT NULL , description VARCHAR(255) , PRIMARY KEY (exerciseid))
+
+Detected: Adjacency List Found in following statement: CREATE TABLE public.DataItems ( itemid SERIAL NOT NULL , datasetid INTEGER NOT NULL , dtg TIMESTAMP , location POINT , summary VARCHAR(1000) , contenttype VARCHAR(255) , content TEXT , PRIMARY KEY (itemid) , CONSTRAINT fk_dataitem_1 FOREIGN KEY (datasetid) REFERENCES public.datasets (datasetid) ON DELETE NO ACTION ON UPDATE NO ACTION)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE public.formats ( formatid SERIAL NOT NULL , formatname VARCHAR(255) NOT NULL , iconname VARCHAR(255) , hasSummary BOOL DEFAULT false , hasLocation BOOL DEFAULT false , PRIMARY KEY (formatid))
+
+Detected: Clone Tables Found in following statement: CREATE TABLE tracks2 ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, mmsi integer, index integer NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE datasets ( ivalue integer NOT NULL, starttime timestamp without time zone, endtime timestamp without time zone, mmsi integer, length integer, vname text)
+ in following column vname of table datasets
+Detected: God Table Found in following statement: CREATE TABLE public.datasets ( datasetid SERIAL NOT NULL , datasetname VARCHAR(255) NOT NULL , platformid INTEGER NOT NULL , exerciseid INTEGER , formatid INTEGER , created TIMESTAMP DEFAULT now() NOT NULL , startTime TIMESTAMP , endTime TIMESTAMP , PRIMARY KEY (datasetid) , CONSTRAINT FK_datasets_3 FOREIGN KEY (exerciseid) REFERENCES public.exercises (exerciseid) , CONSTRAINT FK_datasets_4 FOREIGN KEY (platformid) REFERENCES public.platforms (platformid) , CONSTRAINT FK_datasets_2 FOREIGN KEY (formatid) REFERENCES public.formats (formatid) ON DELETE NO ACTION ON UPDATE NO ACTION)
+
+Detected: Adjacency List Found in following statement: CREATE TABLE public.datasets ( datasetid SERIAL NOT NULL , datasetname VARCHAR(255) NOT NULL , platformid INTEGER NOT NULL , exerciseid INTEGER , formatid INTEGER , created TIMESTAMP DEFAULT now() NOT NULL , startTime TIMESTAMP , endTime TIMESTAMP , PRIMARY KEY (datasetid) , CONSTRAINT FK_datasets_3 FOREIGN KEY (exerciseid) REFERENCES public.exercises (exerciseid) , CONSTRAINT FK_datasets_4 FOREIGN KEY (platformid) REFERENCES public.platforms (platformid) , CONSTRAINT FK_datasets_2 FOREIGN KEY (formatid) REFERENCES public.formats (formatid) ON DELETE NO ACTION ON UPDATE NO ACTION)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['public', '.']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracks ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, index integer NOT NULL)
+ in following column nameval of table tracks
+Detected: Clone Tables Found in following statement: CREATE TABLE tracks3 ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, mmsi integer, dataset integer, index integer NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE tracks ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, index integer NOT NULL)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracks3 ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, mmsi integer, dataset integer, index integer NOT NULL)
+ in following column nameval of table tracks3
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE public.DataItems ( itemid SERIAL NOT NULL , datasetid INTEGER NOT NULL , dtg TIMESTAMP , location POINT , summary VARCHAR(1000) , contenttype VARCHAR(255) , content TEXT , PRIMARY KEY (itemid) , CONSTRAINT fk_dataitem_1 FOREIGN KEY (datasetid) REFERENCES public.datasets (datasetid) ON DELETE NO ACTION ON UPDATE NO ACTION)
+ in following column content of table public
+Detected: Index Shotgun Variant: 3 Following index not used : ['public', 'DataItems']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE tracks2 ( dateval timestamp without time zone, nameval text, latval double precision, longval double precision, courseval double precision, speedval double precision, mmsi integer, index integer NOT NULL)
+ in following column nameval of table tracks2
+Detected: Index Shotgun Variant: 3 Following index not used : ['public', 'dtg']

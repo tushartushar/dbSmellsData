@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t(id TEXT, num REAL)
+ in following column num of table t
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t(id TEXT, num REAL)
+ in following column id of table t
+Detected: Index Shotgun Variant: 1

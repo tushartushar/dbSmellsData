@@ -1,0 +1,42 @@
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x, y, UNIQUE(x, y))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'b']
+Detected: Clone Tables Found in following statement: CREATE TABLE t(x PRIMARY KEY, y)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Defs(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Identifier of table Defs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Decls(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Scope of table Decls
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'c']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t', 'a']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Files(Digest TEXT, Filename TEXT UNIQUE)
+ in following column Digest of table Files
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+ in following column c3 of table Ex1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Decls(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Identifier of table Decls
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat3(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['abc', 'def']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE t1(a TEXT PRIMARY KEY, b)
+ in following column a of table t1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Files(Digest TEXT, Filename TEXT UNIQUE)
+ in following column Filename of table Files
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat1(tbl, idx, stat)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['t1', 'c']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Refs(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Identifier of table Refs
+Detected: Index Shotgun Variant: 3 Following index not used : ['Ex1', 'c1']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Ex1(c1 int, c2 int, c3 text)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Refs(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Scope of table Refs
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Defs(Filerow INTEGER, Line INTEGER, ColumnStart INTEGER, Scope TEXT, Type INTEGER, Identifier TEXT)
+ in following column Scope of table Defs
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat4(tbl, idx, nEq, nLt, nDLt, sample)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE sqlite_stat2(tbl, idx, sampleno, sample)
+

@@ -1,0 +1,17 @@
+Detected: Obsolete Column TypesFound in following statement: create table f0 (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponent text)
+ in following column offset of table f0
+Detected: Obsolete Column TypesFound in following statement: create table f0 (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponent text)
+ in following column element of table f0
+Detected: Obsolete Column TypesFound in following statement: create table f0 (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponent text)
+ in following column exponent of table f0
+Detected: Obsolete Column TypesFound in following statement: create table f0 (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponent text)
+ in following column scale of table f0
+Detected: Obsolete Column TypesFound in following statement: create table elements (atomic_number integer, element text, molar_mass real, density real)
+ in following column element of table elements
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: create table elements (atomic_number integer, element text, molar_mass real, density real)
+ in following column molar_mass of table elements
+Detected: Obsolete Column TypesFound in following statement: create table f0 (id integer primary key, atomic_number integer, element text, ion text, offset real, scale text, exponent text)
+ in following column ion of table f0
+Detected: Obsolete Column TypesFound in following statement: create table elements (atomic_number integer, element text, molar_mass real, density real)
+ in following column density of table elements

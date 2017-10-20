@@ -1,0 +1,32 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_log', 'access_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['oauth_access_token', 'client_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['oauth_access_token', 'authentication_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE entry_history ( entry_histry_id VARCHAR(36) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date TIMESTAMP, last_modified_by VARCHAR(128), last_modified_date TIMESTAMP, contents VARCHAR(65536) NOT NULL, format VARCHAR(10) NOT NULL, title VARCHAR(512) NOT NULL, entry_id INTEGER NOT NULL, PRIMARY KEY (entry_histry_id))
+ in following column last_modified_date and in column last_modified_date of table config
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE config ( config_name VARCHAR(512) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date TIMESTAMP, last_modified_by VARCHAR(128), last_modified_date TIMESTAMP, config_value VARCHAR(2048) NOT NULL, PRIMARY KEY (config_name))
+ in following column last_modified_date and in column last_modified_date of table entry_history
+Detected: Index Shotgun Variant: 3 Following index not used : ['entry', 'last_modified_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['entry_history', 'last_modified_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['oauth_access_token', 'user_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['category', 'category_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_log', 'uri']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['entry', 'entry_id']
+Detected: Index Shotgun Variant: 2 Missing index for the primary/foreign key : ['tag', 'tag_name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_log', 'remote_address']
+Detected: Index Shotgun Variant: 3 Following index not used : ['oauth_access_token', 'refresh_token']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE config ( config_name VARCHAR(512) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date TIMESTAMP, last_modified_by VARCHAR(128), last_modified_date TIMESTAMP, config_value VARCHAR(2048) NOT NULL, PRIMARY KEY (config_name))
+ in following column created_date and in column created_date of table entry_history
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE entry_history ( entry_histry_id VARCHAR(36) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date TIMESTAMP, last_modified_by VARCHAR(128), last_modified_date TIMESTAMP, contents VARCHAR(65536) NOT NULL, format VARCHAR(10) NOT NULL, title VARCHAR(512) NOT NULL, entry_id INTEGER NOT NULL, PRIMARY KEY (entry_histry_id))
+ in following column contents and in column contents of table entry
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE entry_history ( entry_histry_id VARCHAR(36) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date TIMESTAMP, last_modified_by VARCHAR(128), last_modified_date TIMESTAMP, contents VARCHAR(65536) NOT NULL, format VARCHAR(10) NOT NULL, title VARCHAR(512) NOT NULL, entry_id INTEGER NOT NULL, PRIMARY KEY (entry_histry_id))
+ in following column created_date and in column created_date of table config
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE entry ( entry_id INTEGER NOT NULL AUTO_INCREMENT, version BIGINT, created_by VARCHAR(128), created_date DATETIME, last_modified_by VARCHAR(128), last_modified_date DATETIME, contents LONGTEXT NOT NULL, format VARCHAR(10) NOT NULL, published BIT NOT NULL, title VARCHAR(512) NOT NULL, PRIMARY KEY (entry_id))
+ in following column contents of table entry
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE entry_history ( entry_histry_id VARCHAR(36) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date DATETIME, last_modified_by VARCHAR(128), last_modified_date DATETIME, contents LONGTEXT NOT NULL, format VARCHAR(10) NOT NULL, title VARCHAR(512) NOT NULL, entry_id INTEGER NOT NULL, PRIMARY KEY (entry_histry_id))
+ in following column contents of table entry_history
+Detected: Index Shotgun Variant: 3 Following index not used : ['login_history', 'login_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['upload_file', 'last_modified_date']
+Detected: Index Shotgun Variant: 3 Following index not used : ['entry', 'created_by']
+Detected: Index Shotgun Variant: 3 Following index not used : ['access_log', 'x_track']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE entry_history ( entry_histry_id VARCHAR(36) NOT NULL, version BIGINT, created_by VARCHAR(128), created_date DATETIME, last_modified_by VARCHAR(128), last_modified_date DATETIME, contents LONGTEXT NOT NULL, format VARCHAR(10) NOT NULL, title VARCHAR(512) NOT NULL, entry_id INTEGER NOT NULL, PRIMARY KEY (entry_histry_id))
+ in following column contents and in column contents of table entry

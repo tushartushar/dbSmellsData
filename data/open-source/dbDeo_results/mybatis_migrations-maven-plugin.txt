@@ -1,0 +1,15 @@
+Detected: Metadata as Data Found in following statement: CREATE TABLE ${changelog} ( ID NUMERIC(20,0) NOT NULL, APPLIED_AT VARCHAR(25) NOT NULL, DESCRIPTION VARCHAR(255) NOT NULL)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE pippo ( ID NUMERIC(20,0) NOT NULL, APPLIED_AT VARCHAR(25) NOT NULL, DESCRIPTION VARCHAR(255) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test3 (ID NUMERIC(20,0) NOT NULL,)
+
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE ${changelog} (ID NUMERIC(20,0) NOT NULL,APPLIED_AT VARCHAR(25) NOT NULL,DESCRIPTION VARCHAR(255) NOT NULL)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test2 (ID NUMERIC(20,0) NOT NULL,)
+
+Detected: Clone Tables Found in following statement: CREATE TABLE test (ID NUMERIC(20,0) NOT NULL,)
+
+Detected: Metadata as Data Found in following statement: CREATE TABLE test_bootstrap ( ID NUMERIC(20,0) NOT NULL, APPLIED_AT VARCHAR(25) NOT NULL, DESCRIPTION VARCHAR(255) NOT NULL)
+

@@ -1,0 +1,3 @@
+SELECT * FROM %s ORDER BY %s %s
+SELECT * FROM %s
+SELECT * FROM %s WHERE %s

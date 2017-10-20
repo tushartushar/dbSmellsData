@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', 'cat']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', '<<']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', 'queries']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', 'txt']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', 'EOF']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel\\-sample`', 'name']
+Detected: Index Shotgun Variant: 3 Following index not used : ['`travel-sample`', 'name']

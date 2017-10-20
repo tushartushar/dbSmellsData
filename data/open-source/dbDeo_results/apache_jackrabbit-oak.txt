@@ -1,0 +1,7 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', 'ns1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', 'getRoot']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', 'NodeBuilder']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', 'b1']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', 'builder']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', '.']
+Detected: Index Shotgun Variant: 3 Following index not used : ['NS1', '=']

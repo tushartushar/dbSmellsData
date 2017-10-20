@@ -1,0 +1,10 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes', 'cuadrante']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes', 'crime']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE crime_latlong ( cuadrante varchar (20),	crime varchar (60),	date varchar (10),	hour varchar (10),	year varchar (10),	month varchar (10), latitude double precision, longitude double precision, id integer, geom geometry, PRIMARY KEY(id))
+ in following column year and in column year of table cuadrantes
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes_poly', 'id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes', 'date']
+Detected: Metadata as Data Found in following statement: CREATE TABLE pgj (	crime varchar (60),	date varchar (10),	count int, PRIMARY KEY(crime, date))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes', 'sector']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cuadrantes_poly', 'sector']

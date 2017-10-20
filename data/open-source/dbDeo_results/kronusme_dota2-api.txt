@@ -1,0 +1,5 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE IF NOT EXISTS `teams` ( `id` INT(11) UNSIGNED NOT NULL DEFAULT '0', `name` VARCHAR(100) NOT NULL, PRIMARY KEY (`id`))
+ in following column `id` and in column `id` of table `items`
+Detected: Index Shotgun Variant: 1
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE IF NOT EXISTS `additional_units` ( `slot_id` mediumint(10) unsigned NOT NULL, `unitname` varchar(100) NOT NULL, `item_0` smallint(10) unsigned NOT NULL, `item_1` smallint(10) unsigned NOT NULL, `item_2` smallint(10) unsigned NOT NULL, `item_3` smallint(10) unsigned NOT NULL, `item_4` smallint(10) unsigned NOT NULL, `item_5` smallint(10) unsigned NOT NULL, KEY `FK_additional_units_slots` (`slot_id`), CONSTRAINT `FK_additional_units_slots` FOREIGN KEY (`slot_id`) REFERENCES `slots` (`id`))
+

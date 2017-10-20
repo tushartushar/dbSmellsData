@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nybb ( geom geometry, borocode integer, boroname varchar(40), shape_leng float, shape_area float )
+ in following column shape_leng of table nybb
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE nybb ( geom geometry, borocode integer, boroname varchar(40), shape_leng float, shape_area float )
+ in following column shape_area of table nybb

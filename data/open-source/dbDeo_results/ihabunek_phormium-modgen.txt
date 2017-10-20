@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 1
+Detected: Metadata as Data Found in following statement: CREATE TABLE bohemian_rhapsody( is_this VARCHAR(1), the_real VARCHAR(1), life VARCHAR(1), PRIMARY KEY (is_this))
+

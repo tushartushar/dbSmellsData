@@ -1,0 +1,145 @@
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mashuptrail( id int not null auto_increment primary key, name char(36), version char(16), vt_version int, last_modified datetime, entity_type char(16))
+ in following column vt_version and in column vt_version of table workflow_exec
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column raBore of table P2FrameMeta
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column id of table (
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column date_modified of table (
+Detected: God Table Found in following statement: CREATE TABLE workflow_exec( id int, user varchar(255), ip varchar(255), vt_version varchar(255), ts_start datetime, ts_end datetime, parent_id int, parent_type varchar(255), parent_version int, name varchar(255), log_id int, entity_id int, entity_type char(16))
+
+Detected: God Table Found in following statement: CREATE TABLE port_spec_item( id int, pos int, module varchar(255), package varchar(255), namespace varchar(255), label varchar(4095), _default varchar(4095), _values mediumtext, entry_type varchar(255), parent_id int, entity_id int, entity_type char(16))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE control_parameter( id int, name varchar(255), value mediumtext, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column value of table control_parameter
+Detected: God Table Found in following statement: CREATE TABLE module( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), tag varchar(255), parent_type char(16), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE action( id int, prev_id int, date datetime, session int, user varchar(255), parent_id int, entity_id int, entity_type char(16))
+ in following column user and in column user of table entity
+Detected: Obsolete Column TypesFound in following statement: create table workspaces(id text primary key)
+ in following column id of table workspaces
+Detected: Metadata as Data Found in following statement: CREATE TABLE test(name VARCHAR(24) PRIMARY KEY, lastname VARCHAR(32) NOT NULL, age INTEGER NOT NULL)
+
+Detected: God Table Found in following statement: CREATE TABLE group_exec( id int, ts_start datetime, ts_end datetime, cached int, module_id int, group_name varchar(255), group_type varchar(255), completed int, error varchar(1023), machine_id int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mashup_component( id int, vtid int, vttype varchar(255), vtparent_type char(32), vtparent_id int, vtpos int, vtmid int, pos int, type varchar(255), val mediumtext, minVal varchar(255), maxVal varchar(255), stepSize varchar(255), strvaluelist mediumtext, widget varchar(255), seq int, parent varchar(255), alias_id int, entity_id int, entity_type char(16))
+ in following column parent and in column parent of table entity_children
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE port( id int, type varchar(255), moduleId int, moduleName varchar(255), name varchar(255), signature varchar(4095), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column signature and in column signature of table (
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parameter( id int, pos int, name varchar(255), type varchar(255), val varchar(8191), alias varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column type and in column type of table entity
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parameter( id int, pos int, name varchar(255), type varchar(255), val varchar(8191), alias varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column val and in column val of table mashup_component
+Detected: Index Shotgun Variant: 3 Following index not used : ['file', 'signature']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column astroScat of table P2FrameMeta
+Detected: God Table Found in following statement: CREATE TABLE mashup( id int, name varchar(255), version int, type varchar(255), vtid int, layout mediumtext, geometry mediumtext, has_seq int, parent_id int, entity_id int, entity_type char(16))
+
+Detected: God Table Found in following statement: CREATE TABLE port_spec( id int, name varchar(255), type varchar(255), optional int, depth int, sort_key int, min_conns int, max_conns int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pe_function( id int, module_id int, port_name varchar(255), is_alias int, parent_type char(32), parent_id int, entity_id int, entity_type char(16))
+ in following column parent_type and in column parent_type of table workflow_exec
+Detected: Obsolete Column TypesFound in following statement: create table entity_workspace(entity integer, workspace text)
+ in following column workspace of table entity_workspace
+Detected: Obsolete Column TypesFound in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column name of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column photoScat of table P2FrameMeta
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE action( id int, prev_id int, date datetime, session varchar(1023), user varchar(255), prune int, parent_type char(16), vt_id int, parent_id int)
+ in following column session and in column session of table workflow_exec
+Detected: God Table Found in following statement: CREATE TABLE port_spec( id int, name varchar(255), type varchar(255), optional int, depth int, union varchar(255), sort_key int, min_conns int, max_conns int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: God Table Found in following statement: CREATE TABLE module_exec( id int, ts_start datetime, ts_end datetime, cached int, module_id int, module_name varchar(255), completed int, abstraction_id int, abstraction_version int, machine_id int, wf_exec_id int, entity_id int, entity_type char(16))
+
+Detected: God Table Found in following statement: CREATE TABLE group_tbl( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), tag varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column type of table (
+Detected: God Table Found in following statement: CREATE TABLE module_exec( id int, ts_start datetime, ts_end datetime, cached int, module_id int, module_name varchar(255), completed int, error varchar(1023), abstraction_id int, abstraction_version int, machine_id int, wf_exec_id int, entity_id int, entity_type char(16))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parameter_exploration( id int, action_id int, name varchar(255), date datetime, user varchar(255), dims varchar(255), layout varchar(255), parent_id int, entity_id int, entity_type char(16))
+ in following column layout and in column layout of table mashup
+Detected: Obsolete Column TypesFound in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column description of table entity
+Detected: God Table Found in following statement: CREATE TABLE workflow_exec( id int, user varchar(255), ip varchar(255), vt_version varchar(255), ts_start datetime, ts_end datetime, parent_id int, parent_type varchar(255), parent_version int, name varchar(255), log_id int, vt_id int)
+
+Detected: God Table Found in following statement: CREATE TABLE workflow_exec( id int, user varchar(255), ip varchar(255), session int, vt_version varchar(255), ts_start datetime, ts_end datetime, parent_id int, parent_type varchar(255), parent_version int, completed int, name varchar(255), log_id int, entity_id int, entity_type char(16))
+
+Detected: God Table Found in following statement: CREATE TABLE abstraction( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), internal_version varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column url of table entity
+Detected: Duplicate Column Names Found in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column description and in column description of table package
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE parameter( id int, pos int, name varchar(255), type varchar(255), val varchar(8191), alias varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column name and in column name of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mashup_component( id int, vtid int, vttype varchar(255), vtparent_type char(32), vtparent_id int, vtpos int, vtmid int, pos int, type varchar(255), val mediumtext, minVal varchar(255), maxVal varchar(255), stepSize varchar(255), strvaluelist mediumtext, widget varchar(255), seq int, parent varchar(255), alias_id int, entity_id int, entity_type char(16))
+ in following column val of table mashup_component
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column name of table (
+Detected: Obsolete Column TypesFound in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column create_time of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE annotation( id int, akey varchar(255), value mediumtext, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column value of table annotation
+Detected: God Table Found in following statement: CREATE TABLE mashup_component( id int, vtid int, vttype varchar(255), vtparent_type char(32), vtparent_id int, vtpos int, vtmid int, pos int, type varchar(255), val mediumtext, minVal varchar(255), maxVal varchar(255), stepSize varchar(255), strvaluelist mediumtext, widget varchar(255), seq int, parent varchar(255), alias_id int, entity_id int, entity_type char(16))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column expTime of table P2FrameMeta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mashup( id int, name varchar(255), version int, type varchar(255), vtid int, layout mediumtext, geometry mediumtext, has_seq int, parent_id int, entity_id int, entity_type char(16))
+ in following column layout of table mashup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mashup_component( id int, vtid int, vttype varchar(255), vtparent_type char(32), vtparent_id int, vtpos int, vtmid int, pos int, type varchar(255), val mediumtext, minVal varchar(255), maxVal varchar(255), stepSize varchar(255), strvaluelist mediumtext, widget varchar(255), seq int, parent varchar(255), alias_id int, entity_id int, entity_type char(16))
+ in following column strvaluelist of table mashup_component
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column date_created of table (
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column user of table (
+Detected: God Table Found in following statement: CREATE TABLE module_exec( id int, ts_start datetime, ts_end datetime, cached int, module_id int, module_name varchar(255), completed int, error varchar(1023), abstraction_id int, abstraction_version int, machine_id int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE port_spec_item( id int, pos int, module varchar(255), package varchar(255), namespace varchar(255), label varchar(4095), _default varchar(4095), _values mediumtext, entry_type varchar(255), parent_id int, entity_id int, entity_type char(16))
+ in following column _values of table port_spec_item
+Detected: God Table Found in following statement: CREATE TABLE group_tbl( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), tag varchar(255), parent_type char(16), entity_id int, entity_type char(16), parent_id int)
+
+Detected: God Table Found in following statement: CREATE TABLE port_spec( id int, name varchar(255), type varchar(255), optional int, sort_key int, min_conns int, max_conns int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column signature of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE mashup( id int, name varchar(255), version int, type varchar(255), vtid int, layout mediumtext, geometry mediumtext, has_seq int, parent_id int, entity_id int, entity_type char(16))
+ in following column geometry of table mashup
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column airmass of table P2FrameMeta
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column version of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column expStart of table P2FrameMeta
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE pe_parameter( id int, pos int, interpolator varchar(255), value mediumtext, dimension int, parent_type char(32), parent_id int, entity_id int, entity_type char(16))
+ in following column value of table pe_parameter
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mashuptrail( id int not null auto_increment primary key, name char(36), version char(16), vt_version int, last_modified datetime, entity_type char(16))
+ in following column version and in column version of table abstraction_ref
+Detected: God Table Found in following statement: CREATE TABLE module( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), tag varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column content_hash of table (
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE parameter( id int, pos int, name varchar(255), type varchar(255), val mediumtext, alias varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+ in following column val of table parameter
+Detected: God Table Found in following statement: CREATE TABLE abstraction( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), internal_version varchar(255), tag varchar(255), parent_type char(16), entity_id int, entity_type char(16), parent_id int)
+
+Detected: God Table Found in following statement: CREATE TABLE abstraction( id int, cache int, name varchar(255), namespace varchar(255), package varchar(511), version varchar(255), internal_version varchar(255), tag varchar(255), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE pe_function( id int, module_id int, port_name varchar(255), is_alias int, parent_type char(32), parent_id int, entity_id int, entity_type char(16))
+ in following column id and in column id of table entity
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+ in following column decBore of table P2FrameMeta
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE mashup_action_annotation( id int, akey varchar(255), value varchar(8191), action_id int, date datetime, user varchar(255), parent_id int, entity_id int, entity_type char(16))
+ in following column value and in column value of table control_parameter
+Detected: Obsolete Column TypesFound in following statement: create table file (id text, name text, tags text, user text, date_created text, date_modified text, content_hash text, version text, signature text, type text)
+ in following column tags of table (
+Detected: God Table Found in following statement: CREATE TABLE port_spec( id int, name varchar(255), type varchar(255), optional int, sort_key int, sigstring varchar(4095), labels varchar(4095), defaults varchar(4095), parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: God Table Found in following statement: CREATE TABLE P2FrameMeta( frameID int NOT NULL PRIMARY KEY, surveyID smallint NOT NULL, filterID smallint NOT NULL, cameraID smallint NOT NULL, telescopeID smallint NOT NULL, analysisVer smallint NOT NULL, p1Recip smallint NOT NULL DEFAULT -999, p2Recip smallint NOT NULL DEFAULT -999, p3Recip smallint NOT NULL DEFAULT -999, nP2Images smallint NOT NULL DEFAULT -999, astroScat real NOT NULL DEFAULT -999, photoScat real NOT NULL DEFAULT -999, nAstRef int NOT NULL DEFAULT -999, nPhoRef int NOT NULL DEFAULT -999, expStart float NOT NULL DEFAULT -999, expTime real NOT NULL DEFAULT -999, airmass real NOT NULL DEFAULT -999, raBore float NOT NULL DEFAULT -999, decBore float NOT NULL DEFAULT -999)
+
+Detected: God Table Found in following statement: CREATE TABLE module_exec( id int, ts_start datetime, ts_end datetime, cached int, module_id int, module_name varchar(255), completed int, error varchar(1023), machine_id int, parent_type char(32), entity_id int, entity_type char(16), parent_id int)
+
+Detected: Obsolete Column TypesFound in following statement: create table entity(id integer primary key, type integer, name text, user integer, mod_time text, create_time text, size integer, description text, url text)
+ in following column mod_time of table entity

@@ -1,0 +1,2 @@
+SELECT * FROM %s;
+CREATE TABLE %s (taste VARCHAR(20))

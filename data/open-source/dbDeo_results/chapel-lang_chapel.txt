@@ -1,0 +1,3 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['nodes', 'end_t']
+Detected: Index Shotgun Variant: 3 Following index not used : ['strings', 'idx']
+Detected: Index Shotgun Variant: 3 Following index not used : ['nodes', 'start_t']

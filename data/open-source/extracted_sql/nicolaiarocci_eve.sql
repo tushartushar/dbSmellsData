@@ -1,0 +1,1 @@
+CREATE TABLE invoices (	_created DATETIME, 	_updated DATETIME, 	_etag VARCHAR, 	_id INTEGER NOT NULL, 	number INTEGER, 	people_id INTEGER, 	PRIMARY KEY (_id), 	FOREIGN KEY(people_id) REFERENCES people (_id))

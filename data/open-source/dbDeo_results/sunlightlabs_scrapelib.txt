@@ -1,0 +1,5 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cache (key text UNIQUE, status integer, modified text, encoding text, data blob, headers blob)
+ in following column encoding of table (
+Detected: Index Shotgun Variant: 1
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE IF NOT EXISTS cache (key text UNIQUE, status integer, modified text, encoding text, data blob, headers blob)
+ in following column modified of table (

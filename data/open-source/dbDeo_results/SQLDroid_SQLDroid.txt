@@ -1,0 +1,9 @@
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE datetime_now_test (datetimecol TEXT NOT NULL DEFAULT (datetime('now')), unused TEXT)
+ in following column unused of table datetime_now_test
+Detected: Index Shotgun Variant: 1
+Detected: Duplicate Column Names Found in following statement: create table timestamptest (id integer, created_at timestamp)
+ in following column created_at and in column created_at of table datetest
+Detected: Duplicate Column Names Found in following statement: create table blobtest (key int, value blob)
+ in following column value and in column value of table dummytable
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE stringblobtest (value TEXT)
+ in following column value of table stringblobtest

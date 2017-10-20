@@ -1,0 +1,3 @@
+Detected: Duplicate Column Names Found in following statement: create table `prefix_users` (`id` int unsigned not null auto_increment primary key, `email` varchar(255) not null)
+ in following column `email` and in column `email` of table `users`
+Detected: Index Shotgun Variant: 1

@@ -1,0 +1,259 @@
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'workflow_step_1']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dspaceobject( uuid RAW(16) NOT NULL PRIMARY KEY)
+ in following column uuid and in column uuid of table site
+Detected: Index Shotgun Variant: 3 Following index not used : ['WorkflowItem', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByDateAccessioned', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Bundle', 'primary_bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['FileExtension', 'bitstream_format_id']
+Detected: God Table Found in following statement: CREATE TABLE requestitem( requestitem_id INTEGER NOT NULL, token varchar(48), item_id INTEGER, bitstream_id INTEGER, allfiles BOOLEAN, request_email VARCHAR2(64), request_name VARCHAR2(64), request_date TIMESTAMP, accept_request BOOLEAN, decision_date TIMESTAMP, expires TIMESTAMP, CONSTRAINT requestitem_pkey PRIMARY KEY (requestitem_id), CONSTRAINT requestitem_token_key UNIQUE (token))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['checksum_history', 'bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['harvested_item', 'item_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE dspaceobject( uuid uuid NOT NULL PRIMARY KEY)
+ in following column uuid and in column uuid of table site
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_workflowitemrole ( workflowitemrole_id integer DEFAULT nextval('cwf_workflowitemrole_seq') PRIMARY KEY, role_id Text, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), eperson_id integer REFERENCES eperson(eperson_id), group_id integer REFERENCES epersongroup(eperson_group_id))
+ in following column role_id and in column role_id of table cwf_collectionrole
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE CommunityTemp( community_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text CLOB, side_bar_text VARCHAR2(2000))
+ in following column introductory_text and in column introductory_text of table Community
+Detected: Index Shotgun Variant: 3 Following index not used : ['Bitstream', 'bitstream_format_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['EPersonGroup2EPerson', 'eperson_group_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column license of table Collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column side_bar_text of table Collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Bitstream( bitstream_id INTEGER PRIMARY KEY, bitstream_format_id INTEGER REFERENCES BitstreamFormatRegistry(bitstream_format_id), name VARCHAR(256), size INTEGER, checksum VARCHAR(64), checksum_algorithm VARCHAR(32), description TEXT, user_format_description TEXT, source VARCHAR(256), internal_id VARCHAR(256), deleted BOOL, store_number INTEGER)
+ in following column user_format_description of table Bitstream
+Detected: God Table Found in following statement: CREATE TABLE CollectionTemp( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license CLOB, copyright_text CLOB, side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ), submitter INTEGER REFERENCES EPersonGroup( eperson_group_id ), admin INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: God Table Found in following statement: CREATE TABLE Bitstream( bitstream_id INTEGER PRIMARY KEY, bitstream_format_id INTEGER REFERENCES BitstreamFormatRegistry(bitstream_format_id), name VARCHAR2(256), size_bytes INTEGER, checksum VARCHAR2(64), checksum_algorithm VARCHAR2(32), description VARCHAR2(2000), user_format_description VARCHAR2(2000), source VARCHAR2(256), internal_id VARCHAR2(256), deleted NUMBER(1), store_number INTEGER, sequence_id INTEGER)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['ResourcePolicy', 'epersongroup_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['MetadataFieldRegistry', 'metadata_schema_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Community2Collection', 'community_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_collectionrole (collectionrole_id integer DEFAULT nextval('cwf_collectionrole_seq') PRIMARY KEY,role_id Text,collection_id integer REFERENCES collection(collection_id),group_id integer REFERENCES epersongroup(eperson_group_id))
+ in following column group_id and in column group_id of table cwf_pooltask
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id integer REFERENCES eperson(eperson_id))
+ in following column action_id of table cwf_claimtask
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE CommunityTemp( community_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text CLOB, side_bar_text VARCHAR2(2000))
+ in following column copyright_text and in column copyright_text of table Community
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatavalue', 'metadata_field_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'logo_bitstream_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE TasklistItem( tasklist_id	INTEGER PRIMARY KEY, eperson_id	INTEGER REFERENCES EPerson(eperson_id), workflow_id	INTEGER REFERENCES WorkflowItem(workflow_id))
+ in following column eperson_id and in column eperson_id of table cwf_pooltask
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column copyright_text of table Collection
+Detected: Index Shotgun Variant: 3 Following index not used : ['EPerson', 'email']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id UUID REFERENCES EPerson(uuid), group_id UUID REFERENCES epersongroup(uuid))
+ in following column action_id of table cwf_pooltask
+Detected: God Table Found in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['epersongroup2workspaceitem', 'workspace_item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Community2Collection', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Communities2Item', 'community_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByTitle', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['requestitem', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['most_recent_checksum', 'bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_claimtask', 'workflowitem_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id integer REFERENCES eperson(eperson_id))
+ in following column step_id of table cwf_claimtask
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MetadataValue( metadata_value_id INTEGER PRIMARY KEY DEFAULT NEXTVAL('metadatavalue_seq'), item_id INTEGER REFERENCES Item(item_id), metadata_field_id INTEGER REFERENCES MetadataFieldRegistry(metadata_field_id), text_value TEXT, text_lang VARCHAR(24), place INTEGER)
+ in following column text_value of table MetadataValue
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE DCTypeRegistry( dc_type_id INTEGER PRIMARY KEY, element VARCHAR2(64), qualifier VARCHAR2(64), scope_note VARCHAR2(2000), UNIQUE(element, qualifier))
+ in following column scope_note and in column scope_note of table MetadataFieldRegistry
+Detected: Index Shotgun Variant: 3 Following index not used : ['TasklistItem', 'workflow_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['versionitem', 'item_id']
+Detected: God Table Found in following statement: CREATE TABLE EPerson( eperson_id INTEGER PRIMARY KEY, email VARCHAR2(64) UNIQUE, password VARCHAR2(64), firstname VARCHAR2(64), lastname VARCHAR2(64), can_log_in BOOLEAN, require_certificate BOOLEAN, self_registered BOOLEAN, last_active TIMESTAMP, sub_frequency INTEGER, phone	 VARCHAR2(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['MetadataValue', 'item_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE CollectionTemp( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license CLOB, copyright_text CLOB, side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ), submitter INTEGER REFERENCES EPersonGroup( eperson_group_id ), admin INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column provenance_description and in column provenance_description of table Collection
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Community( community_id INTEGER PRIMARY KEY, name VARCHAR(128) UNIQUE, short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text TEXT, side_bar_text TEXT)
+ in following column copyright_text of table Community
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByAuthor', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['community2collection', 'community_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['versionitem', 'eperson_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Bitstream( bitstream_id INTEGER PRIMARY KEY, bitstream_format_id INTEGER REFERENCES BitstreamFormatRegistry(bitstream_format_id), name VARCHAR(256), size INTEGER, checksum VARCHAR(64), checksum_algorithm VARCHAR(32), description TEXT, user_format_description TEXT, source VARCHAR(256), internal_id VARCHAR(256), deleted BOOL, store_number INTEGER)
+ in following column description of table Bitstream
+Detected: Index Shotgun Variant: 3 Following index not used : ['doi', 'resource_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'workflow_step_2']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Subscription', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['doi', 'resource_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByTitle', 'sort_title']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_workflowitemrole ( workflowitemrole_id integer DEFAULT nextval('cwf_workflowitemrole_seq') PRIMARY KEY, role_id Text, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), eperson_id integer REFERENCES eperson(eperson_id), group_id integer REFERENCES epersongroup(eperson_group_id))
+ in following column role_id of table cwf_workflowitemrole
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE MetadataFieldRegistry( metadata_field_id INTEGER PRIMARY KEY DEFAULT NEXTVAL('metadatafieldregistry_seq'), metadata_schema_id INTEGER NOT NULL REFERENCES MetadataSchemaRegistry(metadata_schema_id), element VARCHAR(64), qualifier VARCHAR(64), scope_note TEXT)
+ in following column scope_note of table MetadataFieldRegistry
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsBySubject', 'sort_subject']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE harvested_collection( collection_id INTEGER REFERENCES collection(collection_id) ON DELETE CASCADE, harvest_type INTEGER, oai_source VARCHAR(256), oai_set_id VARCHAR(256), harvest_message VARCHAR2(512), metadata_config_id VARCHAR(256), harvest_status INTEGER, harvest_start_time TIMESTAMP, last_harvested TIMESTAMP, id INTEGER PRIMARY KEY)
+ in following column collection_id and in column collection_id of table cwf_collectionrole
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByDate', 'date_issued']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Item2Bundle', 'bundle_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['harvested_collection', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection2Item', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_claimtask', 'action_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE CommunityTemp( community_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text CLOB, side_bar_text VARCHAR2(2000))
+ in following column side_bar_text and in column side_bar_text of table Community
+Detected: Index Shotgun Variant: 3 Following index not used : ['handle', 'resource_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['EPersonGroup2EPerson', 'eperson_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Doi', 'resource_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['community', 'community_id']
+Detected: God Table Found in following statement: CREATE TABLE Bitstream( bitstream_id INTEGER PRIMARY KEY, bitstream_format_id INTEGER REFERENCES BitstreamFormatRegistry(bitstream_format_id), name VARCHAR2(256), size_bytes BIGINT, checksum VARCHAR2(64), checksum_algorithm VARCHAR2(32), description VARCHAR2(2000), user_format_description VARCHAR2(2000), source VARCHAR2(256), internal_id VARCHAR2(256), deleted BOOLEAN, store_number INTEGER, sequence_id INTEGER)
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Group2Group', 'child_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id VARCHAR2(256), step_id VARCHAR2(256), action_id VARCHAR2(256), eperson_id RAW(16) REFERENCES EPerson(uuid), group_id RAW(16) REFERENCES epersongroup(uuid))
+ in following column workflow_id and in column workflow_id of table TasklistItem
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_collectionrole (collectionrole_id integer DEFAULT nextval('cwf_collectionrole_seq') PRIMARY KEY,role_id Text,collection_id integer REFERENCES collection(collection_id),group_id integer REFERENCES epersongroup(eperson_group_id))
+ in following column role_id of table cwf_collectionrole
+Detected: Index Shotgun Variant: 3 Following index not used : ['workspaceitem', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['TasklistItem', 'eperson_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByDateAccessioned( items_by_date_accessioned_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), date_accessioned TEXT)
+ in following column date_accessioned of table ItemsByDateAccessioned
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'template_item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Group2GroupCache', 'parent_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Bundle2Bitstream', 'bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Item', 'submitter_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE ItemsByDate( items_by_date_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), date_issued VARCHAR2(2000))
+ in following column item_id and in column item_id of table requestitem
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id UUID REFERENCES eperson(uuid))
+ in following column step_id of table cwf_claimtask
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_collectionrole', 'collection_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE MetadataSchemaRegistry( metadata_schema_id INTEGER PRIMARY KEY, namespace VARCHAR(256) UNIQUE, short_id VARCHAR(32))
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id VARCHAR2(256), step_id VARCHAR2(256), action_id VARCHAR2(256), eperson_id INTEGER REFERENCES EPerson(eperson_id), group_id INTEGER REFERENCES epersongroup(eperson_group_id))
+ in following column group_id and in column group_id of table cwf_collectionrole
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE CollectionTemp( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text CLOB, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license CLOB, copyright_text CLOB, side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ), submitter INTEGER REFERENCES EPersonGroup( eperson_group_id ), admin INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['EpersonGroup2Eperson', 'eperson_group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['DCValue', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['item', 'owning_collection']
+Detected: Index Shotgun Variant: 3 Following index not used : ['WorkspaceItem', 'collection_id']
+Detected: God Table Found in following statement: CREATE TABLE requestitem( requestitem_id INTEGER NOT NULL, token varchar(48), item_id INTEGER, bitstream_id INTEGER, allfiles NUMBER(1), request_email VARCHAR2(64), request_name VARCHAR2(64), request_date TIMESTAMP, accept_request NUMBER(1), decision_date TIMESTAMP, expires TIMESTAMP, CONSTRAINT requestitem_pkey PRIMARY KEY (requestitem_id), CONSTRAINT requestitem_token_key UNIQUE (token))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['MetadataValue', 'metadata_field_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsBySubject( items_by_subject_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), subject TEXT, sort_subject TEXT)
+ in following column subject of table ItemsBySubject
+Detected: Index Shotgun Variant: 3 Following index not used : ['Communities2Item', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column provenance_description of table Collection
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection2Item', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Community( community_id INTEGER PRIMARY KEY, name VARCHAR(128) UNIQUE, short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text TEXT, side_bar_text TEXT)
+ in following column side_bar_text of table Community
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE DCTypeRegistry( dc_type_id INTEGER PRIMARY KEY, element VARCHAR(64), qualifier VARCHAR(64), scope_note TEXT, UNIQUE(element, qualifier))
+ in following column scope_note and in column scope_note of table MetadataFieldRegistry
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id UUID REFERENCES EPerson(uuid), group_id UUID REFERENCES epersongroup(uuid))
+ in following column workflow_id of table cwf_pooltask
+Detected: Index Shotgun Variant: 3 Following index not used : ['doi', 'dspace_object']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text VARCHAR2(2000), logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license VARCHAR2(2000), copyright_text VARCHAR2(2000), side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column license and in column license of table CollectionTemp
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_claimtask', 'step_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['handle', 'resource_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Doi', 'doi']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByDate', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id UUID REFERENCES eperson(uuid))
+ in following column action_id of table cwf_claimtask
+Detected: Index Shotgun Variant: 3 Following index not used : ['WorkflowItem', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Item2Bundle', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id UUID REFERENCES eperson(uuid))
+ in following column workflow_id of table cwf_claimtask
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_collectionrole (collectionrole_id integer DEFAULT nextval('cwf_collectionrole_seq') PRIMARY KEY,role_id Text,collection_id UUID REFERENCES collection(uuid),group_id UUID REFERENCES epersongroup(uuid))
+ in following column role_id of table cwf_collectionrole
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'submitter']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Collection', 'workflow_step_3']
+Detected: Index Shotgun Variant: 3 Following index not used : ['community2collection', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ResourcePolicy', 'resource_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['epersongroup2workspaceitem', 'eperson_group_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_workflowitem', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['eperson', 'eperson_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE DCTypeRegistry( dc_type_id INTEGER PRIMARY KEY, element VARCHAR(64), qualifier VARCHAR(64), scope_note TEXT, UNIQUE(element, qualifier))
+ in following column scope_note of table DCTypeRegistry
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE MetadataValue( metadata_value_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), metadata_field_id INTEGER REFERENCES MetadataFieldRegistry(metadata_field_id), text_value VARCHAR2(2000), text_lang VARCHAR(24), place INTEGER)
+ in following column text_value and in column text_value of table MetadataValueTemp
+Detected: Index Shotgun Variant: 3 Following index not used : ['Subscription', 'eperson_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_workflowitem', 'collection_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['collection', 'collection_id']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['Handle', 'handle']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundle2bitstream', 'bundle_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsBySubject( items_by_subject_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), subject TEXT, sort_subject TEXT)
+ in following column sort_subject of table ItemsBySubject
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_workflowitemrole ( workflowitemrole_id integer DEFAULT nextval('cwf_workflowitemrole_seq') PRIMARY KEY, role_id Text, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), eperson_id UUID REFERENCES eperson(uuid), group_id UUID REFERENCES epersongroup(uuid))
+ in following column role_id of table cwf_workflowitemrole
+Detected: Index Shotgun Variant: 3 Following index not used : ['item2bundle', 'item_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Group2Group', 'parent_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_in_progress_user', 'workflowitem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundle', 'bundle_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['EpersonGroup2Eperson', 'eperson_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ItemsByAuthor', 'sort_author']
+Detected: Multicolumn Attribute Found in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text VARCHAR2(2000), logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license VARCHAR2(2000), copyright_text VARCHAR2(2000), side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByTitle( items_by_title_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), title TEXT, sort_title TEXT)
+ in following column sort_title of table ItemsByTitle
+Detected: Index Shotgun Variant: 3 Following index not used : ['item2bundle', 'bundle_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id UUID REFERENCES EPerson(uuid), group_id UUID REFERENCES epersongroup(uuid))
+ in following column step_id and in column step_id of table cwf_claimtask
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_in_progress_user', 'user_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resourcepolicy', 'rptype']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_collectionrole', 'role_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['resourcepolicy', 'eperson_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE checksum_history ( check_id INTEGER PRIMARY KEY, bitstream_id INTEGER, process_start_date TIMESTAMP, process_end_date TIMESTAMP, checksum_expected VARCHAR(64), checksum_calculated VARCHAR(64), result VARCHAR(64) REFERENCES checksum_results(result_code))
+ in following column bitstream_id and in column bitstream_id of table requestitem
+Detected: Index Shotgun Variant: 3 Following index not used : ['item', 'submitter_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['ResourcePolicy', 'eperson_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Group2GroupCache', 'child_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Bundle2Bitstream', 'bundle_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id INTEGER REFERENCES EPerson(eperson_id), group_id INTEGER REFERENCES epersongroup(eperson_group_id))
+ in following column step_id of table cwf_pooltask
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_claimtask', 'owner_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByAuthor( items_by_author_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), author TEXT, sort_author TEXT)
+ in following column author of table ItemsByAuthor
+Detected: Index Shotgun Variant: 3 Following index not used : ['bundle', 'primary_bitstream_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id INTEGER REFERENCES EPerson(eperson_id), group_id INTEGER REFERENCES epersongroup(eperson_group_id))
+ in following column workflow_id of table cwf_pooltask
+Detected: Index Shotgun Variant: 3 Following index not used : ['Community2Community', 'parent_comm_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id UUID REFERENCES EPerson(uuid), group_id UUID REFERENCES epersongroup(uuid))
+ in following column step_id of table cwf_pooltask
+Detected: God Table Found in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR2(128), short_description VARCHAR2(512), introductory_text VARCHAR2(2000), logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description VARCHAR2(2000), license VARCHAR2(2000), copyright_text VARCHAR2(2000), side_bar_text VARCHAR2(2000), workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByTitle( items_by_title_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), title TEXT, sort_title TEXT)
+ in following column title of table ItemsByTitle
+Detected: Index Shotgun Variant: 3 Following index not used : ['ResourcePolicy', 'resource_type_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['item', 'item_id']
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id VARCHAR2(256), step_id VARCHAR2(256), action_id VARCHAR2(256), eperson_id RAW(16) REFERENCES EPerson(uuid), group_id RAW(16) REFERENCES epersongroup(uuid))
+ in following column action_id and in column action_id of table cwf_claimtask
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByDate( items_by_date_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), date_issued TEXT)
+ in following column date_issued of table ItemsByDate
+Detected: Index Shotgun Variant: 3 Following index not used : ['Community2Community', 'child_comm_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['WorkspaceItem', 'item_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Community( community_id INTEGER PRIMARY KEY, name VARCHAR(128) UNIQUE, short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), copyright_text TEXT, side_bar_text TEXT)
+ in following column introductory_text of table Community
+Detected: Index Shotgun Variant: 3 Following index not used : ['resourcepolicy', 'epersongroup_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_claimtask ( claimtask_id integer DEFAULT nextval('cwf_claimtask_seq') PRIMARY KEY, workflowitem_id integer REFERENCES cwf_workflowitem(workflowitem_id), workflow_id Text, step_id Text, action_id Text, owner_id integer REFERENCES eperson(eperson_id))
+ in following column workflow_id of table cwf_claimtask
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_workflowitemrole', 'workflowitem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['workspaceitem', 'collection_id']
+Detected: Metadata as Data Found in following statement: CREATE TABLE MetadataSchemaRegistry( metadata_schema_id INTEGER PRIMARY KEY DEFAULT NEXTVAL('metadataschemaregistry_seq'), namespace VARCHAR(256) UNIQUE, short_id VARCHAR(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['resourcepolicy', 'dspace_object']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE DCValue( dc_value_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), dc_type_id INTEGER REFERENCES DCTypeRegistry(dc_type_id), text_value TEXT, text_lang VARCHAR(24), place INTEGER, source_id INTEGER)
+ in following column text_value of table DCValue
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE ItemsByAuthor( items_by_author_id INTEGER PRIMARY KEY, item_id INTEGER REFERENCES Item(item_id), author TEXT, sort_author TEXT)
+ in following column sort_author of table ItemsByAuthor
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE Collection( collection_id INTEGER PRIMARY KEY, name VARCHAR(128), short_description VARCHAR(512), introductory_text TEXT, logo_bitstream_id INTEGER REFERENCES Bitstream(bitstream_id), template_item_id INTEGER REFERENCES Item(item_id), provenance_description TEXT, license TEXT, copyright_text TEXT, side_bar_text TEXT, workflow_step_1 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_2 INTEGER REFERENCES EPersonGroup( eperson_group_id ), workflow_step_3 INTEGER REFERENCES EPersonGroup( eperson_group_id ))
+ in following column introductory_text of table Collection
+Detected: God Table Found in following statement: CREATE TABLE Bitstream( bitstream_id INTEGER PRIMARY KEY, bitstream_format_id INTEGER REFERENCES BitstreamFormatRegistry(bitstream_format_id), name VARCHAR(256), size INTEGER, checksum VARCHAR(64), checksum_algorithm VARCHAR(32), description TEXT, user_format_description TEXT, source VARCHAR(256), internal_id VARCHAR(256), deleted BOOL, store_number INTEGER)
+
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id VARCHAR2(256), step_id VARCHAR2(256), action_id VARCHAR2(256), eperson_id RAW(16) REFERENCES EPerson(uuid), group_id RAW(16) REFERENCES epersongroup(uuid))
+ in following column step_id and in column step_id of table cwf_claimtask
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_pooltask', 'workflowitem_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['Community', 'logo_bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['requestitem', 'bitstream_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_workflowitemrole', 'role_id']
+Detected: God Table Found in following statement: CREATE TABLE EPerson( eperson_id INTEGER PRIMARY KEY, email VARCHAR2(64) UNIQUE, password VARCHAR2(64), firstname VARCHAR2(64), lastname VARCHAR2(64), can_log_in NUMBER(1), require_certificate NUMBER(1), self_registered NUMBER(1), last_active TIMESTAMP, sub_frequency INTEGER, phone	 VARCHAR2(32))
+
+Detected: Index Shotgun Variant: 3 Following index not used : ['cwf_pooltask', 'eperson_id']
+Detected: Index Shotgun Variant: 3 Following index not used : ['metadatavalue', 'dspace_object_id']
+Detected: Obsolete Column TypesFound in following statement: CREATE TABLE cwf_pooltask ( pooltask_id INTEGER DEFAULT nextval('cwf_pooltask_seq') PRIMARY KEY, workflowitem_id INTEGER REFERENCES cwf_workflowitem(workflowitem_id), workflow_id TEXT, step_id TEXT, action_id TEXT, eperson_id INTEGER REFERENCES EPerson(eperson_id), group_id INTEGER REFERENCES epersongroup(eperson_group_id))
+ in following column action_id of table cwf_pooltask
+Detected: Duplicate Column Names Found in following statement: CREATE TABLE cwf_collectionrole (collectionrole_id integer DEFAULT nextval('cwf_collectionrole_seq') PRIMARY KEY,role_id Text,collection_id integer REFERENCES collection(collection_id),group_id integer REFERENCES epersongroup(eperson_group_id))
+ in following column role_id and in column role_id of table cwf_workflowitemrole
